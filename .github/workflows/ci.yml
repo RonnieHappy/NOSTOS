@@ -20,6 +20,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           enable-cache: true
+          download-from-astral-mirror: false
       - name: Install locked environment
         run: uv sync --extra dev --frozen
       - name: Run core tests
