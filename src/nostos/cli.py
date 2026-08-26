@@ -198,6 +198,28 @@ def _validate_nuclei(args: argparse.Namespace) -> int:
     return 0
 
 
+def _validate_nuclei_confirmatory(args: argparse.Namespace) -> int:
+    from nostos.validation.external_nuclei_confirmatory import validate_nuclei_confirmatory
+
+    payload = validate_nuclei_confirmatory(args.data.resolve(), args.output.resolve())
+    _json_print({"status": payload["validity"]["status"],
+                 "output": str(args.output.resolve() / "external_nuclei_confirmatory.json"),
+                 "case_count": payload["case_count"], "gates": payload["success_gates"],
+                 "summary": payload["summary"]})
+    return 0 if payload["validity"]["status"] == "pass" else 1
+
+
+def _validate_nuclei_bbbc020(args: argparse.Namespace) -> int:
+    from nostos.validation.external_nuclei_bbbc020 import validate_bbbc020
+
+    payload = validate_bbbc020(args.data.resolve(), args.output.resolve())
+    _json_print({"status": payload["validity"]["status"],
+                 "output": str(args.output.resolve() / "external_nuclei_bbbc020.json"),
+                 "case_count": payload["case_count"], "gates": payload["success_gates"],
+                 "summary": payload["summary"]})
+    return 0 if payload["validity"]["status"] == "pass" else 1
+
+
 def _validate_modules(args: argparse.Namespace) -> int:
     from nostos.validation.module_perturbations import run_module_perturbation_matrix
 
@@ -306,6 +328,16 @@ def build_parser() -> argparse.ArgumentParser:
     nuclei.add_argument("--data", type=Path, required=True)
     nuclei.add_argument("--output", type=Path, required=True)
     nuclei.set_defaults(func=_validate_nuclei)
+
+    nuclei_confirm = commands.add_parser("validate-nuclei-confirmatory", help="Run the prospectively frozen BBBC007 transfer test")
+    nuclei_confirm.add_argument("--data", type=Path, required=True)
+    nuclei_confirm.add_argument("--output", type=Path, required=True)
+    nuclei_confirm.set_defaults(func=_validate_nuclei_confirmatory)
+
+    nuclei_bbbc020 = commands.add_parser("validate-nuclei-bbbc020", help="Run the frozen BBBC020 independent-acquisition transfer")
+    nuclei_bbbc020.add_argument("--data", type=Path, required=True)
+    nuclei_bbbc020.add_argument("--output", type=Path, required=True)
+    nuclei_bbbc020.set_defaults(func=_validate_nuclei_bbbc020)
 
     modules = commands.add_parser("validate-modules", help="Run the frozen per-module perturbation matrix")
     modules.add_argument("--output", type=Path, required=True)

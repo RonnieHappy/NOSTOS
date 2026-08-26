@@ -286,18 +286,30 @@ def figure4(filament_root: Path, cartilage_root: Path, nuclei_root: Path) -> Non
         for spine in ax.spines.values(): spine.set_visible(False)
         if i == 0: panel(ax, "g")
 
-    nuclei_receipt = json.loads((ROOT / "outputs/external-nuclei-v1_1/external_nuclei_validation.json").read_text())
+    nuclei_receipts = [
+        json.loads((ROOT / "outputs/external-nuclei-v1_1/external_nuclei_validation.json").read_text()),
+        json.loads((ROOT / "outputs/external-nuclei-confirmatory-v1/external_nuclei_confirmatory.json").read_text()),
+        json.loads((ROOT / "outputs/external-nuclei-bbbc020-v1/external_nuclei_bbbc020.json").read_text()),
+    ]
     ax = fig.add_subplot(gs[2, 8:]); panel(ax, "h")
-    methods = ["Hessian", "LoG", "intensity"]
-    ap = [nuclei_receipt["summary"][f"{key}_average_precision"]["mean"]
-          for key in ("nostos_blob", "multiscale_log", "intensity")]
-    auc = [nuclei_receipt["summary"][f"{key}_roc_auc"]["mean"]
-           for key in ("nostos_blob", "multiscale_log", "intensity")]
-    x = np.arange(3); width = .34
-    ax.bar(x - width / 2, ap, width, color=TEAL, label="AP")
-    ax.bar(x + width / 2, auc, width, color=BLUE, label="AUC")
-    ax.set_xticks(x, methods, fontsize=6.5); ax.set_ylim(.7, 1.01)
-    ax.set_ylabel("test-set localization"); ax.legend(ncol=2, fontsize=6.5, loc="lower right")
+    matrix = np.asarray([
+        [receipt["summary"][f"{method}_{metric}"]["mean"]
+         for metric in ("average_precision", "roc_auc")
+         for method in ("nostos_blob", "multiscale_log", "intensity")]
+        for receipt in nuclei_receipts
+    ])
+    ax.imshow(matrix, cmap="magma", vmin=.65, vmax=1.0, aspect="auto")
+    ax.set_yticks(range(3), ["BBBC039", "BBBC007", "BBBC020"], fontsize=6.3)
+    ax.set_xticks(range(6), ["H", "L", "I", "H", "L", "I"], fontsize=6.3)
+    ax.xaxis.tick_top(); ax.tick_params(axis="x", pad=1)
+    ax.text(1, -1.0, "AP", ha="center", fontsize=6.5)
+    ax.text(4, -1.0, "AUC", ha="center", fontsize=6.5)
+    for row in range(3):
+        for col in range(6):
+            ax.text(col, row, f"{matrix[row, col]:.2f}", ha="center", va="center",
+                    fontsize=5.6, color="white" if matrix[row, col] < .87 else INK)
+    ax.set_xlabel("H  Hessian     L  LoG     I  intensity", fontsize=6.2, labelpad=2)
+    for spine in ax.spines.values(): spine.set_visible(False)
     save(fig, "figure_4_cross_domain_boundaries")
 
 

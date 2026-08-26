@@ -27,6 +27,8 @@ SPECS = (
     EvidenceSpec("bone", "outputs/external-bone-v1/external_bone_validation.json", "external_public_validation", "Thickness agreement in eight public micro-CT volumes."),
     EvidenceSpec("nuclei_sign_agnostic", "outputs/external-nuclei-v1/external_nuclei_validation.json", "external_public_development", "Initial BBBC039 test showing the failure of sign-agnostic Hessian localization."),
     EvidenceSpec("nuclei_polarity_refinement", "outputs/external-nuclei-v1_1/external_nuclei_validation.json", "external_public_post_test_refinement", "Polarity-aware BBBC039 result; same test set, therefore not pristine confirmatory evidence."),
+    EvidenceSpec("nuclei_bbbc007_prospective", "outputs/external-nuclei-confirmatory-v1/external_nuclei_confirmatory.json", "external_public_prospective_failed_gate", "Prospectively frozen BBBC007 transfer: strong localization, but the prespecified ROC-AUC superiority interval versus LoG crossed zero."),
+    EvidenceSpec("nuclei_bbbc020_independent", "outputs/external-nuclei-bbbc020-v1/external_nuclei_bbbc020.json", "external_public_prospective_failed_gate", "Independent murine BBBC020 acquisition: strong local localization, but no prespecified AP superiority over LoG."),
     EvidenceSpec("filament", "outputs/external-filament-v1/external_filament_validation.json", "external_public_exploratory", "Cross-species structural information; acquisition confounded."),
     EvidenceSpec("cartilage", "outputs/external-cartilage-v1/external_cartilage_validation.json", "external_public_exploratory", "Site-matched OA associations with unvalidated ROI proposal."),
     EvidenceSpec("cartilage_mask_review", "manifests/cartilage_mask_review_packet.json", "validation_infrastructure_pending", "Locked 40-case review packet; human reference masks remain pending."),
@@ -83,7 +85,7 @@ def build_evidence_bundle(project_root: Path, output: Path) -> dict:
         "nature_readiness": "not_ready",
         "blocking_evidence": [
             "blinded cartilage mask validation",
-            "prospective independent-acquisition validation of the polarity-aware method",
+            "a prospectively successful independent-acquisition test of the platform-level response geometry; two Hessian-module transfer tests localized strongly but failed comparator-superiority gates",
             "cartilage structure-specific ablations",
             "external-user replication and archival release",
         ],
