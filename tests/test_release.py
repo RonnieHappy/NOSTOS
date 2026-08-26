@@ -9,7 +9,11 @@ def test_release_is_data_free_sanitized_and_deterministic(tmp_path: Path) -> Non
     root = tmp_path / "project"
     (root / "src").mkdir(parents=True)
     (root / "outputs/nostos0-evidence-bundle-v1").mkdir(parents=True)
-    (root / "src/example.py").write_text("ROOT = r'<DATA_ROOT>\\data'\n", encoding="utf-8")
+    separator = chr(92)
+    private_root = "E:" + separator + "NOSTOS"
+    (root / "src/example.py").write_text(
+        f"ROOT = r'{private_root}{separator}data'\n", encoding="utf-8"
+    )
     (root / "README.md").write_text("project\n", encoding="utf-8")
     (root / "LICENSE").write_text("license\n", encoding="utf-8")
     index = {"entries": [], "nature_readiness": "not_ready"}
@@ -24,6 +28,7 @@ def test_release_is_data_free_sanitized_and_deterministic(tmp_path: Path) -> Non
         names = bundle.namelist()
         assert not any("data/" in name for name in names)
         source = bundle.read("nostos-0.3.0/src/example.py").decode()
-        assert "<DATA_ROOT>" not in source
+        assert private_root not in source
+        assert "<DATA_ROOT>" in source
         manifest = json.loads(bundle.read("nostos-0.3.0/release_manifest.json"))
         assert manifest["status"] == "pass"

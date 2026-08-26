@@ -762,8 +762,8 @@
     },
     {
       "path": "tests/test_release.py",
-      "bytes": 1359,
-      "sha256": "50daa641a018d3ed7a36a5d8277351fbceb8168dc952ee3838bbdd6612fbc436"
+      "bytes": 1495,
+      "sha256": "57cd08fd64b9accfdef76940fa47e33294debf7ebfce38fc3c2a39125b8e43a6"
     },
     {
       "path": "tests/test_reliability.py",
