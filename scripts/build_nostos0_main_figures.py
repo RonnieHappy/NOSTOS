@@ -13,7 +13,7 @@ from PIL import Image
 from matplotlib.colors import Normalize
 from scipy.ndimage import distance_transform_edt
 
-from nostos.features.response_modules import maximal_sphere_local_thickness
+from nostos.features.response_modules import hessian_morphology_maps, maximal_sphere_local_thickness
 from nostos.validation.phantoms import generate_phantom
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -187,7 +187,7 @@ def figure3(data_root: Path) -> None:
     save(fig, "figure_3_bone_validation")
 
 
-def figure4(filament_root: Path, cartilage_root: Path) -> None:
+def figure4(filament_root: Path, cartilage_root: Path, nuclei_root: Path) -> None:
     receipt = json.loads((ROOT / "outputs/external-filament-v1/external_filament_validation.json").read_text())
     comparison = receipt["summary"]["representation_comparison"]
     assoc = pd.read_csv(ROOT / "outputs/cartilage-ablation-analysis-v1_1/ablation_associations.csv")
@@ -201,9 +201,9 @@ def figure4(filament_root: Path, cartilage_root: Path) -> None:
     ]
     selected = selected.set_index("feature").loc[order].reset_index()
 
-    fig = plt.figure(figsize=(8.4, 5.25), constrained_layout=False)
-    fig.subplots_adjust(left=.055, right=.985, bottom=.12, top=.94, wspace=1.35, hspace=.55)
-    gs = fig.add_gridspec(2, 12, height_ratios=[1.05, 1])
+    fig = plt.figure(figsize=(8.4, 7.15), constrained_layout=False)
+    fig.subplots_adjust(left=.055, right=.985, bottom=.075, top=.965, wspace=1.35, hspace=.58)
+    gs = fig.add_gridspec(3, 12, height_ratios=[1.0, 1.0, 1.05])
     species = ["GS", "PO", "TS"]
     for i, species_name in enumerate(species):
         path = sorted((filament_root / species_name / "image").glob("*.jpg"))[0]
@@ -252,14 +252,52 @@ def figure4(filament_root: Path, cartilage_root: Path) -> None:
     ax.invert_yaxis(); ax.set_xlabel("Spearman ρ with medial HHGS")
     ax.set_xlim(-.62, .08)
 
+    source = review.with_name(review.name.replace("_proposal.png", "_image.png"))
     ax = fig.add_subplot(gs[1, 9:]); panel(ax, "f")
-    statuses = ["physical scale", "cross-species", "cartilage ROI", "clinical use"]
-    levels = [1, .55, .25, 0]
-    colors = [TEAL, AMBER, RED, MID]
-    ax.barh(range(4), levels, color=colors, height=.5)
-    ax.set_yticks(range(4), statuses, fontsize=6.2)
-    ax.set_xlim(0, 1.02); ax.set_xticks([0, .5, 1], ["absent", "exploratory", "supported"], fontsize=6)
-    ax.invert_yaxis()
+    ax.imshow(Image.open(source).convert("RGB")); ax.set_xticks([]); ax.set_yticks([])
+    for spine in ax.spines.values(): spine.set_visible(False)
+    ax.text(.02, .03, "source section", transform=ax.transAxes, fontsize=7,
+            color="white", bbox={"facecolor": INK, "edgecolor": "none", "pad": 2})
+
+    test_name = (nuclei_root / "metadata" / "metadata" / "test.txt").read_text().splitlines()[0].strip()
+    image_path = nuclei_root / "images" / "images" / f"{Path(test_name).stem}.tif"
+    mask_path = nuclei_root / "masks" / "masks" / test_name
+    with Image.open(image_path) as opened:
+        gray = opened.convert("I")
+        scale = min(1.0, 256 / max(gray.size))
+        size = tuple(int(round(v * scale)) for v in gray.size)
+        nuclei_image = np.asarray(gray.resize(size, Image.Resampling.BILINEAR), dtype=float)
+    nuclei_image = np.clip((nuclei_image - np.percentile(nuclei_image, 1)) /
+                           max(np.percentile(nuclei_image, 99.8) - np.percentile(nuclei_image, 1), 1e-12), 0, 1)
+    with Image.open(mask_path) as opened:
+        nuclei_mask = np.any(np.asarray(opened.convert("RGB").resize(size, Image.Resampling.NEAREST)) != 0, axis=-1)
+    relative = 1 / max(nuclei_image.shape)
+    scales = tuple(relative * value for value in (2, 4, 8))
+    either = np.max(np.stack(hessian_morphology_maps(
+        nuclei_image, spacing_um=(relative, relative), scales_um=scales, polarity="either")["blob"]), axis=0)
+    bright = np.max(np.stack(hessian_morphology_maps(
+        nuclei_image, spacing_um=(relative, relative), scales_um=scales, polarity="bright")["blob"]), axis=0)
+    visual_fields = [(nuclei_image, "Hoechst", "gray"), (nuclei_mask, "manual", "gray"),
+                     (either, "sign-free", "magma"), (bright, "bright", "magma")]
+    for i, (field, title, cmap) in enumerate(visual_fields):
+        ax = fig.add_subplot(gs[2, i * 2:(i + 1) * 2])
+        ax.imshow(field, cmap=cmap); ax.set_xticks([]); ax.set_yticks([])
+        ax.set_title(title, fontsize=7, pad=2)
+        for spine in ax.spines.values(): spine.set_visible(False)
+        if i == 0: panel(ax, "g")
+
+    nuclei_receipt = json.loads((ROOT / "outputs/external-nuclei-v1_1/external_nuclei_validation.json").read_text())
+    ax = fig.add_subplot(gs[2, 8:]); panel(ax, "h")
+    methods = ["Hessian", "LoG", "intensity"]
+    ap = [nuclei_receipt["summary"][f"{key}_average_precision"]["mean"]
+          for key in ("nostos_blob", "multiscale_log", "intensity")]
+    auc = [nuclei_receipt["summary"][f"{key}_roc_auc"]["mean"]
+           for key in ("nostos_blob", "multiscale_log", "intensity")]
+    x = np.arange(3); width = .34
+    ax.bar(x - width / 2, ap, width, color=TEAL, label="AP")
+    ax.bar(x + width / 2, auc, width, color=BLUE, label="AUC")
+    ax.set_xticks(x, methods, fontsize=6.5); ax.set_ylim(.7, 1.01)
+    ax.set_ylabel("test-set localization"); ax.legend(ncol=2, fontsize=6.5, loc="lower right")
     save(fig, "figure_4_cross_domain_boundaries")
 
 
@@ -270,7 +308,8 @@ if __name__ == "__main__":
     parser.add_argument("--bone-root", type=Path, required=True)
     parser.add_argument("--filament-root", type=Path, required=True)
     parser.add_argument("--cartilage-review-images", type=Path, required=True)
+    parser.add_argument("--nuclei-root", type=Path, required=True)
     args = parser.parse_args()
     figure2()
     figure3(args.bone_root)
-    figure4(args.filament_root, args.cartilage_review_images)
+    figure4(args.filament_root, args.cartilage_review_images, args.nuclei_root)
