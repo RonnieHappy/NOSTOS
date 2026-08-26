@@ -27,6 +27,9 @@ SCRIPTS = (
     "fetch_bbbc007_reference.ps1",
     "fetch_bbbc020_reference.ps1",
     "run_response_benchmark_v2.py",
+    "run_canonical_development.py",
+    "run_canonical_confirmation_v3.py",
+    "run_stability_weighting_development.py",
 )
 DOCS = (
     "NOSTOS0_REPRODUCIBILITY_AND_METHODS.md",
@@ -44,6 +47,7 @@ DOCS = (
     "BBBC020_PROSPECTIVE_PROTOCOL.md",
     "NOSTOS0_RESPONSE_GEOMETRY_BENCHMARK_V2_PROTOCOL.md",
     "NOSTOS0_ARCHITECTURE_DECISION_ROTATION_QUOTIENT.md",
+    "NOSTOS0_CANONICAL_GEOMETRY_CONFIRMATION_V3_PROTOCOL.md",
 )
 EVIDENCE_INDEX = Path("outputs/nostos0-evidence-bundle-v4/evidence_index.json")
 TEXT_SUFFIXES = {".py", ".md", ".toml", ".txt", ".json", ".csv", ".yml", ".yaml", ".cff", ".ps1"}

@@ -32,11 +32,11 @@ def main() -> None:
     model.fit(x[train], labels[train])
     prediction = model.predict(x[test])
     payload = {
-        "protocol_version": "nostos-kymatio-comparator/1.0",
+        "protocol_version": "nostos-kymatio-comparator/1.1",
         "implementation": "kymatio.numpy.Scattering2D",
         "kymatio_version": importlib.metadata.version("kymatio"),
         "configuration": {"J": 3, "L": 8, "max_order": 2, "aggregation": "spatial_mean"},
-        "preprocessing": "center crop/pad to 192x192; per-image z normalization",
+        "preprocessing": f"input shape {images.shape[1]}x{images.shape[2]}; per-image z normalization",
         "classifier": "StandardScaler + linear SVC(C=1.0)",
         "balanced_accuracy": float(balanced_accuracy_score(labels[test], prediction)),
         "truth": labels[test].tolist(),

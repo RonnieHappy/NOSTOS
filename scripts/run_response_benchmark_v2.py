@@ -27,7 +27,8 @@ def main() -> None:
         payload = {"dataset": str(path.resolve())}
     elif args.command == "internal":
         result = run_internal(args.dataset, args.output)
-        payload = {"output": str((args.output / "internal_results.json").resolve()), "results": result["results"]}
+        payload = {"output": str((args.output / "internal_results.json").resolve()),
+                   "accuracies": {row["representation"]: row["balanced_accuracy"] for row in result["results"]}}
     else:
         result = finalize(args.internal, args.kymatio, args.pyradiomics, args.output)
         payload = {"status": result["status"], "output": str((args.output / "response_geometry_benchmark_v2.json").resolve()), "gates": result["success_gates"]}
