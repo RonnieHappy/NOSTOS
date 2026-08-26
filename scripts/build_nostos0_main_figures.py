@@ -52,6 +52,9 @@ def figure2() -> None:
     bench = json.loads((ROOT / "outputs/nostos0-benchmark-v1/representation_benchmark.json").read_text())
     kym = json.loads((ROOT / "outputs/nostos0-benchmark-v1/kymatio_benchmark.json").read_text())
     pyr = json.loads((ROOT / "outputs/nostos0-benchmark-v1/pyradiomics_benchmark.json").read_text())
+    bench_v2 = json.loads((ROOT / "outputs/nostos0-response-benchmark-v2/response_geometry_benchmark_v2.json").read_text())
+    bench_v3 = json.loads((ROOT / "outputs/nostos0-canonical-confirmation-v3/canonical_confirmation_v3.json").read_text())
+    selective = json.loads((ROOT / "outputs/nostos0-selective-fft-confirmation-v1/selective_fft_confirmation.json").read_text())
 
     fig = plt.figure(figsize=(7.2, 5.0), constrained_layout=True)
     gs = fig.add_gridspec(3, 12, height_ratios=[1.15, 1.0, 1.15])
@@ -102,29 +105,34 @@ def figure2() -> None:
     ax.set_xticks(range(len(curve)))
 
     ax = fig.add_subplot(gs[2, :7]); panel(ax, "e")
-    values = {
-        "conventional": next(r["balanced_accuracy"] for r in bench["results"] if r["representation"] == "conventional_scalar"),
-        "naive": next(r["balanced_accuracy"] for r in bench["results"] if r["representation"] == "naive_response_summaries"),
-        "NOSTOS": next(r["balanced_accuracy"] for r in bench["results"] if r["representation"] == "nostos_response_curves"),
-        "Kymatio": kym["balanced_accuracy"],
-        "PyRadiomics": pyr["synthetic_benchmark"]["balanced_accuracy"],
-    }
-    labels, vals = list(values), list(values.values())
-    colors = [MID, MID, BLUE, RED, TEAL]
-    ax.barh(range(len(labels)), vals, color=colors, height=.58, edgecolor="white")
-    ax.set_yticks(range(len(labels)), labels)
-    ax.set_xlim(.82, 1.015); ax.set_xlabel("held-out balanced accuracy")
-    ax.invert_yaxis()
-    for y, value in enumerate(vals): ax.text(value + .004, y, f"{value:.3f}", va="center", fontsize=7)
+    def accuracy(receipt, name):
+        rows = receipt.get("results", receipt.get("internal_results", []))
+        return next(row["balanced_accuracy"] for row in rows if row["representation"] == name)
+    performance = np.asarray([
+        [accuracy(bench, "conventional_scalar"), accuracy(bench, "naive_response_summaries"), accuracy(bench, "nostos_response_curves"), kym["balanced_accuracy"], pyr["synthetic_benchmark"]["balanced_accuracy"]],
+        [accuracy(bench_v2, "conventional_scalar"), accuracy(bench_v2, "matched_collapsed_summaries"), accuracy(bench_v2, "nostos_response_geometry"), bench_v2["external_comparators"]["kymatio"]["balanced_accuracy"], bench_v2["external_comparators"]["pyradiomics"]["synthetic_benchmark"]["balanced_accuracy"]],
+        [accuracy(bench_v3, "conventional_scalar"), accuracy(bench_v3, "matched_collapsed_summaries"), accuracy(bench_v3, "canonical_response_geometry"), bench_v3["external_comparators"]["kymatio"]["balanced_accuracy"], bench_v3["external_comparators"]["pyradiomics"]["synthetic_benchmark"]["balanced_accuracy"]],
+    ])
+    ax.imshow(performance, cmap="magma", vmin=.25, vmax=1, aspect="auto")
+    ax.set_yticks(range(3), ["v1  n=16", "v2  n=240", "v3  n=300"], fontsize=6.5)
+    ax.set_xticks(range(5), ["scalar", "collapsed", "NOSTOS", "Kymatio", "radiomics"], rotation=28, ha="right", fontsize=6.2)
+    for row in range(3):
+        for col in range(5):
+            ax.text(col, row, f"{performance[row,col]:.2f}", ha="center", va="center", fontsize=6.2,
+                    color="white" if performance[row,col] < .72 else INK)
+    ax.tick_params(length=0); [spine.set_visible(False) for spine in ax.spines.values()]
 
     ax = fig.add_subplot(gs[2, 7:]); panel(ax, "f")
-    ablations = [(r["representation"].replace("nostos_without_", "−"), r["balanced_accuracy"])
-                 for r in bench["results"] if r["representation"].startswith("nostos_without_")]
-    names, vals = zip(*ablations)
-    ax.bar(range(len(vals)), vals, color=[RED if v < 1 else BLUE for v in vals], width=.65)
-    ax.set_xticks(range(len(names)), names, rotation=35, ha="right", fontsize=6.5)
-    ax.set_ylim(.82, 1.02); ax.set_ylabel("balanced accuracy")
-    ax.axhline(1, color=INK, lw=.7, ls=":")
+    rows = sorted(selective["rows"], key=lambda row: row["score"])
+    coverage = np.arange(1, len(rows) + 1) / len(rows)
+    risk = np.cumsum([row["invalid"] for row in rows]) / np.arange(1, len(rows) + 1)
+    ax.plot(coverage, risk, color=BLUE, lw=1.7)
+    summary = selective["summary"]
+    ax.scatter([summary["coverage"]], [summary["selective_risk"]], s=38, color=TEAL, edgecolor="white", zorder=4, label="frozen")
+    ax.scatter([summary["legacy_coverage"]], [summary["legacy_risk"]], s=30, color=RED, marker="x", zorder=4, label="legacy")
+    ax.axhline(.08, color=INK, lw=.7, ls=":")
+    ax.set(xlabel="coverage", ylabel="invalid risk", xlim=(0,1.02), ylim=(-.005,.18))
+    ax.legend(fontsize=6.3, loc="upper left")
     save(fig, "figure_2_synthetic_validation")
 
 

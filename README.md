@@ -93,6 +93,18 @@ Both independent transfers produced strong localization but failed their prespec
 superiority gate against Laplacian-of-Gaussian. NOSTOS therefore presents the Hessian
 field as an interpretable coordinate, not a superior or novel segmentation algorithm.
 
+## Selective FFT measurement
+
+The frozen analytic confirmation evaluates whether self-perturbation probes can detect
+unsupported orientation and wavelength estimates:
+
+```powershell
+uv run python scripts/run_selective_fft_confirmation.py --output outputs/nostos0-selective-fft-confirmation-v1
+```
+
+The confirmation retains every accepted and abstained case, exact truth error, coverage,
+selective risk, Wilson interval, legacy-QC comparison and prespecified gate.
+
 The polarity-aware Hessian field improves over a multiscale Laplacian baseline but remains inferior to raw Hoechst intensity. Because polarity was refined after the initial sign-agnostic result on the same test split, this result is explicitly post-test development and requires prospective confirmation on another acquisition.
 
 ## Cartilage-domain response validation
