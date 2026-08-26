@@ -17,7 +17,7 @@ ROOT_FILES = (
     ".gitignore", "README.md", "LICENSE", "CITATION.cff", "pyproject.toml",
     "uv.lock", "requirements-lock.txt", "requirements-comparators.lock.txt",
 )
-TREES = ("src", "tests", "configs")
+TREES = ("src", "tests", "configs", ".github")
 SCRIPTS = (
     "benchmark_kymatio.py", "benchmark_pyradiomics.py",
     "audit_comparator_environments.py",
@@ -34,12 +34,12 @@ DOCS = (
 )
 EVIDENCE_INDEX = Path("outputs/nostos0-evidence-bundle-v1/evidence_index.json")
 TEXT_SUFFIXES = {".py", ".md", ".toml", ".txt", ".json", ".csv", ".yml", ".yaml", ".cff", ".ps1"}
-SKIP_PARTS = {"__pycache__", ".pytest_cache", ".mypy_cache"}
+SKIP_PARTS = {"__pycache__", ".pytest_cache", ".mypy_cache", "nostos.egg-info"}
 SECRET_PATTERNS = (
     re.compile(r"s2k-[A-Za-z0-9_-]{20,}"),
     re.compile(r"(?i)(api[_-]?key|secret|token)\s*[:=]\s*['\"][^'\"]{12,}['\"]"),
 )
-PRIVATE_PATH = re.compile(r"(?i)(?:[A-Z]:\\Users\\[^\\\s]+|<DATA_ROOT>)")
+PRIVATE_PATH = re.compile(r"(?i)(?:[A-Z]:\\Users\\[^\\\s]+|E:\\NOSTOS)")
 
 
 def _sha256(path: Path) -> str:

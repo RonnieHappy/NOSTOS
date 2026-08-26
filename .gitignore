@@ -4,6 +4,7 @@
 .venv-radiomics39/
 .venv-radiomics37/
 __pycache__/
+*.egg-info/
 *.py[cod]
 .pytest_cache/
 

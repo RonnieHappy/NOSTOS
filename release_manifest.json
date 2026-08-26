@@ -3,12 +3,17 @@
   "software_version": "0.3.0",
   "status": "pass",
   "data_included": false,
-  "file_count": 177,
+  "file_count": 172,
   "files": [
     {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 670,
+      "sha256": "7b957e4fd8b7d57b50fc5f3d24e0fde99fb500251b6f7d6ff12ada6a60fddf20"
+    },
+    {
       "path": ".gitignore",
-      "bytes": 298,
-      "sha256": "eefa0e51175c02513dc1fe5c5aad2b9967484c233f3ab0b5aa955d8ec966e08e"
+      "bytes": 310,
+      "sha256": "1d1ae2f538b14db165c74f9136f9d2cfef7cb482072b81061bcc3f9aad88b2ca"
     },
     {
       "path": "CITATION.cff",
@@ -417,8 +422,8 @@
     },
     {
       "path": "src/nostos/release.py",
-      "bytes": 7525,
-      "sha256": "2b3b5f2c2f89e38218e65f0dbae3361b65a2d5f1bc5262fdc3156c6812495fc5"
+      "bytes": 7555,
+      "sha256": "4e834a102035a2ccac91accc0a918cb637e4229384e3f26f9e19a4ce872bb4d5"
     },
     {
       "path": "src/nostos/reporting/__init__.py",
@@ -579,36 +584,6 @@
       "path": "src/nostos/validation/phantoms.py",
       "bytes": 5226,
       "sha256": "3dfc82b57fbe3af283dbd4f7a92bf35e4a9535bf77ac41af2bb0dcf0fec89327"
-    },
-    {
-      "path": "src/nostos.egg-info/dependency_links.txt",
-      "bytes": 1,
-      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
-    },
-    {
-      "path": "src/nostos.egg-info/entry_points.txt",
-      "bytes": 1963,
-      "sha256": "c293c12ed6b6ca048c45cfaa15fe856216f6cb1f4f69797f66524bc79724135f"
-    },
-    {
-      "path": "src/nostos.egg-info/PKG-INFO",
-      "bytes": 658,
-      "sha256": "1c240e22ee992bd8e080dbe5bf260cee902a1c145ac10c5fdb2a5ed234249e92"
-    },
-    {
-      "path": "src/nostos.egg-info/requires.txt",
-      "bytes": 202,
-      "sha256": "139bcf2a2cb06fd412646ebd82ac04883bd9cd8ebc98602899502b38d7339118"
-    },
-    {
-      "path": "src/nostos.egg-info/SOURCES.txt",
-      "bytes": 4584,
-      "sha256": "c4c63f759bab7daf5a8be87299523ea99285a3e9aac678332c1df1aecc65a543"
-    },
-    {
-      "path": "src/nostos.egg-info/top_level.txt",
-      "bytes": 7,
-      "sha256": "576646d8ff7824b3ec19736884ad52d43a5b17c6fdafbe71ebc8317b22df361f"
     },
     {
       "path": "tests/test_ablation_reporting.py",
