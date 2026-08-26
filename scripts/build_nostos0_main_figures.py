@@ -55,13 +55,16 @@ def figure2() -> None:
     bench_v2 = json.loads((ROOT / "outputs/nostos0-response-benchmark-v2/response_geometry_benchmark_v2.json").read_text())
     bench_v3 = json.loads((ROOT / "outputs/nostos0-canonical-confirmation-v3/canonical_confirmation_v3.json").read_text())
     selective = json.loads((ROOT / "outputs/nostos0-selective-fft-confirmation-v1/selective_fft_confirmation.json").read_text())
+    shg = json.loads((ROOT / "outputs/nostos0-selective-shg-transfer-v1/selective_shg_transfer.json").read_text())
+    consensus = json.loads((ROOT / "outputs/nostos0-consensus-reliability-v1/consensus_reliability.json").read_text())
 
-    fig = plt.figure(figsize=(7.2, 5.0), constrained_layout=True)
-    gs = fig.add_gridspec(3, 12, height_ratios=[1.15, 1.0, 1.15])
+    fig = plt.figure(figsize=(7.2, 6.4))
+    gs = fig.add_gridspec(3, 14, height_ratios=[1.15, 1.0, 1.15], hspace=0.72, wspace=0.62)
     constructs = ["orientation", "blob", "tube", "roughness", "network", "heterogeneity"]
     cmaps = ["gray", "magma", "magma", "gray", "viridis", "cividis"]
     for i, (name, cmap) in enumerate(zip(constructs, cmaps, strict=True)):
-        ax = fig.add_subplot(gs[0, i * 2:(i + 1) * 2])
+        start = round(i * 14 / 6); stop = round((i + 1) * 14 / 6)
+        ax = fig.add_subplot(gs[0, start:stop])
         phantom = generate_phantom(name)
         ax.imshow(phantom.image, cmap=cmap, interpolation="nearest")
         ax.set_xticks([]); ax.set_yticks([])
@@ -69,7 +72,7 @@ def figure2() -> None:
         for spine in ax.spines.values(): spine.set_visible(False)
         if i == 0: panel(ax, "a")
 
-    ax = fig.add_subplot(gs[1, :5]); panel(ax, "b")
+    ax = fig.add_subplot(gs[1, :6]); panel(ax, "b")
     perturb = validation["perturbation_results"]
     names = [p["perturbation"]["kind"].replace("partial_volume", "partial\nvolume") for p in perturb]
     angular = np.asarray([p["errors"]["circular_angular_error_degrees"] for p in perturb])
@@ -77,12 +80,12 @@ def figure2() -> None:
     x = np.arange(len(names))
     ax.plot(x, angular, "o-", color=BLUE, lw=1.4, ms=3, label="angle (°)")
     ax.plot(x, scale, "s-", color=AMBER, lw=1.4, ms=3, label="scale (%)")
-    ax.set_xticks(x, names, rotation=40, ha="right", fontsize=6.5)
+    ax.set_xticks(x, names, rotation=34, ha="right", fontsize=5.8)
     ax.set_ylabel("error")
     ax.legend(ncol=2, loc="upper left", fontsize=7)
     ax.axhline(0, color=PALE, lw=0.7, zorder=0)
 
-    ax = fig.add_subplot(gs[1, 5:9]); panel(ax, "c")
+    ax = fig.add_subplot(gs[1, 6:10]); panel(ax, "c")
     modules = ["tensor", "hessian", "geometry", "network", "spatial"]
     pert_names = ["rotation", "resampling", "blur", "noise", "contrast"]
     status = np.full((len(modules), len(pert_names)), np.nan)
@@ -97,11 +100,12 @@ def figure2() -> None:
     ax.tick_params(length=0)
     for spine in ax.spines.values(): spine.set_visible(False)
 
-    ax = fig.add_subplot(gs[1, 9:]); panel(ax, "d")
+    ax = fig.add_subplot(gs[1, 10:]); panel(ax, "d")
     curve = validation["module_gates"]["network"]["surviving_fraction"]
     ax.plot(range(len(curve)), curve, "o-", color=TEAL, lw=2, ms=4)
     ax.fill_between(range(len(curve)), curve, color=TEAL, alpha=.12)
-    ax.set(xlabel="erosion step", ylabel="surviving fraction", ylim=(-.03, 1.05))
+    ax.set(xlabel="erosion step", ylim=(-.03, 1.05))
+    ax.set_title("survival", fontsize=6.5, pad=2)
     ax.set_xticks(range(len(curve)))
 
     ax = fig.add_subplot(gs[2, :7]); panel(ax, "e")
@@ -122,7 +126,7 @@ def figure2() -> None:
                     color="white" if performance[row,col] < .72 else INK)
     ax.tick_params(length=0); [spine.set_visible(False) for spine in ax.spines.values()]
 
-    ax = fig.add_subplot(gs[2, 7:]); panel(ax, "f")
+    ax = fig.add_subplot(gs[2, 7:11]); panel(ax, "f")
     rows = sorted(selective["rows"], key=lambda row: row["score"])
     coverage = np.arange(1, len(rows) + 1) / len(rows)
     risk = np.cumsum([row["invalid"] for row in rows]) / np.arange(1, len(rows) + 1)
@@ -131,8 +135,18 @@ def figure2() -> None:
     ax.scatter([summary["coverage"]], [summary["selective_risk"]], s=38, color=TEAL, edgecolor="white", zorder=4, label="frozen")
     ax.scatter([summary["legacy_coverage"]], [summary["legacy_risk"]], s=30, color=RED, marker="x", zorder=4, label="legacy")
     ax.axhline(.08, color=INK, lw=.7, ls=":")
-    ax.set(xlabel="coverage", ylabel="invalid risk", xlim=(0,1.02), ylim=(-.005,.18))
+    ax.set(xlabel="coverage", xlim=(0,1.02), ylim=(-.005,.18))
     ax.legend(fontsize=6.3, loc="upper left")
+
+    ax = fig.add_subplot(gs[2, 11:]); panel(ax, "g")
+    risks = [summary["selective_risk"], shg["summary"]["selective_risk"]]
+    ax.bar([0, 1], risks, width=.62, color=[TEAL, RED], edgecolor="white", linewidth=.6)
+    ax.scatter([2], [0], marker="x", s=34, linewidth=1.5, color=RED, zorder=3)
+    ax.text(2, .018, "0%\ncoverage", ha="center", va="bottom", fontsize=5.7, color=RED)
+    ax.axhline(.15, color=INK, lw=.7, ls=":")
+    ax.set_xticks([0, 1, 2], ["analytic", "SHG", "consensus"], rotation=30, ha="right", fontsize=5.8)
+    ax.set_ylim(0, .43)
+    ax.tick_params(axis="y", labelsize=6)
     save(fig, "figure_2_synthetic_validation")
 
 

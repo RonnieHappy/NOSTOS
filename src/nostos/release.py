@@ -32,6 +32,9 @@ SCRIPTS = (
     "run_stability_weighting_development.py",
     "run_selective_fft_development.py",
     "run_selective_fft_confirmation.py",
+    "run_selective_filament_transfer.py",
+    "run_selective_shg_transfer.py",
+    "run_consensus_reliability.py",
 )
 DOCS = (
     "NOSTOS0_REPRODUCIBILITY_AND_METHODS.md",
@@ -51,8 +54,11 @@ DOCS = (
     "NOSTOS0_ARCHITECTURE_DECISION_ROTATION_QUOTIENT.md",
     "NOSTOS0_CANONICAL_GEOMETRY_CONFIRMATION_V3_PROTOCOL.md",
     "NOSTOS0_SELECTIVE_FFT_CONFIRMATION_PROTOCOL.md",
+    "NOSTOS0_FILAMENT_SELECTIVE_TRANSFER_PROTOCOL.md",
+    "NOSTOS0_SHG_SELECTIVE_TRANSFER_PROTOCOL.md",
+    "NOSTOS0_CONSENSUS_RELIABILITY_PROTOCOL.md",
 )
-EVIDENCE_INDEX = Path("outputs/nostos0-evidence-bundle-v4/evidence_index.json")
+EVIDENCE_INDEX = Path("outputs/nostos0-evidence-bundle-v6/evidence_index.json")
 TEXT_SUFFIXES = {".py", ".md", ".toml", ".txt", ".json", ".csv", ".yml", ".yaml", ".cff", ".ps1"}
 SKIP_PARTS = {"__pycache__", ".pytest_cache", ".mypy_cache", "nostos.egg-info"}
 SECRET_PATTERNS = (

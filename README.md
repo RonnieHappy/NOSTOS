@@ -105,6 +105,30 @@ uv run python scripts/run_selective_fft_confirmation.py --output outputs/nostos0
 The confirmation retains every accepted and abstained case, exact truth error, coverage,
 selective risk, Wilson interval, legacy-QC comparison and prespecified gate.
 
+The unchanged rule can be audited against external filament images and manual masks:
+
+```powershell
+uv run python scripts/run_selective_filament_transfer.py --data-root <MYCELIUMSEG_ROOT> --output outputs/nostos0-selective-filament-transfer-v1
+```
+
+This frozen transfer failed because branching networks rarely supplied a defined global mask axis (2/30 eligible). The failure is retained to prevent an inappropriate global-orientation claim.
+
+A fit-for-purpose transfer uses only the externally supplied SHG collagen test split and its manual centerlines:
+
+```powershell
+uv run python scripts/run_selective_shg_transfer.py --dataset-root <COLLAGEN_CENTERLINES_ROOT> --output outputs/nostos0-selective-shg-transfer-v1
+```
+
+This prospective transfer also failed: 183/199 patches were reference-eligible, but 95.1% coverage carried 33.3% selective risk and invalid-detection AUC was 0.677. The result forbids extending the synthetic abstention claim to biological SHG.
+
+The subsequent estimator-consensus redesign is reproducible with:
+
+```powershell
+uv run python scripts/run_consensus_reliability.py --dataset-root <COLLAGEN_CENTERLINES_ROOT> --output outputs/nostos0-consensus-reliability-v1
+```
+
+It also failed prospectively: development AUC was 0.740 and no operating point met the frozen risk/coverage requirement, so the held-out group confirmation correctly reported zero coverage rather than manufacturing a favorable threshold.
+
 The polarity-aware Hessian field improves over a multiscale Laplacian baseline but remains inferior to raw Hoechst intensity. Because polarity was refined after the initial sign-agnostic result on the same test split, this result is explicitly post-test development and requires prospective confirmation on another acquisition.
 
 ## Cartilage-domain response validation
