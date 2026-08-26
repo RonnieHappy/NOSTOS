@@ -1,0 +1,14 @@
+{
+  "protocol_version": "nostos-cleanroom-verification/1.0",
+  "status": "pass",
+  "release_tag": "v0.3.0-rc13",
+  "archive": "nostos-0.3.0-release-candidate.zip",
+  "archive_sha256": "9425373fae8d26b7b9d3b5b417f8315c36a0703488cd902c09f9b1f36a444807",
+  "python": "3.13.13",
+  "environment_command": "uv sync --frozen --extra dev",
+  "test_command": "uv run pytest -q",
+  "tests_passed": 143,
+  "tests_skipped": 2,
+  "tests_failed": 0,
+  "platform_note": "UV_LINK_MODE=copy was used to avoid a Windows cloud-filesystem hardlink limitation; package contents and lockfile were unchanged."
+}
