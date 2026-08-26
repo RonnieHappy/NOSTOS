@@ -129,6 +129,15 @@ uv run python scripts/run_consensus_reliability.py --dataset-root <COLLAGEN_CENT
 
 It also failed prospectively: development AUC was 0.740 and no operating point met the frozen risk/coverage requirement, so the held-out group confirmation correctly reported zero coverage rather than manufacturing a favorable threshold.
 
+Local centerline orientation is evaluated separately from the failed global endpoint:
+
+```powershell
+uv run python scripts/run_local_orientation_validation.py --dataset-root <COLLAGEN_CENTERLINES_ROOT> --output outputs/nostos0-local-orientation-v1
+uv run python scripts/run_local_orientation_external_test.py --dataset-root <COLLAGEN_CENTERLINES_ROOT> --output outputs/nostos0-local-orientation-external-v1
+```
+
+Adaptive scale selection failed development and remains in the ledger. The subsequently frozen scale-declared sigma-2 endpoint passed all eight external-test gates on 19,657 annotated tangent pixels from 115 source groups (median axial error 6.72°, source-group bootstrap 95% interval 6.24–7.25°, axial alignment 0.832). The test split had previously been opened for a distinct global endpoint, so this is endpoint-new evidence rather than pristine dataset-level confirmation.
+
 The polarity-aware Hessian field improves over a multiscale Laplacian baseline but remains inferior to raw Hoechst intensity. Because polarity was refined after the initial sign-agnostic result on the same test split, this result is explicitly post-test development and requires prospective confirmation on another acquisition.
 
 ## Cartilage-domain response validation

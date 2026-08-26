@@ -15,6 +15,8 @@ from scipy.ndimage import distance_transform_edt
 
 from nostos.features.response_modules import hessian_morphology_maps, maximal_sphere_local_thickness
 from nostos.validation.phantoms import generate_phantom
+from nostos.validation.local_orientation import _reference_tangents, _tensor_fields
+from nostos.validation.selective_shg_transfer import _load
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "figures" / "nostos0"
@@ -209,9 +211,7 @@ def figure3(data_root: Path) -> None:
     save(fig, "figure_3_bone_validation")
 
 
-def figure4(filament_root: Path, cartilage_root: Path, nuclei_root: Path) -> None:
-    receipt = json.loads((ROOT / "outputs/external-filament-v1/external_filament_validation.json").read_text())
-    comparison = receipt["summary"]["representation_comparison"]
+def figure4(collagen_root: Path, cartilage_root: Path, nuclei_root: Path) -> None:
     assoc = pd.read_csv(ROOT / "outputs/cartilage-ablation-analysis-v1_1/ablation_associations.csv")
     selected = assoc[(assoc.site == "Medial") & (assoc.outcome == "meanhhgsscore")]
     order = [
@@ -226,34 +226,32 @@ def figure4(filament_root: Path, cartilage_root: Path, nuclei_root: Path) -> Non
     fig = plt.figure(figsize=(8.4, 7.15), constrained_layout=False)
     fig.subplots_adjust(left=.055, right=.985, bottom=.075, top=.965, wspace=1.35, hspace=.58)
     gs = fig.add_gridspec(3, 12, height_ratios=[1.0, 1.0, 1.05])
-    species = ["GS", "PO", "TS"]
-    for i, species_name in enumerate(species):
-        path = sorted((filament_root / species_name / "image").glob("*.jpg"))[0]
-        image = np.asarray(Image.open(path).convert("RGB"))
-        ax = fig.add_subplot(gs[0, i * 2:(i + 1) * 2])
-        ax.imshow(image); ax.set_xticks([]); ax.set_yticks([])
-        ax.set_title(species_name, fontsize=8, pad=2)
+    test_root = collagen_root / "final_train_test" / "test"
+    local_receipt = json.loads((ROOT / "outputs/nostos0-local-orientation-external-v1/local_orientation_external_test.json").read_text())
+    representative = max(local_receipt["cases"], key=lambda row: row["eligible_pixels"])
+    number = str(representative["patch"])
+    shg = _load(test_root / "images" / f"{number}.png")
+    label = _load(test_root / "labels" / f"{number}.png", nearest=True)
+    coordinates, reference_angles, _ = _reference_tangents(label)
+    angle_fields, coherence_fields, _ = _tensor_fields(shg)
+    yy, xx = coordinates[:, 0], coordinates[:, 1]
+    measured_angles = angle_fields[1, yy, xx]
+    measured_coherence = coherence_fields[1, yy, xx]
+    displays = [(reference_angles, np.ones_like(reference_angles), "manual tangent"),
+                (measured_angles, measured_coherence, "NOSTOS local field")]
+
+    ax = fig.add_subplot(gs[0, :4]); panel(ax, "a")
+    ax.imshow(shg, cmap="gray", vmin=0, vmax=np.percentile(shg, 99.5)); ax.set_xticks([]); ax.set_yticks([])
+    ax.set_title("SHG collagen", fontsize=8, pad=2)
+    for spine in ax.spines.values(): spine.set_visible(False)
+
+    for index, (angles, alpha, title) in enumerate(displays):
+        ax = fig.add_subplot(gs[0, 4 + index * 4:8 + index * 4]); panel(ax, chr(ord("b") + index))
+        ax.imshow(shg, cmap="gray", vmin=0, vmax=np.percentile(shg, 99.5), alpha=.72)
+        ax.scatter(xx, yy, c=angles, cmap="twilight", vmin=0, vmax=180, s=4.2,
+                   alpha=np.clip(alpha, .55, 1), linewidths=0)
+        ax.set_xticks([]); ax.set_yticks([]); ax.set_title(title, fontsize=8, pad=2)
         for spine in ax.spines.values(): spine.set_visible(False)
-        if i == 0: panel(ax, "a")
-
-    ax = fig.add_subplot(gs[0, 6:9]); panel(ax, "b")
-    keys = ["nostos_response_geometry", "conventional_scalar", "naive_block_summaries"]
-    vals = [comparison[k] for k in keys]
-    ax.barh(range(3), vals, color=[BLUE, MID, MID], height=.55)
-    ax.set_yticks(range(3), ["response", "scalar", "summary"], fontsize=6.5)
-    ax.set_xlim(.5, .74); ax.set_xlabel("balanced accuracy")
-    ax.invert_yaxis()
-    for y, value in enumerate(vals): ax.text(value - .004, y, f"{value:.3f}", va="center", ha="right", color="white", fontsize=6.5)
-
-    ax = fig.add_subplot(gs[0, 9:]); panel(ax, "c")
-    ablation_keys = [k for k in comparison if k.startswith("nostos_without_")]
-    ablation_vals = [comparison[k] for k in ablation_keys]
-    labels = [k.replace("nostos_without_", "−") for k in ablation_keys]
-    colors = [TEAL if v > comparison["nostos_response_geometry"] else RED for v in ablation_vals]
-    ax.bar(range(len(labels)), ablation_vals, color=colors, width=.65)
-    ax.axhline(comparison["nostos_response_geometry"], color=INK, ls=":", lw=.8)
-    ax.set_xticks(range(len(labels)), labels, rotation=42, ha="right", fontsize=5.7)
-    ax.set_ylim(.62, .75); ax.set_ylabel("balanced accuracy")
 
     review = sorted(cartilage_root.glob("*_proposal.png"))[0]
     ax = fig.add_subplot(gs[1, :5]); panel(ax, "d")
@@ -340,10 +338,10 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="Rebuild the four NOSTOS-0 main figures.")
     parser.add_argument("--bone-root", type=Path, required=True)
-    parser.add_argument("--filament-root", type=Path, required=True)
+    parser.add_argument("--collagen-root", type=Path, required=True)
     parser.add_argument("--cartilage-review-images", type=Path, required=True)
     parser.add_argument("--nuclei-root", type=Path, required=True)
     args = parser.parse_args()
     figure2()
     figure3(args.bone_root)
-    figure4(args.filament_root, args.cartilage_review_images, args.nuclei_root)
+    figure4(args.collagen_root, args.cartilage_review_images, args.nuclei_root)
