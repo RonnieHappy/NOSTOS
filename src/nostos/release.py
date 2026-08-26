@@ -24,6 +24,8 @@ SCRIPTS = (
     "audit_comparator_environments.py",
     "build_nostos0_main_figures.py",
     "fetch_bbbc039_reference.ps1",
+    "fetch_bbbc007_reference.ps1",
+    "fetch_bbbc020_reference.ps1",
 )
 DOCS = (
     "NOSTOS0_REPRODUCIBILITY_AND_METHODS.md",
@@ -37,8 +39,10 @@ DOCS = (
     "NOSTOS_METHODS_LANDSCAPE.md",
     "NOSTOS0_METHODS_ARTICLE.md",
     "NOSTOS0_EXTERNAL_REPLICATION_PROTOCOL.md",
+    "BBBC007_PROSPECTIVE_PROTOCOL.md",
+    "BBBC020_PROSPECTIVE_PROTOCOL.md",
 )
-EVIDENCE_INDEX = Path("outputs/nostos0-evidence-bundle-v1/evidence_index.json")
+EVIDENCE_INDEX = Path("outputs/nostos0-evidence-bundle-v4/evidence_index.json")
 TEXT_SUFFIXES = {".py", ".md", ".toml", ".txt", ".json", ".csv", ".yml", ".yaml", ".cff", ".ps1"}
 SKIP_PARTS = {"__pycache__", ".pytest_cache", ".mypy_cache", "nostos.egg-info"}
 SECRET_PATTERNS = (

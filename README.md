@@ -78,6 +78,21 @@ powershell -ExecutionPolicy Bypass -File scripts/fetch_bbbc039_reference.ps1 -De
 uv run nostos validate-nuclei --data <DATA_ROOT>/BBBC039v1 --output outputs/external-nuclei-v1_1
 ```
 
+BBBC039 informed the bright-object polarity refinement, so it is development evidence.
+Two separately frozen transfer protocols retain failures as well as successes:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/fetch_bbbc007_reference.ps1 -Destination <DATA_ROOT>/BBBC007v1
+uv run nostos validate-nuclei-confirmatory --data <DATA_ROOT>/BBBC007v1 --output outputs/external-nuclei-confirmatory-v1
+
+powershell -ExecutionPolicy Bypass -File scripts/fetch_bbbc020_reference.ps1 -Destination <DATA_ROOT>/BBBC020v1
+uv run nostos validate-nuclei-bbbc020 --data <DATA_ROOT>/BBBC020v1 --output outputs/external-nuclei-bbbc020-v1
+```
+
+Both independent transfers produced strong localization but failed their prespecified
+superiority gate against Laplacian-of-Gaussian. NOSTOS therefore presents the Hessian
+field as an interpretable coordinate, not a superior or novel segmentation algorithm.
+
 The polarity-aware Hessian field improves over a multiscale Laplacian baseline but remains inferior to raw Hoechst intensity. Because polarity was refined after the initial sign-agnostic result on the same test split, this result is explicitly post-test development and requires prospective confirmation on another acquisition.
 
 ## Cartilage-domain response validation
