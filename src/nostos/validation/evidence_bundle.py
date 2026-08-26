@@ -22,6 +22,7 @@ SPECS = (
     EvidenceSpec("kymatio", "outputs/nostos0-benchmark-v1/kymatio_benchmark.json", "upstream_comparator", "Official scattering comparator on the synthetic split."),
     EvidenceSpec("pyradiomics", "outputs/nostos0-benchmark-v1/pyradiomics_benchmark.json", "upstream_comparator", "IBSI first-order subset conformance and synthetic comparator."),
     EvidenceSpec("pyradiomics_ibsi_texture", "outputs/nostos0-ibsi-texture-conformance-v1/ibsi_texture_conformance.json", "upstream_comparator", "Official IBSI workbook audit of 75 definitionally matched 3-D texture features, with unsupported features retained as not comparable."),
+    EvidenceSpec("replication_reference", "outputs/nostos0-replication-reference-v1/replication_receipt.json", "software_conformance", "Author-operated reference execution of the public replication challenge; not independent replication."),
     EvidenceSpec("comparator_imports", "outputs/nostos0-comparator-conformance-v1/comparator_conformance.json", "software_conformance", "Pinned upstream implementations import in declared interpreters."),
     EvidenceSpec("bone", "outputs/external-bone-v1/external_bone_validation.json", "external_public_validation", "Thickness agreement in eight public micro-CT volumes."),
     EvidenceSpec("filament", "outputs/external-filament-v1/external_filament_validation.json", "external_public_exploratory", "Cross-species structural information; acquisition confounded."),

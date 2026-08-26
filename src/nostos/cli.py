@@ -221,6 +221,16 @@ def _build_evidence_bundle(args: argparse.Namespace) -> int:
     return 0 if payload["status"] == "complete_index" else 2
 
 
+def _replication_challenge(args: argparse.Namespace) -> int:
+    from nostos.validation.replication import run_replication_challenge
+
+    payload = run_replication_challenge(args.output.resolve(), args.project_root.resolve(), args.operator)
+    _json_print({"status": payload["status"],
+                 "output": str(args.output.resolve() / "replication_receipt.json"),
+                 "gates": payload["gates"]})
+    return 0 if payload["status"] == "pass" else 1
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="nostos",
@@ -297,6 +307,12 @@ def build_parser() -> argparse.ArgumentParser:
     evidence.add_argument("--project-root", type=Path, default=Path.cwd())
     evidence.add_argument("--output", type=Path, required=True)
     evidence.set_defaults(func=_build_evidence_bundle)
+
+    replication = commands.add_parser("replication-challenge", help="Run the data-free external replication challenge")
+    replication.add_argument("--output", type=Path, required=True)
+    replication.add_argument("--project-root", type=Path, default=Path.cwd())
+    replication.add_argument("--operator", default="anonymous")
+    replication.set_defaults(func=_replication_challenge)
     return parser
 
 

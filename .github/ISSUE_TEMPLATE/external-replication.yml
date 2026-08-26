@@ -1,0 +1,48 @@
+name: External replication result
+description: Submit an unedited NOSTOS replication-challenge package.
+title: "[replication] "
+labels: ["external-replication"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for independently running NOSTOS. This form records software execution only; it does not establish clinical validity.
+  - type: input
+    id: release
+    attributes:
+      label: Release tag or commit
+      placeholder: v0.3.0-rc5
+    validations:
+      required: true
+  - type: input
+    id: operator
+    attributes:
+      label: Operator or laboratory
+    validations:
+      required: true
+  - type: dropdown
+    id: independent
+    attributes:
+      label: Was this run performed without access to the author's environment or generated outputs?
+      options: ["Yes", "No"]
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, architecture and installation method.
+    validations:
+      required: true
+  - type: textarea
+    id: receipt
+    attributes:
+      label: Receipt and archive
+      description: Attach the unedited replication-result archive and paste replication_receipt.json or a link to it.
+    validations:
+      required: true
+  - type: textarea
+    id: warnings
+    attributes:
+      label: Warnings or deviations
+      description: Report every warning, failed command, assistance received or protocol deviation.

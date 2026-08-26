@@ -20,6 +20,16 @@ The upstream PyRadiomics comparison uses the pinned conda environment in `config
 
 Run `nostos build-evidence-bundle --project-root . --output outputs/nostos0-evidence-bundle-v1` to regenerate the SHA-256 index of all required evidence receipts. A complete index is an integrity result, not a Nature-readiness declaration.
 
+## External replication challenge
+
+An external user can test the frozen, data-free foundation with one command:
+
+```powershell
+uv run nostos replication-challenge --operator "laboratory-or-reviewer-name" --output replication-result
+```
+
+The command regenerates the synthetic truth validation, representation benchmark and module perturbation matrix, checks eight prespecified gates and writes `replication_receipt.json` plus three hashed source receipts. Return the unedited directory through the repository's external-replication issue form. A pass establishes independent execution of the released software; it does not establish biological or clinical validation. The complete protocol is in `docs/NOSTOS0_EXTERNAL_REPLICATION_PROTOCOL.md`.
+
 The locked cartilage segmentation review packet is stored under `<DATA_ROOT>/validation/cartilage-mask-review-v1`. It contains 40 outcome-free cases from eight validation participants, paired source/proposal renders, a reviewer manifest and a separately hashed crosswalk. Its status is `pending_human_reference_masks`; packet generation is not segmentation validation.
 
 ## Frozen synthetic validation

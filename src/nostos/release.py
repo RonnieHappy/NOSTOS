@@ -34,6 +34,7 @@ DOCS = (
     "NOSTOS_EXTERNAL_CARTILAGE_VALIDATION.md",
     "NOSTOS_METHODS_LANDSCAPE.md",
     "NOSTOS0_METHODS_ARTICLE.md",
+    "NOSTOS0_EXTERNAL_REPLICATION_PROTOCOL.md",
 )
 EVIDENCE_INDEX = Path("outputs/nostos0-evidence-bundle-v1/evidence_index.json")
 TEXT_SUFFIXES = {".py", ".md", ".toml", ".txt", ".json", ".csv", ".yml", ".yaml", ".cff", ".ps1"}
