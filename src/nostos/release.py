@@ -26,6 +26,7 @@ SCRIPTS = (
     "fetch_bbbc039_reference.ps1",
     "fetch_bbbc007_reference.ps1",
     "fetch_bbbc020_reference.ps1",
+    "run_response_benchmark_v2.py",
 )
 DOCS = (
     "NOSTOS0_REPRODUCIBILITY_AND_METHODS.md",
@@ -41,6 +42,8 @@ DOCS = (
     "NOSTOS0_EXTERNAL_REPLICATION_PROTOCOL.md",
     "BBBC007_PROSPECTIVE_PROTOCOL.md",
     "BBBC020_PROSPECTIVE_PROTOCOL.md",
+    "NOSTOS0_RESPONSE_GEOMETRY_BENCHMARK_V2_PROTOCOL.md",
+    "NOSTOS0_ARCHITECTURE_DECISION_ROTATION_QUOTIENT.md",
 )
 EVIDENCE_INDEX = Path("outputs/nostos0-evidence-bundle-v4/evidence_index.json")
 TEXT_SUFFIXES = {".py", ".md", ".toml", ".txt", ".json", ".csv", ".yml", ".yaml", ".cff", ".ps1"}

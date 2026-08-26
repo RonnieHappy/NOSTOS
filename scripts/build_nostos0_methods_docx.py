@@ -155,8 +155,9 @@ def build() -> Path:
                 p.paragraph_format.line_spacing = 1.0
         add_inline(p, line)
         if in_references:
+            p.paragraph_format.space_after = Pt(0)
             for run in p.runs:
-                set_font(run, 9)
+                set_font(run, 8)
 
     props = doc.core_properties
     props.title = "NOSTOS represents multiscale structure across biological images in physical coordinates"

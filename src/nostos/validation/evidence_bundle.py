@@ -19,6 +19,7 @@ SPECS = (
     EvidenceSpec("synthetic_truth", "outputs/nostos0-synthetic-v1/validation.json", "synthetic_validation", "Analytic recovery and perturbation gates."),
     EvidenceSpec("module_perturbations", "outputs/nostos0-module-perturbations-v1/module_perturbation_matrix.json", "synthetic_validation", "Per-module invariance and sensitivity matrix."),
     EvidenceSpec("representation_benchmark", "outputs/nostos0-benchmark-v1/representation_benchmark.json", "synthetic_descriptive", "Frozen held-out construct discrimination; not biological validation."),
+    EvidenceSpec("response_geometry_benchmark_v2", "outputs/nostos0-response-benchmark-v2/response_geometry_benchmark_v2.json", "synthetic_prospective_failed_gate", "Larger prospectively frozen distribution-shift test: raw response concatenation failed three of five gates and was inferior to matched collapsed summaries and PyRadiomics."),
     EvidenceSpec("kymatio", "outputs/nostos0-benchmark-v1/kymatio_benchmark.json", "upstream_comparator", "Official scattering comparator on the synthetic split."),
     EvidenceSpec("pyradiomics", "outputs/nostos0-benchmark-v1/pyradiomics_benchmark.json", "upstream_comparator", "IBSI first-order subset conformance and synthetic comparator."),
     EvidenceSpec("pyradiomics_ibsi_texture", "outputs/nostos0-ibsi-texture-conformance-v1/ibsi_texture_conformance.json", "upstream_comparator", "Official IBSI workbook audit of 75 definitionally matched 3-D texture features, with unsupported features retained as not comparable."),
@@ -86,6 +87,7 @@ def build_evidence_bundle(project_root: Path, output: Path) -> dict:
         "blocking_evidence": [
             "blinded cartilage mask validation",
             "a prospectively successful independent-acquisition test of the platform-level response geometry; two Hessian-module transfer tests localized strongly but failed comparator-superiority gates",
+            "prospective confirmation of the rotation-quotiented canonical comparison geometry after raw curve concatenation failed benchmark v2",
             "cartilage structure-specific ablations",
             "external-user replication and archival release",
         ],
