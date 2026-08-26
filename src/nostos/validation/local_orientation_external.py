@@ -16,11 +16,11 @@ PROTOCOL_SHA256 = "1e3c6b19ea8513a0c9d1604354e48fc704dabb7ffdaf215992d245e712b8a
 DATASET_DOI = "10.5281/zenodo.7243211"
 
 
-def _bootstrap_median(group_errors: list[np.ndarray], draws: int = 10000) -> list[float]:
+def _bootstrap_median(group_errors: list[np.ndarray], draws: int = 10000, seed: int = 7243214) -> list[float]:
     sorted_groups = [np.sort(np.asarray(values, dtype=float)) for values in group_errors]
     candidates = np.sort(np.concatenate(sorted_groups))
     sizes = np.asarray([len(values) for values in sorted_groups], dtype=int)
-    rng = np.random.default_rng(7243214)
+    rng = np.random.default_rng(seed)
     estimates = np.empty(draws, dtype=float)
     for draw in range(draws):
         multiplicity = np.bincount(rng.integers(0, len(sorted_groups), len(sorted_groups)), minlength=len(sorted_groups))

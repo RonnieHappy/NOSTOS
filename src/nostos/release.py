@@ -37,6 +37,8 @@ SCRIPTS = (
     "run_consensus_reliability.py",
     "run_local_orientation_validation.py",
     "run_local_orientation_external_test.py",
+    "run_pshg_external_orientation.py",
+    "download_pshg_tiss.py",
 )
 DOCS = (
     "NOSTOS0_REPRODUCIBILITY_AND_METHODS.md",
@@ -61,8 +63,10 @@ DOCS = (
     "NOSTOS0_CONSENSUS_RELIABILITY_PROTOCOL.md",
     "NOSTOS0_LOCAL_ORIENTATION_PROTOCOL.md",
     "NOSTOS0_LOCAL_ORIENTATION_EXTERNAL_TEST_PROTOCOL.md",
+    "NOSTOS0_PSHG_EXTERNAL_ORIENTATION_PROTOCOL.md",
+    "NOSTOS0_PSHG_BREAST_CONFIRMATION_PROTOCOL.md",
 )
-EVIDENCE_INDEX = Path("outputs/nostos0-evidence-bundle-v7/evidence_index.json")
+EVIDENCE_INDEX = Path("outputs/nostos0-evidence-bundle-v8/evidence_index.json")
 TEXT_SUFFIXES = {".py", ".md", ".toml", ".txt", ".json", ".csv", ".yml", ".yaml", ".cff", ".ps1"}
 SKIP_PARTS = {"__pycache__", ".pytest_cache", ".mypy_cache", "nostos.egg-info"}
 SECRET_PATTERNS = (
