@@ -1,0 +1,13 @@
+{
+  "raw_root": "E:/NOSTOS/data/public/human-knee-cartilage-histopathology/raw",
+  "annotation_manifest": "E:/NOSTOS/data/annotations/annotation_manifest.csv",
+  "pixel_sizes": "manifests/pixel_sizes.json",
+  "dataset_manifest": "manifests/dataset_manifest.json",
+  "splits": "manifests/splits.json",
+  "metadata": "manifests/metadata.csv",
+  "section_features": "outputs/tables/section_features.csv",
+  "analysis_table": "outputs/tables/participant_analysis.csv",
+  "feature_contract": "configs/feature_contract.locked.json",
+  "locked_output": "outputs/locked",
+  "report_output": "outputs/manuscript"
+}

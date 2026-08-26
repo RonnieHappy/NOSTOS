@@ -1,0 +1,50 @@
+{
+  "protocol_version": "nostos-kymatio-comparator/1.0",
+  "implementation": "kymatio.numpy.Scattering2D",
+  "kymatio_version": "0.3.0",
+  "configuration": {
+    "J": 3,
+    "L": 8,
+    "max_order": 2,
+    "aggregation": "spatial_mean"
+  },
+  "preprocessing": "center crop/pad to 192x192; per-image z normalization",
+  "classifier": "StandardScaler + linear SVC(C=1.0)",
+  "balanced_accuracy": 0.875,
+  "truth": [
+    "orientation",
+    "orientation",
+    "orientation",
+    "orientation",
+    "blob",
+    "blob",
+    "blob",
+    "blob",
+    "network",
+    "network",
+    "network",
+    "network",
+    "heterogeneity",
+    "heterogeneity",
+    "heterogeneity",
+    "heterogeneity"
+  ],
+  "predictions": [
+    "heterogeneity",
+    "orientation",
+    "orientation",
+    "orientation",
+    "blob",
+    "blob",
+    "blob",
+    "blob",
+    "heterogeneity",
+    "network",
+    "network",
+    "network",
+    "heterogeneity",
+    "heterogeneity",
+    "heterogeneity",
+    "heterogeneity"
+  ]
+}

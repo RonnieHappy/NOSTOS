@@ -1,0 +1,176 @@
+# NOSTOS
+
+NOSTOS-0 is a calibrated, sample-agnostic structural measurement framework. It applies the same measurements without tissue-specific retraining; biological meaning remains the responsibility of domain-specific validation.
+
+The universal methodological object is a response geometry, not a flat radiomics vector. Every supported response retains physical scale, optional specimen-relative scale, image/specimen direction, uncertainty, perturbation stability, and explicit validity or abstention reasons.
+
+The live Nature-readiness boundary is maintained in `docs/NOSTOS0_CLAIM_EVIDENCE_LEDGER.md`. In particular, the complete response geometry is **not** claimed to outperform focused methods universally, and clinical/intraoperative use is not yet supported.
+
+The official Kymatio comparison is intentionally isolated because Kymatio 0.3.0 is incompatible with the core environment's current SciPy. Reproduce it with Python 3.12 and `requirements-comparators.lock.txt`, export the frozen data with `write_external_comparator_dataset`, then run `scripts/benchmark_kymatio.py`. The current synthetic held-out result is 0.875 balanced accuracy for Kymatio versus 1.000 for NOSTOS response curves; this is not evidence of biological superiority.
+
+The upstream PyRadiomics comparison uses the pinned conda environment in `configs/radiomics39-environment.yml` (exact URLs in `configs/radiomics39-explicit.txt`) and `scripts/benchmark_pyradiomics.py`. It passes 14/14 published IBSI digital-phantom first-order reference values and reaches 1.000 balanced accuracy on the frozen synthetic split, equal to NOSTOS. The result removes any basis for claiming universal NOSTOS superiority over radiomics.
+
+Run `nostos build-evidence-bundle --project-root . --output outputs/nostos0-evidence-bundle-v1` to regenerate the SHA-256 index of all required evidence receipts. A complete index is an integrity result, not a Nature-readiness declaration.
+
+The locked cartilage segmentation review packet is stored at `<DATA_ROOT>\validation\cartilage-mask-review-v1`. It contains 40 outcome-free cases from eight validation participants, paired source/proposal renders, a reviewer manifest and a separately hashed crosswalk. Its status is `pending_human_reference_masks`; packet generation is not segmentation validation.
+
+## Frozen synthetic validation
+
+Run the CPU validation foundation before biological analysis:
+
+```powershell
+uv run nostos validate-synthetic --output outputs/synthetic-validation
+uv run nostos benchmark-synthetic --output outputs/synthetic-benchmark
+```
+
+The receipt `validation.json` contains the frozen protocol version, deterministic truth registry and hashes, controlled perturbation results, measurement errors, pass/fail decisions, and abstentions. Protocol v1.1 registers orientation, wavelength, blob, tube, sheet, thickness, roughness, network, and spatial-heterogeneity constructs. It applies independent synthetic gates to spectral orientation/scale, structure-tensor orientation, 3-D Hessian morphology, calibrated thickness, network erosion survival, and directional spatial heterogeneity. These are foundation gates, not substitutes for biological or external validation.
+
+Universal framework code lives under `nostos.core` and `nostos.validation`. The existing public cartilage analysis remains an application rather than the definition of NOSTOS itself.
+
+The synthetic representation benchmark uses fixed training perturbations and disjoint held-out perturbations. It compares conventional scalar features, naïvely collapsed response summaries, complete NOSTOS response curves, and six leave-one-module-out ablations. Its receipt explicitly labels the experiment as synthetic and descriptive; it is not evidence of biological or clinical superiority.
+
+## External trabecular-bone reference
+
+The first external-domain check uses a checksum-locked subset of Zenodo record `11061947` containing public 100³ micro-CT bone masks and archived IPL thickness maps:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/fetch_bone_reference_subset.ps1
+uv run nostos validate-bone --data <DATA_ROOT>\data\public\trabecular-bone-zenodo-11061947 --output outputs/external-bone-v1
+```
+
+NOSTOS computes maximal-inscribed-sphere thickness over 32 frozen logarithmic physical-radius levels. The receipt reports agreement, bias and error against the archived reference while retaining the simpler twice-nearest-boundary calculation as a baseline. The eight-volume single-archive result is preliminary external validation, not evidence of broad generalization.
+
+## External filament-domain reference
+
+The cross-species MyceliumSeg subset contains 30 manually masked images. Because physical pixel spacing is not supplied, NOSTOS uses dimensionless normalized coordinates and refuses micrometre-scale claims:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/fetch_filament_reference_subset.ps1
+uv run nostos validate-filament --data <DATA_ROOT>\data\public\myceliumseg-zenodo-15224240\extracted\labeled-GS_PO_TS --output outputs/external-filament-v1
+```
+
+The validation compares the full response geometry with conventional scalars, naïve block summaries and leave-one-module-out ablations. It is explicitly exploratory because acquisition may be confounded with species.
+
+## Cartilage-domain response validation
+
+The public OA cohort now receives the same spectral, tensor, Hessian and spatial response modules. Site-specific outcomes remain site matched and all inference is specimen level:
+
+```powershell
+uv run nostos validate-cartilage --medial outputs/universal_cartilage/safo_medial.csv --lateral outputs/universal_cartilage/safo_lateral.csv --scores manifests/metadata.scores_raw.csv --output outputs/external-cartilage-v1
+```
+
+The complete response concatenation does not outperform the focused FFT representation in this cohort. NOSTOS therefore does not expose a universal diagnostic score; it exposes calibrated response curves whose biological meaning and eligible modules must be validated per domain.
+
+Reproducible public-data pilot for participant-level cartilage morphology analysis.
+
+> Research use only. NOSTOS does not provide a diagnosis, surgical boundary, treatment recommendation, or validated estimate of tissue mechanics.
+
+## Install and verify
+
+```powershell
+cd <PROJECT_ROOT>
+<DATA_ROOT>\.venv\Scripts\python.exe -m pip install -e .
+nostos doctor
+```
+
+`nostos doctor` returns a machine-readable readiness report covering Python dependencies, the browser application and configured storage paths.
+
+## Analyze one microscopy image
+
+```powershell
+nostos analyze path\to\section.tif `
+  --stain SafO `
+  --pixel-size-um 5.16 `
+  --output outputs\case-001
+```
+
+The output directory contains:
+
+- `analysis.json`: calibration, QC warnings, class proportions, tile coordinates and median FFT/texture measurements;
+- `overlay.png`: segmentation proposal over the source image;
+- `mask.png`: indexed tissue-region proposal;
+- `spectrum.png`: whole-cartilage Fourier-power preview.
+
+SafO is the validated pilot pathway. H&E is supported as a stain-specific comparator. PLM segmentation remains experimental. The default path is deterministic and CPU-only; `--learned-checkpoint` enables the optional learned proposal model.
+
+## Launch the local workstation
+
+```powershell
+nostos serve
+```
+
+The workstation binds to `127.0.0.1:8765` by default and opens in the local browser. To run without opening a browser, use `nostos serve --no-browser`. Do not expose the server to an untrusted network; it is a local research workstation, not a hardened clinical service.
+
+## Analyze a cohort
+
+```powershell
+nostos batch manifests\dataset_manifest.json `
+  --stain SafO `
+  --site Medial `
+  --section-rank 1 `
+  --workers 4 `
+  --output outputs\cohort\safo-medial.csv
+```
+
+The batch command preserves participant identity and section rank, writes one participant-section row per input record, and creates a companion `.report.json` file. Cohort comparisons must use participant-grouped inference; tiles must never be split independently across training and validation sets.
+
+## First dataset
+
+- Human Knee Cartilage Histopathology Assessment
+- Source: SimTK DOI `10.18735/77ye-yh24`
+- Expected scale: 90 participants, 180 specimens, approximately 27.81 GB
+- Modalities: H&E, Safranin O/Fast Green, and polarized light microscopy TIFFs
+- Labels: HHGS, OARSI, PLM, age, sex, and surgery side
+- Source article license: CC BY-NC-ND 4.0; repository files remain subject to the terms presented by SimTK at acquisition and are not redistributed by NOSTOS
+
+This dataset supports morphology pretraining, segmentation, grading experiments, and image-quality modeling. It does not contain co-registered tissue mechanics and therefore cannot independently validate mechanical competence.
+
+## Layout
+
+```text
+NOSTOS/
+  configs/                 experiment and data contracts
+  data/public/             immutable downloaded and extracted source data
+  manifests/               generated audits and participant splits
+  src/nostos/              NOSTOS Python package
+  tests/                   unit tests
+```
+
+## Initial workflow
+
+1. Finish and extract the official archive under `data/public/human-knee-cartilage-histopathology/raw/`.
+2. Run `python -m nostos.data.audit <raw-directory> --output manifests/dataset_manifest.json`.
+3. Run `python -m nostos.data.split manifests/dataset_manifest.json --output manifests/splits.json`.
+4. Review audit warnings and lock participant-level splits before generating image tiles.
+5. Create human-reviewed semantic masks using the ontology in `docs/segmentation_protocol.md`; validate their CSV manifest before training.
+6. Train the stain-conditioned model with `python -m nostos.segmentation.train <annotation-manifest.csv>`.
+7. Evaluate complete held-out sections with `python -m nostos.segmentation.infer`, not randomly sampled tiles.
+8. Extract ZSD and comparator features only from boundary-eroded articular cartilage.
+
+Never split tiles, sections, or specimens independently across training and validation sets. Every record from one participant stays in one split.
+
+## Run the microscopy application
+
+From PowerShell, run `./launch_nostos.ps1` or `nostos serve`. The launcher uses the lightweight project in OneDrive and the large Python/CUDA environment on `<DATA_ROOT>` when a local environment is absent. The primary endpoint is CPU-first; a learned CUDA proposal model is an optional experimental comparison and is not required for FFT analysis.
+
+## Rebuild the CPU pilot
+
+Run `./run_cpu_pilot.ps1` to regenerate participant-level Safranin-O and H&E features, association reports, paired-site validation, confounder-adjusted estimates, perturbation tests, mask-boundary sensitivity, and manuscript tables. Bulk TIFFs remain under `<DATA_ROOT>`; generated tables and figures are written under `outputs/cpu_pilot/`.
+
+## Rebuild the flagship validation
+
+After the CPU pilot exists, run `./run_flagship_validation.ps1`. The command verifies the frozen protocol and dataset-manifest hashes before extracting the lexicographically second Safranin-O sections, then regenerates adjacent-section agreement, second-section outcome confirmation, raw-reader reliability, the participant-safe severity benchmark, and the complete test suite. Post-freeze operational changes and the single retained image-safety failure are recorded in `docs/confirmatory_deviations.md`.
+
+## Evidence and claim boundary
+
+The locked plan is in `docs/analysis_plan.md`; the living pre-results manuscript is in `docs/manuscript_draft.md`. Unsupervised color clusters are annotation proposals only and are never treated as reference masks. The locked test set is evaluated once after the segmentation and feature definitions pass validation.
+
+The public cohort can support claims about histologic morphology, zonal organization, staining, reproducibility, and participant-level prediction. It cannot establish mechanical properties or clinical utility. Source images remain outside Git and must be acquired from SimTK under the applicable noncommercial terms.
+
+The evidence-ranked expansion plan for depth-resolved, cellular, osteochondral, multimodal, and translational modules is in `docs/toolkit_expansion_review.md`.
+
+The first implemented expansion is the versioned depth-normalized atlas. Reviewer-facing installation, commands, output definitions, validation criteria, and limitations are documented in `docs/depth_atlas_reproducibility_protocol.md`.
+
+Its first 90-participant cohort QC run is documented in `docs/depth_atlas_v1_qc_report.md`. Version 1.0.0 failed the complete-depth coverage gate with weak masks and is not authorized for outcome association testing until the documented boundary-review and geometry-remediation steps are completed.
+
+The two-track publication package is indexed in `docs/NBE_PACKAGE_README.md`. It separates the evidence-complete public-histology Article from the explicitly gated Nature Biomedical Engineering flagship development manuscript.

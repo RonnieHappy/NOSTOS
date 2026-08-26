@@ -1,0 +1,213 @@
+{
+  "protocol_version": "nostos-external-bone/1.0",
+  "dataset": {
+    "title": "MicroCT Trabecular Bone Samples for Trabecular Thickness and Separation Measures",
+    "doi": "10.5281/zenodo.11061947",
+    "license": "CC BY 4.0",
+    "role": "external public reference data; not acquired by NOSTOS investigators"
+  },
+  "measurement": "NOSTOS maximal-inscribed-sphere thickness (32 frozen logarithmic radius levels) versus archived IPL thickness map",
+  "cases": [
+    {
+      "case": "BMLPL_001_REF_17",
+      "shape": [
+        100,
+        100,
+        100
+      ],
+      "spacing_mm": [
+        0.017409179359674454,
+        0.017409179359674454,
+        0.017409268766641617
+      ],
+      "bone_fraction": 0.292911,
+      "reference_mean_thickness_mm": 0.20527631824008613,
+      "nostos_mean_thickness_mm": 0.21914973855018616,
+      "bias_mm": 0.013873417189075192,
+      "mae_mm": 0.01909385906134823,
+      "voxelwise_spearman": 0.9281440537550749,
+      "nearest_boundary_baseline_mean_mm": 0.10440957898962308,
+      "nearest_boundary_baseline_mae_mm": 0.10317189744704558,
+      "segmentation_sha256": "b52e275cb5e56b58393626fcaf6d81b1ae9b1fd039d20db09f38a60b0db3ff7c",
+      "reference_sha256": "b5fead5b351f3baf5c9f06c4eff24013ac5c373bf111450715d0e013b5e48e2f"
+    },
+    {
+      "case": "BMLPL_002_REF_17",
+      "shape": [
+        100,
+        100,
+        100
+      ],
+      "spacing_mm": [
+        0.017589842900633812,
+        0.017589842900633812,
+        0.017589742317795753
+      ],
+      "bone_fraction": 0.285096,
+      "reference_mean_thickness_mm": 0.1761882014980294,
+      "nostos_mean_thickness_mm": 0.19288517534732819,
+      "bias_mm": 0.01669697231324504,
+      "mae_mm": 0.018605246710283036,
+      "voxelwise_spearman": 0.9386842591729337,
+      "nearest_boundary_baseline_mean_mm": 0.09326905430941985,
+      "nearest_boundary_baseline_mae_mm": 0.08495504047816324,
+      "segmentation_sha256": "6ddb62eb5547ad79b04978c0b2eb38209adebd69b27706218bc02a9bd7ab5b55",
+      "reference_sha256": "0737de5c1d9f6e5f9c0370d3d44a14857ab2920278130b334aacdae635da3b69"
+    },
+    {
+      "case": "BMLPL_003_BML_17",
+      "shape": [
+        100,
+        100,
+        100
+      ],
+      "spacing_mm": [
+        0.017409179359674454,
+        0.017409179359674454,
+        0.017409268766641617
+      ],
+      "bone_fraction": 0.368241,
+      "reference_mean_thickness_mm": 0.17627298119211943,
+      "nostos_mean_thickness_mm": 0.1851455569267273,
+      "bias_mm": 0.008872581442316977,
+      "mae_mm": 0.015306954599691143,
+      "voxelwise_spearman": 0.9306106143533566,
+      "nearest_boundary_baseline_mean_mm": 0.09103646452880744,
+      "nearest_boundary_baseline_mae_mm": 0.08680117757468757,
+      "segmentation_sha256": "2370181493355c67747b4977faa57ab6424eac244a868bfc70380a347fdcf2c3",
+      "reference_sha256": "e0c0c0ee8325081a1ec66577bd31b8980568868dc17a418efe968e80173821b6"
+    },
+    {
+      "case": "BMLPL_004_REF_17",
+      "shape": [
+        100,
+        100,
+        100
+      ],
+      "spacing_mm": [
+        0.016889648512005806,
+        0.016889648512005806,
+        0.0168895460665226
+      ],
+      "bone_fraction": 0.19265,
+      "reference_mean_thickness_mm": 0.17816692273428397,
+      "nostos_mean_thickness_mm": 0.19108210504055023,
+      "bias_mm": 0.012915201773107636,
+      "mae_mm": 0.017698635488370817,
+      "voxelwise_spearman": 0.9199270188363087,
+      "nearest_boundary_baseline_mean_mm": 0.09299330080342146,
+      "nearest_boundary_baseline_mae_mm": 0.08736723386798498,
+      "segmentation_sha256": "413d3c75c16ca28f2cb3c000a8ad3c57e184a1bd03afd1641516419ffe178b29",
+      "reference_sha256": "f898321ecdc4b7d215511e22f53256230613e21fdf97371440ee65100755c8c5"
+    },
+    {
+      "case": "BMLPL_005_REF_17",
+      "shape": [
+        100,
+        100,
+        100
+      ],
+      "spacing_mm": [
+        0.016559571027755737,
+        0.016559571027755737,
+        0.016559172421693802
+      ],
+      "bone_fraction": 0.098262,
+      "reference_mean_thickness_mm": 0.13473205551716722,
+      "nostos_mean_thickness_mm": 0.1492508500814438,
+      "bias_mm": 0.014518799242745607,
+      "mae_mm": 0.01642418772365313,
+      "voxelwise_spearman": 0.9132916688974656,
+      "nearest_boundary_baseline_mean_mm": 0.0745987634301322,
+      "nearest_boundary_baseline_mae_mm": 0.06259906960480274,
+      "segmentation_sha256": "45ee5aa4ff1098b1f655a3fd84e7dacdcf529f8b31865f152c3d96e7cf1b9218",
+      "reference_sha256": "e0c5f5354a11f716efd0f295394f933d423b162967f30d320c605d1721de3b4a"
+    },
+    {
+      "case": "BMLPL_007_REF_17",
+      "shape": [
+        100,
+        100,
+        100
+      ],
+      "spacing_mm": [
+        0.017589842900633812,
+        0.017589842900633812,
+        0.01758933812379837
+      ],
+      "bone_fraction": 0.390343,
+      "reference_mean_thickness_mm": 0.1626317653763204,
+      "nostos_mean_thickness_mm": 0.17812563478946686,
+      "bias_mm": 0.015493854361510807,
+      "mae_mm": 0.017881648251336302,
+      "voxelwise_spearman": 0.9254312291326866,
+      "nearest_boundary_baseline_mean_mm": 0.08824937728919358,
+      "nearest_boundary_baseline_mae_mm": 0.07663667979897264,
+      "segmentation_sha256": "4abef70bd237a878209befa76ff7a8d78c6ba5fdcfc325151c6ec6fd831587da",
+      "reference_sha256": "dab2ab9a5e3cc5834d22f032d94339a2efa705e625339600940d5fbb67330088"
+    },
+    {
+      "case": "BMLPL_008_REF_17",
+      "shape": [
+        100,
+        100,
+        100
+      ],
+      "spacing_mm": [
+        0.017589842900633812,
+        0.017589842900633812,
+        0.017589742317795753
+      ],
+      "bone_fraction": 0.648305,
+      "reference_mean_thickness_mm": 0.24080176934175984,
+      "nostos_mean_thickness_mm": 0.25790050625801086,
+      "bias_mm": 0.017098726519995847,
+      "mae_mm": 0.02064766449851779,
+      "voxelwise_spearman": 0.9469121978643662,
+      "nearest_boundary_baseline_mean_mm": 0.123897777038173,
+      "nearest_boundary_baseline_mae_mm": 0.11860288811264356,
+      "segmentation_sha256": "b4f1132da3b9e17e528cb117576ed6f0accf825b2859f77bc9a6b5e836ca2fe4",
+      "reference_sha256": "03aaf9b3d8382aba87fc3a7e2e7a0c4936d4a7f9449a7914e947bb8b905f121b"
+    },
+    {
+      "case": "BMLPL_009_BML_17",
+      "shape": [
+        50,
+        50,
+        50
+      ],
+      "spacing_mm": [
+        0.017589842900633812,
+        0.017589842900633812,
+        0.017589742317795753
+      ],
+      "bone_fraction": 0.51848,
+      "reference_mean_thickness_mm": 0.25029310105916286,
+      "nostos_mean_thickness_mm": 0.27143433690071106,
+      "bias_mm": 0.021141270097262244,
+      "mae_mm": 0.025471066718673135,
+      "voxelwise_spearman": 0.9076366651127926,
+      "nearest_boundary_baseline_mean_mm": 0.12924800232710942,
+      "nearest_boundary_baseline_mae_mm": 0.12396982858916748,
+      "segmentation_sha256": "1ff6bf69f065dbacec9823e4645c260930bf34c1b2900c28ee5925de210a7734",
+      "reference_sha256": "96a6a8335328b4ef99c3efd630e415a46b8791b8180302cc67b3af1f6d5f21b6"
+    }
+  ],
+  "summary": {
+    "n_volumes": 8,
+    "mean_absolute_bias_fraction": 0.08045990124696856,
+    "mean_absolute_bias_fraction_ci95": [
+      0.068323855050401,
+      0.09250756562480902
+    ],
+    "median_voxelwise_spearman": 0.9267876414438807,
+    "mean_mae_mm": 0.018891157881484197,
+    "nearest_boundary_mean_mae_mm": 0.09301297693418346,
+    "paired_mae_reduction_mm": 0.07412181905269927,
+    "wilcoxon_exact_one_sided_p": 0.00390625
+  },
+  "validity": {
+    "status": "preliminary_external_validation",
+    "reason": "The estimator is independently applied to public reference volumes, but three volumes from one archive cannot establish external generalization."
+  }
+}

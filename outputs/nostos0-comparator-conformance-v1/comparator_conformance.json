@@ -1,0 +1,35 @@
+{
+  "protocol_version": "nostos-comparator-conformance/1.0",
+  "python": "3.13.13",
+  "comparator_interpreters": {
+    "kymatio": "C:\\Users\\yanyl\\OneDrive\\NOSTOS\\.venv-comparators\\Scripts\\python.exe",
+    "pyradiomics": "<DATA_ROOT>\\environments\\radiomics39\\python.exe"
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "status": "pass",
+  "gates": [
+    {
+      "distribution": "kymatio",
+      "module": "kymatio.numpy",
+      "installed": true,
+      "importable": true,
+      "version": "0.3.0",
+      "module_version": null,
+      "reference_conformance": "Official Kymatio Scattering2D; no local substitute is admissible.",
+      "error": null,
+      "interpreter": "C:\\Users\\yanyl\\OneDrive\\NOSTOS\\.venv-comparators\\Scripts\\python.exe"
+    },
+    {
+      "distribution": "pyradiomics",
+      "module": "radiomics",
+      "installed": true,
+      "importable": true,
+      "version": "3.0.1a1",
+      "module_version": "3.1.0a2",
+      "reference_conformance": "IBSI digital phantom/reference values; PyRadiomics differences must be disclosed.",
+      "error": null,
+      "interpreter": "<DATA_ROOT>\\environments\\radiomics39\\python.exe"
+    }
+  ],
+  "claim_rule": "NOSTOS outputs may not be called IBSI radiomics or wavelet scattering unless the corresponding upstream implementation and reference checks pass."
+}

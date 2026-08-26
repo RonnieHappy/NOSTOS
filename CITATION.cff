@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use NOSTOS, cite the archived software release and the associated methods article."
+title: "NOSTOS: calibrated structural measurement for biological images"
+type: software
+version: 0.3.0
+date-released: 2026-08-26
+license: BSD-3-Clause
+authors:
+  - name: "NOSTOS contributors"
+repository-code: "https://github.com/RonnieHappy/NOSTOS"
+abstract: >-
+  A scale-aware framework for spectral, tensor, Hessian, geometric, network
+  and spatial measurements in calibrated biological images and volumes.
