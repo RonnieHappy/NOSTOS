@@ -13,7 +13,7 @@ The operator must not use the author's existing environment or generated output 
 ## Procedure
 
 ```powershell
-git clone --branch v0.3.0-rc5 https://github.com/RonnieHappy/NOSTOS.git
+git clone --branch v0.3.0-rc6 https://github.com/RonnieHappy/NOSTOS.git
 cd NOSTOS
 uv sync --extra dev --frozen
 uv run nostos replication-challenge `
