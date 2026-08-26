@@ -21,6 +21,7 @@ TREES = ("src", "tests", "configs", ".github")
 SCRIPTS = (
     "benchmark_kymatio.py", "benchmark_pyradiomics.py",
     "audit_comparator_environments.py",
+    "build_nostos0_main_figures.py",
 )
 DOCS = (
     "NOSTOS0_REPRODUCIBILITY_AND_METHODS.md",
@@ -31,6 +32,7 @@ DOCS = (
     "NOSTOS_EXTERNAL_FILAMENT_VALIDATION.md",
     "NOSTOS_EXTERNAL_CARTILAGE_VALIDATION.md",
     "NOSTOS_METHODS_LANDSCAPE.md",
+    "NOSTOS0_METHODS_ARTICLE.md",
 )
 EVIDENCE_INDEX = Path("outputs/nostos0-evidence-bundle-v1/evidence_index.json")
 TEXT_SUFFIXES = {".py", ".md", ".toml", ".txt", ".json", ".csv", ".yml", ".yaml", ".cff", ".ps1"}
