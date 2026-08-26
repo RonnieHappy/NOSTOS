@@ -94,6 +94,26 @@
       "interpretation": "Thickness agreement in eight public micro-CT volumes."
     },
     {
+      "identifier": "nuclei_sign_agnostic",
+      "path": "outputs/external-nuclei-v1/external_nuclei_validation.json",
+      "sha256": "b92f62de0f082c77860af269e5f115074ddbaaf339ae8fdaccf09e0f0dd750e7",
+      "bytes": 26567,
+      "protocol_version": "nostos-external-nuclei/1.0",
+      "reported_status": "external_public_validation",
+      "evidence_level": "external_public_development",
+      "interpretation": "Initial BBBC039 test showing the failure of sign-agnostic Hessian localization."
+    },
+    {
+      "identifier": "nuclei_polarity_refinement",
+      "path": "outputs/external-nuclei-v1_1/external_nuclei_validation.json",
+      "sha256": "5fdc48fcbfa81f3843593caaa89c54f93d21ffbf85921f62559d13d5f3065fc7",
+      "bytes": 26963,
+      "protocol_version": "nostos-external-nuclei/1.1",
+      "reported_status": "external_public_validation",
+      "evidence_level": "external_public_post_test_refinement",
+      "interpretation": "Polarity-aware BBBC039 result; same test set, therefore not pristine confirmatory evidence."
+    },
+    {
       "identifier": "filament",
       "path": "outputs/external-filament-v1/external_filament_validation.json",
       "sha256": "a7e1c31a63c96798f60a0e495ada367bfd0a4704a62ad91461f115339c41f266",
@@ -158,7 +178,7 @@
   "nature_readiness": "not_ready",
   "blocking_evidence": [
     "blinded cartilage mask validation",
-    "independent-acquisition validation",
+    "prospective independent-acquisition validation of the polarity-aware method",
     "cartilage structure-specific ablations",
     "external-user replication and archival release"
   ],

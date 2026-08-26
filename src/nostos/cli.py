@@ -188,6 +188,16 @@ def _validate_cartilage(args: argparse.Namespace) -> int:
     return 0
 
 
+def _validate_nuclei(args: argparse.Namespace) -> int:
+    from nostos.validation.external_nuclei import validate_nuclei_dataset
+
+    payload = validate_nuclei_dataset(args.data.resolve(), args.output.resolve())
+    _json_print({"status": payload["validity"]["status"],
+                 "output": str(args.output.resolve() / "external_nuclei_validation.json"),
+                 "case_count": payload["case_count"], "summary": payload["summary"]})
+    return 0
+
+
 def _validate_modules(args: argparse.Namespace) -> int:
     from nostos.validation.module_perturbations import run_module_perturbation_matrix
 
@@ -291,6 +301,11 @@ def build_parser() -> argparse.ArgumentParser:
     cartilage.add_argument("--scores", type=Path, required=True)
     cartilage.add_argument("--output", type=Path, required=True)
     cartilage.set_defaults(func=_validate_cartilage)
+
+    nuclei = commands.add_parser("validate-nuclei", help="Validate frozen Hessian morphology on BBBC039 test masks")
+    nuclei.add_argument("--data", type=Path, required=True)
+    nuclei.add_argument("--output", type=Path, required=True)
+    nuclei.set_defaults(func=_validate_nuclei)
 
     modules = commands.add_parser("validate-modules", help="Run the frozen per-module perturbation matrix")
     modules.add_argument("--output", type=Path, required=True)

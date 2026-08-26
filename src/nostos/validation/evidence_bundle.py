@@ -25,6 +25,8 @@ SPECS = (
     EvidenceSpec("replication_reference", "outputs/nostos0-replication-reference-v1/replication_receipt.json", "software_conformance", "Author-operated reference execution of the public replication challenge; not independent replication."),
     EvidenceSpec("comparator_imports", "outputs/nostos0-comparator-conformance-v1/comparator_conformance.json", "software_conformance", "Pinned upstream implementations import in declared interpreters."),
     EvidenceSpec("bone", "outputs/external-bone-v1/external_bone_validation.json", "external_public_validation", "Thickness agreement in eight public micro-CT volumes."),
+    EvidenceSpec("nuclei_sign_agnostic", "outputs/external-nuclei-v1/external_nuclei_validation.json", "external_public_development", "Initial BBBC039 test showing the failure of sign-agnostic Hessian localization."),
+    EvidenceSpec("nuclei_polarity_refinement", "outputs/external-nuclei-v1_1/external_nuclei_validation.json", "external_public_post_test_refinement", "Polarity-aware BBBC039 result; same test set, therefore not pristine confirmatory evidence."),
     EvidenceSpec("filament", "outputs/external-filament-v1/external_filament_validation.json", "external_public_exploratory", "Cross-species structural information; acquisition confounded."),
     EvidenceSpec("cartilage", "outputs/external-cartilage-v1/external_cartilage_validation.json", "external_public_exploratory", "Site-matched OA associations with unvalidated ROI proposal."),
     EvidenceSpec("cartilage_mask_review", "manifests/cartilage_mask_review_packet.json", "validation_infrastructure_pending", "Locked 40-case review packet; human reference masks remain pending."),
@@ -81,7 +83,7 @@ def build_evidence_bundle(project_root: Path, output: Path) -> dict:
         "nature_readiness": "not_ready",
         "blocking_evidence": [
             "blinded cartilage mask validation",
-            "independent-acquisition validation",
+            "prospective independent-acquisition validation of the polarity-aware method",
             "cartilage structure-specific ablations",
             "external-user replication and archival release",
         ],

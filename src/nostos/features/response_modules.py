@@ -68,13 +68,21 @@ class HessianResponse:
     winning_scale_um: float
 
 
-def hessian_morphology_response(image: np.ndarray, *, spacing_um: tuple[float, ...], scales_um: tuple[float, ...]) -> HessianResponse:
-    """Scale-normalized Hessian morphology responses for 2-D or 3-D data."""
+def hessian_morphology_maps(
+    image: np.ndarray, *, spacing_um: tuple[float, ...], scales_um: tuple[float, ...],
+    polarity: str = "either",
+) -> dict[str, tuple[np.ndarray, ...]]:
+    """Return scale-resolved blob, tube and sheet response fields.
+
+    This is the spatially resolved counterpart of
+    :func:`hessian_morphology_response`; it uses the identical normalization
+    and shape ratios and performs no thresholding or tissue-specific fitting.
+    """
+    if polarity not in {"bright", "dark", "either"}:
+        raise ValueError("polarity must be 'bright', 'dark' or 'either'")
     data = _image(image)
     physical, pixel_scales = _scales(scales_um, spacing_um, data.ndim)
-    blob_curve: list[float] = []
-    tube_curve: list[float] = []
-    sheet_curve: list[float] = []
+    maps: dict[str, list[np.ndarray]] = {"blob": [], "tube": [], "sheet": []}
     for scale, sigma in zip(physical, pixel_scales, strict=True):
         hessian = np.empty(data.shape + (data.ndim, data.ndim), dtype=float)
         for i in range(data.ndim):
@@ -87,32 +95,38 @@ def hessian_morphology_response(image: np.ndarray, *, spacing_um: tuple[float, .
                 hessian[..., i, j] = derivative
                 hessian[..., j, i] = derivative
         eigen = np.linalg.eigvalsh(hessian)
+        if polarity == "bright":
+            polarity_gate = np.all(eigen < 0, axis=-1)
+        elif polarity == "dark":
+            polarity_gate = np.all(eigen > 0, axis=-1)
+        else:
+            polarity_gate = np.ones(data.shape, dtype=bool)
         magnitude = np.sort(np.abs(eigen), axis=-1)
         eps = np.finfo(float).eps
         if data.ndim == 2:
             small, large = magnitude[..., 0], magnitude[..., 1]
-            line = (1.0 - np.exp(-(large / (small + eps)) ** 2 / 2.0)) * large
-            isotropic = np.exp(-((large - small) / (large + small + eps)) ** 2 / 0.25) * (large + small) / 2
-            blob_curve.append(float(np.percentile(isotropic, 99)))
-            tube_curve.append(float(np.percentile(line, 99)))
-            sheet_curve.append(0.0)
+            maps["tube"].append((1.0 - np.exp(-(large / (small + eps)) ** 2 / 2.0)) * large * polarity_gate)
+            maps["blob"].append(np.exp(-((large - small) / (large + small + eps)) ** 2 / 0.25) * (large + small) / 2 * polarity_gate)
+            maps["sheet"].append(np.zeros_like(data))
         else:
             a, b, c = magnitude[..., 0], magnitude[..., 1], magnitude[..., 2]
-            # Shape ratios for ordered curvature magnitudes a <= b <= c:
-            # sphere/blob a≈b≈c; tube a≈0,b≈c; sheet a≈b≈0,c>0.
-            ac = a / (c + eps)
-            bc = b / (c + eps)
-            ab = a / (b + eps)
+            ac, bc, ab = a / (c + eps), b / (c + eps), a / (b + eps)
             tolerance = 0.20
-            blob = np.exp(-((1.0 - ac) ** 2 + (1.0 - bc) ** 2) / (2 * tolerance**2)) * c
-            tube = np.exp(-((1.0 - bc) ** 2 + ab**2) / (2 * tolerance**2)) * c
-            sheet = np.exp(-(bc**2) / (2 * tolerance**2)) * c
-            # A high but non-maximal quantile retains compact blobs, which
-            # occupy less volume than tubes or sheets, while limiting the
-            # sensitivity of a literal maximum to isolated noise.
-            blob_curve.append(float(np.percentile(blob, 99.9)))
-            tube_curve.append(float(np.percentile(tube, 99.9)))
-            sheet_curve.append(float(np.percentile(sheet, 99.9)))
+            maps["blob"].append(np.exp(-((1.0 - ac) ** 2 + (1.0 - bc) ** 2) / (2 * tolerance**2)) * c * polarity_gate)
+            maps["tube"].append(np.exp(-((1.0 - bc) ** 2 + ab**2) / (2 * tolerance**2)) * c * polarity_gate)
+            maps["sheet"].append(np.exp(-(bc**2) / (2 * tolerance**2)) * c * polarity_gate)
+    return {name: tuple(values) for name, values in maps.items()}
+
+
+def hessian_morphology_response(image: np.ndarray, *, spacing_um: tuple[float, ...], scales_um: tuple[float, ...]) -> HessianResponse:
+    """Scale-normalized Hessian morphology responses for 2-D or 3-D data."""
+    data = _image(image)
+    physical, _ = _scales(scales_um, spacing_um, data.ndim)
+    maps = hessian_morphology_maps(data, spacing_um=spacing_um, scales_um=scales_um)
+    quantile = 99 if data.ndim == 2 else 99.9
+    blob_curve = [float(np.percentile(value, quantile)) for value in maps["blob"]]
+    tube_curve = [float(np.percentile(value, quantile)) for value in maps["tube"]]
+    sheet_curve = [float(np.percentile(value, quantile)) for value in maps["sheet"]]
     curves = {"blob": blob_curve, "tube": tube_curve, "sheet": sheet_curve}
     winner = max(curves, key=lambda name: max(curves[name]))
     index = int(np.argmax(curves[winner]))

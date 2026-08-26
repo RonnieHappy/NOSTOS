@@ -23,6 +23,7 @@ SCRIPTS = (
     "benchmark_pyradiomics_ibsi_texture.py",
     "audit_comparator_environments.py",
     "build_nostos0_main_figures.py",
+    "fetch_bbbc039_reference.ps1",
 )
 DOCS = (
     "NOSTOS0_REPRODUCIBILITY_AND_METHODS.md",
@@ -32,6 +33,7 @@ DOCS = (
     "NOSTOS_EXTERNAL_BONE_VALIDATION.md",
     "NOSTOS_EXTERNAL_FILAMENT_VALIDATION.md",
     "NOSTOS_EXTERNAL_CARTILAGE_VALIDATION.md",
+    "NOSTOS_EXTERNAL_NUCLEI_VALIDATION.md",
     "NOSTOS_METHODS_LANDSCAPE.md",
     "NOSTOS0_METHODS_ARTICLE.md",
     "NOSTOS0_EXTERNAL_REPLICATION_PROTOCOL.md",

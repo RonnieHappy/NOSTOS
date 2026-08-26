@@ -69,6 +69,17 @@ uv run nostos validate-filament --data <DATA_ROOT>/data/public/myceliumseg-zenod
 
 The validation compares the full response geometry with conventional scalars, naïve block summaries and leave-one-module-out ablations. It is explicitly exploratory because acquisition may be confounded with species.
 
+## External nuclei-field validation
+
+BBBC039v1 supplies 200 Hoechst fluorescence fields and manual instance masks. NOSTOS evaluates only the official 50-image test list, performs no fitting and abstains from physical-scale claims because pixel calibration is unavailable:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/fetch_bbbc039_reference.ps1 -Destination <DATA_ROOT>/BBBC039v1
+uv run nostos validate-nuclei --data <DATA_ROOT>/BBBC039v1 --output outputs/external-nuclei-v1_1
+```
+
+The polarity-aware Hessian field improves over a multiscale Laplacian baseline but remains inferior to raw Hoechst intensity. Because polarity was refined after the initial sign-agnostic result on the same test split, this result is explicitly post-test development and requires prospective confirmation on another acquisition.
+
 ## Cartilage-domain response validation
 
 The public OA cohort now receives the same spectral, tensor, Hessian and spatial response modules. Site-specific outcomes remain site matched and all inference is specimen level:
