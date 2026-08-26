@@ -20,6 +20,7 @@ ROOT_FILES = (
 TREES = ("src", "tests", "configs", ".github")
 SCRIPTS = (
     "benchmark_kymatio.py", "benchmark_pyradiomics.py",
+    "benchmark_pyradiomics_ibsi_texture.py",
     "audit_comparator_environments.py",
     "build_nostos0_main_figures.py",
 )
@@ -58,7 +59,7 @@ def _copy_file(source: Path, destination: Path, project_root: Path) -> None:
         text = source.read_text(encoding="utf-8")
         text = text.replace(str(project_root), "<PROJECT_ROOT>")
         text = re.sub(r"(?i)C:\\Users\\yanyl\\OneDrive\\NOSTOS", "<PROJECT_ROOT>", text)
-        text = re.sub(r"(?i)E:(?:\\\\|\\)NOSTOS", "<DATA_ROOT>", text)
+        text = re.sub(r"(?i)E:\\NOSTOS", "<DATA_ROOT>", text)
         destination.write_text(text, encoding="utf-8", newline="\n")
     else:
         shutil.copyfile(source, destination)

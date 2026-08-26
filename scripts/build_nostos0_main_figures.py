@@ -264,9 +264,13 @@ def figure4(filament_root: Path, cartilage_root: Path) -> None:
 
 
 if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Rebuild the four NOSTOS-0 main figures.")
+    parser.add_argument("--bone-root", type=Path, required=True)
+    parser.add_argument("--filament-root", type=Path, required=True)
+    parser.add_argument("--cartilage-review-images", type=Path, required=True)
+    args = parser.parse_args()
     figure2()
-    figure3(Path(r"E:\NOSTOS\data\public\trabecular-bone-zenodo-11061947"))
-    figure4(
-        Path(r"E:\NOSTOS\data\public\myceliumseg-zenodo-15224240\extracted\labeled-GS_PO_TS"),
-        Path(r"E:\NOSTOS\validation\cartilage-mask-review-v1\review_images"),
-    )
+    figure3(args.bone_root)
+    figure4(args.filament_root, args.cartilage_review_images)

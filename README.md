@@ -16,11 +16,11 @@ The live Nature-readiness boundary is maintained in `docs/NOSTOS0_CLAIM_EVIDENCE
 
 The official Kymatio comparison is intentionally isolated because Kymatio 0.3.0 is incompatible with the core environment's current SciPy. Reproduce it with Python 3.12 and `requirements-comparators.lock.txt`, export the frozen data with `write_external_comparator_dataset`, then run `scripts/benchmark_kymatio.py`. The current synthetic held-out result is 0.875 balanced accuracy for Kymatio versus 1.000 for NOSTOS response curves; this is not evidence of biological superiority.
 
-The upstream PyRadiomics comparison uses the pinned conda environment in `configs/radiomics39-environment.yml` (exact URLs in `configs/radiomics39-explicit.txt`) and `scripts/benchmark_pyradiomics.py`. It passes 14/14 published IBSI digital-phantom first-order reference values and reaches 1.000 balanced accuracy on the frozen synthetic split, equal to NOSTOS. The result removes any basis for claiming universal NOSTOS superiority over radiomics.
+The upstream PyRadiomics comparison uses the pinned conda environment in `configs/radiomics39-environment.yml` (exact URLs in `configs/radiomics39-explicit.txt`) and `scripts/benchmark_pyradiomics.py`. It passes 14/14 published IBSI digital-phantom first-order reference values and reaches 1.000 balanced accuracy on the frozen synthetic split, equal to NOSTOS. `scripts/benchmark_pyradiomics_ibsi_texture.py` additionally parses the official IBSI workbook read-only and passes 75/75 definitionally matched 3-D texture features at three significant digits; four unsupported or non-equivalent features remain explicitly not comparable. These results remove any basis for claiming universal NOSTOS superiority over radiomics.
 
 Run `nostos build-evidence-bundle --project-root . --output outputs/nostos0-evidence-bundle-v1` to regenerate the SHA-256 index of all required evidence receipts. A complete index is an integrity result, not a Nature-readiness declaration.
 
-The locked cartilage segmentation review packet is stored at `E:\NOSTOS\validation\cartilage-mask-review-v1`. It contains 40 outcome-free cases from eight validation participants, paired source/proposal renders, a reviewer manifest and a separately hashed crosswalk. Its status is `pending_human_reference_masks`; packet generation is not segmentation validation.
+The locked cartilage segmentation review packet is stored under `<DATA_ROOT>/validation/cartilage-mask-review-v1`. It contains 40 outcome-free cases from eight validation participants, paired source/proposal renders, a reviewer manifest and a separately hashed crosswalk. Its status is `pending_human_reference_masks`; packet generation is not segmentation validation.
 
 ## Frozen synthetic validation
 
@@ -43,7 +43,7 @@ The first external-domain check uses a checksum-locked subset of Zenodo record `
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts/fetch_bone_reference_subset.ps1
-uv run nostos validate-bone --data E:\NOSTOS\data\public\trabecular-bone-zenodo-11061947 --output outputs/external-bone-v1
+uv run nostos validate-bone --data <DATA_ROOT>/data/public/trabecular-bone-zenodo-11061947 --output outputs/external-bone-v1
 ```
 
 NOSTOS computes maximal-inscribed-sphere thickness over 32 frozen logarithmic physical-radius levels. The receipt reports agreement, bias and error against the archived reference while retaining the simpler twice-nearest-boundary calculation as a baseline. The eight-volume single-archive result is preliminary external validation, not evidence of broad generalization.
@@ -54,7 +54,7 @@ The cross-species MyceliumSeg subset contains 30 manually masked images. Because
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts/fetch_filament_reference_subset.ps1
-uv run nostos validate-filament --data E:\NOSTOS\data\public\myceliumseg-zenodo-15224240\extracted\labeled-GS_PO_TS --output outputs/external-filament-v1
+uv run nostos validate-filament --data <DATA_ROOT>/data/public/myceliumseg-zenodo-15224240/extracted/labeled-GS_PO_TS --output outputs/external-filament-v1
 ```
 
 The validation compares the full response geometry with conventional scalars, naïve block summaries and leave-one-module-out ablations. It is explicitly exploratory because acquisition may be confounded with species.
@@ -76,9 +76,10 @@ Reproducible public-data pilot for participant-level cartilage morphology analys
 ## Install and verify
 
 ```powershell
-cd C:\Users\yanyl\OneDrive\NOSTOS
-E:\NOSTOS\.venv\Scripts\python.exe -m pip install -e .
-nostos doctor
+git clone https://github.com/RonnieHappy/NOSTOS.git
+cd NOSTOS
+uv sync --extra dev
+uv run nostos doctor
 ```
 
 `nostos doctor` returns a machine-readable readiness report covering Python dependencies, the browser application and configured storage paths.
@@ -159,11 +160,11 @@ Never split tiles, sections, or specimens independently across training and vali
 
 ## Run the microscopy application
 
-From PowerShell, run `./launch_nostos.ps1` or `nostos serve`. The launcher uses the lightweight project in OneDrive and the large Python/CUDA environment on `E:\NOSTOS` when a local environment is absent. The primary endpoint is CPU-first; a learned CUDA proposal model is an optional experimental comparison and is not required for FFT analysis.
+From PowerShell, run `./launch_nostos.ps1` or `uv run nostos serve`. Local storage may be configured in `storage.json`; no particular drive letter is required. The primary endpoint is CPU-first; a learned CUDA proposal model is an optional experimental comparison and is not required for FFT analysis.
 
 ## Rebuild the CPU pilot
 
-Run `./run_cpu_pilot.ps1` to regenerate participant-level Safranin-O and H&E features, association reports, paired-site validation, confounder-adjusted estimates, perturbation tests, mask-boundary sensitivity, and manuscript tables. Bulk TIFFs remain under `E:\NOSTOS`; generated tables and figures are written under `outputs/cpu_pilot/`.
+Run `./run_cpu_pilot.ps1` to regenerate participant-level Safranin-O and H&E features, association reports, paired-site validation, confounder-adjusted estimates, perturbation tests, mask-boundary sensitivity, and manuscript tables. Configure bulk-image storage through `storage.json`; generated tables and figures are written under `outputs/cpu_pilot/`.
 
 ## Rebuild the flagship validation
 

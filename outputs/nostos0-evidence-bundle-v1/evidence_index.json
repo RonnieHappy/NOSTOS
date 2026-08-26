@@ -54,6 +54,16 @@
       "interpretation": "IBSI first-order subset conformance and synthetic comparator."
     },
     {
+      "identifier": "pyradiomics_ibsi_texture",
+      "path": "outputs/nostos0-ibsi-texture-conformance-v1/ibsi_texture_conformance.json",
+      "sha256": "adc2edc38cec52978d57940b77aa1d542d087a329a4c08e92f20675cf985d859",
+      "bytes": 37547,
+      "protocol_version": "nostos-pyradiomics-ibsi-texture/1.0",
+      "reported_status": "pass",
+      "evidence_level": "upstream_comparator",
+      "interpretation": "Official IBSI workbook audit of 75 definitionally matched 3-D texture features, with unsupported features retained as not comparable."
+    },
+    {
       "identifier": "comparator_imports",
       "path": "outputs/nostos0-comparator-conformance-v1/comparator_conformance.json",
       "sha256": "0010fd49b6382961f3284a5eaaf8e8673e531d437eb8203a51e2d13ccee47249",
