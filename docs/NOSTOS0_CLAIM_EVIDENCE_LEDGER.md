@@ -13,6 +13,7 @@ interchangeable.
 | One frozen representation transfers across tissue classes without retraining | Same response implementation run on cartilage, bone and 30 mycelium images | Supported as software transfer, not universal biological meaning | Fourth domain and independently acquired images |
 | Compact response geometry is a universal specimen-identity fingerprint | Frozen confirmation on 60 disjoint identities across PSHG, nuclei, mycelium and collagen-SHG domains produced macro top-1 accuracy 0.100 (95% bootstrap interval 0.033–0.183); six substantive gates failed | Rejected | Claim must not appear; future validations must use fit-for-purpose physical or biological endpoints |
 | A training-free classical adapter can recover the calcified-cartilage interface in PTA micro-CT | Patient-disjoint confirmation on 532 slices from ten patients: median error 537.2 µm (bootstrap 465.2–846.2), 0.39% within 30 µm, band IoU 0.005 and zero of six downstream measurements concordant | Rejected | Use an imported or learned adapter; validate it on a new untouched acquisition before promotion |
+| A learned adapter can preserve interface-conditioned NOSTOS measurements in PTA micro-CT | Post-failure five-fold patient-grouped development across 19 patients and 35 samples: median Dice 0.912 and interface error 21.6 µm, but bootstrap upper error 67.2 µm, 57.8% of columns within 30 µm, band IoU 0.534, four slice abstentions and only one of six downstream features with CCC ≥0.85 | Not supported; segmentation improved but measurement preservation failed | Redesign the interface-aware objective and uncertainty rule, then freeze and test on a separately acquired untouched dataset |
 | Full response geometry is universally superior to focused methods | Synthetic discrimination 1.00 versus 0.94 conventional; mycelium gain only 0.012; cartilage full model underperforms focused FFT | Rejected | Claim must not appear |
 | Response geometry contains cross-species filament information | Mycelium balanced accuracy 0.680; permutation P=0.00498 | Supported narrowly; species and acquisition are confounded | Acquisition-balanced filament dataset and external test set |
 | Cartilage angular entropy tracks site-matched OA structure | Participant-level medial/lateral associations in one public cohort; frozen outcome-free review packet now contains 40 sections from 8 locked validation participants | Exploratory support; review infrastructure complete | Human-corrected masks, Dice/IoU/boundary metrics; independent cohort; lesion/edge ablations |
@@ -38,6 +39,7 @@ interchangeable.
 - `outputs/nostos0-orbit-redesign-development-v1/orbit_redesign_development.json`
 - `outputs/nostos0-osteochondral-interface-development-v1/osteochondral_interface_development.json`
 - `outputs/nostos0-osteochondral-interface-confirmation-v1/osteochondral_interface_confirmation.json`
+- `outputs/nostos0-osteochondral-learned-adapter-v1_1/osteochondral_learned_adapter_summary.json`
 - `outputs/nostos0-evidence-bundle-v1/evidence_index.json`
 - `manifests/cartilage_mask_review_packet.json` (pointer to the T7 review packet)
 - `outputs/nostos0-release-candidate-v1/release_receipt.json`

@@ -1,0 +1,15 @@
+{
+  "protocol_version": "nostos-cleanroom-verification/1.0",
+  "status": "pass",
+  "release_tag": "v0.3.0-rc14",
+  "archive": "nostos-0.3.0-release-candidate.zip",
+  "archive_sha256": "96100904d2291e71af052f9dfe06410e9249bbb7db1c8eaa94257b6f9e1545c3",
+  "python": "3.13.13",
+  "environment_command": "uv sync --frozen --extra dev",
+  "test_command": "python -m pytest -q",
+  "tests_passed": 143,
+  "tests_skipped": 3,
+  "tests_failed": 0,
+  "dependency_check": "pass",
+  "platform_note": "UV_LINK_MODE=copy was used for the fresh Windows extraction; the archive, package contents and lockfile were unchanged. The three skips are optional learned-segmentation tests because PyTorch is intentionally isolated from the CPU-first core environment."
+}

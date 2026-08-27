@@ -1,0 +1,9 @@
+{
+  "protocol_version": "nostos-release-candidate/1.0",
+  "status": "pass",
+  "archive": "nostos-0.3.0-release-candidate.zip",
+  "archive_bytes": 1326423,
+  "archive_sha256": "96100904d2291e71af052f9dfe06410e9249bbb7db1c8eaa94257b6f9e1545c3",
+  "stage_manifest_sha256": "1ba9115eb0281786b6ff40ad61863b60629db7d2e2d722d4cea10f144260c8bf",
+  "file_count": 278
+}

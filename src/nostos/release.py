@@ -16,6 +16,7 @@ PROTOCOL = "nostos-release-candidate/1.0"
 ROOT_FILES = (
     ".gitignore", "README.md", "LICENSE", "CITATION.cff", "pyproject.toml",
     "uv.lock", "requirements-lock.txt", "requirements-comparators.lock.txt",
+    "requirements-segmentation-cu128.txt",
 )
 TREES = ("src", "tests", "configs", ".github")
 SCRIPTS = (
@@ -23,6 +24,7 @@ SCRIPTS = (
     "benchmark_pyradiomics_ibsi_texture.py",
     "audit_comparator_environments.py",
     "build_nostos0_main_figures.py",
+    "build_external_audit_package.py",
     "fetch_bbbc039_reference.ps1",
     "fetch_bbbc007_reference.ps1",
     "fetch_bbbc020_reference.ps1",
@@ -39,6 +41,7 @@ SCRIPTS = (
     "run_local_orientation_external_test.py",
     "run_pshg_external_orientation.py",
     "download_pshg_tiss.py",
+    "run_osteochondral_learned_adapter.py",
 )
 DOCS = (
     "NOSTOS0_REPRODUCIBILITY_AND_METHODS.md",
@@ -65,8 +68,9 @@ DOCS = (
     "NOSTOS0_LOCAL_ORIENTATION_EXTERNAL_TEST_PROTOCOL.md",
     "NOSTOS0_PSHG_EXTERNAL_ORIENTATION_PROTOCOL.md",
     "NOSTOS0_PSHG_BREAST_CONFIRMATION_PROTOCOL.md",
+    "NOSTOS0_OSTEOCHONDRAL_LEARNED_ADAPTER_BENCHMARK.md",
 )
-EVIDENCE_INDEX = Path("outputs/nostos0-evidence-bundle-v8/evidence_index.json")
+EVIDENCE_INDEX = Path("outputs/nostos0-evidence-bundle-v11/evidence_index.json")
 TEXT_SUFFIXES = {".py", ".md", ".toml", ".txt", ".json", ".csv", ".yml", ".yaml", ".cff", ".ps1"}
 SKIP_PARTS = {"__pycache__", ".pytest_cache", ".mypy_cache", "nostos.egg-info"}
 SECRET_PATTERNS = (
@@ -178,6 +182,7 @@ def build_release(project_root: Path, output: Path) -> dict:
         "limitations": [
             "Archive integrity is not independent scientific replication.",
             "Cartilage reference-mask validation and independent-acquisition validation remain pending.",
+            "The learned osteochondral adapter is post-failure development and failed downstream measurement-agreement gates.",
             "Repository and archival DOI placeholders must be replaced before publication.",
         ],
     }

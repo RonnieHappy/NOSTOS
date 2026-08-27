@@ -18,7 +18,13 @@ The official Kymatio comparison is intentionally isolated because Kymatio 0.3.0 
 
 The upstream PyRadiomics comparison uses the pinned conda environment in `configs/radiomics39-environment.yml` (exact URLs in `configs/radiomics39-explicit.txt`) and `scripts/benchmark_pyradiomics.py`. It passes 14/14 published IBSI digital-phantom first-order reference values and reaches 1.000 balanced accuracy on the frozen synthetic split, equal to NOSTOS. `scripts/benchmark_pyradiomics_ibsi_texture.py` additionally parses the official IBSI workbook read-only and passes 75/75 definitionally matched 3-D texture features at three significant digits; four unsupported or non-equivalent features remain explicitly not comparable. These results remove any basis for claiming universal NOSTOS superiority over radiomics.
 
-Run `nostos build-evidence-bundle --project-root . --output outputs/nostos0-evidence-bundle-v1` to regenerate the SHA-256 index of all required evidence receipts. A complete index is an integrity result, not a Nature-readiness declaration.
+Run `nostos build-evidence-bundle --project-root . --output outputs/nostos0-evidence-bundle-v11` to regenerate the SHA-256 index of all required evidence receipts. A complete index is an integrity result, not a Nature-readiness declaration.
+
+## Learned osteochondral ROI-adapter development
+
+The prospective training-free PTA micro-CT interface adapter failed and is rejected. A post-failure three-level U-Net was subsequently evaluated using five patient-grouped outer folds over 19 patients, 35 samples and 1,960 discovered slices. It achieved median whole-mask Dice 0.912 and median interface error 21.6 µm, but failed six of nine gates: the patient-bootstrap error upper limit was 67.2 µm, only 57.8% of columns were within 30 µm, median ±75-µm band IoU was 0.534, four slices abstained, the Otsu superiority interval ended at zero, and only one of six downstream measurements reached CCC 0.85. This is development evidence, not independent validation.
+
+The frozen protocol and exact CUDA environment are in `docs/NOSTOS0_OSTEOCHONDRAL_LEARNED_ADAPTER_BENCHMARK.md` and `requirements-segmentation-cu128.txt`. The compact receipt is `outputs/nostos0-osteochondral-learned-adapter-v1_1/osteochondral_learned_adapter_summary.json`; full checkpoints and slice-level output are bulk artifacts and are not committed.
 
 ## External replication challenge
 
