@@ -1,9 +1,9 @@
 {
-  "protocol_version": "nostos-release-candidate/1.0",
+  "protocol_version": "nostos-release-candidate/1.1",
   "status": "pass",
   "archive": "nostos-0.3.0-release-candidate.zip",
-  "archive_bytes": 28060471,
-  "archive_sha256": "38f8b92269030a84b8ea9ac3e6264994e0c27eab867320236e36110456f5578d",
-  "stage_manifest_sha256": "c4e8079a6e05d7aef09a1c3bed9b8f2789f675523b806ec6f08a1fc25948a6f0",
-  "file_count": 443
+  "archive_bytes": 28060913,
+  "archive_sha256": "8314887fe135c4032f8b58780f24a8a7a7d01598a675652065176e5d6d05e707",
+  "stage_manifest_sha256": "928d1c2566fdd321e73d26372479fcb99b5b1dbb2380c01dd24cd59333490af7",
+  "file_count": 444
 }

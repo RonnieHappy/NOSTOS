@@ -12,9 +12,9 @@ import zipfile
 from pathlib import Path
 
 
-PROTOCOL = "nostos-release-candidate/1.0"
+PROTOCOL = "nostos-release-candidate/1.1"
 ROOT_FILES = (
-    ".gitignore", "README.md", "LICENSE", "CITATION.cff", "pyproject.toml",
+    ".gitattributes", ".gitignore", "README.md", "LICENSE", "CITATION.cff", "pyproject.toml",
     "uv.lock", "requirements-lock.txt", "requirements-comparators.lock.txt",
     "requirements-network-comparator.lock.txt",
     "requirements-segmentation-cu128.txt",
@@ -160,6 +160,10 @@ SKIP_PARTS = {"__pycache__", ".pytest_cache", ".mypy_cache", "nostos.egg-info"}
 POST_RELEASE_AUDIT_PATHS = {
     "src/nostos/validation/final_audit.py",
     "tests/test_final_audit.py",
+    "outputs/nostos0-release-candidate-v27/release_receipt.json",
+    "outputs/nostos0-release-candidate-v27/release_manifest.json",
+    "outputs/nostos0-release-candidate-v27/cleanroom_initial_failure.json",
+    "outputs/nostos0-release-candidate-v27/cleanroom_verification.json",
 }
 SCANNER_SOURCE_PATHS = {
     "src/nostos/release.py",

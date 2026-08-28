@@ -1,19 +1,19 @@
 {
-  "protocol_version": "nostos-cleanroom-verification/1.0",
+  "protocol_version": "nostos-cleanroom-verification/1.1",
   "status": "pass",
   "archive": "nostos-0.3.0-release-candidate.zip",
-  "archive_sha256": "38f8b92269030a84b8ea9ac3e6264994e0c27eab867320236e36110456f5578d",
+  "archive_sha256": "8314887fe135c4032f8b58780f24a8a7a7d01598a675652065176e5d6d05e707",
   "environment": {
     "python": "3.13.13",
     "installer": "uv sync --extra dev --link-mode copy",
-    "source": "fresh extraction of the definitive version-consistent, escaped-path-hardened v27 data-free release archive using uv sync --frozen"
+    "source": "fresh extraction of the definitive version-consistent, cross-platform-provenance-hardened v27 data-free release archive using uv sync --frozen"
   },
   "verification": {
     "pytest": {
       "passed": 180,
       "skipped": 4,
       "exit_code": 0,
-      "elapsed_seconds": 23.57
+      "elapsed_seconds": 26.82
     },
     "nostos_doctor": {
       "status": "ready",
@@ -27,14 +27,15 @@
     "release_manifest": {
       "status": "pass",
       "data_included": false,
-      "file_count_excluding_manifest": 442,
+      "file_count_excluding_manifest": 443,
       "audit_findings": 0
     },
-    "deterministic_second_build_sha256": "38f8b92269030a84b8ea9ac3e6264994e0c27eab867320236e36110456f5578d",
+    "deterministic_second_build_sha256": "8314887fe135c4032f8b58780f24a8a7a7d01598a675652065176e5d6d05e707",
     "release_builder_source_identity": true,
     "archive_private_path_scan": "pass; scanner-regex source files contain intentional detection literals only",
     "manuscript_and_figure_provenance_assets_packaged": true,
-    "runtime_version_matches_installed_metadata": "0.3.0"
+    "runtime_version_matches_installed_metadata": "0.3.0",
+    "scientific_svg_byte_policy": "figures/nostos0/*.svg is stored without text normalization so provenance hashes are invariant across Git checkout platforms"
   },
   "retained_initial_failure": "cleanroom_initial_failure.json",
   "scope": "Installation and packaged-code execution only; not independent biological or external-user validation."

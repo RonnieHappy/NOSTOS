@@ -1,6 +1,6 @@
 # NOSTOS external reproducibility and tool audit package
 
-Generated: 2026-08-28T20:28:02+00:00
+Generated: 2026-08-28T21:04:33+00:00
 
 ## Instructions for the independent auditor
 
@@ -8,11 +8,11 @@ Audit the code, methods, claims and user-facing tool independently. Do not assum
 
 ## Release identity
 
-- Package: NOSTOS 0.3.0-rc15
+- Package: NOSTOS 0.3.0-rc16
 - Public repository: https://github.com/RonnieHappy/NOSTOS
-- Immutable tag: v0.3.0-rc15
-- Commit: resolve with `git rev-list -n 1 v0.3.0-rc15` and compare it with the signed release page
-- Release: https://github.com/RonnieHappy/NOSTOS/releases/tag/v0.3.0-rc15
+- Immutable tag: v0.3.0-rc16
+- Commit: resolve with `git rev-list -n 1 v0.3.0-rc16` and compare it with the signed release page
+- Release: https://github.com/RonnieHappy/NOSTOS/releases/tag/v0.3.0-rc16
 - Intended use: CPU-first, calibrated structural measurement in biological images
 - Implemented domains: analytic phantoms, cartilage histology, trabecular-bone micro-CT, filament microscopy, nuclei fluorescence and polarization-SHG
 - Platform used for this audit: Windows, Python 3.13.13
@@ -43,7 +43,7 @@ The learned segmentation checkpoint is optional. Without it, `analyze` and `serv
 ## Clean reproduction sequence
 
 ```powershell
-git clone --branch v0.3.0-rc15 https://github.com/RonnieHappy/NOSTOS.git
+git clone --branch v0.3.0-rc16 https://github.com/RonnieHappy/NOSTOS.git
 cd NOSTOS
 $env:UV_LINK_MODE='copy'  # only if Windows/cloud storage rejects hardlinks
 uv sync --frozen --extra dev
@@ -64,14 +64,14 @@ Raw data are intentionally excluded from Git and must be obtained from the origi
 ........................................................................ [ 39%]
 ........................................................................ [ 79%]
 .....................................                                    [100%]
-181 passed, 4 skipped in 22.85s
+181 passed, 4 skipped in 31.39s
 ```
 
 ### Dependency consistency — exit code 0
 
 ```text
-Using Python 3.13.13 environment at: outputs\cleanroom-v27-release-final5\nostos-0.3.0\.venv
-Checked 34 packages in 2ms
+Using Python 3.13.13 environment at: outputs\cleanroom-v27-release-final6\nostos-0.3.0\.venv
+Checked 34 packages in 4ms
 All installed packages are compatible
 ```
 
@@ -229,7 +229,7 @@ c545828a5d69f147da714f11403cabe07733b0433b9bdafd86599266ef94e58a  configs/radiom
 e6c45e2f2edcd2fdae155dd81e772c65001b823420051c68ec9543de61a8a653  docs/NOSTOS0_BIOLOGICAL_RETRIEVAL_CONFIRMATION_PROTOCOL.md
 1bcc2fd784ee3a6dfa3c6425accb7c1574aa0ffcad8f407fc88df169dbafdfe9  docs/NOSTOS0_CLAIM_EVIDENCE_LEDGER.md
 a87732ac8e466185f5d2127e4082f4c52226a21a01b3c969276b86ea7e11f03b  docs/NOSTOS0_COMPLETE_PUBLIC_DATA_READINESS_AUDIT.md
-06b721be60d4c124506be8233c01dea30ae1de926dee14ba799375570079fce9  docs/NOSTOS0_FINAL_MAX_AUDIT.md
+8656658930b7f7105eca672f7f1d90fae47a5d16daeb09e4cac78692cabbdd88  docs/NOSTOS0_FINAL_MAX_AUDIT.md
 f028ee3fe5290e045a14dd659e811b9026e58386e4a6d35eaa3f23404378d31b  docs/NOSTOS0_METHODS_ARTICLE.md
 d23d930fa6ee30a106eca24dad3dda7856bf733e0a28e849b9d2628a3a1c1fc5  docs/NOSTOS0_OSTEOCHONDRAL_INTERFACE_CONFIRMATION_PROTOCOL.md
 b896df299ec9e9a8dae0209d3d969ebc3aa750b5afa4b200080211ff66ab49fd  docs/NOSTOS0_OSTEOCHONDRAL_LEARNED_ADAPTER_BENCHMARK.md
@@ -262,7 +262,7 @@ e9fecb1156a70f752aff50d74b00e652d3f1a7ed15796ee62e48d45005d90dea  outputs/nostos
 3651c5d2885cbd6d97af337d63ae5a627e41d70a0778bb2dcf433418c01a312b  outputs/nostos0-dynamic-synthetic-v1/dynamic_validation.json
 d30a7e26eb45343c1d9654b91c776b2c54e4e984ca660c1c726bb7259dcbfaa6  outputs/nostos0-evidence-bundle-v27/checksums.sha256
 be57bd32012ad4729e5c7d41a30d50ba3b8274bc67e46df5ed4d1fda381622fe  outputs/nostos0-evidence-bundle-v27/evidence_index.json
-a2e05e68f66e70fd64492f325da7b3f69db9a6c5c527fbb098231f227e2b161f  outputs/nostos0-final-max-audit-v1/final_audit.json
+f24ca66c73b72d32f4e6111de10483c2794d5b7a9bd2928c155c7d16c5b4ef73  outputs/nostos0-final-max-audit-v1/final_audit.json
 73c6c146a452b119e40754d6dcb040d675556c763eb21790a865299126e00f00  outputs/nostos0-hrf-network-v1/hrf_network_validation.json
 8742fe695b4a0c2c4aa7af3e6b09631b8d7d9e4eef6f1f4b4eb1db0ea0f8cac1  outputs/nostos0-manuscript-qa-v1/manuscript_qa.json
 b72dac67ec14d0c6026557cd1572f0179c81ebe14fee150faa76f9ed1d9fec3a  outputs/nostos0-network-resampling-development-v1_1/network_resampling_development.json
@@ -272,10 +272,10 @@ e978bbddd301f3baa1376683b8dc5a65d785352ce4d8496261c1628ac56f8a06  outputs/nostos
 8afa7525ada6851db9a4eb60b241c0105273c89204390c0469c296fed72e1ee6  outputs/nostos0-osteochondral-reference-audit-v1/osteochondral_reference_definition_audit_summary.json
 d071a495745586d61bcbce7987e6fe4dff87adca92f24b4a38ca0f4fe9171eb4  outputs/nostos0-public-tool-workflows-v1/public_tool_workflows.json
 768f4bcd4b18e69995be4b6d9347c2a533aaf767d8d52a81ace2e71ae8a7b983  outputs/nostos0-release-candidate-v27/cleanroom_initial_failure.json
-e65cb875723a1072e7f63bae0ac9d5a51095c86f7337cd40f71d7d3aca9a82f2  outputs/nostos0-release-candidate-v27/cleanroom_verification.json
-38f8b92269030a84b8ea9ac3e6264994e0c27eab867320236e36110456f5578d  outputs/nostos0-release-candidate-v27/nostos-0.3.0-release-candidate.zip
-c4e8079a6e05d7aef09a1c3bed9b8f2789f675523b806ec6f08a1fc25948a6f0  outputs/nostos0-release-candidate-v27/release_manifest.json
-64244fb3baa80621535ce4a55864f99b9b8646e1ffc378d2e78aac2d55e5e0c2  outputs/nostos0-release-candidate-v27/release_receipt.json
+1cefde8d7af4fb28b3d6733045d73d82b4f89c772c52f29f0ffa23eade68192a  outputs/nostos0-release-candidate-v27/cleanroom_verification.json
+8314887fe135c4032f8b58780f24a8a7a7d01598a675652065176e5d6d05e707  outputs/nostos0-release-candidate-v27/nostos-0.3.0-release-candidate.zip
+928d1c2566fdd321e73d26372479fcb99b5b1dbb2380c01dd24cd59333490af7  outputs/nostos0-release-candidate-v27/release_manifest.json
+edf8248553d09e96298245ce34a2227724e3548e3add573b55dcc0391ebcd85f  outputs/nostos0-release-candidate-v27/release_receipt.json
 da9c59ad2508685325ab2ee805b94c23d90b5ce80a583cd51f5b41a0305fdb96  outputs/nostos0-stare-network-confirmation-v1/stare_network_confirmation.json
 288cdc44be9bb405bb95e032fcfefcda39037a39cf95c48f35adc88373156d66  outputs/nostos0-structure-tensor-comparator-v1/structure_tensor_comparator.json
 9204767675b912b7f1ece4469799dc1009fa3e2afd966d7956bf6337faa5844c  pyproject.toml
@@ -294,7 +294,7 @@ bde5a5ff5ae6f5c5764eab2ffb09c236a7a362643a0a39cb266c82c20da689b5  scripts/build_
 62645a727b963ae4039dc4fac102b51632efcd156c64e8d0a5473c872f7cab89  scripts/build_bone_contract_summary.py
 b9737d4b319aa5d25f6b8bd61d4db069ccb92ffb1776d038112d1f68e8b5bac4  scripts/build_eight_visual_figures.py
 8fae48ba9a7fee2ec6ea4dbbe6ad832fe14834ae06d3bb0205971cf373530f17  scripts/build_experiential_figures.py
-5cd8da4a70572dd89d5f3e6ea34321af324097d537980468efa0a5908de1131b  scripts/build_external_audit_package.py
+bd415bd5bdeb6918af2965d7d4f55e79b42636406568b05dfd50f450a210c7de  scripts/build_external_audit_package.py
 c1111521f596bbf5558ad79753250a9183e48d99fad0426b586ca03f90429d78  scripts/build_final_max_audit.py
 5c563c82a44c3d8de9a97f1765ebf5c936a879ae80cdec3e3ede3fd81d0dbc50  scripts/build_guided_review_deck.ps1
 fcbd394bbe200611ee98dd023e19e38cc321f8cc2deef91f7a62a04097a8eb3c  scripts/build_manuscript_docx.py
@@ -422,7 +422,7 @@ c36ccdaa2e722cd047ded1a7674cdaa93086df959fb5738f9935620470f5143d  src/nostos/mod
 3ef8929e051a283d86e76b3c6a0664f422213a537a0c340b1e2093d67fe8458b  src/nostos/modeling/locked_analysis.py
 6048e5c23c78f496654e28dea8301cd9c9545601210ed76836b184e2613ecfe2  src/nostos/modeling/severity_benchmark.py
 ed3972b469c013c20dbd02005bff223b86665d4172a79ae7c4494a3c4f1f8e7e  src/nostos/pipeline.py
-ba7fc6f07e555ab9dc4e12f39b8f0163e97f77c2b3aca3b03ddde7314c4459fa  src/nostos/release.py
+c04f21809c52004f01fc78edcfee5b66812b6df5b93d2c2286fb61b4f47ea92c  src/nostos/release.py
 7f4a05133c27086cd0442c284356c346dead2aaf9ffda9d9c6fa717259fa4843  src/nostos/reporting/__init__.py
 8948c096136efd8e4642e5dbf791ec370f6b5a416f69f7edd1fe66538a84341a  src/nostos/reporting/ablations.py
 ed4ee2e93d7fc40de460f2ef0c8a83659c0cefa314a314028b9dc2da534f51ec  src/nostos/reporting/cohort.py
@@ -463,7 +463,7 @@ f587f168f44b1b171c967ed7b68ddaa37155d601bb01ade6b73712adf877b620  src/nostos/val
 518ff10eed8d980c477edbf19f91227402bca87a9d1fbf2c2b4fd5565333b635  src/nostos/validation/external_nuclei.py
 05d3b47ba2c9e49403df1124d2f33b845b41e1bbfab4409ad69a395dbf5a81ff  src/nostos/validation/external_nuclei_bbbc020.py
 d59dd41396caad19cd9aed7e9563b3d519d4ec098d7b5d38f57be51366ec8e94  src/nostos/validation/external_nuclei_confirmatory.py
-3c40f2e0bb75f354b739e6d0c5c691e6024ca7b93771760043e98cffe99ccaa8  src/nostos/validation/final_audit.py
+413fc270fec327e1504d6c7f59ef9886753c298bedc409cb0dd06db5b42f8523  src/nostos/validation/final_audit.py
 a39ddad29c5d579eb4b43f682bfb31bb122d69721ddcc7e12ef09a4059ff7b8c  src/nostos/validation/harness.py
 aaf49acdc8866dfda68bd1f05b04d885a79adffb8f073cfd9ba79ffbc3c02d70  src/nostos/validation/human_nanoct_scale_response.py
 e7ae93c0f053c3ab9951e1810b7bcc1c8f1589ddad22e383e31c1820bf160550  src/nostos/validation/human_nanoct_transfer.py
@@ -548,7 +548,7 @@ ce2683d21e767fd4e88087422ca4b12d184d37aa3eda8f25de3e0e43691dceb3  tests/test_pse
 c730b746ef13bcb9845407de81251bb276308cb1b1884af8b3194a910f8e93ae  tests/test_publication_bundle.py
 f69dd7b5d26af7c41347d6f22ed13564e4dd47c9b41036e5d8026b4bee163f98  tests/test_qc.py
 43af68e0047aa58bd55211ba133c2524db0d28aa2192d260ccc685722bab62b2  tests/test_reader_reliability.py
-8f675a1ebaf509a9d8e664d139212cb9f02271b1c89dd0d13051764810e9bfc1  tests/test_release.py
+6f6bd91a3f230bd9524c90070deb53ea8fa782d06771d8113c9d6715188e7d92  tests/test_release.py
 c3584789c0866f972766b5d408c76a5c58a19854fec3e92376d23a8e23ee6c8a  tests/test_reliability.py
 6ae19d78c5b0159cf079568cda37623ae54ca535a0c4b08b1eea20c5f7532c3c  tests/test_replication.py
 8d70757d469bcc38441ed1e31da31cfd85cb2e0729fddb79728239e34e454f65  tests/test_response_geometry.py

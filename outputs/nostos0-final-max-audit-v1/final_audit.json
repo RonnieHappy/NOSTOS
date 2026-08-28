@@ -48,12 +48,12 @@
     "release_receipt": {
       "path": "outputs/nostos0-release-candidate-v27/release_receipt.json",
       "bytes": 361,
-      "sha256": "64244fb3baa80621535ce4a55864f99b9b8646e1ffc378d2e78aac2d55e5e0c2"
+      "sha256": "edf8248553d09e96298245ce34a2227724e3548e3add573b55dcc0391ebcd85f"
     },
     "release_manifest": {
       "path": "outputs/nostos0-release-candidate-v27/release_manifest.json",
-      "bytes": 79328,
-      "sha256": "c4e8079a6e05d7aef09a1c3bed9b8f2789f675523b806ec6f08a1fc25948a6f0"
+      "bytes": 79476,
+      "sha256": "928d1c2566fdd321e73d26372479fcb99b5b1dbb2380c01dd24cd59333490af7"
     },
     "cleanroom_initial_failure": {
       "path": "outputs/nostos0-release-candidate-v27/cleanroom_initial_failure.json",
@@ -62,8 +62,8 @@
     },
     "cleanroom_verification": {
       "path": "outputs/nostos0-release-candidate-v27/cleanroom_verification.json",
-      "bytes": 1557,
-      "sha256": "e65cb875723a1072e7f63bae0ac9d5a51095c86f7337cd40f71d7d3aca9a82f2"
+      "bytes": 1731,
+      "sha256": "1cefde8d7af4fb28b3d6733045d73d82b4f89c772c52f29f0ffa23eade68192a"
     },
     "bone_figure_manifest": {
       "path": "figures/nostos0/supplementary_figure_1_bone_contract_stress.manifest.json",
@@ -73,11 +73,11 @@
   },
   "release_identity": {
     "software_version": "0.3.0",
-    "planned_public_tag": "v0.3.0-rc15",
+    "planned_public_tag": "v0.3.0-rc16",
     "archive": "nostos-0.3.0-release-candidate.zip",
-    "archive_bytes": 28060471,
-    "archive_sha256": "38f8b92269030a84b8ea9ac3e6264994e0c27eab867320236e36110456f5578d",
-    "file_count": 443,
+    "archive_bytes": 28060913,
+    "archive_sha256": "8314887fe135c4032f8b58780f24a8a7a7d01598a675652065176e5d6d05e707",
+    "file_count": 444,
     "publication_state_at_audit": "prepared_for_public_push"
   },
   "evidence_index": {

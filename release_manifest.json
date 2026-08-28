@@ -1,10 +1,15 @@
 {
-  "protocol_version": "nostos-release-candidate/1.0",
+  "protocol_version": "nostos-release-candidate/1.1",
   "software_version": "0.3.0",
   "status": "pass",
   "data_included": false,
-  "file_count": 442,
+  "file_count": 443,
   "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 171,
+      "sha256": "40d704991c54568519463d529d40122a0a00556f8c96133fc43e7a32cdb96e08"
+    },
     {
       "path": ".github/ISSUE_TEMPLATE/external-replication.yml",
       "bytes": 1472,
@@ -1432,8 +1437,8 @@
     },
     {
       "path": "src/nostos/release.py",
-      "bytes": 15394,
-      "sha256": "ba7fc6f07e555ab9dc4e12f39b8f0163e97f77c2b3aca3b03ddde7314c4459fa"
+      "bytes": 15694,
+      "sha256": "c04f21809c52004f01fc78edcfee5b66812b6df5b93d2c2286fb61b4f47ea92c"
     },
     {
       "path": "src/nostos/reporting/__init__.py",
@@ -2052,8 +2057,8 @@
     },
     {
       "path": "tests/test_release.py",
-      "bytes": 1958,
-      "sha256": "8f675a1ebaf509a9d8e664d139212cb9f02271b1c89dd0d13051764810e9bfc1"
+      "bytes": 2367,
+      "sha256": "6f6bd91a3f230bd9524c90070deb53ea8fa782d06771d8113c9d6715188e7d92"
     },
     {
       "path": "tests/test_reliability.py",

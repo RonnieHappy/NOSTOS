@@ -238,7 +238,7 @@ def build_final_audit(project_root: Path, json_output: Path, markdown_output: Pa
         "receipts": receipts,
         "release_identity": {
             "software_version": "0.3.0",
-            "planned_public_tag": "v0.3.0-rc15",
+            "planned_public_tag": "v0.3.0-rc16",
             "archive": release.get("archive"),
             "archive_bytes": release.get("archive_bytes"),
             "archive_sha256": release.get("archive_sha256"),
@@ -338,7 +338,7 @@ The five-record bone program verified 73 files totaling 54,948,569,793 bytes and
 
 ## Release identity
 
-- Planned public tag: `v0.3.0-rc15`
+- Planned public tag: `v0.3.0-rc16`
 - Archive: `{release.get('archive')}`
 - Archive size: {release.get('archive_bytes'):,} bytes
 - Archive SHA-256: `{release.get('archive_sha256')}`
