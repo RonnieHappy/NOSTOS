@@ -1,0 +1,126 @@
+{
+  "protocol_version": "nostos-bonej-thickness/1.0",
+  "protocol_sha256": "9a1d78bc57b030ae8cf7134ce92f18575fe2ad7b12c07149b727ec044f33a623",
+  "status": "pass",
+  "source": {
+    "doi": "10.5281/zenodo.11061947",
+    "license": "CC BY 4.0"
+  },
+  "software": {
+    "fiji_archive": "2020-08-06 win64",
+    "fiji_archive_sha256": "9c4ac95516c4f2e66a67a0935ffb7cf248b3abfe68219a23258db5da96865a6c",
+    "imagej": "1.53c",
+    "bonej": "1.4.3 official final legacy jar",
+    "bonej_jar_sha256": "b0fe265485ce13e9128137a73ee3281da80ef29ae56bb7112fb552c69be8611d",
+    "java": "1.8.0_172-b11",
+    "java3d": "1.5.2 windows-amd64",
+    "java3d_archive_sha256": "ae772ce79e2232df1e628596c2f0ab086489794accd28f0cb6eb64d1ba64b81f"
+  },
+  "summary": {
+    "case_count": 8,
+    "nostos_bonej_ccc": 0.9263180622129717,
+    "median_absolute_relative_difference": 0.07138050628268167,
+    "mean_absolute_nostos_bonej_difference_mm": 0.01567826201319695,
+    "mean_absolute_ipl_bonej_difference_mm": 0.030754610630133846,
+    "maximum_relative_spacing_anisotropy": 1.913155855058668e-05
+  },
+  "gates": {
+    "all_eight_cases_processed": true,
+    "maximum_spacing_anisotropy_below_0_001": true,
+    "nostos_bonej_ccc_at_least_0_85": true,
+    "median_absolute_relative_difference_at_most_0_15": true,
+    "nostos_not_farther_than_ipl_by_more_than_0_02_mm": true,
+    "software_provenance_complete": true
+  },
+  "cases": [
+    {
+      "case": "BMLPL_001_REF_17",
+      "bonej_mean_mm": 0.2366,
+      "bonej_sd_mm": 0.09793,
+      "bonej_max_mm": 0.4671,
+      "nostos_mean_mm": 0.21914973855018616,
+      "ipl_reference_mean_mm": 0.20527631824008613,
+      "maximum_relative_axis_deviation": 3.423742240141709e-06,
+      "input_tiff_sha256": "e87b4c2a8d38a152c2889bc02429353c85b41a9f011ca9e75ea92e099f466c3e",
+      "bonej_result_sha256": "62226062dc814a175b21459edb8ee30c3b0ad04bba9d2ca78aeaebc5b4d949ea"
+    },
+    {
+      "case": "BMLPL_002_REF_17",
+      "bonej_mean_mm": 0.2067,
+      "bonej_sd_mm": 0.05988,
+      "bonej_max_mm": 0.3756,
+      "nostos_mean_mm": 0.19288517534732819,
+      "ipl_reference_mean_mm": 0.1761882014980294,
+      "maximum_relative_axis_deviation": 3.8121632787653926e-06,
+      "input_tiff_sha256": "92aa45e5cd5bf44348fb9e67512258a8bc951872fbf439acff0c6bf1e2fe6396",
+      "bonej_result_sha256": "11b33a4e0af6c87a5501fa052f25c11c15e7a6710f6263d487e5d7c6a1726396"
+    },
+    {
+      "case": "BMLPL_003_BML_17",
+      "bonej_mean_mm": 0.2014,
+      "bonej_sd_mm": 0.1128,
+      "bonej_max_mm": 0.5857,
+      "nostos_mean_mm": 0.1851455569267273,
+      "ipl_reference_mean_mm": 0.17627298119211943,
+      "maximum_relative_axis_deviation": 3.423742240141709e-06,
+      "input_tiff_sha256": "312ad9a81c5457589a6b00dab789ea70eb44a0266b0634f5b3ce5a59fa2fec89",
+      "bonej_result_sha256": "ee638cb013c0434534f9de3926340c4a7091c031e3e98882673277a8669ce5dd"
+    },
+    {
+      "case": "BMLPL_004_REF_17",
+      "bonej_mean_mm": 0.2058,
+      "bonej_sd_mm": 0.08108,
+      "bonej_max_mm": 0.4233,
+      "nostos_mean_mm": 0.19108210504055023,
+      "ipl_reference_mean_mm": 0.17816692273428397,
+      "maximum_relative_axis_deviation": 4.043726951606931e-06,
+      "input_tiff_sha256": "3a8b88397f13d561d1a95eb1ff7fe0a414cea4314d6b37894e896658c2bff34e",
+      "bonej_result_sha256": "356a92f0061c7ddb9b6cb4804a9fbc00ab53ddd51fc30dbf1846c491d3835e2f"
+    },
+    {
+      "case": "BMLPL_005_REF_17",
+      "bonej_mean_mm": 0.1607,
+      "bonej_sd_mm": 0.05064,
+      "bonej_max_mm": 0.2981,
+      "nostos_mean_mm": 0.1492508500814438,
+      "ipl_reference_mean_mm": 0.13473205551716722,
+      "maximum_relative_axis_deviation": 1.604748736459604e-05,
+      "input_tiff_sha256": "de7e0a2c87e10ee33b4acb052b18ad4e1d42d18b3219f648058ec9ae117ec5aa",
+      "bonej_result_sha256": "801d4023636bf4ab4e00a2e2568faa93641ad1941bc9dcfddc72c31adef33b27"
+    },
+    {
+      "case": "BMLPL_007_REF_17",
+      "bonej_mean_mm": 0.1927,
+      "bonej_sd_mm": 0.05804,
+      "bonej_max_mm": 0.3518,
+      "nostos_mean_mm": 0.17812563478946686,
+      "ipl_reference_mean_mm": 0.1626317653763204,
+      "maximum_relative_axis_deviation": 1.913155855058668e-05,
+      "input_tiff_sha256": "c04f8a1d3c4093cbce801c6514309921d9891900edf31a6535b202302359900f",
+      "bonej_result_sha256": "56bb297f7072aed3d523ac5f16309064fbdd52ee6458415a2d4e4fbaad249598"
+    },
+    {
+      "case": "BMLPL_008_REF_17",
+      "bonej_mean_mm": 0.2764,
+      "bonej_sd_mm": 0.07883,
+      "bonej_max_mm": 0.4265,
+      "nostos_mean_mm": 0.25790050625801086,
+      "ipl_reference_mean_mm": 0.24080176934175984,
+      "maximum_relative_axis_deviation": 3.8121632787653926e-06,
+      "input_tiff_sha256": "ef7c95b61a64c9fb3ff62ff5344952f7d4a355c346977fb4332fc39d45d7a3af",
+      "bonej_result_sha256": "90a227e5a94dba1f72eb2d2bdd834a41da8730f1d0f77cc62c0753d9305d2163"
+    },
+    {
+      "case": "BMLPL_009_BML_17",
+      "bonej_mean_mm": 0.2901,
+      "bonej_sd_mm": 0.07419,
+      "bonej_max_mm": 0.4366,
+      "nostos_mean_mm": 0.27143433690071106,
+      "ipl_reference_mean_mm": 0.25029310105916286,
+      "maximum_relative_axis_deviation": 3.8121632787653926e-06,
+      "input_tiff_sha256": "f038790e1abf19b0f03403d6f4307e9af2df9fe538b1338bcd2ac3d3595b01c7",
+      "bonej_result_sha256": "fc1f512be2ded420c47d146c2f2297c4dbbcf85f577ffe9e7e2c5dba04983fc8"
+    }
+  ],
+  "interpretation": "Cross-software concordance for eight effectively isotropic public masks; not biological or scanner validation."
+}

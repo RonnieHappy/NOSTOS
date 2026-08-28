@@ -4,6 +4,7 @@ from __future__ import annotations
 import hashlib
 import json
 import platform
+import re
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -34,13 +35,47 @@ INCLUDED_FILES = (
     "docs/NOSTOS0_BIOLOGICAL_RETRIEVAL_CONFIRMATION_PROTOCOL.md",
     "docs/NOSTOS0_OSTEOCHONDRAL_INTERFACE_CONFIRMATION_PROTOCOL.md",
     "docs/NOSTOS0_OSTEOCHONDRAL_LEARNED_ADAPTER_BENCHMARK.md",
-    "outputs/nostos0-evidence-bundle-v11/evidence_index.json",
-    "outputs/nostos0-evidence-bundle-v11/checksums.sha256",
+    "docs/NOSTOS0_COMPLETE_PUBLIC_DATA_READINESS_AUDIT.md",
+    "docs/NOSTOS0_SOFTWARE_RESOURCE_ARTICLE.md",
+    "docs/NOSTOS0_software_resource_submission_candidate.docx",
+    "docs/NOSTOS0_FINAL_MAX_AUDIT.md",
+    "outputs/nostos0-evidence-bundle-v27/evidence_index.json",
+    "outputs/nostos0-evidence-bundle-v27/checksums.sha256",
+    "outputs/nostos0-bone-contract-summary/bone_contract_program_summary.json",
+    "figures/nostos0/supplementary_figure_1_bone_contract_stress.manifest.json",
+    "outputs/nostos0-bbbc035-dynamic-confirmation-v1/bbbc035_dynamic_confirmation.json",
+    "outputs/nostos0-hrf-network-v1/hrf_network_validation.json",
+    "outputs/nostos0-network-resampling-development-v1_1/network_resampling_development.json",
+    "outputs/nostos0-stare-network-confirmation-v1/stare_network_confirmation.json",
+    "outputs/nostos0-dynamic-synthetic-v1/dynamic_validation.json",
+    "outputs/nostos0-complete-readiness-audit-v1/readiness_audit.json",
     "outputs/nostos0-biological-retrieval-confirmation-v1/biological_retrieval_confirmation.json",
     "outputs/nostos0-osteochondral-interface-confirmation-v1/osteochondral_interface_confirmation.json",
     "outputs/nostos0-osteochondral-learned-adapter-v1_1/osteochondral_learned_adapter_summary.json",
-    "outputs/nostos0-release-candidate-v14/release_receipt.json",
-    "outputs/nostos0-release-candidate-v14/cleanroom_verification.json",
+    "outputs/nostos0-osteochondral-boundary-adapter-v2/osteochondral_learned_adapter_summary.json",
+    "outputs/nostos0-osteochondral-reference-audit-v1/osteochondral_reference_definition_audit_summary.json",
+    "outputs/nostos0-bonej-thickness-v1/bonej_thickness_comparator.json",
+    "outputs/nostos0-bbbc006-spatial-confirmation-v1/bbbc006_spatial_confirmation.json",
+    "outputs/nostos0-public-tool-workflows-v1/public_tool_workflows.json",
+    "outputs/nostos0-structure-tensor-comparator-v1/structure_tensor_comparator.json",
+    "outputs/nostos0-bbbc006-qc-confirmation-v1/bbbc006_qc_confirmation.json",
+    "outputs/nostos0-dense-deformation-analytic-v1/dense_deformation_validation.json",
+    "outputs/nostos0-dense-uncertainty-development-v1/dense_uncertainty_development.json",
+    "outputs/nostos0-dense-deformation-analytic-confirmation-v1/dense_deformation_analytic_confirmation.json",
+    "outputs/nostos0-bbbc035-dense-deformation-confirmation-v1/bbbc035_dense_deformation_confirmation.json",
+    "outputs/nostos0-dense-tool-workflow-v1/dense_tool_workflow_initial_failure.json",
+    "outputs/nostos0-dense-tool-workflow-v1/dense_tool_workflow.json",
+    "outputs/nostos0-ctc-tracking-development-v1/ctc_tracking_development.json",
+    "outputs/nostos0-ctc-native-tracking-confirmation-v1/ctc_native_tracking_confirmation.json",
+    "outputs/nostos0-ctc-hela02-lineage-transfer-v1/ctc_hela02_lineage_transfer.json",
+    "outputs/nostos0-ctc-tracking-tool-workflow-v1/ctc_tracking_tool_workflow.json",
+    "outputs/nostos0-manuscript-qa-v1/manuscript_qa.json",
+    "outputs/nostos0-final-max-audit-v1/final_audit.json",
+    "outputs/nostos0-release-candidate-v27/release_receipt.json",
+    "outputs/nostos0-release-candidate-v27/release_manifest.json",
+    "outputs/nostos0-release-candidate-v27/nostos-0.3.0-release-candidate.zip",
+    "outputs/nostos0-release-candidate-v27/cleanroom_initial_failure.json",
+    "outputs/nostos0-release-candidate-v27/cleanroom_verification.json",
 )
 EXCLUDED_SUFFIXES = {".pyc", ".docx", ".pdf", ".png", ".jpg", ".svg"}
 
@@ -70,14 +105,30 @@ def critical_files() -> list[Path]:
 
 def command_output(command: list[str]) -> tuple[int, str]:
     completed = subprocess.run(command, cwd=ROOT, text=True, capture_output=True, check=False)
-    text = (completed.stdout + completed.stderr).strip()
+    text = sanitize((completed.stdout + completed.stderr).strip())
     return completed.returncode, text
+
+
+def sanitize(text: str) -> str:
+    """Remove workstation identity and bulk-storage roots from reviewer output."""
+    values = (
+        str(ROOT),
+        str(ROOT).replace("\\", "\\\\"),
+        "E:\\NOSTOS",
+        "E:\\\\NOSTOS",
+        "E:/NOSTOS",
+    )
+    for value in values:
+        text = text.replace(value, "<PROJECT_ROOT>" if "Users" in value else "<DATA_ROOT>")
+    text = re.sub(r"(?i)[A-Z]:\\Users\\[^\\\s\"']+", "<USER_ROOT>", text)
+    text = re.sub(r"(?i)[A-Z]:\\\\Users\\\\[^\\\s\"']+", "<USER_ROOT>", text)
+    return text
 
 
 def main() -> None:
     files = critical_files()
     pytest_code, pytest_text = command_output([sys.executable, "-m", "pytest", "-q"])
-    pip_code, pip_text = command_output(["uv", "pip", "check"])
+    pip_code, pip_text = command_output(["uv", "pip", "check", "--python", sys.executable])
     doctor_code, doctor_text = command_output([sys.executable, "-m", "nostos.cli", "doctor"])
     smoke_path = ROOT / "outputs" / "tool_smoke" / "analysis.json"
     smoke = json.loads(smoke_path.read_text(encoding="utf-8")) if smoke_path.is_file() else None
@@ -94,18 +145,18 @@ def main() -> None:
         "",
         "## Release identity",
         "",
-        "- Package: NOSTOS 0.3.0-rc14",
+        "- Package: NOSTOS 0.3.0-rc15",
         "- Public repository: https://github.com/RonnieHappy/NOSTOS",
-        "- Immutable tag: v0.3.0-rc14",
-        "- Commit: resolve with `git rev-list -n 1 v0.3.0-rc14` and compare it with the signed release page",
-        "- Release: https://github.com/RonnieHappy/NOSTOS/releases/tag/v0.3.0-rc14",
+        "- Immutable tag: v0.3.0-rc15",
+        "- Commit: resolve with `git rev-list -n 1 v0.3.0-rc15` and compare it with the signed release page",
+        "- Release: https://github.com/RonnieHappy/NOSTOS/releases/tag/v0.3.0-rc15",
         "- Intended use: CPU-first, calibrated structural measurement in biological images",
         "- Implemented domains: analytic phantoms, cartilage histology, trabecular-bone micro-CT, filament microscopy, nuclei fluorescence and polarization-SHG",
         "- Platform used for this audit: Windows, Python " + platform.python_version(),
         "",
         "## Explicit non-claims",
         "",
-        "NOSTOS is not a diagnostic device, intraoperative decision aid, universal image fingerprint, universal classifier or validated estimator of stiffness, modulus, permeability, load support, treatment response or patient outcome. The public cartilage cohort provides adjacent-section repeatability, not independent external validation. Classical cartilage masks are tissue proposals, not expert reference segmentations. The training-free PTA micro-CT interface adapter failed prospective confirmation and is rejected. The subsequent learned adapter is post-failure development: despite Dice 0.912 and median interface error 21.6 micrometres, it failed six of nine gates and does not establish downstream measurement validity. Mechanistic language remains associative and non-causal.",
+        "NOSTOS is not a diagnostic device, intraoperative decision aid, universal image fingerprint, universal classifier or validated estimator of stiffness, modulus, permeability, load support, treatment response or patient outcome. The public cartilage cohort provides adjacent-section repeatability, not independent external validation. Classical cartilage masks are tissue proposals, not expert reference segmentations. The training-free PTA micro-CT interface adapter failed prospective confirmation and is rejected. Two subsequent learned adapters remain post-failure development. A frozen audit showed that their apparent boundary accuracy depends materially on how a surface is extracted from threshold-derived, often disconnected mineralized-tissue masks; the original 21.6-micrometre value is not a definitive interface-accuracy claim. Mechanistic language remains associative and non-causal.",
         "",
         "## Novelty thesis to audit",
         "",
@@ -129,7 +180,7 @@ def main() -> None:
         "## Clean reproduction sequence",
         "",
         "```powershell",
-        "git clone --branch v0.3.0-rc14 https://github.com/RonnieHappy/NOSTOS.git",
+        "git clone --branch v0.3.0-rc15 https://github.com/RonnieHappy/NOSTOS.git",
         "cd NOSTOS",
         "$env:UV_LINK_MODE='copy'  # only if Windows/cloud storage rejects hardlinks",
         "uv sync --frozen --extra dev",
@@ -167,7 +218,7 @@ def main() -> None:
     ]
     if smoke:
         lines.extend([
-            f"- Source: `{smoke.get('source_image')}`",
+            f"- Source: `{sanitize(str(smoke.get('source_image')))}`",
             f"- Status: `{smoke.get('status')}`",
             f"- Device: `{smoke.get('device')}`",
             f"- Segmentation supervision: `{smoke.get('model_supervision')}`",
@@ -195,7 +246,7 @@ def main() -> None:
         "",
         "1. Does every split and cross-validation path group by participant before preprocessing or feature selection?",
         "2. Are pixel sizes read from authoritative metadata and propagated consistently into cycles-per-millimetre features?",
-        "3. Do the prospective retrieval, training-free osteochondral-interface and post-failure learned-adapter failures appear completely and consistently in code, receipts, discussion and claim ledger?",
+        "3. Do the prospective retrieval, training-free osteochondral-interface, learned-adapter and reference-definition failures appear completely and consistently in code, receipts, discussion and claim ledger?",
         "4. Are all bootstrap, false-discovery-rate and permutation families defined before outcome inspection?",
         "5. Does adjacent-section replication remain independent enough to support repeatability without being described as external validation?",
         "6. Are PLM comparisons honest about adjacency and absence of deformable registration?",
@@ -210,7 +261,9 @@ def main() -> None:
         "- No expert reference-mask study covering the full cohort.",
         "- The frozen universal identity-retrieval confirmation failed six substantive gates.",
         "- The frozen training-free osteochondral-interface confirmation failed seven substantive gates and the adapter is rejected.",
-        "- The patient-grouped learned adapter improved whole-mask overlap but failed six of nine development gates, including downstream measurement agreement; it is not independent confirmation.",
+        "- The patient-grouped learned adapter improved whole-mask overlap but failed six of nine development gates; a boundary-aware redesign also failed five substantive gates.",
+        "- The threshold-derived mineralized-tissue masks do not define a unique continuous interface: four frozen extraction policies produced median errors from 16.0 to 512.8 micrometres and changed model ranking.",
+        "- A manually adjudicated interface set with a locked anatomical coordinate convention is required before further adapter promotion.",
         "- No validated learned/imported ROI adapter on an untouched acquisition.",
         "- No independent external user has reproduced a complete archived result.",
         "- No direct tissue-mechanics measurements.",

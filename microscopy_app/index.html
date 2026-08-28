@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>NOSTOS Microscopy Workstation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand"><strong>NOSTOS</strong><span>MICROSCOPY WORKSTATION</span></div>
+    <div class="system"><span id="health" class="state">CONNECTING</span><span id="device">CPU ANALYSIS</span></div>
+  </header>
+  <main>
+    <aside class="controls">
+      <section>
+        <h1>Calibrated structure</h1>
+        <p>Sample-agnostic response geometry, with an optional cartilage adapter.</p>
+      </section>
+      <label class="drop" id="drop">
+        <input id="file" type="file" accept="image/png,image/jpeg,image/tiff">
+        <strong>Load microscopy image</strong>
+        <span>PNG, JPEG, or browser-readable TIFF</span>
+      </label>
+      <div class="field-grid">
+        <label>Mode<select id="mode"><option value="generic">Generic field</option><option value="cartilage">Cartilage adapter</option></select></label>
+        <label id="stainField">Stain<select id="stain"><option>SafO</option><option>HE</option><option>PLM</option></select></label>
+        <label>µm / pixel<input id="scale" type="number" min="0.05" max="100" step="0.01" value="5.16"></label>
+      </div>
+      <button id="analyze" disabled>RUN ANALYSIS</button>
+      <div id="progress" class="progress" hidden><span></span><p>Segmenting tissue and resolving spatial spectra</p></div>
+      <section class="legend" id="legend" hidden>
+        <h2>Segmentation</h2>
+        <div><i class="cartilage"></i>Articular cartilage</div>
+        <div><i class="interface"></i>Calcified interface</div>
+        <div><i class="bone"></i>Bone / trabeculae</div>
+        <div><i class="void"></i>Marrow / void</div>
+      </section>
+      <section class="notice"><strong>RESEARCH USE ONLY</strong><p>Not validated for diagnosis, surgical guidance, or mechanical-property inference.</p></section>
+    </aside>
+    <section class="workspace">
+      <div class="viewer" id="viewer">
+        <div class="empty"><strong>NO SECTION LOADED</strong><span>Drop a calibrated microscopy image to begin.</span></div>
+        <img id="source" alt="Loaded microscopy section" hidden>
+        <img id="overlay" alt="Predicted tissue segmentation overlay" hidden>
+        <div class="viewer-tools" hidden id="viewerTools">
+          <button class="mode active" data-mode="overlay">OVERLAY</button>
+          <button class="mode" data-mode="source">SOURCE</button>
+          <label>Opacity<input id="opacity" type="range" min="0" max="100" value="100"></label>
+        </div>
+      </div>
+      <div class="results" id="results">
+        <div class="metric"><span>ORIENTATION</span><strong id="orientation">--</strong><small>degrees, axial</small></div>
+        <div class="metric"><span>ANISOTROPY</span><strong id="anisotropy">--</strong><small>FFT order</small></div>
+        <div class="metric"><span>ENTROPY</span><strong id="entropy">--</strong><small>angular disorder</small></div>
+        <div class="metric"><span>CHAR. FREQ.</span><strong id="frequency">--</strong><small>cycles / mm</small></div>
+        <div class="spectrum"><div><span>POWER SPECTRUM</span><small id="tileCount">Awaiting analysis</small></div><img id="spectrum" alt="Spatial FFT power spectrum" hidden></div>
+        <div class="qc"><div><span>QUALITY CONTROL</span><button id="export" disabled>EXPORT JSON</button></div><div id="warnings" class="warnings">No analysis available.</div></div>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

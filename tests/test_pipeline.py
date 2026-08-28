@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from nostos.pipeline import pipeline_commands, write_feature_contract
+from nostos.pipeline import pipeline_commands, resolve_config, write_feature_contract
 
 
 def test_pipeline_does_not_touch_locked_test_without_explicit_flag():
@@ -26,3 +26,19 @@ def test_feature_contract_is_frozen_from_wide_table(tmp_path: Path):
     contract = write_feature_contract(table, output)
     assert contract["zsd"]
     assert output.is_file()
+
+
+def test_pipeline_config_resolves_environment_and_project_paths(tmp_path: Path, monkeypatch):
+    project = tmp_path / "project"
+    config_path = project / "configs" / "pipeline.json"
+    config_path.parent.mkdir(parents=True)
+    monkeypatch.setenv("NOSTOS_DATA_ROOT", str(tmp_path / "public-data"))
+    monkeypatch.setenv("NOSTOS_ANNOTATION_ROOT", str(tmp_path / "annotations"))
+    resolved = resolve_config({
+        "raw_root": "${NOSTOS_DATA_ROOT}/cohort/raw",
+        "annotation_manifest": "${NOSTOS_ANNOTATION_ROOT}/annotation_manifest.csv",
+        "output": "outputs/result.json",
+    }, config_path=config_path)
+    assert Path(resolved["raw_root"]) == tmp_path / "public-data" / "cohort" / "raw"
+    assert Path(resolved["annotation_manifest"]) == tmp_path / "annotations" / "annotation_manifest.csv"
+    assert Path(resolved["output"]) == project / "outputs" / "result.json"

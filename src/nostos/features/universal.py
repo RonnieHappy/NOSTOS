@@ -6,6 +6,7 @@ import hashlib
 import numpy as np
 
 from nostos.core.response import Axis, Calibration, ResponseGeometry, ResponseSurface
+from nostos.core.qc import acquisition_qc
 
 from .response_modules import (
     directional_variogram,
@@ -60,6 +61,10 @@ def analyze_response_geometry(
             "mask_supplied": mask is not None,
         },
     )
+    quality = acquisition_qc(data)
+    geometry.provenance["acquisition_qc"] = quality
+    if quality["status"] == "abstain":
+        geometry.abstain("LOW_DYNAMIC_RANGE", "The image has no robust intensity range.", "intensity_dependent_modules")
     minimum_spacing = min(spacing_um)
     if scales_um is None:
         scales_um = tuple(minimum_spacing * value for value in (2.0, 4.0, 8.0, 16.0))
@@ -102,9 +107,9 @@ def analyze_response_geometry(
             geometry.add(_surface("geometry", "thickness_quantiles", Axis("threshold", (0.05, 0.25, 0.5, 0.75, 0.95), "quantile"), quantiles, unit=spatial_unit))
             if thresholds_um is None:
                 thresholds_um = tuple(minimum_spacing * value for value in (0, 1, 2, 4, 8))
-            network = erosion_survival_response(binary, spacing_um=spacing_um, thresholds_um=thresholds_um)
+            network = erosion_survival_response(binary, spacing_um=spacing_um, thresholds_um=thresholds_um, boundary_corrected=True)
             threshold_axis = Axis("threshold", thresholds_um, spatial_unit)
-            geometry.add(_surface("network", "surviving_fraction", threshold_axis, network.surviving_fraction))
+            geometry.add(_surface("network", "surviving_fraction_boundary_v2", threshold_axis, network.surviving_fraction))
             geometry.add(_surface("network", "component_count", threshold_axis, tuple(float(v) for v in network.component_count), unit="count"))
     else:
         geometry.abstain("MASK_NOT_SUPPLIED", "Geometry and network measurements require an eligible specimen mask.", "geometry/network")

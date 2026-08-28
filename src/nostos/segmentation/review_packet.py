@@ -12,7 +12,7 @@ from PIL import Image
 from scipy.ndimage import binary_erosion
 
 
-PROTOCOL = "nostos-cartilage-mask-review/1.0"
+PROTOCOL = "nostos-cartilage-mask-review/1.1"
 
 
 def _sha256(path: Path) -> str:
@@ -80,6 +80,14 @@ def build_review_packet(annotation_root: Path, output: Path) -> dict:
             "image": original_out.relative_to(output).as_posix(),
             "proposal_overlay": overlay_out.relative_to(output).as_posix(),
             "reviewed_mask": correction_path.relative_to(output).as_posix(),
+            "review_audit": f"reviewed_masks/{blind_id}_review.json",
+            "second_reviewed_mask": "",
+            "second_review_audit": "",
+            "adjudicated_mask": "",
+            "adjudication_audit": "",
+            "reviewer_id": "",
+            "second_reviewer_id": "",
+            "adjudicator_id": "",
             "review_status": "pending",
             "cartilage_present": "",
             "artifact_burden": "",
@@ -104,6 +112,7 @@ def build_review_packet(annotation_root: Path, output: Path) -> dict:
         "stain_counts": review["stain"].value_counts().sort_index().to_dict(),
         "site_counts": review["site"].value_counts().sort_index().to_dict(),
         "review_status": "pending_human_reference_masks",
+        "required_audit_fields": ["case_id", "reviewer_id", "completed_utc", "completed_review", "source_sha256", "proposal_sha256", "reference_mask_sha256"],
         "limitation": "Case identifiers are pseudonymized and outcomes are absent; this is not independent double blinding.",
     }
     (output / "packet_receipt.json").write_text(json.dumps(receipt, indent=2) + "\n", encoding="utf-8")

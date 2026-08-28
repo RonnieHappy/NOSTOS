@@ -187,11 +187,20 @@ class NetworkResponse:
     fragmentation_threshold: float | None
 
 
-def erosion_survival_response(mask: np.ndarray, *, spacing_um: tuple[float, ...], thresholds_um: tuple[float, ...]) -> NetworkResponse:
+def erosion_survival_response(mask: np.ndarray, *, spacing_um: tuple[float, ...], thresholds_um: tuple[float, ...], boundary_corrected: bool = False) -> NetworkResponse:
+    """Measure survival after physical erosion using a voxel-boundary distance.
+
+    SciPy's EDT measures centre-to-centre distance to background. The opt-in v2
+    correction subtracts half the smallest sample spacing, removing the
+    discontinuity in which every foreground sample survives an erosion equal to
+    one coarse pixel width. The default preserves frozen v1 receipts; generic
+    tool output requests v2 explicitly. This is an approximation for anisotropic grids.
+    """
     binary = np.asarray(mask, dtype=bool)
     if binary.ndim not in (2, 3) or not binary.any() or len(spacing_um) != binary.ndim:
         raise ValueError("A nonempty calibrated 2-D/3-D mask is required.")
-    distance = ndimage.distance_transform_edt(binary, sampling=spacing_um)
+    center_distance = ndimage.distance_transform_edt(binary, sampling=spacing_um)
+    distance = np.maximum(0.0, center_distance - 0.5 * min(spacing_um)) if boundary_corrected else center_distance
     counts: list[int] = []
     fractions: list[float] = []
     percolation: list[bool] = []

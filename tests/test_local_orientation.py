@@ -20,3 +20,4 @@ def test_local_measurement_recovers_bright_horizontal_line():
     result = _case_measurements(image, label)
     assert np.median(result["nostos_error"]) < 2.0
     assert np.median(result["sigma2_error"]) < 2.0
+

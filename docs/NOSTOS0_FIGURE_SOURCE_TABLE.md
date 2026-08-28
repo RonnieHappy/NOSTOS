@@ -6,7 +6,7 @@ set is frozen.
 
 | Figure concept | Required source | Statistical unit | Current eligibility |
 |---|---|---|---|
-| Response-geometry architecture | `src/nostos/core/response.py`; `src/nostos/features/universal.py` | Software object | Eligible as schematic |
+| Cross-domain inputs and computed response fields | `figures/nostos0/figure_1_response_geometry_reference.manifest.json`; `scripts/build_nostos0_figure1.py` | Public image/volume and frozen module test | Eligible; no generative imagery |
 | Synthetic ground-truth recovery | `outputs/nostos0-synthetic-v1/validation.json` | Phantom/perturbation instance | Eligible |
 | Module perturbation matrix | `outputs/nostos0-module-perturbations-v1/module_perturbation_matrix.json` | Module × perturbation | Eligible |
 | Representation comparison | `representation_benchmark.json`, `kymatio_benchmark.json`, `pyradiomics_benchmark.json` | Held-out phantom perturbation | Eligible with “synthetic” label |

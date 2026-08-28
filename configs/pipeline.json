@@ -1,6 +1,6 @@
 {
-  "raw_root": "E:/NOSTOS/data/public/human-knee-cartilage-histopathology/raw",
-  "annotation_manifest": "E:/NOSTOS/data/annotations/annotation_manifest.csv",
+  "raw_root": "${NOSTOS_DATA_ROOT}/human-knee-cartilage-histopathology/raw",
+  "annotation_manifest": "${NOSTOS_ANNOTATION_ROOT}/annotation_manifest.csv",
   "pixel_sizes": "manifests/pixel_sizes.json",
   "dataset_manifest": "manifests/dataset_manifest.json",
   "splits": "manifests/splits.json",

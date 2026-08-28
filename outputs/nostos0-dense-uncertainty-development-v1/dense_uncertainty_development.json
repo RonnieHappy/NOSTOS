@@ -1,0 +1,21 @@
+{
+  "protocol_version": "nostos0-dense-uncertainty-development/1.0",
+  "status": "development_complete",
+  "opened_cohort": "analytic seeds 2400-2435 from failed frozen run",
+  "candidate_uncertainty_error_spearman": {
+    "forward_backward": 0.20211684115230097,
+    "photometric": 0.05861876320544071,
+    "estimator_disagreement": 0.2588917028961152,
+    "fb_photometric_rank_mean": 0.09957152835073761,
+    "all_rank_mean": 0.09673963718962773
+  },
+  "selection_rule": "highest pooled Spearman correlation on opened development pixels",
+  "selected": "estimator_disagreement",
+  "conformal_calibration": {
+    "target_coverage": 0.95,
+    "additive_offset_pixels": 0.3076263275029393,
+    "development_coverage": 0.9500020790681861,
+    "median_upper_bound_pixels": 0.41732621802645087
+  },
+  "interpretation": "Post-failure development only. The selected score requires disjoint analytic and public-content confirmation."
+}

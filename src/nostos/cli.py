@@ -20,7 +20,7 @@ def _doctor(args: argparse.Namespace) -> int:
     root = Path(__file__).resolve().parents[2]
     storage_file = root / "storage.json"
     checks: list[dict] = []
-    for module in ("numpy", "pandas", "PIL", "scipy", "sklearn", "tifffile"):
+    for module in ("numpy", "pandas", "PIL", "scipy", "skimage", "sklearn", "tifffile"):
         checks.append({"check": f"python:{module}", "ok": importlib.util.find_spec(module) is not None})
     checks.append({"check": "web_app", "ok": (root / "microscopy_app" / "index.html").is_file()})
     checks.append({"check": "storage_config", "ok": storage_file.is_file()})
@@ -32,7 +32,9 @@ def _doctor(args: argparse.Namespace) -> int:
                 if value.startswith(("http://", "https://")):
                     checks.append({"check": f"config:{name}", "ok": True, "value": value})
                 else:
-                    checks.append({"check": f"storage:{name}", "ok": Path(value).exists(), "path": value})
+                    configured = Path(value).expanduser()
+                    resolved = configured if configured.is_absolute() else root / configured
+                    checks.append({"check": f"storage:{name}", "ok": resolved.exists(), "path": str(resolved)})
     payload = {
         "status": "ready" if all(item["ok"] for item in checks) else "attention_required",
         "python": sys.version.split()[0],
@@ -105,6 +107,48 @@ def _analyze(args: argparse.Namespace) -> int:
         "case_report": str(report_path),
         "warnings": result["warnings"],
     })
+    return 0
+
+
+def _measure(args: argparse.Namespace) -> int:
+    from nostos.app.measure import measure_file
+
+    payload = measure_file(
+        args.input.resolve(),
+        args.output.resolve(),
+        spacing=args.spacing,
+        spatial_unit=args.unit,
+        mask_path=None if args.mask is None else args.mask.resolve(),
+        specimen_reference=args.specimen_reference,
+        specimen_direction_degrees=args.specimen_direction,
+    )
+    _json_print(payload)
+    return 0
+
+
+def _measure_series(args: argparse.Namespace) -> int:
+    from nostos.app.measure import measure_series_file
+
+    payload = measure_series_file(
+        args.input.resolve(), args.output.resolve(), spacing=args.spacing,
+        spatial_unit=args.unit, temporal_spacing=args.temporal_spacing,
+        temporal_unit=args.temporal_unit, dense=args.dense,
+    )
+    _json_print(payload)
+    return 0
+
+
+def _track_series(args: argparse.Namespace) -> int:
+    from nostos.app.measure import track_series_files
+
+    payload = track_series_files(
+        args.masks.resolve(), args.output.resolve(), spacing=args.spacing,
+        spatial_unit=args.unit, temporal_spacing=args.temporal_spacing,
+        temporal_unit=args.temporal_unit,
+        image_directory=None if args.images is None else args.images.resolve(),
+        experimental_divisions=args.experimental_divisions,
+    )
+    _json_print(payload)
     return 0
 
 
@@ -256,11 +300,24 @@ def _build_evidence_bundle(args: argparse.Namespace) -> int:
 def _replication_challenge(args: argparse.Namespace) -> int:
     from nostos.validation.replication import run_replication_challenge
 
-    payload = run_replication_challenge(args.output.resolve(), args.project_root.resolve(), args.operator)
+    payload = run_replication_challenge(
+        args.output.resolve(), args.project_root.resolve(), args.operator,
+        affiliation=args.affiliation, unaided=args.unaided,
+        author_environment=args.author_environment, assistance=args.assistance,
+        source_kind=args.source_kind,
+    )
     _json_print({"status": payload["status"],
                  "output": str(args.output.resolve() / "replication_receipt.json"),
                  "gates": payload["gates"]})
     return 0 if payload["status"] == "pass" else 1
+
+
+def _verify_replication(args: argparse.Namespace) -> int:
+    from nostos.validation.replication import verify_replication_package
+
+    payload = verify_replication_package(args.receipt, require_independent=not args.allow_author_run)
+    _json_print(payload)
+    return 0 if payload["status"] in {"eligible_independent_pass", "integrity_pass_not_independent"} else 1
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -273,6 +330,37 @@ def build_parser() -> argparse.ArgumentParser:
 
     doctor = commands.add_parser("doctor", help="Check the installation and configured storage")
     doctor.set_defaults(func=_doctor)
+
+    measure = commands.add_parser("measure", help="Measure a calibrated 2-D image or 3-D volume without tissue-specific retraining")
+    measure.add_argument("input", type=Path, help="PNG/JPEG/TIFF, NumPy .npy, or NIfTI .nii/.nii.gz input")
+    measure.add_argument("--spacing", required=True, help="One isotropic spacing or comma-separated spacing values")
+    measure.add_argument("--unit", choices=("um", "mm", "relative"), default="um")
+    measure.add_argument("--mask", type=Path, help="Optional shape-matched binary image/volume")
+    measure.add_argument("--specimen-reference", type=float, help="Optional physical reference length for relative scale")
+    measure.add_argument("--specimen-direction", type=float, default=0.0, help="Image-to-specimen axial rotation in degrees")
+    measure.add_argument("--output", type=Path, required=True)
+    measure.set_defaults(func=_measure)
+
+    series = commands.add_parser("measure-series", help="Measure an explicitly declared 2-D+t array; first axis is time")
+    series.add_argument("input", type=Path, help="NumPy .npy or multipage TIFF with axis order time,y,x")
+    series.add_argument("--spacing", required=True, help="One isotropic spatial spacing or y,x values")
+    series.add_argument("--unit", choices=("um", "mm", "relative"), default="um")
+    series.add_argument("--temporal-spacing", type=float, required=True)
+    series.add_argument("--temporal-unit", default="s")
+    series.add_argument("--dense", action="store_true", help="Estimate calibrated dense deformation with forward-backward uncertainty")
+    series.add_argument("--output", type=Path, required=True)
+    series.set_defaults(func=_measure_series)
+
+    tracking = commands.add_parser("track-series", help="Link imported instance masks into calibrated object trajectories")
+    tracking.add_argument("--masks", type=Path, required=True, help="Directory of framewise TIFF instance masks")
+    tracking.add_argument("--images", type=Path, help="Optional matching microscopy frames")
+    tracking.add_argument("--spacing", required=True, help="One isotropic spatial spacing or y,x values")
+    tracking.add_argument("--unit", choices=("um", "mm", "relative"), default="um")
+    tracking.add_argument("--temporal-spacing", type=float, required=True)
+    tracking.add_argument("--temporal-unit", default="min")
+    tracking.add_argument("--experimental-divisions", action="store_true", help="Enable lineage proposals that failed the pristine transfer gate")
+    tracking.add_argument("--output", type=Path, required=True)
+    tracking.set_defaults(func=_track_series)
 
     analyze = commands.add_parser("analyze", help="Analyze one microscopy image and export visual artifacts")
     analyze.add_argument("image", type=Path)
@@ -359,7 +447,17 @@ def build_parser() -> argparse.ArgumentParser:
     replication.add_argument("--output", type=Path, required=True)
     replication.add_argument("--project-root", type=Path, default=Path.cwd())
     replication.add_argument("--operator", default="anonymous")
+    replication.add_argument("--affiliation", default="")
+    replication.add_argument("--unaided", action="store_true", help="Attest that no NOSTOS author operated or debugged the run")
+    replication.add_argument("--author-environment", action=argparse.BooleanOptionalAction, default=True)
+    replication.add_argument("--assistance", default="not declared")
+    replication.add_argument("--source-kind", choices=("fresh_clone", "release_archive", "unspecified"), default="unspecified")
     replication.set_defaults(func=_replication_challenge)
+
+    verify_replication = commands.add_parser("verify-replication", help="Verify a returned external replication package")
+    verify_replication.add_argument("receipt", type=Path)
+    verify_replication.add_argument("--allow-author-run", action="store_true", help="Check integrity without requiring independent-operator eligibility")
+    verify_replication.set_defaults(func=_verify_replication)
     return parser
 
 

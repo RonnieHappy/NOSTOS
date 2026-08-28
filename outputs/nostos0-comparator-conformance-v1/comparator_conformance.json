@@ -2,7 +2,7 @@
   "protocol_version": "nostos-comparator-conformance/1.0",
   "python": "3.13.13",
   "comparator_interpreters": {
-    "kymatio": "C:\\Users\\yanyl\\OneDrive\\NOSTOS\\.venv-comparators\\Scripts\\python.exe",
+    "kymatio": "<PROJECT_ROOT>\\.venv-comparators\\Scripts\\python.exe",
     "pyradiomics": "<DATA_ROOT>\\environments\\radiomics39\\python.exe"
   },
   "platform": "Windows-11-10.0.26200-SP0",
@@ -17,7 +17,7 @@
       "module_version": null,
       "reference_conformance": "Official Kymatio Scattering2D; no local substitute is admissible.",
       "error": null,
-      "interpreter": "C:\\Users\\yanyl\\OneDrive\\NOSTOS\\.venv-comparators\\Scripts\\python.exe"
+      "interpreter": "<PROJECT_ROOT>\\.venv-comparators\\Scripts\\python.exe"
     },
     {
       "distribution": "pyradiomics",

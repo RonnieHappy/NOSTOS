@@ -5,7 +5,8 @@ torch = pytest.importorskip("torch")
 import numpy as np
 
 from nostos.segmentation.osteochondral import (
-    OsteochondralUNet, binary_segmentation_loss, percentile_normalize, postprocess_probability,
+    OsteochondralUNet, binary_segmentation_loss, boundary_aware_segmentation_loss,
+    percentile_normalize, postprocess_probability,
 )
 
 
@@ -40,3 +41,23 @@ def test_normalization_preserves_model_dtype() -> None:
     assert result.dtype == np.float32
     assert result.min() == 0
     assert result.max() == 1
+
+
+def test_boundary_loss_prefers_the_correct_interface() -> None:
+    target = torch.zeros(1, 1, 64, 32)
+    target[..., 30:, :] = 1
+    correct = torch.where(target > 0, torch.tensor(8.0), torch.tensor(-8.0))
+    shifted_target = torch.zeros_like(target)
+    shifted_target[..., 40:, :] = 1
+    shifted = torch.where(shifted_target > 0, torch.tensor(8.0), torch.tensor(-8.0))
+    assert boundary_aware_segmentation_loss(correct, target) < boundary_aware_segmentation_loss(shifted, target)
+
+
+def test_boundary_loss_backpropagates() -> None:
+    logits = torch.randn(2, 1, 32, 24, requires_grad=True)
+    target = torch.zeros_like(logits)
+    target[..., 14:, :] = 1
+    loss = boundary_aware_segmentation_loss(logits, target)
+    loss.backward()
+    assert torch.isfinite(loss)
+    assert logits.grad is not None and torch.isfinite(logits.grad).all()

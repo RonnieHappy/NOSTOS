@@ -125,8 +125,8 @@ From the repository root, using the core environment:
 nostos validate-synthetic --output outputs\nostos0-synthetic-v1
 nostos validate-modules --output outputs\nostos0-module-perturbations-v1
 nostos benchmark-synthetic --output outputs\nostos0-benchmark-v1
-nostos validate-bone --data E:\NOSTOS\data\public\trabecular-bone-zenodo-11061947 --output outputs\external-bone-v1
-nostos validate-filament --data E:\NOSTOS\data\public\myceliumseg-zenodo-15224240\extracted\labeled-GS_PO_TS --output outputs\external-filament-v1
+nostos validate-bone --data <DATA_ROOT>\data\public\trabecular-bone-zenodo-11061947 --output outputs\external-bone-v1
+nostos validate-filament --data <DATA_ROOT>\data\public\myceliumseg-zenodo-15224240\extracted\labeled-GS_PO_TS --output outputs\external-filament-v1
 nostos validate-cartilage --medial outputs\universal_cartilage\safo_medial.csv --lateral outputs\universal_cartilage\safo_lateral.csv --scores manifests\metadata.scores_raw.csv --output outputs\external-cartilage-v1
 nostos validate-nuclei --data <DATA_ROOT>\BBBC039v1 --output outputs\external-nuclei-v1_1
 nostos validate-nuclei-confirmatory --data <DATA_ROOT>\BBBC007v1 --output outputs\external-nuclei-confirmatory-v1

@@ -1,0 +1,52 @@
+{
+  "manifest_version": "nostos-bone-public-data/1.0",
+  "storage_root": "E:/NOSTOS/data/public/bone-contract-benchmark",
+  "download_receipt": "E:/NOSTOS/data/public/bone-contract-benchmark/download_receipt.json",
+  "datasets": [
+    {
+      "record": "zenodo-3355937",
+      "doi": "10.5281/zenodo.3355937",
+      "license": "CC BY 4.0",
+      "role": "mouse SHG orientation-contract development",
+      "independent_unit": "mouse",
+      "observed_units": 8,
+      "status": "prospective v2 development gate failed"
+    },
+    {
+      "record": "figshare-20765659",
+      "doi": "10.6084/m9.figshare.20765659.v1",
+      "license": "CC BY 4.0",
+      "role": "compact paired SHG/TPF diagnostic confirmation",
+      "independent_unit": "mouse",
+      "observed_units": 12,
+      "status": "risk reduced to zero but preregistered coverage gate failed"
+    },
+    {
+      "record": "zenodo-11061868",
+      "doi": "10.5281/zenodo.11061868",
+      "license": "CC BY 4.0",
+      "role": "rat confocal imported-mask 3D network development",
+      "independent_unit": "rat",
+      "observed_units": 13,
+      "status": "v2 stress ranking improved; coverage gate failed; not confirmation"
+    },
+    {
+      "record": "zenodo-17909733",
+      "doi": "10.5281/zenodo.17909733",
+      "license": "CC BY 4.0",
+      "role": "human-bone synchrotron nanoCT scale-response development",
+      "independent_unit": "deposited volume; donor independence not asserted",
+      "observed_units": 6,
+      "status": "scalar v1 failed; scale-indexed v2 in development"
+    },
+    {
+      "record": "zenodo-6345772",
+      "doi": "10.5281/zenodo.6345772",
+      "license": "CC BY 4.0",
+      "role": "UV-PAM calibration and semantic-abstention control",
+      "independent_unit": "filename source group; patient independence not asserted",
+      "observed_units": 6,
+      "status": "narrow abstention gate passed; no accuracy claim"
+    }
+  ]
+}

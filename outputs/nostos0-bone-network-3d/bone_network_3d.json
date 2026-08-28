@@ -1,0 +1,66 @@
+{
+  "protocol_version": "nostos-bone-3d-network-contract/1.0",
+  "config_sha256": "3637f3270143af89ceca25c61a5388581362af3913e6cbb56f194b4f53616d07",
+  "dataset_doi": "10.5281/zenodo.11061868",
+  "segmentation_provenance": "source U-Net plus post-processing correction",
+  "independent_rats": 13,
+  "paired_volumes": 26,
+  "stress_cases": 104,
+  "summary": {
+    "always_emit": {
+      "cases": 104,
+      "accepted": 104,
+      "coverage": 1.0,
+      "silent_invalid": 0,
+      "silent_invalid_risk": 0.0,
+      "accepted_rats": 13
+    },
+    "endpoint_qc": {
+      "cases": 104,
+      "accepted": 104,
+      "coverage": 1.0,
+      "silent_invalid": 0,
+      "silent_invalid_risk": 0.0,
+      "accepted_rats": 13
+    },
+    "topology_qc": {
+      "cases": 104,
+      "accepted": 104,
+      "coverage": 1.0,
+      "silent_invalid": 0,
+      "silent_invalid_risk": 0.0,
+      "accepted_rats": 13
+    },
+    "partial_no_boundary": {
+      "cases": 104,
+      "accepted": 84,
+      "coverage": 0.8076923076923077,
+      "silent_invalid": 0,
+      "silent_invalid_risk": 0.0,
+      "accepted_rats": 12
+    },
+    "partial_no_nested": {
+      "cases": 104,
+      "accepted": 104,
+      "coverage": 1.0,
+      "silent_invalid": 0,
+      "silent_invalid_risk": 0.0,
+      "accepted_rats": 13
+    },
+    "full_contract": {
+      "cases": 104,
+      "accepted": 84,
+      "coverage": 0.8076923076923077,
+      "silent_invalid": 0,
+      "silent_invalid_risk": 0.0,
+      "accepted_rats": 12
+    }
+  },
+  "risk_coverage_auc": {
+    "endpoint_qc": 0.0,
+    "topology_qc": 0.0,
+    "full_contract": 0.0
+  },
+  "status": "complete",
+  "claim_boundary": "Detection of corrupted imported 3D LCN masks; not voxel-truth segmentation validation or biological inference."
+}

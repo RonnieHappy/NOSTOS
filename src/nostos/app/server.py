@@ -153,15 +153,20 @@ class Analyzer:
 
     def analyze(self, payload: dict) -> dict:
         started = time.perf_counter()
+        mode = str(payload.get("mode", "cartilage"))
         stain = str(payload.get("stain", "SafO"))
         pixel_size_um = float(payload.get("pixel_size_um", 5.16))
+        if mode not in {"generic", "cartilage"}:
+            raise ValueError("Unsupported analysis mode")
         if stain not in {"HE", "SafO", "PLM"}:
             raise ValueError("Unsupported stain")
         if not 0.05 <= pixel_size_um <= 100:
             raise ValueError("Pixel size must be between 0.05 and 100 µm/pixel")
         source = _decode_image(str(payload["image_data"]))
         image = np.asarray(source)
-        if self.model is None:
+        if mode == "generic":
+            mask = np.ones(image.shape[:2], dtype=np.uint8)
+        elif self.model is None:
             mask = propose_semantic_mask(image, stain)
         else:
             from nostos.segmentation.infer import predict_section
@@ -181,15 +186,17 @@ class Analyzer:
                 )
         rows, warnings = _tile_features(image, mask, pixel_size_um)
         proportions = {PALETTE[str(index)]: float(np.mean(mask == index)) for index in range(6)}
-        cartilage_fraction = proportions[PALETTE["1"]]
-        if cartilage_fraction < 0.02:
+        roi_fraction = proportions[PALETTE["1"]]
+        if mode == "cartilage" and roi_fraction < 0.02:
             warnings.append("Very little cartilage was detected. Check stain, calibration, focus, and field selection.")
-        if cartilage_fraction > 0.85:
+        if mode == "cartilage" and roi_fraction > 0.85:
             warnings.append("Cartilage occupies most of the frame. Confirm that bone/background boundaries are visible.")
-        if stain == "PLM":
+        if mode == "cartilage" and stain == "PLM":
             warnings.append("PLM segmentation is experimental and lacks reviewed reference-mask validation.")
+        if mode == "generic":
+            warnings.append("Generic mode measures the complete field. Supply a reviewed mask through the CLI for ROI-dependent geometry and network responses.")
         warnings.append("Research-use-only model. Do not use this output as an intraoperative diagnostic decision.")
-        evaluable = len(rows) >= 3 and 0.02 <= cartilage_fraction <= 0.85 and stain != "PLM"
+        evaluable = len(rows) >= 3 and (mode == "generic" or (0.02 <= roi_fraction <= 0.85 and stain != "PLM"))
         review_required = len(rows) >= 1 and not evaluable
         metrics: dict[str, float | int | None] = {"analyzed_tiles": len(rows)}
         metric_names = [
@@ -204,6 +211,7 @@ class Analyzer:
         overlay = proposal_overlay(image, mask, alpha=0.48)
         return {
             "status": "complete",
+            "analysis_mode": mode,
             "stain": stain,
             "pixel_size_um": pixel_size_um,
             "device": str(self.device),
@@ -214,7 +222,7 @@ class Analyzer:
                 "evaluable": evaluable,
                 "status": "pass" if evaluable else ("review_required" if review_required else "fail"),
                 "minimum_tiles": 3,
-                "cartilage_fraction_range": [0.02, 0.85],
+                "cartilage_fraction_range": [0.02, 0.85] if mode == "cartilage" else None,
             },
             "elapsed_seconds": round(time.perf_counter() - started, 3),
             "image": {"width": source.width, "height": source.height},

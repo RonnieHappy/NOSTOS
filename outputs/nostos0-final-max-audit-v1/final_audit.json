@@ -1,0 +1,203 @@
+{
+  "protocol_version": "nostos-final-max-audit/1.0",
+  "audit_date": "2026-08-28",
+  "status": "complete_with_external_blockers",
+  "terminal_verdict": {
+    "software_release_candidate": "technical_pass",
+    "manuscript_production": "pass",
+    "current_scientific_resource": "bounded_and_auditable",
+    "journal_submission": "blocked",
+    "nature_methods_or_nature_biomedical_engineering": "not_ready",
+    "clinical_or_intraoperative_use": "not_ready"
+  },
+  "technical_checks": {
+    "evidence_index_complete": true,
+    "evidence_index_retains_not_ready_boundary": true,
+    "bone_source_integrity_passed": true,
+    "bone_program_complete_with_failed_primary_gates": true,
+    "manuscript_production_qa_passed": true,
+    "manuscript_submission_blockers_retained": true,
+    "release_audit_passed": true,
+    "release_build_is_deterministic": true,
+    "initial_cleanroom_failure_retained": true,
+    "rebuilt_cleanroom_passed": true,
+    "runtime_version_matches_installed_metadata": true,
+    "bone_figure_is_traceable_and_non_generative": true
+  },
+  "receipts": {
+    "evidence_index": {
+      "path": "outputs/nostos0-evidence-bundle-v27/evidence_index.json",
+      "bytes": 49503,
+      "sha256": "be57bd32012ad4729e5c7d41a30d50ba3b8274bc67e46df5ed4d1fda381622fe"
+    },
+    "bone_program": {
+      "path": "outputs/nostos0-bone-contract-summary/bone_contract_program_summary.json",
+      "bytes": 14657,
+      "sha256": "b0a8f66e634df5b2ea78eebccd68c526038c1e689dd72cd2e76c947c1f4fbb94"
+    },
+    "bone_integrity": {
+      "path": "outputs/nostos0-bone-download-integrity/integrity_verification.json",
+      "bytes": 20479,
+      "sha256": "64849ec4598fd13bcf7a4f6aa82fa8a73ef690b8d7a29b7374eabb35054c4dd9"
+    },
+    "manuscript_qa": {
+      "path": "outputs/nostos0-manuscript-qa-v1/manuscript_qa.json",
+      "bytes": 10450,
+      "sha256": "8742fe695b4a0c2c4aa7af3e6b09631b8d7d9e4eef6f1f4b4eb1db0ea0f8cac1"
+    },
+    "release_receipt": {
+      "path": "outputs/nostos0-release-candidate-v27/release_receipt.json",
+      "bytes": 361,
+      "sha256": "64244fb3baa80621535ce4a55864f99b9b8646e1ffc378d2e78aac2d55e5e0c2"
+    },
+    "release_manifest": {
+      "path": "outputs/nostos0-release-candidate-v27/release_manifest.json",
+      "bytes": 79328,
+      "sha256": "c4e8079a6e05d7aef09a1c3bed9b8f2789f675523b806ec6f08a1fc25948a6f0"
+    },
+    "cleanroom_initial_failure": {
+      "path": "outputs/nostos0-release-candidate-v27/cleanroom_initial_failure.json",
+      "bytes": 1144,
+      "sha256": "768f4bcd4b18e69995be4b6d9347c2a533aaf767d8d52a81ace2e71ae8a7b983"
+    },
+    "cleanroom_verification": {
+      "path": "outputs/nostos0-release-candidate-v27/cleanroom_verification.json",
+      "bytes": 1557,
+      "sha256": "e65cb875723a1072e7f63bae0ac9d5a51095c86f7337cd40f71d7d3aca9a82f2"
+    },
+    "bone_figure_manifest": {
+      "path": "figures/nostos0/supplementary_figure_1_bone_contract_stress.manifest.json",
+      "bytes": 3838,
+      "sha256": "33bba5fb8f3b60a2db55db103c8da081af25eda843c384cddbbc5e4eb7470ead"
+    }
+  },
+  "release_identity": {
+    "software_version": "0.3.0",
+    "planned_public_tag": "v0.3.0-rc15",
+    "archive": "nostos-0.3.0-release-candidate.zip",
+    "archive_bytes": 28060471,
+    "archive_sha256": "38f8b92269030a84b8ea9ac3e6264994e0c27eab867320236e36110456f5578d",
+    "file_count": 443,
+    "publication_state_at_audit": "prepared_for_public_push"
+  },
+  "evidence_index": {
+    "entries": 79,
+    "missing": [],
+    "nature_readiness": "not_ready"
+  },
+  "supported_claims": [
+    {
+      "claim": "NOSTOS exposes calibrated structural estimators through a typed, provenance-preserving and failure-aware measurement contract.",
+      "scope": "software architecture and output schema",
+      "evidence": [
+        "public_tool_workflows",
+        "replication_reference_attested"
+      ]
+    },
+    {
+      "claim": "Registered analytic operating envelopes passed all 24 required module-by-perturbation tests.",
+      "scope": "synthetic truth only",
+      "evidence": [
+        "synthetic_truth",
+        "module_perturbations"
+      ]
+    },
+    {
+      "claim": "A declared local structure-tensor orientation endpoint reproduced an instrument-derived raster axis in the frozen PSHG breast confirmation.",
+      "scope": "48 ROIs, 1,367,747 eligible pixels; median axial error 7.59 degrees and axial alignment 0.877 after a frozen 90-degree transform",
+      "evidence": [
+        "pshg_breast_orientation",
+        "structure_tensor_comparator"
+      ]
+    },
+    {
+      "claim": "Reference-mask vascular network responses were sampling-stable on STARE.",
+      "scope": "20 supplied manual masks; survival-area and skeleton-length Spearman correlations 0.988 and 0.995",
+      "evidence": [
+        "stare_network_confirmation"
+      ]
+    },
+    {
+      "claim": "Local thickness numerically agrees with archived maps and BoneJ on one public trabecular-bone archive.",
+      "scope": "eight matched volumes; median voxelwise Spearman correlation 0.927, BoneJ concordance correlation coefficient 0.926 and median relative difference 7.14%",
+      "evidence": [
+        "bone",
+        "bonej_thickness"
+      ]
+    },
+    {
+      "claim": "The complete public bone stress program and all source archives are reproducibly indexed.",
+      "scope": "73 verified files, 54,948,569,793 bytes; eight staged analyses; primary cross-program gates failed",
+      "evidence": [
+        "bone_download_integrity",
+        "bone_contract_program_summary"
+      ]
+    },
+    {
+      "claim": "The data-free software release installs and executes in a fresh environment.",
+      "scope": "180 passed tests, 4 skipped tests, matching runtime/package version, compatible dependency set and ready doctor report; author-operated clean room, not external replication",
+      "evidence": [
+        "release_receipt",
+        "cleanroom_verification"
+      ]
+    }
+  ],
+  "rejected_or_unsupported_claims": [
+    "universal phenotype representation or universal specimen-identity fingerprint",
+    "universal validity or abstention advantage at useful coverage",
+    "automatic segmentation validity from perturbation stability",
+    "validated cartilage segmentation or definitive cartilage biological inference",
+    "population-level bone biology, disease discrimination or diagnostic performance",
+    "tissue stiffness, strain, mechanics, treatment response or patient outcome",
+    "clinical, intraoperative or surgical decision support",
+    "Nature Methods or Nature Biomedical Engineering readiness"
+  ],
+  "sample_assessment": {
+    "verdict": "The limiting issue is independent-unit and acquisition-family breadth, not raw image count.",
+    "details": [
+      "Thousands of tiles, sections or perturbations are technical observations and do not replace specimen-, mouse-, donor- or acquisition-level replication.",
+      "The positive local-orientation, network and thickness endpoints are bounded to 48 ROIs, 20 masks and eight volumes, respectively.",
+      "The five-record bone program is large in bytes and images but failed its primary useful-coverage and matched-risk gates.",
+      "Current analyses preserve the highest available independent unit and explicitly label uncertain repository hierarchies; that is appropriate, but it cannot manufacture missing biological replication."
+    ]
+  },
+  "blocking_requirements": [
+    {
+      "category": "submission administration",
+      "blocker": "The frozen release lacks an archival DOI.",
+      "closure": "Archive the tagged release in Zenodo or an equivalent repository and replace the manuscript placeholder with the DOI.",
+      "requires_external_authority": true
+    },
+    {
+      "category": "external reproducibility",
+      "blocker": "No unaided external-operator replication receipt has been received.",
+      "closure": "An identified external operator must run the frozen replication challenge from a fresh clone or release archive and return the unedited receipt.",
+      "requires_external_authority": true
+    },
+    {
+      "category": "institutional and author declarations",
+      "blocker": "Secondary-analysis determination, affiliation, funding, acknowledgements and competing-interest declarations are not finalized.",
+      "closure": "The corresponding author and institution must provide the final determinations and text.",
+      "requires_external_authority": true
+    },
+    {
+      "category": "flagship scientific evidence",
+      "blocker": "The frozen bone support contract did not lower silent-invalid risk at matched useful coverage across acquisition strata.",
+      "closure": "Prospectively freeze and pass a support contract on an untouched acquisition family at the prespecified coverage and risk gates.",
+      "requires_external_authority": false
+    },
+    {
+      "category": "flagship external validity",
+      "blocker": "Independent multi-laboratory or acquisition-family confirmation is absent.",
+      "closure": "Obtain prospectively acquired or truly unseen data with independent experimental units and endpoint-appropriate references.",
+      "requires_external_authority": true
+    },
+    {
+      "category": "clinical translation",
+      "blocker": "No prospective intraoperative acquisition, clinical reference, decision-impact or outcome study exists.",
+      "closure": "Run a separately governed prospective clinical study; public archives cannot close this gate.",
+      "requires_external_authority": true
+    }
+  ],
+  "decision_rule": "Do not submit the manuscript, claim Nature readiness or describe NOSTOS as clinically usable until every applicable external and administrative blocker is closed with a new immutable receipt. The current artifact may be shared as an explicitly labeled research-software release candidate."
+}

@@ -49,6 +49,14 @@ def test_network_erosion_curve_tracks_survival():
     assert len(response.component_count) == 4
 
 
+def test_network_erosion_uses_boundary_not_background_center_distance():
+    mask = np.ones((9, 9), dtype=bool)
+    mask[[0, -1], :] = False
+    mask[:, [0, -1]] = False
+    response = erosion_survival_response(mask, spacing_um=(2.0, 2.0), thresholds_um=(0.0, 2.0), boundary_corrected=True)
+    assert response.surviving_fraction[1] < 1.0
+
+
 def test_directional_variogram_detects_anisotropy():
     phantom = generate_phantom("heterogeneity", correlation_length_um=12, anisotropy_ratio=3)
     response = directional_variogram(phantom.image, spacing_um=(1, 1), separations_um=(1, 2, 4, 8, 12, 16, 24, 32))

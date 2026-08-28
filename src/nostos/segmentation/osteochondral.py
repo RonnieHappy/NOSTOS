@@ -55,6 +55,47 @@ def binary_segmentation_loss(logits: torch.Tensor, target: torch.Tensor) -> torc
     return bce + (1.0 - dice.mean())
 
 
+def boundary_aware_segmentation_loss(
+    logits: torch.Tensor,
+    target: torch.Tensor,
+    *,
+    boundary_sigma_px: float = 5.0,
+    boundary_weight: float = 4.0,
+    interface_weight: float = 2.0,
+) -> torch.Tensor:
+    """Dice/BCE objective augmented for the first foreground interface in each column."""
+    if boundary_sigma_px <= 0 or boundary_weight < 0 or interface_weight < 0:
+        raise ValueError("Boundary parameters must be non-negative and sigma must be positive.")
+    target = target.to(logits.dtype)
+    probability = torch.sigmoid(logits)
+    height = target.shape[-2]
+    eligible = target.amax(dim=-2) > 0.5
+    truth_rows = target.argmax(dim=-2).to(logits.dtype)
+    rows = torch.arange(height, device=logits.device, dtype=logits.dtype).view(1, 1, height, 1)
+    distance = rows - truth_rows.unsqueeze(-2)
+    emphasis = torch.exp(-0.5 * (distance / boundary_sigma_px).square()) * eligible.unsqueeze(-2)
+    bce_map = F.binary_cross_entropy_with_logits(logits, target, reduction="none")
+    weighted_bce = (bce_map * (1.0 + boundary_weight * emphasis)).mean()
+
+    previous = F.pad(probability[..., :-1, :], (0, 0, 1, 0))
+    transition = F.relu(probability - previous)
+    transition_mass = transition.sum(dim=-2)
+    predicted_rows = (transition * rows).sum(dim=-2) / transition_mass.clamp_min(1e-6)
+    valid = eligible & (transition_mass > 1e-6)
+    if valid.any():
+        interface = F.smooth_l1_loss(
+            predicted_rows[valid] / max(height - 1, 1),
+            truth_rows[valid] / max(height - 1, 1),
+            beta=0.02,
+        )
+    else:
+        interface = logits.new_tensor(1.0)
+    intersection = (probability * target).sum(dim=(1, 2, 3))
+    denominator = probability.sum(dim=(1, 2, 3)) + target.sum(dim=(1, 2, 3))
+    dice = (2 * intersection + 1.0) / (denominator + 1.0)
+    return weighted_bce + (1.0 - dice.mean()) + interface_weight * interface
+
+
 @dataclass(frozen=True)
 class SliceRecord:
     patient: str

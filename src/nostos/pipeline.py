@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -9,6 +10,19 @@ from pathlib import Path
 import pandas as pd
 
 from nostos.modeling.ablations import derive_feature_contract
+
+
+def resolve_config(config: dict, *, config_path: Path) -> dict:
+    """Resolve environment placeholders and project-relative paths portably."""
+    project_root = config_path.resolve().parent.parent
+    resolved: dict[str, str] = {}
+    for key, value in config.items():
+        expanded = os.path.expandvars(str(value))
+        if "${" in expanded:
+            raise ValueError(f"unresolved environment variable in {key}: {value}")
+        path = Path(expanded)
+        resolved[key] = str(path if path.is_absolute() else project_root / path)
+    return resolved
 
 
 def pipeline_commands(config: dict, *, python: str = sys.executable, unlock_test: bool = False) -> list[list[str]]:
@@ -46,7 +60,7 @@ def main() -> None:
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--confirm-first-locked-evaluation", action="store_true")
     args = parser.parse_args()
-    config = json.loads(args.config.read_text(encoding="utf-8"))
+    config = resolve_config(json.loads(args.config.read_text(encoding="utf-8")), config_path=args.config)
     commands = pipeline_commands(config, unlock_test=args.confirm_first_locked_evaluation)
     if args.dry_run:
         print(json.dumps({"locked_test_included": args.confirm_first_locked_evaluation, "commands": commands}, indent=2))

@@ -1,0 +1,15 @@
+{
+  "protocol_version": "nostos-bone-3d-network-contract/2.0",
+  "dataset_doi": "10.5281/zenodo.11061868",
+  "spacing_um_zyx": [0.30, 0.18, 0.18],
+  "crop_shape_zyx": [96, 384, 384],
+  "nested_fraction": 0.75,
+  "perturbation_deleted_block_counts": [0, 24, 72, 216],
+  "perturbation_block_shape_zyx": [24, 64, 64],
+  "maximum_endpoint_relative_error": 0.25,
+  "endpoint_qc_occupancy_range": [0.005, 0.60],
+  "topology_qc_minimum_largest_component_fraction": 0.50,
+  "full_maximum_boundary_contact_fraction": 0.30,
+  "full_maximum_nested_relative_drift": 0.35,
+  "claim_boundary": "Calibrated stress-test detection of corrupted imported 3D LCN masks; not independent confirmation, voxel-truth validation, or biological inference."
+}

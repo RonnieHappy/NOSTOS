@@ -1,0 +1,333 @@
+{
+  "protocol_version": "nostos0-ctc-division-geometry-audit/1.0",
+  "status": "development_complete",
+  "dataset": "Fluo-N2DH-SIM+ sequence 01 only",
+  "division_count": 28,
+  "summary": {
+    "combined_area_ratio": {
+      "min": 0.6859443631039531,
+      "q05": 0.7498715661039789,
+      "median": 1.0433131938293556,
+      "q95": 1.9970906572534575,
+      "max": 5.801186943620178
+    },
+    "maximum_child_area_ratio": {
+      "min": 0.38945827232796487,
+      "q05": 0.41441190839234937,
+      "median": 0.5775914244925056,
+      "q95": 1.1180104514432012,
+      "max": 4.459940652818991
+    },
+    "minimum_child_area_ratio": {
+      "min": 0.08748403575989783,
+      "q05": 0.2291274473109038,
+      "median": 0.4779573226539461,
+      "q95": 0.950513039011976,
+      "max": 1.3412462908011868
+    },
+    "child_area_balance": {
+      "min": 1.0016638935108153,
+      "q05": 1.028934150577461,
+      "median": 1.2317951649210714,
+      "q95": 3.14245441137034,
+      "max": 10.182481751824817
+    },
+    "maximum_distance_radii": {
+      "min": 0.69428879441912,
+      "q05": 0.7861158405060719,
+      "median": 0.9879526317885745,
+      "q95": 1.7958608787822623,
+      "max": 4.35534738931313
+    },
+    "separation_radii": {
+      "min": 1.2534240778475239,
+      "q05": 1.3170863359932197,
+      "median": 1.6488849531231442,
+      "q95": 2.818103098290699,
+      "max": 5.065732085168644
+    }
+  },
+  "divisions": [
+    {
+      "parent": 11,
+      "frame": 9,
+      "combined_area_ratio": 1.0293916609706084,
+      "maximum_child_area_ratio": 0.5416951469583049,
+      "minimum_child_area_ratio": 0.48769651401230346,
+      "child_area_balance": 1.1107217939733707,
+      "maximum_distance_radii": 0.9512787332217609,
+      "separation_radii": 1.57224109547953
+    },
+    {
+      "parent": 18,
+      "frame": 9,
+      "combined_area_ratio": 1.167092302079533,
+      "maximum_child_area_ratio": 0.608172199927034,
+      "minimum_child_area_ratio": 0.5589201021524991,
+      "child_area_balance": 1.0881201044386424,
+      "maximum_distance_radii": 0.8529911080831999,
+      "separation_radii": 1.6955123908481728
+    },
+    {
+      "parent": 24,
+      "frame": 10,
+      "combined_area_ratio": 1.0751425696075143,
+      "maximum_child_area_ratio": 0.549480040254948,
+      "minimum_child_area_ratio": 0.5256625293525663,
+      "child_area_balance": 1.0453095086151882,
+      "maximum_distance_radii": 0.9352792937484009,
+      "separation_radii": 1.6610292448258557
+    },
+    {
+      "parent": 26,
+      "frame": 13,
+      "combined_area_ratio": 0.7997775305895439,
+      "maximum_child_area_ratio": 0.5847237671486837,
+      "minimum_child_area_ratio": 0.21505376344086022,
+      "child_area_balance": 2.7189655172413794,
+      "maximum_distance_radii": 1.1240571194789895,
+      "separation_radii": 1.6367406614204325
+    },
+    {
+      "parent": 30,
+      "frame": 13,
+      "combined_area_ratio": 0.9025948103792415,
+      "maximum_child_area_ratio": 0.5704590818363273,
+      "minimum_child_area_ratio": 0.3321357285429142,
+      "child_area_balance": 1.7175480769230769,
+      "maximum_distance_radii": 0.9264086596353048,
+      "separation_radii": 1.4967031668095867
+    },
+    {
+      "parent": 15,
+      "frame": 17,
+      "combined_area_ratio": 1.0997304582210243,
+      "maximum_child_area_ratio": 0.5582509733453129,
+      "minimum_child_area_ratio": 0.5414794848757113,
+      "child_area_balance": 1.0309734513274336,
+      "maximum_distance_radii": 1.0241248346782854,
+      "separation_radii": 1.599577308011647
+    },
+    {
+      "parent": 5,
+      "frame": 18,
+      "combined_area_ratio": 0.7981621266819823,
+      "maximum_child_area_ratio": 0.5093534624220545,
+      "minimum_child_area_ratio": 0.2888086642599278,
+      "child_area_balance": 1.7636363636363637,
+      "maximum_distance_radii": 0.8271019808413825,
+      "separation_radii": 1.2534240778475239
+    },
+    {
+      "parent": 19,
+      "frame": 18,
+      "combined_area_ratio": 1.1977172312223858,
+      "maximum_child_area_ratio": 0.6078792341678939,
+      "minimum_child_area_ratio": 0.5898379970544919,
+      "child_area_balance": 1.0305867665418227,
+      "maximum_distance_radii": 1.1747214435667415,
+      "separation_radii": 2.0326309222835683
+    },
+    {
+      "parent": 21,
+      "frame": 18,
+      "combined_area_ratio": 0.952059202059202,
+      "maximum_child_area_ratio": 0.4893822393822394,
+      "minimum_child_area_ratio": 0.4626769626769627,
+      "child_area_balance": 1.0577190542420027,
+      "maximum_distance_radii": 0.8232321232501733,
+      "separation_radii": 1.5888018185528725
+    },
+    {
+      "parent": 17,
+      "frame": 19,
+      "combined_area_ratio": 1.0715526224383467,
+      "maximum_child_area_ratio": 0.603334491142758,
+      "minimum_child_area_ratio": 0.46821813129558876,
+      "child_area_balance": 1.2885756676557865,
+      "maximum_distance_radii": 0.7709684085480407,
+      "separation_radii": 1.5239498892753722
+    },
+    {
+      "parent": 1,
+      "frame": 20,
+      "combined_area_ratio": 0.9707778255264289,
+      "maximum_child_area_ratio": 0.715513536742587,
+      "minimum_child_area_ratio": 0.25526428878384183,
+      "child_area_balance": 2.803030303030303,
+      "maximum_distance_radii": 1.4197087065095222,
+      "separation_radii": 1.6642835465242967
+    },
+    {
+      "parent": 25,
+      "frame": 21,
+      "combined_area_ratio": 2.3432633716993907,
+      "maximum_child_area_ratio": 1.2403520649966147,
+      "minimum_child_area_ratio": 1.1029113067027758,
+      "child_area_balance": 1.1246163290362186,
+      "maximum_distance_radii": 1.9399386693713012,
+      "separation_radii": 2.526101957758808
+    },
+    {
+      "parent": 8,
+      "frame": 23,
+      "combined_area_ratio": 1.0937373737373737,
+      "maximum_child_area_ratio": 0.593939393939394,
+      "minimum_child_area_ratio": 0.4997979797979798,
+      "child_area_balance": 1.1883589329021826,
+      "maximum_distance_radii": 1.2181502634811825,
+      "separation_radii": 1.5785868037213862
+    },
+    {
+      "parent": 14,
+      "frame": 26,
+      "combined_area_ratio": 0.8860441767068273,
+      "maximum_child_area_ratio": 0.5040160642570282,
+      "minimum_child_area_ratio": 0.3820281124497992,
+      "child_area_balance": 1.3193166885676741,
+      "maximum_distance_radii": 1.1983591690376456,
+      "separation_radii": 2.2670611351648158
+    },
+    {
+      "parent": 20,
+      "frame": 27,
+      "combined_area_ratio": 1.3131821998320738,
+      "maximum_child_area_ratio": 0.7267002518891688,
+      "minimum_child_area_ratio": 0.5864819479429051,
+      "child_area_balance": 1.2390837508947745,
+      "maximum_distance_radii": 1.1792431883814936,
+      "separation_radii": 1.816593363388275
+    },
+    {
+      "parent": 29,
+      "frame": 34,
+      "combined_area_ratio": 1.3536945812807881,
+      "maximum_child_area_ratio": 0.6862068965517242,
+      "minimum_child_area_ratio": 0.6674876847290641,
+      "child_area_balance": 1.0280442804428045,
+      "maximum_distance_radii": 0.9573075783607631,
+      "separation_radii": 1.7644705212691443
+    },
+    {
+      "parent": 9,
+      "frame": 35,
+      "combined_area_ratio": 1.2443181818181819,
+      "maximum_child_area_ratio": 0.693939393939394,
+      "minimum_child_area_ratio": 0.5503787878787879,
+      "child_area_balance": 1.2608396421197523,
+      "maximum_distance_radii": 0.9434130273231365,
+      "separation_radii": 1.8652755509105041
+    },
+    {
+      "parent": 13,
+      "frame": 35,
+      "combined_area_ratio": 1.0572347266881028,
+      "maximum_child_area_ratio": 0.5636655948553054,
+      "minimum_child_area_ratio": 0.49356913183279744,
+      "child_area_balance": 1.1420195439739413,
+      "maximum_distance_radii": 0.8875026053784111,
+      "separation_radii": 1.571451844881796
+    },
+    {
+      "parent": 6,
+      "frame": 41,
+      "combined_area_ratio": 0.7634237107921319,
+      "maximum_child_area_ratio": 0.5039872408293461,
+      "minimum_child_area_ratio": 0.25943646996278574,
+      "child_area_balance": 1.9426229508196722,
+      "maximum_distance_radii": 0.8754262361889376,
+      "separation_radii": 1.4708086432998748
+    },
+    {
+      "parent": 10,
+      "frame": 46,
+      "combined_area_ratio": 1.0172997367431365,
+      "maximum_child_area_ratio": 0.5599849567506582,
+      "minimum_child_area_ratio": 0.4573147799924784,
+      "child_area_balance": 1.2245065789473684,
+      "maximum_distance_radii": 1.018597685216386,
+      "separation_radii": 1.7136995907579062
+    },
+    {
+      "parent": 22,
+      "frame": 47,
+      "combined_area_ratio": 0.820040899795501,
+      "maximum_child_area_ratio": 0.4103612815269257,
+      "minimum_child_area_ratio": 0.4096796182685753,
+      "child_area_balance": 1.0016638935108153,
+      "maximum_distance_radii": 0.69428879441912,
+      "separation_radii": 1.2950435674557756
+    },
+    {
+      "parent": 7,
+      "frame": 48,
+      "combined_area_ratio": 0.6859443631039531,
+      "maximum_child_area_ratio": 0.38945827232796487,
+      "minimum_child_area_ratio": 0.2964860907759883,
+      "child_area_balance": 1.3135802469135802,
+      "maximum_distance_radii": 1.0331982967975768,
+      "separation_radii": 1.4362659220868117
+    },
+    {
+      "parent": 4,
+      "frame": 51,
+      "combined_area_ratio": 1.3541984732824428,
+      "maximum_child_area_ratio": 0.8099236641221375,
+      "minimum_child_area_ratio": 0.5442748091603054,
+      "child_area_balance": 1.4880785413744742,
+      "maximum_distance_radii": 1.5282878391169057,
+      "separation_radii": 2.975334481654026
+    },
+    {
+      "parent": 23,
+      "frame": 52,
+      "combined_area_ratio": 0.8044126416219439,
+      "maximum_child_area_ratio": 0.4242695289206917,
+      "minimum_child_area_ratio": 0.38014311270125223,
+      "child_area_balance": 1.116078431372549,
+      "maximum_distance_radii": 0.8142467855709868,
+      "separation_radii": 1.485158506917134
+    },
+    {
+      "parent": 94,
+      "frame": 53,
+      "combined_area_ratio": 5.801186943620178,
+      "maximum_child_area_ratio": 4.459940652818991,
+      "minimum_child_area_ratio": 1.3412462908011868,
+      "child_area_balance": 3.325221238938053,
+      "maximum_distance_radii": 4.35534738931313,
+      "separation_radii": 5.065732085168644
+    },
+    {
+      "parent": 27,
+      "frame": 53,
+      "combined_area_ratio": 0.9782886334610472,
+      "maximum_child_area_ratio": 0.8908045977011494,
+      "minimum_child_area_ratio": 0.08748403575989783,
+      "child_area_balance": 10.182481751824817,
+      "maximum_distance_radii": 1.0983480822506724,
+      "separation_radii": 2.094201531255599
+    },
+    {
+      "parent": 16,
+      "frame": 54,
+      "combined_area_ratio": 1.2865074958356468,
+      "maximum_child_area_ratio": 0.7034980566352027,
+      "minimum_child_area_ratio": 0.5830094392004442,
+      "child_area_balance": 1.2066666666666668,
+      "maximum_distance_radii": 1.2200520236233225,
+      "separation_radii": 2.128619244077364
+    },
+    {
+      "parent": 34,
+      "frame": 63,
+      "combined_area_ratio": 0.7425742574257426,
+      "maximum_child_area_ratio": 0.4219345011424219,
+      "minimum_child_area_ratio": 0.32063975628332064,
+      "child_area_balance": 1.3159144893111638,
+      "maximum_distance_radii": 0.9131240450949708,
+      "separation_radii": 1.358022906134187
+    }
+  ],
+  "interpretation": "Outcome-aware post-failure development; no confirmation sequence opened."
+}

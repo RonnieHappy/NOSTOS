@@ -1,0 +1,12 @@
+input = getArgument();
+parts = split(input, "|");
+source = parts[0];
+destination = parts[1];
+open(source);
+run("8-bit");
+run("Thickness", "thickness mask");
+mean = getResult("Tb.Th Mean (mm)", 0);
+sd = getResult("Tb.Th Std Dev (mm)", 0);
+maximum = getResult("Tb.Th Max (mm)", 0);
+File.saveString("label,mean_mm,sd_mm,max_mm\n" + getResultLabel(0) + "," + mean + "," + sd + "," + maximum + "\n", destination);
+exit();

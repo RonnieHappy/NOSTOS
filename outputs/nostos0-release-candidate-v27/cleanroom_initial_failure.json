@@ -1,0 +1,30 @@
+{
+  "protocol_version": "nostos-cleanroom-verification/1.0",
+  "status": "fail",
+  "archive": "nostos-0.3.0-release-candidate.zip",
+  "archive_sha256": "348065684b013a4352855179cc3186eff4b2735a98abe72411eacb2ed4eb37a2",
+  "environment": {
+    "python": "3.13.13",
+    "installer": "uv sync --extra dev --link-mode copy",
+    "source": "fresh extraction of the first v27 data-free release archive"
+  },
+  "verification": {
+    "pytest": {
+      "exit_code": 1,
+      "failure_stage": "collection",
+      "failure_class": "undeclared development dependency",
+      "missing_import": "docx",
+      "skipped_before_collection_stopped": 4
+    },
+    "nostos_doctor": {
+      "status": "ready",
+      "exit_code": 0
+    },
+    "dependency_check": {
+      "status": "all installed packages are compatible",
+      "exit_code": 0
+    }
+  },
+  "disposition": "Retained as release-engineering failure evidence. python-docx was added to the declared dev extra before rebuilding; the scientific algorithms and receipts were not changed.",
+  "scope": "Installation and packaged-code execution only; not independent biological or external-user validation."
+}

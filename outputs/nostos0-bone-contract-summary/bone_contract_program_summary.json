@@ -1,0 +1,395 @@
+{
+  "protocol_version": "nostos-bone-contract-program-summary/1.0",
+  "source_protocol": "docs/NOSTOS0_BONE_CONTRACT_ABLATION_PROTOCOL.md",
+  "status": "complete_with_failed_primary_gates",
+  "nature_methods_readiness": "not_ready",
+  "clinical_readiness": "not_ready",
+  "publication_interpretation": "Complete negative/development evidence for the broad bone validity-contract hypothesis; bounded endpoint and governance results remain reportable.",
+  "stages": [
+    {
+      "stage": "download_integrity",
+      "role": "source_integrity",
+      "status": "pass",
+      "independent_units": null,
+      "technical_cases": 73,
+      "result": {
+        "verified_files": 73,
+        "verified_bytes": 54948569793
+      },
+      "claim_boundary": "Source-file integrity only."
+    },
+    {
+      "stage": "paired_shg_tpf_v1",
+      "role": "compact_confirmation_with_partly_circular_invalidity",
+      "status": "failed_coverage_gate",
+      "independent_units": 12,
+      "technical_cases": 576,
+      "result": {
+        "always_emit_coverage": 1.0,
+        "always_emit_risk": 0.3541666666666667,
+        "full_contract_coverage": 0.3576388888888889,
+        "full_contract_risk": 0.0,
+        "coverage_gate_at_least_0_70": false
+      },
+      "claim_boundary": "Pixel-scale SHG orientation stability only; physical scale is unavailable in the deposited TIFF metadata. TPF is an abstention control for collagen-orientation output."
+    },
+    {
+      "stage": "mouse_shg_support_v2",
+      "role": "support_rule_development",
+      "status": "fail_no_promotable_threshold",
+      "independent_units": 8,
+      "technical_cases": null,
+      "result": {
+        "promoted_threshold_degrees": null,
+        "development": null,
+        "evaluation": null
+      },
+      "claim_boundary": "Selective support for local 2D axial orientation in label-free mouse-bone SHG; annotations are coarse compatibility regions, not angular ground truth."
+    },
+    {
+      "stage": "rat_network_v1",
+      "role": "stress_design_calibration",
+      "status": "non_informative_no_invalid_cases",
+      "independent_units": 13,
+      "technical_cases": 104,
+      "result": {
+        "always_emit_risk": 0.0,
+        "full_contract_coverage": 0.8076923076923077
+      },
+      "claim_boundary": "Detection of corrupted imported 3D LCN masks; not voxel-truth segmentation validation or biological inference."
+    },
+    {
+      "stage": "rat_network_v2",
+      "role": "post_failure_stress_calibration",
+      "status": "risk_reduction_but_failed_coverage_gate",
+      "independent_units": 13,
+      "technical_cases": 104,
+      "result": {
+        "always_emit_coverage": 1.0,
+        "always_emit_risk": 0.5,
+        "full_contract_coverage": 0.5384615384615384,
+        "full_contract_risk": 0.25,
+        "full_risk_coverage_auc": 0.21007521802424997,
+        "endpoint_qc_risk_coverage_auc": 0.48337795876712497,
+        "master_coverage_gate_at_least_0_80": false
+      },
+      "claim_boundary": "Calibrated stress-test detection of corrupted imported 3D LCN masks; not independent confirmation, voxel-truth validation, or biological inference."
+    },
+    {
+      "stage": "human_nanoct_scalar_v1",
+      "role": "opened_acquisition_transfer",
+      "status": "failed_withheld_stress",
+      "independent_units": "six_deposited_volumes_independence_not_asserted",
+      "technical_cases": 288,
+      "result": {
+        "always_emit_coverage": 1.0,
+        "always_emit_risk": 0.4131944444444444,
+        "full_contract_coverage": 0.9201388888888888,
+        "full_contract_risk": 0.3886792452830189,
+        "full_contract_by_perturbation": {
+          "blur_1.0": {
+            "cases": 48,
+            "accepted": 48,
+            "coverage": 1.0,
+            "silent_invalid": 27,
+            "silent_invalid_risk": 0.5625
+          },
+          "blur_3.0": {
+            "cases": 48,
+            "accepted": 48,
+            "coverage": 1.0,
+            "silent_invalid": 43,
+            "silent_invalid_risk": 0.8958333333333334
+          },
+          "gamma_0.5": {
+            "cases": 48,
+            "accepted": 43,
+            "coverage": 0.8958333333333334,
+            "silent_invalid": 0,
+            "silent_invalid_risk": 0.0
+          },
+          "identity": {
+            "cases": 48,
+            "accepted": 46,
+            "coverage": 0.9583333333333334,
+            "silent_invalid": 0,
+            "silent_invalid_risk": 0.0
+          },
+          "noise_0.05": {
+            "cases": 48,
+            "accepted": 32,
+            "coverage": 0.6666666666666666,
+            "silent_invalid": 0,
+            "silent_invalid_risk": 0.0
+          },
+          "resample_0.5": {
+            "cases": 48,
+            "accepted": 48,
+            "coverage": 1.0,
+            "silent_invalid": 33,
+            "silent_invalid_risk": 0.6875
+          }
+        }
+      },
+      "claim_boundary": "Calibrated 3D directional-response transfer on six deposited human-bone nanoCT volumes; no population or clinical inference."
+    },
+    {
+      "stage": "human_nanoct_scale_v2",
+      "role": "post_failure_scale_response_development",
+      "status": "risk_reduction_but_failed_coverage_gate",
+      "independent_units": "same_six_opened_deposited_volumes",
+      "technical_cases": 864,
+      "result": {
+        "summary_by_scale_um": {
+          "0.2": {
+            "always_emit": {
+              "cases": 288,
+              "accepted": 288,
+              "coverage": 1.0,
+              "silent_invalid": 30,
+              "silent_invalid_risk": 0.10416666666666667
+            },
+            "endpoint_qc": {
+              "cases": 288,
+              "accepted": 280,
+              "coverage": 0.9722222222222222,
+              "silent_invalid": 30,
+              "silent_invalid_risk": 0.10714285714285714
+            },
+            "nyquist_qc": {
+              "cases": 288,
+              "accepted": 0,
+              "coverage": 0.0,
+              "silent_invalid": 0,
+              "silent_invalid_risk": null
+            },
+            "scale_convergence": {
+              "cases": 288,
+              "accepted": 0,
+              "coverage": 0.0,
+              "silent_invalid": 0,
+              "silent_invalid_risk": null
+            },
+            "full_contract": {
+              "cases": 288,
+              "accepted": 0,
+              "coverage": 0.0,
+              "silent_invalid": 0,
+              "silent_invalid_risk": null
+            }
+          },
+          "0.4": {
+            "always_emit": {
+              "cases": 288,
+              "accepted": 288,
+              "coverage": 1.0,
+              "silent_invalid": 12,
+              "silent_invalid_risk": 0.041666666666666664
+            },
+            "endpoint_qc": {
+              "cases": 288,
+              "accepted": 280,
+              "coverage": 0.9722222222222222,
+              "silent_invalid": 12,
+              "silent_invalid_risk": 0.04285714285714286
+            },
+            "nyquist_qc": {
+              "cases": 288,
+              "accepted": 280,
+              "coverage": 0.9722222222222222,
+              "silent_invalid": 12,
+              "silent_invalid_risk": 0.04285714285714286
+            },
+            "scale_convergence": {
+              "cases": 288,
+              "accepted": 105,
+              "coverage": 0.3645833333333333,
+              "silent_invalid": 3,
+              "silent_invalid_risk": 0.02857142857142857
+            },
+            "full_contract": {
+              "cases": 288,
+              "accepted": 105,
+              "coverage": 0.3645833333333333,
+              "silent_invalid": 3,
+              "silent_invalid_risk": 0.02857142857142857
+            }
+          },
+          "0.8": {
+            "always_emit": {
+              "cases": 288,
+              "accepted": 288,
+              "coverage": 1.0,
+              "silent_invalid": 8,
+              "silent_invalid_risk": 0.027777777777777776
+            },
+            "endpoint_qc": {
+              "cases": 288,
+              "accepted": 280,
+              "coverage": 0.9722222222222222,
+              "silent_invalid": 8,
+              "silent_invalid_risk": 0.02857142857142857
+            },
+            "nyquist_qc": {
+              "cases": 288,
+              "accepted": 280,
+              "coverage": 0.9722222222222222,
+              "silent_invalid": 8,
+              "silent_invalid_risk": 0.02857142857142857
+            },
+            "scale_convergence": {
+              "cases": 288,
+              "accepted": 115,
+              "coverage": 0.3993055555555556,
+              "silent_invalid": 1,
+              "silent_invalid_risk": 0.008695652173913044
+            },
+            "full_contract": {
+              "cases": 288,
+              "accepted": 115,
+              "coverage": 0.3993055555555556,
+              "silent_invalid": 1,
+              "silent_invalid_risk": 0.008695652173913044
+            }
+          }
+        },
+        "gates_by_scale_um": {
+          "0.2": {
+            "coverage_at_least_0_80": false,
+            "risk_below_always_emit": false
+          },
+          "0.4": {
+            "coverage_at_least_0_80": false,
+            "risk_below_always_emit": true
+          },
+          "0.8": {
+            "coverage_at_least_0_80": false,
+            "risk_below_always_emit": true
+          }
+        }
+      },
+      "claim_boundary": "Development of a physical-scale-indexed 3D directional response on six deposited nanoCT volumes; no pristine confirmation or biological inference."
+    },
+    {
+      "stage": "uvpam_semantic_abstention",
+      "role": "negative_control",
+      "status": "pass_narrow_governance_control",
+      "independent_units": "six_filename_groups_not_asserted_specimens",
+      "technical_cases": 144,
+      "result": {
+        "requested_endpoint_coverage": 0.0,
+        "requested_endpoint_risk": null,
+        "pixel_descriptors_emitted": 125
+      },
+      "claim_boundary": "Calibration and semantic abstention on UV-PAM tiles; pixel-domain descriptors only, no physical or biological interpretation."
+    }
+  ],
+  "gate_table": [
+    {
+      "gate": "all_source_files_integrity_verified",
+      "status": "pass",
+      "value": "73 files; 54948569793 bytes"
+    },
+    {
+      "gate": "macro_risk_coverage_auc_reduction_at_least_20_percent",
+      "status": "fail_not_estimable_across_all_frozen_strata",
+      "value": null
+    },
+    {
+      "gate": "paired_specimen_bootstrap_interval_excludes_zero",
+      "status": "fail_not_estimable_across_all_frozen_strata",
+      "value": null
+    },
+    {
+      "gate": "overall_full_contract_coverage_at_least_0_80",
+      "status": "fail",
+      "value": {
+        "paired_shg": 0.3576388888888889,
+        "rat_network_v2": 0.5384615384615384,
+        "human_nanoct_scale_0.4": 0.3645833333333333,
+        "human_nanoct_scale_0.8": 0.3993055555555556
+      }
+    },
+    {
+      "gate": "every_endpoint_acquisition_stratum_coverage_at_least_0_70",
+      "status": "fail",
+      "value": "Multiple SHG, network and nanoCT strata were below 0.70."
+    },
+    {
+      "gate": "lower_silent_invalid_risk_for_every_endpoint_at_matched_coverage",
+      "status": "fail_not_demonstrated",
+      "value": null
+    },
+    {
+      "gate": "uncertainty_coverage_between_0.90_and_0.975",
+      "status": "fail_not_estimated_for_complete_program",
+      "value": null
+    },
+    {
+      "gate": "missing_calibration_and_semantic_support_trigger_abstention",
+      "status": "pass_narrow_control",
+      "value": "0/144 requested physical-collagen UV-PAM outputs emitted."
+    }
+  ],
+  "receipt_index": {
+    "download_integrity": {
+      "path": "outputs/nostos0-bone-download-integrity/integrity_verification.json",
+      "bytes": 20479,
+      "sha256": "64849ec4598fd13bcf7a4f6aa82fa8a73ef690b8d7a29b7374eabb35054c4dd9"
+    },
+    "paired_shg_v1": {
+      "path": "outputs/nostos0-bone-contract-orientation-confirmation-v1/bone_orientation_confirmation.json",
+      "bytes": 8931,
+      "sha256": "083e13ebaeea58e56b3adbe492448a1839910358875e89afaa703e96aace3fb8"
+    },
+    "mouse_shg_v2": {
+      "path": "outputs/nostos0-bone-orientation-v2/bone_orientation_v2.json",
+      "bytes": 506,
+      "sha256": "b5c9738fe72df60d2458782fb2c65592f729f006e8f032f694a75aab5f0ccc61"
+    },
+    "rat_network_v1": {
+      "path": "outputs/nostos0-bone-network-3d/bone_network_3d.json",
+      "bytes": 1821,
+      "sha256": "543e24034ebea8926aaad75b0e5e9748051f53a395c611dd46e1542947902cd4"
+    },
+    "rat_network_v2": {
+      "path": "outputs/nostos0-bone-network-3d-v2/bone_network_3d.json",
+      "bytes": 1973,
+      "sha256": "a14acaee3071567f49b9260b4cbce74c8af2731630079e052a4b463330a2c97a"
+    },
+    "human_nanoct_scalar_v1": {
+      "path": "outputs/nostos0-human-nanoct-transfer/human_nanoct_transfer.json",
+      "bytes": 2061,
+      "sha256": "3e0071062bf1b9a7cf59125ffd041d198dc09f169da1887c8c5b5d01b4457c9b"
+    },
+    "human_nanoct_scalar_cases": {
+      "path": "outputs/nostos0-human-nanoct-transfer/case_rows.json",
+      "bytes": 365722,
+      "sha256": "7053ce64db35fc79ed750d6de0f1a2ade54ae5b2e37cbc59d03157a2dff36ec7"
+    },
+    "human_nanoct_scale_v2": {
+      "path": "outputs/nostos0-human-nanoct-scale-response-v2/human_nanoct_scale_response.json",
+      "bytes": 3872,
+      "sha256": "a00c674d79f7dce71f192808d5811c18c9f58953ac9ca1f4ac47192d7b526d0c"
+    },
+    "uvpam_abstention": {
+      "path": "outputs/nostos0-uvpam-abstention/uvpam_abstention.json",
+      "bytes": 1452,
+      "sha256": "efbdb98e39ecc1a77b3ec06feac85fab5f454c94f59c3f8d9d9d69a68c9f0a06"
+    }
+  },
+  "blocking_requirements": [
+    "A frozen support contract that reaches useful coverage on an untouched acquisition family.",
+    "A paired specimen-level primary risk-coverage analysis across eligible strata.",
+    "Independent execution of the clean release by an external operator.",
+    "Independent multi-laboratory or acquisition-family validation for a flagship methods claim."
+  ],
+  "prohibited_claims": [
+    "universal validity advantage",
+    "automatic segmentation validity",
+    "population-level bone biology",
+    "diagnosis or treatment guidance",
+    "tissue mechanics or intraoperative utility",
+    "Nature Methods readiness"
+  ]
+}

@@ -16,15 +16,30 @@ PROTOCOL = "nostos-release-candidate/1.0"
 ROOT_FILES = (
     ".gitignore", "README.md", "LICENSE", "CITATION.cff", "pyproject.toml",
     "uv.lock", "requirements-lock.txt", "requirements-comparators.lock.txt",
+    "requirements-network-comparator.lock.txt",
     "requirements-segmentation-cu128.txt",
 )
-TREES = ("src", "tests", "configs", ".github")
+TREES = ("src", "tests", "configs", ".github", "microscopy_app")
+FIGURES = (
+    "figures/nostos0/figure_1_response_geometry_reference.png",
+    "figures/nostos0/figure_1_response_geometry_reference.svg",
+    "figures/nostos0/figure_1_response_geometry_reference.manifest.json",
+    "figures/nostos0/figure_2_synthetic_validation.png",
+    "figures/nostos0/figure_2_synthetic_validation.svg",
+    "figures/nostos0/figure_3_bone_validation.png",
+    "figures/nostos0/figure_3_bone_validation.svg",
+    "figures/nostos0/figure_4_cross_domain_boundaries.png",
+    "figures/nostos0/figure_4_cross_domain_boundaries.svg",
+    "figures/nostos0/supplementary_figure_1_bone_contract_stress.png",
+    "figures/nostos0/supplementary_figure_1_bone_contract_stress.svg",
+    "figures/nostos0/supplementary_figure_1_bone_contract_stress.manifest.json",
+)
 SCRIPTS = (
     "benchmark_kymatio.py", "benchmark_pyradiomics.py",
     "benchmark_pyradiomics_ibsi_texture.py",
     "audit_comparator_environments.py",
     "build_nostos0_main_figures.py",
-    "build_external_audit_package.py",
+    "build_nostos0_figure1.py",
     "fetch_bbbc039_reference.ps1",
     "fetch_bbbc007_reference.ps1",
     "fetch_bbbc020_reference.ps1",
@@ -42,6 +57,44 @@ SCRIPTS = (
     "run_pshg_external_orientation.py",
     "download_pshg_tiss.py",
     "run_osteochondral_learned_adapter.py",
+    "audit_osteochondral_reference_definition.py",
+    "validate_dynamic_synthetic.py",
+    "validate_hrf_network.py",
+    "develop_network_resampling.py",
+    "confirm_stare_network.py",
+    "confirm_bbbc035_dynamic.py",
+    "prepare_bonej_inputs.py",
+    "audit_bonej_thickness.py",
+    "run_bonej_thickness.ijm",
+    "prepare_bbbc006_spatial.py",
+    "confirm_bbbc006_spatial.py",
+    "run_public_tool_workflows.py",
+    "audit_structure_tensor_comparator.py",
+    "validate_bbbc006_qc.py",
+    "develop_focus_metric.py",
+    "confirm_bbbc006_qc.py",
+    "validate_dense_deformation.py",
+    "develop_dense_uncertainty.py",
+    "confirm_dense_deformation_analytic.py",
+    "confirm_bbbc035_dense_deformation.py",
+    "run_dense_tool_workflow.py",
+    "develop_ctc_tracking.py",
+    "audit_ctc_division_geometry.py",
+    "develop_ctc_division_rule.py",
+    "confirm_ctc_tracking.py",
+    "confirm_ctc_tracking_hela02.py",
+    "run_ctc_tracking_tool_workflow.py",
+    "dry_run_cartilage_review_evaluator.py",
+    "build_bone_contract_figure.py",
+    "build_bone_contract_summary.py",
+    "build_manuscript_qa_receipt.py",
+    "build_nostos0_methods_docx.py",
+    "download_bone_contract_datasets.ps1",
+    "verify_bone_contract_downloads.ps1",
+    "run_bone_contract_program.ps1",
+    "run_bone_contract_orientation.py",
+    "run_bone_orientation_v2.py",
+    "run_bone_network_3d.py",
 )
 DOCS = (
     "NOSTOS0_REPRODUCIBILITY_AND_METHODS.md",
@@ -69,15 +122,61 @@ DOCS = (
     "NOSTOS0_PSHG_EXTERNAL_ORIENTATION_PROTOCOL.md",
     "NOSTOS0_PSHG_BREAST_CONFIRMATION_PROTOCOL.md",
     "NOSTOS0_OSTEOCHONDRAL_LEARNED_ADAPTER_BENCHMARK.md",
+    "NOSTOS0_OSTEOCHONDRAL_BOUNDARY_ADAPTER_V2_PROTOCOL.md",
+    "NOSTOS0_OSTEOCHONDRAL_REFERENCE_DEFINITION_AUDIT.md",
+    "NOSTOS0_COMPLETE_PUBLIC_DATA_READINESS_AUDIT.md",
+    "NOSTOS0_HRF_NETWORK_VALIDATION_PROTOCOL.md",
+    "NOSTOS0_STARE_NETWORK_CONFIRMATION_PROTOCOL.md",
+    "NOSTOS0_BBBC035_DYNAMIC_CONFIRMATION_PROTOCOL.md",
+    "NOSTOS0_BONEJ_THICKNESS_COMPARATOR_PROTOCOL.md",
+    "NOSTOS0_BBBC006_SPATIAL_CONFIRMATION_PROTOCOL.md",
+    "NOSTOS0_PUBLIC_TOOL_WORKFLOW_PROTOCOL.md",
+    "NOSTOS0_STRUCTURE_TENSOR_COMPARATOR_PROTOCOL.md",
+    "NOSTOS0_BBBC006_QC_VALIDATION_PROTOCOL.md",
+    "NOSTOS0_BBBC006_QC_CONFIRMATION_PROTOCOL.md",
+    "NOSTOS0_DENSE_DEFORMATION_PROTOCOL.md",
+    "NOSTOS0_DENSE_TOOL_WORKFLOW_PROTOCOL.md",
+    "NOSTOS0_NATIVE_OBJECT_TRACKING_PROTOCOL.md",
+    "NOSTOS0_TRACKING_TOOL_WORKFLOW_PROTOCOL.md",
+    "reference_mask_review_instructions.md",
+    "NOSTOS0_SOFTWARE_RESOURCE_ARTICLE.md",
+    "NOSTOS0_software_resource_submission_candidate.docx",
+    "NOSTOS0_BONE_CONTRACT_ABLATION_PROTOCOL.md",
+    "NOSTOS0_BONE_ORIENTATION_V2_AMENDMENT.md",
+    "NOSTOS0_BONE_ORIENTATION_V2_RESULT.md",
+    "NOSTOS0_BONE_3D_NETWORK_CONTRACT.md",
+    "NOSTOS0_BONE_3D_NETWORK_V2_AMENDMENT.md",
+    "NOSTOS0_BONE_3D_NETWORK_RESULT.md",
+    "NOSTOS0_HUMAN_NANOCT_TRANSFER_PROTOCOL.md",
+    "NOSTOS0_HUMAN_NANOCT_V1_RESULT.md",
+    "NOSTOS0_HUMAN_NANOCT_SCALE_RESPONSE_V2.md",
+    "NOSTOS0_HUMAN_NANOCT_SCALE_V2_RESULT.md",
+    "NOSTOS0_UVPAM_ABSTENTION_PROTOCOL.md",
+    "NOSTOS0_UVPAM_ABSTENTION_RESULT.md",
 )
-EVIDENCE_INDEX = Path("outputs/nostos0-evidence-bundle-v11/evidence_index.json")
+EVIDENCE_INDEX = Path("outputs/nostos0-evidence-bundle-v27/evidence_index.json")
 TEXT_SUFFIXES = {".py", ".md", ".toml", ".txt", ".json", ".csv", ".yml", ".yaml", ".cff", ".ps1"}
 SKIP_PARTS = {"__pycache__", ".pytest_cache", ".mypy_cache", "nostos.egg-info"}
+POST_RELEASE_AUDIT_PATHS = {
+    "src/nostos/validation/final_audit.py",
+    "tests/test_final_audit.py",
+}
+SCANNER_SOURCE_PATHS = {
+    "src/nostos/release.py",
+    "src/nostos/validation/manuscript_qa.py",
+}
 SECRET_PATTERNS = (
     re.compile(r"s2k-[A-Za-z0-9_-]{20,}"),
     re.compile(r"(?i)(api[_-]?key|secret|token)\s*[:=]\s*['\"][^'\"]{12,}['\"]"),
 )
-PRIVATE_PATH = re.compile(r"(?i)(?:[A-Z]:\\Users\\[^\\\s]+|E:\\NOSTOS)")
+PRIVATE_PATH_PATTERNS = (
+    re.compile(r"(?i)[A-Z]:\\Users\\"),
+    re.compile(r"(?i)[A-Z]:\\\\Users\\\\"),
+    re.compile(r"(?i)[A-Z]:/Users/"),
+    re.compile(r"(?i)E:\\NOSTOS"),
+    re.compile(r"(?i)E:\\\\NOSTOS"),
+    re.compile(r"(?i)E:/NOSTOS"),
+)
 
 
 def _sha256(path: Path) -> str:
@@ -92,9 +191,25 @@ def _copy_file(source: Path, destination: Path, project_root: Path) -> None:
     destination.parent.mkdir(parents=True, exist_ok=True)
     if source.suffix.lower() in TEXT_SUFFIXES or source.name in {"LICENSE", ".gitignore"}:
         text = source.read_text(encoding="utf-8")
-        text = text.replace(str(project_root), "<PROJECT_ROOT>")
-        text = re.sub(r"(?i)C:\\Users\\yanyl\\OneDrive\\NOSTOS", "<PROJECT_ROOT>", text)
-        text = re.sub(r"(?i)E:\\NOSTOS", "<DATA_ROOT>", text)
+        relative = source.relative_to(project_root).as_posix()
+        if relative not in SCANNER_SOURCE_PATHS:
+            project = str(project_root)
+            text = text.replace(project.replace("\\", "\\\\"), "<PROJECT_ROOT>")
+            text = text.replace(project, "<PROJECT_ROOT>")
+            text = re.sub(r"(?i)C:\\Users\\yanyl\\OneDrive\\NOSTOS", "<PROJECT_ROOT>", text)
+            text = re.sub(
+                r"(?i)C:\\\\Users\\\\yanyl\\\\OneDrive\\\\NOSTOS",
+                "<PROJECT_ROOT>",
+                text,
+            )
+            text = re.sub(r"(?i)[A-Z]:\\Users\\[^\\\s\"']+", "<USER_ROOT>", text)
+            text = re.sub(
+                r"(?i)[A-Z]:\\\\Users\\\\[^\\\s\"']+", "<USER_ROOT>", text
+            )
+            text = re.sub(r"(?i)[A-Z]:/Users/[^/\s\"']+", "<USER_ROOT>", text)
+            text = re.sub(r"(?i)E:\\\\NOSTOS", "<DATA_ROOT>", text)
+            text = re.sub(r"(?i)E:\\NOSTOS", "<DATA_ROOT>", text)
+            text = re.sub(r"(?i)E:/NOSTOS", "<DATA_ROOT>", text)
         destination.write_text(text, encoding="utf-8", newline="\n")
     else:
         shutil.copyfile(source, destination)
@@ -122,6 +237,10 @@ def _selected_files(root: Path) -> list[Path]:
         path = root / "docs" / name
         if path.is_file():
             selected.add(path)
+    for relative in FIGURES:
+        path = root / relative
+        if path.is_file():
+            selected.add(path)
     if EVIDENCE_INDEX.is_absolute():
         raise ValueError("Evidence index must be relative")
     index_path = root / EVIDENCE_INDEX
@@ -133,7 +252,14 @@ def _selected_files(root: Path) -> list[Path]:
             candidate = root / relative
             if candidate.is_file():
                 selected.add(candidate)
-    return sorted(selected, key=lambda path: path.relative_to(root).as_posix())
+    return sorted(
+        (
+            path
+            for path in selected
+            if path.relative_to(root).as_posix() not in POST_RELEASE_AUDIT_PATHS
+        ),
+        key=lambda path: path.relative_to(root).as_posix(),
+    )
 
 
 def _audit(stage: Path) -> list[dict[str, str]]:
@@ -148,7 +274,10 @@ def _audit(stage: Path) -> list[dict[str, str]]:
             if pattern.search(text):
                 findings.append({"path": path.relative_to(stage).as_posix(), "kind": "possible_secret"})
                 break
-        if PRIVATE_PATH.search(text):
+        relative = path.relative_to(stage).as_posix()
+        if relative not in SCANNER_SOURCE_PATHS and any(
+            pattern.search(text) for pattern in PRIVATE_PATH_PATTERNS
+        ):
             findings.append({"path": path.relative_to(stage).as_posix(), "kind": "private_absolute_path"})
     return findings
 
@@ -161,6 +290,20 @@ def build_release(project_root: Path, output: Path) -> dict:
     stage.mkdir()
     for source in _selected_files(root):
         _copy_file(source, stage / source.relative_to(root), root)
+    portable_storage = {
+        "project_root": ".",
+        "bulk_storage_root": "bulk",
+        "data_root": "bulk",
+        "python_environment": ".venv",
+        "cpu_app": "http://127.0.0.1:8765",
+        "gpu_comparison_app": "http://127.0.0.1:8766",
+    }
+    (stage / "storage.json").write_text(
+        json.dumps(portable_storage, indent=2) + "\n", encoding="utf-8", newline="\n"
+    )
+    portable_data = stage / "bulk"
+    portable_data.mkdir(parents=True)
+    (portable_data / ".gitkeep").write_text("", encoding="utf-8")
 
     findings = _audit(stage)
     files = []
@@ -182,7 +325,8 @@ def build_release(project_root: Path, output: Path) -> dict:
         "limitations": [
             "Archive integrity is not independent scientific replication.",
             "Cartilage reference-mask validation and independent-acquisition validation remain pending.",
-            "The learned osteochondral adapter is post-failure development and failed downstream measurement-agreement gates.",
+            "The learned osteochondral adapters are post-failure development and failed endpoint gates.",
+            "Threshold-derived osteochondral masks do not define a unique continuous interface; manual adjudication remains required.",
             "Repository and archival DOI placeholders must be replaced before publication.",
         ],
     }
@@ -225,7 +369,7 @@ def build_release(project_root: Path, output: Path) -> dict:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--project-root", type=Path, default=Path.cwd())
-    parser.add_argument("--output", type=Path, default=Path("outputs/nostos0-release-candidate-v1"))
+    parser.add_argument("--output", type=Path, default=Path("outputs/nostos0-release-candidate-v27"))
     args = parser.parse_args()
     print(json.dumps(build_release(args.project_root, args.output), indent=2))
 

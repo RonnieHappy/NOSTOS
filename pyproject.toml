@@ -14,13 +14,17 @@ dependencies = [
   "numpy>=2.0",
   "pandas>=3.0",
   "Pillow>=10.0",
+  "scikit-image==0.25.2",
   "scikit-learn>=1.9",
   "scipy>=1.18",
   "tifffile>=2026.8"
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=9.0"]
+dev = [
+  "pytest>=9.0",
+  "python-docx>=1.2"
+]
 segmentation = [
   "torch==2.11.0",
   "torchvision==0.26.0"
@@ -44,6 +48,7 @@ nostos-pipeline = "nostos.pipeline:main"
 nostos-archive = "nostos.data.archive:main"
 nostos-select-annotations = "nostos.segmentation.select_annotations:main"
 nostos-seg-evaluate = "nostos.segmentation.evaluate:main"
+nostos-review-evaluate = "nostos.segmentation.review_evaluate:main"
 nostos-seg-report = "nostos.reporting.segmentation:main"
 nostos-app = "nostos.app.server:main"
 nostos-cpu-batch = "nostos.app.batch_cpu:main"

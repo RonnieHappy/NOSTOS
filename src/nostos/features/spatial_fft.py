@@ -117,7 +117,17 @@ def extract_spatial_fft(
         if selected.any():
             centers.append(float(np.sqrt(radial_edges[index] * radial_edges[index + 1])))
             means.append(float(weights[selected].mean()))
-    slope = float(np.polyfit(np.log(centers), np.log(np.maximum(means, np.finfo(float).tiny)), 1)[0])
+    # Explicit float64 avoids platform/import-order promotion to longdouble,
+    # which NumPy's Windows linear algebra backend does not support.
+    radial_x = np.asarray(centers, dtype=np.float64)
+    radial_y = np.asarray(means, dtype=np.float64)
+    log_x = np.log(radial_x)
+    log_y = np.log(np.maximum(radial_y, np.finfo(np.float64).tiny))
+    centered_x = log_x - float(log_x.mean())
+    denominator = float(np.sum(centered_x * centered_x))
+    if denominator <= np.finfo(np.float64).eps:
+        raise ValueError("Insufficient radial-frequency support for a spectral slope.")
+    slope = float(np.sum(centered_x * (log_y - float(log_y.mean()))) / denominator)
 
     order = np.argsort(selected_radius)
     cumulative = np.cumsum(weights[order])

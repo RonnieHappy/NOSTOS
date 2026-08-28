@@ -34,3 +34,4 @@ Apply the frozen threshold once to confirmation groups. Report pixels and groups
 - NOSTOS accepted median error no worse than the better fixed-scale comparator by more than 1 degree at matched-or-greater coverage.
 
 This experiment validates an algorithmically derived local tangent against manual centerline geometry within one archive. It is not independent-acquisition, physical-scale, tissue-mechanism or clinical validation. All outcomes, including failure, remain in the evidence ledger.
+

@@ -19,6 +19,7 @@ from nostos.segmentation.osteochondral import (
     OsteochondralUNet,
     SliceRecord,
     binary_segmentation_loss,
+    boundary_aware_segmentation_loss,
     load_pair,
     postprocess_probability,
 )
@@ -76,7 +77,7 @@ def seed_all(seed: int) -> None:
 
 
 def train_fold(train: list[SliceRecord], validation: list[SliceRecord], output: Path, fold: int,
-               *, epochs: int, batch_size: int, workers: int) -> tuple[OsteochondralUNet, dict]:
+               *, epochs: int, batch_size: int, workers: int, objective: str) -> tuple[OsteochondralUNet, dict]:
     seed_all(SEED + fold)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = OsteochondralUNet().to(device)
@@ -91,20 +92,21 @@ def train_fold(train: list[SliceRecord], validation: list[SliceRecord], output: 
                                    pin_memory=device.type == "cuda")
     best, stale, history = float("inf"), 0, []
     checkpoint = output / f"fold_{fold}.pt"
+    loss_function = boundary_aware_segmentation_loss if objective == "boundary" else binary_segmentation_loss
     for epoch in range(epochs):
         train_data.set_epoch(epoch); model.train(); losses = []
         for image, mask in train_loader:
             image, mask = image.to(device, non_blocking=True), mask.to(device, non_blocking=True)
             optimizer.zero_grad(set_to_none=True)
             with torch.autocast(device_type=device.type, dtype=torch.float16, enabled=device.type == "cuda"):
-                loss = binary_segmentation_loss(model(image), mask)
+                loss = loss_function(model(image), mask)
             scaler.scale(loss).backward(); scaler.step(optimizer); scaler.update()
             losses.append(float(loss.detach()))
         model.eval(); validation_losses = []
         with torch.inference_mode():
             for image, mask in validation_loader:
                 image, mask = image.to(device, non_blocking=True), mask.to(device, non_blocking=True)
-                validation_losses.append(float(binary_segmentation_loss(model(image), mask)))
+                validation_losses.append(float(loss_function(model(image), mask)))
         value = float(np.mean(validation_losses))
         history.append({"epoch": epoch + 1, "train_loss": float(np.mean(losses)), "validation_loss": value})
         if value < best - 1e-5:
@@ -200,6 +202,7 @@ def evaluate(model: OsteochondralUNet, records: list[SliceRecord], fold: int,
         predicted_measurements, predicted_abstention = safe_measurements(image_array, prediction)
         row = {"fold": fold, "patient": record.patient, "sample": record.sample,
                "family": record.family, "index": record.index, **metrics,
+               "image_path": str(record.image), "mask_path": str(record.mask),
                "full_mask_dice": float(2 * intersection / max(prediction_mask.sum() + reference_mask.sum(), 1)),
                "full_mask_iou": float(intersection / max(union, 1)),
                "band_iou_75_um": band_iou(prediction, truth, spacing_um=SPACING_UM),
@@ -276,7 +279,9 @@ def main() -> None:
     parser.add_argument("dataset", type=Path); parser.add_argument("--development-receipt", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True); parser.add_argument("--epochs", type=int, default=30)
     parser.add_argument("--batch-size", type=int, default=12); parser.add_argument("--workers", type=int, default=0)
+    parser.add_argument("--objective", choices=("dice", "boundary"), default="dice")
     parser.add_argument("--reuse-checkpoints", action="store_true")
+    parser.add_argument("--compact-output", type=Path)
     args = parser.parse_args(); args.output.mkdir(parents=True, exist_ok=True)
     records = discover(args.dataset); patients = sorted({r.patient for r in records}); folds = patient_folds(patients)
     if len(patients) != 19 or len({r.sample for r in records}) != 35:
@@ -297,7 +302,7 @@ def main() -> None:
             trace = {key: value for key, value in trace.items() if key in {"history", "selected_epoch", "best_validation_loss"}}
         else:
             model, trace = train_fold(train, validation, args.output, fold, epochs=args.epochs,
-                                      batch_size=args.batch_size, workers=args.workers)
+                                      batch_size=args.batch_size, workers=args.workers, objective=args.objective)
         all_rows.extend(evaluate(model, test, fold, classical))
         training.append({"fold": fold, "train_patients": sorted({r.patient for r in train}),
                          "validation_patients": sorted(validation_patients), "test_patients": sorted(test_patients),
@@ -308,8 +313,10 @@ def main() -> None:
                for r in records if (r.patient, r.sample, r.family, r.index) not in evaluated_keys]
     result["gates"]["all_discovered_slices_evaluated"] = len(omitted) == 0
     result["status"] = "technically_promising" if all(result["gates"].values()) else "fail"
-    payload = {"protocol_version": "nostos-osteochondral-learned-adapter/1.1", **result,
+    protocol = "nostos-osteochondral-boundary-adapter/2.0" if args.objective == "boundary" else "nostos-osteochondral-learned-adapter/1.1"
+    payload = {"protocol_version": protocol, **result,
                "seed": SEED, "spacing_um": SPACING_UM, "records_discovered": len(records),
+               "objective": args.objective,
                "records_evaluated": len(all_rows), "fold_assignment": folds, "training": training,
                "prediction_coverage": len(all_rows) / len(records), "omitted_records": omitted,
                "implementation": {"module": str(Path(learned_module.__file__).resolve()),
@@ -328,11 +335,14 @@ def main() -> None:
         {key: value for key, value in item.items() if key != "history"} for item in payload["training"]
     ]
     compact["full_slice_receipt"] = {
-        "path": "<BULK_DATA_ROOT>/outputs/nostos0-osteochondral-learned-adapter-v1_1/osteochondral_learned_adapter.json",
+        "path": f"<BULK_DATA_ROOT>/outputs/{args.output.name}/osteochondral_learned_adapter.json",
         "sha256": sha256(destination),
     }
     compact_destination = args.output / "osteochondral_learned_adapter_summary.json"
     compact_destination.write_text(json.dumps(compact, indent=2, allow_nan=False) + "\n", encoding="utf-8")
+    if args.compact_output is not None:
+        args.compact_output.parent.mkdir(parents=True, exist_ok=True)
+        args.compact_output.write_text(json.dumps(compact, indent=2, allow_nan=False) + "\n", encoding="utf-8")
     print(json.dumps({"output": str(destination), "status": payload["status"], "gates": payload["gates"]}, indent=2))
 
 

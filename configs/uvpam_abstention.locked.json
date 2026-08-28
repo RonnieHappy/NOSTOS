@@ -1,0 +1,12 @@
+{
+  "protocol_version": "nostos-uvpam-abstention/1.0",
+  "dataset_doi": "10.5281/zenodo.6345772",
+  "tiles_per_source_group": 24,
+  "minimum_dynamic_range_fraction": 0.05,
+  "maximum_saturation_fraction": 0.20,
+  "maximum_dimensionless_orientation_drift_degrees": 15.0,
+  "physical_spacing_available": false,
+  "requested_semantics_supported": false,
+  "requested_endpoint": "physical characteristic scale and collagen orientation",
+  "claim_boundary": "Calibration and semantic abstention on UV-PAM tiles; pixel-domain descriptors only, no physical or biological interpretation."
+}

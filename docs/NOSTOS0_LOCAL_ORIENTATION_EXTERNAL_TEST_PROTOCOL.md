@@ -28,3 +28,4 @@ All gates must pass:
 - primary median error no worse than the smoothed-gradient comparator by more than 1 degree.
 
 This validates a scale-declared local orientation field against manual-centerline geometry in one external archive. It does not validate local wavelength, physical calibration, biological mechanism, reliability under a new acquisition or clinical use. Failure remains in the evidence ledger.
+
