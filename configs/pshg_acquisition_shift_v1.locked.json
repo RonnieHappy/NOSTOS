@@ -1,0 +1,82 @@
+{
+  "protocol_version": "nostos-pshg-acquisition-shift/1.0",
+  "protocol_path": "docs/NOSTOS0_PSHG_ACQUISITION_SHIFT_PROTOCOL.md",
+  "dataset": {
+    "doi": "10.17605/OSF.IO/UDTQP",
+    "subset": "breast tissue unstained / FSHG",
+    "root_relative_to_bulk_data": "public/PSHG-TISS/breast-unstained-fshg"
+  },
+  "split": {
+    "salt": "NOSTOS-PSHG-SHIFT-v1",
+    "development_rois": 24,
+    "confirmation_rois": 24
+  },
+  "measurement": {
+    "frames": 10,
+    "integration_sigma_pixels": 2.0,
+    "comparison_sigma_pixels": 4.0,
+    "reference_offset_degrees": 90.0,
+    "minimum_reference_r2": 0.9,
+    "minimum_reference_snr_db": 3.0,
+    "edge_exclusion_pixels": 8,
+    "minimum_adjudicable_pixels": 1000,
+    "invalid_median_error_degrees": 15.0,
+    "invalid_p75_error_degrees": 30.0
+  },
+  "conditions": [
+    {"id": "clean"},
+    {"id": "blur_sigma_1", "blur_sigma": 1.0},
+    {"id": "blur_sigma_2", "blur_sigma": 2.0},
+    {"id": "blur_sigma_4", "blur_sigma": 4.0},
+    {"id": "noise_snr_20", "noise_snr_db": 20.0},
+    {"id": "noise_snr_10", "noise_snr_db": 10.0},
+    {"id": "noise_snr_5", "noise_snr_db": 5.0},
+    {"id": "motion_radius_1", "motion_radius": 1.0},
+    {"id": "motion_radius_2", "motion_radius": 2.0},
+    {"id": "motion_radius_4", "motion_radius": 4.0},
+    {"id": "resample_factor_2", "resample_factor": 2},
+    {"id": "resample_factor_4", "resample_factor": 4},
+    {"id": "contrast_factor_0_25", "contrast_factor": 0.25},
+    {"id": "compound_moderate", "blur_sigma": 2.0, "noise_snr_db": 10.0, "motion_radius": 1.0},
+    {"id": "compound_severe", "blur_sigma": 4.0, "noise_snr_db": 5.0, "motion_radius": 2.0, "resample_factor": 2}
+  ],
+  "risk_components": {
+    "minimum_contrast_to_residual": 3.0,
+    "maximum_endpoint_fraction": 0.2,
+    "minimum_median_coherence": 0.15,
+    "maximum_interscale_disagreement_degrees": 20.0,
+    "maximum_split_stack_disagreement_degrees": 20.0
+  },
+  "policies": {
+    "acquisition_qc": ["acquisition_qc"],
+    "endpoint_qc": ["acquisition_qc", "coherence"],
+    "without_scale_consistency": ["acquisition_qc", "coherence", "split_stack"],
+    "without_split_consistency": ["acquisition_qc", "coherence", "scale_consistency"],
+    "full_contract": ["acquisition_qc", "coherence", "scale_consistency", "split_stack"]
+  },
+  "calibration": {
+    "folds": 4,
+    "bins": 6,
+    "seed": 8262601,
+    "prior_alpha": 0.5,
+    "prior_beta": 0.5,
+    "maximum_predicted_risk": 0.15
+  },
+  "bootstrap": {
+    "draws": 5000,
+    "seed": 8262602
+  },
+  "success_gates": {
+    "confirmation_rois": 24,
+    "confirmation_cases": 360,
+    "minimum_invalid_cases": 30,
+    "minimum_full_coverage": 0.5,
+    "maximum_full_risk_upper95": 0.2,
+    "minimum_matched_risk_reduction": 0.05,
+    "minimum_ablation_aurc_increase": 0.01,
+    "minimum_clean_coverage": 0.9,
+    "maximum_clean_median_error_degrees": 15.0,
+    "upstream_noninferiority_margin_degrees": 2.0
+  },
+  "claim_boundary": "Selective validity of one local axial-orientation endpoint under frozen computational acquisition shifts in the deposited PSHG-TISS breast acquisition family; not independent instrument, tissue-mechanics, diagnosis, surgical or clinical validation."
+}

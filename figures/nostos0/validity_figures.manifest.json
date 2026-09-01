@@ -1,0 +1,160 @@
+{
+  "schema_version": "nostos-publication-figure-manifest/1.0",
+  "status": "complete",
+  "generated_by": "scripts/build_nostos0_validity_figures.py",
+  "generated_by_sha256": "321d7518caa41e38c97b99bddf57ab28b61ad748a6faf9b357cfa129c2c058b6",
+  "declaration": "All microscopy pixels originate from the cited public BioSR and FMD archives; all maps are deterministic transforms; all summaries are recomputed from frozen evidence rows; no generative or synthetic biological imagery is used.",
+  "public_datasets": {
+    "BioSR": {
+      "doi": "10.6084/m9.figshare.13264793",
+      "archive": "F-actin.zip",
+      "bytes": 2233338886,
+      "sha256": "d7b83be427b7e579d6450943844d5553f2e9fe61309ed9d91976598e7095c3d7"
+    },
+    "FMD": {
+      "doi": "10.7274/r0-ed2r-4052",
+      "archive": "WideField_BPAE_R.tar",
+      "bytes": 709232640,
+      "sha256": "4914cd7d951b4ddc1a01f6c7f121b7e9936fd2a7d1505f3e802984ffee69cad7",
+      "calibration_boundary": "No pixel spacing supplied; only pixel-relative endpoints are shown."
+    }
+  },
+  "frozen_sources": [
+    {
+      "path": "outputs/nostos0-biosr-tensor-v9-scale-conditioned-confirmation/tensor_cases.jsonl",
+      "bytes": 10662609,
+      "sha256": "a66417a7d124002f7c3b62fe5509fea041c3516610cb7fe628024ae8e614dcc4"
+    },
+    {
+      "path": "outputs/nostos0-biosr-tensor-v9-scale-conditioned-confirmation/confirmation_receipt.json",
+      "bytes": 121189,
+      "sha256": "17c2e876e50ce86dd9d6a5856f7e9ea98937ee8563377c748fd108cdc6cb6f17"
+    },
+    {
+      "path": "outputs/nostos0-fmd-widefield-v1-3-compiled/development_scored.jsonl",
+      "bytes": 2038611,
+      "sha256": "be764f7471a50469e32d0afff8a663c9f8d45fea07f9867feaa097e0faa73aa3"
+    },
+    {
+      "path": "outputs/nostos0-fmd-widefield-v1-3-confirmation-audit-v1-1/confirmation_scored.jsonl",
+      "bytes": 1987782,
+      "sha256": "00133459c0e49c859b56cc26d4ea3f2bbe87f36f333da0ec7111a65ae3659350"
+    },
+    {
+      "path": "outputs/nostos0-fmd-widefield-v1-3-confirmation-audit-v1-1/confirmation_audit.json",
+      "bytes": 8283,
+      "sha256": "b7139aa5cd278781a7f9ea4ae85a4118b3bf07a24f0b088fffe584381f04f156"
+    },
+    {
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-development/development_audit.json",
+      "bytes": 13955,
+      "sha256": "146abf77a43f7e621cdc42c5453d465f4e1ae0336d2f7a5ee67836ddd4cfbf3b"
+    },
+    {
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-confirmation-audit/confirmation_scored.jsonl",
+      "bytes": 912615,
+      "sha256": "82d2f71e3c5cb22c6cbc8b9f710fccc92f2590071b09e4b5f7886abe5010960a"
+    },
+    {
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-confirmation-audit/confirmation_audit.json",
+      "bytes": 8916,
+      "sha256": "ac2c47392c08bf3a7ba03fb8290e6b955ca903e66e3baf39492c2065601fba02"
+    },
+    {
+      "path": "outputs/nostos0-fmd-widefield-v1-4-finite-sample-uncertainty.json",
+      "bytes": 3877,
+      "sha256": "981f0dba11430c75c6574e43c7ecc06b82db1a1d7958acc41d63834ca4e4f057"
+    },
+    {
+      "path": "outputs/nostos0-fmd-validity-program-final-audit-v1/final_audit.json",
+      "bytes": 14674,
+      "sha256": "05069d090f05812a11924d733963cc675528ddc5b3e259a10a89ed58ef71e6c6"
+    }
+  ],
+  "figures": {
+    "figure_1": {
+      "png": {
+        "path": "figures/nostos0/figure_1_validity_contract_atlas.png",
+        "bytes": 3767726,
+        "sha256": "d34b05e027073f9b80f5d61e9c31f6e04865e2454adf05e9ede086948856453e"
+      },
+      "pdf": {
+        "path": "figures/nostos0/figure_1_validity_contract_atlas.pdf",
+        "bytes": 162494,
+        "sha256": "0c7b5827dbe88a4570538aa4d52aa1c6f8540e7d2b4e81e89a4d87969973776a"
+      },
+      "svg": {
+        "path": "figures/nostos0/figure_1_validity_contract_atlas.svg",
+        "bytes": 222626,
+        "sha256": "52ebe6e0bdf4afc810087065d3674cde23bd47938d0cc965b76fae25f95b501c"
+      }
+    },
+    "figure_2": {
+      "png": {
+        "path": "figures/nostos0/figure_2_biosr_selective_validity.png",
+        "bytes": 3211750,
+        "sha256": "b6a8b8e375227aa2a6d053a824573b774f2a20cf5c2108decd7350e493c08611"
+      },
+      "pdf": {
+        "path": "figures/nostos0/figure_2_biosr_selective_validity.pdf",
+        "bytes": 256057,
+        "sha256": "91fd767cc49941c75dd5b87b55b7b7a7bb36331d41db59daa1dcf74125d598db"
+      },
+      "svg": {
+        "path": "figures/nostos0/figure_2_biosr_selective_validity.svg",
+        "bytes": 377929,
+        "sha256": "393eaa5a9874355e8df4a547ae163558ba52b4e44a664620dbf865a2cc18919e"
+      }
+    },
+    "figure_3": {
+      "png": {
+        "path": "figures/nostos0/figure_3_fmd_hidden_failure.png",
+        "bytes": 2547991,
+        "sha256": "c8ed47cb5ea8a71e2be98aa2f12a934cf51a23b05f854fcaa1a03f2c9862ce6f"
+      },
+      "pdf": {
+        "path": "figures/nostos0/figure_3_fmd_hidden_failure.pdf",
+        "bytes": 141232,
+        "sha256": "52c997c9a88fdf5d4aaf1b68e9a838b5460fc7935c0d0cc20c95ec5489b91bfa"
+      },
+      "svg": {
+        "path": "figures/nostos0/figure_3_fmd_hidden_failure.svg",
+        "bytes": 208632,
+        "sha256": "85190fde42cea50d81dc4d264defc66fbad773dac213cf55cb296a8fdf8b0429"
+      }
+    },
+    "figure_4": {
+      "png": {
+        "path": "figures/nostos0/figure_4_fmd_hierarchical_confirmation.png",
+        "bytes": 1890362,
+        "sha256": "df2db4c2ee514ee9847ac6aeca3e1d5531a25da4ab3ab78c4b268c5f8e127c12"
+      },
+      "pdf": {
+        "path": "figures/nostos0/figure_4_fmd_hierarchical_confirmation.pdf",
+        "bytes": 179587,
+        "sha256": "15755d21b6edf5310174c06a8eb3390783339d279ef4eda814d1e190fca56d90"
+      },
+      "svg": {
+        "path": "figures/nostos0/figure_4_fmd_hierarchical_confirmation.svg",
+        "bytes": 300354,
+        "sha256": "0eeb1ca3d8ec12157cce3c455ddcea4f86f862e9099143bbf50708b11bbdb530"
+      }
+    }
+  },
+  "rendering": {
+    "font": "Times New Roman with Times/DejaVu Serif fallback",
+    "raster_dpi": 600,
+    "vector_formats": [
+      "PDF",
+      "SVG"
+    ],
+    "color_semantics": {
+      "teal": "valid emission or NOSTOS",
+      "blue": "conventional acquisition QC",
+      "red": "silent invalidity",
+      "grey": "abstention or unsupported cell",
+      "amber": "finite-sample uncertainty"
+    }
+  },
+  "content_sha256": "503bbd58a028ef87dcb143da45e53d5c4ddfdf7dac399ededf06d77cf29e1056"
+}

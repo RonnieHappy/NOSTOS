@@ -1,0 +1,11 @@
+name: nostos-radiomics39
+channels:
+  - radiomics
+  - conda-forge
+dependencies:
+  - python=3.9.23
+  - pyradiomics=3.1.0a2
+  - numpy=1.26.4
+  - scipy=1.13.1
+  - scikit-learn=1.6.1
+  - simpleitk=2.5.2

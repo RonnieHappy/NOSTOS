@@ -1,0 +1,38 @@
+{
+  "protocol_version": "nostos-intraop-pshg-deployment/1.0",
+  "frozen_at_utc": "2026-08-29T00:00:00Z",
+  "study_role": "Small author-operated deployment and production-path equivalence benchmark on already-open public data; not new biological confirmation.",
+  "profile_path": "configs/intraop_pshg_orientation_profile_v1.locked.json",
+  "dataset": {
+    "doi": "10.17605/OSF.IO/UDTQP",
+    "subset": "breast tissue unstained / FSHG",
+    "manifest_relative_path": "download_manifest.json"
+  },
+  "selection": {
+    "salt": "NOSTOS-intraop-pshg-deployment-v1-2026-08-29",
+    "rule": "Rank all 48 ROI directory names by SHA-256(salt|roi) and select the first eight before reading selected pixel arrays.",
+    "selected_rois": [
+      "breast_14",
+      "breast_32",
+      "breast_38",
+      "breast_7",
+      "breast_17",
+      "breast_25",
+      "breast_24",
+      "breast_3"
+    ]
+  },
+  "gates": {
+    "required_completed_rois": 8,
+    "maximum_production_validation_map_difference_degrees": 1e-10,
+    "maximum_pooled_median_reference_error_degrees": 15.0,
+    "maximum_worst_roi_median_reference_error_degrees": 15.0,
+    "maximum_p95_analysis_seconds": 2.0,
+    "maximum_p95_end_to_end_seconds": 5.0,
+    "maximum_peak_python_memory_mb": 512.0,
+    "require_deterministic_map_hashes": true,
+    "require_profile_and_source_hash_verification": true,
+    "require_clinical_decision_withheld": true
+  },
+  "claim_boundary": "A pass establishes that the production path reproduces the already-confirmed PSHG orientation estimator deterministically and within the declared compute envelope on eight public unstained fields. It does not add independent participants, an unseen acquisition family, surgical workflow time, clinical accuracy or patient benefit."
+}

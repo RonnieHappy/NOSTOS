@@ -1,0 +1,8 @@
+{
+  "project_root": ".",
+  "bulk_storage_root": "bulk",
+  "data_root": "bulk",
+  "python_environment": ".venv",
+  "cpu_app": "http://127.0.0.1:8765",
+  "gpu_comparison_app": "http://127.0.0.1:8766"
+}

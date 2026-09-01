@@ -1,0 +1,205 @@
+{
+  "protocol_version": "nostos-paired-acquisition-support/6.0",
+  "status": "frozen_after_disclosed_v5_failure_and_v6_development_before_confirmation_access",
+  "dataset_record": "BioSR figshare 13264793 version 9",
+  "dataset_doi": "10.6084/m9.figshare.13264793.v9",
+  "raw_sim_sampling_um": 0.0626,
+  "reference_sampling_rule": "raw_sim_sampling_um / declared_upscaling_factor",
+  "mrc_header_spacing_absolute_tolerance_um": 0.000001,
+  "field_of_view_relative_tolerance": 0.000001,
+  "structures": {
+    "CCPs": {
+      "role": "disclosed_development",
+      "archive_file_id": 25714583,
+      "archive_bytes": 1176569302,
+      "archive_md5": "41771b9fd0a7c9fd939bdb71b106fa6e",
+      "upscaling_factor": 2,
+      "expected_level_count": 9
+    },
+    "ER": {
+      "role": "disclosed_development",
+      "archive_file_id": 25714658,
+      "archive_bytes": 2956077632,
+      "archive_md5": "2bd05c7dba69a10b36a141407927d585",
+      "upscaling_factor": 2,
+      "expected_level_count": 6
+    },
+    "Microtubules": {
+      "role": "untouched_initial_confirmation",
+      "archive_file_id": 25714514,
+      "archive_bytes": 1633356198,
+      "archive_md5": "df983755a1b45d512b000475e3072fc7",
+      "upscaling_factor": 2,
+      "expected_level_count": 9
+    },
+    "F-actin_linear": {
+      "role": "untouched_initial_confirmation",
+      "archive_file_id": 25944599,
+      "archive_bytes": 2233338886,
+      "archive_md5": "80fafab68f26fb71de12be0141face74",
+      "upscaling_factor": 2,
+      "expected_level_count": 9
+    },
+    "F-actin_nonlinear": {
+      "role": "untouched_resolution_stress_confirmation",
+      "archive_file_id": 25714772,
+      "archive_bytes": 4480187050,
+      "archive_md5": "b2884114e5fb034b9261855b3c8dbf77",
+      "upscaling_factor": 3,
+      "expected_level_count": 9
+    }
+  },
+  "physical_scales_um": [0.2504, 0.3756, 0.5008, 0.7512, 1.0016],
+  "spectral_analysis": {
+    "band_coordinate_system": "physical cycles per millimetre",
+    "band_reference": "effective input Nyquist frequency",
+    "minimum_fraction_of_effective_input_nyquist": 0.02,
+    "maximum_fraction_of_effective_input_nyquist": 0.9,
+    "pair_rule": "Apply the identical physical frequency limits to the input and registered reference.",
+    "rationale": "Prevents sampling-grid differences from changing the physical estimand."
+  },
+  "minimum_samples_per_scale": 4.0,
+  "mild_input_probes": {
+    "rotation_degrees": [-3.0, 3.0],
+    "gaussian_blur_sigma_input_pixels": 0.5,
+    "translation_pixels_yx": [1, -1],
+    "contrast_gamma": [0.9, 1.1]
+  },
+  "reference_eligibility": {
+    "minimum_orientation_resultant": 0.15,
+    "minimum_spectral_orientation_anisotropy": 0.15,
+    "maximum_cross_estimator_orientation_disagreement_degrees": 20.0,
+    "maximum_reference_orientation_probe_drift_degrees": 5.0,
+    "maximum_reference_scalar_probe_drift": 0.1,
+    "minimum_normalized_curve_energy": 0.000001,
+    "winning_scale_requires_interior_peak": true
+  },
+  "invalidity_tolerances": {
+    "tensor_orientation_degrees": 10.0,
+    "tensor_coherence_absolute": 0.15,
+    "spectral_anisotropy_absolute": 0.15,
+    "spectral_entropy_absolute": 0.1,
+    "spectral_scale_relative": 0.25,
+    "normalized_response_curve_distance": 0.25,
+    "winning_scale_log2_absolute": 0.5,
+    "normalized_variogram_curve_distance": 0.25,
+    "variogram_range_relative": 0.5
+  },
+  "input_identifiability": {
+    "orientation_requires_tensor_resultant": true,
+    "orientation_requires_spectral_anisotropy": true,
+    "orientation_requires_cross_estimator_agreement": true,
+    "winning_scale_requires_interior_peak": true,
+    "semantic_rule": "A scalar estimate is not emitted when the input cannot identify the requested quantity; the corresponding response curve remains available."
+  },
+  "decision_score": {
+    "name": "full_contract",
+    "aggregation": "maximum",
+    "components": [
+      "acquisition_qc",
+      "physical_sampling",
+      "perturbation_stability",
+      "measurement_identifiability"
+    ],
+    "excluded_diagnostic": "cross_scale_agreement",
+    "exclusion_reason": "Scale dependence is part of the preserved response geometry and is not, by itself, measurement invalidity."
+  },
+  "endpoint_families": {
+    "hessian_response_shape": [
+      "hessian_blob_curve",
+      "hessian_tube_curve"
+    ],
+    "spectral_order": [
+      "spectral_anisotropy",
+      "spectral_entropy"
+    ],
+    "tensor_coherence": [
+      "tensor_coherence"
+    ],
+    "tensor_orientation": [
+      "tensor_orientation"
+    ]
+  },
+  "excluded_endpoints": {
+    "hessian_blob_scale": "Reference scale peak was censored at the search boundary in development.",
+    "hessian_tube_scale": "Reference scale peak was censored at the search boundary in development.",
+    "spectral_scale": "Failed the v5 paired-acquisition tolerance.",
+    "variogram_horizontal_curve": "Image-axis-dependent definition replaced by separate intrinsic variogram development.",
+    "variogram_vertical_curve": "Image-axis-dependent definition replaced by separate intrinsic variogram development.",
+    "variogram_range_horizontal": "Image-axis-dependent scalar removed after v5 failure.",
+    "variogram_range_vertical": "Irreducibly failed the frozen v5 development gate and was removed rather than retuned."
+  },
+  "policy_thresholds": {
+    "full_contract": {
+      "hessian_response_shape": 0.4566275011141736,
+      "spectral_order": 0.4566275011141736,
+      "tensor_coherence": 0.30956540595765564,
+      "tensor_orientation": 0.9964578203269273
+    },
+    "conventional_acquisition_qc": {
+      "hessian_response_shape": 0.4566275011141736,
+      "spectral_order": 0.4566275011141736,
+      "tensor_coherence": 0.24693006305363735,
+      "tensor_orientation": 0.24858369520219217
+    },
+    "full_contract_without_sampling": {
+      "hessian_response_shape": 0.4566275011141736,
+      "spectral_order": 0.4566275011141736,
+      "tensor_coherence": 0.30956540595765564,
+      "tensor_orientation": 0.9964578203269273
+    },
+    "full_contract_without_perturbation": {
+      "hessian_response_shape": 0.4566275011141736,
+      "spectral_order": 0.4566275011141736,
+      "tensor_coherence": 0.24693006305363735,
+      "tensor_orientation": 0.9964578203269273
+    },
+    "full_contract_without_identifiability": {
+      "hessian_response_shape": 0.4566275011141736,
+      "spectral_order": 0.4566275011141736,
+      "tensor_coherence": 0.30956540595765564,
+      "tensor_orientation": 0.24858369520219217
+    }
+  },
+  "policy_semantics": {
+    "always_emit": "Ignore every NOSTOS hard abstention and emit every computable estimate.",
+    "conventional_acquisition_qc": "Apply acquisition-QC score and acquisition-QC hard failures only.",
+    "component_ablation": "Removing a component removes both its continuous score and governed hard preconditions.",
+    "structure_specific_thresholds": false
+  },
+  "development_result": {
+    "reference_fields": 75,
+    "paired_acquisitions": 558,
+    "eligible_claim_cases": 4823,
+    "accepted_claim_cases": 4436,
+    "coverage": 0.9197594857972217,
+    "invalid": 94,
+    "risk": 0.021190261496844005,
+    "cluster_bootstrap_risk_upper95": 0.025953663389596447
+  },
+  "initial_confirmation": {
+    "structures": [
+      "Microtubules",
+      "F-actin_linear",
+      "F-actin_nonlinear"
+    ],
+    "fields_per_structure": 8,
+    "field_selection_rule": "Sort all indexed reference_group_id values by sha256('NOSTOS-v6-initial-confirmation|' + structure + '|' + reference_group_id) and select the first eight. Selection cannot use pixels, dimensions, intensity, registration or endpoint outcomes.",
+    "minimum_total_reference_fields": 24,
+    "target_observed_risk": 0.1,
+    "maximum_cluster_bootstrap_risk_upper95": 0.15,
+    "minimum_overall_coverage": 0.8,
+    "minimum_structure_family_coverage": 0.7,
+    "minimum_aurc_reduction_fraction_vs_always_emit": 0.2,
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 26082903,
+    "incremental_comparator_gate": {
+      "maximum_full_minus_qc_risk": 0.0,
+      "maximum_full_coverage_loss_vs_qc": 0.1,
+      "minimum_invalid_enrichment_among_qc_only_rejections": 2.0,
+      "not_assessable_rule": "If QC emits no invalid case, superiority is not assessable and no superiority claim may be made."
+    }
+  },
+  "confirmation_access_rule": "No Microtubule or F-actin archive may be downloaded, listed, extracted, decoded, summarized or visualized until the v6 config, profile, runner, evaluator, tests and confirmation lock are written and SHA-256 verified.",
+  "claim_boundary": "Paired-acquisition support for predeclared structural measurements relative to registered high-resolution references; not image restoration, biological phenotype inference, diagnosis, clinical validity, diffraction-limit estimation, or proof that the reference acquisition is itself ground-truth biology."
+}

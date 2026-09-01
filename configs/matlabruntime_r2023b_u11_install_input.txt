@@ -1,0 +1,3 @@
+destinationFolder=<DATA_ROOT>\tools\MATLAB_Runtime\R2023b
+agreeToLicense=yes
+outputFile=<DATA_ROOT>\tools\curvealign6-cli\matlabruntime_r2023b_u11_install.log

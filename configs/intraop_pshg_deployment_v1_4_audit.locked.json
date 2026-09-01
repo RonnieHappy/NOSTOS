@@ -1,0 +1,31 @@
+{
+  "schema_version": "nostos-intraop-pshg-deployment-audit/1.0",
+  "audit_target": "nostos-intraop-pshg-deployment/1.4",
+  "lock_path": "manifests/intraop_pshg_deployment_v1_4_lock.json",
+  "lock_bytes": 21119,
+  "lock_sha256": "d8f0d58cf153fad8a204160e156b238de963d13d9a827477c816acd0ddca17b9",
+  "result_path": "outputs/nostos0-intraop-pshg-deployment-v1_4/deployment_benchmark.json",
+  "result_bytes": 9200,
+  "result_sha256": "7ec709c78f3e3e36ffbce2d47f7bc8288b0eb2b60ec3f9ae69cd09711812e536",
+  "expected_case_files": [
+    "orientation_degrees.npy",
+    "coherence.npy",
+    "eligible.npy",
+    "source.png",
+    "orientation.png",
+    "coherence.png",
+    "support.png"
+  ],
+  "required_checks": [
+    "lock_integrity",
+    "source_integrity",
+    "result_integrity",
+    "all_runner_gates_pass",
+    "independent_tensor_equivalence",
+    "independent_reference_metric_reproduction",
+    "case_receipt_integrity",
+    "artifact_file_integrity",
+    "artifact_registry_complete",
+    "clinical_output_withheld"
+  ]
+}

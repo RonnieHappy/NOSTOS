@@ -1,0 +1,54 @@
+{
+  "schema_version": "nostos-pshg-acquisition-shift-figure/1.0",
+  "declaration": "Every panel is a deterministic product of the checksum-locked PSHG-TISS archive and frozen NOSTOS receipts; no generated biological image or decorative workflow art is included.",
+  "representative_roi_rule": "first confirmation ROI in the frozen lock; outcome independent",
+  "representative_roi": "breast_15",
+  "font": {
+    "family": "Times New Roman",
+    "path": "C:\\Windows\\Fonts\\times.ttf"
+  },
+  "inputs": {
+    "configs/pshg_acquisition_shift_v1.locked.json": {
+      "sha256": "901cbc6e847d17e218dba94ae638067564ed86f7a59e8e8e6469f7311051492f",
+      "bytes": 3195
+    },
+    "outputs/nostos0-pshg-acquisition-shift-v1-development/validity_profile.json": {
+      "sha256": "cc6154b6846afb183fb4d5a3d2bad21b9a4c52fddd540e4d238fdd1c05576df6",
+      "bytes": 4657
+    },
+    "outputs/nostos0-pshg-acquisition-shift-v1-confirmation/confirmation.json": {
+      "sha256": "7b378331343bb5fffd6ab534781154e9b057f08435977dde78970f31704fe848",
+      "bytes": 820460
+    },
+    "outputs/nostos0-pshg-acquisition-shift-v1-confirmation/confirmation_rows.jsonl": {
+      "sha256": "9438248ee2c95953b94935a01bbd14689ab7d008282a99cce3084e13684d367e",
+      "bytes": 645644
+    },
+    "manifests/pshg_acquisition_shift_v1_confirmation.lock.json": {
+      "sha256": "a8d79b4d9a5e33b57228f919edcd7de71023b8a498d94df9ecdddfe478926c4e",
+      "bytes": 1904
+    },
+    "outputs/nostos0-pshg-acquisition-shift-v1-audit/audit.json": {
+      "sha256": "29b19d2f9d4c5f249a57f86f66f983b692374a7fcf68ded0b4039961826bf0e8",
+      "bytes": 5597
+    }
+  },
+  "source_manifest_sha256": "441553b9f5af96f285b40dc042dd6fe2681e919020f28126819f80f1830d768d",
+  "outputs": {
+    "png": {
+      "path": "figures/nostos0_pshg_acquisition_shift/figure_pshg_acquisition_shift.png",
+      "bytes": 2046919,
+      "sha256": "c067b9b9a65d0e6bcb3f93dcdd66c259d954f117598125ae7c2ca62e7c175b17"
+    },
+    "pdf": {
+      "path": "figures/nostos0_pshg_acquisition_shift/figure_pshg_acquisition_shift.pdf",
+      "bytes": 139833,
+      "sha256": "cf09006c56ed2c5b159873c5116645c360aa1c5cda8ff36a0a47b71fbc5c9218"
+    },
+    "svg": {
+      "path": "figures/nostos0_pshg_acquisition_shift/figure_pshg_acquisition_shift.svg",
+      "bytes": 300648,
+      "sha256": "6d5855d932fd5c1da29f0b3c44275ea0fc0cb09df3fc365f8ecb16767cb0c8ab"
+    }
+  }
+}

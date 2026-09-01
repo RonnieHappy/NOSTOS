@@ -1,0 +1,183 @@
+{
+  "schema_version": "nostos-small-methods-figures/1.1",
+  "status": "complete",
+  "generated_by": "scripts/build_nostos0_small_methods_figures.py",
+  "generated_by_sha256": "3b935a1be3b592a6680687e10482d93fe075685ba6010a5ce0bb9ec0db7af84f",
+  "declaration": "All biological image pixels originate from the cited public BioSR and FMD archives; all measurement maps and statistical summaries are deterministic. BioRender-generated artwork is restricted to explicitly illustrative workflow geometry and contains no biological observations or data.",
+  "font": {
+    "family": "Times New Roman",
+    "resolved_path": "C:\\Windows\\Fonts\\times.ttf"
+  },
+  "outputs": {
+    "figure_1": {
+      "png": {
+        "path": "figures/nostos0_small_methods/figure_1_measurement_to_decision.png",
+        "bytes": 3760821,
+        "sha256": "400d00f449270b26976383ab39101c67f65e908c3f54bded0ce76901d8d4f8ca"
+      },
+      "pdf": {
+        "path": "figures/nostos0_small_methods/figure_1_measurement_to_decision.pdf",
+        "bytes": 177828,
+        "sha256": "cff139bd6a80621c9730ca528ef9f9f8d8cd05ef81d96a686498f499f372eaa7"
+      },
+      "svg": {
+        "path": "figures/nostos0_small_methods/figure_1_measurement_to_decision.svg",
+        "bytes": 269608,
+        "sha256": "ff860161beb0af32ca466ad7efa314aac6c50c7426e276f19bb7b203054c8569"
+      }
+    },
+    "figure_2": {
+      "png": {
+        "path": "figures/nostos0_small_methods/figure_2_biosr_confirmation.png",
+        "bytes": 2548227,
+        "sha256": "9344b3a3cc2ab27580c13c70d3dd00220394e6fab48699ab421a566aabccc230"
+      },
+      "pdf": {
+        "path": "figures/nostos0_small_methods/figure_2_biosr_confirmation.pdf",
+        "bytes": 184102,
+        "sha256": "c047d45bcfa477822975d220584d16f4603595c7110f191513b9c3d18a07e63a"
+      },
+      "svg": {
+        "path": "figures/nostos0_small_methods/figure_2_biosr_confirmation.svg",
+        "bytes": 234397,
+        "sha256": "43333b948e8bfe92e6dba37d95d2def9f0ba9e89951049536f67f1c59f0d4ebb"
+      }
+    },
+    "figure_3": {
+      "png": {
+        "path": "figures/nostos0_small_methods/figure_3_hidden_conditional_failure.png",
+        "bytes": 2056519,
+        "sha256": "5220ed5fb07b56367e598a407f5cdb81852c54d5f421cdeff816170da0b8b107"
+      },
+      "pdf": {
+        "path": "figures/nostos0_small_methods/figure_3_hidden_conditional_failure.pdf",
+        "bytes": 98402,
+        "sha256": "588639807698eaeb946254406c576ff4ebbb45de3dab4f91b19a2fe40f1802e4"
+      },
+      "svg": {
+        "path": "figures/nostos0_small_methods/figure_3_hidden_conditional_failure.svg",
+        "bytes": 147500,
+        "sha256": "ecccc5495e64c3c0b52108b137ac6350eab643c83c71e666ac793b268e384923"
+      }
+    },
+    "figure_4": {
+      "png": {
+        "path": "figures/nostos0_small_methods/figure_4_hierarchical_confirmation.png",
+        "bytes": 1676275,
+        "sha256": "877aac9cb3bf2728376229ae2a5721f437ce6e5f1c828a6c944b7929f6b27cb2"
+      },
+      "pdf": {
+        "path": "figures/nostos0_small_methods/figure_4_hierarchical_confirmation.pdf",
+        "bytes": 136675,
+        "sha256": "65d260161cdf803f51df366e029b47ef1ff3cf66ebd48729f8caddfb6cdf759d"
+      },
+      "svg": {
+        "path": "figures/nostos0_small_methods/figure_4_hierarchical_confirmation.svg",
+        "bytes": 219825,
+        "sha256": "3ca4676503277fb2213f5d4663677a7a6bb850366c529f8a44e4274f164f1fb0"
+      }
+    },
+    "toc": {
+      "png": {
+        "path": "figures/nostos0_small_methods/nostos_small_methods_toc.png",
+        "bytes": 756971,
+        "sha256": "e7283bf798bccfa8ae7a4bb40525824fd13b545ce3880345a19aef506f667bb6"
+      },
+      "pdf": {
+        "path": "figures/nostos0_small_methods/nostos_small_methods_toc.pdf",
+        "bytes": 47750,
+        "sha256": "1ac49ea9473d7b9d5df1fd36d9fdef3648bbc2f22bd94a43add227ce064c4014"
+      },
+      "svg": {
+        "path": "figures/nostos0_small_methods/nostos_small_methods_toc.svg",
+        "bytes": 42905,
+        "sha256": "81e742cc8e7c91766f957561ddd598ede6d78047bb2114c688a43dcfbf243ebe"
+      }
+    }
+  },
+  "toc_drawio": {
+    "path": "figures/nostos0_small_methods/nostos_small_methods_toc.drawio",
+    "bytes": 358236,
+    "sha256": "bc57ff2eeed736185ab5b425f5eb6dba471626ad90ebbb35fdff3a85ef90f651"
+  },
+  "sources": [
+    {
+      "path": "outputs/nostos0-biosr-tensor-v9-scale-conditioned-confirmation/tensor_cases.jsonl",
+      "bytes": 10662609,
+      "sha256": "a66417a7d124002f7c3b62fe5509fea041c3516610cb7fe628024ae8e614dcc4"
+    },
+    {
+      "path": "outputs/nostos0-biosr-tensor-v9-scale-conditioned-confirmation/confirmation_receipt.json",
+      "bytes": 121189,
+      "sha256": "17c2e876e50ce86dd9d6a5856f7e9ea98937ee8563377c748fd108cdc6cb6f17"
+    },
+    {
+      "path": "outputs/nostos0-fmd-widefield-v1-3-compiled/development_scored.jsonl",
+      "bytes": 2038611,
+      "sha256": "be764f7471a50469e32d0afff8a663c9f8d45fea07f9867feaa097e0faa73aa3"
+    },
+    {
+      "path": "outputs/nostos0-fmd-widefield-v1-3-confirmation-audit-v1-1/confirmation_scored.jsonl",
+      "bytes": 1987782,
+      "sha256": "00133459c0e49c859b56cc26d4ea3f2bbe87f36f333da0ec7111a65ae3659350"
+    },
+    {
+      "path": "outputs/nostos0-fmd-widefield-v1-3-confirmation-audit-v1-1/confirmation_audit.json",
+      "bytes": 8283,
+      "sha256": "b7139aa5cd278781a7f9ea4ae85a4118b3bf07a24f0b088fffe584381f04f156"
+    },
+    {
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-development/development_audit.json",
+      "bytes": 13955,
+      "sha256": "146abf77a43f7e621cdc42c5453d465f4e1ae0336d2f7a5ee67836ddd4cfbf3b"
+    },
+    {
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-confirmation-audit/confirmation_scored.jsonl",
+      "bytes": 912615,
+      "sha256": "82d2f71e3c5cb22c6cbc8b9f710fccc92f2590071b09e4b5f7886abe5010960a"
+    },
+    {
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-confirmation-audit/confirmation_audit.json",
+      "bytes": 8916,
+      "sha256": "ac2c47392c08bf3a7ba03fb8290e6b955ca903e66e3baf39492c2065601fba02"
+    },
+    {
+      "path": "outputs/nostos0-fmd-widefield-v1-4-finite-sample-uncertainty.json",
+      "bytes": 3877,
+      "sha256": "981f0dba11430c75c6574e43c7ecc06b82db1a1d7958acc41d63834ca4e4f057"
+    }
+  ],
+  "biorender_assets": {
+    "measurement_contract": {
+      "path": "figures/nostos0_biorender/biorender_measurement_contract_v33_textfree.png",
+      "bytes": 33212,
+      "sha256": "2614409ee6c43d3e31276cdc3179341d8761d29497556a774524d813a7df3207",
+      "session_id": "a950c5e2-2b4f-45c3-918e-3d449b5ad875",
+      "figure_id": "f2e8405964aa5d436a639add",
+      "editor_url": "https://app.biorender.com/illustrations/f2e8405964aa5d436a639add?slideId=cdd98e77-dc0f-a51a-a9b8-ab4d2f10f678",
+      "role": "illustrative measurement-contract geometry; contains no biological data"
+    },
+    "hidden_failure": {
+      "path": "figures/nostos0_biorender/biorender_hidden_failure_v33_textfree.png",
+      "bytes": 28562,
+      "sha256": "f0df8bad63e412fc76a53da6a2cf9ab3cd94d5fc6c3e32ba275de1797cae6bca",
+      "session_id": "54f4d9f9-a52e-4273-88a6-11847268efa1",
+      "figure_id": "05b085347c02460763c3a4ff",
+      "editor_url": "https://app.biorender.com/illustrations/05b085347c02460763c3a4ff?slideId=d6dcfc42-d240-f196-6232-daf2a546b0dc",
+      "role": "illustrative failure-localization geometry; contains no biological data"
+    }
+  },
+  "archives": [
+    {
+      "path": "<DATA_ROOT>\\data\\public\\measurement-support-benchmark\\biosr\\archives\\F-actin.zip",
+      "bytes": 2233338886,
+      "sha256": "d7b83be427b7e579d6450943844d5553f2e9fe61309ed9d91976598e7095c3d7"
+    },
+    {
+      "path": "<DATA_ROOT>\\data\\public\\measurement-support-benchmark\\fmd\\WideField_BPAE_R.tar",
+      "bytes": 709232640,
+      "sha256": "4914cd7d951b4ddc1a01f6c7f121b7e9936fd2a7d1505f3e802984ffee69cad7"
+    }
+  ],
+  "content_sha256": "9daacf293322d212b7104042bb567ed2c38ede8940575f151e2852024eccc0df"
+}
