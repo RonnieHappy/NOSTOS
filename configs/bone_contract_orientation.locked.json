@@ -1,0 +1,21 @@
+{
+  "protocol_version": "nostos-bone-contract-orientation/1.0",
+  "tile_size_pixels": 256,
+  "tiles_per_specimen": 24,
+  "tensor_scales_pixels": [2.0, 4.0],
+  "minimum_dynamic_range_fraction": 0.05,
+  "endpoint_qc_minimum_coherence": 0.15,
+  "full_contract_minimum_coherence": 0.20,
+  "maximum_perturbation_axial_drift_degrees": 10.0,
+  "maximum_interscale_axial_drift_degrees": 15.0,
+  "perturbations": {
+    "gaussian_blur_sigma": 1.0,
+    "contrast_gamma": 1.2,
+    "translation_pixels": [3, -2],
+    "resample_factor": 0.75
+  },
+  "independent_unit": "mouse",
+  "confirmation_dataset": "figshare-20765659",
+  "noncomparable_modality": "TPF orientation",
+  "claim_boundary": "Pixel-scale SHG orientation stability only; physical scale is unavailable in the deposited TIFF metadata. TPF is an abstention control for collagen-orientation output."
+}

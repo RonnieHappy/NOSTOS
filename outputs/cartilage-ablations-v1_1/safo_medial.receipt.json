@@ -1,0 +1,15 @@
+{
+  "protocol_version": "nostos-cartilage-ablations/1.1",
+  "stain": "SafO",
+  "site": "Medial",
+  "sections": 90,
+  "successes": 90,
+  "output": "outputs\\cartilage-ablations-v1_1\\safo_medial.csv",
+  "validity": "exploratory_weak_semantic_proposals",
+  "surface_definition": "class-1 boundary adjacent to border-connected class-0/5 external background",
+  "proxy_definitions": {
+    "internal_hole": "binary holes enclosed by the class-1 proposal",
+    "extreme_dark_object": "darkest 1% of class-1 luminance, excluded within 25 micrometers"
+  },
+  "claim_boundary": "Ablations test sensitivity to proposal-derived compartments; they do not validate those compartments."
+}

@@ -1,0 +1,240 @@
+{
+  "protocol_version": "nostos-paired-acquisition-support/2.0",
+  "status": "smoke_test",
+  "stage": "score_design",
+  "structure": "ER",
+  "archive": {
+    "schema_version": "nostos-biosr-pair-index/1.0",
+    "archive": "ER.zip",
+    "archive_bytes": 2956077632,
+    "archive_md5": "2bd05c7dba69a10b36a141407927d585",
+    "archive_sha256": "3e0f3d437f3ec2703a5729ff6cdd82ebac838c2bb95e9c41cb52fa9946346c13",
+    "structure": "ER",
+    "upscaling_factor": 2,
+    "expected_level_count": 6,
+    "implementation_sha256": "f9339b7d777eef281d0e93e0454275448aeca4b604268bd0909b1c6a71f8b3da",
+    "records": 36
+  },
+  "config_path": "configs/paired_acquisition_support_v2.locked.json",
+  "config_sha256": "aa0f96b17d2278dcb5eb524c0c5e1d73233d32d4aed0d62486d9a58fff6bda39",
+  "implementation": {
+    "sha256": "f9339b7d777eef281d0e93e0454275448aeca4b604268bd0909b1c6a71f8b3da",
+    "files": [
+      {
+        "path": "scripts/run_biosr_paired_support.py",
+        "bytes": 18087,
+        "sha256": "98a867424dc2a1fb78416357d81711beca135dddab208cf27cc3439d946cad95"
+      },
+      {
+        "path": "src/nostos/validation/paired_acquisition_support.py",
+        "bytes": 43429,
+        "sha256": "dc353f108a6f479fd07f326fa24b020d1974b8588b404e367bb500e5fc62d975"
+      }
+    ]
+  },
+  "protocol_lock_sha256": "6a2ef93325fbeb645d647d0af34c0d56cc265ec8e16c88b7bae08f171f62d5bf",
+  "preprocessing_amendment_lock_sha256": "35652fcfe1e0b4f81c58d7858ad62e213018aecaef0ffd1ffca46156f0eada3c",
+  "er_layout_amendment_lock_sha256": "5874a15cb4d0a6dad1e13b710b7c2263d092a6778239d26962f99feda34bc648",
+  "calibration_correction_lock_sha256": "8efe15a2f06a1661e6a2b97a3eef566e4f534dd0f25d4199350e0e9e4efc19d5",
+  "code_audit_correction_lock_sha256": "a20ab3c7828e9d9e79db3cb19f94616284d05b95260b7f04d23182be4c40fa09",
+  "protocol_lock": "2026-08-28T21:44:47Z",
+  "preprocessing_amendment_lock": "2026-08-28T21:55:36Z",
+  "calibration_correction_lock": "2026-08-28T22:56:41Z",
+  "code_audit_correction_lock": "2026-08-28T23:03:58Z",
+  "workers": 2,
+  "runtime": {
+    "python": "3.13.13 (main, May 10 2026, 19:31:06) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "logical_cpu_count": 20
+  },
+  "checkpoints": [
+    {
+      "cell_id": "Cell_002",
+      "rows_count": 126,
+      "elapsed_seconds": 66.8655085999053
+    },
+    {
+      "cell_id": "Cell_003",
+      "rows_count": 126,
+      "elapsed_seconds": 66.90729730017483
+    },
+    {
+      "cell_id": "Cell_004",
+      "rows_count": 126,
+      "elapsed_seconds": 62.837217800086364
+    },
+    {
+      "cell_id": "Cell_008",
+      "rows_count": 126,
+      "elapsed_seconds": 63.007201300002635
+    },
+    {
+      "cell_id": "Cell_009",
+      "rows_count": 126,
+      "elapsed_seconds": 55.1650170001667
+    },
+    {
+      "cell_id": "Cell_011",
+      "rows_count": 126,
+      "elapsed_seconds": 55.373183799907565
+    }
+  ],
+  "summary": {
+    "rows": 756,
+    "eligible_rows": 690,
+    "reference_fields": 6,
+    "pairs": 36,
+    "registration_eligible_pairs": 36,
+    "hard_abstention_rows": 1,
+    "development_partition_fields": {
+      "score_design": 6,
+      "threshold_calibration": 0
+    },
+    "conditions": {
+      "full_contract": {
+        "aurc": 0.1198290282069367,
+        "eligible_cases": 690,
+        "nonselective_risk": 0.26956521739130435
+      },
+      "always_emit": {
+        "aurc": 0.26956521739130435,
+        "eligible_cases": 690,
+        "nonselective_risk": 0.26956521739130435
+      },
+      "conventional_acquisition_qc": {
+        "aurc": 0.2054247367775393,
+        "eligible_cases": 690,
+        "nonselective_risk": 0.26956521739130435
+      },
+      "physical_sampling_only": {
+        "aurc": 0.2685066162570888,
+        "eligible_cases": 690,
+        "nonselective_risk": 0.26956521739130435
+      },
+      "perturbation_stability_only": {
+        "aurc": 0.18864721829182782,
+        "eligible_cases": 690,
+        "nonselective_risk": 0.26956521739130435
+      },
+      "full_contract_without_qc": {
+        "aurc": 0.12403422460545696,
+        "eligible_cases": 690,
+        "nonselective_risk": 0.26956521739130435
+      },
+      "full_contract_without_sampling": {
+        "aurc": 0.1198290282069367,
+        "eligible_cases": 690,
+        "nonselective_risk": 0.26956521739130435
+      },
+      "full_contract_without_perturbation": {
+        "aurc": 0.12644709178850747,
+        "eligible_cases": 690,
+        "nonselective_risk": 0.26956521739130435
+      },
+      "full_contract_without_cross_scale_agreement": {
+        "aurc": 0.1345813891191821,
+        "eligible_cases": 690,
+        "nonselective_risk": 0.26956521739130435
+      }
+    },
+    "endpoints": {
+      "hessian_blob_curve": {
+        "rows": 36,
+        "eligible": 36,
+        "reference_eligibility_fraction": 1.0,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      },
+      "hessian_blob_scale": {
+        "rows": 36,
+        "eligible": 36,
+        "reference_eligibility_fraction": 1.0,
+        "invalid_fraction": 0.75,
+        "full_contract_aurc": 0.7554417168720706
+      },
+      "hessian_tube_curve": {
+        "rows": 36,
+        "eligible": 36,
+        "reference_eligibility_fraction": 1.0,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      },
+      "hessian_tube_scale": {
+        "rows": 36,
+        "eligible": 36,
+        "reference_eligibility_fraction": 1.0,
+        "invalid_fraction": 0.2222222222222222,
+        "full_contract_aurc": 0.03793036898917298
+      },
+      "spectral_anisotropy": {
+        "rows": 36,
+        "eligible": 36,
+        "reference_eligibility_fraction": 1.0,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      },
+      "spectral_entropy": {
+        "rows": 36,
+        "eligible": 36,
+        "reference_eligibility_fraction": 1.0,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      },
+      "spectral_scale": {
+        "rows": 36,
+        "eligible": 36,
+        "reference_eligibility_fraction": 1.0,
+        "invalid_fraction": 0.9722222222222222,
+        "full_contract_aurc": 0.9122879575036397
+      },
+      "tensor_coherence": {
+        "rows": 180,
+        "eligible": 180,
+        "reference_eligibility_fraction": 1.0,
+        "invalid_fraction": 0.2833333333333333,
+        "full_contract_aurc": 0.5711958909251478
+      },
+      "tensor_orientation": {
+        "rows": 180,
+        "eligible": 120,
+        "reference_eligibility_fraction": 0.6666666666666666,
+        "invalid_fraction": 0.5416666666666666,
+        "full_contract_aurc": 0.2589710999483507
+      },
+      "variogram_horizontal_curve": {
+        "rows": 36,
+        "eligible": 36,
+        "reference_eligibility_fraction": 1.0,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      },
+      "variogram_range_horizontal": {
+        "rows": 36,
+        "eligible": 36,
+        "reference_eligibility_fraction": 1.0,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      },
+      "variogram_range_vertical": {
+        "rows": 36,
+        "eligible": 30,
+        "reference_eligibility_fraction": 0.8333333333333334,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      },
+      "variogram_vertical_curve": {
+        "rows": 36,
+        "eligible": 36,
+        "reference_eligibility_fraction": 1.0,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      }
+    }
+  },
+  "claim_boundary": "Paired-acquisition support for predeclared structural measurements relative to registered high-resolution references; not image restoration, biological phenotype inference, diagnosis, clinical validity, diffraction-limit estimation, or proof that the reference acquisition is itself ground truth biology.",
+  "artifacts": {
+    "pair_index_sha256": "b9debd8674d29f1f9bd9f3899e6fafa42e0aeaf4ef1bf93e5cf7037c0295d476",
+    "endpoint_cases_sha256": "d71e7092e75a87c23d0ad74150960c53127eb2b4cea75766c4c4fab798df4480",
+    "receipt_sha256_before_artifact_index": "f269b9e913fe43ed6b9f270b6d2269c97b635fd47686e2a7c970223634d61ed2"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "adapter_version": "nostos-fmd-widefield-profile-adapter/1.0",
+  "calibration_status": "pixel_relative_only",
+  "claim_boundary": {
+    "claim": "A widefield-specific, input-only validity profile can control silent-invalid dimensionless structural measurements on independently held-out fields of view.",
+    "excluded_claims": [
+      "biological interpretation of any endpoint",
+      "physical-scale measurement because pixel spacing is not supplied",
+      "image restoration or denoising performance",
+      "cross-modality equivalence of calibrated risk",
+      "clinical or intraoperative utility"
+    ],
+    "study_type": "computation_only_public_data_methods_validation"
+  },
+  "confirmation_lock": null,
+  "confirmation_profile": null,
+  "content_sha256": "4708a35ed764ef7ab60d203b8c939e02704675c404e7a01a8bdfa3a59d8893ef",
+  "elapsed_seconds": 129.93354699993506,
+  "eligible_by_family": {
+    "spectral_order": 160,
+    "tensor_coherence": 240,
+    "tensor_orientation_distribution": 100
+  },
+  "eligible_endpoint_rows": 500,
+  "endpoint_rows": 640,
+  "independent_group_count": 4,
+  "independent_groups": [
+    "WideField_BPAE_R|fov13",
+    "WideField_BPAE_R|fov15",
+    "WideField_BPAE_R|fov7",
+    "WideField_BPAE_R|fov9"
+  ],
+  "invalid_by_family": {
+    "tensor_coherence": 175,
+    "tensor_orientation_distribution": 48
+  },
+  "paired_acquisitions": 80,
+  "physical_unit_output_eligible": false,
+  "protocol_id": "fmd-widefield-bpae-r-validity-profile-v1-3",
+  "schema_version": "nostos-fmd-widefield-evidence-build/1.0",
+  "source": {
+    "archive_identity": {
+      "bytes": 709232640,
+      "md5": "e02b07bc4cfcd19dc911bd9d0c4e65a0",
+      "sha256": "4914cd7d951b4ddc1a01f6c7f121b7e9936fd2a7d1505f3e802984ffee69cad7"
+    },
+    "config_file_sha256": "62f1e77f5e380abb3943e6014c0d0603747a403c50d06a6e2a18a17fb544045b",
+    "pair_index_sha256": "076cd012088ddda8559634067b066a0465734020384649ade6fb907848340d6c",
+    "rows_sha256": "feaf9e734a3b68dd591251c4b17452e953aea2b95a5f99d6b8fb8959459123f6"
+  },
+  "split": "development",
+  "status": "evidence_rows_complete",
+  "unique_reference_images_decoded": 4
+}

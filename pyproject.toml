@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nostos"
+version = "0.3.0"
+description = "Calibrated sample-agnostic structural measurement framework for biological images"
+requires-python = ">=3.12"
+dependencies = [
+  "imagecodecs>=2026.1",
+  "matplotlib>=3.11",
+  "nibabel>=5.3",
+  "numpy>=2.0",
+  "pandas>=3.0",
+  "Pillow>=10.0",
+  "scikit-image==0.25.2",
+  "scikit-learn>=1.9",
+  "scipy>=1.18",
+  "tifffile>=2026.8"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=9.0",
+  "python-docx>=1.2"
+]
+segmentation = [
+  "torch==2.11.0",
+  "torchvision==0.26.0"
+]
+
+[project.scripts]
+nostos = "nostos.cli:main"
+nostos-audit = "nostos.data.audit:main"
+nostos-seg-train = "nostos.segmentation.train:main"
+nostos-seg-infer = "nostos.segmentation.infer:main"
+nostos-primary-report = "nostos.reporting.primary:main"
+nostos-locked-analysis = "nostos.modeling.locked_analysis:main"
+nostos-manuscript-gates = "nostos.evaluation.gates:main"
+nostos-section-features = "nostos.features.section:main"
+nostos-seg-prepare = "nostos.segmentation.prepare:main"
+nostos-ablation-report = "nostos.reporting.ablations:main"
+nostos-metadata = "nostos.data.metadata:main"
+nostos-cohort-report = "nostos.reporting.cohort:main"
+nostos-analysis-table = "nostos.data.analysis_table:main"
+nostos-pipeline = "nostos.pipeline:main"
+nostos-archive = "nostos.data.archive:main"
+nostos-select-annotations = "nostos.segmentation.select_annotations:main"
+nostos-seg-evaluate = "nostos.segmentation.evaluate:main"
+nostos-review-evaluate = "nostos.segmentation.review_evaluate:main"
+nostos-seg-report = "nostos.reporting.segmentation:main"
+nostos-app = "nostos.app.server:main"
+nostos-cpu-batch = "nostos.app.batch_cpu:main"
+nostos-cpu-report = "nostos.reporting.cpu_pilot:main"
+nostos-cpu-validate = "nostos.modeling.cpu_validation:main"
+nostos-cpu-robustness = "nostos.evaluation.cpu_robustness:main"
+nostos-cpu-mask-sensitivity = "nostos.evaluation.cpu_mask_sensitivity:main"
+nostos-cpu-confounding = "nostos.evaluation.cpu_confounding:main"
+nostos-publication-bundle = "nostos.reporting.publication_bundle:main"
+nostos-adjacent-replication = "nostos.evaluation.adjacent_replication:main"
+nostos-reader-reliability = "nostos.evaluation.reader_reliability:main"
+nostos-severity-benchmark = "nostos.modeling.severity_benchmark:main"
+nostos-mechanistic-subscores = "nostos.evaluation.mechanistic_subscores:main"
+nostos-depth-atlas = "nostos.features.depth_atlas:main"
+nostos-mask-review-packet = "nostos.segmentation.review_packet:main"
+nostos-cartilage-ablations = "nostos.evaluation.cartilage_ablations:main"
+nostos-cartilage-ablation-analysis = "nostos.evaluation.cartilage_ablation_analysis:main"
+nostos-build-release = "nostos.release:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

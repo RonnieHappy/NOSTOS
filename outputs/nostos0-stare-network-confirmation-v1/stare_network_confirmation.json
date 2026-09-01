@@ -1,0 +1,747 @@
+{
+  "protocol_version": "nostos-stare-network-confirmation/1.0",
+  "protocol_sha256": "af3fd21fcb1f00d98fd492619dd8afc4a326e1304c9f318998514478a91ef8e0",
+  "status": "pass",
+  "source": {
+    "name": "STARE vessel labels",
+    "url": "https://cecas.clemson.edu/~ahoover/stare/probing/",
+    "archive_sha256": {
+      "labels-ah.tar": "ebf2f1e17ca955f24579d9edd990e2dae79a5c82def69f0985d8e24f826ddd2f",
+      "labels-vk.tar": "47474a701536b0cfdb369fdce012be36141e9f44d80387f0179446b5cb0f5576",
+      "stare-images.tar": "5f7b509b6067cad4f1be84933145d783de9ec087b3eaaf4db0103dd0144dd433"
+    }
+  },
+  "method": {
+    "boundary_distance_correction": "subtract_half_minimum_spacing",
+    "twofold_occupancy_cutoff": 0.25
+  },
+  "comparator": {
+    "implementation": "scikit-image skeletonize",
+    "version": "0.25.2"
+  },
+  "summary": {
+    "case_count": 20,
+    "median_absolute_survival_difference": [
+      0.0,
+      0.0052428243350395864,
+      0.017024150134928043,
+      0.0
+    ],
+    "survival_auc_spearman": 0.9879699248120299,
+    "skeleton_length_spearman": 0.9954887218045112,
+    "median_skeleton_length_relative_error": 0.017669358282536518,
+    "ah_vk_survival_auc_spearman": 0.8736842105263156
+  },
+  "gates": {
+    "all_20_cases_finite_and_monotone": true,
+    "median_survival_difference_each_threshold_at_most_0_05": true,
+    "survival_auc_spearman_at_least_0_85": true,
+    "skeleton_length_spearman_at_least_0_90": true,
+    "median_skeleton_length_relative_error_at_most_0_15": true,
+    "observer_survival_auc_spearman_at_least_0_80": true,
+    "provenance_complete": true
+  },
+  "cases": [
+    {
+      "case": "im0001",
+      "ah_native_survival": [
+        1.0,
+        0.23574661972247699,
+        0.04449835793958401,
+        0.0015976804047457026
+      ],
+      "ah_twofold_survival": [
+        1.0,
+        0.23528344671201815,
+        0.06031746031746032,
+        0.0021768707482993197
+      ],
+      "vk_native_survival": [
+        1.0,
+        0.2606009547879809,
+        0.044216384570217766,
+        0.0017359781470986189
+      ],
+      "ah_native_components": [
+        133,
+        240,
+        40,
+        4
+      ],
+      "ah_twofold_components": [
+        30,
+        255,
+        60,
+        1
+      ],
+      "ah_native_skeleton_length": 9158.82445330336,
+      "ah_twofold_skeleton_length": 9247.919907732863
+    },
+    {
+      "case": "im0002",
+      "ah_native_survival": [
+        1.0,
+        0.14674703066832123,
+        0.002340010636411984,
+        0.0
+      ],
+      "ah_twofold_survival": [
+        1.0,
+        0.16185709722074326,
+        0.012139282291555744,
+        0.0
+      ],
+      "vk_native_survival": [
+        1.0,
+        0.10040399744843717,
+        0.0011907293217095472,
+        0.0
+      ],
+      "ah_native_components": [
+        45,
+        325,
+        12,
+        0
+      ],
+      "ah_twofold_components": [
+        12,
+        301,
+        37,
+        0
+      ],
+      "ah_native_skeleton_length": 8513.935059634514,
+      "ah_twofold_skeleton_length": 8768.356415871824
+    },
+    {
+      "case": "im0003",
+      "ah_native_survival": [
+        1.0,
+        0.19337147366344445,
+        0.004813572696784375,
+        0.0
+      ],
+      "ah_twofold_survival": [
+        1.0,
+        0.19391499940807388,
+        0.01894163608381674,
+        0.0
+      ],
+      "vk_native_survival": [
+        1.0,
+        0.10746916868111607,
+        0.002581226697258983,
+        0.0
+      ],
+      "ah_native_components": [
+        162,
+        235,
+        44,
+        0
+      ],
+      "ah_twofold_components": [
+        44,
+        210,
+        81,
+        0
+      ],
+      "ah_native_skeleton_length": 7295.442635585339,
+      "ah_twofold_skeleton_length": 7420.22438151586
+    },
+    {
+      "case": "im0004",
+      "ah_native_survival": [
+        1.0,
+        0.2450708711578277,
+        0.028826246217550564,
+        0.00025481764612199397
+      ],
+      "ah_twofold_survival": [
+        1.0,
+        0.2608474231004278,
+        0.0451212059482583,
+        0.001018537380321858
+      ],
+      "vk_native_survival": [
+        1.0,
+        0.2647212600483628,
+        0.04659826155153258,
+        0.0008822952748186393
+      ],
+      "ah_native_components": [
+        20,
+        342,
+        29,
+        4
+      ],
+      "ah_twofold_components": [
+        12,
+        298,
+        70,
+        4
+      ],
+      "ah_native_skeleton_length": 6907.79674915539,
+      "ah_twofold_skeleton_length": 6967.779505212688
+    },
+    {
+      "case": "im0005",
+      "ah_native_survival": [
+        1.0,
+        0.21805159840029276,
+        0.016833520662885224,
+        0.0
+      ],
+      "ah_twofold_survival": [
+        1.0,
+        0.23605150214592274,
+        0.0393694288544074,
+        0.0
+      ],
+      "vk_native_survival": [
+        1.0,
+        0.22173766438125211,
+        0.03936158255591773,
+        0.0018657974598179161
+      ],
+      "ah_native_components": [
+        23,
+        392,
+        58,
+        0
+      ],
+      "ah_twofold_components": [
+        13,
+        318,
+        111,
+        0
+      ],
+      "ah_native_skeleton_length": 8856.353457278994,
+      "ah_twofold_skeleton_length": 9168.787006825121
+    },
+    {
+      "case": "im0044",
+      "ah_native_survival": [
+        1.0,
+        0.2075196636832113,
+        0.009289395172226742,
+        0.0
+      ],
+      "ah_twofold_survival": [
+        1.0,
+        0.2094316309719934,
+        0.024505766062602966,
+        0.0
+      ],
+      "vk_native_survival": [
+        1.0,
+        0.21171534279985946,
+        0.021744073086542238,
+        0.0
+      ],
+      "ah_native_components": [
+        71,
+        329,
+        47,
+        0
+      ],
+      "ah_twofold_components": [
+        30,
+        303,
+        85,
+        0
+      ],
+      "ah_native_skeleton_length": 7887.98174082874,
+      "ah_twofold_skeleton_length": 8006.36651713959
+    },
+    {
+      "case": "im0077",
+      "ah_native_survival": [
+        1.0,
+        0.19748976164520787,
+        0.013759170324975693,
+        0.0
+      ],
+      "ah_twofold_survival": [
+        1.0,
+        0.1965088600899233,
+        0.03226659613858768,
+        0.0
+      ],
+      "vk_native_survival": [
+        1.0,
+        0.22133352723042246,
+        0.018777721224460118,
+        0.0
+      ],
+      "ah_native_components": [
+        202,
+        379,
+        76,
+        0
+      ],
+      "ah_twofold_components": [
+        63,
+        316,
+        116,
+        0
+      ],
+      "ah_native_skeleton_length": 10237.357641361099,
+      "ah_twofold_skeleton_length": 10523.761753655705
+    },
+    {
+      "case": "im0081",
+      "ah_native_survival": [
+        1.0,
+        0.19493911118140123,
+        0.0127154831567294,
+        0.0
+      ],
+      "ah_twofold_survival": [
+        1.0,
+        0.19988680313178003,
+        0.030468823695877747,
+        0.0
+      ],
+      "vk_native_survival": [
+        1.0,
+        0.2205018044337515,
+        0.0369135590307613,
+        0.0001374806667812339
+      ],
+      "ah_native_components": [
+        188,
+        301,
+        93,
+        0
+      ],
+      "ah_twofold_components": [
+        37,
+        269,
+        82,
+        0
+      ],
+      "ah_native_skeleton_length": 9610.19407771256,
+      "ah_twofold_skeleton_length": 9872.100715324108
+    },
+    {
+      "case": "im0082",
+      "ah_native_survival": [
+        1.0,
+        0.18913239267487242,
+        0.012879015310717503,
+        0.0
+      ],
+      "ah_twofold_survival": [
+        1.0,
+        0.18821359564377305,
+        0.0322325663095029,
+        0.00043913578078341823
+      ],
+      "vk_native_survival": [
+        1.0,
+        0.19905962153620843,
+        0.021100705283847845,
+        0.0
+      ],
+      "ah_native_components": [
+        280,
+        286,
+        63,
+        0
+      ],
+      "ah_twofold_components": [
+        73,
+        265,
+        100,
+        1
+      ],
+      "ah_native_skeleton_length": 10598.67553394219,
+      "ah_twofold_skeleton_length": 11022.192344609004
+    },
+    {
+      "case": "im0139",
+      "ah_native_survival": [
+        1.0,
+        0.1728279061573245,
+        0.005461432304665707,
+        0.0
+      ],
+      "ah_twofold_survival": [
+        1.0,
+        0.18185805772436178,
+        0.017019036757610316,
+        0.0
+      ],
+      "vk_native_survival": [
+        1.0,
+        0.27976512400525383,
+        0.034118828710499885,
+        3.090473615081511e-05
+      ],
+      "ah_native_components": [
+        127,
+        371,
+        19,
+        0
+      ],
+      "ah_twofold_components": [
+        28,
+        334,
+        58,
+        0
+      ],
+      "ah_native_skeleton_length": 10264.494726350946,
+      "ah_twofold_skeleton_length": 10626.070411520806
+    },
+    {
+      "case": "im0162",
+      "ah_native_survival": [
+        1.0,
+        0.09218025182239895,
+        0.0029158383035122596,
+        0.0
+      ],
+      "ah_twofold_survival": [
+        1.0,
+        0.11212773591675637,
+        0.011750986724076068,
+        0.0
+      ],
+      "vk_native_survival": [
+        1.0,
+        0.10900581419322915,
+        0.0023916539524143333,
+        0.0
+      ],
+      "ah_native_components": [
+        424,
+        316,
+        7,
+        0
+      ],
+      "ah_twofold_components": [
+        104,
+        253,
+        22,
+        0
+      ],
+      "ah_native_skeleton_length": 12982.747827243333,
+      "ah_twofold_skeleton_length": 13400.176326155579
+    },
+    {
+      "case": "im0163",
+      "ah_native_survival": [
+        1.0,
+        0.19776495374187048,
+        0.013495771121492474,
+        3.0533418826906046e-05
+      ],
+      "ah_twofold_survival": [
+        1.0,
+        0.1990517005562141,
+        0.03127564511716969,
+        0.00045591319412783806
+      ],
+      "vk_native_survival": [
+        1.0,
+        0.2539863557682517,
+        0.0280215863964973,
+        0.0002851033499643621
+      ],
+      "ah_native_components": [
+        161,
+        243,
+        75,
+        1
+      ],
+      "ah_twofold_components": [
+        39,
+        254,
+        67,
+        1
+      ],
+      "ah_native_skeleton_length": 9849.390037205452,
+      "ah_twofold_skeleton_length": 10170.894654563446
+    },
+    {
+      "case": "im0235",
+      "ah_native_survival": [
+        1.0,
+        0.25887907482560146,
+        0.040317232964642846,
+        0.0005835388981724623
+      ],
+      "ah_twofold_survival": [
+        1.0,
+        0.25638514891880865,
+        0.0602203182374541,
+        0.002203182374541004
+      ],
+      "vk_native_survival": [
+        1.0,
+        0.30309419816925215,
+        0.053817962749133995,
+        0.0020248673795538598
+      ],
+      "ah_native_components": [
+        109,
+        232,
+        72,
+        8
+      ],
+      "ah_twofold_components": [
+        30,
+        234,
+        71,
+        11
+      ],
+      "ah_native_skeleton_length": 10240.277338833244,
+      "ah_twofold_skeleton_length": 10409.958579700377
+    },
+    {
+      "case": "im0236",
+      "ah_native_survival": [
+        1.0,
+        0.2505735140771637,
+        0.03894681960375391,
+        2.6068821689259645e-05
+      ],
+      "ah_twofold_survival": [
+        1.0,
+        0.2542043984476067,
+        0.06225743855109961,
+        0.0005659767141009055
+      ],
+      "vk_native_survival": [
+        1.0,
+        0.30797552559496283,
+        0.061559531855857136,
+        0.0016185834726619474
+      ],
+      "ah_native_components": [
+        72,
+        246,
+        89,
+        1
+      ],
+      "ah_twofold_components": [
+        24,
+        252,
+        74,
+        6
+      ],
+      "ah_native_skeleton_length": 10169.318969393587,
+      "ah_twofold_skeleton_length": 10258.159589827153
+    },
+    {
+      "case": "im0239",
+      "ah_native_survival": [
+        1.0,
+        0.20666648437286375,
+        0.02734407043832545,
+        0.00041016105657488175
+      ],
+      "ah_twofold_survival": [
+        1.0,
+        0.20381641717387727,
+        0.04712946208257937,
+        0.000575752590886659
+      ],
+      "vk_native_survival": [
+        1.0,
+        0.27189990767085603,
+        0.04249024891183509,
+        0.0006029658382167286
+      ],
+      "ah_native_components": [
+        115,
+        313,
+        62,
+        1
+      ],
+      "ah_twofold_components": [
+        30,
+        283,
+        81,
+        1
+      ],
+      "ah_native_skeleton_length": 10723.491767758118,
+      "ah_twofold_skeleton_length": 10919.030873001517
+    },
+    {
+      "case": "im0240",
+      "ah_native_survival": [
+        1.0,
+        0.2868209883680596,
+        0.030178294752907984,
+        0.0
+      ],
+      "ah_twofold_survival": [
+        1.0,
+        0.2931673336297614,
+        0.06306506595523936,
+        0.0006669630947087594
+      ],
+      "vk_native_survival": [
+        1.0,
+        0.3435680663941533,
+        0.06870122630992197,
+        0.005109624674842066
+      ],
+      "ah_native_components": [
+        19,
+        351,
+        171,
+        0
+      ],
+      "ah_twofold_components": [
+        8,
+        301,
+        168,
+        1
+      ],
+      "ah_native_skeleton_length": 9329.189027078675,
+      "ah_twofold_skeleton_length": 9401.473298326138
+    },
+    {
+      "case": "im0255",
+      "ah_native_survival": [
+        1.0,
+        0.10429253621085402,
+        0.0009234097564836557,
+        0.0
+      ],
+      "ah_twofold_survival": [
+        1.0,
+        0.13704414587332053,
+        0.010748560460652591,
+        0.0
+      ],
+      "vk_native_survival": [
+        1.0,
+        0.1867864731515828,
+        0.027406633773904274,
+        0.0009723772823855656
+      ],
+      "ah_native_components": [
+        170,
+        469,
+        7,
+        0
+      ],
+      "ah_twofold_components": [
+        39,
+        368,
+        30,
+        0
+      ],
+      "ah_native_skeleton_length": 12925.676759431466,
+      "ah_twofold_skeleton_length": 12971.274739177912
+    },
+    {
+      "case": "im0291",
+      "ah_native_survival": [
+        1.0,
+        0.1524418713231861,
+        0.0070034550378186575,
+        0.0
+      ],
+      "ah_twofold_survival": [
+        1.0,
+        0.17656998028724302,
+        0.017319065052098,
+        0.0
+      ],
+      "vk_native_survival": [
+        1.0,
+        0.17690248565965583,
+        0.0038240917782026767,
+        0.0
+      ],
+      "ah_native_components": [
+        52,
+        292,
+        1,
+        0
+      ],
+      "ah_twofold_components": [
+        19,
+        201,
+        15,
+        0
+      ],
+      "ah_native_skeleton_length": 6038.559159102155,
+      "ah_twofold_skeleton_length": 6159.838379715733
+    },
+    {
+      "case": "im0319",
+      "ah_native_survival": [
+        1.0,
+        0.1295697451356536,
+        0.0004384762948753083,
+        0.0
+      ],
+      "ah_twofold_survival": [
+        1.0,
+        0.13740087392782002,
+        0.006149862437287587,
+        0.0
+      ],
+      "vk_native_survival": [
+        1.0,
+        0.17941386704789136,
+        0.013355404236108499,
+        0.0
+      ],
+      "ah_native_components": [
+        43,
+        166,
+        5,
+        0
+      ],
+      "ah_twofold_components": [
+        11,
+        153,
+        24,
+        0
+      ],
+      "ah_native_skeleton_length": 5570.118466881089,
+      "ah_twofold_skeleton_length": 5558.662622758373
+    },
+    {
+      "case": "im0324",
+      "ah_native_survival": [
+        1.0,
+        0.3079508863805244,
+        0.04610594104950285,
+        0.000106153356215279
+      ],
+      "ah_twofold_survival": [
+        1.0,
+        0.30241292966082406,
+        0.0756885954928295,
+        0.00045526974732529026
+      ],
+      "vk_native_survival": [
+        1.0,
+        0.3483617238029804,
+        0.11459641308725627,
+        0.007060105664668672
+      ],
+      "ah_native_components": [
+        41,
+        195,
+        75,
+        1
+      ],
+      "ah_twofold_components": [
+        14,
+        171,
+        104,
+        1
+      ],
+      "ah_native_skeleton_length": 6141.978423298411,
+      "ah_twofold_skeleton_length": 6136.7946571143375
+    }
+  ],
+  "interpretation": "Untouched external confirmation of reference-mask sampling stability only."
+}

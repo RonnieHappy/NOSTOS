@@ -1,0 +1,592 @@
+{
+  "protocol_version": "nostos-bone-download-integrity/1.0",
+  "status": "pass",
+  "files": 73,
+  "bytes": 54948569793,
+  "rows": [
+    {
+      "dataset": "zenodo-3355937",
+      "file": "shg-ce-de.zip",
+      "bytes": 9092654133,
+      "sha256": "de3b471e748356bf31ad5ccbee9523e075475c3f11d9bc2865116408d080a115",
+      "md5": "c290655d3dc73899d9db772f2cfbbce1",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-3355937",
+      "file": "shg-features.zip",
+      "bytes": 373064113,
+      "sha256": "90b91736b5d12b0ae2c74aaa6f74f6876df3fc499eba1402a8062242568c88c2",
+      "md5": "e5fad78233f4f5c164411b4281bf79b4",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-3355937",
+      "file": "logs-predictions.zip",
+      "bytes": 2226901069,
+      "sha256": "d29351df95d181c7e66ce7e968034f76af69e6d1dd3a81c7c07bbf195ff02a2f",
+      "md5": "bc1bdbb36685b444abce429e37dbaa4f",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-3355937",
+      "file": "shg-cross-splits.zip",
+      "bytes": 3730676702,
+      "sha256": "a3749c7d9062ffb74c2c9b16e7cc66eb239e8ed1128df0f6dfdfe712e355e7e8",
+      "md5": "831a96bb7b33d122ce5840185d85ed10",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-3355937",
+      "file": "shg-masks.zip",
+      "bytes": 19244721,
+      "sha256": "b01429609d0d987b97272c08331d92c197a27b65d186aaab255c44243c741e9c",
+      "md5": "f94232f972a9eaef2a11a8ad58898c43",
+      "verified": true
+    },
+    {
+      "dataset": "figshare-20765659",
+      "file": "TPF_SHG_dataset.zip",
+      "bytes": 30561290,
+      "sha256": "956b25daeaceb9ddac97424fff0edc3aaa2cf5b14382d766d93397e9c222db38",
+      "md5": "",
+      "verified": true
+    },
+    {
+      "dataset": "figshare-20765659",
+      "file": "README_TPF_SHG.txt",
+      "bytes": 3902,
+      "sha256": "02c35ac23093b331023ecab94828cc4a54feeaee601c127964e52bd1ba9fdf31",
+      "md5": "",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT13-endosteum_img.tif",
+      "bytes": 293624658,
+      "sha256": "29c87949e1307f17b3e280a62d9134d88f9ded948997a59a7c4073c6f8238283",
+      "md5": "e24b63b3427bf6329746a3c519fd8a0f",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT13-endosteum_seg.tif",
+      "bytes": 146824018,
+      "sha256": "a51a77504709333bbb7f984a39195a716167bd6dd84a8ba4a525b8c169c68ac5",
+      "md5": "a0b1cf0ba35a4fcb24e94a06fe835b8b",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT13-midcortex_img.tif",
+      "bytes": 293624658,
+      "sha256": "e57cd89327b113e23bf577554d481a716696781cb3de10fc21d5cf019411d496",
+      "md5": "b01c12cacfccf1124bb663de0072479c",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT16-midcortex_img.tif",
+      "bytes": 293624658,
+      "sha256": "eef43e70b2aacb7e3df0264e3e8c950b9a1746c67242348291f218e617df94af",
+      "md5": "224fa74cc184337838134dd61aec20b9",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT19-endosteum_img.tif",
+      "bytes": 293624658,
+      "sha256": "ba59e62f1924bbae66f5241d87b348b34f8ac8db1a607416543709dfbb3864db",
+      "md5": "7e521a4bf516420a2260cd5caba9a471",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT16-endosteum_img.tif",
+      "bytes": 293624658,
+      "sha256": "2f2c238433cc518fe3b275c0f44df48a720797ab8f63592b209762dc0fa49e1c",
+      "md5": "954663f280b0c592c4293dccdba9c594",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT19-midcortex_img.tif",
+      "bytes": 293624658,
+      "sha256": "2e0790fdd29ee9f3edaa6b883367b52adca5a19adf271ed289325dc988943537",
+      "md5": "86c123da49d947fa9f29cefb3514de8b",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT20-midcortex_seg.tif",
+      "bytes": 146824018,
+      "sha256": "dc4eddf8b948777a4edf9a2db6d2a1892f16aec7e16aaa40a9c91b477f34dd75",
+      "md5": "f63f2aac0dc8ce71ee38a6f071d16e3b",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB15-endosteum_img.tif",
+      "bytes": 293624658,
+      "sha256": "636fbe91ffea74465bab0355549a3bd8189af3b2678b31557167eb18c825e2ea",
+      "md5": "e5bf8df7a8208462eec9c5537867a4b0",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT20-midcortex_img.tif",
+      "bytes": 293624658,
+      "sha256": "aaccec611d81570a00daa22a0ff2cc540e91e71a1c692bd69deab59929aab88f",
+      "md5": "74cac97aeed2feef4e14ab28055a3fd7",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB15-midcortex_seg.tif",
+      "bytes": 146824018,
+      "sha256": "0bb21a6422ea22d57fa4f4f1a771c468e6d8646f6d637716e6804337db87b060",
+      "md5": "17e2355a690274c3c6332ff086a17ba4",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT13-midcortex_seg.tif",
+      "bytes": 146824018,
+      "sha256": "d24a76fb4b77951e6b5217d46de74642cfed438238c2b9593e70eb2a73d24d86",
+      "md5": "d50d03e459ab8ed51cd10d57764c64af",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB19-endosteum_img.tif",
+      "bytes": 293624658,
+      "sha256": "c7dbf34c56f4ca69acce3895e34661b12b09aec6d0308fadf707ceba16c83f89",
+      "md5": "aa2fd821ae6945fa7eb488dc4c590b4d",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT18-endosteum_img.tif",
+      "bytes": 293625922,
+      "sha256": "20f42822dea37d6150cf1b46c76b50f43017412ee84f64c87bc58cbc8357c7e6",
+      "md5": "cb54c06d96a5c74843585137994021b8",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT19-endosteum_seg.tif",
+      "bytes": 146824018,
+      "sha256": "c35b38428ca00b74c2191e3012a73b5a324915e5dc1c30025c73e457d064aa53",
+      "md5": "8d1b18a15ab4c9bfc3a17383b69d76e5",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT20-endosteum_img.tif",
+      "bytes": 293624658,
+      "sha256": "ea93d9b897896f9238d4941bfeeea46ebad80b6a92f9674d049e13c913cc06f7",
+      "md5": "2ac2c1ddf447ca22cdf82e6d10708e06",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT16-midcortex_seg.tif",
+      "bytes": 146824018,
+      "sha256": "ccc2ca7c7aa83cf23a05783a901f30742438695a03a70fe8bd25774913f78188",
+      "md5": "78cf32ffc11cacdf6103721ea0e4759b",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT16-endosteum_seg.tif",
+      "bytes": 146824018,
+      "sha256": "21c66b11519f7029bd7d2241e1e37145e15e44ba3df7c6f21deaf65090d6fc51",
+      "md5": "22c86e216b4fa9a81fe8ad7637d8596d",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT20-endosteum_seg.tif",
+      "bytes": 146824018,
+      "sha256": "dd6510825aa0103688c947ece70aee5ff0ecb945dc4e535eadad84d07e67ea64",
+      "md5": "2f91e515baac84e5dfadd325481bd977",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB08-endosteum_img.tif",
+      "bytes": 293624658,
+      "sha256": "d21395a8a91b0d266bb69111ed27dd9da1b4daaf59837554a99c9b4604ca0360",
+      "md5": "2b570b6c6da1b33e4d8477093ef7262b",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT18-midcortex_img.tif",
+      "bytes": 293625922,
+      "sha256": "641b14f840e76c92dece4f1611eb7f82125ea272b3a4643bb4795f417828fed2",
+      "md5": "8ca7a95eee75b677525aa8202dc94dad",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT19-midcortex_seg.tif",
+      "bytes": 146824018,
+      "sha256": "4f4668bfbd5f88ff091f55f24fd69a4d257c9a08b9dc4378f8447d89ea484e55",
+      "md5": "f42e958bc9d0d908f1a576c04c99b40b",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB08-endosteum_seg.tif",
+      "bytes": 146824018,
+      "sha256": "d480abe325a7b975d01c708884c2fa2ba1492c617e0aa4de4a49488c871cc60a",
+      "md5": "a49f856fbe8a039a774c8eb29f237f5f",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB19-endosteum_seg.tif",
+      "bytes": 146824018,
+      "sha256": "6acddf35d9e23acd0df57e5f9456c3205633efacfb4c0951a5c88992e8191f4e",
+      "md5": "99fd2927577d1677c27a7c77d4af558b",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB08-midcortex_img.tif",
+      "bytes": 293624658,
+      "sha256": "493e56ce90969c413a5d0bb3ab3f334f47eda48c392ba533d07736138743c70e",
+      "md5": "e6ee09d157692741f45e289a6a3d0aed",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT17-endosteum_img.tif",
+      "bytes": 293625922,
+      "sha256": "e4af56cadb38c18c86afa121e300b6621206e1506a4706e163460c174d6ed4c4",
+      "md5": "4c39e00ba581131bc919c1acac8bbbba",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT17-endosteum_seg.tif",
+      "bytes": 146824018,
+      "sha256": "cc082d3d221a82158c9818a2b878a7d53973b0c1ac3f95bba905cfd51201f70d",
+      "md5": "0c5edd480867d2c6c9c432cc3b6616eb",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB20-endosteum_img.tif",
+      "bytes": 293624658,
+      "sha256": "a0d272bc6dc79969e0b32c32d1691124d0032f58ed116a003f48521aaf83e39f",
+      "md5": "39bfce9dec9dc5375a14f534fee7e03a",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB14-endosteum_seg.tif",
+      "bytes": 146824018,
+      "sha256": "284c811c48a796c5ab6710a6a9805a57f4c6117617f93f376d9cd0e1f3729f1a",
+      "md5": "93ecaf805ca29c909bd4855ad3657418",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT17-midcortex_img.tif",
+      "bytes": 293625922,
+      "sha256": "263d98c80d063f02b8dc99a69adf97088e06fa0e7a3096e83243300c1c756dd9",
+      "md5": "6e3875c3b63804398f1ce7afc1437b73",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB08-midcortex_seg.tif",
+      "bytes": 146824018,
+      "sha256": "cf09c8ac2109a366cf68e24e60299f0a946b48942fb165aee921f5bcfded9f8f",
+      "md5": "5dfc86d47275b0b87ddd4e522f7fafa0",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT17-midcortex_seg.tif",
+      "bytes": 146824018,
+      "sha256": "8d423f8fc891dc67416a8c619cefe5077d9568a3396b704d13e35b5cd74f65df",
+      "md5": "2515c12557d852d2d9ab66bc93fd59d0",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB14-midcortex_img.tif",
+      "bytes": 293624658,
+      "sha256": "f49dd73170c10b3d483a33bdb05ed6667226675c39299434479afdeda581b51e",
+      "md5": "c04510add5c0f8e0fa90b2a4a79d31d9",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT18-endosteum_seg.tif",
+      "bytes": 146824018,
+      "sha256": "fea9e4346bb632ac399717e13f5c4f55989b22821920657914a6781f79a5db95",
+      "md5": "2a2ff16dedc1f5bef0f393fa07e52127",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "CT18-midcortex_seg.tif",
+      "bytes": 146824018,
+      "sha256": "6edb690156a90d239d525e464c9fb01a0e6b951e726cdee2f02814f7523f0814",
+      "md5": "062a21dc6a5290bad6b28cf690562353",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB14-midcortex_seg.tif",
+      "bytes": 146824018,
+      "sha256": "03ebbb1b71d8b8aeed6c975fba9b6d0e954a37c4fcd2ccac2f93be1f575ce423",
+      "md5": "67e05e1322042c35263ec45b3571ba4c",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB20-endosteum_seg.tif",
+      "bytes": 146824018,
+      "sha256": "a02ecd25ebb57f92020216ba391007c5aae3416f07541c9da83066393dc6527d",
+      "md5": "6b906f175f87ad966d3181a5a27d3086",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB14-endosteum_img.tif",
+      "bytes": 293624658,
+      "sha256": "6e055f0ab61926c59c304eacc50051ead1abff1f4440e25541a182abd6575eb5",
+      "md5": "0054a18d042f2f4a6f6d7031ad9f006f",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB15-endosteum_seg.tif",
+      "bytes": 146824018,
+      "sha256": "d52548143390a4a5daf2e2a7b7c3ed1f5824a770d018f989f9fae019cfc29d4d",
+      "md5": "38439f77c79988a4059b11bfedba0413",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB19-midcortex_seg.tif",
+      "bytes": 146824018,
+      "sha256": "fd7f1eb12663d3d0f8aa9ec52f64e0080ab0ffc2e617e377e7754c4ef9372a73",
+      "md5": "17f52d0045bc8f981bea0e058aefe09c",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB18-midcortex_img.tif",
+      "bytes": 293624658,
+      "sha256": "017d7963784173e3692dbb7e825d4866a0792db32bb9c93c5e48634e03286781",
+      "md5": "9180f82c9cc4b515d7cb356d9a9f5a27",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB15-midcortex_img.tif",
+      "bytes": 293624658,
+      "sha256": "8b697d892683d44e9edf31d5b8800c502925288d1af9deb9652cad1cf3d1533e",
+      "md5": "6b4e1311a4f38aca54837f031311d498",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB18-endosteum_seg.tif",
+      "bytes": 146824018,
+      "sha256": "fcb839bce4d44e351f738faccfb5abe77030f1cdfe7c799635e3e73df5b88186",
+      "md5": "a8db365070bf0047d9a29d7e8e6c1969",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB17-endosteum_img.tif",
+      "bytes": 293624658,
+      "sha256": "63ab41c93cc9a259a4cefbdf8aca4ac21e460dc0551544242fe0f5dd9db4a615",
+      "md5": "db372da3e813e5d0a912f8080dcad9d1",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB17-endosteum_seg.tif",
+      "bytes": 146824018,
+      "sha256": "df945eebd794affeb21a14f046fffb7597924d1939fe94ce894dd252a2c6ed06",
+      "md5": "517d15fdd56dd436e6516ed5d1bda080",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB17-midcortex_img.tif",
+      "bytes": 293624658,
+      "sha256": "50010d135c754d4f6f6c5033345c42c00da805e18fb283cfab9ed506706529ab",
+      "md5": "1c599dba6810c125f1df5942339df212",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB17-midcortex_seg.tif",
+      "bytes": 146824018,
+      "sha256": "e8d135d6aa74686b7d861bf1b21fa15033232577733f03f70734b5fbb0a02279",
+      "md5": "7f7cac3a637052ba6bc70e7571593de5",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB20-midcortex_seg.tif",
+      "bytes": 146824018,
+      "sha256": "fd2479e43784c24b13adb8517e53faba844ca05e60a0b57b600ecacabce90c2e",
+      "md5": "a37d9ad765bdabad855f9e76fb16f6a0",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB18-midcortex_seg.tif",
+      "bytes": 146824018,
+      "sha256": "31a98411d10bd2a3b40c27620ee80c95e629e4e02904d5cd6f9c6eeff8a7c5f0",
+      "md5": "2e5f5c21d20185c18b80ea8071b3e29a",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB20-midcortex_img.tif",
+      "bytes": 293624658,
+      "sha256": "cfdcb809d674965aa197ec2a472f856ec0dba3f233fa9c282011f00641ca8d61",
+      "md5": "4e02628b990f33adcccb7643851e70e3",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB18-endosteum_img.tif",
+      "bytes": 293624658,
+      "sha256": "7c1a94d3163c2b631c90dcadb07459c855fa2ade9d2604465ae3aaafbe2d26f9",
+      "md5": "cdc9c019cdabc18809c892d00175b8cf",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-11061868",
+      "file": "DB19-midcortex_img.tif",
+      "bytes": 293624658,
+      "sha256": "07f73c9e9755f41b2f5bd438f0791d0804b6fe13f5ee7bc31b13f6b9dd188a52",
+      "md5": "3c13990f87de58a5389d97151cb95a1b",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-17909733",
+      "file": "jaw_3wk1a_15_rr_mip_masks.zip",
+      "bytes": 405612,
+      "sha256": "2775e81dd33fca5912274bf9b1bba8b409f63dc8285a3307a759a266b2ea8179",
+      "md5": "19dc5fb17074a153d41277c36180cf80",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-17909733",
+      "file": "jaw_2wg4_15_lac_can_mip_masks.zip",
+      "bytes": 820235,
+      "sha256": "6e0e16fa22df9337dcbdae32875fb481df62e78a1477d65f9d89ef30fb98f5d0",
+      "md5": "6160c508adc07478b8558945620e9eaa",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-17909733",
+      "file": "jaw_2mg4_15_lac_can_mip_masks.zip",
+      "bytes": 1104501,
+      "sha256": "8a3dea5389ad4f5501971d91e10ca5923e2a7e30397c4bd2874912cf6392e32d",
+      "md5": "5ddba00b3e63a70dd2633b17dd5da947",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-17909733",
+      "file": "jaw_2mg4_15_rr_mip_masks.zip",
+      "bytes": 455233,
+      "sha256": "04d781dd04cd0be5814fbed053a30d6b9628b14df9921268c82c412e13a3c2ab",
+      "md5": "220f20e960906cc3fb16119bccbb4e25",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-17909733",
+      "file": "jaw_1wk4_15_lac_can_mip_masks.zip",
+      "bytes": 957420,
+      "sha256": "4796aee576b83cbcd94d75960f4360a56fc6abe15c5753a45bdfcf7a3d4e3907",
+      "md5": "38634a11d8403974df550e3dbeb5fd3c",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-17909733",
+      "file": "jaw_2wg1_15_rr_mip_masks.zip",
+      "bytes": 362772,
+      "sha256": "b2accf9d755c8d71075540e58e205cf2e215c506375ed39a1a5f43cca6093fd8",
+      "md5": "cc528f1fde580b23cee7e79988e486f2",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-17909733",
+      "file": "jaw_3wk1a_15_lac_can_mip_masks.zip",
+      "bytes": 831910,
+      "sha256": "ed2b4ac490abffcfbafaf8b8567f02392aee1f61b840353324daca675e6b589a",
+      "md5": "51687bc197403a614d26a4ffa8c95e98",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-17909733",
+      "file": "jaw_2wg1_15_lac_can_mip_masks.zip",
+      "bytes": 922600,
+      "sha256": "d78189bf9fb2d99db572da5991b55dbfc1a5474d9c29c310b2c57abe88cb010c",
+      "md5": "6a802d10c6fa39bd422182aa7afbae99",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-17909733",
+      "file": "jaw_1wk4_15_rr_mip_masks.zip",
+      "bytes": 510631,
+      "sha256": "dec9dd9983d8ca1c5100e730149463d8614be474080a4ce94567ba8d897ca310",
+      "md5": "9467172d097e9cd59f049a8f38851919",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-17909733",
+      "file": "jaw_2wg5_15_rr_mip_masks.zip",
+      "bytes": 392288,
+      "sha256": "f1945a52eed7267a53478dc0250e0f2db950a7884ad987a2653147e93bda8376",
+      "md5": "8febb684dba92c03612df7812caf3c69",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-17909733",
+      "file": "jaw_2wg5_15_lac_can_mip_masks.zip",
+      "bytes": 1015862,
+      "sha256": "4f780447fb030da1e4c563887bd1abd14c780b4ed40d5199db9940b38dfa6a1c",
+      "md5": "6e3a53e0e1c509626560585ab21fa943",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-17909733",
+      "file": "jaw_2wg4_15_rr_mip_masks.zip",
+      "bytes": 397394,
+      "sha256": "022ab1253516b57a57742619e29f71ddbfffa0171a4dd10f45c48957be736b78",
+      "md5": "d63f02d7f94777c9a0482c54d4225939",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-17909733",
+      "file": "raw_data_bin2_uint16.zip",
+      "bytes": 8469601261,
+      "sha256": "a6076f5ad74b0027393c7b498986089886b185d6e7247ff8c484668fc8e9fb1f",
+      "md5": "25502f47f492b043896fefbe74b46cd4",
+      "verified": true
+    },
+    {
+      "dataset": "zenodo-6345772",
+      "file": "cycleGAN-UVPAM.zip",
+      "bytes": 19546015512,
+      "sha256": "c16f2b18769b91faf612d47e7bed9270adba714f33913e8c9910c35ed28166ad",
+      "md5": "7439fcfa056eadebfecbbe11e47d3245",
+      "verified": true
+    }
+  ]
+}

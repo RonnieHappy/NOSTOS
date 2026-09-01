@@ -1,0 +1,26 @@
+{
+  "dataset": "MicroCT Trabecular Bone Samples for Trabecular Thickness and Separation Measures",
+  "doi": "10.5281/zenodo.11061947",
+  "record_url": "https://zenodo.org/records/11061947",
+  "license": "CC BY 4.0",
+  "voxel_spacing": "encoded per NIfTI header; approximately 0.0174-0.0176 mm isotropic",
+  "selection": "Every specimen in record 11061947 having both a segmentation and archived IPL thickness reference (8 volumes)",
+  "files": [
+    {"name": "BMLPL_001_REF_17_SEG_SUB.nii", "bytes": 2000352, "md5": "39237bd37918dd1be02da408368e7393"},
+    {"name": "BMLPL_001_REF_17_SEG_SUB_DT_THICK_CONVERT.nii", "bytes": 8000352, "md5": "fc5a577464d4b7b0775f80594645915b"},
+    {"name": "BMLPL_002_REF_17_SEG_SUB.nii", "bytes": 2000352, "md5": "0c6795fc419da593a66cc33e6217700b"},
+    {"name": "BMLPL_002_REF_17_SEG_SUB_DT_THICK_CONVERT.nii", "bytes": 8000352, "md5": "7f7e40725e09efd494fb73c4efecd746"},
+    {"name": "BMLPL_003_BML_17_SEG_SUB.nii", "bytes": 2000352, "md5": "6df4bb22e7fec58aa6329fa8035e9d17"},
+    {"name": "BMLPL_003_BML_17_SEG_SUB_DT_THICK_CONVERT.nii", "bytes": 8000352, "md5": "13c988414cef3a8bdb25f976aa56881d"},
+    {"name": "BMLPL_004_REF_17_SEG_SUB.nii", "bytes": 2000352, "md5": "fc72f5d758f3a7e28aedf35cf77072dc"},
+    {"name": "BMLPL_004_REF_17_SEG_SUB_DT_THICK_CONVERT.nii", "bytes": 8000352, "md5": "f18686082a5fd59262dac7f592eed8a0"},
+    {"name": "BMLPL_005_REF_17_SEG_SUB.nii", "bytes": 2000352, "md5": "360ca3ce22e12fecf258fb5d6f33301f"},
+    {"name": "BMLPL_005_REF_17_SEG_SUB_DT_THICK_CONVERT.nii", "bytes": 8000352, "md5": "00d9c8ff47ff507daa267afe89239ac6"},
+    {"name": "BMLPL_007_REF_17_SEG_SUB.nii", "bytes": 2000352, "md5": "6e843b3d16818ebbdf72a8a8a57b4d2c"},
+    {"name": "BMLPL_007_REF_17_SEG_SUB_DT_THICK_CONVERT.nii", "bytes": 8000352, "md5": "77721f04a0dea97ecc02debc0f750cd9"},
+    {"name": "BMLPL_008_REF_17_SEG_SUB.nii", "bytes": 2000352, "md5": "72ff6d92193063ccf8a76bd28c97e4de"},
+    {"name": "BMLPL_008_REF_17_SEG_SUB_DT_THICK_CONVERT.nii", "bytes": 8000352, "md5": "5db932acd8887ebf389880cec0b75205"},
+    {"name": "BMLPL_009_BML_17_SEG_SUB.nii", "bytes": 250352, "md5": "b56e1f7085386b7b844f1ae1b4c12e47"},
+    {"name": "BMLPL_009_BML_17_SEG_SUB_DT_THICK_CONVERT.nii", "bytes": 1000352, "md5": "42b53102ca98d7cd28ea92709b445376"}
+  ]
+}

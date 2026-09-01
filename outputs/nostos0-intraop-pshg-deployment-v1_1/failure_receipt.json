@@ -1,0 +1,42 @@
+{
+  "protocol_version": "nostos-intraop-pshg-deployment/1.1",
+  "status": "failed_before_reference_evaluation",
+  "failure_stage": "evaluation-only FI reference-map validation on the first locked ROI",
+  "exception_type": "ValueError",
+  "exception_message": "The optional FI evaluation map must be finite and shape matched.",
+  "first_locked_roi": "breast_14",
+  "observed_reference_map_diagnostic": {
+    "shape": [
+      512,
+      512
+    ],
+    "pixels": 262144,
+    "fi_nonfinite_pixels": 147741,
+    "r2_snr_supported_pixels": 35282,
+    "fi_nonfinite_inside_r2_snr_support": 0,
+    "fi_nonfinite_outside_r2_snr_support": 147741,
+    "fi_finite_inside_r2_snr_support": 35282
+  },
+  "outcome_access": {
+    "selected_pixels_decoded": true,
+    "reference_error_computed": false,
+    "success_gate_evaluated": false
+  },
+  "lineage": {
+    "lock_path": "manifests/intraop_pshg_deployment_v1_1_lock.json",
+    "lock_bytes": 23483,
+    "lock_sha256": "773b3fd729fb4b1a8ed16d5083e96cf57e6ef4a62261f99abb33677baf65e8cb",
+    "config_path": "configs/intraop_pshg_deployment_benchmark_v1_1.locked.json",
+    "config_bytes": 2593,
+    "config_sha256": "88f25d322c7c5d0ea0e6e9e5d4ce40aa615a9d9465e1a48bd01c1478f0fcdf99",
+    "implementation_path": "src/nostos/intraop/label_free_v1_1.py",
+    "implementation_bytes": 6180,
+    "implementation_sha256": "3112878c85340f82adab038de254ddfbf23b5fcdd817a18f82d3c3e4f85e8304",
+    "runner_path": "scripts/run_intraop_pshg_deployment_benchmark_v1_1.py",
+    "runner_bytes": 2774,
+    "runner_sha256": "85a32737faff7d08e8ab932e6d77fe429a1422087fc38b7892b78538fc81442a"
+  },
+  "root_cause": "The public PSHG FI evaluation map uses non-finite values outside the instrument-supported domain. No non-finite FI value occurred among pixels satisfying the locked R2 and SNR thresholds. The immutable v1 evaluator nevertheless required the complete optional FI array to be finite before applying the already-locked support mask.",
+  "amendment_rule": "Do not interpolate or scientifically use missing FI values. In v1.2, permit a non-finite FI value only where the original locked R2/SNR rules already reject that pixel. Abort if any supported pixel has a non-finite FI value. Replace permitted missing values with a finite sentinel only at the immutable evaluator boundary, where the locked eligibility mask prevents their use. Freeze v1.2 before computing any reference error.",
+  "claim_boundary": "This receipt documents a second engineering interface failure. It is not an estimator result, a biological result or a clinical result."
+}

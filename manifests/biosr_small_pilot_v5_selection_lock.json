@@ -1,0 +1,27 @@
+{
+  "schema_version": "nostos-biosr-small-pilot-selection/5.0",
+  "locked_at_utc": "2026-08-29T00:03:29Z",
+  "analysis_role": "developmental_balanced_pilot_final_score_rerun",
+  "selection_rule": "Reuse exactly the twelve fields selected before the version-4 balanced pilot; add no field and remove no field.",
+  "version_5_repair_lock": {
+    "path": "manifests/paired_acquisition_support_pilot_repair_v5_lock.json",
+    "bytes": 2151,
+    "sha256": "925fa9ed56b2c7c835396fd4a30956f2e5f4df4eceae0ee733e2e556e78c12a5"
+  },
+  "selected": {
+    "CCPs": ["Cell_001", "Cell_008", "Cell_012", "Cell_014", "Cell_015", "Cell_017"],
+    "ER": ["Cell_002", "Cell_003", "Cell_004", "Cell_008", "Cell_009", "Cell_011"]
+  },
+  "expected": {
+    "reference_fields": 12,
+    "paired_acquisitions": 90,
+    "endpoint_cases": 1890,
+    "endpoints_per_pair": 21
+  },
+  "access_state": {
+    "balanced_small_pilot": "previously observed under version 4",
+    "threshold_calibration": "sealed",
+    "confirmation_archives": "not_downloaded_not_listed_not_decoded"
+  },
+  "claim_boundary": "Final developmental score rerun only; no threshold, confirmation, generalization, clinical, or submission claim."
+}

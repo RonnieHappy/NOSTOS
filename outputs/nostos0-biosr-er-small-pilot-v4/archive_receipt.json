@@ -1,0 +1,277 @@
+{
+  "protocol_version": "nostos-paired-acquisition-support/4.0",
+  "status": "smoke_test",
+  "stage": "score_design",
+  "structure": "ER",
+  "archive": {
+    "schema_version": "nostos-biosr-pair-index/1.0",
+    "archive": "ER.zip",
+    "archive_bytes": 2956077632,
+    "archive_md5": "2bd05c7dba69a10b36a141407927d585",
+    "archive_sha256": "3e0f3d437f3ec2703a5729ff6cdd82ebac838c2bb95e9c41cb52fa9946346c13",
+    "structure": "ER",
+    "upscaling_factor": 2,
+    "expected_level_count": 6,
+    "implementation_sha256": "d4471dd19e320a8267e02aa1886609aadda9ae8b437a5d6efb2c729a9b2c5861",
+    "records": 36
+  },
+  "config_path": "configs/paired_acquisition_support_v4.locked.json",
+  "config_sha256": "0bc39001c80078778992e37fbf40ccc6e325dc8ead3cd388e1ef0d15a30a1f89",
+  "implementation": {
+    "sha256": "d4471dd19e320a8267e02aa1886609aadda9ae8b437a5d6efb2c729a9b2c5861",
+    "files": [
+      {
+        "path": "scripts/run_biosr_paired_support.py",
+        "bytes": 18954,
+        "sha256": "d9c250fcaf577625959b9d5a11ab329919558b8af1ed0f3caafa4674dfdd6b63"
+      },
+      {
+        "path": "src/nostos/validation/paired_acquisition_support.py",
+        "bytes": 49846,
+        "sha256": "681f9b0e324c6688ffab78887d4661bb39fada49c033e2fb7934a29a3d99ae9c"
+      },
+      {
+        "path": "src/nostos/features/spatial_fft.py",
+        "bytes": 7461,
+        "sha256": "2f18db7a1ded0e17ae091a53ddca0b44a37a5dbabd12ee1c61f2518deac23f68"
+      },
+      {
+        "path": "src/nostos/features/response_modules.py",
+        "bytes": 13184,
+        "sha256": "21902711c43675920380abb5762047d63911440cc78f35f14a5fc7d252191a85"
+      },
+      {
+        "path": "src/nostos/core/qc.py",
+        "bytes": 2241,
+        "sha256": "9e9fc39a35a2c000cf5ad47f07595c2052e327bad9c08b42b62011429e272353"
+      },
+      {
+        "path": "src/nostos/validation/metrics.py",
+        "bytes": 1785,
+        "sha256": "74e16c4479a6e5cb1c35246d70a2f3b1ab491627e8a815a3c4c429d1d759962e"
+      },
+      {
+        "path": "pyproject.toml",
+        "bytes": 2884,
+        "sha256": "9204767675b912b7f1ece4469799dc1009fa3e2afd966d7956bf6337faa5844c"
+      },
+      {
+        "path": "uv.lock",
+        "bytes": 266139,
+        "sha256": "48b9cd1ba22e808fa8ec60105551c1ad6c9549abdf4df44c9ed2c5a897b1efb1"
+      }
+    ]
+  },
+  "protocol_lock_sha256": "6a2ef93325fbeb645d647d0af34c0d56cc265ec8e16c88b7bae08f171f62d5bf",
+  "preprocessing_amendment_lock_sha256": "35652fcfe1e0b4f81c58d7858ad62e213018aecaef0ffd1ffca46156f0eada3c",
+  "er_layout_amendment_lock_sha256": "5874a15cb4d0a6dad1e13b710b7c2263d092a6778239d26962f99feda34bc648",
+  "calibration_correction_lock_sha256": "8efe15a2f06a1661e6a2b97a3eef566e4f534dd0f25d4199350e0e9e4efc19d5",
+  "code_audit_correction_lock_sha256": "a20ab3c7828e9d9e79db3cb19f94616284d05b95260b7f04d23182be4c40fa09",
+  "pilot_repair_lock_sha256": "629353a98eee27e83e8b92e2d176143da731ca6bdffb3caf0eb0ceac686580c9",
+  "protocol_lock": "2026-08-28T21:44:47Z",
+  "preprocessing_amendment_lock": "2026-08-28T21:55:36Z",
+  "calibration_correction_lock": "2026-08-28T22:56:41Z",
+  "code_audit_correction_lock": "2026-08-28T23:03:58Z",
+  "pilot_repair_lock": "2026-08-28T23:45:18Z",
+  "workers": 2,
+  "runtime": {
+    "python": "3.13.13 (main, May 10 2026, 19:31:06) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "logical_cpu_count": 20
+  },
+  "checkpoints": [
+    {
+      "cell_id": "Cell_002",
+      "rows_count": 126,
+      "elapsed_seconds": 66.18977859988809
+    },
+    {
+      "cell_id": "Cell_003",
+      "rows_count": 126,
+      "elapsed_seconds": 66.09739429992624
+    },
+    {
+      "cell_id": "Cell_004",
+      "rows_count": 126,
+      "elapsed_seconds": 70.0814199000597
+    },
+    {
+      "cell_id": "Cell_008",
+      "rows_count": 126,
+      "elapsed_seconds": 70.13606210006401
+    },
+    {
+      "cell_id": "Cell_009",
+      "rows_count": 126,
+      "elapsed_seconds": 72.57056100014597
+    },
+    {
+      "cell_id": "Cell_011",
+      "rows_count": 126,
+      "elapsed_seconds": 72.36038329987787
+    }
+  ],
+  "summary": {
+    "rows": 756,
+    "eligible_rows": 528,
+    "reference_fields": 6,
+    "pairs": 36,
+    "registration_eligible_pairs": 36,
+    "hard_abstention_rows": 6,
+    "development_partition_fields": {
+      "score_design": 6,
+      "threshold_calibration": 0
+    },
+    "conditions": {
+      "full_contract": {
+        "aurc": 0.0840338921023721,
+        "eligible_cases": 528,
+        "nonselective_risk": 0.16287878787878787
+      },
+      "always_emit": {
+        "aurc": 0.16287878787878787,
+        "eligible_cases": 528,
+        "nonselective_risk": 0.16287878787878787
+      },
+      "conventional_acquisition_qc": {
+        "aurc": 0.0877371156155641,
+        "eligible_cases": 528,
+        "nonselective_risk": 0.16287878787878787
+      },
+      "physical_sampling_only": {
+        "aurc": 0.16129333103764923,
+        "eligible_cases": 528,
+        "nonselective_risk": 0.16287878787878787
+      },
+      "perturbation_stability_only": {
+        "aurc": 0.04773193395519894,
+        "eligible_cases": 528,
+        "nonselective_risk": 0.16287878787878787
+      },
+      "full_contract_without_qc": {
+        "aurc": 0.08904192716578743,
+        "eligible_cases": 528,
+        "nonselective_risk": 0.16287878787878787
+      },
+      "full_contract_without_sampling": {
+        "aurc": 0.0840338921023721,
+        "eligible_cases": 528,
+        "nonselective_risk": 0.16287878787878787
+      },
+      "full_contract_without_perturbation": {
+        "aurc": 0.09305781894968634,
+        "eligible_cases": 528,
+        "nonselective_risk": 0.16287878787878787
+      },
+      "full_contract_without_cross_scale_agreement": {
+        "aurc": 0.06943031769939896,
+        "eligible_cases": 528,
+        "nonselective_risk": 0.16287878787878787
+      },
+      "full_contract_without_identifiability": {
+        "aurc": 0.08144558685912247,
+        "eligible_cases": 528,
+        "nonselective_risk": 0.16287878787878787
+      }
+    },
+    "endpoints": {
+      "hessian_blob_curve": {
+        "rows": 36,
+        "eligible": 36,
+        "reference_eligibility_fraction": 1.0,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      },
+      "hessian_blob_scale": {
+        "rows": 36,
+        "eligible": 0,
+        "reference_eligibility_fraction": 0.0,
+        "invalid_fraction": null,
+        "full_contract_aurc": null
+      },
+      "hessian_tube_curve": {
+        "rows": 36,
+        "eligible": 36,
+        "reference_eligibility_fraction": 1.0,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      },
+      "hessian_tube_scale": {
+        "rows": 36,
+        "eligible": 0,
+        "reference_eligibility_fraction": 0.0,
+        "invalid_fraction": null,
+        "full_contract_aurc": null
+      },
+      "spectral_anisotropy": {
+        "rows": 36,
+        "eligible": 36,
+        "reference_eligibility_fraction": 1.0,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      },
+      "spectral_entropy": {
+        "rows": 36,
+        "eligible": 36,
+        "reference_eligibility_fraction": 1.0,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      },
+      "spectral_scale": {
+        "rows": 36,
+        "eligible": 36,
+        "reference_eligibility_fraction": 1.0,
+        "invalid_fraction": 0.9722222222222222,
+        "full_contract_aurc": 0.9122879575036397
+      },
+      "tensor_coherence": {
+        "rows": 180,
+        "eligible": 180,
+        "reference_eligibility_fraction": 1.0,
+        "invalid_fraction": 0.2833333333333333,
+        "full_contract_aurc": 0.5711958909251478
+      },
+      "tensor_orientation": {
+        "rows": 180,
+        "eligible": 30,
+        "reference_eligibility_fraction": 0.16666666666666666,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      },
+      "variogram_horizontal_curve": {
+        "rows": 36,
+        "eligible": 36,
+        "reference_eligibility_fraction": 1.0,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      },
+      "variogram_range_horizontal": {
+        "rows": 36,
+        "eligible": 36,
+        "reference_eligibility_fraction": 1.0,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      },
+      "variogram_range_vertical": {
+        "rows": 36,
+        "eligible": 30,
+        "reference_eligibility_fraction": 0.8333333333333334,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      },
+      "variogram_vertical_curve": {
+        "rows": 36,
+        "eligible": 36,
+        "reference_eligibility_fraction": 1.0,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      }
+    }
+  },
+  "claim_boundary": "Paired-acquisition support for predeclared structural measurements relative to registered high-resolution references; not image restoration, biological phenotype inference, diagnosis, clinical validity, diffraction-limit estimation, or proof that the reference acquisition is itself ground truth biology.",
+  "artifacts": {
+    "pair_index_sha256": "95c4791344d145c7791b9040024d1af472c0e2904848cde0c8fc9f5ecaea33a6",
+    "endpoint_cases_sha256": "0fd2167b1374866689ff79451fbdd21425e19ecca7da0d1703c56c9cf50ad2dd",
+    "receipt_sha256_before_artifact_index": "c919e729cafd0e8bcc86b2ac22e729a8ec11aa6011b1ae25bafca0d1e14bfea1"
+  }
+}

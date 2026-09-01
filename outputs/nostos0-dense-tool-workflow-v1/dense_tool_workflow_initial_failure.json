@@ -1,0 +1,10 @@
+{
+  "protocol_version": "nostos0-dense-tool-workflow/1.0",
+  "status": "fail",
+  "stage": "series_file_loading",
+  "error_type": "ValueError",
+  "error": "Every spatial dimension must contain at least 8 samples; received shape (2, 349, 639).",
+  "root_cause": "The generic spatial loader applied its minimum spatial extent to the explicit time axis.",
+  "corrective_action": "Introduce a dedicated time-first loader and rerun the unchanged frozen workflow.",
+  "interpretation": "Initial end-to-end software failure retained; no scientific result was opened because execution stopped before measurement."
+}

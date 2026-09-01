@@ -1,0 +1,21 @@
+{
+  "schema_version": "nostos-prospective-amendment-lock/1.0",
+  "locked_at_utc": "2026-08-28T21:55:36Z",
+  "amendment_version": "nostos-paired-acquisition-support-preprocessing/1.0",
+  "parent_protocol": "nostos-paired-acquisition-support/1.0",
+  "file": {
+    "path": "docs/NOSTOS0_PAIRED_ACQUISITION_SUPPORT_PREPROCESSING_AMENDMENT.md",
+    "bytes": 3215,
+    "sha256": "bc54c8c05ebefb238fee704394405dc65193331602765ae1f0ef73d1c8d616e2"
+  },
+  "evidence_seen_before_amendment": {
+    "archive": "CCPs.zip",
+    "archive_md5": "41771b9fd0a7c9fd939bdb71b106fa6e",
+    "archive_member_names_listed": true,
+    "mrc_headers_read": true,
+    "biological_pixels_decoded": false,
+    "image_statistics_or_visuals_seen": false,
+    "confirmation_archives_opened": false
+  },
+  "decision": "Use the float64 arithmetic mean of the nine frames in each RawSIMData_level_XX stack as the lower-resolution input; exclude RawSIMData_gt and use the per-cell SIM_gt as reference."
+}

@@ -1,0 +1,276 @@
+{
+  "acquisition_qc_matched_count": {
+    "accepted": 68,
+    "boundary_tie_split": true,
+    "coverage": 0.2833333333333333,
+    "deterministic_tie_break": "case_id",
+    "eligible": 240,
+    "invalid": 41,
+    "risk": 0.6029411764705882,
+    "target_accepted": 68,
+    "tie_robust_risk_bounds": {
+      "best_case_invalid": 41,
+      "best_case_risk": 0.6029411764705882,
+      "boundary_calibrated_risk": 0.4746160810539086,
+      "boundary_tie_cases": 3,
+      "boundary_tie_invalid": 0,
+      "cases_required_from_boundary_tie": 2,
+      "strictly_below_boundary": 66,
+      "worst_case_invalid": 41,
+      "worst_case_risk": 0.6029411764705882
+    }
+  },
+  "checks": {
+    "aurc_bootstrap_ci_lower_above_zero": true,
+    "maximum_cluster_bootstrap_risk_upper95": true,
+    "maximum_observed_risk": true,
+    "minimum_coverage": true,
+    "minimum_independent_groups": true,
+    "minimum_invalid_acquisition_qc_emissions": true,
+    "minimum_relative_risk_reduction_vs_acquisition_qc": true,
+    "positive_aurc_difference": true
+  },
+  "claim_boundary": {
+    "claim": "A widefield-specific, input-only validity profile can control silent-invalid dimensionless structural measurements on independently held-out fields of view.",
+    "excluded_claims": [
+      "biological interpretation of any endpoint",
+      "physical-scale measurement because pixel spacing is not supplied",
+      "image restoration or denoising performance",
+      "cross-modality equivalence of calibrated risk",
+      "clinical or intraoperative utility"
+    ],
+    "study_type": "computation_only_public_data_methods_validation"
+  },
+  "confirmation": {
+    "development_group_overlap": [],
+    "eligible_cases": 520,
+    "independent_group_count": 4,
+    "independent_groups": [
+      "WideField_BPAE_R|fov11",
+      "WideField_BPAE_R|fov16",
+      "WideField_BPAE_R|fov17",
+      "WideField_BPAE_R|fov18"
+    ],
+    "source_receipt": {
+      "bytes": 2029061,
+      "name": "confirmation_rows.jsonl",
+      "profile_bytes": 70263,
+      "profile_file_sha256": "9c99e6c01359b8b8ab84f1eb6f48cf9101e913ee90269b63573ffd1abc69b737",
+      "profile_name": "validity_profile.json",
+      "sha256": "cf22eada35d7e967788c15940fffe21474cf9709dd3a47e00163212695b855cc"
+    }
+  },
+  "content_sha256": "90016459132d480fe31ed291c239a10d5aaf5a4ac5de4fd97a6bdc205ffa9948",
+  "primary_endpoint_family": "tensor_coherence",
+  "primary_operating_point": {
+    "accepted": 68,
+    "accepted_independent_groups": 4,
+    "cluster_bootstrap_risk_upper95": 0.1111111111111111,
+    "coverage": 0.2833333333333333,
+    "eligible": 240,
+    "invalid": 4,
+    "predicted_risk_threshold": 0.6303073200826219,
+    "risk": 0.058823529411764705
+  },
+  "primary_score": "declared_capture_stability_contract",
+  "profile_content_sha256": "65239b44c66a8bfca80608b1544fd0c892cf8e3209805828a1623d85382eebb8",
+  "relative_risk_reduction_vs_acquisition_qc": {
+    "conservative_lower_bound_over_boundary_tie": 0.9024390243902439,
+    "deterministic_tie_break_estimate": 0.9024390243902439,
+    "optimistic_upper_bound_over_boundary_tie": 0.9024390243902439
+  },
+  "reporting_amendment": {
+    "changed_paths": [
+      "schema_version",
+      "risk_coverage.cluster_bootstrap_aurc_difference.definition",
+      "reporting_amendment"
+    ],
+    "confirmation_rows_reprocessed": false,
+    "gate_decisions_changed": false,
+    "profile_refit": false,
+    "reason": "The legacy label named full_contract even when the frozen profile selected a different primary candidate. The AURC values always compared acquisition QC with profile.primary_score.",
+    "source_audit_content_sha256": "6a547c52f745c60d8ee26e276b4fb6dbaf1fea8a72fbb96c648b656ca4666bc4",
+    "source_audit_file_sha256": "cd7bc4569434be13a7bcec18ba2f58dbec6010bde2e040aea4563964c6d0fdfc",
+    "statistical_values_recomputed": false
+  },
+  "risk_coverage": {
+    "candidate_metrics": {
+      "conventional_acquisition_qc": {
+        "brier_score": 0.17696923181645327,
+        "expected_calibration_error": 0.09021002500930624,
+        "logarithmic_loss": 0.4998368503994141,
+        "risk_coverage_auc": 0.5358032900300461
+      },
+      "declared_capture_stability_contract": {
+        "brier_score": 0.04437566153587818,
+        "expected_calibration_error": 0.05797085604758206,
+        "logarithmic_loss": 0.144017120131323,
+        "risk_coverage_auc": 0.3318607951271412
+      },
+      "full_contract": {
+        "brier_score": 0.20873011000793584,
+        "expected_calibration_error": 0.02035037556689323,
+        "logarithmic_loss": 0.6083147684791649,
+        "risk_coverage_auc": 0.35208333333333336
+      },
+      "full_contract_without_identifiability": {
+        "brier_score": 0.20873011000793584,
+        "expected_calibration_error": 0.02035037556689323,
+        "logarithmic_loss": 0.6083147684791649,
+        "risk_coverage_auc": 0.35208333333333336
+      },
+      "full_contract_without_perturbation": {
+        "brier_score": 0.17696923181645327,
+        "expected_calibration_error": 0.09021002500930624,
+        "logarithmic_loss": 0.4998368503994141,
+        "risk_coverage_auc": 0.5358032900300461
+      },
+      "full_contract_without_qc": {
+        "brier_score": 0.20872900180480347,
+        "expected_calibration_error": 0.020323129251700878,
+        "logarithmic_loss": 0.608311992394365,
+        "risk_coverage_auc": 0.35208333333333336
+      },
+      "perturbation_stability_only": {
+        "brier_score": 0.20872900180480347,
+        "expected_calibration_error": 0.020323129251700878,
+        "logarithmic_loss": 0.608311992394365,
+        "risk_coverage_auc": 0.35208333333333336
+      }
+    },
+    "cluster_bootstrap_aurc_difference": {
+      "bootstrap_ci95": [
+        0.06678111393477226,
+        0.36936533161274515
+      ],
+      "bootstrap_probability_positive": 1.0,
+      "definition": "acquisition_qc_AURC_minus_primary_candidate_AURC; positive favors NOSTOS",
+      "draws": 5000,
+      "independent_groups": 4,
+      "observed": 0.20394249490290495,
+      "seed": 26082972
+    }
+  },
+  "schema_version": "nostos-validity-profile-confirmation-audit/1.2-reporting-amendment",
+  "status": "pass",
+  "stratified_safety_audit": {
+    "acquisition_modality_heterogeneity": false,
+    "maximum_observed_risk_gate": 0.15,
+    "post_confirmation_descriptive_not_a_frozen_primary_gate": true,
+    "status": "no_acquisition_stratum_heterogeneity_detected",
+    "summaries": {
+      "acquisition_level": [
+        {
+          "accepted": 48,
+          "coverage": 1.0,
+          "eligible": 48,
+          "invalid": 0,
+          "risk": 0.0,
+          "stratum": "avg16"
+        },
+        {
+          "accepted": 0,
+          "coverage": 0.0,
+          "eligible": 48,
+          "invalid": 0,
+          "risk": null,
+          "stratum": "avg2"
+        },
+        {
+          "accepted": 0,
+          "coverage": 0.0,
+          "eligible": 48,
+          "invalid": 0,
+          "risk": null,
+          "stratum": "avg4"
+        },
+        {
+          "accepted": 20,
+          "coverage": 0.4166666666666667,
+          "eligible": 48,
+          "invalid": 4,
+          "risk": 0.2,
+          "stratum": "avg8"
+        },
+        {
+          "accepted": 0,
+          "coverage": 0.0,
+          "eligible": 48,
+          "invalid": 0,
+          "risk": null,
+          "stratum": "raw"
+        }
+      ],
+      "acquisition_modality": [
+        {
+          "accepted": 68,
+          "coverage": 0.2833333333333333,
+          "eligible": 240,
+          "invalid": 4,
+          "risk": 0.058823529411764705,
+          "stratum": "WideField"
+        }
+      ],
+      "independent_group": [
+        {
+          "accepted": 20,
+          "coverage": 0.3333333333333333,
+          "eligible": 60,
+          "invalid": 4,
+          "risk": 0.2,
+          "stratum": "WideField_BPAE_R|fov11"
+        },
+        {
+          "accepted": 16,
+          "coverage": 0.26666666666666666,
+          "eligible": 60,
+          "invalid": 0,
+          "risk": 0.0,
+          "stratum": "WideField_BPAE_R|fov16"
+        },
+        {
+          "accepted": 16,
+          "coverage": 0.26666666666666666,
+          "eligible": 60,
+          "invalid": 0,
+          "risk": 0.0,
+          "stratum": "WideField_BPAE_R|fov17"
+        },
+        {
+          "accepted": 16,
+          "coverage": 0.26666666666666666,
+          "eligible": 60,
+          "invalid": 0,
+          "risk": 0.0,
+          "stratum": "WideField_BPAE_R|fov18"
+        }
+      ],
+      "requested_scale": [
+        {
+          "accepted": 32,
+          "coverage": 0.4,
+          "eligible": 80,
+          "invalid": 0,
+          "risk": 0.0,
+          "stratum": "16.0"
+        },
+        {
+          "accepted": 16,
+          "coverage": 0.2,
+          "eligible": 80,
+          "invalid": 0,
+          "risk": 0.0,
+          "stratum": "4.0"
+        },
+        {
+          "accepted": 20,
+          "coverage": 0.25,
+          "eligible": 80,
+          "invalid": 4,
+          "risk": 0.2,
+          "stratum": "8.0"
+        }
+      ]
+    }
+  }
+}

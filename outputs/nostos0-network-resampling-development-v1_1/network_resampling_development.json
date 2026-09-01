@@ -1,0 +1,57 @@
+{
+  "protocol_version": "nostos-network-resampling-development/1.1",
+  "protocol_sha256": "144f45611c4b71700c84c20175d5ced94591fb61bef69fd34636d66762ee75a9",
+  "status": "development_complete",
+  "source_dataset": "HRF; previously opened development data",
+  "change_from_failed_protocol": "voxel-boundary-corrected EDT plus occupancy-policy development",
+  "selection_rule": "minimum mean absolute native-versus-twofold difference over nonzero physical erosion thresholds",
+  "policies": {
+    "occupancy_0_25": {
+      "occupancy_cutoff": 0.25,
+      "median_absolute_difference": [
+        0.0,
+        0.027530499371844486,
+        0.01940279253948507,
+        0.0011920952484721636
+      ],
+      "mean_nonzero_threshold_difference": 0.01599072945236114,
+      "maximum_median_nonzero_threshold_difference": 0.027530499371844486
+    },
+    "occupancy_0_50": {
+      "occupancy_cutoff": 0.5,
+      "median_absolute_difference": [
+        0.0,
+        0.03817152364815357,
+        0.010021927190358992,
+        0.006097830758715915
+      ],
+      "mean_nonzero_threshold_difference": 0.018226068814333737,
+      "maximum_median_nonzero_threshold_difference": 0.03817152364815357
+    },
+    "occupancy_0_75": {
+      "occupancy_cutoff": 0.75,
+      "median_absolute_difference": [
+        0.0,
+        0.05689675278123274,
+        0.00479495773107208,
+        0.01196245631171207
+      ],
+      "mean_nonzero_threshold_difference": 0.025094539449018814,
+      "maximum_median_nonzero_threshold_difference": 0.05689675278123274
+    },
+    "occupancy_any": {
+      "occupancy_cutoff": 0.01,
+      "median_absolute_difference": [
+        0.0,
+        0.027530499371844486,
+        0.01940279253948507,
+        0.0011920952484721636
+      ],
+      "mean_nonzero_threshold_difference": 0.01599072945236114,
+      "maximum_median_nonzero_threshold_difference": 0.027530499371844486
+    }
+  },
+  "selected_policy": "occupancy_0_25",
+  "selected_occupancy_cutoff": 0.25,
+  "interpretation": "Post-failure development only. The selected policy requires confirmation on an untouched archive."
+}

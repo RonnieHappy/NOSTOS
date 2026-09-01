@@ -1,0 +1,2075 @@
+{
+  "candidate_metrics": {
+    "conventional_acquisition_qc": {
+      "brier_score": 0.13238280223394225,
+      "expected_calibration_error": 0.10156302418006138,
+      "logarithmic_loss": 0.3993403245613242,
+      "risk_coverage_auc": 0.0736199301195561
+    },
+    "full_contract": {
+      "brier_score": 0.14766685727077555,
+      "expected_calibration_error": 0.13569844430232703,
+      "logarithmic_loss": 1.2646100708829164,
+      "risk_coverage_auc": 0.08035748205620633
+    },
+    "full_contract_without_identifiability": {
+      "brier_score": 0.10145644408157266,
+      "expected_calibration_error": 0.08910495795208603,
+      "logarithmic_loss": 0.30768269397498943,
+      "risk_coverage_auc": 0.06372754755502588
+    },
+    "full_contract_without_perturbation": {
+      "brier_score": 0.17859321542314516,
+      "expected_calibration_error": 0.1481565105303024,
+      "logarithmic_loss": 1.3562677014692512,
+      "risk_coverage_auc": 0.09095341137084911
+    },
+    "full_contract_without_qc": {
+      "brier_score": 0.14701496511805562,
+      "expected_calibration_error": 0.10008770649996265,
+      "logarithmic_loss": 1.2585248308686785,
+      "risk_coverage_auc": 0.07964685752333547
+    },
+    "perturbation_stability_only": {
+      "brier_score": 0.10080391782147959,
+      "expected_calibration_error": 0.05347524912075059,
+      "logarithmic_loss": 0.3015781607788246,
+      "risk_coverage_auc": 0.06302186567679223
+    }
+  },
+  "content_sha256": "223c149fcd964fec16bce80962450a70d355dea49f7bdb860849083a427ffb36",
+  "eligible_cases": 780,
+  "independent_groups": 6,
+  "operating_point": {
+    "candidate_count": 126,
+    "candidates": [
+      {
+        "accepted": 3,
+        "accepted_independent_groups": 1,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 1.0,
+        "coverage": 0.008333333333333333,
+        "eligible": 360,
+        "invalid": 3,
+        "passes": false,
+        "predicted_risk_threshold": 0.17346938775510204,
+        "risk": 1.0
+      },
+      {
+        "accepted": 4,
+        "accepted_independent_groups": 1,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 1.0,
+        "coverage": 0.011111111111111112,
+        "eligible": 360,
+        "invalid": 4,
+        "passes": false,
+        "predicted_risk_threshold": 0.1789124552771716,
+        "risk": 1.0
+      },
+      {
+        "accepted": 6,
+        "accepted_independent_groups": 1,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 1.0,
+        "coverage": 0.016666666666666666,
+        "eligible": 360,
+        "invalid": 6,
+        "passes": false,
+        "predicted_risk_threshold": 0.20706507695021956,
+        "risk": 1.0
+      },
+      {
+        "accepted": 7,
+        "accepted_independent_groups": 2,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 1.0,
+        "coverage": 0.019444444444444445,
+        "eligible": 360,
+        "invalid": 6,
+        "passes": false,
+        "predicted_risk_threshold": 0.20742025793354013,
+        "risk": 0.8571428571428571
+      },
+      {
+        "accepted": 9,
+        "accepted_independent_groups": 2,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 1.0,
+        "coverage": 0.025,
+        "eligible": 360,
+        "invalid": 8,
+        "passes": false,
+        "predicted_risk_threshold": 0.2099374830028787,
+        "risk": 0.8888888888888888
+      },
+      {
+        "accepted": 10,
+        "accepted_independent_groups": 2,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 1.0,
+        "coverage": 0.027777777777777776,
+        "eligible": 360,
+        "invalid": 8,
+        "passes": false,
+        "predicted_risk_threshold": 0.21027619044308365,
+        "risk": 0.8
+      },
+      {
+        "accepted": 11,
+        "accepted_independent_groups": 2,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 1.0,
+        "coverage": 0.030555555555555555,
+        "eligible": 360,
+        "invalid": 8,
+        "passes": false,
+        "predicted_risk_threshold": 0.21077634579972526,
+        "risk": 0.7272727272727273
+      },
+      {
+        "accepted": 12,
+        "accepted_independent_groups": 2,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 1.0,
+        "coverage": 0.03333333333333333,
+        "eligible": 360,
+        "invalid": 8,
+        "passes": false,
+        "predicted_risk_threshold": 0.21183086201959422,
+        "risk": 0.6666666666666666
+      },
+      {
+        "accepted": 13,
+        "accepted_independent_groups": 2,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 1.0,
+        "coverage": 0.03611111111111111,
+        "eligible": 360,
+        "invalid": 9,
+        "passes": false,
+        "predicted_risk_threshold": 0.21695460657051788,
+        "risk": 0.6923076923076923
+      },
+      {
+        "accepted": 14,
+        "accepted_independent_groups": 2,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 1.0,
+        "coverage": 0.03888888888888889,
+        "eligible": 360,
+        "invalid": 10,
+        "passes": false,
+        "predicted_risk_threshold": 0.22050744980497744,
+        "risk": 0.7142857142857143
+      },
+      {
+        "accepted": 15,
+        "accepted_independent_groups": 2,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 1.0,
+        "coverage": 0.041666666666666664,
+        "eligible": 360,
+        "invalid": 11,
+        "passes": false,
+        "predicted_risk_threshold": 0.23157853984101592,
+        "risk": 0.7333333333333333
+      },
+      {
+        "accepted": 16,
+        "accepted_independent_groups": 2,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 1.0,
+        "coverage": 0.044444444444444446,
+        "eligible": 360,
+        "invalid": 12,
+        "passes": false,
+        "predicted_risk_threshold": 0.23505977097243483,
+        "risk": 0.75
+      },
+      {
+        "accepted": 17,
+        "accepted_independent_groups": 2,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 1.0,
+        "coverage": 0.04722222222222222,
+        "eligible": 360,
+        "invalid": 13,
+        "passes": false,
+        "predicted_risk_threshold": 0.23816797067173684,
+        "risk": 0.7647058823529411
+      },
+      {
+        "accepted": 18,
+        "accepted_independent_groups": 2,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 1.0,
+        "coverage": 0.05,
+        "eligible": 360,
+        "invalid": 13,
+        "passes": false,
+        "predicted_risk_threshold": 0.2399011237011633,
+        "risk": 0.7222222222222222
+      },
+      {
+        "accepted": 19,
+        "accepted_independent_groups": 2,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 1.0,
+        "coverage": 0.05277777777777778,
+        "eligible": 360,
+        "invalid": 13,
+        "passes": false,
+        "predicted_risk_threshold": 0.2400727149697589,
+        "risk": 0.6842105263157895
+      },
+      {
+        "accepted": 20,
+        "accepted_independent_groups": 2,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 1.0,
+        "coverage": 0.05555555555555555,
+        "eligible": 360,
+        "invalid": 13,
+        "passes": false,
+        "predicted_risk_threshold": 0.24078661499996873,
+        "risk": 0.65
+      },
+      {
+        "accepted": 21,
+        "accepted_independent_groups": 2,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 1.0,
+        "coverage": 0.058333333333333334,
+        "eligible": 360,
+        "invalid": 14,
+        "passes": false,
+        "predicted_risk_threshold": 0.24416399332542876,
+        "risk": 0.6666666666666666
+      },
+      {
+        "accepted": 22,
+        "accepted_independent_groups": 2,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 1.0,
+        "coverage": 0.06111111111111111,
+        "eligible": 360,
+        "invalid": 14,
+        "passes": false,
+        "predicted_risk_threshold": 0.24514082893527894,
+        "risk": 0.6363636363636364
+      },
+      {
+        "accepted": 47,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.7777777777777778,
+        "coverage": 0.13055555555555556,
+        "eligible": 360,
+        "invalid": 16,
+        "passes": false,
+        "predicted_risk_threshold": 0.326530612244898,
+        "risk": 0.3404255319148936
+      },
+      {
+        "accepted": 48,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.7777777777777778,
+        "coverage": 0.13333333333333333,
+        "eligible": 360,
+        "invalid": 16,
+        "passes": false,
+        "predicted_risk_threshold": 0.32919693538447625,
+        "risk": 0.3333333333333333
+      },
+      {
+        "accepted": 49,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.7777777777777778,
+        "coverage": 0.1361111111111111,
+        "eligible": 360,
+        "invalid": 17,
+        "passes": false,
+        "predicted_risk_threshold": 0.336698468092434,
+        "risk": 0.3469387755102041
+      },
+      {
+        "accepted": 80,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6521739130434783,
+        "coverage": 0.2222222222222222,
+        "eligible": 360,
+        "invalid": 24,
+        "passes": false,
+        "predicted_risk_threshold": 0.336734693877551,
+        "risk": 0.3
+      },
+      {
+        "accepted": 81,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6619718309859155,
+        "coverage": 0.225,
+        "eligible": 360,
+        "invalid": 25,
+        "passes": false,
+        "predicted_risk_threshold": 0.3382713957233784,
+        "risk": 0.30864197530864196
+      },
+      {
+        "accepted": 82,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6366350067842602,
+        "coverage": 0.22777777777777777,
+        "eligible": 360,
+        "invalid": 25,
+        "passes": false,
+        "predicted_risk_threshold": 0.34375687294402785,
+        "risk": 0.3048780487804878
+      },
+      {
+        "accepted": 83,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6351351351351351,
+        "coverage": 0.23055555555555557,
+        "eligible": 360,
+        "invalid": 25,
+        "passes": false,
+        "predicted_risk_threshold": 0.3484634304567102,
+        "risk": 0.30120481927710846
+      },
+      {
+        "accepted": 84,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5992912371134008,
+        "coverage": 0.23333333333333334,
+        "eligible": 360,
+        "invalid": 25,
+        "passes": false,
+        "predicted_risk_threshold": 0.35226162804412,
+        "risk": 0.2976190476190476
+      },
+      {
+        "accepted": 85,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6184278350515464,
+        "coverage": 0.2361111111111111,
+        "eligible": 360,
+        "invalid": 25,
+        "passes": false,
+        "predicted_risk_threshold": 0.3545344610735504,
+        "risk": 0.29411764705882354
+      },
+      {
+        "accepted": 86,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.625,
+        "coverage": 0.2388888888888889,
+        "eligible": 360,
+        "invalid": 25,
+        "passes": false,
+        "predicted_risk_threshold": 0.36265634881488906,
+        "risk": 0.29069767441860467
+      },
+      {
+        "accepted": 87,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5977011494252874,
+        "coverage": 0.24166666666666667,
+        "eligible": 360,
+        "invalid": 26,
+        "passes": false,
+        "predicted_risk_threshold": 0.37086819973130625,
+        "risk": 0.2988505747126437
+      },
+      {
+        "accepted": 88,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.614180975059531,
+        "coverage": 0.24444444444444444,
+        "eligible": 360,
+        "invalid": 27,
+        "passes": false,
+        "predicted_risk_threshold": 0.3712095045414221,
+        "risk": 0.3068181818181818
+      },
+      {
+        "accepted": 89,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": false,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.64,
+        "coverage": 0.24722222222222223,
+        "eligible": 360,
+        "invalid": 28,
+        "passes": false,
+        "predicted_risk_threshold": 0.37370454919293195,
+        "risk": 0.3146067415730337
+      },
+      {
+        "accepted": 90,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.65,
+        "coverage": 0.25,
+        "eligible": 360,
+        "invalid": 28,
+        "passes": false,
+        "predicted_risk_threshold": 0.3738025723133057,
+        "risk": 0.3111111111111111
+      },
+      {
+        "accepted": 91,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6309523809523809,
+        "coverage": 0.25277777777777777,
+        "eligible": 360,
+        "invalid": 29,
+        "passes": false,
+        "predicted_risk_threshold": 0.3772926049778225,
+        "risk": 0.31868131868131866
+      },
+      {
+        "accepted": 92,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6060606060606061,
+        "coverage": 0.25555555555555554,
+        "eligible": 360,
+        "invalid": 29,
+        "passes": false,
+        "predicted_risk_threshold": 0.3782414644272115,
+        "risk": 0.31521739130434784
+      },
+      {
+        "accepted": 93,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6463414634146342,
+        "coverage": 0.25833333333333336,
+        "eligible": 360,
+        "invalid": 29,
+        "passes": false,
+        "predicted_risk_threshold": 0.3805487604030356,
+        "risk": 0.3118279569892473
+      },
+      {
+        "accepted": 94,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6210526315789474,
+        "coverage": 0.2611111111111111,
+        "eligible": 360,
+        "invalid": 29,
+        "passes": false,
+        "predicted_risk_threshold": 0.38255757722624506,
+        "risk": 0.30851063829787234
+      },
+      {
+        "accepted": 95,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6145833333333334,
+        "coverage": 0.2638888888888889,
+        "eligible": 360,
+        "invalid": 29,
+        "passes": false,
+        "predicted_risk_threshold": 0.3865219528804379,
+        "risk": 0.30526315789473685
+      },
+      {
+        "accepted": 96,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6111111111111112,
+        "coverage": 0.26666666666666666,
+        "eligible": 360,
+        "invalid": 30,
+        "passes": false,
+        "predicted_risk_threshold": 0.3867056769407427,
+        "risk": 0.3125
+      },
+      {
+        "accepted": 97,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5978260869565217,
+        "coverage": 0.26944444444444443,
+        "eligible": 360,
+        "invalid": 30,
+        "passes": false,
+        "predicted_risk_threshold": 0.3870240008267898,
+        "risk": 0.30927835051546393
+      },
+      {
+        "accepted": 98,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6021505376344086,
+        "coverage": 0.2722222222222222,
+        "eligible": 360,
+        "invalid": 31,
+        "passes": false,
+        "predicted_risk_threshold": 0.38826636904915585,
+        "risk": 0.3163265306122449
+      },
+      {
+        "accepted": 99,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5771585557299841,
+        "coverage": 0.275,
+        "eligible": 360,
+        "invalid": 31,
+        "passes": false,
+        "predicted_risk_threshold": 0.39047096468542963,
+        "risk": 0.31313131313131315
+      },
+      {
+        "accepted": 100,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6224489795918368,
+        "coverage": 0.2777777777777778,
+        "eligible": 360,
+        "invalid": 31,
+        "passes": false,
+        "predicted_risk_threshold": 0.39118474428514277,
+        "risk": 0.31
+      },
+      {
+        "accepted": 101,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5980392156862745,
+        "coverage": 0.28055555555555556,
+        "eligible": 360,
+        "invalid": 31,
+        "passes": false,
+        "predicted_risk_threshold": 0.39224072492697026,
+        "risk": 0.3069306930693069
+      },
+      {
+        "accepted": 102,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5980392156862745,
+        "coverage": 0.2833333333333333,
+        "eligible": 360,
+        "invalid": 31,
+        "passes": false,
+        "predicted_risk_threshold": 0.39270015745608156,
+        "risk": 0.30392156862745096
+      },
+      {
+        "accepted": 103,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6222222222222222,
+        "coverage": 0.2861111111111111,
+        "eligible": 360,
+        "invalid": 31,
+        "passes": false,
+        "predicted_risk_threshold": 0.39579423176603634,
+        "risk": 0.30097087378640774
+      },
+      {
+        "accepted": 104,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6036036036036037,
+        "coverage": 0.28888888888888886,
+        "eligible": 360,
+        "invalid": 32,
+        "passes": false,
+        "predicted_risk_threshold": 0.3961044085760148,
+        "risk": 0.3076923076923077
+      },
+      {
+        "accepted": 105,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6,
+        "coverage": 0.2916666666666667,
+        "eligible": 360,
+        "invalid": 32,
+        "passes": false,
+        "predicted_risk_threshold": 0.40018813801930553,
+        "risk": 0.3047619047619048
+      },
+      {
+        "accepted": 106,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6019417475728155,
+        "coverage": 0.29444444444444445,
+        "eligible": 360,
+        "invalid": 32,
+        "passes": false,
+        "predicted_risk_threshold": 0.40124011360312767,
+        "risk": 0.3018867924528302
+      },
+      {
+        "accepted": 107,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6,
+        "coverage": 0.2972222222222222,
+        "eligible": 360,
+        "invalid": 32,
+        "passes": false,
+        "predicted_risk_threshold": 0.40204933629743955,
+        "risk": 0.29906542056074764
+      },
+      {
+        "accepted": 108,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5876288659793815,
+        "coverage": 0.3,
+        "eligible": 360,
+        "invalid": 32,
+        "passes": false,
+        "predicted_risk_threshold": 0.4027432630459314,
+        "risk": 0.2962962962962963
+      },
+      {
+        "accepted": 109,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5842696629213483,
+        "coverage": 0.30277777777777776,
+        "eligible": 360,
+        "invalid": 32,
+        "passes": false,
+        "predicted_risk_threshold": 0.406623140698287,
+        "risk": 0.29357798165137616
+      },
+      {
+        "accepted": 110,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.59,
+        "coverage": 0.3055555555555556,
+        "eligible": 360,
+        "invalid": 33,
+        "passes": false,
+        "predicted_risk_threshold": 0.4071002486562774,
+        "risk": 0.3
+      },
+      {
+        "accepted": 111,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5960723304473303,
+        "coverage": 0.30833333333333335,
+        "eligible": 360,
+        "invalid": 33,
+        "passes": false,
+        "predicted_risk_threshold": 0.4081558820378213,
+        "risk": 0.2972972972972973
+      },
+      {
+        "accepted": 112,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5780041374347904,
+        "coverage": 0.3111111111111111,
+        "eligible": 360,
+        "invalid": 33,
+        "passes": false,
+        "predicted_risk_threshold": 0.4088820111123078,
+        "risk": 0.29464285714285715
+      },
+      {
+        "accepted": 113,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5833745874587458,
+        "coverage": 0.3138888888888889,
+        "eligible": 360,
+        "invalid": 33,
+        "passes": false,
+        "predicted_risk_threshold": 0.4096987315429745,
+        "risk": 0.2920353982300885
+      },
+      {
+        "accepted": 114,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5729702194357364,
+        "coverage": 0.31666666666666665,
+        "eligible": 360,
+        "invalid": 33,
+        "passes": false,
+        "predicted_risk_threshold": 0.4116222367015124,
+        "risk": 0.2894736842105263
+      },
+      {
+        "accepted": 115,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5566037735849056,
+        "coverage": 0.3194444444444444,
+        "eligible": 360,
+        "invalid": 33,
+        "passes": false,
+        "predicted_risk_threshold": 0.41417579085271217,
+        "risk": 0.28695652173913044
+      },
+      {
+        "accepted": 116,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5544082125603864,
+        "coverage": 0.32222222222222224,
+        "eligible": 360,
+        "invalid": 33,
+        "passes": false,
+        "predicted_risk_threshold": 0.4150058021686821,
+        "risk": 0.28448275862068967
+      },
+      {
+        "accepted": 117,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5566037735849056,
+        "coverage": 0.325,
+        "eligible": 360,
+        "invalid": 33,
+        "passes": false,
+        "predicted_risk_threshold": 0.4156402578819375,
+        "risk": 0.28205128205128205
+      },
+      {
+        "accepted": 118,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5576923076923077,
+        "coverage": 0.3277777777777778,
+        "eligible": 360,
+        "invalid": 34,
+        "passes": false,
+        "predicted_risk_threshold": 0.41597821209483354,
+        "risk": 0.288135593220339
+      },
+      {
+        "accepted": 119,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5728519710378116,
+        "coverage": 0.33055555555555555,
+        "eligible": 360,
+        "invalid": 35,
+        "passes": false,
+        "predicted_risk_threshold": 0.41778610165735075,
+        "risk": 0.29411764705882354
+      },
+      {
+        "accepted": 120,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5652510953825413,
+        "coverage": 0.3333333333333333,
+        "eligible": 360,
+        "invalid": 35,
+        "passes": false,
+        "predicted_risk_threshold": 0.41828339226565636,
+        "risk": 0.2916666666666667
+      },
+      {
+        "accepted": 121,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5597282992237119,
+        "coverage": 0.33611111111111114,
+        "eligible": 360,
+        "invalid": 35,
+        "passes": false,
+        "predicted_risk_threshold": 0.44099008846473,
+        "risk": 0.2892561983471074
+      },
+      {
+        "accepted": 122,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5565217391304348,
+        "coverage": 0.3388888888888889,
+        "eligible": 360,
+        "invalid": 36,
+        "passes": false,
+        "predicted_risk_threshold": 0.44135379094470983,
+        "risk": 0.29508196721311475
+      },
+      {
+        "accepted": 123,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5524619172180334,
+        "coverage": 0.3416666666666667,
+        "eligible": 360,
+        "invalid": 37,
+        "passes": false,
+        "predicted_risk_threshold": 0.4441069094064108,
+        "risk": 0.3008130081300813
+      },
+      {
+        "accepted": 124,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5441176470588235,
+        "coverage": 0.34444444444444444,
+        "eligible": 360,
+        "invalid": 37,
+        "passes": false,
+        "predicted_risk_threshold": 0.45058803186293045,
+        "risk": 0.29838709677419356
+      },
+      {
+        "accepted": 125,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5454545454545454,
+        "coverage": 0.3472222222222222,
+        "eligible": 360,
+        "invalid": 37,
+        "passes": false,
+        "predicted_risk_threshold": 0.45341072827150797,
+        "risk": 0.296
+      },
+      {
+        "accepted": 126,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5423728813559322,
+        "coverage": 0.35,
+        "eligible": 360,
+        "invalid": 38,
+        "passes": false,
+        "predicted_risk_threshold": 0.4542607336955431,
+        "risk": 0.30158730158730157
+      },
+      {
+        "accepted": 128,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5119047619047619,
+        "coverage": 0.35555555555555557,
+        "eligible": 360,
+        "invalid": 38,
+        "passes": false,
+        "predicted_risk_threshold": 0.45701278765760456,
+        "risk": 0.296875
+      },
+      {
+        "accepted": 129,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5317460317460317,
+        "coverage": 0.35833333333333334,
+        "eligible": 360,
+        "invalid": 39,
+        "passes": false,
+        "predicted_risk_threshold": 0.4616021748167651,
+        "risk": 0.3023255813953488
+      },
+      {
+        "accepted": 130,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5267175572519084,
+        "coverage": 0.3611111111111111,
+        "eligible": 360,
+        "invalid": 40,
+        "passes": false,
+        "predicted_risk_threshold": 0.46191580533515686,
+        "risk": 0.3076923076923077
+      },
+      {
+        "accepted": 131,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5185185185185185,
+        "coverage": 0.3638888888888889,
+        "eligible": 360,
+        "invalid": 40,
+        "passes": false,
+        "predicted_risk_threshold": 0.471519459406354,
+        "risk": 0.3053435114503817
+      },
+      {
+        "accepted": 132,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5272727272727272,
+        "coverage": 0.36666666666666664,
+        "eligible": 360,
+        "invalid": 41,
+        "passes": false,
+        "predicted_risk_threshold": 0.4834481135893826,
+        "risk": 0.3106060606060606
+      },
+      {
+        "accepted": 134,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5196850393700787,
+        "coverage": 0.37222222222222223,
+        "eligible": 360,
+        "invalid": 43,
+        "passes": false,
+        "predicted_risk_threshold": 0.4859673980459318,
+        "risk": 0.3208955223880597
+      },
+      {
+        "accepted": 135,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5413533834586466,
+        "coverage": 0.375,
+        "eligible": 360,
+        "invalid": 44,
+        "passes": false,
+        "predicted_risk_threshold": 0.48737374901546116,
+        "risk": 0.32592592592592595
+      },
+      {
+        "accepted": 136,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5174297305128946,
+        "coverage": 0.37777777777777777,
+        "eligible": 360,
+        "invalid": 44,
+        "passes": false,
+        "predicted_risk_threshold": 0.4878962765875965,
+        "risk": 0.3235294117647059
+      },
+      {
+        "accepted": 137,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5157894736842106,
+        "coverage": 0.38055555555555554,
+        "eligible": 360,
+        "invalid": 45,
+        "passes": false,
+        "predicted_risk_threshold": 0.4892576476994435,
+        "risk": 0.3284671532846715
+      },
+      {
+        "accepted": 138,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5193798449612403,
+        "coverage": 0.38333333333333336,
+        "eligible": 360,
+        "invalid": 45,
+        "passes": false,
+        "predicted_risk_threshold": 0.4924451818365406,
+        "risk": 0.32608695652173914
+      },
+      {
+        "accepted": 139,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5230769230769231,
+        "coverage": 0.3861111111111111,
+        "eligible": 360,
+        "invalid": 46,
+        "passes": false,
+        "predicted_risk_threshold": 0.49335444238321513,
+        "risk": 0.33093525179856115
+      },
+      {
+        "accepted": 140,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5198214285714285,
+        "coverage": 0.3888888888888889,
+        "eligible": 360,
+        "invalid": 47,
+        "passes": false,
+        "predicted_risk_threshold": 0.5026302697758068,
+        "risk": 0.3357142857142857
+      },
+      {
+        "accepted": 141,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5242718446601942,
+        "coverage": 0.39166666666666666,
+        "eligible": 360,
+        "invalid": 47,
+        "passes": false,
+        "predicted_risk_threshold": 0.5096717263258959,
+        "risk": 0.3333333333333333
+      },
+      {
+        "accepted": 142,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.525,
+        "coverage": 0.39444444444444443,
+        "eligible": 360,
+        "invalid": 47,
+        "passes": false,
+        "predicted_risk_threshold": 0.5121980207415998,
+        "risk": 0.33098591549295775
+      },
+      {
+        "accepted": 143,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5136986301369864,
+        "coverage": 0.3972222222222222,
+        "eligible": 360,
+        "invalid": 47,
+        "passes": false,
+        "predicted_risk_threshold": 0.518433574706438,
+        "risk": 0.32867132867132864
+      },
+      {
+        "accepted": 144,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.518554131054131,
+        "coverage": 0.4,
+        "eligible": 360,
+        "invalid": 48,
+        "passes": false,
+        "predicted_risk_threshold": 0.5211333452244999,
+        "risk": 0.3333333333333333
+      },
+      {
+        "accepted": 145,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5172413793103449,
+        "coverage": 0.4027777777777778,
+        "eligible": 360,
+        "invalid": 49,
+        "passes": false,
+        "predicted_risk_threshold": 0.5255550695910589,
+        "risk": 0.33793103448275863
+      },
+      {
+        "accepted": 146,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5245443580809434,
+        "coverage": 0.40555555555555556,
+        "eligible": 360,
+        "invalid": 50,
+        "passes": false,
+        "predicted_risk_threshold": 0.5292819328933097,
+        "risk": 0.3424657534246575
+      },
+      {
+        "accepted": 147,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5158730158730159,
+        "coverage": 0.4083333333333333,
+        "eligible": 360,
+        "invalid": 50,
+        "passes": false,
+        "predicted_risk_threshold": 0.5304923025232995,
+        "risk": 0.3401360544217687
+      },
+      {
+        "accepted": 148,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5333333333333333,
+        "coverage": 0.4111111111111111,
+        "eligible": 360,
+        "invalid": 51,
+        "passes": false,
+        "predicted_risk_threshold": 0.5364649767583994,
+        "risk": 0.34459459459459457
+      },
+      {
+        "accepted": 149,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.526595744680851,
+        "coverage": 0.41388888888888886,
+        "eligible": 360,
+        "invalid": 52,
+        "passes": false,
+        "predicted_risk_threshold": 0.538093111848626,
+        "risk": 0.348993288590604
+      },
+      {
+        "accepted": 151,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5370370370370371,
+        "coverage": 0.41944444444444445,
+        "eligible": 360,
+        "invalid": 54,
+        "passes": false,
+        "predicted_risk_threshold": 0.5401780250399426,
+        "risk": 0.3576158940397351
+      },
+      {
+        "accepted": 152,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5329675572519084,
+        "coverage": 0.4222222222222222,
+        "eligible": 360,
+        "invalid": 55,
+        "passes": false,
+        "predicted_risk_threshold": 0.5453807675378846,
+        "risk": 0.3618421052631579
+      },
+      {
+        "accepted": 153,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5419354838709678,
+        "coverage": 0.425,
+        "eligible": 360,
+        "invalid": 55,
+        "passes": false,
+        "predicted_risk_threshold": 0.5481058526764491,
+        "risk": 0.35947712418300654
+      },
+      {
+        "accepted": 154,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5378787878787878,
+        "coverage": 0.42777777777777776,
+        "eligible": 360,
+        "invalid": 56,
+        "passes": false,
+        "predicted_risk_threshold": 0.5512087901723971,
+        "risk": 0.36363636363636365
+      },
+      {
+        "accepted": 155,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5477707006369427,
+        "coverage": 0.4305555555555556,
+        "eligible": 360,
+        "invalid": 57,
+        "passes": false,
+        "predicted_risk_threshold": 0.5541617698385731,
+        "risk": 0.36774193548387096
+      },
+      {
+        "accepted": 156,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5534591194968553,
+        "coverage": 0.43333333333333335,
+        "eligible": 360,
+        "invalid": 58,
+        "passes": false,
+        "predicted_risk_threshold": 0.5602521374090383,
+        "risk": 0.3717948717948718
+      },
+      {
+        "accepted": 157,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5566235801018409,
+        "coverage": 0.4361111111111111,
+        "eligible": 360,
+        "invalid": 59,
+        "passes": false,
+        "predicted_risk_threshold": 0.5650349523786601,
+        "risk": 0.37579617834394907
+      },
+      {
+        "accepted": 158,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5614035087719298,
+        "coverage": 0.4388888888888889,
+        "eligible": 360,
+        "invalid": 60,
+        "passes": false,
+        "predicted_risk_threshold": 0.5826143806261805,
+        "risk": 0.379746835443038
+      },
+      {
+        "accepted": 159,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5443786982248521,
+        "coverage": 0.44166666666666665,
+        "eligible": 360,
+        "invalid": 60,
+        "passes": false,
+        "predicted_risk_threshold": 0.5863295236682753,
+        "risk": 0.37735849056603776
+      },
+      {
+        "accepted": 160,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.546583850931677,
+        "coverage": 0.4444444444444444,
+        "eligible": 360,
+        "invalid": 61,
+        "passes": false,
+        "predicted_risk_threshold": 0.5904695398469746,
+        "risk": 0.38125
+      },
+      {
+        "accepted": 161,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5548780487804879,
+        "coverage": 0.44722222222222224,
+        "eligible": 360,
+        "invalid": 62,
+        "passes": false,
+        "predicted_risk_threshold": 0.6056285763595164,
+        "risk": 0.38509316770186336
+      },
+      {
+        "accepted": 162,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5463917525773195,
+        "coverage": 0.45,
+        "eligible": 360,
+        "invalid": 62,
+        "passes": false,
+        "predicted_risk_threshold": 0.6106738801644103,
+        "risk": 0.38271604938271603
+      },
+      {
+        "accepted": 163,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5471383491114432,
+        "coverage": 0.4527777777777778,
+        "eligible": 360,
+        "invalid": 62,
+        "passes": false,
+        "predicted_risk_threshold": 0.6174102457287296,
+        "risk": 0.3803680981595092
+      },
+      {
+        "accepted": 164,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5433526011560693,
+        "coverage": 0.45555555555555555,
+        "eligible": 360,
+        "invalid": 63,
+        "passes": false,
+        "predicted_risk_threshold": 0.6341518312259558,
+        "risk": 0.38414634146341464
+      },
+      {
+        "accepted": 165,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5472972972972973,
+        "coverage": 0.4583333333333333,
+        "eligible": 360,
+        "invalid": 64,
+        "passes": false,
+        "predicted_risk_threshold": 0.6348216438442478,
+        "risk": 0.3878787878787879
+      },
+      {
+        "accepted": 166,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5461307748392655,
+        "coverage": 0.46111111111111114,
+        "eligible": 360,
+        "invalid": 64,
+        "passes": false,
+        "predicted_risk_threshold": 0.6385713463675873,
+        "risk": 0.3855421686746988
+      },
+      {
+        "accepted": 167,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5487804878048781,
+        "coverage": 0.4638888888888889,
+        "eligible": 360,
+        "invalid": 65,
+        "passes": false,
+        "predicted_risk_threshold": 0.6446832760792471,
+        "risk": 0.38922155688622756
+      },
+      {
+        "accepted": 168,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5496222309159371,
+        "coverage": 0.4666666666666667,
+        "eligible": 360,
+        "invalid": 66,
+        "passes": false,
+        "predicted_risk_threshold": 0.6536345025680006,
+        "risk": 0.39285714285714285
+      },
+      {
+        "accepted": 169,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5475113122171946,
+        "coverage": 0.46944444444444444,
+        "eligible": 360,
+        "invalid": 67,
+        "passes": false,
+        "predicted_risk_threshold": 0.6569548357021837,
+        "risk": 0.39644970414201186
+      },
+      {
+        "accepted": 171,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5502958579881657,
+        "coverage": 0.475,
+        "eligible": 360,
+        "invalid": 69,
+        "passes": false,
+        "predicted_risk_threshold": 0.6636986699451215,
+        "risk": 0.40350877192982454
+      },
+      {
+        "accepted": 172,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5495049504950495,
+        "coverage": 0.4777777777777778,
+        "eligible": 360,
+        "invalid": 70,
+        "passes": false,
+        "predicted_risk_threshold": 0.6642009409881902,
+        "risk": 0.4069767441860465
+      },
+      {
+        "accepted": 173,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5529411764705883,
+        "coverage": 0.48055555555555557,
+        "eligible": 360,
+        "invalid": 71,
+        "passes": false,
+        "predicted_risk_threshold": 0.6645719561857355,
+        "risk": 0.41040462427745666
+      },
+      {
+        "accepted": 174,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5555555555555556,
+        "coverage": 0.48333333333333334,
+        "eligible": 360,
+        "invalid": 72,
+        "passes": false,
+        "predicted_risk_threshold": 0.6700457755039088,
+        "risk": 0.41379310344827586
+      },
+      {
+        "accepted": 175,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5590062111801242,
+        "coverage": 0.4861111111111111,
+        "eligible": 360,
+        "invalid": 73,
+        "passes": false,
+        "predicted_risk_threshold": 0.6722264940013509,
+        "risk": 0.41714285714285715
+      },
+      {
+        "accepted": 176,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5607201840273681,
+        "coverage": 0.4888888888888889,
+        "eligible": 360,
+        "invalid": 74,
+        "passes": false,
+        "predicted_risk_threshold": 0.6734751174068521,
+        "risk": 0.42045454545454547
+      },
+      {
+        "accepted": 178,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5670731707317073,
+        "coverage": 0.49444444444444446,
+        "eligible": 360,
+        "invalid": 76,
+        "passes": false,
+        "predicted_risk_threshold": 0.6800105333460799,
+        "risk": 0.42696629213483145
+      },
+      {
+        "accepted": 179,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5687203791469194,
+        "coverage": 0.49722222222222223,
+        "eligible": 360,
+        "invalid": 77,
+        "passes": false,
+        "predicted_risk_threshold": 0.6834105555848565,
+        "risk": 0.4301675977653631
+      },
+      {
+        "accepted": 221,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.66796875,
+        "coverage": 0.6138888888888889,
+        "eligible": 360,
+        "invalid": 119,
+        "passes": false,
+        "predicted_risk_threshold": 0.6836734693877551,
+        "risk": 0.5384615384615384
+      },
+      {
+        "accepted": 223,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.66796875,
+        "coverage": 0.6194444444444445,
+        "eligible": 360,
+        "invalid": 121,
+        "passes": false,
+        "predicted_risk_threshold": 0.7226460059623625,
+        "risk": 0.5426008968609866
+      },
+      {
+        "accepted": 224,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.668918918918919,
+        "coverage": 0.6222222222222222,
+        "eligible": 360,
+        "invalid": 122,
+        "passes": false,
+        "predicted_risk_threshold": 0.7288922007521357,
+        "risk": 0.5446428571428571
+      },
+      {
+        "accepted": 226,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.66796875,
+        "coverage": 0.6277777777777778,
+        "eligible": 360,
+        "invalid": 124,
+        "passes": false,
+        "predicted_risk_threshold": 0.7336768224852955,
+        "risk": 0.5486725663716814
+      },
+      {
+        "accepted": 227,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6696428571428571,
+        "coverage": 0.6305555555555555,
+        "eligible": 360,
+        "invalid": 125,
+        "passes": false,
+        "predicted_risk_threshold": 0.7613410169261259,
+        "risk": 0.5506607929515418
+      },
+      {
+        "accepted": 228,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6692307692307692,
+        "coverage": 0.6333333333333333,
+        "eligible": 360,
+        "invalid": 126,
+        "passes": false,
+        "predicted_risk_threshold": 0.7623410352153979,
+        "risk": 0.5526315789473685
+      },
+      {
+        "accepted": 276,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6646341463414634,
+        "coverage": 0.7666666666666667,
+        "eligible": 360,
+        "invalid": 161,
+        "passes": false,
+        "predicted_risk_threshold": 0.7789115646258503,
+        "risk": 0.5833333333333334
+      },
+      {
+        "accepted": 277,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6655405405405406,
+        "coverage": 0.7694444444444445,
+        "eligible": 360,
+        "invalid": 161,
+        "passes": false,
+        "predicted_risk_threshold": 0.808568379075487,
+        "risk": 0.5812274368231047
+      },
+      {
+        "accepted": 278,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6655405405405406,
+        "coverage": 0.7722222222222223,
+        "eligible": 360,
+        "invalid": 161,
+        "passes": false,
+        "predicted_risk_threshold": 0.8412504827080765,
+        "risk": 0.579136690647482
+      },
+      {
+        "accepted": 360,
+        "accepted_independent_groups": 6,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.6972222222222222,
+        "coverage": 1.0,
+        "eligible": 360,
+        "invalid": 213,
+        "passes": false,
+        "predicted_risk_threshold": 0.86054793792517,
+        "risk": 0.5916666666666667
+      }
+    ],
+    "maximum_cluster_bootstrap_risk_upper95": 0.25,
+    "minimum_coverage": 0.25,
+    "selected": null,
+    "selection_rule": "Highest cross-fitted coverage satisfying every predeclared development gate.",
+    "status": "no_operating_point",
+    "target_observed_risk": 0.1
+  },
+  "primary_endpoint_family": "tensor_coherence",
+  "primary_score": "full_contract",
+  "profile_content_sha256": "b0f1cdd290b1816798d296eacb9f1d6dd88c4f9a2fa0f6e60458e7042eb1be9c",
+  "schema_version": "nostos-validity-profile-development-audit/1.0",
+  "status": "no_operating_point"
+}

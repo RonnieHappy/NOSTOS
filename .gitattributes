@@ -1,0 +1,4 @@
+# The public scientific snapshot is byte-addressed: frozen locks may reference
+# source, documentation, figures, configs, manifests, or evidence receipts.
+# Preserve every committed byte on every operating system.
+* -text

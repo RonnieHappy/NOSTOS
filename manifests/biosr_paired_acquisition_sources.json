@@ -1,0 +1,83 @@
+{
+  "schema_version": "nostos-public-source-manifest/1.0",
+  "record": {
+    "title": "BioSR: a biological image dataset for super-resolution microscopy",
+    "doi": "10.6084/m9.figshare.13264793.v9",
+    "record_url": "https://figshare.com/articles/dataset/BioSR/13264793",
+    "version": 9,
+    "posted": "2024-01-02",
+    "license": "CC BY 4.0",
+    "total_bytes": 12479559462
+  },
+  "files": [
+    {
+      "name": "CCPs.zip",
+      "figshare_file_id": 25714583,
+      "download_url": "https://ndownloader.figshare.com/files/25714583",
+      "bytes": 1176569302,
+      "md5": "41771b9fd0a7c9fd939bdb71b106fa6e",
+      "role": "development"
+    },
+    {
+      "name": "ER.zip",
+      "figshare_file_id": 25714658,
+      "download_url": "https://ndownloader.figshare.com/files/25714658",
+      "bytes": 2956077632,
+      "md5": "2bd05c7dba69a10b36a141407927d585",
+      "role": "development"
+    },
+    {
+      "name": "Microtubules.zip",
+      "figshare_file_id": 25714514,
+      "download_url": "https://ndownloader.figshare.com/files/25714514",
+      "bytes": 1633356198,
+      "md5": "df983755a1b45d512b000475e3072fc7",
+      "role": "confirmation_internal"
+    },
+    {
+      "name": "F-actin.zip",
+      "figshare_file_id": 25944599,
+      "download_url": "https://ndownloader.figshare.com/files/25944599",
+      "bytes": 2233338886,
+      "md5": "80fafab68f26fb71de12be0141face74",
+      "role": "confirmation_internal"
+    },
+    {
+      "name": "F-actin_Nonlinear.zip",
+      "figshare_file_id": 25714772,
+      "download_url": "https://ndownloader.figshare.com/files/25714772",
+      "bytes": 4480187050,
+      "md5": "b2884114e5fb034b9261855b3c8dbf77",
+      "role": "confirmation_resolution_stress"
+    },
+    {
+      "name": "Supplementary Files for BioSR.zip",
+      "figshare_file_id": 43867986,
+      "download_url": "https://ndownloader.figshare.com/files/43867986",
+      "bytes": 19792,
+      "md5": "5136d6396458de71bcfac1b1129c6d0b",
+      "role": "metadata_only_opened_before_lock"
+    },
+    {
+      "name": "DataSet of rDL-SRM (Zenodo Link).xlsx",
+      "figshare_file_id": 37713465,
+      "download_url": "https://ndownloader.figshare.com/files/37713465",
+      "bytes": 10602,
+      "md5": "1a50d98a62cc880af6d39465f49f6bd5",
+      "role": "not_required"
+    }
+  ],
+  "metadata_observed_before_lock": {
+    "workbook": "Supplementary Files for BioSR/imaging_conditions.xlsx",
+    "excitation_wavelength_nm": 488,
+    "reference_pixel_size_nm": 62.6,
+    "upscaling_factor_by_structure": {
+      "CCPs": 2,
+      "ER": 2,
+      "Microtubules": 2,
+      "F-actin_linear": 2,
+      "F-actin_nonlinear": 3
+    }
+  },
+  "confirmation_archives_opened_before_protocol_lock": false
+}

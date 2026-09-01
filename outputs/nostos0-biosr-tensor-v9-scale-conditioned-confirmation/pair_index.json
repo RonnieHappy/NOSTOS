@@ -1,0 +1,550 @@
+{
+  "schema_version": "nostos-biosr-v9-pair-index/1.0",
+  "selection_status": "locked_before_selected_cell_pixel_decode",
+  "records": [
+    {
+      "structure": "F-actin_linear",
+      "cell_id": "Cell_018",
+      "signal_level": 1,
+      "pair_id": "F-actin_linear|Cell_018|level_01",
+      "reference_group_id": "F-actin_linear|Cell_018",
+      "input_member": "F-actin/Cell_018/RawSIMData_level_01.mrc",
+      "reference_member": "F-actin/Cell_018/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252008497715,
+        31.4252008497715
+      ],
+      "archive_layout": "flat_shared_reference_linear"
+    },
+    {
+      "structure": "F-actin_linear",
+      "cell_id": "Cell_018",
+      "signal_level": 12,
+      "pair_id": "F-actin_linear|Cell_018|level_12",
+      "reference_group_id": "F-actin_linear|Cell_018",
+      "input_member": "F-actin/Cell_018/RawSIMData_level_12.mrc",
+      "reference_member": "F-actin/Cell_018/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252008497715,
+        31.4252008497715
+      ],
+      "archive_layout": "flat_shared_reference_linear"
+    },
+    {
+      "structure": "F-actin_linear",
+      "cell_id": "Cell_024",
+      "signal_level": 1,
+      "pair_id": "F-actin_linear|Cell_024|level_01",
+      "reference_group_id": "F-actin_linear|Cell_024",
+      "input_member": "F-actin/Cell_024/RawSIMData_level_01.mrc",
+      "reference_member": "F-actin/Cell_024/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        758,
+        758
+      ],
+      "reference_shape_yx": [
+        1516,
+        1516
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        47.45080128312111,
+        47.45080128312111
+      ],
+      "archive_layout": "flat_shared_reference_linear"
+    },
+    {
+      "structure": "F-actin_linear",
+      "cell_id": "Cell_024",
+      "signal_level": 12,
+      "pair_id": "F-actin_linear|Cell_024|level_12",
+      "reference_group_id": "F-actin_linear|Cell_024",
+      "input_member": "F-actin/Cell_024/RawSIMData_level_12.mrc",
+      "reference_member": "F-actin/Cell_024/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        758,
+        758
+      ],
+      "reference_shape_yx": [
+        1516,
+        1516
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        47.45080128312111,
+        47.45080128312111
+      ],
+      "archive_layout": "flat_shared_reference_linear"
+    },
+    {
+      "structure": "F-actin_linear",
+      "cell_id": "Cell_035",
+      "signal_level": 1,
+      "pair_id": "F-actin_linear|Cell_035|level_01",
+      "reference_group_id": "F-actin_linear|Cell_035",
+      "input_member": "F-actin/Cell_035/RawSIMData_level_01.mrc",
+      "reference_member": "F-actin/Cell_035/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252008497715,
+        31.4252008497715
+      ],
+      "archive_layout": "flat_shared_reference_linear"
+    },
+    {
+      "structure": "F-actin_linear",
+      "cell_id": "Cell_035",
+      "signal_level": 12,
+      "pair_id": "F-actin_linear|Cell_035|level_12",
+      "reference_group_id": "F-actin_linear|Cell_035",
+      "input_member": "F-actin/Cell_035/RawSIMData_level_12.mrc",
+      "reference_member": "F-actin/Cell_035/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252008497715,
+        31.4252008497715
+      ],
+      "archive_layout": "flat_shared_reference_linear"
+    },
+    {
+      "structure": "F-actin_linear",
+      "cell_id": "Cell_039",
+      "signal_level": 1,
+      "pair_id": "F-actin_linear|Cell_039|level_01",
+      "reference_group_id": "F-actin_linear|Cell_039",
+      "input_member": "F-actin/Cell_039/RawSIMData_level_01.mrc",
+      "reference_member": "F-actin/Cell_039/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252008497715,
+        31.4252008497715
+      ],
+      "archive_layout": "flat_shared_reference_linear"
+    },
+    {
+      "structure": "F-actin_linear",
+      "cell_id": "Cell_039",
+      "signal_level": 12,
+      "pair_id": "F-actin_linear|Cell_039|level_12",
+      "reference_group_id": "F-actin_linear|Cell_039",
+      "input_member": "F-actin/Cell_039/RawSIMData_level_12.mrc",
+      "reference_member": "F-actin/Cell_039/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252008497715,
+        31.4252008497715
+      ],
+      "archive_layout": "flat_shared_reference_linear"
+    },
+    {
+      "structure": "F-actin_nonlinear",
+      "cell_id": "Cell_011",
+      "signal_level": 1,
+      "pair_id": "F-actin_nonlinear|Cell_011|level_01",
+      "reference_group_id": "F-actin_nonlinear|Cell_011",
+      "input_member": "F-actin_Nonlinear/Cell_011/RawSIMData_level_01.mrc",
+      "reference_member": "F-actin_Nonlinear/Cell_011/SIM_gt_a.mrc",
+      "input_frames": 25,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1506,
+        1506
+      ],
+      "input_grid_spacing_um": 0.0604,
+      "effective_input_spacing_um": 0.0604,
+      "reference_spacing_um": 0.020133333333333333,
+      "input_header_spacing_yx_um": [
+        0.06040000170469284,
+        0.06040000170469284
+      ],
+      "reference_header_spacing_yx_um": [
+        0.020133333280682564,
+        0.020133333280682564
+      ],
+      "physical_field_of_view_yx_um": [
+        30.320800855755806,
+        30.320800855755806
+      ],
+      "archive_layout": "flat_shared_reference_nonlinear_primary_a"
+    },
+    {
+      "structure": "F-actin_nonlinear",
+      "cell_id": "Cell_011",
+      "signal_level": 9,
+      "pair_id": "F-actin_nonlinear|Cell_011|level_09",
+      "reference_group_id": "F-actin_nonlinear|Cell_011",
+      "input_member": "F-actin_Nonlinear/Cell_011/RawSIMData_level_09.mrc",
+      "reference_member": "F-actin_Nonlinear/Cell_011/SIM_gt_a.mrc",
+      "input_frames": 25,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1506,
+        1506
+      ],
+      "input_grid_spacing_um": 0.0604,
+      "effective_input_spacing_um": 0.0604,
+      "reference_spacing_um": 0.020133333333333333,
+      "input_header_spacing_yx_um": [
+        0.06040000170469284,
+        0.06040000170469284
+      ],
+      "reference_header_spacing_yx_um": [
+        0.020133333280682564,
+        0.020133333280682564
+      ],
+      "physical_field_of_view_yx_um": [
+        30.320800855755806,
+        30.320800855755806
+      ],
+      "archive_layout": "flat_shared_reference_nonlinear_primary_a"
+    },
+    {
+      "structure": "F-actin_nonlinear",
+      "cell_id": "Cell_016",
+      "signal_level": 1,
+      "pair_id": "F-actin_nonlinear|Cell_016|level_01",
+      "reference_group_id": "F-actin_nonlinear|Cell_016",
+      "input_member": "F-actin_Nonlinear/Cell_016/RawSIMData_level_01.mrc",
+      "reference_member": "F-actin_Nonlinear/Cell_016/SIM_gt_a.mrc",
+      "input_frames": 25,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1506,
+        1506
+      ],
+      "input_grid_spacing_um": 0.0604,
+      "effective_input_spacing_um": 0.0604,
+      "reference_spacing_um": 0.020133333333333333,
+      "input_header_spacing_yx_um": [
+        0.06040000170469284,
+        0.06040000170469284
+      ],
+      "reference_header_spacing_yx_um": [
+        0.020133333280682564,
+        0.020133333280682564
+      ],
+      "physical_field_of_view_yx_um": [
+        30.320800855755806,
+        30.320800855755806
+      ],
+      "archive_layout": "flat_shared_reference_nonlinear_primary_a"
+    },
+    {
+      "structure": "F-actin_nonlinear",
+      "cell_id": "Cell_016",
+      "signal_level": 9,
+      "pair_id": "F-actin_nonlinear|Cell_016|level_09",
+      "reference_group_id": "F-actin_nonlinear|Cell_016",
+      "input_member": "F-actin_Nonlinear/Cell_016/RawSIMData_level_09.mrc",
+      "reference_member": "F-actin_Nonlinear/Cell_016/SIM_gt_a.mrc",
+      "input_frames": 25,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1506,
+        1506
+      ],
+      "input_grid_spacing_um": 0.0604,
+      "effective_input_spacing_um": 0.0604,
+      "reference_spacing_um": 0.020133333333333333,
+      "input_header_spacing_yx_um": [
+        0.06040000170469284,
+        0.06040000170469284
+      ],
+      "reference_header_spacing_yx_um": [
+        0.020133333280682564,
+        0.020133333280682564
+      ],
+      "physical_field_of_view_yx_um": [
+        30.320800855755806,
+        30.320800855755806
+      ],
+      "archive_layout": "flat_shared_reference_nonlinear_primary_a"
+    },
+    {
+      "structure": "F-actin_nonlinear",
+      "cell_id": "Cell_034",
+      "signal_level": 1,
+      "pair_id": "F-actin_nonlinear|Cell_034|level_01",
+      "reference_group_id": "F-actin_nonlinear|Cell_034",
+      "input_member": "F-actin_Nonlinear/Cell_034/RawSIMData_level_01.mrc",
+      "reference_member": "F-actin_Nonlinear/Cell_034/SIM_gt_a.mrc",
+      "input_frames": 25,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1506,
+        1506
+      ],
+      "input_grid_spacing_um": 0.0604,
+      "effective_input_spacing_um": 0.0604,
+      "reference_spacing_um": 0.020133333333333333,
+      "input_header_spacing_yx_um": [
+        0.06040000170469284,
+        0.06040000170469284
+      ],
+      "reference_header_spacing_yx_um": [
+        0.020133333280682564,
+        0.020133333280682564
+      ],
+      "physical_field_of_view_yx_um": [
+        30.320800855755806,
+        30.320800855755806
+      ],
+      "archive_layout": "flat_shared_reference_nonlinear_primary_a"
+    },
+    {
+      "structure": "F-actin_nonlinear",
+      "cell_id": "Cell_034",
+      "signal_level": 9,
+      "pair_id": "F-actin_nonlinear|Cell_034|level_09",
+      "reference_group_id": "F-actin_nonlinear|Cell_034",
+      "input_member": "F-actin_Nonlinear/Cell_034/RawSIMData_level_09.mrc",
+      "reference_member": "F-actin_Nonlinear/Cell_034/SIM_gt_a.mrc",
+      "input_frames": 25,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1506,
+        1506
+      ],
+      "input_grid_spacing_um": 0.0604,
+      "effective_input_spacing_um": 0.0604,
+      "reference_spacing_um": 0.020133333333333333,
+      "input_header_spacing_yx_um": [
+        0.06040000170469284,
+        0.06040000170469284
+      ],
+      "reference_header_spacing_yx_um": [
+        0.020133333280682564,
+        0.020133333280682564
+      ],
+      "physical_field_of_view_yx_um": [
+        30.320800855755806,
+        30.320800855755806
+      ],
+      "archive_layout": "flat_shared_reference_nonlinear_primary_a"
+    },
+    {
+      "structure": "F-actin_nonlinear",
+      "cell_id": "Cell_048",
+      "signal_level": 1,
+      "pair_id": "F-actin_nonlinear|Cell_048|level_01",
+      "reference_group_id": "F-actin_nonlinear|Cell_048",
+      "input_member": "F-actin_Nonlinear/Cell_048/RawSIMData_level_01.mrc",
+      "reference_member": "F-actin_Nonlinear/Cell_048/SIM_gt_a.mrc",
+      "input_frames": 25,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1506,
+        1506
+      ],
+      "input_grid_spacing_um": 0.0604,
+      "effective_input_spacing_um": 0.0604,
+      "reference_spacing_um": 0.020133333333333333,
+      "input_header_spacing_yx_um": [
+        0.06040000170469284,
+        0.06040000170469284
+      ],
+      "reference_header_spacing_yx_um": [
+        0.020133333280682564,
+        0.020133333280682564
+      ],
+      "physical_field_of_view_yx_um": [
+        30.320800855755806,
+        30.320800855755806
+      ],
+      "archive_layout": "flat_shared_reference_nonlinear_primary_a"
+    },
+    {
+      "structure": "F-actin_nonlinear",
+      "cell_id": "Cell_048",
+      "signal_level": 9,
+      "pair_id": "F-actin_nonlinear|Cell_048|level_09",
+      "reference_group_id": "F-actin_nonlinear|Cell_048",
+      "input_member": "F-actin_Nonlinear/Cell_048/RawSIMData_level_09.mrc",
+      "reference_member": "F-actin_Nonlinear/Cell_048/SIM_gt_a.mrc",
+      "input_frames": 25,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1506,
+        1506
+      ],
+      "input_grid_spacing_um": 0.0604,
+      "effective_input_spacing_um": 0.0604,
+      "reference_spacing_um": 0.020133333333333333,
+      "input_header_spacing_yx_um": [
+        0.06040000170469284,
+        0.06040000170469284
+      ],
+      "reference_header_spacing_yx_um": [
+        0.020133333280682564,
+        0.020133333280682564
+      ],
+      "physical_field_of_view_yx_um": [
+        30.320800855755806,
+        30.320800855755806
+      ],
+      "archive_layout": "flat_shared_reference_nonlinear_primary_a"
+    }
+  ]
+}

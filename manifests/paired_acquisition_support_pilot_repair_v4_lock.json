@@ -1,0 +1,55 @@
+{
+  "schema_version": "nostos-developmental-repair-lock/4.0",
+  "locked_at_utc": "2026-08-28T23:45:18Z",
+  "stage": "orientation_consensus_repair_before_version_4_rerun",
+  "historical_basis": {
+    "version_3_lock_sha256": "9f6066399524e092548d445e770463d33952de47dcbf6c4af9b429019d805392",
+    "version_3_smoke_receipt_sha256": "c27176eee8f697a85137937a4f5cc190ca945fb8db44e5f3c1fc8f8784cab9f7",
+    "version_3_smoke_endpoint_cases_sha256": "041809c408957e4a3cb9c009965e6fe5f59c78f37800669adee9b8d550c1f647"
+  },
+  "access_state": {
+    "selected_small_pilot": "one_CCP_field_observed_under_version_3",
+    "remaining_selected_pilot_fields": "not_observed_under_version_3_or_4",
+    "remaining_score_design_fields": "not_used_by_version_4_repair",
+    "threshold_calibration": "sealed",
+    "confirmation_archives": "not_downloaded_not_listed_not_decoded"
+  },
+  "files": [
+    {
+      "path": "configs/paired_acquisition_support_v4.locked.json",
+      "bytes": 4358,
+      "sha256": "0bc39001c80078778992e37fbf40ccc6e325dc8ead3cd388e1ef0d15a30a1f89"
+    },
+    {
+      "path": "docs/NOSTOS0_SMALL_PILOT_REPAIR_V4.md",
+      "bytes": 1500,
+      "sha256": "c5268b9a160f4e276e504cd1f155a3e6afe4efb8048884b97c4abbeea186fd0e"
+    },
+    {
+      "path": "docs/NOSTOS0_PILOT_REPAIR_V3_SMOKE_VERDICT.md",
+      "bytes": 1299,
+      "sha256": "38c850605d1d1691999b5a92253ce06cd7af274bc5b15bc91cf6200cbff37903"
+    },
+    {
+      "path": "src/nostos/features/spatial_fft.py",
+      "bytes": 7461,
+      "sha256": "2f18db7a1ded0e17ae091a53ddca0b44a37a5dbabd12ee1c61f2518deac23f68"
+    },
+    {
+      "path": "src/nostos/features/response_modules.py",
+      "bytes": 13184,
+      "sha256": "21902711c43675920380abb5762047d63911440cc78f35f14a5fc7d252191a85"
+    },
+    {
+      "path": "src/nostos/validation/paired_acquisition_support.py",
+      "bytes": 49846,
+      "sha256": "681f9b0e324c6688ffab78887d4661bb39fada49c033e2fb7934a29a3d99ae9c"
+    },
+    {
+      "path": "scripts/run_biosr_paired_support.py",
+      "bytes": 18954,
+      "sha256": "d9c250fcaf577625959b9d5a11ab329919558b8af1ed0f3caafa4674dfdd6b63"
+    }
+  ],
+  "prospective_statement": "Version 4 was frozen before any image was processed under version 4. It is a developmental rerun of previously selected score-design fields, not a confirmatory analysis."
+}

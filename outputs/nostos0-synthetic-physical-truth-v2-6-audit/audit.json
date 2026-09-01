@@ -1,0 +1,25 @@
+{
+  "audit": "nostos-synthetic-physical-truth-v2-6-independent-audit/1.0",
+  "checks": {
+    "case_counts": true,
+    "content_hash": true,
+    "development_hash": true,
+    "equivariance_metrics": true,
+    "evaluator_hash": true,
+    "hessian_metrics": true,
+    "implementation_hash": true,
+    "label_blind_hashes": true,
+    "metric_helper_hash": true,
+    "protocol_hash": true,
+    "repeat_byte_identical": true,
+    "scientific_status_is_pass": true,
+    "spatial_metrics": true,
+    "success_gates": true,
+    "unique_case_ids": true
+  },
+  "content_sha256": "d9932f3f4aee4a842cadd6fa0bbf563a2cef260b60d9ec5f7bd91aa1e54fac30",
+  "repeat_sha256": "f64b85c86f8e415526d2938618cdbda4974bad0094082c44713f52230f2001fc",
+  "source": "outputs/nostos0-synthetic-physical-truth-v2-6-confirmation/validation.json",
+  "source_sha256": "f64b85c86f8e415526d2938618cdbda4974bad0094082c44713f52230f2001fc",
+  "status": "pass"
+}

@@ -1,0 +1,49 @@
+{
+  "protocol_version": "nostos-uvpam-abstention/1.0",
+  "config_sha256": "43d711c7b1458ae2ea48de134e6ebfc8d6bc8bf07a432b259a803cc0b0fd087d",
+  "archive_sha256": "c16f2b18769b91faf612d47e7bed9270adba714f33913e8c9910c35ed28166ad",
+  "dataset_doi": "10.5281/zenodo.6345772",
+  "archive_uvpam_tiles": 70418,
+  "source_filename_groups": 6,
+  "sampled_tiles": 144,
+  "generic_pixel_descriptors_emitted": 125,
+  "summary": {
+    "always_emit": {
+      "tiles": 144,
+      "accepted": 144,
+      "coverage": 1.0,
+      "silent_invalid": 144,
+      "silent_invalid_risk": 1.0
+    },
+    "image_qc_only": {
+      "tiles": 144,
+      "accepted": 143,
+      "coverage": 0.9930555555555556,
+      "silent_invalid": 143,
+      "silent_invalid_risk": 1.0
+    },
+    "partial_no_calibration": {
+      "tiles": 144,
+      "accepted": 0,
+      "coverage": 0.0,
+      "silent_invalid": 0,
+      "silent_invalid_risk": null
+    },
+    "partial_no_semantics": {
+      "tiles": 144,
+      "accepted": 0,
+      "coverage": 0.0,
+      "silent_invalid": 0,
+      "silent_invalid_risk": null
+    },
+    "full_contract": {
+      "tiles": 144,
+      "accepted": 0,
+      "coverage": 0.0,
+      "silent_invalid": 0,
+      "silent_invalid_risk": null
+    }
+  },
+  "status": "pass",
+  "claim_boundary": "Calibration and semantic abstention on UV-PAM tiles; pixel-domain descriptors only, no physical or biological interpretation."
+}

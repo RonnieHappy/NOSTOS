@@ -1,0 +1,83 @@
+{
+  "protocol_version": "nostos-intraop-pshg-deployment/1.3",
+  "frozen_at_utc": "2026-08-29T00:00:03Z",
+  "study_role": "Outcome-informed engineering correction evaluated on a new hash-selected field set.",
+  "profile_path": "configs/intraop_pshg_orientation_profile_v1.locked.json",
+  "lineage": {
+    "v1_2_lock_path": "manifests/intraop_pshg_deployment_v1_2_lock.json",
+    "v1_2_lock_bytes": 24970,
+    "v1_2_lock_sha256": "c22999a14fedd560bf053283b4df3bedfbeedd3d33301fa66bd1b1bbdac49ee0",
+    "v1_2_result_path": "outputs/nostos0-intraop-pshg-deployment-v1_2/deployment_benchmark.json",
+    "v1_2_result_bytes": 9269,
+    "v1_2_result_sha256": "b53c83987f86dbe0e887c95f7dfb19c69a45716b6440b2b84cae0d5a40b39e92",
+    "v1_2_failure_path": "outputs/nostos0-intraop-pshg-deployment-v1_2/failure_receipt.json",
+    "v1_2_failure_bytes": 2925,
+    "v1_2_failure_sha256": "978c897bef239763317ca9717bfa1418820d863611822719f8b5eb76af744291"
+  },
+  "amendment": {
+    "changed_rules": [
+      "Production/validation equality is bounded by the declared float32 serialization precision rather than an impossible sub-float32 threshold.",
+      "Acquisition QC is calculated on the locked R2/SNR instrument-support domain rather than unsupported rectangular-field background."
+    ],
+    "unchanged": [
+      "input construction",
+      "orientation estimator",
+      "support thresholds",
+      "reference transform",
+      "latency and memory gates",
+      "accuracy gates",
+      "clinical withholding"
+    ],
+    "development_disclosure": "Both corrections were motivated by the fully evaluated v1.2 failure. V1.3 therefore uses a new field selection and is not described as an outcome-blind amendment."
+  },
+  "dataset": {
+    "doi": "10.17605/OSF.IO/UDTQP",
+    "subset": "breast tissue unstained / FSHG",
+    "manifest_relative_path": "download_manifest.json"
+  },
+  "selection": {
+    "salt": "NOSTOS-intraop-pshg-deployment-v1.3-2026-08-29",
+    "rule": "Exclude the eight v1/v1.2 deployment fields, rank remaining ROI directory names by SHA-256(salt|roi), and select the first eight before decoding any v1.3 pixels.",
+    "selected_rois": [
+      "breast_39",
+      "breast_34",
+      "breast_19",
+      "breast_12",
+      "breast_1",
+      "breast_16",
+      "breast_37",
+      "breast_4"
+    ],
+    "selection_sha256": [
+      "0c900083e80c96f607a6e88e36d4e76e4109afd49046138f3fdd8a1a1bc16df2",
+      "0ffe2081b6d47a6225c05ff273b8ef08d26c23bf23e101279c6afcd0feb0a057",
+      "156a3ff00159ee161fc89614002876f6b16cf465f716e0cf06c7f60258fa8093",
+      "20de21d5e4575cde48b43c4f940ad891ee97b8de2cc06432ee9655342323b946",
+      "21a8ca651d6a1ffd9fcb6a21f5993b117ec0152d1fed405b33f0a04eab2ca643",
+      "2469b849946a285a158dd8af9f3d5c18d0950fea75c7af9cea07619f44b6ebd0",
+      "2944b1ba7229a37f05172e0800bf1b3bcb5b98c987e588e9f4127ef7c296f149",
+      "31702c0ea94d4fcb55f0a4505ac419d5cb01525a5cd31e2a658312496bd56f64"
+    ]
+  },
+  "serialization_contract": {
+    "orientation_dtype": "float32",
+    "coherence_dtype": "float32",
+    "maximum_orientation_difference_degrees": 0.0000152587890625,
+    "maximum_coherence_difference": 0.00000011920928955078125,
+    "derivation": "One IEEE-754 float32 spacing at 180 degrees and at unit coherence, respectively."
+  },
+  "gates": {
+    "required_completed_rois": 8,
+    "maximum_production_validation_map_difference_degrees": 0.0000152587890625,
+    "maximum_production_validation_coherence_difference": 0.00000011920928955078125,
+    "maximum_pooled_median_reference_error_degrees": 15.0,
+    "maximum_worst_roi_median_reference_error_degrees": 15.0,
+    "maximum_p95_analysis_seconds": 2.0,
+    "maximum_p95_end_to_end_seconds": 5.0,
+    "maximum_peak_python_memory_mb": 512.0,
+    "require_deterministic_map_hashes": true,
+    "require_profile_and_source_hash_verification": true,
+    "require_clinical_decision_withheld": true
+  },
+  "claim_boundary": "A pass establishes deterministic, bounded-latency production of the already-confirmed PSHG local-orientation endpoint on eight newly selected public unstained fields under a support-aware acquisition contract. It does not add independent biological, instrument, prospective, decision-impact or clinical evidence."
+}

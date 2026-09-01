@@ -1,0 +1,22 @@
+{
+  "schema_version": "nostos-fmd-metadata-failure/1.0",
+  "status": "failed_before_endpoint_analysis",
+  "protocol_id": "fmd-real-noise-dimensionless-organization-v1",
+  "failure": "The first development reference was 512 x 512 pixels; the v1 adapter prospectively required 256 x 256 pixels.",
+  "scientific_cause": "Files 1-4 are repeated noise realizations from one field of view, not spatial quadrants.",
+  "decoded_scope": {
+    "split": "development",
+    "image": "Confocal_BPAE_B_1.png",
+    "operation": "grayscale decode and shape assertion",
+    "endpoint_rows_generated": 0,
+    "risk_maps_fitted": 0,
+    "thresholds_selected": 0,
+    "confirmation_images_decoded": 0
+  },
+  "retained_artifacts": {
+    "v1_config_sha256": "687aedf25a9e544e1e41e30bca656eefe688a25bc6e7578cd2f82f55f75e14b5",
+    "v1_protocol_sha256": "f6acc6523809864aeab5bcdfef0c55f700a11f98701ba279d62c4ab537dbff9f",
+    "v1_pair_index_sha256": "b42b5de1285b791d80451d7915baa36a3f3d3cabd2d7dfd7bf2e55812461e10e"
+  },
+  "resolution": "Superseded prospectively by fmd-real-noise-dimensionless-organization-v1-1 without changing the split, measurements, scores, or inferential gates."
+}

@@ -1,0 +1,1237 @@
+{
+  "schema_version": "nostos-biosr-pair-index/1.0",
+  "archive": "ER.zip",
+  "archive_bytes": 2956077632,
+  "archive_md5": "2bd05c7dba69a10b36a141407927d585",
+  "archive_sha256": "3e0f3d437f3ec2703a5729ff6cdd82ebac838c2bb95e9c41cb52fa9946346c13",
+  "structure": "ER",
+  "upscaling_factor": 2,
+  "expected_level_count": 6,
+  "implementation_sha256": "d4471dd19e320a8267e02aa1886609aadda9ae8b437a5d6efb2c729a9b2c5861",
+  "records": [
+    {
+      "structure": "ER",
+      "cell_id": "Cell_002",
+      "signal_level": 1,
+      "pair_id": "ER|Cell_002|level_01",
+      "reference_group_id": "ER|Cell_002",
+      "input_member": "ER/Cell_002/RawSIMData/RawSIMData_level_01.mrc",
+      "reference_member": "ER/Cell_002/GTSIM/GTSIM_level_01.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_002",
+      "signal_level": 2,
+      "pair_id": "ER|Cell_002|level_02",
+      "reference_group_id": "ER|Cell_002",
+      "input_member": "ER/Cell_002/RawSIMData/RawSIMData_level_02.mrc",
+      "reference_member": "ER/Cell_002/GTSIM/GTSIM_level_02.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_002",
+      "signal_level": 3,
+      "pair_id": "ER|Cell_002|level_03",
+      "reference_group_id": "ER|Cell_002",
+      "input_member": "ER/Cell_002/RawSIMData/RawSIMData_level_03.mrc",
+      "reference_member": "ER/Cell_002/GTSIM/GTSIM_level_03.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_002",
+      "signal_level": 4,
+      "pair_id": "ER|Cell_002|level_04",
+      "reference_group_id": "ER|Cell_002",
+      "input_member": "ER/Cell_002/RawSIMData/RawSIMData_level_04.mrc",
+      "reference_member": "ER/Cell_002/GTSIM/GTSIM_level_04.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_002",
+      "signal_level": 5,
+      "pair_id": "ER|Cell_002|level_05",
+      "reference_group_id": "ER|Cell_002",
+      "input_member": "ER/Cell_002/RawSIMData/RawSIMData_level_05.mrc",
+      "reference_member": "ER/Cell_002/GTSIM/GTSIM_level_05.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_002",
+      "signal_level": 6,
+      "pair_id": "ER|Cell_002|level_06",
+      "reference_group_id": "ER|Cell_002",
+      "input_member": "ER/Cell_002/RawSIMData/RawSIMData_level_06.mrc",
+      "reference_member": "ER/Cell_002/GTSIM/GTSIM_level_06.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_003",
+      "signal_level": 1,
+      "pair_id": "ER|Cell_003|level_01",
+      "reference_group_id": "ER|Cell_003",
+      "input_member": "ER/Cell_003/RawSIMData/RawSIMData_level_01.mrc",
+      "reference_member": "ER/Cell_003/GTSIM/GTSIM_level_01.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_003",
+      "signal_level": 2,
+      "pair_id": "ER|Cell_003|level_02",
+      "reference_group_id": "ER|Cell_003",
+      "input_member": "ER/Cell_003/RawSIMData/RawSIMData_level_02.mrc",
+      "reference_member": "ER/Cell_003/GTSIM/GTSIM_level_02.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_003",
+      "signal_level": 3,
+      "pair_id": "ER|Cell_003|level_03",
+      "reference_group_id": "ER|Cell_003",
+      "input_member": "ER/Cell_003/RawSIMData/RawSIMData_level_03.mrc",
+      "reference_member": "ER/Cell_003/GTSIM/GTSIM_level_03.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_003",
+      "signal_level": 4,
+      "pair_id": "ER|Cell_003|level_04",
+      "reference_group_id": "ER|Cell_003",
+      "input_member": "ER/Cell_003/RawSIMData/RawSIMData_level_04.mrc",
+      "reference_member": "ER/Cell_003/GTSIM/GTSIM_level_04.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_003",
+      "signal_level": 5,
+      "pair_id": "ER|Cell_003|level_05",
+      "reference_group_id": "ER|Cell_003",
+      "input_member": "ER/Cell_003/RawSIMData/RawSIMData_level_05.mrc",
+      "reference_member": "ER/Cell_003/GTSIM/GTSIM_level_05.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_003",
+      "signal_level": 6,
+      "pair_id": "ER|Cell_003|level_06",
+      "reference_group_id": "ER|Cell_003",
+      "input_member": "ER/Cell_003/RawSIMData/RawSIMData_level_06.mrc",
+      "reference_member": "ER/Cell_003/GTSIM/GTSIM_level_06.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_004",
+      "signal_level": 1,
+      "pair_id": "ER|Cell_004|level_01",
+      "reference_group_id": "ER|Cell_004",
+      "input_member": "ER/Cell_004/RawSIMData/RawSIMData_level_01.mrc",
+      "reference_member": "ER/Cell_004/GTSIM/GTSIM_level_01.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_004",
+      "signal_level": 2,
+      "pair_id": "ER|Cell_004|level_02",
+      "reference_group_id": "ER|Cell_004",
+      "input_member": "ER/Cell_004/RawSIMData/RawSIMData_level_02.mrc",
+      "reference_member": "ER/Cell_004/GTSIM/GTSIM_level_02.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_004",
+      "signal_level": 3,
+      "pair_id": "ER|Cell_004|level_03",
+      "reference_group_id": "ER|Cell_004",
+      "input_member": "ER/Cell_004/RawSIMData/RawSIMData_level_03.mrc",
+      "reference_member": "ER/Cell_004/GTSIM/GTSIM_level_03.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_004",
+      "signal_level": 4,
+      "pair_id": "ER|Cell_004|level_04",
+      "reference_group_id": "ER|Cell_004",
+      "input_member": "ER/Cell_004/RawSIMData/RawSIMData_level_04.mrc",
+      "reference_member": "ER/Cell_004/GTSIM/GTSIM_level_04.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_004",
+      "signal_level": 5,
+      "pair_id": "ER|Cell_004|level_05",
+      "reference_group_id": "ER|Cell_004",
+      "input_member": "ER/Cell_004/RawSIMData/RawSIMData_level_05.mrc",
+      "reference_member": "ER/Cell_004/GTSIM/GTSIM_level_05.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_004",
+      "signal_level": 6,
+      "pair_id": "ER|Cell_004|level_06",
+      "reference_group_id": "ER|Cell_004",
+      "input_member": "ER/Cell_004/RawSIMData/RawSIMData_level_06.mrc",
+      "reference_member": "ER/Cell_004/GTSIM/GTSIM_level_06.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_008",
+      "signal_level": 1,
+      "pair_id": "ER|Cell_008|level_01",
+      "reference_group_id": "ER|Cell_008",
+      "input_member": "ER/Cell_008/RawSIMData/RawSIMData_level_01.mrc",
+      "reference_member": "ER/Cell_008/GTSIM/GTSIM_level_01.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_008",
+      "signal_level": 2,
+      "pair_id": "ER|Cell_008|level_02",
+      "reference_group_id": "ER|Cell_008",
+      "input_member": "ER/Cell_008/RawSIMData/RawSIMData_level_02.mrc",
+      "reference_member": "ER/Cell_008/GTSIM/GTSIM_level_02.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_008",
+      "signal_level": 3,
+      "pair_id": "ER|Cell_008|level_03",
+      "reference_group_id": "ER|Cell_008",
+      "input_member": "ER/Cell_008/RawSIMData/RawSIMData_level_03.mrc",
+      "reference_member": "ER/Cell_008/GTSIM/GTSIM_level_03.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_008",
+      "signal_level": 4,
+      "pair_id": "ER|Cell_008|level_04",
+      "reference_group_id": "ER|Cell_008",
+      "input_member": "ER/Cell_008/RawSIMData/RawSIMData_level_04.mrc",
+      "reference_member": "ER/Cell_008/GTSIM/GTSIM_level_04.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_008",
+      "signal_level": 5,
+      "pair_id": "ER|Cell_008|level_05",
+      "reference_group_id": "ER|Cell_008",
+      "input_member": "ER/Cell_008/RawSIMData/RawSIMData_level_05.mrc",
+      "reference_member": "ER/Cell_008/GTSIM/GTSIM_level_05.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_008",
+      "signal_level": 6,
+      "pair_id": "ER|Cell_008|level_06",
+      "reference_group_id": "ER|Cell_008",
+      "input_member": "ER/Cell_008/RawSIMData/RawSIMData_level_06.mrc",
+      "reference_member": "ER/Cell_008/GTSIM/GTSIM_level_06.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_009",
+      "signal_level": 1,
+      "pair_id": "ER|Cell_009|level_01",
+      "reference_group_id": "ER|Cell_009",
+      "input_member": "ER/Cell_009/RawSIMData/RawSIMData_level_01.mrc",
+      "reference_member": "ER/Cell_009/GTSIM/GTSIM_level_01.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_009",
+      "signal_level": 2,
+      "pair_id": "ER|Cell_009|level_02",
+      "reference_group_id": "ER|Cell_009",
+      "input_member": "ER/Cell_009/RawSIMData/RawSIMData_level_02.mrc",
+      "reference_member": "ER/Cell_009/GTSIM/GTSIM_level_02.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_009",
+      "signal_level": 3,
+      "pair_id": "ER|Cell_009|level_03",
+      "reference_group_id": "ER|Cell_009",
+      "input_member": "ER/Cell_009/RawSIMData/RawSIMData_level_03.mrc",
+      "reference_member": "ER/Cell_009/GTSIM/GTSIM_level_03.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_009",
+      "signal_level": 4,
+      "pair_id": "ER|Cell_009|level_04",
+      "reference_group_id": "ER|Cell_009",
+      "input_member": "ER/Cell_009/RawSIMData/RawSIMData_level_04.mrc",
+      "reference_member": "ER/Cell_009/GTSIM/GTSIM_level_04.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_009",
+      "signal_level": 5,
+      "pair_id": "ER|Cell_009|level_05",
+      "reference_group_id": "ER|Cell_009",
+      "input_member": "ER/Cell_009/RawSIMData/RawSIMData_level_05.mrc",
+      "reference_member": "ER/Cell_009/GTSIM/GTSIM_level_05.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_009",
+      "signal_level": 6,
+      "pair_id": "ER|Cell_009|level_06",
+      "reference_group_id": "ER|Cell_009",
+      "input_member": "ER/Cell_009/RawSIMData/RawSIMData_level_06.mrc",
+      "reference_member": "ER/Cell_009/GTSIM/GTSIM_level_06.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_011",
+      "signal_level": 1,
+      "pair_id": "ER|Cell_011|level_01",
+      "reference_group_id": "ER|Cell_011",
+      "input_member": "ER/Cell_011/RawSIMData/RawSIMData_level_01.mrc",
+      "reference_member": "ER/Cell_011/GTSIM/GTSIM_level_01.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_011",
+      "signal_level": 2,
+      "pair_id": "ER|Cell_011|level_02",
+      "reference_group_id": "ER|Cell_011",
+      "input_member": "ER/Cell_011/RawSIMData/RawSIMData_level_02.mrc",
+      "reference_member": "ER/Cell_011/GTSIM/GTSIM_level_02.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_011",
+      "signal_level": 3,
+      "pair_id": "ER|Cell_011|level_03",
+      "reference_group_id": "ER|Cell_011",
+      "input_member": "ER/Cell_011/RawSIMData/RawSIMData_level_03.mrc",
+      "reference_member": "ER/Cell_011/GTSIM/GTSIM_level_03.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_011",
+      "signal_level": 4,
+      "pair_id": "ER|Cell_011|level_04",
+      "reference_group_id": "ER|Cell_011",
+      "input_member": "ER/Cell_011/RawSIMData/RawSIMData_level_04.mrc",
+      "reference_member": "ER/Cell_011/GTSIM/GTSIM_level_04.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_011",
+      "signal_level": 5,
+      "pair_id": "ER|Cell_011|level_05",
+      "reference_group_id": "ER|Cell_011",
+      "input_member": "ER/Cell_011/RawSIMData/RawSIMData_level_05.mrc",
+      "reference_member": "ER/Cell_011/GTSIM/GTSIM_level_05.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_011",
+      "signal_level": 6,
+      "pair_id": "ER|Cell_011|level_06",
+      "reference_group_id": "ER|Cell_011",
+      "input_member": "ER/Cell_011/RawSIMData/RawSIMData_level_06.mrc",
+      "reference_member": "ER/Cell_011/GTSIM/GTSIM_level_06.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "level_matched_nested"
+    }
+  ]
+}

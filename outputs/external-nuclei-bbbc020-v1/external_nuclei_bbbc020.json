@@ -1,0 +1,369 @@
+{
+  "protocol_version": "nostos-external-nuclei-bbbc020/1.0",
+  "protocol_sha256": "3d209232d07b88ff33301bd10836ca6ee47f8109bed94c79f456564a13f44968",
+  "dataset": "BBBC020v1",
+  "source": "https://bbbc.broadinstitute.org/BBBC020",
+  "license": "CC BY-NC-SA 3.0",
+  "design": "prospectively frozen independent-acquisition transfer; all 20 fields with archived manual nuclei; local support accounts for intentionally incomplete annotations",
+  "input_archives": {
+    "images.zip": "edf4a87be957ec2b7ab268bef92c2efae8e098dc0855a4fa9df80895ff7062e4",
+    "outlines_nuclei.zip": "b212f10013ae2a0260976cff2134204ecba226853922aea2ab5289051a47ceb7"
+  },
+  "method": {
+    "channel": "c5 DAPI",
+    "resize_maximum_pixels": 256,
+    "dimensionless_scales_pixels": [
+      2,
+      4,
+      8
+    ],
+    "polarity": "bright",
+    "local_ring_pixels": 4
+  },
+  "validity": {
+    "status": "fail",
+    "physical_scale": "abstain: pixel spacing not provided",
+    "interpretation": "Local foreground localization for eligible annotated nuclei; not whole-field or instance segmentation."
+  },
+  "success_gates": {
+    "mean_auc_gt_0.75": {
+      "value": 0.9153821058691054,
+      "pass": true
+    },
+    "ap_above_local_prevalence_ci_lower_gt_0": {
+      "ci95_mean": [
+        0.490728972452437,
+        0.5126902691949365
+      ],
+      "pass": true
+    },
+    "ap_above_log_ci_lower_gt_0": {
+      "ci95_mean": [
+        -0.010711938899996927,
+        0.00819918986020998
+      ],
+      "pass": false
+    }
+  },
+  "case_count": 20,
+  "summary": {
+    "nostos_blob_average_precision": {
+      "mean": 0.8801388123790879,
+      "median": 0.8802994779066686,
+      "ci95_mean": [
+        0.8680936882882356,
+        0.8913904885488337
+      ]
+    },
+    "intensity_average_precision": {
+      "mean": 0.9390898392891673,
+      "median": 0.9457563706000098,
+      "ci95_mean": [
+        0.9232620961815999,
+        0.9519980278544743
+      ]
+    },
+    "multiscale_log_average_precision": {
+      "mean": 0.8814214183522425,
+      "median": 0.8836081667049895,
+      "ci95_mean": [
+        0.8630108703153806,
+        0.8979309742968364
+      ]
+    },
+    "nostos_minus_intensity_average_precision": {
+      "mean": -0.058951026910079404,
+      "ci95_mean": [
+        -0.06593960719309053,
+        -0.05117897585302279
+      ]
+    },
+    "nostos_minus_multiscale_log_average_precision": {
+      "mean": -0.0012826059731547268,
+      "ci95_mean": [
+        -0.010711938899996927,
+        0.00819918986020998
+      ]
+    },
+    "nostos_blob_roc_auc": {
+      "mean": 0.9153821058691054,
+      "median": 0.914029582149964,
+      "ci95_mean": [
+        0.9078787959192947,
+        0.9223097383918043
+      ]
+    },
+    "intensity_roc_auc": {
+      "mean": 0.9645519937187101,
+      "median": 0.9702732377993399,
+      "ci95_mean": [
+        0.9551961752102676,
+        0.9721515600446115
+      ]
+    },
+    "multiscale_log_roc_auc": {
+      "mean": 0.9217199061450989,
+      "median": 0.9185768945166499,
+      "ci95_mean": [
+        0.9111106998096695,
+        0.9315835572298591
+      ]
+    },
+    "nostos_minus_intensity_roc_auc": {
+      "mean": -0.04916988784960495,
+      "ci95_mean": [
+        -0.05398951324863206,
+        -0.04431308504741192
+      ]
+    },
+    "nostos_minus_multiscale_log_roc_auc": {
+      "mean": -0.006337800275993555,
+      "ci95_mean": [
+        -0.012510131790410564,
+        -0.00015185652774161171
+      ]
+    }
+  },
+  "cases": [
+    {
+      "case": "jw-15min 1",
+      "annotated_objects": 36,
+      "supported_pixels": 9568,
+      "foreground_fraction": 0.38231605351170567,
+      "nostos_blob_average_precision": 0.8791585547704615,
+      "nostos_blob_roc_auc": 0.914597609115778,
+      "intensity_average_precision": 0.9399622220473977,
+      "intensity_roc_auc": 0.9621942126243941,
+      "multiscale_log_average_precision": 0.8594289236360273,
+      "multiscale_log_roc_auc": 0.9063362964977671
+    },
+    {
+      "case": "jw-15min 2",
+      "annotated_objects": 32,
+      "supported_pixels": 8237,
+      "foreground_fraction": 0.3888551657156732,
+      "nostos_blob_average_precision": 0.8792064289294645,
+      "nostos_blob_roc_auc": 0.9049042223154173,
+      "intensity_average_precision": 0.9407009056845312,
+      "intensity_roc_auc": 0.9645585169148262,
+      "multiscale_log_average_precision": 0.8802636680593395,
+      "multiscale_log_roc_auc": 0.9177707728563471
+    },
+    {
+      "case": "jw-15min 3",
+      "annotated_objects": 27,
+      "supported_pixels": 7319,
+      "foreground_fraction": 0.4030605273944528,
+      "nostos_blob_average_precision": 0.8875712368214984,
+      "nostos_blob_roc_auc": 0.908891457921954,
+      "intensity_average_precision": 0.9449191926562274,
+      "intensity_roc_auc": 0.9630337392491785,
+      "multiscale_log_average_precision": 0.9003469063712362,
+      "multiscale_log_roc_auc": 0.9271482051898778
+    },
+    {
+      "case": "jw-15min 4",
+      "annotated_objects": 51,
+      "supported_pixels": 12408,
+      "foreground_fraction": 0.38249516441005804,
+      "nostos_blob_average_precision": 0.8879785832055846,
+      "nostos_blob_roc_auc": 0.9156091879375157,
+      "intensity_average_precision": 0.9306896734266877,
+      "intensity_roc_auc": 0.9573046056836884,
+      "multiscale_log_average_precision": 0.8819733781449156,
+      "multiscale_log_roc_auc": 0.9153982916881303
+    },
+    {
+      "case": "jw-15min 5",
+      "annotated_objects": 48,
+      "supported_pixels": 11257,
+      "foreground_fraction": 0.3688371679843653,
+      "nostos_blob_average_precision": 0.8690714766090358,
+      "nostos_blob_roc_auc": 0.909882521874606,
+      "intensity_average_precision": 0.9347845545582408,
+      "intensity_roc_auc": 0.9622249657287671,
+      "multiscale_log_average_precision": 0.8727398863395865,
+      "multiscale_log_roc_auc": 0.9230130142549346
+    },
+    {
+      "case": "jw-1h 1",
+      "annotated_objects": 55,
+      "supported_pixels": 13686,
+      "foreground_fraction": 0.39200642992839396,
+      "nostos_blob_average_precision": 0.8448388242789431,
+      "nostos_blob_roc_auc": 0.8884386767532444,
+      "intensity_average_precision": 0.8927942854199209,
+      "intensity_roc_auc": 0.9315588412882754,
+      "multiscale_log_average_precision": 0.8203967061261408,
+      "multiscale_log_roc_auc": 0.8765884898279461
+    },
+    {
+      "case": "jw-1h 2",
+      "annotated_objects": 39,
+      "supported_pixels": 8925,
+      "foreground_fraction": 0.36212885154061625,
+      "nostos_blob_average_precision": 0.8813925268838727,
+      "nostos_blob_roc_auc": 0.9134615551841501,
+      "intensity_average_precision": 0.9645754158577554,
+      "intensity_roc_auc": 0.9799597016833248,
+      "multiscale_log_average_precision": 0.9035322124546002,
+      "multiscale_log_roc_auc": 0.9376124470210941
+    },
+    {
+      "case": "jw-1h 3",
+      "annotated_objects": 27,
+      "supported_pixels": 6587,
+      "foreground_fraction": 0.3771064217397905,
+      "nostos_blob_average_precision": 0.9041603122485916,
+      "nostos_blob_roc_auc": 0.9293258968046241,
+      "intensity_average_precision": 0.9664831485811392,
+      "intensity_roc_auc": 0.9818815559723592,
+      "multiscale_log_average_precision": 0.9261387612046874,
+      "multiscale_log_roc_auc": 0.9482630830981453
+    },
+    {
+      "case": "jw-1h 4",
+      "annotated_objects": 26,
+      "supported_pixels": 7839,
+      "foreground_fraction": 0.4222477356805715,
+      "nostos_blob_average_precision": 0.9239323250463757,
+      "nostos_blob_roc_auc": 0.9340039583776655,
+      "intensity_average_precision": 0.9584346785618229,
+      "intensity_roc_auc": 0.9713654668570921,
+      "multiscale_log_average_precision": 0.911867149508223,
+      "multiscale_log_roc_auc": 0.9258692054360653
+    },
+    {
+      "case": "jw-1h 5",
+      "annotated_objects": 29,
+      "supported_pixels": 7121,
+      "foreground_fraction": 0.3750877685718298,
+      "nostos_blob_average_precision": 0.8559628390769745,
+      "nostos_blob_roc_auc": 0.8994155284180061,
+      "intensity_average_precision": 0.9279857188126883,
+      "intensity_roc_auc": 0.9700170369217437,
+      "multiscale_log_average_precision": 0.841814522887344,
+      "multiscale_log_roc_auc": 0.9040078411906496
+    },
+    {
+      "case": "jw-24h 1",
+      "annotated_objects": 30,
+      "supported_pixels": 7937,
+      "foreground_fraction": 0.37016504976691444,
+      "nostos_blob_average_precision": 0.9094243662237126,
+      "nostos_blob_roc_auc": 0.9298686830626847,
+      "intensity_average_precision": 0.9783742657888399,
+      "intensity_roc_auc": 0.9869937227745071,
+      "multiscale_log_average_precision": 0.9452770440534761,
+      "multiscale_log_roc_auc": 0.9597563488191171
+    },
+    {
+      "case": "jw-24h 2",
+      "annotated_objects": 29,
+      "supported_pixels": 7800,
+      "foreground_fraction": 0.3832051282051282,
+      "nostos_blob_average_precision": 0.9104993800382625,
+      "nostos_blob_roc_auc": 0.9368302149105023,
+      "intensity_average_precision": 0.9521132419999931,
+      "intensity_roc_auc": 0.9705294386769363,
+      "multiscale_log_average_precision": 0.8940470806001662,
+      "multiscale_log_roc_auc": 0.9179326483533226
+    },
+    {
+      "case": "jw-24h 3",
+      "annotated_objects": 26,
+      "supported_pixels": 7052,
+      "foreground_fraction": 0.3791832104367555,
+      "nostos_blob_average_precision": 0.9002409503525685,
+      "nostos_blob_roc_auc": 0.9408738378094321,
+      "intensity_average_precision": 0.9734939830119667,
+      "intensity_roc_auc": 0.985154191095547,
+      "multiscale_log_average_precision": 0.9321227364881169,
+      "multiscale_log_roc_auc": 0.9582989230506923
+    },
+    {
+      "case": "jw-24h 4",
+      "annotated_objects": 31,
+      "supported_pixels": 7508,
+      "foreground_fraction": 0.3576185402237613,
+      "nostos_blob_average_precision": 0.8730991227582825,
+      "nostos_blob_roc_auc": 0.9120664058895321,
+      "intensity_average_precision": 0.9561312405404205,
+      "intensity_roc_auc": 0.9761383902629818,
+      "multiscale_log_average_precision": 0.9094308245821362,
+      "multiscale_log_roc_auc": 0.9415765780897012
+    },
+    {
+      "case": "jw-24h 5",
+      "annotated_objects": 22,
+      "supported_pixels": 6069,
+      "foreground_fraction": 0.3834239578184215,
+      "nostos_blob_average_precision": 0.8943065293462757,
+      "nostos_blob_roc_auc": 0.9248147085649214,
+      "intensity_average_precision": 0.9611435439191099,
+      "intensity_roc_auc": 0.9786475867038049,
+      "multiscale_log_average_precision": 0.8852429552650636,
+      "multiscale_log_roc_auc": 0.9188976018054963
+    },
+    {
+      "case": "jw-2h 1",
+      "annotated_objects": 51,
+      "supported_pixels": 13154,
+      "foreground_fraction": 0.3845978409609244,
+      "nostos_blob_average_precision": 0.8721044147822762,
+      "nostos_blob_roc_auc": 0.9100326829025894,
+      "intensity_average_precision": 0.9173789339906053,
+      "intensity_roc_auc": 0.9483446657422648,
+      "multiscale_log_average_precision": 0.8512339927395125,
+      "multiscale_log_roc_auc": 0.9027563448039508
+    },
+    {
+      "case": "jw-2h 2",
+      "annotated_objects": 59,
+      "supported_pixels": 13342,
+      "foreground_fraction": 0.37678009293958925,
+      "nostos_blob_average_precision": 0.8171556861214508,
+      "nostos_blob_roc_auc": 0.8747777635165775,
+      "intensity_average_precision": 0.831898299802291,
+      "intensity_roc_auc": 0.9031383146762145,
+      "multiscale_log_average_precision": 0.7750611544145103,
+      "multiscale_log_roc_auc": 0.8692009391020301
+    },
+    {
+      "case": "jw-Kontrolle1",
+      "annotated_objects": 23,
+      "supported_pixels": 4859,
+      "foreground_fraction": 0.33937024079028605,
+      "nostos_blob_average_precision": 0.8328309698653344,
+      "nostos_blob_roc_auc": 0.9037863974956972,
+      "intensity_average_precision": 0.9048674705791061,
+      "intensity_roc_auc": 0.952784279720174,
+      "multiscale_log_average_precision": 0.8497543012439359,
+      "multiscale_log_roc_auc": 0.9168339539303533
+    },
+    {
+      "case": "jw-Kontrolle2",
+      "annotated_objects": 30,
+      "supported_pixels": 7193,
+      "foreground_fraction": 0.36549423050187685,
+      "nostos_blob_average_precision": 0.905304604914608,
+      "nostos_blob_roc_auc": 0.9356840825832279,
+      "intensity_average_precision": 0.9584724620008105,
+      "intensity_roc_auc": 0.9740023882475817,
+      "multiscale_log_average_precision": 0.9182526950471149,
+      "multiscale_log_roc_auc": 0.9488809506585518
+    },
+    {
+      "case": "jw-Kontrolle3",
+      "annotated_objects": 29,
+      "supported_pixels": 6631,
+      "foreground_fraction": 0.36465088221987635,
+      "nostos_blob_average_precision": 0.874537115308185,
+      "nostos_blob_roc_auc": 0.9203767259439793,
+      "intensity_average_precision": 0.9465935485437923,
+      "intensity_roc_auc": 0.9712082535505429,
+      "multiscale_log_average_precision": 0.8695034678787198,
+      "multiscale_log_roc_auc": 0.9182561872278034
+    }
+  ]
+}

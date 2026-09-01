@@ -1,0 +1,75 @@
+{
+  "audit_file_sha256": "146abf77a43f7e621cdc42c5453d465f4e1ae0336d2f7a5ee67836ddd4cfbf3b",
+  "base_profile_content_sha256": "65239b44c66a8bfca80608b1544fd0c892cf8e3209805828a1623d85382eebb8",
+  "base_profile_file_sha256": "9c99e6c01359b8b8ab84f1eb6f48cf9101e913ee90269b63573ffd1abc69b737",
+  "config_content_sha256": "e7788165bd6746649de24757de71d1f5e6aebddf64667770bed69c513a897745",
+  "config_file_sha256": "c7912e8d64e654c0fff62b9943d03d67afb6a46cfaabd50ad1db94c5d71e148f",
+  "content_sha256": "fefaea8cf09332f4fae6f9ee657a87d5ee1266be5d7bb4dced3aba182422eaeb",
+  "development_operating_point": {
+    "accepted": 128,
+    "accepted_independent_groups": 8,
+    "checks": {
+      "at_least_one_supported_cell": true,
+      "maximum_cluster_bootstrap_risk_upper95": true,
+      "maximum_observed_risk": true,
+      "minimum_coverage": true
+    },
+    "cluster_bootstrap_risk_upper95": 0.0,
+    "coverage": 0.26666666666666666,
+    "eligible": 480,
+    "invalid": 0,
+    "passes": true,
+    "predicted_risk_threshold": 0.6303073200826219,
+    "risk": 0.0
+  },
+  "development_sources": [
+    {
+      "original_role": "v1.3 development",
+      "path": "outputs/nostos0-fmd-widefield-v1-3-development/development_rows.jsonl",
+      "rows": 640,
+      "sha256": "feaf9e734a3b68dd591251c4b17452e953aea2b95a5f99d6b8fb8959459123f6"
+    },
+    {
+      "original_role": "v1.3 confirmation, opened before v1.4 lock",
+      "path": "outputs/nostos0-fmd-widefield-v1-3-confirmation/confirmation_rows.jsonl",
+      "rows": 640,
+      "sha256": "cf22eada35d7e967788c15940fffe21474cf9709dd3a47e00163212695b855cc"
+    }
+  ],
+  "profile_content_sha256": "46e4b774c530b6f737e9941d367adb166e1540db51d919fa3ee91a96725f9308",
+  "profile_file_sha256": "a1bc92f5658e0cb2dae35f54acd15dab48c8bd70f09a5012d873ab2043ffd141",
+  "protocol_id": "fmd-widefield-bpae-r-conditional-support-v1-4",
+  "schema_version": "nostos-fmd-widefield-conditional-development/1.0",
+  "scored_rows_sha256": "4a8513015e76c9fd5710dc7da64e898e70da9d8f31132485a668752c4dc68908",
+  "status": "operating_point_selected",
+  "supported_cells": [
+    {
+      "key": "[\"avg16\",16.0]",
+      "values": [
+        "avg16",
+        16.0
+      ]
+    },
+    {
+      "key": "[\"avg16\",4.0]",
+      "values": [
+        "avg16",
+        4.0
+      ]
+    },
+    {
+      "key": "[\"avg16\",8.0]",
+      "values": [
+        "avg16",
+        8.0
+      ]
+    },
+    {
+      "key": "[\"avg8\",16.0]",
+      "values": [
+        "avg8",
+        16.0
+      ]
+    }
+  ]
+}

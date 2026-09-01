@@ -1,0 +1,39 @@
+{
+  "schema_version": "nostos-intraop-operator-workflow-final-audit/1.0",
+  "target_schema": "nostos-intraop-label-free-result/1.4",
+  "status": "verified_pass",
+  "checks": {
+    "lock_integrity": true,
+    "locked_implementation_integrity": true,
+    "result_integrity": true,
+    "source_integrity": true,
+    "source_array_reconstruction": true,
+    "artifact_registry_complete": true,
+    "artifact_file_integrity": true,
+    "array_manifest_integrity": true,
+    "summary_reproduction": true,
+    "public_provenance_verified": true,
+    "reference_excluded_from_deployment": true,
+    "clinical_output_withheld": true,
+    "no_absolute_local_paths": true
+  },
+  "observed": {
+    "source_group": "breast_36",
+    "source_files": 12,
+    "artifacts": 7,
+    "eligible_pixels": 22410,
+    "measurement_status": "valid",
+    "measurement_evidence": "confirmed",
+    "operator_provenance": "verified_public_bundle",
+    "clinical_output": "withheld",
+    "reference_used": false
+  },
+  "bad_locked_files": [],
+  "bad_source_files": [],
+  "bad_artifacts": [],
+  "unregistered_artifacts": [],
+  "missing_artifacts": [],
+  "absolute_local_path_leaks": [],
+  "claim_boundary": "This audit verifies an operator export for one hash-identical public unstained-PSHG field. It does not validate a new microscope, operator, tissue, clinical endpoint, diagnosis, mechanical inference, margin assessment, treatment decision or patient outcome.",
+  "clinical_readiness": "not_ready"
+}

@@ -1,0 +1,296 @@
+{
+  "schema_version": "nostos.tlt_pshg_xrd.development.v1",
+  "status": "development_complete_confirmation_sealed",
+  "development": {
+    "specimens": 2,
+    "fields": 36,
+    "cases": 576,
+    "invalid": 230,
+    "invalid_risk": 0.3993055555555556,
+    "clean_median_field_error_degrees": 11.504220250987132,
+    "clean_median_field_p75_error_degrees": 19.605784254425064,
+    "policy_summaries": {
+      "acquisition_qc": {
+        "maximum_predicted_risk": 0.15,
+        "eligible": 576,
+        "accepted": 13,
+        "coverage": 0.022569444444444444,
+        "invalid": 7,
+        "risk": 0.5384615384615384,
+        "combinations": [
+          {
+            "structure": "tlt_pshg",
+            "endpoint_family": "orientation",
+            "eligible": 576,
+            "accepted": 13,
+            "coverage": 0.022569444444444444,
+            "invalid": 7,
+            "risk": 0.5384615384615384,
+            "reference_fields": 36
+          }
+        ],
+        "risk_coverage_auc": 0.28245879424872156
+      },
+      "endpoint_qc": {
+        "maximum_predicted_risk": 0.15,
+        "eligible": 576,
+        "accepted": 100,
+        "coverage": 0.1736111111111111,
+        "invalid": 29,
+        "risk": 0.29,
+        "combinations": [
+          {
+            "structure": "tlt_pshg",
+            "endpoint_family": "orientation",
+            "eligible": 576,
+            "accepted": 100,
+            "coverage": 0.1736111111111111,
+            "invalid": 29,
+            "risk": 0.29,
+            "reference_fields": 36
+          }
+        ],
+        "risk_coverage_auc": 0.24675764081998566
+      },
+      "without_scale_consistency": {
+        "maximum_predicted_risk": 0.15,
+        "eligible": 576,
+        "accepted": 100,
+        "coverage": 0.1736111111111111,
+        "invalid": 29,
+        "risk": 0.29,
+        "combinations": [
+          {
+            "structure": "tlt_pshg",
+            "endpoint_family": "orientation",
+            "eligible": 576,
+            "accepted": 100,
+            "coverage": 0.1736111111111111,
+            "invalid": 29,
+            "risk": 0.29,
+            "reference_fields": 36
+          }
+        ],
+        "risk_coverage_auc": 0.24675764081998566
+      },
+      "without_coherence": {
+        "maximum_predicted_risk": 0.15,
+        "eligible": 576,
+        "accepted": 200,
+        "coverage": 0.3472222222222222,
+        "invalid": 31,
+        "risk": 0.155,
+        "combinations": [
+          {
+            "structure": "tlt_pshg",
+            "endpoint_family": "orientation",
+            "eligible": 576,
+            "accepted": 200,
+            "coverage": 0.3472222222222222,
+            "invalid": 31,
+            "risk": 0.155,
+            "reference_fields": 36
+          }
+        ],
+        "risk_coverage_auc": 0.1997709465766539
+      },
+      "full_contract": {
+        "maximum_predicted_risk": 0.15,
+        "eligible": 576,
+        "accepted": 146,
+        "coverage": 0.2534722222222222,
+        "invalid": 35,
+        "risk": 0.23972602739726026,
+        "combinations": [
+          {
+            "structure": "tlt_pshg",
+            "endpoint_family": "orientation",
+            "eligible": 576,
+            "accepted": 146,
+            "coverage": 0.2534722222222222,
+            "invalid": 35,
+            "risk": 0.23972602739726026,
+            "reference_fields": 36
+          }
+        ],
+        "risk_coverage_auc": 0.2132948860818734
+      }
+    }
+  },
+  "profile": {
+    "schema_version": "nostos.tlt_pshg_xrd.validity_profile.v1",
+    "status": "development_complete_confirmation_sealed",
+    "prelock_sha256": "c6406fda293c60177428c9bb7e0fc3116272a87ea5aa6dfee096175d1d087dfc",
+    "config_sha256": "479fd756cd42e9b19a34cce106b1d7be5853d0b06601b9c40b2fcca5b35e87b5",
+    "split": {
+      "unit": "specimen",
+      "salt": "nostos_tlt_pshg_xrd_v1",
+      "algorithm": "sha256(salt + '|' + sample_id), ascending; first two development, remaining two confirmation",
+      "development": [
+        "Sample3",
+        "Sample1"
+      ],
+      "confirmation": [
+        "Sample2",
+        "Sample4"
+      ],
+      "hashes": {
+        "Sample3": "63b1c25f29a5d0c96b20629955f064631d3714c6dc00b4e4913cf30d2d6af7e8",
+        "Sample1": "bb9f430fbb57fd1e8d2454fd6218d586655f38f8a1dcfbb2c6a2525901017d23",
+        "Sample2": "cd19d61f361a616acf147eceabdadb0f7fc21564e5bfb1e01ada6993b9cfe257",
+        "Sample4": "f0c6543fa3bf7ed9615e785469a754d00e76c73cfa449349558efeb0a5ac45fc"
+      }
+    },
+    "measurement": {
+      "input": "deposited mean SHG intensity image only",
+      "transform": "log1p",
+      "primary_scale_um": 12.0,
+      "comparison_scale_um": 6.0,
+      "reference_offset_degrees": 0.0,
+      "edge_exclusion_pixels": 16,
+      "minimum_input_support_pixels": 10000,
+      "minimum_adjudicable_pixels": 10000,
+      "invalid_median_error_degrees": 20.0,
+      "invalid_p75_error_degrees": 35.0
+    },
+    "policies": {
+      "acquisition_qc": [
+        "acquisition_qc"
+      ],
+      "endpoint_qc": [
+        "acquisition_qc",
+        "coherence"
+      ],
+      "without_scale_consistency": [
+        "acquisition_qc",
+        "coherence"
+      ],
+      "without_coherence": [
+        "acquisition_qc",
+        "scale_consistency"
+      ],
+      "full_contract": [
+        "acquisition_qc",
+        "coherence",
+        "scale_consistency"
+      ]
+    },
+    "risk_maps": {
+      "acquisition_qc": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.05640121953426319,
+          0.07757048806783794,
+          0.10462949767908679,
+          0.14528293933234962,
+          0.19817786819938732,
+          0.30548941195606866
+        ],
+        "y_thresholds": [
+          0.19072164948453607,
+          0.23195876288659792,
+          0.27319587628865977,
+          0.27319587628865977,
+          0.6237113402061856,
+          0.809278350515464
+        ],
+        "training_cases": 576,
+        "training_invalid": 230,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "endpoint_qc": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.20597095344026792,
+          0.2897345318221262,
+          0.40349553630213203,
+          1.7249093663922508,
+          5.178171068198166
+        ],
+        "y_thresholds": [
+          0.17697594501718214,
+          0.17697594501718214,
+          0.28350515463917525,
+          0.5927835051546392,
+          0.9948453608247423
+        ],
+        "training_cases": 576,
+        "training_invalid": 230,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "without_scale_consistency": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.20597095344026792,
+          0.2897345318221262,
+          0.40349553630213203,
+          1.7249093663922508,
+          5.178171068198166
+        ],
+        "y_thresholds": [
+          0.17697594501718214,
+          0.17697594501718214,
+          0.28350515463917525,
+          0.5927835051546392,
+          0.9948453608247423
+        ],
+        "training_cases": 576,
+        "training_invalid": 230,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "without_coherence": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.11269685171550718,
+          0.2686871467961873,
+          0.3745195097111466,
+          0.5512540901347639,
+          0.9433683598082806
+        ],
+        "y_thresholds": [
+          0.11512027491408933,
+          0.11512027491408933,
+          0.31443298969072164,
+          0.7577319587628866,
+          0.9845360824742269
+        ],
+        "training_cases": 576,
+        "training_invalid": 230,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "full_contract": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.21243186833993788,
+          0.3467681030757399,
+          0.4639952291564684,
+          1.7346818701551054,
+          5.178171068198166
+        ],
+        "y_thresholds": [
+          0.1323024054982818,
+          0.1323024054982818,
+          0.3865979381443299,
+          0.6237113402061856,
+          0.9948453608247423
+        ],
+        "training_cases": 576,
+        "training_invalid": 230,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      }
+    },
+    "maximum_predicted_risk": 0.15,
+    "reference_values_available_at_deployment": false
+  },
+  "claim_boundary": "Development-only support calibration on Samples 1 and 3; no transfer claim."
+}

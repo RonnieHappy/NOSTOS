@@ -1,0 +1,2500 @@
+{
+  "protocol_version": "nostos-bbbc006-qc/1.0",
+  "protocol_sha256": "3ee790da9a184d91cee5b93a27ecf372c39a4b992de141cfda83ea741aa7906c",
+  "status": "fail",
+  "source": {
+    "dataset": "BBBC006v1",
+    "selection_manifest_sha256": "b2f3af8407c2785a3ed0815026390cc1d26db140f82ff5dec190311f37d34dc3",
+    "role": "opened dataset, endpoint-new QC validation"
+  },
+  "summary": {
+    "case_count": 64,
+    "fraction_z16_exceeds_z00": 0.015625,
+    "fraction_z15_exceeds_z00": 0.015625,
+    "median_z15_z16_ratio": 0.8420974178875711,
+    "median_z16_minus_z00": -0.060215920312017446,
+    "median_z15_minus_z00": -0.06592764830397398,
+    "bootstrap_95_intervals": {
+      "z16_z00": [
+        -0.06892095826789396,
+        -0.05459958945368658
+      ],
+      "z15_z00": [
+        -0.07487860237417097,
+        -0.060918399284342006
+      ]
+    }
+  },
+  "gates": {
+    "all_64_triplets_finite": true,
+    "z16_exceeds_z00_in_at_least_90_percent": false,
+    "z15_exceeds_z00_in_at_least_90_percent": false,
+    "median_adjacent_focus_ratio_between_0_5_and_2": true,
+    "both_bootstrap_intervals_exclude_zero": false,
+    "synthetic_failure_flags_correct": true
+  },
+  "controls": {
+    "constant": {
+      "schema_version": "nostos-acquisition-qc/1.0",
+      "status": "abstain",
+      "robust_dynamic_range": 0.0,
+      "variance": 0.0,
+      "normalized_laplacian_focus": 0.0,
+      "contrast_to_residual": 0.0,
+      "observed_endpoint_fraction": 1.0,
+      "flags": [
+        "LOW_DYNAMIC_RANGE",
+        "HIGH_ENDPOINT_FRACTION"
+      ],
+      "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+    },
+    "high_endpoint_fraction": {
+      "schema_version": "nostos-acquisition-qc/1.0",
+      "status": "review",
+      "robust_dynamic_range": 1.0,
+      "variance": 0.1875,
+      "normalized_laplacian_focus": 0.7083333333333334,
+      "contrast_to_residual": 75317342.86646183,
+      "observed_endpoint_fraction": 1.0,
+      "flags": [
+        "HIGH_ENDPOINT_FRACTION"
+      ],
+      "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+    }
+  },
+  "cases": [
+    {
+      "case": "mcf-z-stacks-03212011_e14_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 699.0,
+          "variance": 21257.42164491556,
+          "normalized_laplacian_focus": 0.08638048114931633,
+          "contrast_to_residual": 91.26542632088491,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1293.0,
+          "variance": 113305.30224590053,
+          "normalized_laplacian_focus": 0.025462081864974322,
+          "contrast_to_residual": 185.57554191034708,
+          "observed_endpoint_fraction": 0.0001906498673740053,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1337.0,
+          "variance": 123643.76567919704,
+          "normalized_laplacian_focus": 0.03177192024416701,
+          "contrast_to_residual": 187.79328710042006,
+          "observed_endpoint_fraction": 0.0003149867374005305,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_g22_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 454.0,
+          "variance": 11200.242311871309,
+          "normalized_laplacian_focus": 0.09351562078455594,
+          "contrast_to_residual": 80.32815821271248,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 983.0,
+          "variance": 39629.93054569447,
+          "normalized_laplacian_focus": 0.03628034451129526,
+          "contrast_to_residual": 170.21339972525402,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1012.0,
+          "variance": 42426.686528330385,
+          "normalized_laplacian_focus": 0.03993576598704369,
+          "contrast_to_residual": 171.4463806237684,
+          "observed_endpoint_fraction": 1.1052166224580018e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_l24_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 643.0,
+          "variance": 21431.347209065825,
+          "normalized_laplacian_focus": 0.05083940939759964,
+          "contrast_to_residual": 120.98635434821858,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1205.0,
+          "variance": 74160.64972224101,
+          "normalized_laplacian_focus": 0.029519380567820882,
+          "contrast_to_residual": 245.19648452449553,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1241.0,
+          "variance": 79152.60812250758,
+          "normalized_laplacian_focus": 0.035831970944979946,
+          "contrast_to_residual": 247.53500489598503,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_m10_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 452.0,
+          "variance": 10092.821615097708,
+          "normalized_laplacian_focus": 0.12664283234552165,
+          "contrast_to_residual": 70.639808106026,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1005.0,
+          "variance": 62213.36509989256,
+          "normalized_laplacian_focus": 0.03215482974204683,
+          "contrast_to_residual": 178.65647144417167,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1047.0,
+          "variance": 68051.58471711217,
+          "normalized_laplacian_focus": 0.038887103813488595,
+          "contrast_to_residual": 183.35800743270755,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_i05_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 377.0,
+          "variance": 8280.56826236482,
+          "normalized_laplacian_focus": 0.13515749963000012,
+          "contrast_to_residual": 63.80248595402242,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 811.0,
+          "variance": 42873.38009661239,
+          "normalized_laplacian_focus": 0.03876494967801774,
+          "contrast_to_residual": 152.69556714238124,
+          "observed_endpoint_fraction": 1.1052166224580018e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 832.0,
+          "variance": 45996.090376241904,
+          "normalized_laplacian_focus": 0.04556494391480024,
+          "contrast_to_residual": 155.76965804930396,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_i17_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 496.0,
+          "variance": 14270.395856012374,
+          "normalized_laplacian_focus": 0.0981833792620154,
+          "contrast_to_residual": 75.07047986970791,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1154.0,
+          "variance": 86978.14384504754,
+          "normalized_laplacian_focus": 0.026009059229757533,
+          "contrast_to_residual": 209.56453647336198,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1193.0,
+          "variance": 93550.92543653217,
+          "normalized_laplacian_focus": 0.03202754325310906,
+          "contrast_to_residual": 217.25998781658348,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_g17_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 516.0,
+          "variance": 16309.664500155766,
+          "normalized_laplacian_focus": 0.09782482734835375,
+          "contrast_to_residual": 73.58002566154259,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1065.0,
+          "variance": 85343.3153533556,
+          "normalized_laplacian_focus": 0.03274026855051881,
+          "contrast_to_residual": 168.00079165721183,
+          "observed_endpoint_fraction": 1.1052166224580018e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1098.0,
+          "variance": 92666.38283460788,
+          "normalized_laplacian_focus": 0.040170225478093916,
+          "contrast_to_residual": 171.82735611175045,
+          "observed_endpoint_fraction": 8.289124668435013e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_c17_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 510.0,
+          "variance": 13886.94779854022,
+          "normalized_laplacian_focus": 0.09120023632699659,
+          "contrast_to_residual": 82.99914917625098,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1068.0,
+          "variance": 70035.30666197883,
+          "normalized_laplacian_focus": 0.022100054998824923,
+          "contrast_to_residual": 208.82961684159667,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1125.0,
+          "variance": 78884.45560395322,
+          "normalized_laplacian_focus": 0.024795980720696997,
+          "contrast_to_residual": 218.3700213930099,
+          "observed_endpoint_fraction": 9.670645446507516e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_n17_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 525.0,
+          "variance": 17666.15853894869,
+          "normalized_laplacian_focus": 0.0789002743051834,
+          "contrast_to_residual": 82.41336166691791,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1137.0,
+          "variance": 91067.89001593622,
+          "normalized_laplacian_focus": 0.03801209514274437,
+          "contrast_to_residual": 202.1455282137327,
+          "observed_endpoint_fraction": 4.697170645446508e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1165.0,
+          "variance": 97298.90135123848,
+          "normalized_laplacian_focus": 0.041490523919958104,
+          "contrast_to_residual": 207.5701129963968,
+          "observed_endpoint_fraction": 0.00015749336870026526,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_e18_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 627.0,
+          "variance": 21573.95462799493,
+          "normalized_laplacian_focus": 0.07288645287910826,
+          "contrast_to_residual": 91.76283062752125,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1213.0,
+          "variance": 100647.68709147268,
+          "normalized_laplacian_focus": 0.03329030842277307,
+          "contrast_to_residual": 199.98960807927855,
+          "observed_endpoint_fraction": 7.736516357206013e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1257.0,
+          "variance": 108929.33550638417,
+          "normalized_laplacian_focus": 0.03936904955554927,
+          "contrast_to_residual": 205.65811439227792,
+          "observed_endpoint_fraction": 0.00015196728558797526,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_b19_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 623.0,
+          "variance": 21957.625294499645,
+          "normalized_laplacian_focus": 0.08479788374051446,
+          "contrast_to_residual": 81.31340585424131,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1283.0,
+          "variance": 115815.78539522877,
+          "normalized_laplacian_focus": 0.02741589057266807,
+          "contrast_to_residual": 185.63192614248038,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1339.0,
+          "variance": 126536.08458952389,
+          "normalized_laplacian_focus": 0.03447502388090026,
+          "contrast_to_residual": 190.09317114306134,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_l10_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 503.0,
+          "variance": 14365.601900245178,
+          "normalized_laplacian_focus": 0.09342261484061992,
+          "contrast_to_residual": 79.19894690055641,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1060.0,
+          "variance": 72868.7825436009,
+          "normalized_laplacian_focus": 0.03329325667007205,
+          "contrast_to_residual": 186.50437510393996,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1090.0,
+          "variance": 77991.98706740774,
+          "normalized_laplacian_focus": 0.03990507423137753,
+          "contrast_to_residual": 190.55893826528117,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_n02_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 383.0,
+          "variance": 7296.0596729272165,
+          "normalized_laplacian_focus": 0.15267760943532893,
+          "contrast_to_residual": 63.34260675888478,
+          "observed_endpoint_fraction": 1.1052166224580018e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 764.0,
+          "variance": 40146.13930484464,
+          "normalized_laplacian_focus": 0.043198413328414086,
+          "contrast_to_residual": 141.01630065004855,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 786.0,
+          "variance": 43192.55584085438,
+          "normalized_laplacian_focus": 0.04886099437300448,
+          "contrast_to_residual": 143.38233276929458,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_l08_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 457.0,
+          "variance": 11730.973759071863,
+          "normalized_laplacian_focus": 0.1167872519952129,
+          "contrast_to_residual": 69.86865660006299,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 937.8099999999977,
+          "variance": 62706.42093691067,
+          "normalized_laplacian_focus": 0.029477947368398646,
+          "contrast_to_residual": 167.05278477621528,
+          "observed_endpoint_fraction": 1.1052166224580018e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 978.0,
+          "variance": 69256.71968085611,
+          "normalized_laplacian_focus": 0.035036314471329044,
+          "contrast_to_residual": 172.51349307530768,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_m07_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 386.0,
+          "variance": 8193.236838742218,
+          "normalized_laplacian_focus": 0.15247572310264654,
+          "contrast_to_residual": 60.3108798702507,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 822.0,
+          "variance": 49432.16399260812,
+          "normalized_laplacian_focus": 0.03595198071280509,
+          "contrast_to_residual": 145.74450942752566,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 856.0,
+          "variance": 54435.273178548494,
+          "normalized_laplacian_focus": 0.04206768207819952,
+          "contrast_to_residual": 150.597249012821,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_j12_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 599.0,
+          "variance": 20212.97693915897,
+          "normalized_laplacian_focus": 0.07308750528159427,
+          "contrast_to_residual": 90.84929958719407,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1204.0,
+          "variance": 93795.1941933159,
+          "normalized_laplacian_focus": 0.023244356658988892,
+          "contrast_to_residual": 215.45140592553224,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1244.0,
+          "variance": 101480.23561501988,
+          "normalized_laplacian_focus": 0.028878432080613234,
+          "contrast_to_residual": 220.32161012985932,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_c19_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 561.0,
+          "variance": 16361.262273572012,
+          "normalized_laplacian_focus": 0.11072150239501925,
+          "contrast_to_residual": 72.28214807334031,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1242.0,
+          "variance": 102394.09786158412,
+          "normalized_laplacian_focus": 0.028408493768869728,
+          "contrast_to_residual": 178.28561932651237,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1283.0,
+          "variance": 112587.12793635057,
+          "normalized_laplacian_focus": 0.03552937734471507,
+          "contrast_to_residual": 181.63685038896773,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_g08_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 442.0,
+          "variance": 11268.132604206969,
+          "normalized_laplacian_focus": 0.09279994388741727,
+          "contrast_to_residual": 81.97278143209772,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 902.0,
+          "variance": 50627.722966675035,
+          "normalized_laplacian_focus": 0.032138313293033606,
+          "contrast_to_residual": 192.1659200611622,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 932.0,
+          "variance": 54784.41509808461,
+          "normalized_laplacian_focus": 0.038910001150743535,
+          "contrast_to_residual": 197.12122275064158,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_k05_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 408.0,
+          "variance": 7932.886157357122,
+          "normalized_laplacian_focus": 0.13700003843316583,
+          "contrast_to_residual": 69.23646666674954,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 793.0,
+          "variance": 45734.88726153043,
+          "normalized_laplacian_focus": 0.03501175421260322,
+          "contrast_to_residual": 157.26739868092577,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 819.0,
+          "variance": 49961.32148907415,
+          "normalized_laplacian_focus": 0.04154017878541015,
+          "contrast_to_residual": 161.07358560406195,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_o23_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 652.0,
+          "variance": 25311.306577242074,
+          "normalized_laplacian_focus": 0.06585582677663683,
+          "contrast_to_residual": 93.56258249560072,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1377.0,
+          "variance": 127455.61105618729,
+          "normalized_laplacian_focus": 0.035353447232320694,
+          "contrast_to_residual": 215.4146281880634,
+          "observed_endpoint_fraction": 1.1052166224580018e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1402.0,
+          "variance": 134608.71107342222,
+          "normalized_laplacian_focus": 0.03886818505486204,
+          "contrast_to_residual": 219.04133348706043,
+          "observed_endpoint_fraction": 6.07869142351901e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_p17_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 545.0,
+          "variance": 10989.72464805984,
+          "normalized_laplacian_focus": 0.045222901955221724,
+          "contrast_to_residual": 151.32952468710923,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1113.0,
+          "variance": 33800.17460775308,
+          "normalized_laplacian_focus": 0.02876204934710152,
+          "contrast_to_residual": 335.67266658605945,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1136.8099999999977,
+          "variance": 35842.819327058474,
+          "normalized_laplacian_focus": 0.03495808717184202,
+          "contrast_to_residual": 344.105724199189,
+          "observed_endpoint_fraction": 1.1052166224580018e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_f15_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 626.0,
+          "variance": 19588.04036722324,
+          "normalized_laplacian_focus": 0.10739498802865269,
+          "contrast_to_residual": 74.38343374823694,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1293.0,
+          "variance": 117949.94491704415,
+          "normalized_laplacian_focus": 0.032627163358298406,
+          "contrast_to_residual": 158.94342005115487,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1345.0,
+          "variance": 128770.99592420275,
+          "normalized_laplacian_focus": 0.040490657759957485,
+          "contrast_to_residual": 161.6590991172843,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_p20_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 476.0,
+          "variance": 11892.715446877875,
+          "normalized_laplacian_focus": 0.06576572436048155,
+          "contrast_to_residual": 105.46257412310833,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 968.0,
+          "variance": 38648.77920881367,
+          "normalized_laplacian_focus": 0.03527163236499648,
+          "contrast_to_residual": 237.95290512909418,
+          "observed_endpoint_fraction": 1.1052166224580018e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 988.0,
+          "variance": 40151.80081566489,
+          "normalized_laplacian_focus": 0.04028370092104358,
+          "contrast_to_residual": 242.88406808475708,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_n07_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 433.0,
+          "variance": 10765.203174823155,
+          "normalized_laplacian_focus": 0.12936739392879382,
+          "contrast_to_residual": 64.48346152209662,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 889.0,
+          "variance": 60170.91268410413,
+          "normalized_laplacian_focus": 0.03914151113317145,
+          "contrast_to_residual": 147.20304296396478,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 915.0,
+          "variance": 64710.559361743566,
+          "normalized_laplacian_focus": 0.046166666471363756,
+          "contrast_to_residual": 149.52608489611103,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_o02_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 407.0,
+          "variance": 7699.3378526021825,
+          "normalized_laplacian_focus": 0.1311616839199731,
+          "contrast_to_residual": 72.2303404593969,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 701.0,
+          "variance": 33165.73832022537,
+          "normalized_laplacian_focus": 0.040686210399113736,
+          "contrast_to_residual": 138.35869188254583,
+          "observed_endpoint_fraction": 1.6578249336870025e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 730.0,
+          "variance": 35929.100408159065,
+          "normalized_laplacian_focus": 0.045865074302954605,
+          "contrast_to_residual": 141.90050085267785,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_l21_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 505.0,
+          "variance": 18414.841098748,
+          "normalized_laplacian_focus": 0.059498206103264076,
+          "contrast_to_residual": 96.60816175316164,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1268.0,
+          "variance": 81635.57076859238,
+          "normalized_laplacian_focus": 0.02355555681243003,
+          "contrast_to_residual": 279.8572685142757,
+          "observed_endpoint_fraction": 1.1052166224580018e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1332.0,
+          "variance": 90277.35635624865,
+          "normalized_laplacian_focus": 0.029751579302297017,
+          "contrast_to_residual": 292.29676925862793,
+          "observed_endpoint_fraction": 1.1052166224580018e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_n14_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 603.0,
+          "variance": 20975.600313728588,
+          "normalized_laplacian_focus": 0.09445396033877625,
+          "contrast_to_residual": 75.75164396011792,
+          "observed_endpoint_fraction": 1.6578249336870025e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1137.8099999999977,
+          "variance": 101192.4553204127,
+          "normalized_laplacian_focus": 0.031861036614686755,
+          "contrast_to_residual": 149.44885717355982,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1179.0,
+          "variance": 110496.50453463911,
+          "normalized_laplacian_focus": 0.03984449738223361,
+          "contrast_to_residual": 150.04590997724222,
+          "observed_endpoint_fraction": 4.1445623342175064e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_a07_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 382.0,
+          "variance": 8589.708385432416,
+          "normalized_laplacian_focus": 0.08532262580670597,
+          "contrast_to_residual": 86.60876786552251,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 760.0,
+          "variance": 31568.30039716924,
+          "normalized_laplacian_focus": 0.03287334905973143,
+          "contrast_to_residual": 197.78009137108305,
+          "observed_endpoint_fraction": 1.3815207780725021e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 787.0,
+          "variance": 34232.733357743746,
+          "normalized_laplacian_focus": 0.0393813132445696,
+          "contrast_to_residual": 204.17398512129682,
+          "observed_endpoint_fraction": 2.486737400530504e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_o10_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 393.0,
+          "variance": 8715.02630810959,
+          "normalized_laplacian_focus": 0.11659973600466547,
+          "contrast_to_residual": 71.09599973167951,
+          "observed_endpoint_fraction": 1.1052166224580018e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 808.0,
+          "variance": 42486.37768601342,
+          "normalized_laplacian_focus": 0.03142142895070233,
+          "contrast_to_residual": 171.4909878693919,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 829.0,
+          "variance": 46084.323914206325,
+          "normalized_laplacian_focus": 0.036227850374618294,
+          "contrast_to_residual": 174.25114554402606,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_i06_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 434.0,
+          "variance": 9845.029798413765,
+          "normalized_laplacian_focus": 0.12596177913587825,
+          "contrast_to_residual": 69.18480286880369,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 921.0,
+          "variance": 55145.585981003256,
+          "normalized_laplacian_focus": 0.03430304508025239,
+          "contrast_to_residual": 167.40283821871185,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 959.0,
+          "variance": 60818.8982506693,
+          "normalized_laplacian_focus": 0.04051388351211476,
+          "contrast_to_residual": 172.65463071054592,
+          "observed_endpoint_fraction": 1.9341290893015032e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_c09_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 562.0,
+          "variance": 13582.221952839076,
+          "normalized_laplacian_focus": 0.09471588697695911,
+          "contrast_to_residual": 88.90181334235311,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1050.0,
+          "variance": 67695.21082999717,
+          "normalized_laplacian_focus": 0.030063788689802817,
+          "contrast_to_residual": 191.50903213863248,
+          "observed_endpoint_fraction": 1.3815207780725021e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1076.0,
+          "variance": 72978.37580987118,
+          "normalized_laplacian_focus": 0.03616577445240939,
+          "contrast_to_residual": 195.0244343046276,
+          "observed_endpoint_fraction": 1.1052166224580018e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_d19_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 596.0,
+          "variance": 20720.34082246365,
+          "normalized_laplacian_focus": 0.04723949972008119,
+          "contrast_to_residual": 120.6106616496696,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1215.0,
+          "variance": 70389.85772110354,
+          "normalized_laplacian_focus": 0.02232986148052946,
+          "contrast_to_residual": 285.578358237064,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1261.0,
+          "variance": 75092.42495395632,
+          "normalized_laplacian_focus": 0.027948449531550738,
+          "contrast_to_residual": 297.02959355052536,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_n19_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 700.0,
+          "variance": 23766.06828733831,
+          "normalized_laplacian_focus": 0.06211240697127593,
+          "contrast_to_residual": 107.52168388443961,
+          "observed_endpoint_fraction": 1.1052166224580018e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1275.0,
+          "variance": 104012.48236180493,
+          "normalized_laplacian_focus": 0.02566485682190489,
+          "contrast_to_residual": 231.0898782159141,
+          "observed_endpoint_fraction": 0.00015749336870026526,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1311.0,
+          "variance": 111006.66304325635,
+          "normalized_laplacian_focus": 0.031298053900203356,
+          "contrast_to_residual": 236.04050514837124,
+          "observed_endpoint_fraction": 0.0002403846153846154,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_f12_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 635.0,
+          "variance": 21160.62904252578,
+          "normalized_laplacian_focus": 0.07782301504105373,
+          "contrast_to_residual": 90.28511975528359,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1240.0,
+          "variance": 103808.62096839586,
+          "normalized_laplacian_focus": 0.02912170962020087,
+          "contrast_to_residual": 196.50572831975194,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1254.0,
+          "variance": 108466.17592339429,
+          "normalized_laplacian_focus": 0.03611855183054014,
+          "contrast_to_residual": 198.28261166291983,
+          "observed_endpoint_fraction": 1.1052166224580018e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_c05_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 374.0,
+          "variance": 8635.33646683035,
+          "normalized_laplacian_focus": 0.13103394693727857,
+          "contrast_to_residual": 63.60244639277932,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 771.0,
+          "variance": 41419.01066221054,
+          "normalized_laplacian_focus": 0.04095730339114501,
+          "contrast_to_residual": 143.56838043106376,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 799.0,
+          "variance": 45638.01955132087,
+          "normalized_laplacian_focus": 0.04753189213161223,
+          "contrast_to_residual": 147.09880569703265,
+          "observed_endpoint_fraction": 2.2104332449160036e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_f05_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 349.0,
+          "variance": 6637.513703890644,
+          "normalized_laplacian_focus": 0.1798910209755238,
+          "contrast_to_residual": 55.12091077845852,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 811.0,
+          "variance": 46417.50337232703,
+          "normalized_laplacian_focus": 0.04311107540645264,
+          "contrast_to_residual": 143.14038283649586,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 844.0,
+          "variance": 51154.59765460952,
+          "normalized_laplacian_focus": 0.049235944422069924,
+          "contrast_to_residual": 147.35721236782388,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_j09_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 319.0,
+          "variance": 5571.354863801809,
+          "normalized_laplacian_focus": 0.09836338911661618,
+          "contrast_to_residual": 83.63666611152252,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 659.0,
+          "variance": 19020.98624415913,
+          "normalized_laplacian_focus": 0.03873386922323234,
+          "contrast_to_residual": 187.44274536937328,
+          "observed_endpoint_fraction": 2.486737400530504e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 679.0,
+          "variance": 20315.939578724723,
+          "normalized_laplacian_focus": 0.04513781923151274,
+          "contrast_to_residual": 193.32034607682917,
+          "observed_endpoint_fraction": 1.3815207780725021e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_b16_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 634.0,
+          "variance": 17888.482154579244,
+          "normalized_laplacian_focus": 0.10835234752713309,
+          "contrast_to_residual": 78.73212461247411,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1202.0,
+          "variance": 109978.21527771204,
+          "normalized_laplacian_focus": 0.029323125982256996,
+          "contrast_to_residual": 161.76753081917596,
+          "observed_endpoint_fraction": 1.3815207780725021e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1243.0,
+          "variance": 121141.2558171622,
+          "normalized_laplacian_focus": 0.03704331064257256,
+          "contrast_to_residual": 163.409225455903,
+          "observed_endpoint_fraction": 3.8682581786030064e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_p05_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 348.0,
+          "variance": 8072.838704673222,
+          "normalized_laplacian_focus": 0.09731392891598271,
+          "contrast_to_residual": 75.18434941698959,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 805.0,
+          "variance": 35731.71027108277,
+          "normalized_laplacian_focus": 0.030543191105869706,
+          "contrast_to_residual": 201.04722221731356,
+          "observed_endpoint_fraction": 1.3815207780725021e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 836.0,
+          "variance": 38905.03769922287,
+          "normalized_laplacian_focus": 0.03543220081649755,
+          "contrast_to_residual": 208.6530905811228,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_p22_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 24.0,
+          "variance": 21.351687724414674,
+          "normalized_laplacian_focus": 12.301756469542504,
+          "contrast_to_residual": 7.629580488612889,
+          "observed_endpoint_fraction": 1.1052166224580018e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 21.0,
+          "variance": 18.6298609495596,
+          "normalized_laplacian_focus": 12.8927322943019,
+          "contrast_to_residual": 6.963089783823062,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 20.0,
+          "variance": 18.64806663300691,
+          "normalized_laplacian_focus": 12.885820829339295,
+          "contrast_to_residual": 6.6339831337812365,
+          "observed_endpoint_fraction": 2.7630415561450043e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_b23_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 557.0,
+          "variance": 15817.099235964031,
+          "normalized_laplacian_focus": 0.11369559230503022,
+          "contrast_to_residual": 72.56711378292825,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1210.0,
+          "variance": 91336.53306938297,
+          "normalized_laplacian_focus": 0.025685974752542688,
+          "contrast_to_residual": 177.47727199846724,
+          "observed_endpoint_fraction": 1.1052166224580018e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1270.0,
+          "variance": 101799.55677188722,
+          "normalized_laplacian_focus": 0.02970331037350701,
+          "contrast_to_residual": 182.39256442204368,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_g13_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 571.0,
+          "variance": 17401.666176543764,
+          "normalized_laplacian_focus": 0.0869180781097988,
+          "contrast_to_residual": 84.5231329054097,
+          "observed_endpoint_fraction": 1.1052166224580018e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1160.0,
+          "variance": 88038.74117123737,
+          "normalized_laplacian_focus": 0.02484465627727808,
+          "contrast_to_residual": 195.72841283621244,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1209.0,
+          "variance": 96138.9236512087,
+          "normalized_laplacian_focus": 0.029608397575201065,
+          "contrast_to_residual": 201.57555573947457,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_h10_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 301.0,
+          "variance": 6001.343813594229,
+          "normalized_laplacian_focus": 0.1037360050476509,
+          "contrast_to_residual": 73.94252170805251,
+          "observed_endpoint_fraction": 1.6578249336870025e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 683.0,
+          "variance": 22079.085776389686,
+          "normalized_laplacian_focus": 0.03621083254553045,
+          "contrast_to_residual": 188.2262726822079,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 707.0,
+          "variance": 23637.30566848657,
+          "normalized_laplacian_focus": 0.04081429281445213,
+          "contrast_to_residual": 194.74674566825453,
+          "observed_endpoint_fraction": 1.1052166224580018e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_k02_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 382.0,
+          "variance": 7522.92180406129,
+          "normalized_laplacian_focus": 0.15173363436277804,
+          "contrast_to_residual": 62.78263595553097,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 738.0,
+          "variance": 40101.077190000964,
+          "normalized_laplacian_focus": 0.049288231445136534,
+          "contrast_to_residual": 130.4119363888869,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 756.0,
+          "variance": 42716.08026393249,
+          "normalized_laplacian_focus": 0.05474709101356488,
+          "contrast_to_residual": 131.8609446048115,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_f11_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 498.0,
+          "variance": 12802.371697148248,
+          "normalized_laplacian_focus": 0.1149702091533396,
+          "contrast_to_residual": 72.07401270500714,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 982.0,
+          "variance": 68055.0217500145,
+          "normalized_laplacian_focus": 0.03109838464445498,
+          "contrast_to_residual": 163.21653702359947,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1024.0,
+          "variance": 74973.40324664516,
+          "normalized_laplacian_focus": 0.03712526746241277,
+          "contrast_to_residual": 167.92143654993802,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_b04_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 415.0,
+          "variance": 8808.686393088166,
+          "normalized_laplacian_focus": 0.10735281354170062,
+          "contrast_to_residual": 78.79675505326794,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 820.0,
+          "variance": 43557.44903665078,
+          "normalized_laplacian_focus": 0.03235844301007095,
+          "contrast_to_residual": 180.7834763709847,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 849.0,
+          "variance": 47988.565912632344,
+          "normalized_laplacian_focus": 0.03754031152441078,
+          "contrast_to_residual": 186.05599300121642,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_g24_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 530.0,
+          "variance": 15091.125307586866,
+          "normalized_laplacian_focus": 0.06005847319308344,
+          "contrast_to_residual": 111.24945859848783,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1134.0,
+          "variance": 56813.43229101712,
+          "normalized_laplacian_focus": 0.02418768697333989,
+          "contrast_to_residual": 267.7892467282017,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1175.0,
+          "variance": 61213.76491956653,
+          "normalized_laplacian_focus": 0.029120508136958944,
+          "contrast_to_residual": 276.7792730755897,
+          "observed_endpoint_fraction": 1.1052166224580018e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_p18_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1097.0,
+          "variance": 36410.407392343506,
+          "normalized_laplacian_focus": 0.03733131845620243,
+          "contrast_to_residual": 181.93404500332878,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1462.0,
+          "variance": 99730.57827388412,
+          "normalized_laplacian_focus": 0.018557796093095356,
+          "contrast_to_residual": 287.1275524779971,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1511.0,
+          "variance": 108312.2811738798,
+          "normalized_laplacian_focus": 0.023603236169128194,
+          "contrast_to_residual": 294.94696892525513,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_o09_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 421.0,
+          "variance": 10154.133128645572,
+          "normalized_laplacian_focus": 0.10993647405814386,
+          "contrast_to_residual": 73.1717930197255,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 838.0,
+          "variance": 44579.22700860064,
+          "normalized_laplacian_focus": 0.034122821215679194,
+          "contrast_to_residual": 163.9968012876171,
+          "observed_endpoint_fraction": 1.3815207780725021e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 859.0,
+          "variance": 47938.49581260832,
+          "normalized_laplacian_focus": 0.04101551579024989,
+          "contrast_to_residual": 167.4234130540188,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_h10_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 548.0,
+          "variance": 14419.10955245882,
+          "normalized_laplacian_focus": 0.09466923271733058,
+          "contrast_to_residual": 85.07425329382303,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 959.0,
+          "variance": 70553.55047933638,
+          "normalized_laplacian_focus": 0.03137005761405484,
+          "contrast_to_residual": 171.09642248176715,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 992.0,
+          "variance": 77612.71033083892,
+          "normalized_laplacian_focus": 0.0381020661074692,
+          "contrast_to_residual": 175.76389532513332,
+          "observed_endpoint_fraction": 3.039345711759505e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_k05_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 341.0,
+          "variance": 7912.942522598309,
+          "normalized_laplacian_focus": 0.11463939474258313,
+          "contrast_to_residual": 66.91174834870658,
+          "observed_endpoint_fraction": 1.1052166224580018e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 743.0,
+          "variance": 34587.37384306197,
+          "normalized_laplacian_focus": 0.038155887401388595,
+          "contrast_to_residual": 165.01817333797175,
+          "observed_endpoint_fraction": 1.1052166224580018e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 765.0,
+          "variance": 37450.877884021116,
+          "normalized_laplacian_focus": 0.04465606291048486,
+          "contrast_to_residual": 169.19444070214004,
+          "observed_endpoint_fraction": 2.486737400530504e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_j03_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 393.0,
+          "variance": 8396.255755940685,
+          "normalized_laplacian_focus": 0.1099806510215913,
+          "contrast_to_residual": 76.016294473394,
+          "observed_endpoint_fraction": 1.1052166224580018e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 761.8099999999977,
+          "variance": 35038.60094486475,
+          "normalized_laplacian_focus": 0.037725677746914967,
+          "contrast_to_residual": 164.3570842996654,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 790.0,
+          "variance": 38489.23449156621,
+          "normalized_laplacian_focus": 0.04359388318505929,
+          "contrast_to_residual": 168.69925438305435,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_b08_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 488.0,
+          "variance": 11371.511599367175,
+          "normalized_laplacian_focus": 0.08167497654784536,
+          "contrast_to_residual": 95.62552874119224,
+          "observed_endpoint_fraction": 1.3815207780725021e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 876.0,
+          "variance": 43185.56203483032,
+          "normalized_laplacian_focus": 0.028803140938478876,
+          "contrast_to_residual": 197.8028294986504,
+          "observed_endpoint_fraction": 1.3815207780725021e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 896.8099999999977,
+          "variance": 46047.20082151564,
+          "normalized_laplacian_focus": 0.032924269433531536,
+          "contrast_to_residual": 201.55397579528787,
+          "observed_endpoint_fraction": 2.486737400530504e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_f06_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 453.0,
+          "variance": 11485.00912839835,
+          "normalized_laplacian_focus": 0.1288008756842806,
+          "contrast_to_residual": 64.97263179600279,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 876.0,
+          "variance": 59658.313274609165,
+          "normalized_laplacian_focus": 0.04202120575811491,
+          "contrast_to_residual": 131.83350097907342,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 905.0,
+          "variance": 65319.426334828924,
+          "normalized_laplacian_focus": 0.050517955683222864,
+          "contrast_to_residual": 132.97656609809357,
+          "observed_endpoint_fraction": 2.486737400530504e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_k06_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 401.0,
+          "variance": 8620.047699518098,
+          "normalized_laplacian_focus": 0.10106425286023138,
+          "contrast_to_residual": 79.04201068701798,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 775.0,
+          "variance": 36500.38958663796,
+          "normalized_laplacian_focus": 0.03829081451633439,
+          "contrast_to_residual": 177.19052204674023,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 801.0,
+          "variance": 38826.452095528795,
+          "normalized_laplacian_focus": 0.043917461562319654,
+          "contrast_to_residual": 182.8007355558169,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_k22_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 553.0,
+          "variance": 17292.930321455697,
+          "normalized_laplacian_focus": 0.09766689412819085,
+          "contrast_to_residual": 76.00040482207106,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1139.0,
+          "variance": 87712.69821568219,
+          "normalized_laplacian_focus": 0.022788291754019877,
+          "contrast_to_residual": 185.1115454116,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1181.0,
+          "variance": 95888.37024462764,
+          "normalized_laplacian_focus": 0.025459623538352634,
+          "contrast_to_residual": 188.000589158185,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_b12_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 538.0,
+          "variance": 15199.986980679187,
+          "normalized_laplacian_focus": 0.11457106940132289,
+          "contrast_to_residual": 70.92816104691825,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1165.0,
+          "variance": 96258.39593857294,
+          "normalized_laplacian_focus": 0.029045690690833636,
+          "contrast_to_residual": 172.51566429196103,
+          "observed_endpoint_fraction": 2.2104332449160036e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1215.0,
+          "variance": 107051.9354319232,
+          "normalized_laplacian_focus": 0.03595532525267206,
+          "contrast_to_residual": 176.64926485757616,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_j16_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 631.0,
+          "variance": 23345.116733045597,
+          "normalized_laplacian_focus": 0.05085664317889907,
+          "contrast_to_residual": 117.39278595348605,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1212.0,
+          "variance": 78444.78642550811,
+          "normalized_laplacian_focus": 0.023242732148982675,
+          "contrast_to_residual": 257.34009541520896,
+          "observed_endpoint_fraction": 2.2104332449160036e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1258.0,
+          "variance": 85038.9618206288,
+          "normalized_laplacian_focus": 0.029803663555440993,
+          "contrast_to_residual": 265.79098860850735,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_m08_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 400.0,
+          "variance": 8867.749129230722,
+          "normalized_laplacian_focus": 0.12897416051023652,
+          "contrast_to_residual": 67.06051830684814,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 894.0,
+          "variance": 47339.679448645315,
+          "normalized_laplacian_focus": 0.038118652959421614,
+          "contrast_to_residual": 171.13785408430977,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 925.0,
+          "variance": 51053.90325531724,
+          "normalized_laplacian_focus": 0.04467912580887103,
+          "contrast_to_residual": 176.1934995409004,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_h05_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 343.0,
+          "variance": 6495.329079937752,
+          "normalized_laplacian_focus": 0.09161589327501088,
+          "contrast_to_residual": 86.57307106370595,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 746.0,
+          "variance": 26205.66429410841,
+          "normalized_laplacian_focus": 0.030205679306772256,
+          "contrast_to_residual": 214.8632248595198,
+          "observed_endpoint_fraction": 1.9341290893015032e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 773.0,
+          "variance": 28665.997080456324,
+          "normalized_laplacian_focus": 0.035735125833767305,
+          "contrast_to_residual": 223.01564197204468,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_f01_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 252.0,
+          "variance": 3880.9314225276376,
+          "normalized_laplacian_focus": 0.1891050356069628,
+          "contrast_to_residual": 53.21329751798834,
+          "observed_endpoint_fraction": 1.1052166224580018e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 568.0,
+          "variance": 19520.43530543992,
+          "normalized_laplacian_focus": 0.03993772936368641,
+          "contrast_to_residual": 142.58035305744994,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 598.0,
+          "variance": 21852.742291828607,
+          "normalized_laplacian_focus": 0.03921603273129792,
+          "contrast_to_residual": 149.2136837339266,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_g10_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 519.8099999999977,
+          "variance": 12819.706790704138,
+          "normalized_laplacian_focus": 0.09360790326275621,
+          "contrast_to_residual": 86.85951130542632,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1085.0,
+          "variance": 73053.83824580086,
+          "normalized_laplacian_focus": 0.024592297461188465,
+          "contrast_to_residual": 217.98956343725905,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1115.0,
+          "variance": 78001.55212279076,
+          "normalized_laplacian_focus": 0.029533447955438857,
+          "contrast_to_residual": 222.8856378395201,
+          "observed_endpoint_fraction": 1.9341290893015032e-05,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_c08_s1_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 385.0,
+          "variance": 5807.984880944302,
+          "normalized_laplacian_focus": 0.07491032193779426,
+          "contrast_to_residual": 113.72397226585674,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 878.0,
+          "variance": 20338.926314154847,
+          "normalized_laplacian_focus": 0.02775817628074483,
+          "contrast_to_residual": 280.8315629643716,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 933.0,
+          "variance": 22815.767129677668,
+          "normalized_laplacian_focus": 0.0321517164514528,
+          "contrast_to_residual": 300.8122268619229,
+          "observed_endpoint_fraction": 8.289124668435012e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    },
+    {
+      "case": "mcf-z-stacks-03212011_c16_s2_w1",
+      "qc": {
+        "z00": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 692.0,
+          "variance": 22216.474979518283,
+          "normalized_laplacian_focus": 0.0760879195218427,
+          "contrast_to_residual": 96.32003817903535,
+          "observed_endpoint_fraction": 5.526083112290009e-06,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z15": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1333.0,
+          "variance": 114007.60853117344,
+          "normalized_laplacian_focus": 0.024830327998052144,
+          "contrast_to_residual": 210.87467178526444,
+          "observed_endpoint_fraction": 0.00040893015030946063,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        },
+        "z16": {
+          "schema_version": "nostos-acquisition-qc/1.0",
+          "status": "pass",
+          "robust_dynamic_range": 1367.0,
+          "variance": 121493.31319767587,
+          "normalized_laplacian_focus": 0.030825518870841846,
+          "contrast_to_residual": 214.59633555261306,
+          "observed_endpoint_fraction": 0.00046419098143236074,
+          "flags": [],
+          "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+        }
+      }
+    }
+  ],
+  "interpretation": "Focus ordering and failure semantics on one public acquisition; no universal acceptable-focus threshold."
+}

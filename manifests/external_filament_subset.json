@@ -1,0 +1,10 @@
+{
+  "dataset": "A Mycelium Dataset with Edge-Precise Annotation for Semantic Segmentation",
+  "doi": "10.5281/zenodo.15224240",
+  "article_doi": "10.1038/s41597-025-06265-1",
+  "selection": "Complete labeled-GS_PO_TS archive: 10 manually masked images for each of GS, PO and TS",
+  "coordinate_policy": "Dimensionless normalized image coordinates; no physical pixel size inferred",
+  "files": [
+    {"name": "labeled-GS_PO_TS.zip", "bytes": 127132914, "md5": "dc7b89e8853911bc8a7dda12c0ac230f"}
+  ]
+}

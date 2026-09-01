@@ -1,0 +1,19 @@
+{
+  "protocol_version": "nostos0-dense-tool-workflow/1.0",
+  "status": "pass",
+  "source_frame_sha256": "dc13c97d5273277dd5b05696dba0ffaa0ec635a685f50ea55d5660bf07409370",
+  "generated_series_sha256": "ea262cfd47b37ae4a8da6e69951b3999cd4f6c2ede1242001ece1cd78c91ae9c",
+  "runtime_seconds": 4.850943500176072,
+  "eligible_fraction": 0.9639204545454545,
+  "response_count": 4,
+  "gates": {
+    "valid": true,
+    "four_surfaces": true,
+    "axes_and_calibration": true,
+    "finite": true,
+    "eligible_fraction": true,
+    "provenance": true,
+    "runtime": true
+  },
+  "interpretation": "Author-operated public-data file workflow; not independent usability or native-motion validation."
+}

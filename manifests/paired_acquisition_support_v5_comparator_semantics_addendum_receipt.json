@@ -1,0 +1,47 @@
+{
+  "schema_version": "nostos-paired-acquisition-comparator-addendum/1.0",
+  "created_at_utc": "2026-08-29T03:45:18Z",
+  "status": "historical_comparator_semantics_corrected_without_changing_primary_failure",
+  "affected_version": "nostos-paired-acquisition-support/5.0",
+  "defect": "The v5 threshold acceptance helper applied every NOSTOS hard abstention to every comparator, including conventional acquisition QC and component ablations.",
+  "impact": {
+    "v5_full_contract_failure_changed": false,
+    "v5_threshold_lock_state_changed": false,
+    "confirmation_access_changed": false,
+    "affected_interpretation": "Historical threshold-level conventional-QC and component-ablation operating points were hybrid policies and cannot support clean comparator claims.",
+    "aurc_score_ranking_affected": false
+  },
+  "prospective_correction": {
+    "version": "nostos-paired-acquisition-support/6.0",
+    "rule": "Each policy applies only the continuous score and hard preconditions owned by its retained components; always emit inherits none.",
+    "unknown_hard_reason_behavior": "fail_validation"
+  },
+  "files": [
+    {
+      "path": "manifests/paired_acquisition_support_threshold_failure_receipt_v5.json",
+      "bytes": 8746,
+      "sha256": "ea1f2a476447b7dbc94ca5f8528fdd4ee6379954a260d9800a838dbc5057a9f9"
+    },
+    {
+      "path": "docs/NOSTOS0_V5_COMPARATOR_SEMANTICS_ADDENDUM.md",
+      "bytes": 3075,
+      "sha256": "e8059e810fc517592096143d8f2fd9c85d75149f08e8b71a40ceec325e709572"
+    },
+    {
+      "path": "src/nostos/validation/threshold_calibration.py",
+      "bytes": 10586,
+      "sha256": "844ede65119fc4fdaa0f66b712c7eaf21dbde22eb891f8c94da2334d57e536f4"
+    },
+    {
+      "path": "src/nostos/validation/selective_policy_v6.py",
+      "bytes": 11665,
+      "sha256": "465c25daa2040f3d610d31c447b5b1eef0e94fe221d5e3161e22004a24a7e641"
+    },
+    {
+      "path": "tests/test_selective_policy_v6.py",
+      "bytes": 2808,
+      "sha256": "a753bfbd55443f84291eabd245a6410932b93a8e337476659ecf05d77cf492cc"
+    }
+  ],
+  "claim_boundary": "Comparator correction only. Version 5 remains failed; no v5 threshold, confirmation, biological or clinical claim is authorized."
+}

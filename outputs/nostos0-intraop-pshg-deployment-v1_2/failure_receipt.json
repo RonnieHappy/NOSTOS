@@ -1,0 +1,53 @@
+{
+  "protocol_version": "nostos-intraop-pshg-deployment/1.2",
+  "status": "failed_after_full_evaluation",
+  "result_path": "outputs/nostos0-intraop-pshg-deployment-v1_2/deployment_benchmark.json",
+  "result_bytes": 9269,
+  "result_sha256": "b53c83987f86dbe0e887c95f7dfb19c69a45716b6440b2b84cae0d5a40b39e92",
+  "lock_path": "manifests/intraop_pshg_deployment_v1_2_lock.json",
+  "lock_bytes": 24970,
+  "lock_sha256": "c22999a14fedd560bf053283b4df3bedfbeedd3d33301fa66bd1b1bbdac49ee0",
+  "completed_rois": 8,
+  "eligible_pixels": 203875,
+  "passed_checks": [
+    "completed_rois",
+    "pooled_reference_error",
+    "worst_roi_reference_error",
+    "analysis_latency",
+    "end_to_end_latency",
+    "peak_python_memory",
+    "deterministic_map_hashes",
+    "profile_and_source_hashes",
+    "clinical_decision_withheld"
+  ],
+  "failed_checks": {
+    "production_validation_equivalence": {
+      "locked_limit_degrees": 1e-10,
+      "observed_maximum_degrees": 0.000007629390779584355,
+      "root_cause": "The production artifact is intentionally serialized as IEEE-754 float32 and was compared with an independent float64 recomputation. The observed maximum equals one-half of the float32 spacing at 180 degrees; the frozen 1e-10-degree gate was incompatible with the declared storage type."
+    },
+    "technical_endpoint_promoted_only_in_scope": {
+      "confirmed_valid_rois": 2,
+      "review_unvalidated_rois": 6,
+      "root_cause": "Generic acquisition QC measured endpoint occupancy over the complete rectangular field, including pixels outside the acquisition-supported R2/SNR domain. The measurement itself excluded those pixels. A high zero-background fraction therefore demoted six otherwise profile-conforming fields."
+    }
+  },
+  "accuracy_observation": {
+    "pooled_median_reference_error_degrees": 7.1198883056640625,
+    "pooled_p75_reference_error_degrees": 13.156194686889648,
+    "worst_roi_median_reference_error_degrees": 9.03122329711914
+  },
+  "engineering_observation": {
+    "p95_analysis_seconds": 0.074099714984186,
+    "p95_end_to_end_seconds": 0.4069306749617681,
+    "maximum_peak_python_memory_mb": 28.003087997436523,
+    "all_map_hashes_deterministic": true
+  },
+  "outcome_access": {
+    "reference_error_computed": true,
+    "all_success_gates_evaluated": true,
+    "original_eight_rois_available_for_unbiased_reconfirmation": false
+  },
+  "next_protocol_rule": "V1.3 is outcome-informed engineering development. Its numeric equivalence limits must be derived from the declared float32 storage precision, its acquisition QC must operate on the acquisition-supported domain, and its deployment confirmation must use a new hash-selected set of fields. No v1.2 threshold or result may be overwritten.",
+  "claim_boundary": "The passing individual observations are descriptive because the protocol failed overall. This is neither an independent biological confirmation nor clinical evidence."
+}

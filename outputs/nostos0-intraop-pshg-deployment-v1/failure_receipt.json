@@ -1,0 +1,35 @@
+{
+  "protocol_version": "nostos-intraop-pshg-deployment/1.0",
+  "status": "failed_before_reference_evaluation",
+  "failure_stage": "production support-map validation on the first locked ROI",
+  "exception_type": "ValueError",
+  "exception_message": "R2 and SNR support maps must be finite.",
+  "first_locked_roi": "breast_14",
+  "observed_support_map_diagnostic": {
+    "shape": [
+      512,
+      512
+    ],
+    "pixels": 262144,
+    "r2_nonfinite_pixels": 147741,
+    "snr_nonfinite_pixels": 147741,
+    "joint_finite_pixels": 114403
+  },
+  "outcome_access": {
+    "selected_pixels_decoded": true,
+    "reference_error_computed": false,
+    "success_gate_evaluated": false
+  },
+  "lineage": {
+    "lock_path": "manifests/intraop_pshg_deployment_v1_lock.json",
+    "lock_bytes": 21622,
+    "lock_sha256": "ec2ccb599570d19f0e5deb882fafaba07c4bce79c8b788cb1e81b1a98601ece2",
+    "config_path": "configs/intraop_pshg_deployment_benchmark_v1.locked.json",
+    "config_sha256": "03c9ee9a82b78d947c936ef06681ee2218f15cced48c483188fec8a5ec0bdc64",
+    "implementation_path": "src/nostos/intraop/label_free.py",
+    "implementation_sha256": "660d2a76bfa135c15537df336f462e0eb521a6dd5fed229687f48d153e89b380"
+  },
+  "root_cause": "The public PSHG support maps use non-finite values outside the instrument-supported domain. The frozen validation excludes those pixels with a finite-value eligibility mask, whereas the v1 production implementation incorrectly required every support-map pixel to be finite.",
+  "amendment_rule": "Do not impute or interpolate support values. In v1.1, record non-finite counts, convert them only to finite below-threshold sentinels at the interface to the immutable v1 evaluator, and therefore mark them ineligible exactly as the frozen validation does. Freeze v1.1 before computing any reference error.",
+  "claim_boundary": "This receipt is an engineering failure, not evidence against the orientation estimator and not a clinical result."
+}

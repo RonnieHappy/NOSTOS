@@ -1,0 +1,51 @@
+{
+  "protocol_version": "nostos-external-replication/1.0",
+  "challenge": "NOSTOS-0 data-free frozen-foundation replication",
+  "status": "pass",
+  "operator": "AUTHOR_DRY_RUN",
+  "operator_attestation": {
+    "affiliation": "NOSTOS",
+    "unaided": false,
+    "author_environment": true,
+    "assistance": "author-operated",
+    "source_kind": "fresh_clone",
+    "independent_execution_eligible": false,
+    "statement": "I attest that these declarations accurately describe this execution."
+  },
+  "completed_utc": "2026-08-27T22:38:19.170691+00:00",
+  "environment": {
+    "python": "3.13.13 (main, May 10 2026, 19:31:06) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "nostos_version": "0.3.0",
+    "git_revision": null
+  },
+  "gates": {
+    "synthetic_protocol_passes": true,
+    "nine_truth_constructs_registered": true,
+    "all_five_module_gates_pass": true,
+    "all_24_required_perturbation_tests_pass": true,
+    "mask_tests_retained_as_sensitivity": true,
+    "frozen_response_accuracy_reproduced": true,
+    "frozen_conventional_accuracy_reproduced": true,
+    "frozen_naive_accuracy_reproduced": true
+  },
+  "artifacts": [
+    {
+      "path": "synthetic/validation.json",
+      "bytes": 11493,
+      "sha256": "f406cce0826032ceb5d5146dc7e7181144ea7dd492ba2b950bd7abc9b98c146b"
+    },
+    {
+      "path": "benchmark/representation_benchmark.json",
+      "bytes": 8198,
+      "sha256": "f1b3c03ca213b57f0981a865573a3b8beb26e53f1890589db3aa24cff0b53a0c"
+    },
+    {
+      "path": "modules/module_perturbation_matrix.json",
+      "bytes": 7488,
+      "sha256": "b8de6dacb398b20ba320f3163b4d5d43d5178ed5d5dda23e25c70f47463d44fe"
+    }
+  ],
+  "submission_rule": "Return this receipt and its three hashed artifacts without editing them.",
+  "claim_boundary": "A passing receipt establishes independent software execution only; it does not establish independent biological validation or clinical utility."
+}

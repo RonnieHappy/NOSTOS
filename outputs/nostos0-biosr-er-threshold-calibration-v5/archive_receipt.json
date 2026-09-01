@@ -1,0 +1,419 @@
+{
+  "protocol_version": "nostos-paired-acquisition-support/5.0",
+  "status": "complete_threshold_calibration",
+  "stage": "threshold_calibration",
+  "structure": "ER",
+  "archive": {
+    "schema_version": "nostos-biosr-pair-index/1.0",
+    "archive": "ER.zip",
+    "archive_bytes": 2956077632,
+    "archive_md5": "2bd05c7dba69a10b36a141407927d585",
+    "archive_sha256": "3e0f3d437f3ec2703a5729ff6cdd82ebac838c2bb95e9c41cb52fa9946346c13",
+    "structure": "ER",
+    "upscaling_factor": 2,
+    "expected_level_count": 6,
+    "implementation_sha256": "8810b3baa7a773bae940f2c39ffe32436d7b600238ceefe9d53d117dcdd86a08",
+    "records": 198
+  },
+  "config_path": "configs/paired_acquisition_support_v5.locked.json",
+  "config_sha256": "711e5f4aaac8bcbeccb07bc94fb33dd3e51f5eeec2fea317a25ed0c8b66d7573",
+  "implementation": {
+    "sha256": "8810b3baa7a773bae940f2c39ffe32436d7b600238ceefe9d53d117dcdd86a08",
+    "files": [
+      {
+        "path": "scripts/run_biosr_paired_support.py",
+        "bytes": 21519,
+        "sha256": "bba32d80cdf28c5909f73d82a9ca6a4dbd3be6ea062161a997ddf6cfc38d6c3f"
+      },
+      {
+        "path": "src/nostos/validation/paired_acquisition_support.py",
+        "bytes": 49810,
+        "sha256": "101ebbe1bceafa8916511560e3c5bdb8a42d0b9eded76d043fddec3465ede3e0"
+      },
+      {
+        "path": "src/nostos/features/spatial_fft.py",
+        "bytes": 7461,
+        "sha256": "2f18db7a1ded0e17ae091a53ddca0b44a37a5dbabd12ee1c61f2518deac23f68"
+      },
+      {
+        "path": "src/nostos/features/response_modules.py",
+        "bytes": 13184,
+        "sha256": "21902711c43675920380abb5762047d63911440cc78f35f14a5fc7d252191a85"
+      },
+      {
+        "path": "src/nostos/core/qc.py",
+        "bytes": 2241,
+        "sha256": "9e9fc39a35a2c000cf5ad47f07595c2052e327bad9c08b42b62011429e272353"
+      },
+      {
+        "path": "src/nostos/validation/metrics.py",
+        "bytes": 1785,
+        "sha256": "74e16c4479a6e5cb1c35246d70a2f3b1ab491627e8a815a3c4c429d1d759962e"
+      },
+      {
+        "path": "pyproject.toml",
+        "bytes": 2884,
+        "sha256": "9204767675b912b7f1ece4469799dc1009fa3e2afd966d7956bf6337faa5844c"
+      },
+      {
+        "path": "uv.lock",
+        "bytes": 266139,
+        "sha256": "48b9cd1ba22e808fa8ec60105551c1ad6c9549abdf4df44c9ed2c5a897b1efb1"
+      }
+    ]
+  },
+  "protocol_lock_sha256": "6a2ef93325fbeb645d647d0af34c0d56cc265ec8e16c88b7bae08f171f62d5bf",
+  "preprocessing_amendment_lock_sha256": "35652fcfe1e0b4f81c58d7858ad62e213018aecaef0ffd1ffca46156f0eada3c",
+  "er_layout_amendment_lock_sha256": "5874a15cb4d0a6dad1e13b710b7c2263d092a6778239d26962f99feda34bc648",
+  "calibration_correction_lock_sha256": "8efe15a2f06a1661e6a2b97a3eef566e4f534dd0f25d4199350e0e9e4efc19d5",
+  "code_audit_correction_lock_sha256": "a20ab3c7828e9d9e79db3cb19f94616284d05b95260b7f04d23182be4c40fa09",
+  "pilot_repair_lock_sha256": "925fa9ed56b2c7c835396fd4a30956f2e5f4df4eceae0ee733e2e556e78c12a5",
+  "profile_lineage_amendment_lock_sha256": "246a4c8309a77471010aab18116575898d0af2ce7b323cec0cc46b50f7072cf5",
+  "protocol_lock": "2026-08-28T21:44:47Z",
+  "preprocessing_amendment_lock": "2026-08-28T21:55:36Z",
+  "calibration_correction_lock": "2026-08-28T22:56:41Z",
+  "code_audit_correction_lock": "2026-08-28T23:03:58Z",
+  "pilot_repair_lock": "2026-08-29T00:02:17Z",
+  "profile_lineage_amendment_lock": "2026-08-29T02:38:56Z",
+  "workers": 2,
+  "runtime": {
+    "python": "3.13.13 (main, May 10 2026, 19:31:06) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "logical_cpu_count": 20
+  },
+  "checkpoints": [
+    {
+      "cell_id": "Cell_001",
+      "rows_count": 126,
+      "elapsed_seconds": 48.27259729988873
+    },
+    {
+      "cell_id": "Cell_005",
+      "rows_count": 126,
+      "elapsed_seconds": 48.17609490011819
+    },
+    {
+      "cell_id": "Cell_006",
+      "rows_count": 126,
+      "elapsed_seconds": 47.27154619991779
+    },
+    {
+      "cell_id": "Cell_007",
+      "rows_count": 126,
+      "elapsed_seconds": 47.45567789999768
+    },
+    {
+      "cell_id": "Cell_010",
+      "rows_count": 126,
+      "elapsed_seconds": 48.99294659984298
+    },
+    {
+      "cell_id": "Cell_013",
+      "rows_count": 126,
+      "elapsed_seconds": 48.707723000086844
+    },
+    {
+      "cell_id": "Cell_014",
+      "rows_count": 126,
+      "elapsed_seconds": 49.8591692999471
+    },
+    {
+      "cell_id": "Cell_015",
+      "rows_count": 126,
+      "elapsed_seconds": 49.58840210014023
+    },
+    {
+      "cell_id": "Cell_018",
+      "rows_count": 126,
+      "elapsed_seconds": 48.10318089998327
+    },
+    {
+      "cell_id": "Cell_019",
+      "rows_count": 126,
+      "elapsed_seconds": 47.91262469999492
+    },
+    {
+      "cell_id": "Cell_022",
+      "rows_count": 126,
+      "elapsed_seconds": 48.57297779992223
+    },
+    {
+      "cell_id": "Cell_023",
+      "rows_count": 126,
+      "elapsed_seconds": 48.42010280000977
+    },
+    {
+      "cell_id": "Cell_025",
+      "rows_count": 126,
+      "elapsed_seconds": 48.69295490020886
+    },
+    {
+      "cell_id": "Cell_029",
+      "rows_count": 126,
+      "elapsed_seconds": 48.47280739992857
+    },
+    {
+      "cell_id": "Cell_030",
+      "rows_count": 126,
+      "elapsed_seconds": 48.25485109980218
+    },
+    {
+      "cell_id": "Cell_033",
+      "rows_count": 126,
+      "elapsed_seconds": 48.45628060004674
+    },
+    {
+      "cell_id": "Cell_035",
+      "rows_count": 126,
+      "elapsed_seconds": 48.674183800118044
+    },
+    {
+      "cell_id": "Cell_036",
+      "rows_count": 126,
+      "elapsed_seconds": 48.57104069995694
+    },
+    {
+      "cell_id": "Cell_039",
+      "rows_count": 126,
+      "elapsed_seconds": 48.72392929997295
+    },
+    {
+      "cell_id": "Cell_041",
+      "rows_count": 126,
+      "elapsed_seconds": 48.56346619990654
+    },
+    {
+      "cell_id": "Cell_043",
+      "rows_count": 126,
+      "elapsed_seconds": 50.147050800034776
+    },
+    {
+      "cell_id": "Cell_046",
+      "rows_count": 126,
+      "elapsed_seconds": 49.762196799973026
+    },
+    {
+      "cell_id": "Cell_049",
+      "rows_count": 126,
+      "elapsed_seconds": 49.05766339995898
+    },
+    {
+      "cell_id": "Cell_051",
+      "rows_count": 126,
+      "elapsed_seconds": 49.27628879994154
+    },
+    {
+      "cell_id": "Cell_054",
+      "rows_count": 126,
+      "elapsed_seconds": 48.489027600036934
+    },
+    {
+      "cell_id": "Cell_056",
+      "rows_count": 126,
+      "elapsed_seconds": 48.45724509982392
+    },
+    {
+      "cell_id": "Cell_057",
+      "rows_count": 126,
+      "elapsed_seconds": 49.41421400010586
+    },
+    {
+      "cell_id": "Cell_058",
+      "rows_count": 126,
+      "elapsed_seconds": 49.60142740001902
+    },
+    {
+      "cell_id": "Cell_059",
+      "rows_count": 126,
+      "elapsed_seconds": 49.157733500003815
+    },
+    {
+      "cell_id": "Cell_060",
+      "rows_count": 126,
+      "elapsed_seconds": 48.99046400003135
+    },
+    {
+      "cell_id": "Cell_062",
+      "rows_count": 126,
+      "elapsed_seconds": 49.15123270009644
+    },
+    {
+      "cell_id": "Cell_064",
+      "rows_count": 126,
+      "elapsed_seconds": 49.34574129991233
+    },
+    {
+      "cell_id": "Cell_067",
+      "rows_count": 126,
+      "elapsed_seconds": 47.72959960019216
+    }
+  ],
+  "summary": {
+    "rows": 4158,
+    "eligible_rows": 2806,
+    "reference_fields": 33,
+    "pairs": 198,
+    "registration_eligible_pairs": 192,
+    "hard_abstention_rows": 49,
+    "development_partition_fields": {
+      "score_design": 0,
+      "threshold_calibration": 33
+    },
+    "conditions": {
+      "full_contract": {
+        "aurc": 0.08100871716476195,
+        "eligible_cases": 2806,
+        "nonselective_risk": 0.17177476835352815
+      },
+      "always_emit": {
+        "aurc": 0.17177476835352815,
+        "eligible_cases": 2806,
+        "nonselective_risk": 0.17177476835352815
+      },
+      "conventional_acquisition_qc": {
+        "aurc": 0.10483049247152401,
+        "eligible_cases": 2806,
+        "nonselective_risk": 0.17177476835352815
+      },
+      "physical_sampling_only": {
+        "aurc": 0.16763289398844627,
+        "eligible_cases": 2806,
+        "nonselective_risk": 0.17177476835352815
+      },
+      "perturbation_stability_only": {
+        "aurc": 0.08525496000654668,
+        "eligible_cases": 2806,
+        "nonselective_risk": 0.17177476835352815
+      },
+      "cross_scale_diagnostic_only": {
+        "aurc": 0.11519411074654098,
+        "eligible_cases": 2806,
+        "nonselective_risk": 0.17177476835352815
+      },
+      "full_contract_without_qc": {
+        "aurc": 0.08850058098300612,
+        "eligible_cases": 2806,
+        "nonselective_risk": 0.17177476835352815
+      },
+      "full_contract_without_sampling": {
+        "aurc": 0.08100871716476195,
+        "eligible_cases": 2806,
+        "nonselective_risk": 0.17177476835352815
+      },
+      "full_contract_without_perturbation": {
+        "aurc": 0.11131302123741976,
+        "eligible_cases": 2806,
+        "nonselective_risk": 0.17177476835352815
+      },
+      "full_contract_without_identifiability": {
+        "aurc": 0.07620285201205813,
+        "eligible_cases": 2806,
+        "nonselective_risk": 0.17177476835352815
+      },
+      "exploratory_full_contract_with_cross_scale_diagnostic": {
+        "aurc": 0.10921081826267338,
+        "eligible_cases": 2806,
+        "nonselective_risk": 0.17177476835352815
+      }
+    },
+    "endpoints": {
+      "hessian_blob_curve": {
+        "rows": 198,
+        "eligible": 192,
+        "reference_eligibility_fraction": 0.9696969696969697,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      },
+      "hessian_blob_scale": {
+        "rows": 198,
+        "eligible": 11,
+        "reference_eligibility_fraction": 0.05555555555555555,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      },
+      "hessian_tube_curve": {
+        "rows": 198,
+        "eligible": 192,
+        "reference_eligibility_fraction": 0.9696969696969697,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      },
+      "hessian_tube_scale": {
+        "rows": 198,
+        "eligible": 6,
+        "reference_eligibility_fraction": 0.030303030303030304,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      },
+      "spectral_anisotropy": {
+        "rows": 198,
+        "eligible": 192,
+        "reference_eligibility_fraction": 0.9696969696969697,
+        "invalid_fraction": 0.010416666666666666,
+        "full_contract_aurc": 0.0005303365456436729
+      },
+      "spectral_entropy": {
+        "rows": 198,
+        "eligible": 192,
+        "reference_eligibility_fraction": 0.9696969696969697,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      },
+      "spectral_scale": {
+        "rows": 198,
+        "eligible": 192,
+        "reference_eligibility_fraction": 0.9696969696969697,
+        "invalid_fraction": 0.921875,
+        "full_contract_aurc": 0.9856166531707794
+      },
+      "tensor_coherence": {
+        "rows": 990,
+        "eligible": 960,
+        "reference_eligibility_fraction": 0.9696969696969697,
+        "invalid_fraction": 0.23958333333333334,
+        "full_contract_aurc": 0.05683937525562447
+      },
+      "tensor_orientation": {
+        "rows": 990,
+        "eligible": 158,
+        "reference_eligibility_fraction": 0.1595959595959596,
+        "invalid_fraction": 0.25949367088607594,
+        "full_contract_aurc": 0.08795931171722693
+      },
+      "variogram_horizontal_curve": {
+        "rows": 198,
+        "eligible": 192,
+        "reference_eligibility_fraction": 0.9696969696969697,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      },
+      "variogram_range_horizontal": {
+        "rows": 198,
+        "eligible": 169,
+        "reference_eligibility_fraction": 0.8535353535353535,
+        "invalid_fraction": 0.08875739644970414,
+        "full_contract_aurc": 0.06262471759615205
+      },
+      "variogram_range_vertical": {
+        "rows": 198,
+        "eligible": 158,
+        "reference_eligibility_fraction": 0.797979797979798,
+        "invalid_fraction": 0.10759493670886076,
+        "full_contract_aurc": 0.23690314811293667
+      },
+      "variogram_vertical_curve": {
+        "rows": 198,
+        "eligible": 192,
+        "reference_eligibility_fraction": 0.9696969696969697,
+        "invalid_fraction": 0.0,
+        "full_contract_aurc": 0.0
+      }
+    }
+  },
+  "claim_boundary": "Paired-acquisition support for predeclared structural measurements relative to registered high-resolution references; not image restoration, biological phenotype inference, diagnosis, clinical validity, diffraction-limit estimation, or proof that the reference acquisition is itself ground truth biology.",
+  "artifacts": {
+    "pair_index_sha256": "1a1a2ce913ab19ee7dded2c390157a25b3af66cbb1a4d0ea868d5413f54b0fb5",
+    "endpoint_cases_sha256": "e522b9b707b88440d6df1766f9992671d56e5f87af5d2893430b29ceef166203",
+    "receipt_sha256_before_artifact_index": "bd564967d532b56fbdc57b309daede0963be2a64afdaed2ea32f356edcd3e43e"
+  }
+}

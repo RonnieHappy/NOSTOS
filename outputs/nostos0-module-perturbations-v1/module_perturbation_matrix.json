@@ -1,0 +1,319 @@
+{
+  "protocol_version": "nostos-module-perturbations/1.0",
+  "status": "pass",
+  "results": [
+    {
+      "module": "tensor",
+      "perturbation": {
+        "kind": "rotation",
+        "magnitude": 19,
+        "seed": 2718
+      },
+      "angular_error_degrees": 2.0971062751365537,
+      "minimum_coherency": 0.9527400293053158,
+      "passed": true
+    },
+    {
+      "module": "tensor",
+      "perturbation": {
+        "kind": "resampling",
+        "magnitude": 0.7,
+        "seed": 2718
+      },
+      "angular_error_degrees": 0.17411340023978994,
+      "minimum_coherency": 0.9996803013852386,
+      "passed": true
+    },
+    {
+      "module": "tensor",
+      "perturbation": {
+        "kind": "blur",
+        "magnitude": 1.2,
+        "seed": 2718
+      },
+      "angular_error_degrees": 0.06324247223383139,
+      "minimum_coherency": 0.9976120267383735,
+      "passed": true
+    },
+    {
+      "module": "tensor",
+      "perturbation": {
+        "kind": "noise",
+        "magnitude": 0.12,
+        "seed": 2718
+      },
+      "angular_error_degrees": 0.11470269037967995,
+      "minimum_coherency": 0.8209481547138794,
+      "passed": true
+    },
+    {
+      "module": "tensor",
+      "perturbation": {
+        "kind": "contrast",
+        "magnitude": 0.6,
+        "seed": 2718
+      },
+      "angular_error_degrees": 0.08518503123151078,
+      "minimum_coherency": 0.9999165056951361,
+      "passed": true
+    },
+    {
+      "module": "hessian",
+      "truth": "blob",
+      "perturbation": {
+        "kind": "resampling",
+        "magnitude": 0.75,
+        "seed": 2718
+      },
+      "estimated_class": "blob",
+      "scale_error": 0.0,
+      "passed": true
+    },
+    {
+      "module": "hessian",
+      "truth": "blob",
+      "perturbation": {
+        "kind": "blur",
+        "magnitude": 0.8,
+        "seed": 2718
+      },
+      "estimated_class": "blob",
+      "scale_error": 0.0,
+      "passed": true
+    },
+    {
+      "module": "hessian",
+      "truth": "blob",
+      "perturbation": {
+        "kind": "noise",
+        "magnitude": 0.05,
+        "seed": 2718
+      },
+      "estimated_class": "blob",
+      "scale_error": 0.0,
+      "passed": true
+    },
+    {
+      "module": "hessian",
+      "truth": "blob",
+      "perturbation": {
+        "kind": "contrast",
+        "magnitude": 0.6,
+        "seed": 2718
+      },
+      "estimated_class": "blob",
+      "scale_error": 0.0,
+      "passed": true
+    },
+    {
+      "module": "hessian",
+      "truth": "tube",
+      "perturbation": {
+        "kind": "resampling",
+        "magnitude": 0.75,
+        "seed": 2718
+      },
+      "estimated_class": "tube",
+      "scale_error": 0.0,
+      "passed": true
+    },
+    {
+      "module": "hessian",
+      "truth": "tube",
+      "perturbation": {
+        "kind": "blur",
+        "magnitude": 0.8,
+        "seed": 2718
+      },
+      "estimated_class": "tube",
+      "scale_error": 0.0,
+      "passed": true
+    },
+    {
+      "module": "hessian",
+      "truth": "tube",
+      "perturbation": {
+        "kind": "noise",
+        "magnitude": 0.05,
+        "seed": 2718
+      },
+      "estimated_class": "tube",
+      "scale_error": 0.0,
+      "passed": true
+    },
+    {
+      "module": "hessian",
+      "truth": "tube",
+      "perturbation": {
+        "kind": "contrast",
+        "magnitude": 0.6,
+        "seed": 2718
+      },
+      "estimated_class": "tube",
+      "scale_error": 0.0,
+      "passed": true
+    },
+    {
+      "module": "hessian",
+      "truth": "sheet",
+      "perturbation": {
+        "kind": "resampling",
+        "magnitude": 0.75,
+        "seed": 2718
+      },
+      "estimated_class": "sheet",
+      "scale_error": 0.0,
+      "passed": true
+    },
+    {
+      "module": "hessian",
+      "truth": "sheet",
+      "perturbation": {
+        "kind": "blur",
+        "magnitude": 0.8,
+        "seed": 2718
+      },
+      "estimated_class": "sheet",
+      "scale_error": 0.0,
+      "passed": true
+    },
+    {
+      "module": "hessian",
+      "truth": "sheet",
+      "perturbation": {
+        "kind": "noise",
+        "magnitude": 0.05,
+        "seed": 2718
+      },
+      "estimated_class": "sheet",
+      "scale_error": 0.0,
+      "passed": true
+    },
+    {
+      "module": "hessian",
+      "truth": "sheet",
+      "perturbation": {
+        "kind": "contrast",
+        "magnitude": 0.6,
+        "seed": 2718
+      },
+      "estimated_class": "sheet",
+      "scale_error": 0.0,
+      "passed": true
+    },
+    {
+      "module": "geometry",
+      "perturbation": {
+        "kind": "rotation",
+        "magnitude": 17,
+        "seed": 2718
+      },
+      "relative_error": 0.019803905487060548,
+      "passed": true
+    },
+    {
+      "module": "geometry",
+      "perturbation": {
+        "kind": "resampling",
+        "magnitude": 0.7,
+        "seed": 2718
+      },
+      "relative_error": 0.0,
+      "passed": true
+    },
+    {
+      "module": "geometry",
+      "perturbation": {
+        "kind": "mask_error",
+        "magnitude": -2,
+        "seed": 2718
+      },
+      "relative_change": -0.2,
+      "passed": true,
+      "interpretation": "sensitivity measurement; invariance is not expected"
+    },
+    {
+      "module": "geometry",
+      "perturbation": {
+        "kind": "mask_error",
+        "magnitude": 2,
+        "seed": 2718
+      },
+      "relative_change": 0.2,
+      "passed": true,
+      "interpretation": "sensitivity measurement; invariance is not expected"
+    },
+    {
+      "module": "network",
+      "perturbation": {
+        "kind": "resampling",
+        "magnitude": 0.75,
+        "seed": 2718
+      },
+      "curve_distance": 0.08385322507682132,
+      "passed": true
+    },
+    {
+      "module": "spatial",
+      "perturbation": {
+        "kind": "resampling",
+        "magnitude": 0.75,
+        "seed": 2718
+      },
+      "horizontal_range": 24.0,
+      "vertical_range": 8.0,
+      "reference_anisotropy_ratio": 3.0,
+      "observed_anisotropy_ratio": 3.0,
+      "anisotropy_ratio_relative_error": 0.0,
+      "passed": true
+    },
+    {
+      "module": "spatial",
+      "perturbation": {
+        "kind": "noise",
+        "magnitude": 0.1,
+        "seed": 2718
+      },
+      "horizontal_range": 24.0,
+      "vertical_range": 8.0,
+      "reference_anisotropy_ratio": 3.0,
+      "observed_anisotropy_ratio": 3.0,
+      "anisotropy_ratio_relative_error": 0.0,
+      "passed": true
+    },
+    {
+      "module": "spatial",
+      "perturbation": {
+        "kind": "contrast",
+        "magnitude": 0.6,
+        "seed": 2718
+      },
+      "horizontal_range": 24.0,
+      "vertical_range": 8.0,
+      "reference_anisotropy_ratio": 3.0,
+      "observed_anisotropy_ratio": 3.0,
+      "anisotropy_ratio_relative_error": 0.0,
+      "passed": true
+    },
+    {
+      "module": "spatial",
+      "perturbation": {
+        "kind": "blur",
+        "magnitude": 0.8,
+        "seed": 2718
+      },
+      "horizontal_range": 24.0,
+      "vertical_range": 8.0,
+      "reference_anisotropy_ratio": 3.0,
+      "observed_anisotropy_ratio": 3.0,
+      "anisotropy_ratio_relative_error": 0.0,
+      "passed": true
+    }
+  ],
+  "summary": {
+    "required_tests": 24,
+    "passed": 24,
+    "failed": 0,
+    "mask_sensitivity_tests": 2
+  }
+}

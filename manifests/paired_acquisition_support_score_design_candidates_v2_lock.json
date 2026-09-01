@@ -1,0 +1,24 @@
+{
+  "schema_version": "nostos-prospective-lock/2.0",
+  "locked_at_utc": "2026-08-28T22:57:36Z",
+  "stage": "score_design_candidate_lock_after_calibration_correction",
+  "calibration_correction_lock_sha256": "8efe15a2f06a1661e6a2b97a3eef566e4f534dd0f25d4199350e0e9e4efc19d5",
+  "access_state": {
+    "score_design": "restart_pending",
+    "threshold_calibration": "sealed",
+    "confirmation_archives": "not_downloaded_not_listed_not_decoded"
+  },
+  "files": [
+    {
+      "path": "configs/paired_acquisition_score_design_candidates_v2.locked.json",
+      "bytes": 2813,
+      "sha256": "1c824c6bfcc5f818cc69e20cc7a1c863a4053fed73ddbbb9685b816862f2f547"
+    },
+    {
+      "path": "docs/NOSTOS0_SCORE_DESIGN_AMENDMENT_V2.md",
+      "bytes": 1746,
+      "sha256": "cfc835f70a0e6fc6d19634cb53a6d35ecec68971e0a3bd55fc35688f8d701ce9"
+    }
+  ],
+  "prospective_statement": "The corrected candidate set was relocked before any correctly calibrated score-design endpoint result existed and before threshold-calibration or confirmation access."
+}

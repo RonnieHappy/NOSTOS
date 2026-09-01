@@ -1,0 +1,401 @@
+{
+  "protocol_version": "nostos-manuscript-render-qa/1.0",
+  "status": "pass",
+  "scope": "manuscript production and rendered-layout QA only",
+  "inputs": {
+    "manuscript_source": {
+      "path": "docs/NOSTOS0_SOFTWARE_RESOURCE_ARTICLE.md",
+      "bytes": 24554,
+      "sha256": "0a321563c9471fd53b3ed8ea00e4283a63976dd55663feaa4e50f330c8c887a6"
+    },
+    "docx": {
+      "path": "docs/NOSTOS0_software_resource_submission_candidate.docx",
+      "bytes": 12808788,
+      "sha256": "ae7226f9cca037c823022728cdbd0bffeabafd78b9d1aaf348f33a142ae7315a"
+    }
+  },
+  "document": {
+    "visible_text_characters": 23843,
+    "embedded_media_count": 5,
+    "embedded_media": [
+      "word/media/image1.png",
+      "word/media/image2.png",
+      "word/media/image3.png",
+      "word/media/image4.png",
+      "word/media/image5.png"
+    ],
+    "default_fonts": [
+      "Times New Roman",
+      "minorBidi",
+      "minorEastAsia",
+      "minorHAnsi"
+    ],
+    "style_fonts": {
+      "Normal": [
+        "Times New Roman"
+      ],
+      "Heading1": [
+        "Times New Roman",
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading2": [
+        "Times New Roman",
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading3": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading4": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading5": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading6": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading7": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading8": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading9": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading1Char": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading2Char": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading3Char": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Title": [
+        "Times New Roman",
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "TitleChar": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Subtitle": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "SubtitleChar": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MacroText": [
+        "Courier"
+      ],
+      "MacroTextChar": [
+        "Courier"
+      ],
+      "Heading4Char": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading5Char": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading6Char": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading7Char": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading8Char": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading9Char": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Caption": [
+        "Times New Roman"
+      ],
+      "MediumList2": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumList2-Accent1": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumList2-Accent2": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumList2-Accent3": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumList2-Accent4": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumList2-Accent5": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumList2-Accent6": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumGrid2": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumGrid2-Accent1": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumGrid2-Accent2": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumGrid2-Accent3": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumGrid2-Accent4": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumGrid2-Accent5": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumGrid2-Accent6": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ]
+    },
+    "visible_run_fonts": {
+      "Times New Roman": 72
+    },
+    "inherited_visible_runs": 19,
+    "inherited_effective_fonts": {
+      "Times New Roman": 19,
+      "majorBidi": 19,
+      "majorEastAsia": 19,
+      "majorHAnsi": 19
+    },
+    "unresolved_inherited_visible_runs": 0,
+    "inherited_runs_without_times_new_roman": 0,
+    "non_times_new_roman_visible_run_fonts": {},
+    "non_times_new_roman_inherited_effective_fonts": {
+      "majorBidi": 19,
+      "majorEastAsia": 19,
+      "majorHAnsi": 19
+    }
+  },
+  "render": {
+    "render_directory": "docx_render_v27",
+    "page_count": 8,
+    "pages": [
+      {
+        "page": 1,
+        "file": "page-1.png",
+        "bytes": 585924,
+        "sha256": "651a8f473b2662b438168ad9d3f84098bbcd6d440f6c676670268dfa98121ef5",
+        "width_px": 1547,
+        "height_px": 2002
+      },
+      {
+        "page": 2,
+        "file": "page-2.png",
+        "bytes": 690295,
+        "sha256": "3bf2223e8104137566c049e5cdc6072fbfbd3c2e61715b3b1f9d9ab9a1a2b78f",
+        "width_px": 1547,
+        "height_px": 2002
+      },
+      {
+        "page": 3,
+        "file": "page-3.png",
+        "bytes": 569162,
+        "sha256": "dfff03e0cb19487b0e30e89ba0273a34c0f80435dc23b516556b42ca2cf50c7f",
+        "width_px": 1547,
+        "height_px": 2002
+      },
+      {
+        "page": 4,
+        "file": "page-4.png",
+        "bytes": 701686,
+        "sha256": "b1610cb98df3f86c13081a82f6e20c44b6c89ac4c8741993001b0e7a73474e54",
+        "width_px": 1547,
+        "height_px": 2002
+      },
+      {
+        "page": 5,
+        "file": "page-5.png",
+        "bytes": 1252617,
+        "sha256": "777d21ad953a5b4ea1578b327e01b8ce10141ac5446124c3cc9864edbfa9f500",
+        "width_px": 1547,
+        "height_px": 2002
+      },
+      {
+        "page": 6,
+        "file": "page-6.png",
+        "bytes": 844177,
+        "sha256": "6aaf1998421dca8f7b12373a23468d9df3d8b7aed2fd13b3ebaa539ff7c9b6ac",
+        "width_px": 1547,
+        "height_px": 2002
+      },
+      {
+        "page": 7,
+        "file": "page-7.png",
+        "bytes": 532947,
+        "sha256": "3bdac0226709a749c1ff93aa1529189f8f9615d734a23b8a4c54334754b7ab01",
+        "width_px": 1547,
+        "height_px": 2002
+      },
+      {
+        "page": 8,
+        "file": "page-8.png",
+        "bytes": 521663,
+        "sha256": "2ba7a582ca846d63689dd57ca4d88a1046900c9a2cd243e7b6cd406edbcd3e0c",
+        "width_px": 1547,
+        "height_px": 2002
+      }
+    ],
+    "page_sequence": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "pdf": {
+      "file": "NOSTOS0_software_resource_submission_candidate.pdf",
+      "exists": true,
+      "bytes": 1796636,
+      "sha256": "aa2dd110c9a159d1d746dadedf127e735798f19d8d162ec633705a5463ee4e4d",
+      "has_pdf_header": true,
+      "has_eof_marker": true
+    }
+  },
+  "required_text_presence": {
+    "NOSTOS: a calibrated and auditable measurement contract": true,
+    "Abstract": true,
+    "Introduction": true,
+    "Results": true,
+    "Discussion": true,
+    "Methods": true,
+    "Data and code availability": true,
+    "Ethics, authorship and competing interests": true,
+    "Figure 1 |": true,
+    "Figure 2 |": true,
+    "Figure 3 |": true,
+    "Figure 4 |": true,
+    "Supplementary Figure 1 |": true,
+    "References": true
+  },
+  "text_safety_scan": {
+    "private_absolute_path_found": false,
+    "possible_secret_found": false
+  },
+  "machine_checks": {
+    "docx_is_valid_zip": true,
+    "expected_page_count": true,
+    "continuous_page_sequence": true,
+    "all_page_renders_nonempty": true,
+    "rendered_pdf_valid_envelope": true,
+    "expected_embedded_media_count": true,
+    "times_new_roman_effective_for_visible_text": true,
+    "no_explicit_non_times_visible_runs": true,
+    "required_sections_and_legends_present": true,
+    "no_private_absolute_paths": true,
+    "no_possible_secrets": true
+  },
+  "machine_status": "pass",
+  "visual_review": {
+    "status": "pass",
+    "date": "2026-08-28",
+    "pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "criteria": [
+      "no overlap or clipping",
+      "panel labels and captions remain legible",
+      "figures and captions stay together",
+      "page ordering and supplementary-figure identity are correct"
+    ],
+    "rendering_engine_note": "All pages were reviewed from the LibreOffice-generated QA render; Microsoft Word and journal-production conversion may reflow the document."
+  },
+  "submission_readiness": "blocked_external_and_administrative",
+  "administrative_blockers": [
+    "archival DOI has not been minted",
+    "unaided external-user execution has not been received",
+    "institutional secondary-analysis determination requires confirmation",
+    "affiliation, funding, acknowledgements and competing-interest declarations require author confirmation"
+  ],
+  "nature_readiness": "not_ready",
+  "interpretation": "A pass establishes that the current DOCX and its rendered pages satisfy the declared production checks. It does not establish scientific validity, external replication, clinical utility, journal fit or acceptance readiness."
+}

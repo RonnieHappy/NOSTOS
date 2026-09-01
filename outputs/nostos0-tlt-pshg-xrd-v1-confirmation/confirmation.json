@@ -1,0 +1,244 @@
+{
+  "schema_version": "nostos.tlt_pshg_xrd.confirmation.v1",
+  "status": "fail",
+  "lock_sha256": "d8f602f3fa7b378ae4635013502733d13318f2d8ccf44509cb8d8d1646466bc8",
+  "source_receipt": {
+    "dataset_doi": "10.5281/zenodo.10979115",
+    "files": [
+      {
+        "file": "Sample2NM.mat",
+        "bytes": 92716369,
+        "expected_bytes": 92716369,
+        "md5": "816b9827db03d3c2a3b58ce25e591058",
+        "expected_md5": "816b9827db03d3c2a3b58ce25e591058",
+        "verified": true
+      },
+      {
+        "file": "Sample2EM.mat",
+        "bytes": 44083790,
+        "expected_bytes": 44083790,
+        "md5": "b854c865070afd726134b5bf5aac3a26",
+        "expected_md5": "b854c865070afd726134b5bf5aac3a26",
+        "verified": true
+      },
+      {
+        "file": "Sample2LM.mat",
+        "bytes": 41240578,
+        "expected_bytes": 41240578,
+        "md5": "0ed1273b08bc1292d48da0e7e15e7877",
+        "expected_md5": "0ed1273b08bc1292d48da0e7e15e7877",
+        "verified": true
+      },
+      {
+        "file": "Sample4NM.mat",
+        "bytes": 48584863,
+        "expected_bytes": 48584863,
+        "md5": "0b671e39417874cf2ca035c1909854bd",
+        "expected_md5": "0b671e39417874cf2ca035c1909854bd",
+        "verified": true
+      },
+      {
+        "file": "Sample4EM.mat",
+        "bytes": 29520236,
+        "expected_bytes": 29520236,
+        "md5": "d110c904ab4a7bf202c96ddfb4b86455",
+        "expected_md5": "d110c904ab4a7bf202c96ddfb4b86455",
+        "verified": true
+      },
+      {
+        "file": "Sample4LM.mat",
+        "bytes": 29990912,
+        "expected_bytes": 29990912,
+        "md5": "65014cf378b4eb7a1bf6799366404f1d",
+        "expected_md5": "65014cf378b4eb7a1bf6799366404f1d",
+        "verified": true
+      }
+    ],
+    "verified_files": 6,
+    "total_files": 6,
+    "total_bytes": 286136748,
+    "status": "verified"
+  },
+  "summary": {
+    "specimens": 2,
+    "fields": 37,
+    "cases": 592,
+    "invalid_cases": 273,
+    "operating": {
+      "always_emit": {
+        "accepted": 592,
+        "coverage": 1.0,
+        "invalid": 273,
+        "risk": 0.46114864864864863
+      },
+      "full_contract": {
+        "accepted": 229,
+        "coverage": 0.38682432432432434,
+        "invalid": 2,
+        "risk": 0.008733624454148471,
+        "score_threshold": 0.4
+      }
+    },
+    "matched_coverage": {
+      "acquisition_qc": {
+        "accepted": 229,
+        "coverage": 0.38682432432432434,
+        "invalid": 86,
+        "risk": 0.37554585152838427,
+        "score_threshold": 0.0965460981683876
+      },
+      "endpoint_qc": {
+        "accepted": 229,
+        "coverage": 0.38682432432432434,
+        "invalid": 26,
+        "risk": 0.11353711790393013,
+        "score_threshold": 0.33486228436410764
+      },
+      "full_contract": {
+        "accepted": 229,
+        "coverage": 0.38682432432432434,
+        "invalid": 2,
+        "risk": 0.008733624454148471,
+        "score_threshold": 0.4
+      }
+    },
+    "risk_reductions": {
+      "acquisition_qc": 0.3668122270742358,
+      "endpoint_qc": 0.10480349344978165
+    },
+    "risk_coverage_auc": {
+      "acquisition_qc": 0.40043166934064656,
+      "endpoint_qc": 0.18452221689866882,
+      "without_scale_consistency": 0.18452221689866882,
+      "without_coherence": 0.14336288782089723,
+      "full_contract": 0.16072368918513974
+    },
+    "aurc_differences": {
+      "acquisition_qc": 0.23970798015550682,
+      "endpoint_qc": 0.023798527713529083
+    },
+    "scale_ablation_aurc_increase": 0.023798527713529083,
+    "per_specimen": {
+      "Sample2": {
+        "fields": 23,
+        "cases": 368,
+        "accepted": 120,
+        "coverage": 0.32608695652173914,
+        "invalid": 2,
+        "risk": 0.016666666666666666
+      },
+      "Sample4": {
+        "fields": 14,
+        "cases": 224,
+        "accepted": 109,
+        "coverage": 0.48660714285714285,
+        "invalid": 0,
+        "risk": 0.0
+      }
+    },
+    "clean": {
+      "eligible": 37,
+      "accepted": 22,
+      "coverage": 0.5945945945945946,
+      "primary_median_field_error_degrees": 12.118933803566506,
+      "comparison_median_field_error_degrees": 12.424739738085277,
+      "gradient_median_field_error_degrees": 33.531068906811015
+    },
+    "organization": {
+      "fields": 37,
+      "pooled_spearman": 0.891180654338549,
+      "per_specimen_spearman": {
+        "Sample2": 0.9041501976284586,
+        "Sample4": 0.8417582417582418
+      },
+      "per_specimen_zone_means": {
+        "Sample2": {
+          "NM": {
+            "fields": 12,
+            "nostos_median_coherence": 0.28721542381031323,
+            "pshg_mean_i2": 0.22808156782604383
+          },
+          "EM": {
+            "fields": 6,
+            "nostos_median_coherence": 0.6087335405935953,
+            "pshg_mean_i2": 0.31757391176871447
+          },
+          "LM": {
+            "fields": 5,
+            "nostos_median_coherence": 0.7078987070604426,
+            "pshg_mean_i2": 0.35155594186822486
+          }
+        },
+        "Sample4": {
+          "NM": {
+            "fields": 6,
+            "nostos_median_coherence": 0.42133133557288116,
+            "pshg_mean_i2": 0.25268281108153423
+          },
+          "EM": {
+            "fields": 4,
+            "nostos_median_coherence": 0.44638392290254614,
+            "pshg_mean_i2": 0.264090148836026
+          },
+          "LM": {
+            "fields": 4,
+            "nostos_median_coherence": 0.7344776795874748,
+            "pshg_mean_i2": 0.3547419003611446
+          }
+        }
+      }
+    }
+  },
+  "bootstrap": {
+    "draws_requested": 5000,
+    "draws_retained": 5000,
+    "unit": "specimen with nested fields and conditions retained",
+    "full_risk_95": [
+      0.0,
+      0.016666666666666666
+    ],
+    "matched_risk_difference_95": {
+      "acquisition_qc": [
+        0.1834862385321101,
+        0.475
+      ],
+      "endpoint_qc": [
+        0.058333333333333334,
+        0.10480349344978165
+      ]
+    },
+    "aurc_difference_95": {
+      "acquisition_qc": [
+        0.1267582139074413,
+        0.2962207142304275
+      ],
+      "endpoint_qc": [
+        0.016299829098976815,
+        0.031029678495442692
+      ]
+    },
+    "caution": "Only two independent specimens; intervals are descriptive and not population-generalization evidence."
+  },
+  "label_blindness_audit": {
+    "before_sha256": "dfc3f312e9eeb3c03f36caf207db51bba5a81b3365aef464b270c2010c269d8e",
+    "after_reference_mutation_sha256": "dfc3f312e9eeb3c03f36caf207db51bba5a81b3365aef464b270c2010c269d8e",
+    "unchanged": true
+  },
+  "success_gates": {
+    "confirmation_specimens_and_fields": true,
+    "invalid_cases_assessable": true,
+    "full_coverage": false,
+    "full_risk": true,
+    "per_specimen_full_risk": true,
+    "matched_risk_reduction_vs_acquisition_qc": true,
+    "matched_risk_reduction_vs_endpoint_qc": true,
+    "aurc_advantage": true,
+    "scale_component_ablation": true,
+    "clean_preservation": false,
+    "upstream_estimator_noninferiority": true,
+    "organization_recovery": true,
+    "reference_label_blindness": true,
+    "source_and_lock_verification": true
+  },
+  "claim_boundary": "Prospective transfer of a single-image, scale-declared local-orientation and organization endpoint to two sealed specimens from one independent unstained tendon pSHG acquisition family under programmed degradations. This is not population, mechanics, clinical, intraoperative or universal collagen validation."
+}

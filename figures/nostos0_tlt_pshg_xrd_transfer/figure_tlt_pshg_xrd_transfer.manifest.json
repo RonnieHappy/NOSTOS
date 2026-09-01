@@ -1,0 +1,24 @@
+{
+  "schema_version": "nostos.figure.tlt_pshg_xrd_transfer.v1",
+  "representative_selection": "SHA-256-first confirmation field under salt nostos_tlt_figure_v1; Sample2-NM-07, not outcome selected",
+  "representative_field_id": "Sample2-NM-07",
+  "representative_selection_sha256": "04efec23542d52cce23d7b4d2b724b86799638b2f89851fa05099ddef8e936f5",
+  "representative_source": "<DATA_ROOT>\\public\\tlt_pshg_xrd_v1\\Sample2NM.mat",
+  "representative_source_md5": "816b9827db03d3c2a3b58ce25e591058",
+  "result_path": "outputs/nostos0-tlt-pshg-xrd-v1-confirmation/confirmation.json",
+  "result_sha256": "7e61ae6b29dacc98621fcf934eb6211a28605c3960d8ea9914235d3e980901bf",
+  "rows_path": "outputs/nostos0-tlt-pshg-xrd-v1-confirmation/confirmation_rows.jsonl",
+  "rows_sha256": "64c847f4cfb8fbfb46123bea5ff24e26849087875ce17ca446f57a31647efd12",
+  "panels": {
+    "a": "deposited mean SHG intensity",
+    "b": "NOSTOS 12-um local orientation",
+    "c": "withheld deposited pSHG Phi2 orientation",
+    "d": "pixelwise axial error on common support",
+    "e": "NOSTOS local tensor coherence",
+    "f": "withheld deposited pSHG I2 organization",
+    "g": "37 clean fields; field-level single-image coherence versus pSHG I2",
+    "h": "complete tied-score selections nearest to 229 accepted cases; red marks invalid outputs",
+    "i": "tied-score risk-coverage curves over all 592 programmed cases"
+  },
+  "claim_boundary": "Qualified second-acquisition-family evidence; preregistered overall status remains fail because coverage and clean-preservation gates were missed."
+}

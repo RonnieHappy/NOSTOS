@@ -1,0 +1,136 @@
+{
+  "protocol_version": "nostos-human-nanoct-scale-response/2.0",
+  "config_sha256": "140f4e9c21497ad711c0c7cabf0ed201f8ce0ce935a60872ff8c05624ac5b9fe",
+  "dataset_doi": "10.5281/zenodo.17909733",
+  "deposited_volumes": 6,
+  "scale_case_rows": 864,
+  "summary_by_scale_um": {
+    "0.2": {
+      "always_emit": {
+        "cases": 288,
+        "accepted": 288,
+        "coverage": 1.0,
+        "silent_invalid": 30,
+        "silent_invalid_risk": 0.10416666666666667
+      },
+      "endpoint_qc": {
+        "cases": 288,
+        "accepted": 280,
+        "coverage": 0.9722222222222222,
+        "silent_invalid": 30,
+        "silent_invalid_risk": 0.10714285714285714
+      },
+      "nyquist_qc": {
+        "cases": 288,
+        "accepted": 0,
+        "coverage": 0.0,
+        "silent_invalid": 0,
+        "silent_invalid_risk": null
+      },
+      "scale_convergence": {
+        "cases": 288,
+        "accepted": 0,
+        "coverage": 0.0,
+        "silent_invalid": 0,
+        "silent_invalid_risk": null
+      },
+      "full_contract": {
+        "cases": 288,
+        "accepted": 0,
+        "coverage": 0.0,
+        "silent_invalid": 0,
+        "silent_invalid_risk": null
+      }
+    },
+    "0.4": {
+      "always_emit": {
+        "cases": 288,
+        "accepted": 288,
+        "coverage": 1.0,
+        "silent_invalid": 12,
+        "silent_invalid_risk": 0.041666666666666664
+      },
+      "endpoint_qc": {
+        "cases": 288,
+        "accepted": 280,
+        "coverage": 0.9722222222222222,
+        "silent_invalid": 12,
+        "silent_invalid_risk": 0.04285714285714286
+      },
+      "nyquist_qc": {
+        "cases": 288,
+        "accepted": 280,
+        "coverage": 0.9722222222222222,
+        "silent_invalid": 12,
+        "silent_invalid_risk": 0.04285714285714286
+      },
+      "scale_convergence": {
+        "cases": 288,
+        "accepted": 105,
+        "coverage": 0.3645833333333333,
+        "silent_invalid": 3,
+        "silent_invalid_risk": 0.02857142857142857
+      },
+      "full_contract": {
+        "cases": 288,
+        "accepted": 105,
+        "coverage": 0.3645833333333333,
+        "silent_invalid": 3,
+        "silent_invalid_risk": 0.02857142857142857
+      }
+    },
+    "0.8": {
+      "always_emit": {
+        "cases": 288,
+        "accepted": 288,
+        "coverage": 1.0,
+        "silent_invalid": 8,
+        "silent_invalid_risk": 0.027777777777777776
+      },
+      "endpoint_qc": {
+        "cases": 288,
+        "accepted": 280,
+        "coverage": 0.9722222222222222,
+        "silent_invalid": 8,
+        "silent_invalid_risk": 0.02857142857142857
+      },
+      "nyquist_qc": {
+        "cases": 288,
+        "accepted": 280,
+        "coverage": 0.9722222222222222,
+        "silent_invalid": 8,
+        "silent_invalid_risk": 0.02857142857142857
+      },
+      "scale_convergence": {
+        "cases": 288,
+        "accepted": 115,
+        "coverage": 0.3993055555555556,
+        "silent_invalid": 1,
+        "silent_invalid_risk": 0.008695652173913044
+      },
+      "full_contract": {
+        "cases": 288,
+        "accepted": 115,
+        "coverage": 0.3993055555555556,
+        "silent_invalid": 1,
+        "silent_invalid_risk": 0.008695652173913044
+      }
+    }
+  },
+  "gates_by_scale_um": {
+    "0.2": {
+      "coverage_at_least_0_80": false,
+      "risk_below_always_emit": false
+    },
+    "0.4": {
+      "coverage_at_least_0_80": false,
+      "risk_below_always_emit": true
+    },
+    "0.8": {
+      "coverage_at_least_0_80": false,
+      "risk_below_always_emit": true
+    }
+  },
+  "status": "development_complete",
+  "claim_boundary": "Development of a physical-scale-indexed 3D directional response on six deposited nanoCT volumes; no pristine confirmation or biological inference."
+}

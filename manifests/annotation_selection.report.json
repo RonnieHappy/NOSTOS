@@ -1,0 +1,16 @@
+{
+  "training_participants": 24,
+  "validation_participants": 8,
+  "training_images": 72,
+  "validation_images": 40,
+  "stain_counts": {
+    "HE": 40,
+    "SafO": 40,
+    "PLM": 32
+  },
+  "site_counts": {
+    "Medial": 72,
+    "Lateral": 40
+  },
+  "morphology_test_participants_used": 0
+}

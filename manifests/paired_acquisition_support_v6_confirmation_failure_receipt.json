@@ -1,0 +1,191 @@
+{
+  "schema_version": "nostos-paired-acquisition-v6-confirmation-failure/1.0",
+  "created_at_utc": "2026-08-29T04:23:28Z",
+  "status": "prospective_v6_failed_after_first_untouched_structure",
+  "protocol_version": "nostos-paired-acquisition-support/6.0",
+  "lineage": {
+    "confirmation_lock": {
+      "path": "manifests/paired_acquisition_support_v6_confirmation_lock.json",
+      "bytes": 9600,
+      "sha256": "c345e36bb4576535b959534c8017de3da6cdeaccd82c248a4c113745478e753c"
+    },
+    "implementation_sha256": "03db51eecd8ca2babc342a037275f27b1e695fffbe663c4501d0a991dbe6542c",
+    "verified_locked_files": 34,
+    "locked_file_mismatches": 0,
+    "thresholds_refit_after_confirmation_access": false,
+    "endpoints_changed_after_confirmation_access": false
+  },
+  "access_ledger": {
+    "Microtubules": "eight hash-selected fields decoded and analyzed once under v6",
+    "F-actin_linear": "archive integrity verified and central-directory names indexed; zero image members decoded and zero endpoint outcomes computed",
+    "F-actin_nonlinear": "no image member decoded and no endpoint outcome computed"
+  },
+  "microtubules_result": {
+    "selected_fields": [
+      "Cell_041",
+      "Cell_001",
+      "Cell_055",
+      "Cell_002",
+      "Cell_044",
+      "Cell_051",
+      "Cell_015",
+      "Cell_019"
+    ],
+    "available_fields": 55,
+    "reference_fields": 8,
+    "paired_acquisitions": 72,
+    "endpoint_rows": 1512,
+    "full_contract": {
+      "eligible": 927,
+      "accepted": 703,
+      "coverage": 0.7583603020496225,
+      "invalid": 45,
+      "risk": 0.06401137980085349,
+      "combinations": [
+        {
+          "structure": "Microtubules",
+          "endpoint_family": "hessian_response_shape",
+          "eligible": 144,
+          "accepted": 144,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "reference_fields": 8,
+          "passes": true
+        },
+        {
+          "structure": "Microtubules",
+          "endpoint_family": "spectral_order",
+          "eligible": 144,
+          "accepted": 144,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "reference_fields": 8,
+          "passes": true
+        },
+        {
+          "structure": "Microtubules",
+          "endpoint_family": "tensor_coherence",
+          "eligible": 360,
+          "accepted": 181,
+          "coverage": 0.5027777777777778,
+          "invalid": 0,
+          "risk": 0.0,
+          "reference_fields": 8,
+          "passes": false
+        },
+        {
+          "structure": "Microtubules",
+          "endpoint_family": "tensor_orientation",
+          "eligible": 279,
+          "accepted": 234,
+          "coverage": 0.8387096774193549,
+          "invalid": 45,
+          "risk": 0.19230769230769232,
+          "reference_fields": 7,
+          "passes": false
+        }
+      ],
+      "risk_coverage_auc": 0.0640136699106673,
+      "cluster_bootstrap_risk_upper95": 0.1776550131926118
+    },
+    "aurc_reduction_fraction_vs_always_emit": 0.3139806704371262,
+    "safety_gate_passed": false,
+    "incremental_comparator": {
+      "status": "fail",
+      "full_accepted": 703,
+      "full_risk": 0.06401137980085349,
+      "qc_accepted": 927,
+      "qc_risk": 0.1866235167206041,
+      "full_minus_qc_risk": -0.1226121369197506,
+      "full_coverage_loss_vs_qc": 0.24163969795037754,
+      "qc_only_cases_rejected_by_full": 224,
+      "qc_only_invalid_rejected_by_full": 128,
+      "qc_only_rejection_risk": 0.5714285714285714,
+      "invalid_enrichment_among_qc_only_rejections": 3.0619322873658135,
+      "rules": {
+        "maximum_full_minus_qc_risk": 0.0,
+        "maximum_full_coverage_loss_vs_qc": 0.1,
+        "minimum_invalid_enrichment_among_qc_only_rejections": 2.0,
+        "not_assessable_rule": "If QC emits no invalid case, superiority is not assessable and no superiority claim may be made."
+      }
+    },
+    "artifacts": [
+      {
+        "path": "outputs/nostos0-biosr-v6-microtubules-initial-confirmation/archive_receipt.json",
+        "bytes": 17481,
+        "sha256": "d62c0786b1dd4735f07aaea522276a476316eb3103f1f0d2e712e45cff8960a0"
+      },
+      {
+        "path": "outputs/nostos0-biosr-v6-microtubules-initial-confirmation/pair_index.json",
+        "bytes": 73893,
+        "sha256": "644cf26d3aeb752475d343741611a34d7a6e0ab363a33d1265569f0f10256fd9"
+      },
+      {
+        "path": "outputs/nostos0-biosr-v6-microtubules-initial-confirmation/endpoint_cases.jsonl",
+        "bytes": 3886481,
+        "sha256": "44e1f9466657d66fd1bbaabcc9ed38e3f4ddb159912076b17fb1c408c281ce3c"
+      }
+    ]
+  },
+  "decisive_failures": [
+    {
+      "family": "tensor_coherence",
+      "coverage": 0.5027777777777778,
+      "risk": 0.0,
+      "reason": "coverage below the frozen structure-family floor"
+    },
+    {
+      "family": "tensor_orientation",
+      "coverage": 0.8387096774193549,
+      "risk": 0.19230769230769232,
+      "reason": "accepted-case risk above the frozen ceiling"
+    },
+    {
+      "family": "all_families",
+      "coverage": 0.7583603020496225,
+      "risk": 0.06401137980085349,
+      "cluster_bootstrap_risk_upper95": 0.1776550131926118,
+      "reason": "overall coverage and clustered risk upper bound missed frozen gates"
+    }
+  ],
+  "linear_layout_error": {
+    "archive": {
+      "path": "<DATA_ROOT>\\data\\public\\measurement-support-benchmark\\biosr\\archives\\F-actin.zip",
+      "bytes": 2233338886,
+      "md5": "80fafab68f26fb71de12be0141face74",
+      "sha256": "d7b83be427b7e579d6450943844d5553f2e9fe61309ed9d91976598e7095c3d7"
+    },
+    "indexed_cells": 51,
+    "observed_levels_per_cell": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "frozen_expected_level_count": 9,
+    "failure_stage": "central-directory indexing before field selection and before pixel decode",
+    "scientific_outcome_observed": false
+  },
+  "decision": {
+    "v6_confirmation_status": "failed",
+    "remaining_f_actin_pixels_reserved": true,
+    "microtubules_reclassified_for_next_version": "development_only",
+    "next_gate": "Develop tensor repair on only the eight receipted Microtubules fields, freeze v7 and the corrected 12-level F-actin layouts, then decode the predeclared F-actin confirmation fields exactly once."
+  },
+  "report": {
+    "path": "docs/NOSTOS0_BIOSR_V6_INITIAL_CONFIRMATION_FAILURE.md",
+    "bytes": 3852,
+    "sha256": "cc44378806ae782cf76d2e46429e58688715e33ad0ad83c54325343620e26125"
+  },
+  "claim_boundary": "This is a failed research validation gate. It does not validate a universal measurement contract, clinical use, biological truth, diagnosis, intraoperative utility, or Nature-level readiness."
+}

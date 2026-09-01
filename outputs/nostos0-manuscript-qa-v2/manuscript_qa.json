@@ -1,0 +1,471 @@
+{
+  "protocol_version": "nostos-manuscript-render-qa/1.0",
+  "status": "pass",
+  "scope": "manuscript production and rendered-layout QA only",
+  "inputs": {
+    "manuscript_source": {
+      "path": "docs/NOSTOS0_SOFTWARE_RESOURCE_ARTICLE.md",
+      "bytes": 39740,
+      "sha256": "5b66c164ed9769f12637fa0299a13095832631ba92b165fba0327b22512fafa7"
+    },
+    "docx": {
+      "path": "docs/NOSTOS0_computational_methods_submission_candidate_v30.docx",
+      "bytes": 11047020,
+      "sha256": "404e3131af77756b7b891ad5de47d59c91aa6fd65c6e53c27ace008b2ead3459"
+    }
+  },
+  "document": {
+    "visible_text_characters": 37908,
+    "embedded_media_count": 4,
+    "embedded_media": [
+      "word/media/image1.png",
+      "word/media/image2.png",
+      "word/media/image3.png",
+      "word/media/image4.png"
+    ],
+    "default_fonts": [
+      "Times New Roman",
+      "minorBidi",
+      "minorEastAsia",
+      "minorHAnsi"
+    ],
+    "style_fonts": {
+      "Normal": [
+        "Times New Roman"
+      ],
+      "Heading1": [
+        "Times New Roman",
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading2": [
+        "Times New Roman",
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading3": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading4": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading5": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading6": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading7": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading8": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading9": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading1Char": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading2Char": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading3Char": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Title": [
+        "Times New Roman",
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "TitleChar": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Subtitle": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "SubtitleChar": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MacroText": [
+        "Courier"
+      ],
+      "MacroTextChar": [
+        "Courier"
+      ],
+      "Heading4Char": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading5Char": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading6Char": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading7Char": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading8Char": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Heading9Char": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "Caption": [
+        "Times New Roman"
+      ],
+      "MediumList2": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumList2-Accent1": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumList2-Accent2": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumList2-Accent3": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumList2-Accent4": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumList2-Accent5": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumList2-Accent6": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumGrid2": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumGrid2-Accent1": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumGrid2-Accent2": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumGrid2-Accent3": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumGrid2-Accent4": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumGrid2-Accent5": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ],
+      "MediumGrid2-Accent6": [
+        "majorBidi",
+        "majorEastAsia",
+        "majorHAnsi"
+      ]
+    },
+    "visible_run_fonts": {
+      "Times New Roman": 578
+    },
+    "inherited_visible_runs": 22,
+    "inherited_effective_fonts": {
+      "Times New Roman": 22,
+      "majorBidi": 22,
+      "majorEastAsia": 22,
+      "majorHAnsi": 22
+    },
+    "unresolved_inherited_visible_runs": 0,
+    "inherited_runs_without_times_new_roman": 0,
+    "non_times_new_roman_visible_run_fonts": {},
+    "non_times_new_roman_inherited_effective_fonts": {
+      "majorBidi": 22,
+      "majorEastAsia": 22,
+      "majorHAnsi": 22
+    }
+  },
+  "render": {
+    "render_directory": "nostos0-docx-render-v30-final2",
+    "page_count": 15,
+    "pages": [
+      {
+        "page": 1,
+        "file": "page-1.png",
+        "bytes": 402337,
+        "sha256": "9f6af12175552aae8a69ae6d6278a316db557ad3e430035cc2f9df6945e0a8f1",
+        "width_px": 1547,
+        "height_px": 2002
+      },
+      {
+        "page": 2,
+        "file": "page-2.png",
+        "bytes": 349607,
+        "sha256": "4777c06a17f1c800d5e7b47c9194f4cf939cfce66f2e799b9590056168c7ae12",
+        "width_px": 1547,
+        "height_px": 2002
+      },
+      {
+        "page": 3,
+        "file": "page-3.png",
+        "bytes": 741489,
+        "sha256": "4b5fb655c0b3b451adeb28e663e95d9a27c8c2c3923f900fcda64c11861502bd",
+        "width_px": 1547,
+        "height_px": 2002
+      },
+      {
+        "page": 4,
+        "file": "page-4.png",
+        "bytes": 373328,
+        "sha256": "57297d5d0a1a1f65b52c9f8a7e52459ffde7fac5a6dc332da2c00af1afb8c888",
+        "width_px": 1547,
+        "height_px": 2002
+      },
+      {
+        "page": 5,
+        "file": "page-5.png",
+        "bytes": 848937,
+        "sha256": "89a63fd7eeb4d9d63217e3e40b4a792e821bceb3130111e96ed5014e29348ca8",
+        "width_px": 1547,
+        "height_px": 2002
+      },
+      {
+        "page": 6,
+        "file": "page-6.png",
+        "bytes": 598163,
+        "sha256": "1e002c5845c226361e63dfa4a8490fcb0127c2e0cb5ad3fdc5d822190a457dd5",
+        "width_px": 1547,
+        "height_px": 2002
+      },
+      {
+        "page": 7,
+        "file": "page-7.png",
+        "bytes": 430155,
+        "sha256": "d25f2a2e474c12d56bffb527d2f422e50851fd944ed81e0628c48b17156f5891",
+        "width_px": 1547,
+        "height_px": 2002
+      },
+      {
+        "page": 8,
+        "file": "page-8.png",
+        "bytes": 689433,
+        "sha256": "dfbb7ced340cc2bbe2a13e492f882e7d7d44a3cb7a12fed4466f6cfdf9aab289",
+        "width_px": 1547,
+        "height_px": 2002
+      },
+      {
+        "page": 9,
+        "file": "page-9.png",
+        "bytes": 407775,
+        "sha256": "37a9fa7bc52ba9275a4e6dc75b921750dda48f7a051dbe725c2b52bc3f6731bc",
+        "width_px": 1547,
+        "height_px": 2002
+      },
+      {
+        "page": 10,
+        "file": "page-10.png",
+        "bytes": 396289,
+        "sha256": "5c12423939a2b83fba285c1820b43fc8bac36522510139f75e42c28b2a328783",
+        "width_px": 1547,
+        "height_px": 2002
+      },
+      {
+        "page": 11,
+        "file": "page-11.png",
+        "bytes": 383564,
+        "sha256": "447662be74088a97005215000aee22a78e81837498412012811fa6fea33b23d5",
+        "width_px": 1547,
+        "height_px": 2002
+      },
+      {
+        "page": 12,
+        "file": "page-12.png",
+        "bytes": 404486,
+        "sha256": "11d39555f909685ac08ce8f9290bf79cf9a02a6484fb8beff54441141aea17a9",
+        "width_px": 1547,
+        "height_px": 2002
+      },
+      {
+        "page": 13,
+        "file": "page-13.png",
+        "bytes": 394944,
+        "sha256": "8b38d3577bf42c91a6c68dc802567b51f1ffd31bca2d86d626cfe2d07426f084",
+        "width_px": 1547,
+        "height_px": 2002
+      },
+      {
+        "page": 14,
+        "file": "page-14.png",
+        "bytes": 401681,
+        "sha256": "070140328ed9c307920f3d628f23736cbadb5d434b222177c97ccd6f29bbd5c8",
+        "width_px": 1547,
+        "height_px": 2002
+      },
+      {
+        "page": 15,
+        "file": "page-15.png",
+        "bytes": 622771,
+        "sha256": "8a260b8284a0f9e806db9bba6a921dd91e27b9628dd79bc287c21859480b3efe",
+        "width_px": 1547,
+        "height_px": 2002
+      }
+    ],
+    "page_sequence": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "pdf": {
+      "file": "NOSTOS0_computational_methods_submission_candidate_v30.pdf",
+      "exists": true,
+      "bytes": 1652853,
+      "sha256": "9e74e25777cad0f686d0073afe0864e1fb2fe9335ef3306dc628741fdff472f8",
+      "has_pdf_header": true,
+      "has_eof_marker": true
+    }
+  },
+  "required_text_presence": {
+    "NOSTOS compiles acquisition- and scale-specific validity contracts for quantitative microscopy": true,
+    "Abstract": true,
+    "Main": true,
+    "A validity profile is a deployable measurement object": true,
+    "A first prospective profile lowers tensor-coherence risk in BioSR": true,
+    "Pooled confirmation can conceal a deterministic failure": true,
+    "Hierarchical support removes the unsafe cell on untouched fields": true,
+    "The software preserves failure as part of the result": true,
+    "Discussion": true,
+    "Methods": true,
+    "Data and code availability": true,
+    "Ethics, authorship and competing interests": true,
+    "Figure 1 |": true,
+    "Figure 2 |": true,
+    "Figure 3 |": true,
+    "Figure 4 |": true,
+    "References": true
+  },
+  "text_safety_scan": {
+    "private_absolute_path_found": false,
+    "possible_secret_found": false
+  },
+  "machine_checks": {
+    "docx_is_valid_zip": true,
+    "expected_page_count": true,
+    "continuous_page_sequence": true,
+    "all_page_renders_nonempty": true,
+    "rendered_pdf_valid_envelope": true,
+    "expected_embedded_media_count": true,
+    "times_new_roman_effective_for_visible_text": true,
+    "no_explicit_non_times_visible_runs": true,
+    "required_sections_and_legends_present": true,
+    "no_private_absolute_paths": true,
+    "no_possible_secrets": true
+  },
+  "machine_status": "pass",
+  "visual_review": {
+    "status": "pass",
+    "date": "2026-08-29",
+    "pages_reviewed": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "criteria": [
+      "no overlap or clipping",
+      "panel labels and captions remain legible",
+      "figures and captions stay together",
+      "page ordering and supplementary-figure identity are correct"
+    ],
+    "rendering_engine_note": "All pages were reviewed from the LibreOffice-generated QA render; Microsoft Word and journal-production conversion may reflow the document."
+  },
+  "submission_readiness": "blocked_external_and_administrative",
+  "administrative_blockers": [
+    "archival DOI has not been minted",
+    "unaided external-user execution has not been received"
+  ],
+  "nature_readiness": "not_ready",
+  "interpretation": "A pass establishes that the current DOCX and its rendered pages satisfy the declared production checks. It does not establish scientific validity, external replication, clinical utility, journal fit or acceptance readiness."
+}

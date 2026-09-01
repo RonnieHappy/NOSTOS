@@ -1,0 +1,139 @@
+{
+  "protocol_version": "nostos-public-tool-workflows/1.0",
+  "protocol_sha256": "236b73d316a4f74b6bb84387bb5d39f2485383e0eb9f54c18fff506b2624584b",
+  "status": "pass",
+  "gates": {
+    "all_four_workflows_complete": true,
+    "all_schema_contracts_valid": true,
+    "unmasked_2d_modules_and_abstention_correct": true,
+    "masked_2d_geometry_and_network_v2_present": true,
+    "masked_3d_module_contract_correct": true,
+    "dynamic_time_contract_correct": true,
+    "every_workflow_under_60_seconds": true
+  },
+  "workflows": [
+    {
+      "name": "unmasked_2d_bbbc007",
+      "elapsed_seconds": 0.4138931001070887,
+      "summary": {
+        "status": "review",
+        "output": "<PROJECT_ROOT>\\outputs\\nostos0-public-tool-workflows-v1\\unmasked_2d_bbbc007\\response_geometry.json",
+        "input_dimensions": [
+          450,
+          450
+        ],
+        "spacing": [
+          1.0,
+          1.0
+        ],
+        "spatial_unit": "relative",
+        "responses": 8,
+        "abstentions": 1,
+        "modules": [
+          "hessian",
+          "spatial",
+          "spectral",
+          "tensor"
+        ]
+      },
+      "source_sha256": "1abc5c6e7c53bdb7e97fd9409ee963e9cb903496e1776f585fa338cd9f5563e2",
+      "mask_sha256": null,
+      "status": "review",
+      "modules": [
+        "hessian",
+        "spatial",
+        "spectral",
+        "tensor"
+      ]
+    },
+    {
+      "name": "masked_2d_hrf",
+      "elapsed_seconds": 43.424913899973035,
+      "summary": {
+        "status": "valid",
+        "output": "<PROJECT_ROOT>\\outputs\\nostos0-public-tool-workflows-v1\\masked_2d_hrf\\response_geometry.json",
+        "input_dimensions": [
+          2336,
+          3504
+        ],
+        "spacing": [
+          1.0,
+          1.0
+        ],
+        "spatial_unit": "relative",
+        "responses": 11,
+        "abstentions": 0,
+        "modules": [
+          "geometry",
+          "hessian",
+          "network",
+          "spatial",
+          "spectral",
+          "tensor"
+        ]
+      },
+      "source_sha256": "7ab2b3a1bd8765f7b50f5744aa228c9f6c5f2f5a602a7d15ab8782aadc515a27",
+      "mask_sha256": "248a0aadd7cb0e53ae2b69ca950a166cfe244939143ec0fec2ee71fa1b39d3a8",
+      "status": "valid",
+      "modules": [
+        "geometry",
+        "hessian",
+        "network",
+        "spatial",
+        "spectral",
+        "tensor"
+      ]
+    },
+    {
+      "name": "masked_3d_bone",
+      "elapsed_seconds": 5.435435000108555,
+      "summary": {
+        "status": "valid",
+        "output": "<PROJECT_ROOT>\\outputs\\nostos0-public-tool-workflows-v1\\masked_3d_bone\\response_geometry.json",
+        "input_dimensions": [
+          100,
+          100,
+          100
+        ],
+        "spacing": [
+          0.017409179359674454,
+          0.017409179359674454,
+          0.017409268766641617
+        ],
+        "spatial_unit": "mm",
+        "responses": 6,
+        "abstentions": 0,
+        "modules": [
+          "geometry",
+          "hessian",
+          "network"
+        ]
+      },
+      "source_sha256": "b52e275cb5e56b58393626fcaf6d81b1ae9b1fd039d20db09f38a60b0db3ff7c",
+      "mask_sha256": "b52e275cb5e56b58393626fcaf6d81b1ae9b1fd039d20db09f38a60b0db3ff7c",
+      "status": "valid",
+      "modules": [
+        "geometry",
+        "hessian",
+        "network"
+      ]
+    },
+    {
+      "name": "dynamic_2dt_bbbc035",
+      "elapsed_seconds": 0.041251499904319644,
+      "summary": {
+        "output": "<PROJECT_ROOT>\\outputs\\nostos0-public-tool-workflows-v1\\dynamic_2dt_bbbc035\\dynamic_response_geometry.json",
+        "modules": [
+          "dynamic"
+        ]
+      },
+      "source_sha256": "dc13c97d5273277dd5b05696dba0ffaa0ec635a685f50ea55d5660bf07409370",
+      "mask_sha256": null,
+      "status": "valid",
+      "modules": [
+        "dynamic"
+      ]
+    }
+  ],
+  "interpretation": "End-to-end public-data software execution; not independent usability or clinical validation."
+}

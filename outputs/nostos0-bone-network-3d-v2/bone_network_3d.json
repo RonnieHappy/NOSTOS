@@ -1,0 +1,66 @@
+{
+  "protocol_version": "nostos-bone-3d-network-contract/2.0",
+  "config_sha256": "84da41b72d50211fbcb0fa1e5af05eaf1d27d5ab00ae7dca46f44307dc1c96bb",
+  "dataset_doi": "10.5281/zenodo.11061868",
+  "segmentation_provenance": "source U-Net plus post-processing correction",
+  "independent_rats": 13,
+  "paired_volumes": 26,
+  "stress_cases": 104,
+  "summary": {
+    "always_emit": {
+      "cases": 104,
+      "accepted": 104,
+      "coverage": 1.0,
+      "silent_invalid": 52,
+      "silent_invalid_risk": 0.5,
+      "accepted_rats": 13
+    },
+    "endpoint_qc": {
+      "cases": 104,
+      "accepted": 104,
+      "coverage": 1.0,
+      "silent_invalid": 52,
+      "silent_invalid_risk": 0.5,
+      "accepted_rats": 13
+    },
+    "topology_qc": {
+      "cases": 104,
+      "accepted": 98,
+      "coverage": 0.9423076923076923,
+      "silent_invalid": 46,
+      "silent_invalid_risk": 0.46938775510204084,
+      "accepted_rats": 13
+    },
+    "partial_no_boundary": {
+      "cases": 104,
+      "accepted": 56,
+      "coverage": 0.5384615384615384,
+      "silent_invalid": 14,
+      "silent_invalid_risk": 0.25,
+      "accepted_rats": 12
+    },
+    "partial_no_nested": {
+      "cases": 104,
+      "accepted": 98,
+      "coverage": 0.9423076923076923,
+      "silent_invalid": 46,
+      "silent_invalid_risk": 0.46938775510204084,
+      "accepted_rats": 13
+    },
+    "full_contract": {
+      "cases": 104,
+      "accepted": 56,
+      "coverage": 0.5384615384615384,
+      "silent_invalid": 14,
+      "silent_invalid_risk": 0.25,
+      "accepted_rats": 12
+    }
+  },
+  "risk_coverage_auc": {
+    "endpoint_qc": 0.48337795876712497,
+    "topology_qc": 0.4404028137885978,
+    "full_contract": 0.21007521802424997
+  },
+  "status": "complete",
+  "claim_boundary": "Calibrated stress-test detection of corrupted imported 3D LCN masks; not independent confirmation, voxel-truth validation, or biological inference."
+}

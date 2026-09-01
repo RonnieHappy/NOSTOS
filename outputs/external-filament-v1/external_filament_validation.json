@@ -1,0 +1,398 @@
+{
+  "protocol_version": "nostos-external-filament/1.0",
+  "dataset": {
+    "title": "A Mycelium Dataset with Edge-Precise Annotation for Semantic Segmentation",
+    "doi": "10.5281/zenodo.15224240",
+    "archive": "labeled-GS_PO_TS.zip",
+    "role": "external public images and manual masks; not acquired by NOSTOS investigators"
+  },
+  "coordinate_system": "dimensionless normalized image coordinates; no physical pixel calibration claimed",
+  "cases": [
+    {
+      "species": "GS",
+      "image": "00018428.jpg",
+      "mask": "00018428.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.07635498046875,
+      "image_sha256": "58841d3fecf073c05bde1da644d2255fb766ea1ff77bbcd8b00802999498a050",
+      "mask_sha256": "a81a5709853b8de901861aba683636cff84e1d07feb1fe6130c6f70cfda2d10a"
+    },
+    {
+      "species": "GS",
+      "image": "00018429.jpg",
+      "mask": "00018429.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.06844075520833333,
+      "image_sha256": "092e5ba0c2338d73b60825eb674ebf858ac0396c4de5ff80f31252aed27b670a",
+      "mask_sha256": "a706c9f9fb66d5ddbf7b86eb2b7eab8f65ff43e8864e0bff81564b6a0781bedf"
+    },
+    {
+      "species": "GS",
+      "image": "00018430.jpg",
+      "mask": "00018430.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.07175699869791667,
+      "image_sha256": "2be355acdd7dfde4a7c8ea389828ec9dcaf66459d1f227e09c3fb5056536fa0d",
+      "mask_sha256": "1fe622c43456531461c6985b33524fe2a981cb92e2c97ea5b39d819a105b1c67"
+    },
+    {
+      "species": "GS",
+      "image": "00018431.jpg",
+      "mask": "00018431.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.020467122395833332,
+      "image_sha256": "1c65e4034472d7771c0dca52c9f30f885d41c6ee12de34080688a5439b68a320",
+      "mask_sha256": "40f09e60c93e9ef04fcb47410ab74601584eed17d3c7bb500fc6affcbddfb1ae"
+    },
+    {
+      "species": "GS",
+      "image": "00018432.jpg",
+      "mask": "00018432.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.08994547526041667,
+      "image_sha256": "14c9b9e631b3d0509e352e92d7e3db30f05a4864f3bacc42eb5bfd5459644955",
+      "mask_sha256": "12f9a6f7134ee4f65ff17ec0dc57b87d8fe604c9abafefb7fe395637a3f2c229"
+    },
+    {
+      "species": "GS",
+      "image": "00018433.jpg",
+      "mask": "00018433.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.09743245442708333,
+      "image_sha256": "38f36160b3b237851f975e1c150e3b3e3bbc5aa85d11e66a5b66220591b0c7ae",
+      "mask_sha256": "215656cfcd9edacf77481885d755a2e0e40c36b7ffc40604c88bf63b4f346cb2"
+    },
+    {
+      "species": "GS",
+      "image": "00018434.jpg",
+      "mask": "00018434.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.062744140625,
+      "image_sha256": "8d66866cd935fcd4dbd23e709c8c98db0d0510c7e9d16f87b36244b64e748a1d",
+      "mask_sha256": "e0c9b0de1e838eeb44e282b9484dbce8b3ce0357b6c0ad5a3115378c3b056e80"
+    },
+    {
+      "species": "GS",
+      "image": "00018435.jpg",
+      "mask": "00018435.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.07621256510416667,
+      "image_sha256": "2f1ccf020577690927c4503039f5c6dca9a2b0f0ee1e2c1e77246de77ab80b8d",
+      "mask_sha256": "ab872017a1d04f621bf316d4e593d77070e41ea45bbf23eac562eaa19ffa898b"
+    },
+    {
+      "species": "GS",
+      "image": "00018436.jpg",
+      "mask": "00018436.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.06927490234375,
+      "image_sha256": "426bb9f94166ab61b239c08ad543e0be51e12aa730373568be6ea60c662fd4e4",
+      "mask_sha256": "fdf46a789ea61ded46b786b9dab6ad5cd45a3075b69b431a3137f4b92cc917bd"
+    },
+    {
+      "species": "GS",
+      "image": "00018437.jpg",
+      "mask": "00018437.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.06097412109375,
+      "image_sha256": "3a3b34efe0791c2dfcf9eea0e70cea1aed0ed0c11389b2f5bb218ad1bedeba9d",
+      "mask_sha256": "a138982e09a8a7c90738768b8c9ce652c30125bbd9bb54f6d46c2192eb89232d"
+    },
+    {
+      "species": "PO",
+      "image": "00018438.jpg",
+      "mask": "00018438.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.006937662760416667,
+      "image_sha256": "02fe42fec4742826debeeab978d65ce06dd616fba99f5bad226ba7daa3d7488c",
+      "mask_sha256": "ac28e93e9f8120e31f6256959be5488d7a047ddd32b12735717b1d40ff86bb93"
+    },
+    {
+      "species": "PO",
+      "image": "00018439.jpg",
+      "mask": "00018439.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.0594482421875,
+      "image_sha256": "91f4e3f81839d0b7827d9d60c9164b608625a81a96be9cf29ad8ba1f4835fd2f",
+      "mask_sha256": "31584d49c19504ab7b1015ce3500e0ce906c6649e7038c99a2ec8126a37f33ee"
+    },
+    {
+      "species": "PO",
+      "image": "00018440.jpg",
+      "mask": "00018440.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.0032958984375,
+      "image_sha256": "7fcb7b18921f23329fdd52c25c69dfd6e5bfd15fa15e196e1492f0976d6dbe98",
+      "mask_sha256": "9e32379da7891c96c46fb1e454d8f76718aadd1592ec0af9dd33a837e3bd964d"
+    },
+    {
+      "species": "PO",
+      "image": "00018441.jpg",
+      "mask": "00018441.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.040812174479166664,
+      "image_sha256": "0f08c1008d477827191936e6245815d24e51784dad16c00ccfefb04834a39815",
+      "mask_sha256": "4a20b97a30905f9756e30faba10d0569753cdc3311062a25c815017fd37898bc"
+    },
+    {
+      "species": "PO",
+      "image": "00018442.jpg",
+      "mask": "00018442.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.10642496744791667,
+      "image_sha256": "013730baf3b788b7a219032c1525000dc01697dbe363c50c6f132e855075f249",
+      "mask_sha256": "3e084fb6d546af690487b632d42a3f7cf16fb9b22e5566321797ab77af707da9"
+    },
+    {
+      "species": "PO",
+      "image": "00018443.jpg",
+      "mask": "00018443.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.01806640625,
+      "image_sha256": "e23b891530c66f89bb75ff8ca4b21cc700b43fa20b48c29e6391b98e17bf1435",
+      "mask_sha256": "7352ef368c0c506a94cc8f0833514d5852a87006d8569c9dba29876f3a596829"
+    },
+    {
+      "species": "PO",
+      "image": "00018444.jpg",
+      "mask": "00018444.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.06097412109375,
+      "image_sha256": "4867c84f82af28cb4cc61ebb20327bc140455fc546287029c8cbd7665486236a",
+      "mask_sha256": "d9a58c49456fb05db0d7e4eab83f2a0d264053076af28ed28553ab78c2bea275"
+    },
+    {
+      "species": "PO",
+      "image": "00018445.jpg",
+      "mask": "00018445.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.07928466796875,
+      "image_sha256": "9d4f2e3a0488f4ccb488a0119137ada80ada1b22d0ca5bfff50fc620fa93984d",
+      "mask_sha256": "71d54167a2ef54d598805b69eef76a6cff6ce3075ba03faf72d1a86cfe37ce19"
+    },
+    {
+      "species": "PO",
+      "image": "00018446.jpg",
+      "mask": "00018446.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.1148681640625,
+      "image_sha256": "84b2adf79d535a4b5f64e2de1d49748f01eb2c036c23b94838fc0c9b8f2766e4",
+      "mask_sha256": "af4295b746ff55e080aa59a923cf75e2bc8aead98e42b68b6f23fb9ce3ffe3d5"
+    },
+    {
+      "species": "PO",
+      "image": "00018447.jpg",
+      "mask": "00018447.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.019307454427083332,
+      "image_sha256": "e688b86bf935470f599d18b15d5ddd086d2bee993f1190415c069352fa9a5bce",
+      "mask_sha256": "2b99d20857e0beca5a08e1f41b611b1278ec3a895e82d12d7c0c72b6e82a0b5e"
+    },
+    {
+      "species": "TS",
+      "image": "00018448.jpg",
+      "mask": "00018448.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.006571451822916667,
+      "image_sha256": "c539b76d3cba4a9520f62b7d0a0287dee8d2a589b662d172918ba214065b33d2",
+      "mask_sha256": "477da19b097f991576c2da84f05a22178ea52e148ffa0a9c32f7301425cdaf4b"
+    },
+    {
+      "species": "TS",
+      "image": "00018449.jpg",
+      "mask": "00018449.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.10420735677083333,
+      "image_sha256": "835f46dcac3132154ffacacdf5191c818f442d27f9663b4f5deaf2e8d859668b",
+      "mask_sha256": "c4e0d3328d8d0274a99190a40743adc6ea8e8ce866b9b389a53f5a754bc6a77d"
+    },
+    {
+      "species": "TS",
+      "image": "00018450.jpg",
+      "mask": "00018450.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.0034993489583333335,
+      "image_sha256": "0c7d32f81917a3b59a31214ee62299ffb25f6b335add6368025ad47cc57493c4",
+      "mask_sha256": "c9b56001a989f27418935125dd380ae99fa96b73bc453352a9aa123fb3e938d1"
+    },
+    {
+      "species": "TS",
+      "image": "00018451.jpg",
+      "mask": "00018451.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.039896647135416664,
+      "image_sha256": "760723746330d1f13a11af7d55bb58cda3c9ad308e21ff4c74a81e33ab67f9d0",
+      "mask_sha256": "d31ddc17e2e8139084e892cc6944c39cf15dc9e3ece327292547c81295b3ef38"
+    },
+    {
+      "species": "TS",
+      "image": "00018452.jpg",
+      "mask": "00018452.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.051106770833333336,
+      "image_sha256": "ebe092b97b73440695fd083c7cb3960157db9c4653ac6ca3f6e38d1a282c6a17",
+      "mask_sha256": "b28953fd71e9c5d9fcc720a4bc13b4025205fa44f2d5e5ed5dff6d522cb862bf"
+    },
+    {
+      "species": "TS",
+      "image": "00018453.jpg",
+      "mask": "00018453.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.09495035807291667,
+      "image_sha256": "04547f7d82da5a63ee280f5a6a43a3bff146495736bda149d69d7159240a12d8",
+      "mask_sha256": "1d83afecdc74cff1cca2d317efdf78ca5aa60ddb74795c79d48e03b9f59abcec"
+    },
+    {
+      "species": "TS",
+      "image": "00018454.jpg",
+      "mask": "00018454.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.0034586588541666665,
+      "image_sha256": "b56fd579666fcdabf4dda397dc577e9177492b886408ad3f5d869db2bc85dbb9",
+      "mask_sha256": "0e61a87e7be9066b8f5bd886b18f922eb5e12b3c5fa67bdfbd06f8ca0319a852"
+    },
+    {
+      "species": "TS",
+      "image": "00018455.jpg",
+      "mask": "00018455.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.06606038411458333,
+      "image_sha256": "07b036a853f62be99d0ece4b7a3044919fa842a90cd089799bc92322cfe564f4",
+      "mask_sha256": "a75545e4fff4b9eb91c2a50b07d8f79f969dc89354a5cb0910533c8d33a4f066"
+    },
+    {
+      "species": "TS",
+      "image": "00018456.jpg",
+      "mask": "00018456.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.10624186197916667,
+      "image_sha256": "95d84557b598278267655e5404d109975b6c41033eec2bd312f0666069db9c6f",
+      "mask_sha256": "18c9289ecb5300c29d85903461ec3fcad34ed9777afcd1113626c908f5fb4d0f"
+    },
+    {
+      "species": "TS",
+      "image": "00018457.jpg",
+      "mask": "00018457.png",
+      "normalized_shape": [
+        192,
+        256
+      ],
+      "mask_fraction": 0.020650227864583332,
+      "image_sha256": "703929d911c3c0d84a7413d1c9d2b79f44ef3ba6168890381bb58adbd947c3a5",
+      "mask_sha256": "4619592f94b0027674b90b8e64ed304960771954856d389fff0d20a393ac7aa4"
+    }
+  ],
+  "summary": {
+    "n_images": 30,
+    "species_counts": {
+      "GS": 10,
+      "PO": 10,
+      "TS": 10
+    },
+    "repeated_stratified_balanced_accuracy": 0.68,
+    "permutation_p": 0.004975124378109453,
+    "feature_count": 52,
+    "representation_comparison": {
+      "nostos_response_geometry": 0.68,
+      "conventional_scalar": 0.6683333333333333,
+      "naive_block_summaries": 0.5533333333333333,
+      "nostos_without_coverage": 0.68,
+      "nostos_without_geometry": 0.685,
+      "nostos_without_hessian": 0.655,
+      "nostos_without_network": 0.7033333333333333,
+      "nostos_without_spatial": 0.7233333333333333,
+      "nostos_without_tensor": 0.6699999999999999
+    }
+  },
+  "validity": {
+    "status": "exploratory_cross_domain",
+    "reason": "Species discrimination demonstrates sensitivity to annotated network organization but does not identify biological mechanism, and image acquisition may confound species."
+  }
+}

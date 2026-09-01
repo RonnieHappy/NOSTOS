@@ -1,0 +1,288 @@
+{
+  "protocol_version": "nostos-external-nuclei-confirmatory/1.0",
+  "protocol_sha256": "eab07b4a474200e56fd0bca27b01733cf226a230cb2d1e49ca9810d71aef9356",
+  "dataset": "BBBC007v1",
+  "source": "https://bbbc.broadinstitute.org/BBBC007",
+  "license": "CC0",
+  "design": "prospectively frozen transfer from BBBC039 to all 16 BBBC007 DNA fields; no fitting, threshold selection, case exclusion, or BBBC007-informed method choice",
+  "input_archives": {
+    "images.zip": "b7009e2fce0a3152a5c9adda916eaa699d09696f4bd02a7d05d12d041e30c6d1",
+    "outlines.zip": "6a5246f9a9d743d22eafdb409fae638a8461af97e9ff9c4a92f25eba236224d3"
+  },
+  "method": {
+    "resize_maximum_pixels": 256,
+    "dimensionless_scales_pixels": [
+      2,
+      4,
+      8
+    ],
+    "polarity": "bright",
+    "aggregation": "maximum across scales"
+  },
+  "validity": {
+    "status": "fail",
+    "physical_scale": "abstain: pixel spacing not provided",
+    "interpretation": "Foreground localization against filled manual nuclear outlines; not instance segmentation, counting, or phenotype prediction."
+  },
+  "success_gates": {
+    "mean_auc_gt_0.75": {
+      "value": 0.9005908796187929,
+      "pass": true
+    },
+    "ap_above_prevalence_ci_lower_gt_0": {
+      "ci95_mean": [
+        0.5862300203215618,
+        0.6422798772743209
+      ],
+      "pass": true
+    },
+    "auc_above_log_ci_lower_gt_0": {
+      "ci95_mean": [
+        -0.007589633895715209,
+        0.030037165705088208
+      ],
+      "pass": false
+    }
+  },
+  "case_count": 16,
+  "summary": {
+    "nostos_blob_average_precision": {
+      "mean": 0.7603626955784567,
+      "median": 0.7770135245112925,
+      "ci95_mean": [
+        0.7367227909642777,
+        0.7791948970623254
+      ]
+    },
+    "intensity_average_precision": {
+      "mean": 0.8921766586732087,
+      "median": 0.9014089634569948,
+      "ci95_mean": [
+        0.8660530393147587,
+        0.9143877636479664
+      ]
+    },
+    "multiscale_log_average_precision": {
+      "mean": 0.7136989041091351,
+      "median": 0.7190002851848687,
+      "ci95_mean": [
+        0.6884170929015178,
+        0.7382914021243041
+      ]
+    },
+    "nostos_minus_intensity_average_precision": {
+      "mean": -0.1318139630947521,
+      "ci95_mean": [
+        -0.1416502571162958,
+        -0.12112904014304059
+      ]
+    },
+    "nostos_minus_multiscale_log_average_precision": {
+      "mean": 0.04666379146932162,
+      "ci95_mean": [
+        0.03335477339784293,
+        0.059434696816942474
+      ]
+    },
+    "nostos_blob_roc_auc": {
+      "mean": 0.9005908796187929,
+      "median": 0.9013359877306198,
+      "ci95_mean": [
+        0.890341264628746,
+        0.9110668735806328
+      ]
+    },
+    "intensity_roc_auc": {
+      "mean": 0.9861982360993862,
+      "median": 0.986880855176814,
+      "ci95_mean": [
+        0.9834810964849684,
+        0.9886381982844834
+      ]
+    },
+    "multiscale_log_roc_auc": {
+      "mean": 0.8900265374575655,
+      "median": 0.8871958271019822,
+      "ci95_mean": [
+        0.8624152904441067,
+        0.9166152387905147
+      ]
+    },
+    "nostos_minus_intensity_roc_auc": {
+      "mean": -0.08560735648059307,
+      "ci95_mean": [
+        -0.09458853540984095,
+        -0.07633307816991855
+      ]
+    },
+    "nostos_minus_multiscale_log_roc_auc": {
+      "mean": 0.010564342161227439,
+      "ci95_mean": [
+        -0.007589633895715209,
+        0.030037165705088208
+      ]
+    }
+  },
+  "cases": [
+    {
+      "case": "A9/A9 p10d.tif",
+      "foreground_fraction": 0.12738037109375,
+      "nostos_blob_average_precision": 0.787725069316522,
+      "nostos_blob_roc_auc": 0.9320997010708449,
+      "intensity_average_precision": 0.89898781143282,
+      "intensity_roc_auc": 0.9877902926800429,
+      "multiscale_log_average_precision": 0.7678476455432681,
+      "multiscale_log_roc_auc": 0.9232092386114155
+    },
+    {
+      "case": "A9/A9 p5d.tif",
+      "foreground_fraction": 0.138580322265625,
+      "nostos_blob_average_precision": 0.7139142178079357,
+      "nostos_blob_roc_auc": 0.8939619051065129,
+      "intensity_average_precision": 0.8501904276822909,
+      "intensity_roc_auc": 0.9815969050952393,
+      "multiscale_log_average_precision": 0.6533672835260119,
+      "multiscale_log_roc_auc": 0.8863262883231547
+    },
+    {
+      "case": "A9/A9 p7d.tif",
+      "foreground_fraction": 0.22894287109375,
+      "nostos_blob_average_precision": 0.7409395399632643,
+      "nostos_blob_roc_auc": 0.8692860233181332,
+      "intensity_average_precision": 0.874319535203834,
+      "intensity_roc_auc": 0.9713485227391169,
+      "multiscale_log_average_precision": 0.666183976632941,
+      "multiscale_log_roc_auc": 0.7834104828701528
+    },
+    {
+      "case": "A9/A9 p9d.tif",
+      "foreground_fraction": 0.238861083984375,
+      "nostos_blob_average_precision": 0.7839523376012997,
+      "nostos_blob_roc_auc": 0.8792882453388515,
+      "intensity_average_precision": 0.941031712484979,
+      "intensity_roc_auc": 0.9847896299096198,
+      "multiscale_log_average_precision": 0.6920739535038871,
+      "multiscale_log_roc_auc": 0.7949110021024346
+    },
+    {
+      "case": "f113/AS_09125_040701150004_A02f00d0.tif",
+      "foreground_fraction": 0.062225341796875,
+      "nostos_blob_average_precision": 0.6190610835729191,
+      "nostos_blob_roc_auc": 0.9236865366621345,
+      "intensity_average_precision": 0.7446408316515121,
+      "intensity_roc_auc": 0.9808433391298652,
+      "multiscale_log_average_precision": 0.5929226041190137,
+      "multiscale_log_roc_auc": 0.9577738077676337
+    },
+    {
+      "case": "f96 (17)/17P1_POS0006_D_1UL.tif",
+      "foreground_fraction": 0.0550994873046875,
+      "nostos_blob_average_precision": 0.7960892651499565,
+      "nostos_blob_roc_auc": 0.9407197404154778,
+      "intensity_average_precision": 0.9023243988320083,
+      "intensity_roc_auc": 0.99494471150648,
+      "multiscale_log_average_precision": 0.8002401115084473,
+      "multiscale_log_roc_auc": 0.9784966605537493
+    },
+    {
+      "case": "f96 (17)/17P1_POS0007_D_1UL.tif",
+      "foreground_fraction": 0.1676177978515625,
+      "nostos_blob_average_precision": 0.7972326771842835,
+      "nostos_blob_roc_auc": 0.9080832010420622,
+      "intensity_average_precision": 0.9396792181443901,
+      "intensity_roc_auc": 0.9901680451745485,
+      "multiscale_log_average_precision": 0.7443576916907121,
+      "multiscale_log_roc_auc": 0.8833778785820408
+    },
+    {
+      "case": "f96 (17)/17P1_POS0011_D_1UL.tif",
+      "foreground_fraction": 0.2104339599609375,
+      "nostos_blob_average_precision": 0.7803358732530378,
+      "nostos_blob_roc_auc": 0.8796839423123632,
+      "intensity_average_precision": 0.9357035316395099,
+      "intensity_roc_auc": 0.9861163611971069,
+      "multiscale_log_average_precision": 0.7164775670401761,
+      "multiscale_log_roc_auc": 0.8221386706684867
+    },
+    {
+      "case": "f96 (17)/17P1_POS0013_D_1UL.tif",
+      "foreground_fraction": 0.0893096923828125,
+      "nostos_blob_average_precision": 0.7791290614891447,
+      "nostos_blob_roc_auc": 0.9184042862094576,
+      "intensity_average_precision": 0.9149928855724467,
+      "intensity_roc_auc": 0.9935724237387588,
+      "multiscale_log_average_precision": 0.7763570073466449,
+      "multiscale_log_roc_auc": 0.9560239844431911
+    },
+    {
+      "case": "f96 (17)/17P1_POS0014_D_1UL.tif",
+      "foreground_fraction": 0.1526947021484375,
+      "nostos_blob_average_precision": 0.7575278429114657,
+      "nostos_blob_roc_auc": 0.8778095621922729,
+      "intensity_average_precision": 0.8984931191387975,
+      "intensity_roc_auc": 0.9874836745362905,
+      "multiscale_log_average_precision": 0.6867696261320317,
+      "multiscale_log_roc_auc": 0.8850286529696281
+    },
+    {
+      "case": "f9620/20P1_POS0002_D_1UL.tif",
+      "foreground_fraction": 0.2034149169921875,
+      "nostos_blob_average_precision": 0.75301195309095,
+      "nostos_blob_roc_auc": 0.8690279584005258,
+      "intensity_average_precision": 0.9075866728521623,
+      "intensity_roc_auc": 0.9823715917836621,
+      "multiscale_log_average_precision": 0.6697136716759392,
+      "multiscale_log_roc_auc": 0.8362169111804124
+    },
+    {
+      "case": "f9620/20P1_POS0005_D_1UL.tif",
+      "foreground_fraction": 0.09295654296875,
+      "nostos_blob_average_precision": 0.7371002673151533,
+      "nostos_blob_roc_auc": 0.9054437917214292,
+      "intensity_average_precision": 0.8268949950585149,
+      "intensity_roc_auc": 0.9873159945987556,
+      "multiscale_log_average_precision": 0.6941294131468462,
+      "multiscale_log_roc_auc": 0.9343238451541961
+    },
+    {
+      "case": "f9620/20P1_POS0007_D_1UL.tif",
+      "foreground_fraction": 0.1762542724609375,
+      "nostos_blob_average_precision": 0.8124108926818628,
+      "nostos_blob_roc_auc": 0.9076825296727616,
+      "intensity_average_precision": 0.9493880388348352,
+      "intensity_roc_auc": 0.990261323579857,
+      "multiscale_log_average_precision": 0.7680030216444218,
+      "multiscale_log_roc_auc": 0.8818251865975301
+    },
+    {
+      "case": "f9620/20P1_POS0008_D_1UL.tif",
+      "foreground_fraction": 0.1341400146484375,
+      "nostos_blob_average_precision": 0.753265686203395,
+      "nostos_blob_roc_auc": 0.8972281837398105,
+      "intensity_average_precision": 0.9004935280819815,
+      "intensity_roc_auc": 0.988806611877536,
+      "multiscale_log_average_precision": 0.7215230033295613,
+      "multiscale_log_roc_auc": 0.9083378926125784
+    },
+    {
+      "case": "f9620/20P1_POS0010_D_1UL.tif",
+      "foreground_fraction": 0.1159515380859375,
+      "nostos_blob_average_precision": 0.7748979875334402,
+      "nostos_blob_roc_auc": 0.9143278347982444,
+      "intensity_average_precision": 0.866204950530882,
+      "intensity_roc_auc": 0.9853166342884258,
+      "multiscale_log_average_precision": 0.7362017806549639,
+      "multiscale_log_roc_auc": 0.9209587310036358
+    },
+    {
+      "case": "f9620/20P1_POS0011_D_1UL.tif",
+      "foreground_fraction": 0.153411865234375,
+      "nostos_blob_average_precision": 0.7792093741806762,
+      "nostos_blob_roc_auc": 0.8927206318998062,
+      "intensity_average_precision": 0.9238948816303757,
+      "intensity_roc_auc": 0.9864457157548725,
+      "multiscale_log_average_precision": 0.7330141082512942,
+      "multiscale_log_roc_auc": 0.8880653658808096
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "protocol_version": "nostos-human-nanoct-transfer/1.0",
+  "config_sha256": "365478fe91ab6b3b91aac27c40e1edb523be93340c38a4255d061ab9a8685178",
+  "dataset_doi": "10.5281/zenodo.17909733",
+  "deposited_volumes": 6,
+  "spacing_provenance": "50 nm source acquisition, public repository binned by factor two; inferred public spacing 0.10 um isotropic",
+  "technical_cases": 288,
+  "summary": {
+    "always_emit": {
+      "cases": 288,
+      "accepted": 288,
+      "coverage": 1.0,
+      "silent_invalid": 119,
+      "silent_invalid_risk": 0.4131944444444444,
+      "volume_cluster_risk_95": [
+        0.3715277777777778,
+        0.4513888888888889
+      ]
+    },
+    "endpoint_qc": {
+      "cases": 288,
+      "accepted": 280,
+      "coverage": 0.9722222222222222,
+      "silent_invalid": 111,
+      "silent_invalid_risk": 0.3964285714285714,
+      "volume_cluster_risk_95": [
+        0.35251798561151076,
+        0.4377224199288256
+      ]
+    },
+    "partial_no_axis": {
+      "cases": 288,
+      "accepted": 272,
+      "coverage": 0.9444444444444444,
+      "silent_invalid": 105,
+      "silent_invalid_risk": 0.3860294117647059,
+      "volume_cluster_risk_95": [
+        0.3308270676691729,
+        0.4368231046931408
+      ]
+    },
+    "partial_no_response": {
+      "cases": 288,
+      "accepted": 273,
+      "coverage": 0.9479166666666666,
+      "silent_invalid": 109,
+      "silent_invalid_risk": 0.3992673992673993,
+      "volume_cluster_risk_95": [
+        0.34782608695652173,
+        0.45185185185185184
+      ]
+    },
+    "full_contract": {
+      "cases": 288,
+      "accepted": 265,
+      "coverage": 0.9201388888888888,
+      "silent_invalid": 103,
+      "silent_invalid_risk": 0.3886792452830189,
+      "volume_cluster_risk_95": [
+        0.32706766917293234,
+        0.44696969696969696
+      ]
+    }
+  },
+  "status": "complete",
+  "claim_boundary": "Calibrated 3D directional-response transfer on six deposited human-bone nanoCT volumes; no population or clinical inference."
+}

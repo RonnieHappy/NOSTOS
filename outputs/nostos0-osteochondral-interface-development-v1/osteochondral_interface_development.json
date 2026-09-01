@@ -1,0 +1,1354 @@
+{
+  "protocol_version": "nostos-osteochondral-interface-development/1.0",
+  "status": "development_only",
+  "protocol_sha256": "D23D930FA6EE30A106ECA24DAD3DDA7856BF733E0A28E849B9D2628A3A1C1FC5",
+  "source_repository_commit": "aadc0dae99d06c58abb57062b5c97cecbd628527",
+  "archive": {
+    "bytes": 5387028851,
+    "sha256": "20A809AF46BD4AF0E7E71859F25EB445FC35B1D386E92BE5B7F17A3EC234E10F"
+  },
+  "implementation": {
+    "module_sha256": "DA56D5A920EBEAAB3A3564FE8967C389B3D592C12B77923641BB9B57DEC7FBB4",
+    "development_runner_sha256": "EC8A9C0470460DA86F217E853309E417D882CA6945E484B45C17671A77169D1A"
+  },
+  "partition": {
+    "patients": [
+      "13",
+      "23",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "O18",
+      "O19"
+    ],
+    "patient_count": 9
+  },
+  "eligible_slices": 448,
+  "selected_parameters": {
+    "sigma_px": 1.0,
+    "contrast_weight": 0.0,
+    "jump_penalty": 1.0,
+    "contrast_sign": -1,
+    "downsample": 2
+  },
+  "selected_confidence_threshold": null,
+  "development_coverage": 1.0,
+  "development_patient_objective_um": 599.7333333333333,
+  "development_patient_medians_um": {
+    "13": 689.6,
+    "23": 628.8,
+    "26": 441.6,
+    "27": 825.5999999999999,
+    "28": 598.0,
+    "29": 609.2,
+    "30": 444.0,
+    "O18": 640.8,
+    "O19": 520.0
+  },
+  "comparator_patient_objective_um": 471.08571428571435,
+  "comparator_patient_medians_um": {
+    "13": 32.400000000000006,
+    "26": 137.60000000000002,
+    "28": 1455.2000000000003,
+    "29": 230.4,
+    "30": 1120.0,
+    "O18": 17.6,
+    "O19": 304.40000000000003
+  },
+  "candidate_audit": [
+    {
+      "parameters": {
+        "sigma_px": 1.0,
+        "contrast_weight": 0.0,
+        "jump_penalty": 1.0,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 599.7333333333333,
+      "patient_medians_um": {
+        "13": 689.6,
+        "23": 628.8,
+        "26": 441.6,
+        "27": 825.5999999999999,
+        "28": 598.0,
+        "29": 609.2,
+        "30": 444.0,
+        "O18": 640.8,
+        "O19": 520.0
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 1.0,
+        "contrast_weight": 0.0,
+        "jump_penalty": 1.0,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 599.7333333333333,
+      "patient_medians_um": {
+        "13": 689.6,
+        "23": 628.8,
+        "26": 441.6,
+        "27": 825.5999999999999,
+        "28": 598.0,
+        "29": 609.2,
+        "30": 444.0,
+        "O18": 640.8,
+        "O19": 520.0
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 1.0,
+        "contrast_weight": 0.0,
+        "jump_penalty": 0.5,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 606.2666666666667,
+      "patient_medians_um": {
+        "13": 691.2,
+        "23": 628.8,
+        "26": 443.20000000000005,
+        "27": 819.1999999999999,
+        "28": 598.0,
+        "29": 669.6,
+        "30": 444.0,
+        "O18": 642.4000000000001,
+        "O19": 520.0
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 1.0,
+        "contrast_weight": 0.0,
+        "jump_penalty": 0.5,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 606.2666666666667,
+      "patient_medians_um": {
+        "13": 691.2,
+        "23": 628.8,
+        "26": 443.20000000000005,
+        "27": 819.1999999999999,
+        "28": 598.0,
+        "29": 669.6,
+        "30": 444.0,
+        "O18": 642.4000000000001,
+        "O19": 520.0
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 2.0,
+        "contrast_weight": 0.0,
+        "jump_penalty": 1.0,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 619.3777777777777,
+      "patient_medians_um": {
+        "13": 689.6000000000001,
+        "23": 788.8,
+        "26": 441.6,
+        "27": 856.0,
+        "28": 595.6,
+        "29": 596.4,
+        "30": 444.0,
+        "O18": 636.0,
+        "O19": 526.4
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 2.0,
+        "contrast_weight": 0.0,
+        "jump_penalty": 1.0,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 619.3777777777777,
+      "patient_medians_um": {
+        "13": 689.6000000000001,
+        "23": 788.8,
+        "26": 441.6,
+        "27": 856.0,
+        "28": 595.6,
+        "29": 596.4,
+        "30": 444.0,
+        "O18": 636.0,
+        "O19": 526.4
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 2.0,
+        "contrast_weight": 0.0,
+        "jump_penalty": 0.5,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 627.3777777777779,
+      "patient_medians_um": {
+        "13": 690.0,
+        "23": 788.8,
+        "26": 441.6,
+        "27": 849.6,
+        "28": 595.6,
+        "29": 669.6,
+        "30": 444.0,
+        "O18": 642.4000000000001,
+        "O19": 524.8
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 2.0,
+        "contrast_weight": 0.0,
+        "jump_penalty": 0.5,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 627.3777777777779,
+      "patient_medians_um": {
+        "13": 690.0,
+        "23": 788.8,
+        "26": 441.6,
+        "27": 849.6,
+        "28": 595.6,
+        "29": 669.6,
+        "30": 444.0,
+        "O18": 642.4000000000001,
+        "O19": 524.8
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 1.0,
+        "contrast_weight": 0.0,
+        "jump_penalty": 0.1,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 629.0813820531941,
+      "patient_medians_um": {
+        "13": 702.4,
+        "23": 632.0,
+        "26": 454.5252796420582,
+        "27": 788.8,
+        "28": 580.4644295302014,
+        "29": 924.8402684563758,
+        "30": 439.6,
+        "O18": 629.1024608501119,
+        "O19": 510.0
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 1.0,
+        "contrast_weight": 0.0,
+        "jump_penalty": 0.1,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 629.0813820531941,
+      "patient_medians_um": {
+        "13": 702.4,
+        "23": 632.0,
+        "26": 454.5252796420582,
+        "27": 788.8,
+        "28": 580.4644295302014,
+        "29": 924.8402684563758,
+        "30": 439.6,
+        "O18": 629.1024608501119,
+        "O19": 510.0
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 2.0,
+        "contrast_weight": 0.0,
+        "jump_penalty": 0.1,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 652.166940094457,
+      "patient_medians_um": {
+        "13": 695.2,
+        "23": 793.6000000000001,
+        "26": 441.6,
+        "27": 834.7051454138704,
+        "28": 578.9628635346756,
+        "29": 928.6344519015661,
+        "30": 440.0,
+        "O18": 631.2,
+        "O19": 525.6
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 2.0,
+        "contrast_weight": 0.0,
+        "jump_penalty": 0.1,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 652.166940094457,
+      "patient_medians_um": {
+        "13": 695.2,
+        "23": 793.6000000000001,
+        "26": 441.6,
+        "27": 834.7051454138704,
+        "28": 578.9628635346756,
+        "29": 928.6344519015661,
+        "30": 440.0,
+        "O18": 631.2,
+        "O19": 525.6
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 4.0,
+        "contrast_weight": 0.0,
+        "jump_penalty": 0.5,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 658.888888888889,
+      "patient_medians_um": {
+        "13": 685.2,
+        "23": 887.2,
+        "26": 420.0,
+        "27": 829.6,
+        "28": 615.6,
+        "29": 879.2,
+        "30": 439.20000000000005,
+        "O18": 634.4000000000001,
+        "O19": 539.6
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 4.0,
+        "contrast_weight": 0.0,
+        "jump_penalty": 0.5,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 658.888888888889,
+      "patient_medians_um": {
+        "13": 685.2,
+        "23": 887.2,
+        "26": 420.0,
+        "27": 829.6,
+        "28": 615.6,
+        "29": 879.2,
+        "30": 439.20000000000005,
+        "O18": 634.4000000000001,
+        "O19": 539.6
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 4.0,
+        "contrast_weight": 0.0,
+        "jump_penalty": 1.0,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 658.888888888889,
+      "patient_medians_um": {
+        "13": 685.2,
+        "23": 887.2,
+        "26": 420.0,
+        "27": 829.6,
+        "28": 615.6,
+        "29": 879.2,
+        "30": 439.20000000000005,
+        "O18": 634.4000000000001,
+        "O19": 539.6
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 4.0,
+        "contrast_weight": 0.0,
+        "jump_penalty": 1.0,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 658.888888888889,
+      "patient_medians_um": {
+        "13": 685.2,
+        "23": 887.2,
+        "26": 420.0,
+        "27": 829.6,
+        "28": 615.6,
+        "29": 879.2,
+        "30": 439.20000000000005,
+        "O18": 634.4000000000001,
+        "O19": 539.6
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 4.0,
+        "contrast_weight": 0.0,
+        "jump_penalty": 0.1,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 662.0095451155853,
+      "patient_medians_um": {
+        "13": 691.8586129753915,
+        "23": 892.8000000000001,
+        "26": 425.6,
+        "27": 834.7337807606264,
+        "28": 592.8000000000001,
+        "29": 922.8,
+        "30": 438.2935123042506,
+        "O18": 632.8,
+        "O19": 526.4000000000001
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 4.0,
+        "contrast_weight": 0.0,
+        "jump_penalty": 0.1,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 662.0095451155853,
+      "patient_medians_um": {
+        "13": 691.8586129753915,
+        "23": 892.8000000000001,
+        "26": 425.6,
+        "27": 834.7337807606264,
+        "28": 592.8000000000001,
+        "29": 922.8,
+        "30": 438.2935123042506,
+        "O18": 632.8,
+        "O19": 526.4000000000001
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 1.0,
+        "contrast_weight": 0.25,
+        "jump_penalty": 0.1,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 696.4810340541885,
+      "patient_medians_um": {
+        "13": 701.6,
+        "23": 958.4000000000001,
+        "26": 430.40000000000003,
+        "27": 823.0120805369128,
+        "28": 687.2,
+        "29": 903.3494407158837,
+        "30": 515.2,
+        "O18": 621.9275167785236,
+        "O19": 627.2402684563758
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 1.0,
+        "contrast_weight": 0.5,
+        "jump_penalty": 0.1,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 710.9552075565498,
+      "patient_medians_um": {
+        "13": 673.6,
+        "23": 954.4000000000001,
+        "26": 446.8510067114094,
+        "27": 831.2,
+        "28": 796.0,
+        "29": 897.467561521253,
+        "30": 551.2581655480985,
+        "O18": 618.179865771812,
+        "O19": 629.6402684563759
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 2.0,
+        "contrast_weight": 0.5,
+        "jump_penalty": 0.1,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 729.3830474770072,
+      "patient_medians_um": {
+        "13": 683.8809843400447,
+        "23": 949.2823266219241,
+        "26": 448.0161073825502,
+        "27": 831.5230425055928,
+        "28": 878.9655480984342,
+        "29": 907.7243847874721,
+        "30": 614.8000000000001,
+        "O18": 620.0250559284117,
+        "O19": 630.2299776286353
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 2.0,
+        "contrast_weight": 0.25,
+        "jump_penalty": 0.1,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 730.3869748943575,
+      "patient_medians_um": {
+        "13": 698.8000000000001,
+        "23": 956.8000000000001,
+        "26": 427.8747203579419,
+        "27": 832.0706935123042,
+        "28": 849.5248322147651,
+        "29": 909.17225950783,
+        "30": 637.6,
+        "O18": 633.6,
+        "O19": 628.0402684563759
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 1.0,
+        "contrast_weight": 0.25,
+        "jump_penalty": 0.1,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 745.3657469550087,
+      "patient_medians_um": {
+        "13": 1054.3409395973154,
+        "23": 754.8196868008949,
+        "26": 334.85100671140947,
+        "27": 927.4630872483223,
+        "28": 942.8170022371365,
+        "29": 980.0,
+        "30": 522.8000000000001,
+        "O18": 699.2,
+        "O19": 492.0
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 1.0,
+        "contrast_weight": 0.25,
+        "jump_penalty": 0.5,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 752.1273676360925,
+      "patient_medians_um": {
+        "13": 690.8,
+        "23": 1005.2,
+        "26": 420.0,
+        "27": 808.0,
+        "28": 882.8000000000002,
+        "29": 923.6438478747204,
+        "30": 752.0,
+        "O18": 635.5024608501119,
+        "O19": 651.2
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 2.0,
+        "contrast_weight": 0.25,
+        "jump_penalty": 0.1,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 752.7151876708924,
+      "patient_medians_um": {
+        "13": 1143.2,
+        "23": 760.8,
+        "26": 347.9534675615213,
+        "27": 925.5937360178972,
+        "28": 976.4000000000001,
+        "29": 971.8362416107384,
+        "30": 539.6,
+        "O18": 616.1360178970917,
+        "O19": 492.917225950783
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 1.0,
+        "contrast_weight": 0.25,
+        "jump_penalty": 1.0,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 754.505493412876,
+      "patient_medians_um": {
+        "13": 682.8000000000001,
+        "23": 1005.2,
+        "26": 438.4,
+        "27": 826.4000000000001,
+        "28": 885.6000000000001,
+        "29": 901.3494407158838,
+        "30": 758.4000000000001,
+        "O18": 643.2,
+        "O19": 649.2
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 4.0,
+        "contrast_weight": 0.5,
+        "jump_penalty": 0.1,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 756.0383793189163,
+      "patient_medians_um": {
+        "13": 698.8,
+        "23": 943.2,
+        "26": 452.737360178971,
+        "27": 818.082326621924,
+        "28": 893.764653243848,
+        "29": 907.110514541387,
+        "30": 836.8000000000001,
+        "O18": 623.2,
+        "O19": 630.6505592841163
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 4.0,
+        "contrast_weight": 0.25,
+        "jump_penalty": 0.1,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 761.3343276162068,
+      "patient_medians_um": {
+        "13": 1170.8000000000002,
+        "23": 740.8098434004476,
+        "26": 308.8,
+        "27": 931.2,
+        "28": 972.8,
+        "29": 996.3463087248322,
+        "30": 596.807158836689,
+        "O18": 618.4000000000001,
+        "O19": 516.0456375838926
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 2.0,
+        "contrast_weight": 0.25,
+        "jump_penalty": 0.5,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 762.3958240119314,
+      "patient_medians_um": {
+        "13": 690.2586129753915,
+        "23": 1002.0,
+        "26": 420.0,
+        "27": 786.4000000000001,
+        "28": 882.8000000000002,
+        "29": 922.4000000000001,
+        "30": 872.1038031319911,
+        "O18": 636.0,
+        "O19": 649.6
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 2.0,
+        "contrast_weight": 0.25,
+        "jump_penalty": 1.0,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 764.416604523987,
+      "patient_medians_um": {
+        "13": 683.2,
+        "23": 1002.0,
+        "26": 428.8,
+        "27": 814.4000000000001,
+        "28": 885.6000000000001,
+        "29": 902.1494407158838,
+        "30": 879.2,
+        "O18": 640.0,
+        "O19": 644.4000000000001
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 4.0,
+        "contrast_weight": 0.25,
+        "jump_penalty": 0.1,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 768.2624906785982,
+      "patient_medians_um": {
+        "13": 698.6577181208054,
+        "23": 971.2,
+        "26": 428.8644295302014,
+        "27": 821.2715883668903,
+        "28": 921.2,
+        "29": 924.6219239373602,
+        "30": 885.1570469798658,
+        "O18": 633.6,
+        "O19": 629.7897091722596
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 1.0,
+        "contrast_weight": 0.5,
+        "jump_penalty": 0.5,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 770.3826994780015,
+      "patient_medians_um": {
+        "13": 1136.0,
+        "23": 718.6442953020135,
+        "26": 330.40000000000003,
+        "27": 947.2,
+        "28": 933.6000000000001,
+        "29": 1018.0,
+        "30": 599.2,
+        "O18": 685.6,
+        "O19": 564.8000000000001
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 4.0,
+        "contrast_weight": 0.25,
+        "jump_penalty": 0.5,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 771.2181953765846,
+      "patient_medians_um": {
+        "13": 686.6604026845638,
+        "23": 993.6000000000001,
+        "26": 420.0,
+        "27": 811.2,
+        "28": 963.2,
+        "29": 908.303355704698,
+        "30": 873.6000000000001,
+        "O18": 634.4000000000001,
+        "O19": 650.0
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 1.0,
+        "contrast_weight": 0.5,
+        "jump_penalty": 0.1,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 771.6262490678599,
+      "patient_medians_um": {
+        "13": 1161.7163310961969,
+        "23": 787.2,
+        "26": 356.3472035794184,
+        "27": 941.6,
+        "28": 1017.3610738255036,
+        "29": 964.8,
+        "30": 513.2116331096197,
+        "O18": 705.6000000000001,
+        "O19": 496.80000000000007
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 4.0,
+        "contrast_weight": 0.25,
+        "jump_penalty": 1.0,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 773.5555555555557,
+      "patient_medians_um": {
+        "13": 682.0,
+        "23": 993.6000000000001,
+        "26": 425.6,
+        "27": 828.8,
+        "28": 963.6,
+        "29": 896.0000000000001,
+        "30": 876.8000000000001,
+        "O18": 640.0,
+        "O19": 655.6
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 1.0,
+        "contrast_weight": 0.5,
+        "jump_penalty": 0.5,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 774.0047725577926,
+      "patient_medians_um": {
+        "13": 689.2,
+        "23": 1022.8,
+        "26": 445.93288590604027,
+        "27": 777.6,
+        "28": 922.9637583892618,
+        "29": 923.6438478747204,
+        "30": 915.2000000000002,
+        "O18": 635.5024608501119,
+        "O19": 633.2
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 2.0,
+        "contrast_weight": 0.5,
+        "jump_penalty": 0.1,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 774.3744469301516,
+      "patient_medians_um": {
+        "13": 1180.2111856823267,
+        "23": 771.881879194631,
+        "26": 408.80000000000007,
+        "27": 926.2317673378077,
+        "28": 975.2,
+        "29": 977.0451901565997,
+        "30": 521.6,
+        "O18": 710.4000000000001,
+        "O19": 498.00000000000006
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 2.0,
+        "contrast_weight": 0.5,
+        "jump_penalty": 0.5,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 775.4527467064381,
+      "patient_medians_um": {
+        "13": 690.2586129753915,
+        "23": 1032.4,
+        "26": 409.7646532438479,
+        "27": 782.4,
+        "28": 961.6,
+        "29": 922.8000000000001,
+        "30": 909.6,
+        "O18": 634.4,
+        "O19": 635.8514541387026
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 1.0,
+        "contrast_weight": 0.25,
+        "jump_penalty": 0.5,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 776.4000000000001,
+      "patient_medians_um": {
+        "13": 1134.4,
+        "23": 749.6,
+        "26": 376.0,
+        "27": 917.5999999999999,
+        "28": 940.0,
+        "29": 1026.4,
+        "30": 600.0,
+        "O18": 675.2,
+        "O19": 568.4000000000001
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 1.0,
+        "contrast_weight": 0.5,
+        "jump_penalty": 1.0,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 776.640119313945,
+      "patient_medians_um": {
+        "13": 689.4586129753915,
+        "23": 1014.0,
+        "26": 416.80000000000007,
+        "27": 809.6,
+        "28": 925.2,
+        "29": 923.2,
+        "30": 923.2000000000002,
+        "O18": 638.702460850112,
+        "O19": 649.6
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 1.0,
+        "contrast_weight": 0.25,
+        "jump_penalty": 1.0,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 778.088888888889,
+      "patient_medians_um": {
+        "13": 1142.4,
+        "23": 720.8000000000001,
+        "26": 415.20000000000005,
+        "27": 924.8,
+        "28": 926.4000000000001,
+        "29": 1028.4,
+        "30": 600.0,
+        "O18": 675.2,
+        "O19": 569.6
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 4.0,
+        "contrast_weight": 0.5,
+        "jump_penalty": 0.5,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 782.8645289584888,
+      "patient_medians_um": {
+        "13": 688.2800894854587,
+        "23": 1016.0,
+        "26": 403.20000000000005,
+        "27": 786.3006711409396,
+        "28": 1028.8,
+        "29": 920.4000000000001,
+        "30": 923.2,
+        "O18": 634.4000000000001,
+        "O19": 645.2
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 2.0,
+        "contrast_weight": 0.5,
+        "jump_penalty": 1.0,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 784.9333333333334,
+      "patient_medians_um": {
+        "13": 688.8000000000001,
+        "23": 1028.4,
+        "26": 416.80000000000007,
+        "27": 830.4000000000001,
+        "28": 964.0,
+        "29": 923.6000000000001,
+        "30": 921.6,
+        "O18": 640.8000000000001,
+        "O19": 650.0
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 4.0,
+        "contrast_weight": 0.5,
+        "jump_penalty": 1.0,
+        "contrast_sign": 1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 786.4000000000001,
+      "patient_medians_um": {
+        "13": 685.2,
+        "23": 1004.8,
+        "26": 416.80000000000007,
+        "27": 824.0,
+        "28": 1027.2,
+        "29": 904.8000000000001,
+        "30": 929.6000000000001,
+        "O18": 634.4000000000001,
+        "O19": 650.8
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 2.0,
+        "contrast_weight": 0.25,
+        "jump_penalty": 0.5,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 789.9111111111112,
+      "patient_medians_um": {
+        "13": 1180.8000000000002,
+        "23": 771.2,
+        "26": 376.0,
+        "27": 955.2000000000002,
+        "28": 943.2,
+        "29": 1024.8,
+        "30": 605.2,
+        "O18": 684.8,
+        "O19": 568.0
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 1.0,
+        "contrast_weight": 0.5,
+        "jump_penalty": 1.0,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 792.2222222222222,
+      "patient_medians_um": {
+        "13": 1117.2000000000003,
+        "23": 719.2,
+        "26": 376.0,
+        "27": 959.2,
+        "28": 920.8000000000002,
+        "29": 1040.0,
+        "30": 605.2,
+        "O18": 688.0,
+        "O19": 704.4000000000001
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 2.0,
+        "contrast_weight": 0.25,
+        "jump_penalty": 1.0,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 792.9333333333334,
+      "patient_medians_um": {
+        "13": 1181.6000000000001,
+        "23": 771.2,
+        "26": 410.40000000000003,
+        "27": 955.2,
+        "28": 929.6000000000001,
+        "29": 1028.4,
+        "30": 605.2,
+        "O18": 684.8,
+        "O19": 570.0
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 2.0,
+        "contrast_weight": 0.5,
+        "jump_penalty": 0.5,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 793.6888888888889,
+      "patient_medians_um": {
+        "13": 1184.8000000000002,
+        "23": 749.6,
+        "26": 327.20000000000005,
+        "27": 937.6000000000001,
+        "28": 947.2,
+        "29": 1014.8,
+        "30": 608.4000000000001,
+        "O18": 686.4000000000001,
+        "O19": 687.2
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 4.0,
+        "contrast_weight": 0.5,
+        "jump_penalty": 0.5,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 797.2569724086503,
+      "patient_medians_um": {
+        "13": 1168.8000000000002,
+        "23": 712.0,
+        "26": 328.0,
+        "27": 944.8000000000001,
+        "28": 968.0,
+        "29": 1020.1127516778524,
+        "30": 609.2,
+        "O18": 692.8,
+        "O19": 731.6
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 4.0,
+        "contrast_weight": 0.5,
+        "jump_penalty": 0.1,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 800.9764852100423,
+      "patient_medians_um": {
+        "13": 1247.6,
+        "23": 728.0,
+        "26": 566.4,
+        "27": 891.2,
+        "28": 979.6,
+        "29": 983.6,
+        "30": 592.0,
+        "O18": 708.8000000000001,
+        "O19": 511.5883668903803
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 4.0,
+        "contrast_weight": 0.5,
+        "jump_penalty": 1.0,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 807.2888888888888,
+      "patient_medians_um": {
+        "13": 1172.0,
+        "23": 724.0,
+        "26": 366.40000000000003,
+        "27": 965.6,
+        "28": 966.4000000000001,
+        "29": 1034.0,
+        "30": 612.8000000000001,
+        "O18": 691.2,
+        "O19": 733.2
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 4.0,
+        "contrast_weight": 0.25,
+        "jump_penalty": 0.5,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 807.4666666666667,
+      "patient_medians_um": {
+        "13": 1177.2,
+        "23": 772.8000000000001,
+        "26": 366.40000000000003,
+        "27": 952.8000000000002,
+        "28": 938.4000000000001,
+        "29": 1027.2,
+        "30": 611.2,
+        "O18": 691.2,
+        "O19": 730.0
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 2.0,
+        "contrast_weight": 0.5,
+        "jump_penalty": 1.0,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 807.6444444444446,
+      "patient_medians_um": {
+        "13": 1180.8000000000002,
+        "23": 778.4,
+        "26": 366.40000000000003,
+        "27": 960.8000000000002,
+        "28": 922.4000000000001,
+        "29": 1040.4,
+        "30": 609.6,
+        "O18": 678.4000000000001,
+        "O19": 731.6
+      }
+    },
+    {
+      "parameters": {
+        "sigma_px": 4.0,
+        "contrast_weight": 0.25,
+        "jump_penalty": 1.0,
+        "contrast_sign": -1,
+        "downsample": 2
+      },
+      "patient_mean_of_sample_medians_um": 808.8444444444444,
+      "patient_medians_um": {
+        "13": 1177.2,
+        "23": 772.8000000000001,
+        "26": 366.40000000000003,
+        "27": 952.8000000000002,
+        "28": 938.4000000000001,
+        "29": 1038.0,
+        "30": 611.2,
+        "O18": 691.2,
+        "O19": 731.6
+      }
+    }
+  ],
+  "confidence_threshold_audit": [
+    {
+      "threshold": 0.9500284621800963,
+      "coverage": 1.0,
+      "bootstrap_upper_um": 689.6
+    },
+    {
+      "threshold": 1.862576570727411,
+      "coverage": 0.9888392857142857,
+      "bootstrap_upper_um": 689.6
+    },
+    {
+      "threshold": 1.902692709789898,
+      "coverage": 0.9799107142857143,
+      "bootstrap_upper_um": 689.6
+    },
+    {
+      "threshold": 1.9368926676728442,
+      "coverage": 0.96875,
+      "bootstrap_upper_um": 689.6
+    },
+    {
+      "threshold": 1.9694751884879953,
+      "coverage": 0.9598214285714286,
+      "bootstrap_upper_um": 694.4000000000001
+    },
+    {
+      "threshold": 2.0082426800577555,
+      "coverage": 0.9486607142857143,
+      "bootstrap_upper_um": 694.4000000000001
+    },
+    {
+      "threshold": 2.038407977544519,
+      "coverage": 0.9397321428571429,
+      "bootstrap_upper_um": 694.4000000000001
+    },
+    {
+      "threshold": 2.0729707376180326,
+      "coverage": 0.9285714285714286,
+      "bootstrap_upper_um": 694.4000000000001
+    },
+    {
+      "threshold": 2.089179853207907,
+      "coverage": 0.9196428571428571,
+      "bootstrap_upper_um": 694.4000000000001
+    },
+    {
+      "threshold": 2.1183962622862267,
+      "coverage": 0.9084821428571429,
+      "bootstrap_upper_um": 694.4000000000001
+    },
+    {
+      "threshold": 2.1352269719237458,
+      "coverage": 0.8995535714285714,
+      "bootstrap_upper_um": 694.4000000000001
+    },
+    {
+      "threshold": 2.1441046625919817,
+      "coverage": 0.8883928571428571,
+      "bootstrap_upper_um": 694.4000000000001
+    },
+    {
+      "threshold": 2.1646630363580672,
+      "coverage": 0.8794642857142857,
+      "bootstrap_upper_um": 694.4000000000001
+    },
+    {
+      "threshold": 2.1768502738606768,
+      "coverage": 0.8683035714285714,
+      "bootstrap_upper_um": 694.4000000000001
+    },
+    {
+      "threshold": 2.1919925949116514,
+      "coverage": 0.859375,
+      "bootstrap_upper_um": 694.4000000000001
+    },
+    {
+      "threshold": 2.2087347558608292,
+      "coverage": 0.8482142857142857,
+      "bootstrap_upper_um": 694.4000000000001
+    },
+    {
+      "threshold": 2.2137989652951235,
+      "coverage": 0.8392857142857143,
+      "bootstrap_upper_um": 694.4000000000001
+    },
+    {
+      "threshold": 2.236680421622576,
+      "coverage": 0.8303571428571429,
+      "bootstrap_upper_um": 694.4000000000001
+    },
+    {
+      "threshold": 2.2566159754491077,
+      "coverage": 0.8191964285714286,
+      "bootstrap_upper_um": 694.4000000000001
+    },
+    {
+      "threshold": 2.2699385040589113,
+      "coverage": 0.8102678571428571,
+      "bootstrap_upper_um": 694.4000000000001
+    },
+    {
+      "threshold": 2.287336071644374,
+      "coverage": 0.7991071428571429,
+      "bootstrap_upper_um": 694.4000000000001
+    },
+    {
+      "threshold": 2.299311515130715,
+      "coverage": 0.7901785714285714,
+      "bootstrap_upper_um": 694.4000000000001
+    },
+    {
+      "threshold": 2.3129668579833216,
+      "coverage": 0.7790178571428571,
+      "bootstrap_upper_um": 694.4000000000001
+    },
+    {
+      "threshold": 2.3293472390770034,
+      "coverage": 0.7700892857142857,
+      "bootstrap_upper_um": 694.4000000000001
+    },
+    {
+      "threshold": 2.3426256957466807,
+      "coverage": 0.7589285714285714,
+      "bootstrap_upper_um": 673.6000000000001
+    },
+    {
+      "threshold": 2.359572491257001,
+      "coverage": 0.75,
+      "bootstrap_upper_um": 673.6000000000001
+    },
+    {
+      "threshold": 2.3773039803728877,
+      "coverage": 0.7388392857142857,
+      "bootstrap_upper_um": 640.8
+    },
+    {
+      "threshold": 2.391090701480416,
+      "coverage": 0.7299107142857143,
+      "bootstrap_upper_um": 640.8
+    },
+    {
+      "threshold": 2.4290948316121543,
+      "coverage": 0.71875,
+      "bootstrap_upper_um": 640.8
+    },
+    {
+      "threshold": 2.4493671526209235,
+      "coverage": 0.7098214285714286,
+      "bootstrap_upper_um": 640.8
+    },
+    {
+      "threshold": 2.464395089615689,
+      "coverage": 0.6986607142857143,
+      "bootstrap_upper_um": 640.8
+    }
+  ],
+  "confirmation_lock": "No confirmation image or mask was opened before this receipt and implementation hash were written."
+}

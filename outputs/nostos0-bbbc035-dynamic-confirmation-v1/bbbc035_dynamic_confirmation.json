@@ -1,0 +1,122 @@
+{
+  "protocol_version": "nostos-bbbc035-dynamic-confirmation/1.0",
+  "protocol_sha256": "bfa14daabee944c4b6fae776ae196de0edcf16288366443d3b90d6745f72d2ec",
+  "status": "pass",
+  "source": {
+    "dataset": "BBBC035v1",
+    "archive_sha256": "0a3dac2b367814df8a3223d474de758d535f5bef0bb368ec87cf783e74064cef",
+    "frame_sha256": "dc13c97d5273277dd5b05696dba0ffaa0ec635a685f50ea55d5660bf07409370",
+    "license": "CC BY 3.0",
+    "url": "https://bbbc.broadinstitute.org/BBBC035"
+  },
+  "generated_series_sha256": "4ee9b8c096561472cde0205dddf7cca283f8404210aae360c1df81c9caefa262",
+  "comparator": {
+    "implementation": "skimage.registration.phase_cross_correlation",
+    "version": "0.25.2",
+    "upsample_factor": 1
+  },
+  "summary": {
+    "maximum_nostos_error_pixels": 0.0,
+    "median_nostos_error_pixels": 0.0,
+    "median_comparator_error_pixels": 0.0
+  },
+  "gates": {
+    "provenance_complete": true,
+    "every_nostos_error_at_most_one_pixel": true,
+    "nostos_median_no_worse_than_comparator_plus_0_25": true,
+    "physical_and_temporal_calibration_retained": true,
+    "constant_series_abstains": true,
+    "all_four_cases_retained": true
+  },
+  "cases": [
+    {
+      "case": 0,
+      "truth_pixels": [
+        3,
+        -5
+      ],
+      "nostos_pixels": [
+        3.0,
+        -5.0
+      ],
+      "comparator_pixels": [
+        3.0,
+        -5.0
+      ],
+      "nostos_error_pixels": 0.0,
+      "comparator_error_pixels": 0.0,
+      "nostos_status": "valid",
+      "physical_displacement_um": [
+        0.3801,
+        -0.6335000000000001
+      ]
+    },
+    {
+      "case": 1,
+      "truth_pixels": [
+        -7,
+        4
+      ],
+      "nostos_pixels": [
+        -7.0,
+        4.0
+      ],
+      "comparator_pixels": [
+        -7.0,
+        4.0
+      ],
+      "nostos_error_pixels": 0.0,
+      "comparator_error_pixels": 0.0,
+      "nostos_status": "valid",
+      "physical_displacement_um": [
+        -0.8869,
+        0.5068
+      ]
+    },
+    {
+      "case": 2,
+      "truth_pixels": [
+        10,
+        8
+      ],
+      "nostos_pixels": [
+        10.0,
+        8.0
+      ],
+      "comparator_pixels": [
+        10.0,
+        8.0
+      ],
+      "nostos_error_pixels": 0.0,
+      "comparator_error_pixels": 0.0,
+      "nostos_status": "valid",
+      "physical_displacement_um": [
+        1.2670000000000001,
+        1.0136
+      ]
+    },
+    {
+      "case": 3,
+      "truth_pixels": [
+        -4,
+        -9
+      ],
+      "nostos_pixels": [
+        -4.0,
+        -9.0
+      ],
+      "comparator_pixels": [
+        -4.0,
+        -9.0
+      ],
+      "nostos_error_pixels": 0.0,
+      "comparator_error_pixels": 0.0,
+      "nostos_status": "valid",
+      "physical_displacement_um": [
+        -0.5068,
+        -1.1403
+      ]
+    }
+  ],
+  "interpretation": "Public-content bulk-registration confirmation; not dense flow, cell tracking or native biological motion validation."
+}

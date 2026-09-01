@@ -1,0 +1,568 @@
+{
+  "schema_version": "nostos.heaton_in_vivo_shg.files.v1",
+  "repository": "https://github.com/skalalab/heaton_a-in-vivo-collagen-SHG-data.git",
+  "commit": "5f363f4027cdbf8bd63c36ed431184ae33267841",
+  "raw_image_counts": {
+    "Exp10": 34,
+    "Exp15": 45
+  },
+  "mouse_counts": {
+    "Exp10": 8,
+    "Exp15": 8
+  },
+  "files": [
+    {
+      "path": "Raw SHG Images/Exp10/CD8_509047_Day12/CD8_509047T_FOV1_SHG-006_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_509047_Day12",
+      "bytes": 525854,
+      "sha256": "192680458d43eeeabb0238493b65a9dc3f73200b7db8b0c0584d7eec590e9302"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_509047_Day12/CD8_509047T_FOV2_SHG-005_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_509047_Day12",
+      "bytes": 525854,
+      "sha256": "ac4a1e4b95c5a704c19c1b16c0e37c104e631052f27a951dc191eb5dcd467be7"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_509047_Day12/CD8_509047T_FOV3_SHG-012_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_509047_Day12",
+      "bytes": 525854,
+      "sha256": "1c513493d2bcae6c7ec36d1fc13b69b8ae1150b415e0ed67330fa08c4c177e44"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_509047_Day12/CD8_509047T_FOV4_SHG-011_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_509047_Day12",
+      "bytes": 525854,
+      "sha256": "abc5ddec9e5be918386796555fdafa960430a5158adbf1d1a19b12fbf1aa38a3"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_509047_Day12/CD8_509047T_FOV5_SHG-014_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_509047_Day12",
+      "bytes": 525854,
+      "sha256": "2d9f35da6d9d6cf97b0c35881095db6d075bdbb67c721bc5364f3bd74b8161f7"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_610909_Day6/CD8_610909T_FOV1_SHG-003_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_610909_Day6",
+      "bytes": 525854,
+      "sha256": "7dc8690ecb6ffa6e2525e120e115a3811f6253fc0346bd4fc759f2a4e81f3eb0"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_610909_Day6/CD8_610909T_FOV2_SHG-006_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_610909_Day6",
+      "bytes": 525854,
+      "sha256": "1095245e26721604a56de123ece753bed190f86b5734be1b5a9ce269ff553dce"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_610909_Day6/CD8_610909T_FOV4_SHG-010_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_610909_Day6",
+      "bytes": 525854,
+      "sha256": "8e07404d02479a09b22a5df23610a1809165ae8d3a6d4a111085fb0f92466a14"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_610909_Day6/CD8_610909T_FOV6-015_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_610909_Day6",
+      "bytes": 525850,
+      "sha256": "5b8ed78441058481af3d488c1827cf46adb4c2d75bc11f3aeff613d60e16f87a"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_610914_Day12/CD8_610914T_FOV1_SHG-006_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_610914_Day12",
+      "bytes": 525854,
+      "sha256": "3ce259b2675f7887680424f36a3ba229e5b53a0c369fe535500b3ecfe5610425"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_610914_Day12/CD8_610914T_FOV2_SHG-005_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_610914_Day12",
+      "bytes": 525854,
+      "sha256": "54b8cb52c43d16e4666e63bc699fdd5630e78c30de75e6c85fb475ba07779b0f"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_610914_Day12/CD8_610914T_FOV3_SHG-013_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_610914_Day12",
+      "bytes": 525854,
+      "sha256": "10db1b45cb7f027adbbf466f21c0d668ca641993aea91445ae9ed4c3ce041a0b"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_610914_Day12/CD8_610914T_FOV5_SHG-012_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_610914_Day12",
+      "bytes": 525854,
+      "sha256": "1dd6fff8fc8565d6ab0012072313f18eaa1d4ee7ac578dc85a7ba6086237b44d"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_618134_Day6/CD8_618134T_FOV1_SHG-004_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_618134_Day6",
+      "bytes": 525854,
+      "sha256": "15a77f38bf5226fd39dd73ed41374341949e6cc2d2f59d08474e68a1c7f3da1f"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_618134_Day6/CD8_618134T_FOV2_SHG-007_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_618134_Day6",
+      "bytes": 525854,
+      "sha256": "4eb5d5bcc6f46bb040b8c26c8baf77b26b0cfdd69d50542f47ab8e5d63bfddcb"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_618134_Day6/CD8_618134T_FOV3_SHG-010_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_618134_Day6",
+      "bytes": 525854,
+      "sha256": "6db8d1dec93b442ad34bb2ce788f18d439d0d1c9969f83ea7a22143a6c21cf5b"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_618134_Day6/CD8_618134T_FOV4_SHG-013_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_618134_Day6",
+      "bytes": 525854,
+      "sha256": "e6cdb630384335a20d2a447804df950e96d81c14a835aca7304540828d1e4841"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_624801_Day9/CD8_624801T_FOV2_SHG-004_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_624801_Day9",
+      "bytes": 525854,
+      "sha256": "b62d43d0892e75525f6c2a7ea5146d0316f5b24bfb3e578f0869a52e6f229e67"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_624801_Day9/CD8_624801T_FOV2_SHGb-005_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_624801_Day9",
+      "bytes": 525855,
+      "sha256": "d3f4548351e6e64ee74b8bed4581e7b5aad98a419a18523fb4d3a96ada68cf79"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_624801_Day9/CD8_624801T_FOV3_SHG-008_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_624801_Day9",
+      "bytes": 525854,
+      "sha256": "10054b219a7573228b020d5d8acbc962e3fc14ea4d19b7c47c0c9830986beb5a"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_624801_Day9/CD8_624801T_FOV4_SHG-013_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_624801_Day9",
+      "bytes": 525854,
+      "sha256": "8448295c97bf9ffbfe721cfa628e3761cdb8fdfddfd5d00d54093d9e4057a0ee"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_624801_Day9/CD8_624801T_FOV5_SHG-014_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_624801_Day9",
+      "bytes": 525854,
+      "sha256": "57e327beec3dffb47b402caff2094c7e4680ba6477f442868b51cc0939e1ce6a"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_625891_Day0/CD8_625891T_FOV2_SHG-007_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_625891_Day0",
+      "bytes": 525854,
+      "sha256": "7e751672d709df0370d55bcc958f58535f06c0213ce773f541482d978f29fa5c"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_625891_Day0/CD8_625891T_FOV3_SHG-011_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_625891_Day0",
+      "bytes": 525854,
+      "sha256": "4f9b878e6f893d0fe4fb873f5272bc4c36ae148aed76dea7f94483e4c8490926"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_625891_Day0/CD8_625891T_FOV4_SHG-017_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_625891_Day0",
+      "bytes": 525854,
+      "sha256": "da78a29bf365fff3b0d4b463d16bb1100226c75509349024cab6dbf0a0070bbf"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_625891_Day0/CD8_625891T_FOV5_SHG-016_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_625891_Day0",
+      "bytes": 525854,
+      "sha256": "a7bdb10ae47905169c4931012cc551e5991c1ff3a1daf3617668d2c940fd0a4f"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_625892_Day9/CD8_625892_FOV2_SHG-006_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_625892_Day9",
+      "bytes": 525853,
+      "sha256": "dfeb7910ddc534e3f394dc00a01535e9d41962df86f3dc43065b6aa33f9b2106"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_625892_Day9/CD8_625892_FOV3_SHG-007_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_625892_Day9",
+      "bytes": 525853,
+      "sha256": "e954de51551b073c95113c9c43ff7027a3981d1793d34720c7e7f79abef67e19"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_625892_Day9/CD8_625892_FOV4_SHG-012_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_625892_Day9",
+      "bytes": 525853,
+      "sha256": "cb34bde10fe1310b120408e9a068446e63104977ff5ae65c51f7b6936cf18dae"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_625892_Day9/CD8_625892_FOV5_SHG-013_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_625892_Day9",
+      "bytes": 525853,
+      "sha256": "23c5e104d51958396cb2d74e29f09048296631dfc4330aa68fe62f5026bee406"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_625892_Day9/CD8_625892_FOV7_SHG-017_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_625892_Day9",
+      "bytes": 525853,
+      "sha256": "2f883be0b65839c95ebc75088012b6419bbfd45c5045af1199ac325b2070c896"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_628497_Day0/CD8_628497T_FOV1_SHG-005_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_628497_Day0",
+      "bytes": 525854,
+      "sha256": "63663d69b61bd942be3ac856b59948d9d5eb039249c3a505df68f6880539dc04"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_628497_Day0/CD8_628497T_FOV2b_SHG-009_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_628497_Day0",
+      "bytes": 525855,
+      "sha256": "0ccb49df43dd65f70a082931f6e265ec3fb4e44a676be8baad0c61aa1054b387"
+    },
+    {
+      "path": "Raw SHG Images/Exp10/CD8_628497_Day0/CD8_628497T_FOV4_SHG-014_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp10",
+      "mouse": "CD8_628497_Day0",
+      "bytes": 525854,
+      "sha256": "10ad1c66a50349e4ae2ef60453122b5a1c437afa83318f1fbcfc553a8d544080"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_668823_D12/CD8_668823_Treated_D12_FOV1SHG-008_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_668823_D12",
+      "bytes": 525864,
+      "sha256": "863f0fcebfff1c7d34c05154f0aa2fa341805d3afa876b340979f061418b7762"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_668823_D12/CD8_668823_Treated_D12_FOV2SHG-009_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_668823_D12",
+      "bytes": 525864,
+      "sha256": "1722fc42c5f61851897be20b4ae36bd0f5537bb7869358be1ef92250f59bbfa7"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_668823_D12/CD8_668823_Treated_D12_FOV3SHG-010_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_668823_D12",
+      "bytes": 525864,
+      "sha256": "85115db844a805452af12aafb10a25cccab965b9f3631fcac1c4fb13691bb195"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_668823_D12/CD8_668823_Treated_D12_FOV4SHG-012_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_668823_D12",
+      "bytes": 525864,
+      "sha256": "adda62036c627a92e48fdb47bca4b3fb7b5b1fffb71801d67ba1589b8771ceda"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_668823_D12/CD8_668823_Treated_D12_FOV5SHG-013_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_668823_D12",
+      "bytes": 525864,
+      "sha256": "8423320d397f853560e612207578d4d099d47b656591cdd9489dc44d61f9a58c"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_668823_D12/CD8_668823_Treated_D12_FOV6SHG-014_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_668823_D12",
+      "bytes": 525864,
+      "sha256": "189908814eb17a8190e92f74db732d2f5699ed1b5bd9e75f990c8112296e1676"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_668823_D12/CD8_668823_Treated_D12_FOV7SHG-015_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_668823_D12",
+      "bytes": 525864,
+      "sha256": "af9a69d9ccbed3e0f18213bfb2dec28d57915f1eabdfe5dbb3dd7c13dab36d87"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_671142_D0/CD8_671142_D0_FOV1SHGb-004_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_671142_D0",
+      "bytes": 525856,
+      "sha256": "e1f3ebb2796d7f1210bf39077c04d2e4e8c0c470fae3d3d56dc09497597838db"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_671142_D0/CD8_671142_D0_FOV2SHG-007_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_671142_D0",
+      "bytes": 525855,
+      "sha256": "951f2b373aae79cc8caf0559abb1b7f0c156e29d6b67b01069092f8f24049fd9"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_671142_D0/CD8_671142_D0_FOV3SHG-010_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_671142_D0",
+      "bytes": 525855,
+      "sha256": "c1e2933a9b2e5f7e9f436b1759cdfee61ea0f6d266d262bda2fd5580a672ace7"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_671142_D0/CD8_671142_D0_FOV4SHG-013_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_671142_D0",
+      "bytes": 525855,
+      "sha256": "c03b630b8a724742625fe2250c8f3b48a88d8360a5586544ce1552d7fd66f730"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_671142_D0/CD8_671142_D0_FOV5SHG-016_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_671142_D0",
+      "bytes": 525855,
+      "sha256": "cb691a17a7c87f63283e87860264521fe185caa5a8fa661dcb7834e1550ec3d3"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_674216_D9/CD8_674216_Treated_D9_FOV1bSHG-014_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_674216_D9",
+      "bytes": 525864,
+      "sha256": "01ed6b7c2d7f736ce81e9bd6d154d0c114a073e84c7c8fc5c43cd9ff9d5a5d8b"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_674216_D9/CD8_674216_Treated_D9_FOV2SHG-016_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_674216_D9",
+      "bytes": 525863,
+      "sha256": "3d3b0d3824beecf498ae4dd764148bb91ec5d76fe2be692e55453b8fe6fcdb2e"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_674216_D9/CD8_674216_Treated_D9_FOV3SHG-017_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_674216_D9",
+      "bytes": 525863,
+      "sha256": "7b3fcf19b5c9e8cde902b66476f59fe0e58cdd9dd005dcfa781b1f0db3fb61c9"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_674216_D9/CD8_674216_Treated_D9_FOV4SHG-018_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_674216_D9",
+      "bytes": 525863,
+      "sha256": "1f85009f0d92601170fbd974a84a0916d5752358c81ce9fc68e8d86567780307"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_674216_D9/CD8_674216_Treated_D9_FOV5SHG-019_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_674216_D9",
+      "bytes": 525863,
+      "sha256": "b478945486134ea1824697b61e8a523017732c2e51f5e3717c94c7878502e9a4"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_674216_D9/CD8_674216_Treated_D9_FOV6SHG-020_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_674216_D9",
+      "bytes": 525863,
+      "sha256": "17e86f7a4cd4f468f0fb0cdd2c7e8644a3f30cd42789d798c8d189d394fed4f7"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_674216_D9/CD8_674216_Treated_D9_FOV7SHG-021_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_674216_D9",
+      "bytes": 525863,
+      "sha256": "04284451cb417b964df74e70305dbe9a1d8cc973af0578c7b265243e10f6ce34"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_678977_D12/CD8_678977_Control_D12_FOV1SHG-011_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_678977_D12",
+      "bytes": 525864,
+      "sha256": "93de874a39f67a435c2adc627029d31830b2cded929882271964887b671f6fb4"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_678977_D12/CD8_678977_Control_D12_FOV2SHG-012_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_678977_D12",
+      "bytes": 525864,
+      "sha256": "5b7796de050f5ad9b5e0632d94ec20d1a2358ae6c4b45d7f454c6fb9ef7ab525"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_678977_D12/CD8_678977_Control_D12_FOV3SHG-013_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_678977_D12",
+      "bytes": 525864,
+      "sha256": "6ededb36251f68c3c1d0d297e41c54fe3cbf63fa902abe00212675422b71ada3"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_678977_D12/CD8_678977_Control_D12_FOV4SHG-014_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_678977_D12",
+      "bytes": 525864,
+      "sha256": "37e904aa1651e1734bd78ca6df9adb5cb9b3257f67bb7ac30ef40dda633a11ff"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_678977_D12/CD8_678977_Control_D12_FOV5SHG-015_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_678977_D12",
+      "bytes": 525864,
+      "sha256": "4eecb4688c0b026750166c4104077fcc8333029b0d8a257208817a5518d1f262"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_678977_D12/CD8_678977_Control_D12_FOV6SHG-016_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_678977_D12",
+      "bytes": 525864,
+      "sha256": "24fff95c8ed1a530622ca1cc2abe512fa5946899f91e648e73faec892ed1e136"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_678977_D12/CD8_678977_Control_D12_FOV7SHG-017_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_678977_D12",
+      "bytes": 525864,
+      "sha256": "67106843266e392619cc60df6b8d5dd4bc8436b8f58f3cffeb4995749dbd36f1"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_681652_D6/CD8_681652_Treated_D6_FOV5SHG-009_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_681652_D6",
+      "bytes": 525863,
+      "sha256": "16f9f3f1eba241776baea839efead79aa2ff4f728aa2e6c39228acd55acf30dd"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_683435_D6/CD8_683435_Control_D6_FOV1SHG-011_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_683435_D6",
+      "bytes": 525863,
+      "sha256": "774383b705a8a504dbfb5ede8ff3ad2842a81c0875f4c079e71daa6eb43b2709"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_683435_D6/CD8_683435_Control_D6_FOV2SHG-012_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_683435_D6",
+      "bytes": 525863,
+      "sha256": "76cdca6da80fab527bbafa7a2c0be5435873a9133421db3d1eac860d4f997e23"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_683435_D6/CD8_683435_Control_D6_FOV3SHG-013_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_683435_D6",
+      "bytes": 525863,
+      "sha256": "7820eb32e1cb410eb2584da2365ffa95f4149b89aca290317cb236fb13a87b67"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_683435_D6/CD8_683435_Control_D6_FOV4SHG-014_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_683435_D6",
+      "bytes": 525863,
+      "sha256": "aaa2a3c47461f7664c81652384f934983abbf2e981c41dd2500c998d2e33a63c"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_683435_D6/CD8_683435_Control_D6_FOV5SHG-015_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_683435_D6",
+      "bytes": 525863,
+      "sha256": "f4a1fd8b211911819a879248bee6d1d560e43a3db50a0b9f1703888abaa49759"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_685385_D9/CD8_685385_Control_D9_FOV1bSHG-013_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_685385_D9",
+      "bytes": 525864,
+      "sha256": "d846275f80ca5e5d492989eb2749c96b096c31c5acd1cdd5a5de01a564a2524a"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_685385_D9/CD8_685385_Control_D9_FOV2SHG-014_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_685385_D9",
+      "bytes": 525863,
+      "sha256": "aef6c86ee1c1bb1252b056fdddc1c56eab93e043d52668a8322f8bc4d72fe30c"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_685385_D9/CD8_685385_Control_D9_FOV3SHG-015_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_685385_D9",
+      "bytes": 525863,
+      "sha256": "5647376d7a07101d439a67c5a1c4461a563d2ebd56d101e0d0a24a24fa5be71d"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_685385_D9/CD8_685385_Control_D9_FOV4SHG-016_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_685385_D9",
+      "bytes": 525863,
+      "sha256": "a0ea15361dafa29be0e79698cc837913218f3c9b7d638634391105b57f039d1b"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_685385_D9/CD8_685385_Control_D9_FOV5SHG-017_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_685385_D9",
+      "bytes": 525863,
+      "sha256": "5e18aa20a88358986abf9a5c5c4400f0d08860ba3a4f88e0ffab83851b3e7eac"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_685385_D9/CD8_685385_Control_D9_FOV6SHG-018_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_685385_D9",
+      "bytes": 525863,
+      "sha256": "e0788e787979cb76ac563d384547a34f8aba4d33f0d86bb12d5690e6bbda4477"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_685385_D9/CD8_685385_Control_D9_FOV7SHG-019_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_685385_D9",
+      "bytes": 525863,
+      "sha256": "8eb730f6b8b4a09f4b765aa3f22a605381a62cf4c5094de6ad23b8a13561746e"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_688368_D0/CD8_688368_D0_FOV1SHG-003_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_688368_D0",
+      "bytes": 525855,
+      "sha256": "28255c0072bc4601f1ecf0b9dd0da825f10d4f55fd0dfbbdf7abf964ddb1f949"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_688368_D0/CD8_688368_D0_FOV2SHG-006_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_688368_D0",
+      "bytes": 525855,
+      "sha256": "7de070094f01637d2eeec0b95e38b3f75e33ca975b4aeaeb1fb6788a529647dc"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_688368_D0/CD8_688368_D0_FOV3SHG-009_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_688368_D0",
+      "bytes": 525855,
+      "sha256": "b5aa1c596cd83c645dc0e849018d4959ae1dfae1cbf278f69af8088a79eeed95"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_688368_D0/CD8_688368_D0_FOV4SHG-012_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_688368_D0",
+      "bytes": 525855,
+      "sha256": "04e621c1acd07d55c5894051936bce285cc7ba85b143cf802d1cb3b178c03836"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_688368_D0/CD8_688368_D0_FOV5SHG-015_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_688368_D0",
+      "bytes": 525855,
+      "sha256": "14c67e74569af0ccc431ac6db63960846d17b732e61eae9511c8e7a2a02e5a03"
+    },
+    {
+      "path": "Raw SHG Images/Exp15/CD8_688368_D0/CD8_688368_D0_FOV6SHG-016_Cycle00001_Ch2_000001.ome.tif",
+      "experiment": "Exp15",
+      "mouse": "CD8_688368_D0",
+      "bytes": 525855,
+      "sha256": "d0a5693c880970891e5fa286120e78f64b6818aff2960f648f51ebd5590eefc8"
+    }
+  ]
+}

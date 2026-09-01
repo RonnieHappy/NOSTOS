@@ -1,0 +1,45 @@
+{
+  "schema_version": "nostos-intraop-pshg-deployment-audit-manifest/1.0",
+  "status": "verified_pass",
+  "target_protocol": "nostos-intraop-pshg-deployment/1.4",
+  "artifacts": [
+    {
+      "path": "manifests/intraop_pshg_deployment_v1_4_lock.json",
+      "bytes": 21119,
+      "sha256": "d8f0d58cf153fad8a204160e156b238de963d13d9a827477c816acd0ddca17b9"
+    },
+    {
+      "path": "outputs/nostos0-intraop-pshg-deployment-v1_4/deployment_benchmark.json",
+      "bytes": 9200,
+      "sha256": "7ec709c78f3e3e36ffbce2d47f7bc8288b0eb2b60ec3f9ae69cd09711812e536"
+    },
+    {
+      "path": "configs/intraop_pshg_deployment_v1_4_audit.locked.json",
+      "bytes": 1024,
+      "sha256": "21855bc633ee78bfd717fc58eca5f5815f64a458e36d67bd533165c36cff649d"
+    },
+    {
+      "path": "scripts/audit_intraop_pshg_deployment_v1_3.py",
+      "bytes": 8813,
+      "sha256": "9f5a55a7258ab54f4b9de80a7d0a95bf7fef66a4b76db0f6b1dc514d0b9fd8c2"
+    },
+    {
+      "path": "outputs/nostos0-intraop-pshg-deployment-v1_4-final-audit/final_audit.json",
+      "bytes": 3179,
+      "sha256": "15b137671f8b1fca7e2f063b656065344c76e58e301b20c7a4cf38207f934acb"
+    }
+  ],
+  "verified_checks": [
+    "lock_integrity",
+    "source_integrity",
+    "result_integrity",
+    "all_runner_gates_pass",
+    "independent_tensor_equivalence",
+    "independent_reference_metric_reproduction",
+    "case_receipt_integrity",
+    "artifact_file_integrity",
+    "artifact_registry_complete",
+    "clinical_output_withheld"
+  ],
+  "claim_boundary": "This audit verifies one public unstained PSHG acquisition profile and its production artifact path. It does not establish prospective clinical utility, independent-instrument transfer, diagnosis, margins, mechanics, treatment guidance or patient benefit."
+}

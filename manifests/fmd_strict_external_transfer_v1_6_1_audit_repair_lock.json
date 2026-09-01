@@ -1,0 +1,64 @@
+{
+  "artifacts": [
+    {
+      "bytes": 6956,
+      "path": "configs/fmd_strict_external_transfer_v1_6.locked.json",
+      "sha256": "be6539a8e75b50d47c61a0ec18aca647e845b709c1135a1eec900ed1920eca23"
+    },
+    {
+      "bytes": 6118,
+      "path": "manifests/fmd_strict_external_transfer_v1_6_lock.json",
+      "sha256": "fb167a2453e9a4bafc3717d12642514685cd76ac06f3a236d05f7c5baffa4115"
+    },
+    {
+      "bytes": 25203,
+      "path": "src/nostos/validation/fmd_strict_external_transfer.py",
+      "sha256": "1fc6164bed5ddfef702471c402646a87a51e16d1015d5eff564213c72964ff58"
+    },
+    {
+      "bytes": 6884,
+      "path": "src/nostos/validation/fmd_strict_external_transfer_audit_v1_6_1.py",
+      "sha256": "c839b0115639266eca5a264e710375d8e2f3674efcfd0c7826ae7186b840156d"
+    },
+    {
+      "bytes": 777,
+      "path": "scripts/audit_fmd_strict_external_transfer_v1_6_1.py",
+      "sha256": "b19007170e23eb4e42d4298990b3c92c4cfcfb2eb11b77861a382295c46b380d"
+    },
+    {
+      "bytes": 3324,
+      "path": "scripts/freeze_fmd_strict_external_transfer_audit_v1_6_1.py",
+      "sha256": "a6f0bbb416cb5fc7e207d514caeb9e5085f23f078daa2e06612b846c726bc5cb"
+    },
+    {
+      "bytes": 1875,
+      "path": "tests/test_fmd_strict_external_transfer_audit_v1_6_1.py",
+      "sha256": "a8cf59247271a2a600e16082845c0def356b26c4018c4e409b77a5e0a44c2e8c"
+    }
+  ],
+  "audit_output_absent_at_lock": "<PROJECT_ROOT>\\outputs\\nostos0-fmd-strict-external-transfer-v1-6-audit-v1-6-1",
+  "content_sha256": "797cc7c254aecf806fe4df5986b326cc2fcc4d4b48622508aaf3315ddebee103",
+  "locked_at_utc": "2026-08-31T14:53:28.314075Z",
+  "prohibited_changes": [
+    "evidence rows",
+    "source selection",
+    "measurements",
+    "invalidity labels",
+    "profiles",
+    "support cells",
+    "thresholds",
+    "comparators",
+    "gates"
+  ],
+  "protocol_id": "fmd-strict-external-transfer-v1-6",
+  "repair_version": "v1.6.1",
+  "rows": {
+    "bytes": 7332881,
+    "path": "outputs/nostos0-fmd-strict-external-transfer-v1-6/external_transfer_rows.jsonl",
+    "sha256": "2309b23dcf6facf9fc5406e571cc94c277822cd055fac0e3f3de912539672e39"
+  },
+  "schema_version": "nostos-fmd-strict-external-transfer-audit-repair-lock/1.0",
+  "scientific_status_already_visible": "strict_external_transfer_fails_without_refitting",
+  "scope": "Audit-only repair for undefined row-level interval when a source has zero accepted emissions.",
+  "status_at_lock": "measurement_complete_original_audit_failed_no_audit_output_exists"
+}

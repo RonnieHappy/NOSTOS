@@ -1,0 +1,43 @@
+{
+  "audit": "nostos-v2-6-integration-audit/1.0",
+  "checks": {
+    "all_registered_files_present": true,
+    "expected_test_count": true,
+    "junit_has_no_failures": true,
+    "v2_6_confirmation_passed": true,
+    "v2_6_independent_audit_passed": true
+  },
+  "content_sha256": "89be1ccb2ebbef23fca2fec8e5c8e7bb8865ff5bbc15fc173769cf7856d6ec15",
+  "registered_files": {
+    "outputs/nostos0-synthetic-physical-truth-v2-6-audit/audit.json": "4bec5fb5ccebf233df61e34908493d1a53d6940ace0e0f9761bccf257ec9f501",
+    "outputs/nostos0-synthetic-physical-truth-v2-6-confirmation/validation.json": "f64b85c86f8e415526d2938618cdbda4974bad0094082c44713f52230f2001fc",
+    "pyproject.toml": "9204767675b912b7f1ece4469799dc1009fa3e2afd966d7956bf6337faa5844c",
+    "requirements-lock.txt": "74ad593191a75ee06e373f819e6bd7466e4779b403006651665476a1dcbccc3f",
+    "src/nostos/features/canonical_geometry.py": "e69ba67f3d62afde5a8ab5c8367e50380ded5fbcd514c7c73a9c1fa8464a990d",
+    "src/nostos/features/universal.py": "279a8dde8c2cca35fde4e7e6df5fdf374a45e3f8eb90776d4affb6ba4b5f4fd6",
+    "src/nostos/features/validated_responses_v2_6.py": "25b4237d0e896d770242fbfb088deaaa2d4089db8e75b56f2671ffe726f63b10",
+    "src/nostos/validation/comparators.py": "4cd209949ab1c9a010a32852b76fd381a88987b86cc8dbccf634ece38359b830",
+    "tests/test_universal_geometry.py": "8564c117e3ec2d90a91cde9b35318c8234052959c36ccd702a967e243f28bf88",
+    "tests/test_validated_responses_v2_6.py": "64eb4e520f40f0593243d45f6c37eb9a70f9f6e968142aca505113c5af3c430d"
+  },
+  "scope": "Software integration and regression evidence only; the four skipped Torch-dependent segmentation tests remain outside this CPU environment, and no clinical or acquisition-transfer claim follows.",
+  "source_control": {
+    "head": null,
+    "porcelain_entries": 28,
+    "release_consequence": "A commit-addressed public archive is still required before submission.",
+    "state": "unborn_no_commit"
+  },
+  "status": "pass",
+  "tests": {
+    "collected": 436,
+    "errors": 0,
+    "failures": 0,
+    "junit_path": "outputs/nostos0-v2-6-integration-audit/pytest.xml",
+    "junit_sha256": "feef70cd4ec77e7d51ea3acd4d888d285deb1ac8e61d0e41d6709587541908d3",
+    "passed": 432,
+    "skip_reasons": [
+      "collection skipped"
+    ],
+    "skipped": 4
+  }
+}

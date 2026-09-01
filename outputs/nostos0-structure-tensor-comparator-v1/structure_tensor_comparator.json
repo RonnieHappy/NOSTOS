@@ -1,0 +1,370 @@
+{
+  "protocol_version": "nostos-structure-tensor-comparator/1.0",
+  "protocol_sha256": "96b813982a755321272b315adb2006347c5ada3ed97290919b959ead2109a45d",
+  "status": "pass",
+  "dataset": {
+    "doi": "10.17605/OSF.IO/UDTQP",
+    "subset": "breast tissue unstained / FSHG",
+    "manifest_sha256": "441553b9f5af96f285b40dc042dd6fe2681e919020f28126819f80f1830d768d"
+  },
+  "comparator": {
+    "implementation": "skimage.feature.structure_tensor",
+    "version": "0.25.2",
+    "sigma_pixels": 2.0
+  },
+  "summary": {
+    "roi_count": 48,
+    "eligible_pixels": 1367747,
+    "nostos_median_error": 7.588232599620138,
+    "skimage_median_error": 7.335599109181118,
+    "median_cross_software_disagreement": 3.6393813985992693,
+    "roi_error_spearman": 0.8035171515414676
+  },
+  "gates": {
+    "all_48_rois_and_one_million_pixels": true,
+    "all_orientations_finite": true,
+    "nostos_noninferior_within_2_degrees": true,
+    "median_cross_software_disagreement_at_most_10_degrees": true,
+    "roi_error_spearman_at_least_0_75": true,
+    "provenance_complete": true
+  },
+  "cases": [
+    {
+      "roi": "breast_1",
+      "eligible_pixels": 47630,
+      "nostos_median_error": 7.865259922490559,
+      "skimage_median_error": 7.781558902428049,
+      "median_disagreement": 3.3361550779352704
+    },
+    {
+      "roi": "breast_10",
+      "eligible_pixels": 14518,
+      "nostos_median_error": 6.404846503620384,
+      "skimage_median_error": 6.5192726073386265,
+      "median_disagreement": 3.5415549875281442
+    },
+    {
+      "roi": "breast_11",
+      "eligible_pixels": 16238,
+      "nostos_median_error": 7.775243280447924,
+      "skimage_median_error": 7.828783977669797,
+      "median_disagreement": 3.6158392613430266
+    },
+    {
+      "roi": "breast_12",
+      "eligible_pixels": 21203,
+      "nostos_median_error": 7.038174581449397,
+      "skimage_median_error": 7.2858894074924265,
+      "median_disagreement": 4.054140185252621
+    },
+    {
+      "roi": "breast_13",
+      "eligible_pixels": 24429,
+      "nostos_median_error": 7.791594897389828,
+      "skimage_median_error": 6.91007194410183,
+      "median_disagreement": 3.8048349130395565
+    },
+    {
+      "roi": "breast_14",
+      "eligible_pixels": 33783,
+      "nostos_median_error": 7.738248874357083,
+      "skimage_median_error": 7.144764886604975,
+      "median_disagreement": 3.6020845648022117
+    },
+    {
+      "roi": "breast_15",
+      "eligible_pixels": 30881,
+      "nostos_median_error": 6.6064203539039426,
+      "skimage_median_error": 6.404613127313709,
+      "median_disagreement": 3.6391666057159
+    },
+    {
+      "roi": "breast_16",
+      "eligible_pixels": 36729,
+      "nostos_median_error": 6.874995561851932,
+      "skimage_median_error": 6.635418128161419,
+      "median_disagreement": 3.4754825901458446
+    },
+    {
+      "roi": "breast_17",
+      "eligible_pixels": 13295,
+      "nostos_median_error": 6.629716508652791,
+      "skimage_median_error": 6.308273196743301,
+      "median_disagreement": 3.2209269328110395
+    },
+    {
+      "roi": "breast_18",
+      "eligible_pixels": 18045,
+      "nostos_median_error": 6.568988551291895,
+      "skimage_median_error": 6.677058266653837,
+      "median_disagreement": 3.3552160078743327
+    },
+    {
+      "roi": "breast_19",
+      "eligible_pixels": 38305,
+      "nostos_median_error": 8.96183415879392,
+      "skimage_median_error": 8.155906212478996,
+      "median_disagreement": 3.4035249273342174
+    },
+    {
+      "roi": "breast_2",
+      "eligible_pixels": 63448,
+      "nostos_median_error": 7.782907654256251,
+      "skimage_median_error": 7.72980870279682,
+      "median_disagreement": 3.419406870237045
+    },
+    {
+      "roi": "breast_20",
+      "eligible_pixels": 31595,
+      "nostos_median_error": 9.752606216728054,
+      "skimage_median_error": 7.940750566793241,
+      "median_disagreement": 3.7477746596472343
+    },
+    {
+      "roi": "breast_21",
+      "eligible_pixels": 21651,
+      "nostos_median_error": 6.908014372914252,
+      "skimage_median_error": 6.769274892190424,
+      "median_disagreement": 3.1898268596704753
+    },
+    {
+      "roi": "breast_22",
+      "eligible_pixels": 18253,
+      "nostos_median_error": 7.227067879441307,
+      "skimage_median_error": 6.738975432857899,
+      "median_disagreement": 2.8971878597364764
+    },
+    {
+      "roi": "breast_23",
+      "eligible_pixels": 32529,
+      "nostos_median_error": 7.287420925082319,
+      "skimage_median_error": 7.788483646574264,
+      "median_disagreement": 3.8709534346813115
+    },
+    {
+      "roi": "breast_24",
+      "eligible_pixels": 33086,
+      "nostos_median_error": 7.134186314363173,
+      "skimage_median_error": 7.837790009650401,
+      "median_disagreement": 3.8946252459961066
+    },
+    {
+      "roi": "breast_25",
+      "eligible_pixels": 23740,
+      "nostos_median_error": 8.107724261099879,
+      "skimage_median_error": 7.910169820270212,
+      "median_disagreement": 3.6650278893788766
+    },
+    {
+      "roi": "breast_26",
+      "eligible_pixels": 24890,
+      "nostos_median_error": 8.73871415058116,
+      "skimage_median_error": 8.024255020173456,
+      "median_disagreement": 3.66076945008151
+    },
+    {
+      "roi": "breast_27",
+      "eligible_pixels": 13221,
+      "nostos_median_error": 8.757973875274956,
+      "skimage_median_error": 6.927722362456478,
+      "median_disagreement": 4.036225785095098
+    },
+    {
+      "roi": "breast_28",
+      "eligible_pixels": 10882,
+      "nostos_median_error": 7.61665105833535,
+      "skimage_median_error": 6.7348451981772115,
+      "median_disagreement": 3.8148093485796224
+    },
+    {
+      "roi": "breast_29",
+      "eligible_pixels": 35366,
+      "nostos_median_error": 9.058503513841899,
+      "skimage_median_error": 7.777885690573065,
+      "median_disagreement": 3.732695380931307
+    },
+    {
+      "roi": "breast_3",
+      "eligible_pixels": 12891,
+      "nostos_median_error": 9.031223611223446,
+      "skimage_median_error": 9.123269403932795,
+      "median_disagreement": 3.307212413633387
+    },
+    {
+      "roi": "breast_30",
+      "eligible_pixels": 36638,
+      "nostos_median_error": 8.086591948699208,
+      "skimage_median_error": 7.162743061572016,
+      "median_disagreement": 3.6118411394815855
+    },
+    {
+      "roi": "breast_31",
+      "eligible_pixels": 16848,
+      "nostos_median_error": 5.4813129301223995,
+      "skimage_median_error": 6.0138686786357,
+      "median_disagreement": 4.533163111583715
+    },
+    {
+      "roi": "breast_32",
+      "eligible_pixels": 17505,
+      "nostos_median_error": 7.1480233653561385,
+      "skimage_median_error": 7.339238915344259,
+      "median_disagreement": 3.7158663058421837
+    },
+    {
+      "roi": "breast_33",
+      "eligible_pixels": 38203,
+      "nostos_median_error": 9.764751096052294,
+      "skimage_median_error": 9.096504305838891,
+      "median_disagreement": 3.15675771770411
+    },
+    {
+      "roi": "breast_34",
+      "eligible_pixels": 40046,
+      "nostos_median_error": 10.015158741305672,
+      "skimage_median_error": 9.499691158142205,
+      "median_disagreement": 3.004196018429539
+    },
+    {
+      "roi": "breast_35",
+      "eligible_pixels": 32166,
+      "nostos_median_error": 6.660593523020063,
+      "skimage_median_error": 7.121303529436119,
+      "median_disagreement": 3.778950335964865
+    },
+    {
+      "roi": "breast_36",
+      "eligible_pixels": 22410,
+      "nostos_median_error": 7.089422282736063,
+      "skimage_median_error": 6.051598717392217,
+      "median_disagreement": 3.8292511354863823
+    },
+    {
+      "roi": "breast_37",
+      "eligible_pixels": 25582,
+      "nostos_median_error": 5.293110463213491,
+      "skimage_median_error": 6.307566293736324,
+      "median_disagreement": 4.015273970848369
+    },
+    {
+      "roi": "breast_38",
+      "eligible_pixels": 44544,
+      "nostos_median_error": 5.93364236091376,
+      "skimage_median_error": 6.705153120427329,
+      "median_disagreement": 4.482058227897898
+    },
+    {
+      "roi": "breast_39",
+      "eligible_pixels": 33002,
+      "nostos_median_error": 6.494726223249813,
+      "skimage_median_error": 6.956236885352865,
+      "median_disagreement": 3.6147204351959124
+    },
+    {
+      "roi": "breast_4",
+      "eligible_pixels": 27822,
+      "nostos_median_error": 9.862266841794899,
+      "skimage_median_error": 9.380053970003313,
+      "median_disagreement": 3.590959684834928
+    },
+    {
+      "roi": "breast_40",
+      "eligible_pixels": 40398,
+      "nostos_median_error": 7.347064988432809,
+      "skimage_median_error": 7.999109937669844,
+      "median_disagreement": 3.8289938114912765
+    },
+    {
+      "roi": "breast_41",
+      "eligible_pixels": 33524,
+      "nostos_median_error": 6.996764747627196,
+      "skimage_median_error": 5.729944317103424,
+      "median_disagreement": 3.0370887486779097
+    },
+    {
+      "roi": "breast_42",
+      "eligible_pixels": 21092,
+      "nostos_median_error": 6.2841847011621965,
+      "skimage_median_error": 5.327856995564353,
+      "median_disagreement": 2.7813727198457414
+    },
+    {
+      "roi": "breast_43",
+      "eligible_pixels": 6635,
+      "nostos_median_error": 7.851423499486788,
+      "skimage_median_error": 7.980791706274566,
+      "median_disagreement": 2.769976795316218
+    },
+    {
+      "roi": "breast_44",
+      "eligible_pixels": 2893,
+      "nostos_median_error": 6.2903612407142475,
+      "skimage_median_error": 6.298518578745075,
+      "median_disagreement": 3.522278225634169
+    },
+    {
+      "roi": "breast_45",
+      "eligible_pixels": 52565,
+      "nostos_median_error": 8.80873197198946,
+      "skimage_median_error": 7.640937758914184,
+      "median_disagreement": 4.153512767511309
+    },
+    {
+      "roi": "breast_46",
+      "eligible_pixels": 39272,
+      "nostos_median_error": 7.3203568686269875,
+      "skimage_median_error": 7.557956165713549,
+      "median_disagreement": 3.4846294404879483
+    },
+    {
+      "roi": "breast_47",
+      "eligible_pixels": 39997,
+      "nostos_median_error": 7.6491562702317,
+      "skimage_median_error": 8.504129354067437,
+      "median_disagreement": 3.728248419464279
+    },
+    {
+      "roi": "breast_48",
+      "eligible_pixels": 43458,
+      "nostos_median_error": 8.059236591936124,
+      "skimage_median_error": 8.593857205099827,
+      "median_disagreement": 3.9182437023683363
+    },
+    {
+      "roi": "breast_5",
+      "eligible_pixels": 38216,
+      "nostos_median_error": 8.341000814454702,
+      "skimage_median_error": 7.4376480186605,
+      "median_disagreement": 4.196164396673851
+    },
+    {
+      "roi": "breast_6",
+      "eligible_pixels": 30765,
+      "nostos_median_error": 7.358296403518189,
+      "skimage_median_error": 6.881118410570167,
+      "median_disagreement": 3.755829115398086
+    },
+    {
+      "roi": "breast_7",
+      "eligible_pixels": 25031,
+      "nostos_median_error": 7.095028404399059,
+      "skimage_median_error": 6.4622329485764,
+      "median_disagreement": 3.8382585178929034
+    },
+    {
+      "roi": "breast_8",
+      "eligible_pixels": 24283,
+      "nostos_median_error": 6.9934160427182235,
+      "skimage_median_error": 6.060106026273488,
+      "median_disagreement": 3.6203272607596375
+    },
+    {
+      "roi": "breast_9",
+      "eligible_pixels": 18244,
+      "nostos_median_error": 6.6304140425402345,
+      "skimage_median_error": 6.783783742301855,
+      "median_disagreement": 3.720769247466201
+    }
+  ],
+  "interpretation": "Post-confirmation cross-software consistency audit; not a new biological confirmation or superiority claim."
+}

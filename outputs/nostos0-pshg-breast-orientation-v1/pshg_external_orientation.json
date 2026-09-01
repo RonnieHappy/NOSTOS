@@ -1,0 +1,295 @@
+{
+  "protocol_version": "nostos-pshg-breast-orientation/1.0",
+  "protocol_sha256": "2d579bdb7f122b6900f4dfbc084d73c40671832f2d7cf85d4b854657ecef4705",
+  "dataset": {
+    "doi": "10.17605/OSF.IO/UDTQP",
+    "subset": "breast tissue unstained / FSHG",
+    "manifest_sha256": "441553b9f5af96f285b40dc042dd6fe2681e919020f28126819f80f1830d768d",
+    "reference_offset_degrees": 90.0
+  },
+  "status": "pass",
+  "primary": {
+    "eligible_rois": 48,
+    "eligible_pixels": 1367747,
+    "median_error": 7.588232599620138,
+    "p75_error": 13.937450563974839,
+    "median_roi_median_error": 7.333710928529898,
+    "axial_alignment": 0.8773003106523175,
+    "median_error_roi_bootstrap95": [
+      7.257028739474732,
+      7.914894355321694
+    ]
+  },
+  "comparators": {
+    "sigma4": {
+      "eligible_rois": 48,
+      "eligible_pixels": 1367747,
+      "median_error": 7.43379526679422,
+      "p75_error": 13.710810475093233,
+      "median_roi_median_error": 7.142373511932599,
+      "axial_alignment": 0.8781590743143578
+    },
+    "smoothed_gradient": {
+      "eligible_rois": 48,
+      "eligible_pixels": 1367747,
+      "median_error": 26.02551964129823,
+      "p75_error": 50.880767796467666,
+      "median_roi_median_error": 25.82065888963163,
+      "axial_alignment": 0.33468300578903554
+    }
+  },
+  "success_gates": {
+    "eligible_rois_ge_30": true,
+    "eligible_pixels_ge_50000": true,
+    "median_error_le_15_degrees": true,
+    "bootstrap_upper_le_15_degrees": true,
+    "p75_error_le_30_degrees": true,
+    "median_roi_median_error_le_15_degrees": true,
+    "axial_alignment_ge_0_65": true,
+    "noninferior_to_sigma4_within_2_degrees": true,
+    "noninferior_to_gradient_within_2_degrees": true
+  },
+  "scope": "Pristine external-acquisition validation of a scale-declared local 2D direction field against polarization-SHG orientation.",
+  "cases": [
+    {
+      "roi": "breast_1",
+      "eligible_pixels": 47630,
+      "median_error": 7.865259922490559
+    },
+    {
+      "roi": "breast_10",
+      "eligible_pixels": 14518,
+      "median_error": 6.404846503620384
+    },
+    {
+      "roi": "breast_11",
+      "eligible_pixels": 16238,
+      "median_error": 7.775243280447924
+    },
+    {
+      "roi": "breast_12",
+      "eligible_pixels": 21203,
+      "median_error": 7.038174581449397
+    },
+    {
+      "roi": "breast_13",
+      "eligible_pixels": 24429,
+      "median_error": 7.791594897389828
+    },
+    {
+      "roi": "breast_14",
+      "eligible_pixels": 33783,
+      "median_error": 7.738248874357083
+    },
+    {
+      "roi": "breast_15",
+      "eligible_pixels": 30881,
+      "median_error": 6.6064203539039426
+    },
+    {
+      "roi": "breast_16",
+      "eligible_pixels": 36729,
+      "median_error": 6.874995561851932
+    },
+    {
+      "roi": "breast_17",
+      "eligible_pixels": 13295,
+      "median_error": 6.629716508652791
+    },
+    {
+      "roi": "breast_18",
+      "eligible_pixels": 18045,
+      "median_error": 6.568988551291895
+    },
+    {
+      "roi": "breast_19",
+      "eligible_pixels": 38305,
+      "median_error": 8.96183415879392
+    },
+    {
+      "roi": "breast_2",
+      "eligible_pixels": 63448,
+      "median_error": 7.782907654256251
+    },
+    {
+      "roi": "breast_20",
+      "eligible_pixels": 31595,
+      "median_error": 9.752606216728054
+    },
+    {
+      "roi": "breast_21",
+      "eligible_pixels": 21651,
+      "median_error": 6.908014372914252
+    },
+    {
+      "roi": "breast_22",
+      "eligible_pixels": 18253,
+      "median_error": 7.227067879441307
+    },
+    {
+      "roi": "breast_23",
+      "eligible_pixels": 32529,
+      "median_error": 7.287420925082319
+    },
+    {
+      "roi": "breast_24",
+      "eligible_pixels": 33086,
+      "median_error": 7.134186314363173
+    },
+    {
+      "roi": "breast_25",
+      "eligible_pixels": 23740,
+      "median_error": 8.107724261099879
+    },
+    {
+      "roi": "breast_26",
+      "eligible_pixels": 24890,
+      "median_error": 8.73871415058116
+    },
+    {
+      "roi": "breast_27",
+      "eligible_pixels": 13221,
+      "median_error": 8.757973875274956
+    },
+    {
+      "roi": "breast_28",
+      "eligible_pixels": 10882,
+      "median_error": 7.61665105833535
+    },
+    {
+      "roi": "breast_29",
+      "eligible_pixels": 35366,
+      "median_error": 9.058503513841899
+    },
+    {
+      "roi": "breast_3",
+      "eligible_pixels": 12891,
+      "median_error": 9.031223611223446
+    },
+    {
+      "roi": "breast_30",
+      "eligible_pixels": 36638,
+      "median_error": 8.086591948699208
+    },
+    {
+      "roi": "breast_31",
+      "eligible_pixels": 16848,
+      "median_error": 5.4813129301223995
+    },
+    {
+      "roi": "breast_32",
+      "eligible_pixels": 17505,
+      "median_error": 7.1480233653561385
+    },
+    {
+      "roi": "breast_33",
+      "eligible_pixels": 38203,
+      "median_error": 9.764751096052294
+    },
+    {
+      "roi": "breast_34",
+      "eligible_pixels": 40046,
+      "median_error": 10.015158741305672
+    },
+    {
+      "roi": "breast_35",
+      "eligible_pixels": 32166,
+      "median_error": 6.660593523020063
+    },
+    {
+      "roi": "breast_36",
+      "eligible_pixels": 22410,
+      "median_error": 7.089422282736063
+    },
+    {
+      "roi": "breast_37",
+      "eligible_pixels": 25582,
+      "median_error": 5.293110463213491
+    },
+    {
+      "roi": "breast_38",
+      "eligible_pixels": 44544,
+      "median_error": 5.93364236091376
+    },
+    {
+      "roi": "breast_39",
+      "eligible_pixels": 33002,
+      "median_error": 6.494726223249813
+    },
+    {
+      "roi": "breast_4",
+      "eligible_pixels": 27822,
+      "median_error": 9.862266841794899
+    },
+    {
+      "roi": "breast_40",
+      "eligible_pixels": 40398,
+      "median_error": 7.347064988432809
+    },
+    {
+      "roi": "breast_41",
+      "eligible_pixels": 33524,
+      "median_error": 6.996764747627196
+    },
+    {
+      "roi": "breast_42",
+      "eligible_pixels": 21092,
+      "median_error": 6.2841847011621965
+    },
+    {
+      "roi": "breast_43",
+      "eligible_pixels": 6635,
+      "median_error": 7.851423499486788
+    },
+    {
+      "roi": "breast_44",
+      "eligible_pixels": 2893,
+      "median_error": 6.2903612407142475
+    },
+    {
+      "roi": "breast_45",
+      "eligible_pixels": 52565,
+      "median_error": 8.80873197198946
+    },
+    {
+      "roi": "breast_46",
+      "eligible_pixels": 39272,
+      "median_error": 7.3203568686269875
+    },
+    {
+      "roi": "breast_47",
+      "eligible_pixels": 39997,
+      "median_error": 7.6491562702317
+    },
+    {
+      "roi": "breast_48",
+      "eligible_pixels": 43458,
+      "median_error": 8.059236591936124
+    },
+    {
+      "roi": "breast_5",
+      "eligible_pixels": 38216,
+      "median_error": 8.341000814454702
+    },
+    {
+      "roi": "breast_6",
+      "eligible_pixels": 30765,
+      "median_error": 7.358296403518189
+    },
+    {
+      "roi": "breast_7",
+      "eligible_pixels": 25031,
+      "median_error": 7.095028404399059
+    },
+    {
+      "roi": "breast_8",
+      "eligible_pixels": 24283,
+      "median_error": 6.9934160427182235
+    },
+    {
+      "roi": "breast_9",
+      "eligible_pixels": 18244,
+      "median_error": 6.6304140425402345
+    }
+  ]
+}

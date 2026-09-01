@@ -1,0 +1,70 @@
+{
+  "schema_version": "nostos-biosr-tensor-v7-nonlinear-header-failure/1.0",
+  "status": "v7_nonlinear_stopped_before_pixel_decode_due_to_frozen_spacing_mismatch",
+  "protocol_version": "nostos-paired-acquisition-tensor/7.0",
+  "frozen_expected_raw_spacing_um": 0.0626,
+  "observed_header_metadata": {
+    "cells": 51,
+    "levels_per_cell": 9,
+    "input_members": 459,
+    "reference_members": 51,
+    "raw_spacing_yx_um": [
+      0.06040000170469284,
+      0.06040000170469284
+    ],
+    "reference_spacing_yx_um": [
+      0.020133333280682564,
+      0.020133333280682564
+    ],
+    "raw_shape_yx": [
+      502,
+      502
+    ],
+    "reference_shape_yx": [
+      1506,
+      1506
+    ],
+    "raw_frames": 25,
+    "spacing_ratio_raw_to_reference": [
+      3.0000000925154877,
+      3.0000000925154877
+    ],
+    "raw_field_of_view_yx_um": [
+      30.320800855755806,
+      30.320800855755806
+    ],
+    "reference_field_of_view_yx_um": [
+      30.32079992070794,
+      30.32079992070794
+    ],
+    "uniform_across_archive": true
+  },
+  "source_discrepancy": {
+    "official_imaging_conditions_workbook_raw_spacing_um": 0.0626,
+    "all_archive_mrc_headers_raw_spacing_um": 0.06040000170469284,
+    "resolution_rule": "Use the internally consistent per-acquisition MRC header calibration for nonlinear SIM, disclose the conflict with the record-level workbook, and preserve 0.0626 um for the linear archive whose headers agree with the workbook.",
+    "outcome_informed": false
+  },
+  "access_audit": {
+    "central_directory_inspected": true,
+    "mrc_headers_read": true,
+    "mrc_payload_beyond_1024_byte_header_read_by_auditor": false,
+    "nonlinear_pixel_arrays_decoded": 0,
+    "nonlinear_endpoint_outcomes_computed": 0,
+    "failed_output_directory_present": false
+  },
+  "decision": {
+    "v7_nonlinear_status": "failed_precondition_do_not_execute",
+    "v7_linear_status": "unaffected_and_retained_under_original_v7_lock",
+    "permitted_next_action": "Create a metadata-only v7.1 nonlinear amendment and a new lock before decoding nonlinear pixels.",
+    "threshold_or_endpoint_change_permitted": false,
+    "selected_field_change_permitted": false
+  },
+  "lineage": {
+    "v7_config_sha256": "51bc51cd69f2945c04b56a65fbf6a5a677c0c7661087ec945043eec9ab5f54eb",
+    "v7_lock_sha256": "9ff48c5b35e1e472a43706385c0d529f13703dccf467627821aea769c575225e",
+    "archive_sha256": "a5c97793c3b72e1f6b7e22d41670be0ef97d6c0bcdab9b6e5c392cc95dd4dcd8",
+    "implementation_sha256": "50f43fa7de3ad4e0cb9a84e04e679adf4f3471c71b44a497eb7990627e13a300"
+  },
+  "claim_boundary": "Metadata-only failure and repair evidence. No nonlinear measurement result exists under v7."
+}

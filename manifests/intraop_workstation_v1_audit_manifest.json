@@ -1,0 +1,37 @@
+{
+  "schema_version": "nostos-intraop-workstation-audit-manifest/1.0",
+  "status": "verified_pass",
+  "implementation": [
+    {
+      "path": "src/nostos/app/server.py",
+      "bytes": 21456,
+      "sha256": "d7e591dd138e7269e331668e9d97ef3e17240237f44e84635da2c5fada86a246"
+    },
+    {
+      "path": "microscopy_app/index.html",
+      "bytes": 5848,
+      "sha256": "b971e8727a75178e72fffbef65c5b83e13a7e39533bfc1c87efaab0eb44cad56"
+    },
+    {
+      "path": "microscopy_app/app.js",
+      "bytes": 11031,
+      "sha256": "13599b4ec70f6bbe6e4eabd13d28ba984c9fee441967ed60b3b74ea8a1912d23"
+    },
+    {
+      "path": "microscopy_app/style.css",
+      "bytes": 10407,
+      "sha256": "5d5bbab40e8ed063648a975f5c0fe4f953627f4c943e56e6dd17a11e7c608ac7"
+    },
+    {
+      "path": "scripts/audit_intraop_workstation.py",
+      "bytes": 6951,
+      "sha256": "904be82a67c742328300fe57b684410e1804e2da197524495af4cd45875eb2c6"
+    }
+  ],
+  "audit_result": {
+    "path": "outputs/nostos0-intraop-workstation-audit-v1/workstation_audit.json",
+    "bytes": 1814,
+    "sha256": "dcad1b2e5b6b77c05afcf2f9f1753da29fd69b01f01d29f852b820d3076bb8c0"
+  },
+  "claim_boundary": "Author-operated HTTP routing and fail-closed software audit only. No independent operator, browser matrix, human-factors, prospective workflow or clinical decision validation."
+}

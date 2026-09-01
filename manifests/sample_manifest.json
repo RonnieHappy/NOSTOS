@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "dataset_root": "<DATA_ROOT>\\data\\samples",
+  "participant_count": 1,
+  "image_count": 3,
+  "participants": [
+    "001"
+  ],
+  "documented_pixel_sizes_um": {
+    "HE": 1.72,
+    "SafO": 1.72,
+    "PLM": 5.16
+  },
+  "metadata_files": [
+    "image_information.xml"
+  ],
+  "records": [
+    {
+      "participant_id": "001",
+      "relative_path": "P001/Medial/HE/HE-2_section-1.tif",
+      "modality": "HE",
+      "site": "Medial",
+      "bytes": 27301628,
+      "height_pixels": 4940,
+      "width_pixels": 5980,
+      "dtype": "uint8",
+      "page_count": 1,
+      "pixel_size_um_x": 1.72,
+      "pixel_size_um_y": 1.72,
+      "pixel_size_source": "image_information.xml",
+      "tiff_tag_pixel_size_um_x": 352.77777777777777,
+      "tiff_tag_pixel_size_um_y": 352.77777777777777
+    },
+    {
+      "participant_id": "001",
+      "relative_path": "P001/Medial/PLM/S2.tif",
+      "modality": "PLM",
+      "site": "Medial",
+      "bytes": 2912360,
+      "height_pixels": 1440,
+      "width_pixels": 1920,
+      "dtype": "uint8",
+      "page_count": 1,
+      "pixel_size_um_x": 5.16,
+      "pixel_size_um_y": 5.16,
+      "pixel_size_source": "image_information.xml",
+      "tiff_tag_pixel_size_um_x": 84.66666666666667,
+      "tiff_tag_pixel_size_um_y": 84.66666666666667
+    },
+    {
+      "participant_id": "001",
+      "relative_path": "P001/Medial/SafO/SafO-2_section-2.tif",
+      "modality": "SafO",
+      "site": "Medial",
+      "bytes": 62711608,
+      "height_pixels": 4900,
+      "width_pixels": 6160,
+      "dtype": "uint8",
+      "page_count": 1,
+      "pixel_size_um_x": 1.72,
+      "pixel_size_um_y": 1.72,
+      "pixel_size_source": "image_information.xml",
+      "tiff_tag_pixel_size_um_x": 352.77777777777777,
+      "tiff_tag_pixel_size_um_y": 352.77777777777777
+    }
+  ],
+  "participant_inventory": {
+    "001": {
+      "image_count": 3,
+      "modality_counts": {
+        "HE": 1,
+        "SafO": 1,
+        "PLM": 1,
+        "unknown": 0
+      },
+      "site_counts": {
+        "Medial": 3,
+        "Lateral": 0,
+        "unknown": 0
+      },
+      "has_all_modalities": true,
+      "has_both_sites": false,
+      "header_error_count": 0
+    }
+  },
+  "warnings": [
+    "Expected 90 participants; inferred 1.",
+    "Implausible nominal TIFF resolution tags were ignored in favor of repository calibration."
+  ]
+}

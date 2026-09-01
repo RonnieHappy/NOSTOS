@@ -1,0 +1,448 @@
+{
+  "protocol_version": "nostos-synthetic/1.1",
+  "status": "pass",
+  "scope": "synthetic truth and perturbation validation for the interpretable NOSTOS-0 CPU core",
+  "reference": {
+    "truth": {
+      "construct": "orientation",
+      "parameters": {
+        "orientation_degrees": 31.0,
+        "dispersion_degrees": 0.0,
+        "wavelength_um": 24.0
+      },
+      "spacing_um": [
+        1.0,
+        1.0
+      ],
+      "seed": 1729
+    },
+    "measurement": {
+      "abstained": false,
+      "orientation_degrees": 31.000030714376937,
+      "wavelength_um": 23.814669041128028,
+      "anisotropy": 0.9894794679139093,
+      "angular_entropy": 0.33465644226390906,
+      "pixels_per_scale": 24.0,
+      "signal_to_noise": 40.10542297363281
+    }
+  },
+  "construct_registry": [
+    {
+      "truth": {
+        "construct": "orientation",
+        "parameters": {
+          "orientation_degrees": 30.0,
+          "dispersion_degrees": 0.0,
+          "wavelength_um": 16.0
+        },
+        "spacing_um": [
+          1.0,
+          1.0
+        ],
+        "seed": 1729
+      },
+      "shape": [
+        192,
+        192
+      ],
+      "image_sha256": "94c5937ce7d175c46d6dbc6067fd8b7acffd70254a95c7ec8e72fa7ddb4579f8",
+      "has_mask": false
+    },
+    {
+      "truth": {
+        "construct": "spectral_scale",
+        "parameters": {
+          "orientation_degrees": 30.0,
+          "dispersion_degrees": 0.0,
+          "wavelength_um": 16.0
+        },
+        "spacing_um": [
+          1.0,
+          1.0
+        ],
+        "seed": 1729
+      },
+      "shape": [
+        192,
+        192
+      ],
+      "image_sha256": "94c5937ce7d175c46d6dbc6067fd8b7acffd70254a95c7ec8e72fa7ddb4579f8",
+      "has_mask": false
+    },
+    {
+      "truth": {
+        "construct": "blob",
+        "parameters": {
+          "class": "blob",
+          "radius_um": 8.0,
+          "diameter_um": 16.0
+        },
+        "spacing_um": [
+          1.0,
+          1.0
+        ],
+        "seed": 1729
+      },
+      "shape": [
+        192,
+        192
+      ],
+      "image_sha256": "7548dddfdf3f26bc6b47a5c261aea07f210093da2564fe87dd43f78b97854a09",
+      "has_mask": true
+    },
+    {
+      "truth": {
+        "construct": "tube",
+        "parameters": {
+          "class": "tube",
+          "radius_um": 8.0,
+          "diameter_um": 16.0
+        },
+        "spacing_um": [
+          1.0,
+          1.0
+        ],
+        "seed": 1729
+      },
+      "shape": [
+        192,
+        192
+      ],
+      "image_sha256": "aedf9d52e775aa174ad657425e21cda2c75417c5c22627b05aec271ab145059f",
+      "has_mask": true
+    },
+    {
+      "truth": {
+        "construct": "sheet",
+        "parameters": {
+          "class": "sheet",
+          "radius_um": 8.0,
+          "diameter_um": 16.0
+        },
+        "spacing_um": [
+          1.0,
+          1.0
+        ],
+        "seed": 1729
+      },
+      "shape": [
+        192,
+        192
+      ],
+      "image_sha256": "aedf9d52e775aa174ad657425e21cda2c75417c5c22627b05aec271ab145059f",
+      "has_mask": true
+    },
+    {
+      "truth": {
+        "construct": "thickness",
+        "parameters": {
+          "class": "thickness",
+          "radius_um": 8.0,
+          "diameter_um": 16.0
+        },
+        "spacing_um": [
+          1.0,
+          1.0
+        ],
+        "seed": 1729
+      },
+      "shape": [
+        192,
+        192
+      ],
+      "image_sha256": "c47a4d2d7033e423e38181e2af6edcbb7b690e99f8fd535f4fe7097581513926",
+      "has_mask": true
+    },
+    {
+      "truth": {
+        "construct": "roughness",
+        "parameters": {
+          "amplitude_um": 4.0,
+          "wavelength_um": 32.0,
+          "rms_roughness_um": 2.82842712474619
+        },
+        "spacing_um": [
+          1.0,
+          1.0
+        ],
+        "seed": 1729
+      },
+      "shape": [
+        192,
+        192
+      ],
+      "image_sha256": "3af58d132e23b20378f6ad525e34633dafa5e2a64b42107e15c10ab28909fe64",
+      "has_mask": true
+    },
+    {
+      "truth": {
+        "construct": "network",
+        "parameters": {
+          "branch_count": 6,
+          "cycle_count": 0,
+          "junction_count": 1,
+          "width_um": 6.4
+        },
+        "spacing_um": [
+          1.0,
+          1.0
+        ],
+        "seed": 1729
+      },
+      "shape": [
+        192,
+        192
+      ],
+      "image_sha256": "874d4aa8ec7fb84598f0abe2f513ac7497cb3b9ba19e6d98d11625e4ae33617d",
+      "has_mask": true
+    },
+    {
+      "truth": {
+        "construct": "heterogeneity",
+        "parameters": {
+          "correlation_length_um": 12.0,
+          "anisotropy_ratio": 2.0
+        },
+        "spacing_um": [
+          1.0,
+          1.0
+        ],
+        "seed": 1729
+      },
+      "shape": [
+        192,
+        192
+      ],
+      "image_sha256": "ccf9a63ed0d924ce90a795d8680ad81bd607bfdc62e6411022b50e8ad2a976ab",
+      "has_mask": false
+    }
+  ],
+  "perturbation_results": [
+    {
+      "perturbation": {
+        "kind": "rotation",
+        "magnitude": 17.0,
+        "seed": 2718
+      },
+      "measurement": {
+        "abstained": false,
+        "orientation_degrees": 13.999947055646102,
+        "wavelength_um": 23.28342000348797,
+        "anisotropy": 0.9894545616012449,
+        "angular_entropy": 0.35695730201941944,
+        "pixels_per_scale": 24.0,
+        "signal_to_noise": 40.2467041015625
+      },
+      "errors": {
+        "circular_angular_error_degrees": 5.294435391078878e-05,
+        "relative_scale_error": 0.029857499854667974
+      },
+      "passed": true
+    },
+    {
+      "perturbation": {
+        "kind": "resampling",
+        "magnitude": 0.75,
+        "seed": 2718
+      },
+      "measurement": {
+        "abstained": false,
+        "orientation_degrees": 30.99994641706616,
+        "wavelength_um": 23.814669041128028,
+        "anisotropy": 0.9894785279707381,
+        "angular_entropy": 0.334125470065405,
+        "pixels_per_scale": 18.0,
+        "signal_to_noise": 22.750463485717773
+      },
+      "errors": {
+        "circular_angular_error_degrees": 5.3582933844609215e-05,
+        "relative_scale_error": 0.007722123286332187
+      },
+      "passed": true
+    },
+    {
+      "perturbation": {
+        "kind": "crop",
+        "magnitude": 0.8,
+        "seed": 2718
+      },
+      "measurement": {
+        "abstained": false,
+        "orientation_degrees": 30.999472789342626,
+        "wavelength_um": 24.050759330845334,
+        "anisotropy": 0.9836231954668327,
+        "angular_entropy": 0.3648865886288749,
+        "pixels_per_scale": 24.0,
+        "signal_to_noise": 39.97493362426758
+      },
+      "errors": {
+        "circular_angular_error_degrees": 0.0005272106573670499,
+        "relative_scale_error": 0.0021149721185556025
+      },
+      "passed": true
+    },
+    {
+      "perturbation": {
+        "kind": "blur",
+        "magnitude": 1.0,
+        "seed": 2718
+      },
+      "measurement": {
+        "abstained": false,
+        "orientation_degrees": 31.000030727118094,
+        "wavelength_um": 23.814669041128028,
+        "anisotropy": 0.9894794694051903,
+        "angular_entropy": 0.33465643113304067,
+        "pixels_per_scale": 24.0,
+        "signal_to_noise": 40.21097946166992
+      },
+      "errors": {
+        "circular_angular_error_degrees": 3.072711809437578e-05,
+        "relative_scale_error": 0.007722123286332187
+      },
+      "passed": true
+    },
+    {
+      "perturbation": {
+        "kind": "noise",
+        "magnitude": 0.1,
+        "seed": 2718
+      },
+      "measurement": {
+        "abstained": false,
+        "orientation_degrees": 31.00979274518193,
+        "wavelength_um": 23.814669041128028,
+        "anisotropy": 0.9832228201896054,
+        "angular_entropy": 0.347925792866558,
+        "pixels_per_scale": 24.0,
+        "signal_to_noise": 13.659402847290039
+      },
+      "errors": {
+        "circular_angular_error_degrees": 0.009792745181929519,
+        "relative_scale_error": 0.007722123286332187
+      },
+      "passed": true
+    },
+    {
+      "perturbation": {
+        "kind": "contrast",
+        "magnitude": 0.65,
+        "seed": 2718
+      },
+      "measurement": {
+        "abstained": false,
+        "orientation_degrees": 31.0000307142863,
+        "wavelength_um": 23.814669041128028,
+        "anisotropy": 0.9894794679205737,
+        "angular_entropy": 0.3346564421734735,
+        "pixels_per_scale": 24.0,
+        "signal_to_noise": 40.10530471801758
+      },
+      "errors": {
+        "circular_angular_error_degrees": 3.0714286300081994e-05,
+        "relative_scale_error": 0.007722123286332187
+      },
+      "passed": true
+    },
+    {
+      "perturbation": {
+        "kind": "psf",
+        "magnitude": 0.75,
+        "seed": 2718
+      },
+      "measurement": {
+        "abstained": false,
+        "orientation_degrees": 31.000030556720642,
+        "wavelength_um": 23.814669041128028,
+        "anisotropy": 0.9894794760847794,
+        "angular_entropy": 0.3346563682785214,
+        "pixels_per_scale": 24.0,
+        "signal_to_noise": 40.23233413696289
+      },
+      "errors": {
+        "circular_angular_error_degrees": 3.0556720641783386e-05,
+        "relative_scale_error": 0.007722123286332187
+      },
+      "passed": true
+    },
+    {
+      "perturbation": {
+        "kind": "partial_volume",
+        "magnitude": 0.7,
+        "seed": 2718
+      },
+      "measurement": {
+        "abstained": false,
+        "orientation_degrees": 30.99974489161371,
+        "wavelength_um": 23.814669041128028,
+        "anisotropy": 0.9895811224371865,
+        "angular_entropy": 0.3319022196093139,
+        "pixels_per_scale": 24.0,
+        "signal_to_noise": 40.493282318115234
+      },
+      "errors": {
+        "circular_angular_error_degrees": 0.0002551083862840642,
+        "relative_scale_error": 0.007722123286332187
+      },
+      "passed": true
+    }
+  ],
+  "module_gates": {
+    "structure_tensor": {
+      "max_circular_error_degrees": 0.08518502971607234,
+      "minimum_coherency": 0.9999173965094508,
+      "passed": true
+    },
+    "hessian_morphology": {
+      "cases": [
+        {
+          "truth": "blob",
+          "estimate": "blob",
+          "winning_scale_um": 6.0,
+          "passed": true
+        },
+        {
+          "truth": "tube",
+          "estimate": "tube",
+          "winning_scale_um": 6.0,
+          "passed": true
+        },
+        {
+          "truth": "sheet",
+          "estimate": "sheet",
+          "winning_scale_um": 6.0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    "geometry": {
+      "p95_thickness_um": 20.0,
+      "relative_error": 0.0,
+      "passed": true
+    },
+    "network": {
+      "surviving_fraction": [
+        1.0,
+        0.7164119066773934,
+        0.2075623491552695,
+        0.0
+      ],
+      "monotonic": true,
+      "passed": true
+    },
+    "spatial": {
+      "range_horizontal_um": 24.0,
+      "range_vertical_um": 8.0,
+      "passed": true
+    }
+  },
+  "summary": {
+    "constructs_registered": 9,
+    "perturbations_tested": 8,
+    "passed": 8,
+    "abstentions": 0,
+    "module_gates_passed": 5,
+    "module_gates_total": 5
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "protocol_version": "nostos-focus-metric-development/1.0",
+  "protocol_sha256": "eee23d8eadabacc282bdab84681af15f76fe7e1ca7b2b9603ebab978f0329f43",
+  "status": "development_complete",
+  "source": "opened 64-case BBBC006 development subset",
+  "selection_rule": "maximum minimum fraction for z15 and z16 exceeding z00; lexical tie break",
+  "candidates": {
+    "laplacian_variance_raw": {
+      "fraction_z15_exceeds_z00": 0.984375,
+      "fraction_z16_exceeds_z00": 0.984375,
+      "minimum_fraction": 0.984375,
+      "median_z15_z16_ratio": 0.7731846565949654
+    },
+    "tenengrad_mean": {
+      "fraction_z15_exceeds_z00": 0.984375,
+      "fraction_z16_exceeds_z00": 0.984375,
+      "minimum_fraction": 0.984375,
+      "median_z15_z16_ratio": 0.7826165062500946
+    },
+    "tenengrad_p90": {
+      "fraction_z15_exceeds_z00": 0.953125,
+      "fraction_z16_exceeds_z00": 0.953125,
+      "minimum_fraction": 0.953125,
+      "median_z15_z16_ratio": 0.8403808859642401
+    },
+    "high_frequency_fraction_0_20": {
+      "fraction_z15_exceeds_z00": 0.03125,
+      "fraction_z16_exceeds_z00": 0.15625,
+      "minimum_fraction": 0.03125,
+      "median_z15_z16_ratio": 0.8225668950284227
+    },
+    "high_frequency_fraction_0_30": {
+      "fraction_z15_exceeds_z00": 0.015625,
+      "fraction_z16_exceeds_z00": 0.015625,
+      "minimum_fraction": 0.015625,
+      "median_z15_z16_ratio": 0.9149280853399788
+    }
+  },
+  "selected_metric": "tenengrad_mean",
+  "interpretation": "Development only; selected metric requires identity-disjoint confirmation."
+}

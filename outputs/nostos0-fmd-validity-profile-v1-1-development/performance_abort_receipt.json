@@ -1,0 +1,14 @@
+{
+  "schema_version": "nostos-fmd-performance-abort/1.0",
+  "status": "development_run_manually_stopped_before_row_export",
+  "protocol_id": "fmd-real-noise-dimensionless-organization-v1-1",
+  "reason": "The generic paired evaluator computed Hessian and variogram modules that are prospectively excluded from this pixel-relative benchmark.",
+  "scientific_effect": {
+    "endpoint_rows_exported": 0,
+    "risk_maps_fitted": 0,
+    "thresholds_selected": 0,
+    "confirmation_images_decoded": 0
+  },
+  "repair": "Use an endpoint-selective estimator and require numerical parity with the generic estimator for every retained endpoint before restarting development.",
+  "retained_pair_index": "development_pair_index.json"
+}

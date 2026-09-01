@@ -1,0 +1,30 @@
+{
+  "schema_version": "nostos-family-threshold-candidate/1.0",
+  "status": "development_pass_not_yet_frozen_for_confirmation",
+  "condition": "full_contract",
+  "raw_score": "full_contract",
+  "family_map": {
+    "hessian_response_shape": [
+      "hessian_blob_curve",
+      "hessian_tube_curve"
+    ],
+    "spectral_order": [
+      "spectral_anisotropy",
+      "spectral_entropy"
+    ],
+    "tensor_coherence": [
+      "tensor_coherence"
+    ],
+    "tensor_orientation": [
+      "tensor_orientation"
+    ]
+  },
+  "thresholds": {
+    "hessian_response_shape": 0.4566275011141736,
+    "spectral_order": 0.4566275011141736,
+    "tensor_coherence": 0.30956540595765564,
+    "tensor_orientation": 0.9964578203269273
+  },
+  "structure_specific_thresholds": false,
+  "confirmation_access_authorized": false
+}

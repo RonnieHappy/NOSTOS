@@ -1,0 +1,9 @@
+{
+  "protocol_version": "nostos-cartilage-review-evaluator-dry-run/1.0",
+  "status": "software_pass",
+  "case_count": 4,
+  "human_review": false,
+  "admissible_as_segmentation_validation": false,
+  "evaluation_receipt_sha256": "af15a3a4206b70157b126b3a3f59589b478e6c735b7ade940ad864c47b8448a0",
+  "claim_boundary": "Analytic masks exercise the evaluator contract only; they provide no human-reference evidence."
+}

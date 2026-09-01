@@ -1,0 +1,14 @@
+{
+  "frozen_at": "2026-08-25",
+  "protocol_sha256": "844a169d584f1c52f8b7fce116d0b181b93dbd4603b4d268bcf0fa316de76e53",
+  "dataset_manifest_sha256": "3831f93497b2efd35f045bf66410a4e1d960705202b6717250a3fd2215fcf8b0",
+  "ordered_safo_path_inventory_sha256": "a91bf68e512c00241c2fe8f4f5cc196d3f5311fe5c97adbfda4163ff89748dee",
+  "pipeline_source_sha256": {
+    "src/nostos/app/batch_cpu.py": "15722776b0329964606fa34a2f88ad6a22605cae77cce7c169a20a06a0ffe80a",
+    "src/nostos/app/server.py": "ab7c052ce6c775bfb10625b24472564cd1c76021ea430b5182555b8330d81922",
+    "src/nostos/segmentation/weak_labels.py": "64822b72958a14ae3ea75305f4f57c4459e9fcbe139291165b69c76a1fb0944f"
+  },
+  "medial_complete_pairs": 89,
+  "lateral_complete_pairs": 84,
+  "note": "Created before second-section feature extraction. Later code changes must be recorded as deviations and may not alter the frozen feature computation."
+}

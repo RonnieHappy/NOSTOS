@@ -1,0 +1,73 @@
+{
+  "protocol_version": "nostos-bone-contract-figure/1.0",
+  "status": "complete",
+  "figure": "supplementary_figure_1_bone_contract_stress",
+  "scientific_image_policy": "real public source data and frozen receipts only; no generative imagery",
+  "selected_sources": {
+    "mouse_shg_archive": {
+      "doi": "10.5281/zenodo.3355937",
+      "archive_sha256": "de3b471e748356bf31ad5ccbee9523e075475c3f11d9bc2865116408d080a115",
+      "image_member": "Mouse27_wt/LTibiaUpperPart/180719_10-28-10/image_0044.png",
+      "mask_member": "Mouse27_wt/LTibiaUpperPart/180719_10-28-10/image_0044.png"
+    },
+    "rat_confocal": {
+      "doi": "10.5281/zenodo.11061868",
+      "image": "CT13-endosteum_img.tif",
+      "image_sha256": "29c87949e1307f17b3e280a62d9134d88f9ded948997a59a7c4073c6f8238283",
+      "segmentation": "CT13-endosteum_seg.tif",
+      "segmentation_sha256": "a51a77504709333bbb7f984a39195a716167bd6dd84a8ba4a525b8c169c68ac5"
+    },
+    "human_nanoct": {
+      "doi": "10.5281/zenodo.17909733",
+      "archive_sha256": "a6076f5ad74b0027393c7b498986089886b185d6e7247ff8c484668fc8e9fb1f",
+      "raw_member": "jaw_2wg5_050_trans_bin2_uint16_1024x1024x1024.raw",
+      "public_spacing_um": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "display_selection": {
+        "name": "minimum_largest_component_fraction_within_lowest_intensity_decile",
+        "candidate_cubes": 48,
+        "largest_component_fraction": 0.2165685022101134,
+        "center_zyx": [
+          640,
+          384,
+          384
+        ]
+      },
+      "isosurface": "lowest intensity decile; boundary-connected and <20-voxel components excluded"
+    },
+    "uvpam": {
+      "doi": "10.5281/zenodo.6345772",
+      "archive_sha256": "c16f2b18769b91faf612d47e7bed9270adba714f33913e8c9910c35ed28166ad",
+      "archive_member": "cycleGAN-UVPAM/datasets/falsecolor/trainA/A_0004_0001_0001.png"
+    }
+  },
+  "receipt_sha256": {
+    "outputs/nostos0-bone-download-integrity/integrity_verification.json": "64849ec4598fd13bcf7a4f6aa82fa8a73ef690b8d7a29b7374eabb35054c4dd9",
+    "outputs/nostos0-bone-network-3d-v2/case_rows.json": "a6480ada0c42332b6502aa0aacab0a2b1c6dac9107b590a1148b9105ec2d6fd3",
+    "outputs/nostos0-human-nanoct-scale-response-v2/case_rows.json": "ae64eff41c0b670163d506a726515b8c46d384ccb2430010086ee98468c90b90",
+    "outputs/nostos0-human-nanoct-scale-response-v2/human_nanoct_scale_response.json": "a00c674d79f7dce71f192808d5811c18c9f58953ac9ca1f4ac47192d7b526d0c",
+    "outputs/nostos0-uvpam-abstention/case_rows.json": "e507730056e9ab755fed26f59976aaaf46c0315b5de0ac8a27b1a14b4964509e",
+    "outputs/nostos0-bone-contract-summary/bone_contract_program_summary.json": "b0a8f66e634df5b2ea78eebccd68c526038c1e689dd72cd2e76c947c1f4fbb94"
+  },
+  "script_sha256": "bde5a5ff5ae6f5c5764eab2ffb09c236a7a362643a0a39cb266c82c20da689b5",
+  "computed_visuals": {
+    "panel_e": "rat confocal maximum-intensity projection rendered as a height field",
+    "panel_h": "human nanoCT internal low-density isosurfaces under the declared display rule",
+    "panel_i": "sigma-4-pixel local structure-tensor orientation segments on the selected SHG section",
+    "panel_l": "log-magnitude 2D Fourier spectrum of the selected UV-PAM tile"
+  },
+  "outputs": {
+    "supplementary_figure_1_bone_contract_stress.png": {
+      "bytes": 6675608,
+      "sha256": "0a92f1fcb413647371ef3b8fb3996bd0b317433963c2c5dc9da5979585a09643"
+    },
+    "supplementary_figure_1_bone_contract_stress.svg": {
+      "bytes": 524559,
+      "sha256": "343bd1ceba0e0881157d2d4772c8fe00442da6328855a74fcda1a9a1f637cb94"
+    }
+  },
+  "claim_boundary": "Visualises stress-test and abstention behavior. The figure does not validate automatic segmentation, bone biology, diagnosis, mechanics or clinical use."
+}

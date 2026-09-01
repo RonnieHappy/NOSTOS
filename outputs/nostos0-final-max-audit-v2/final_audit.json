@@ -1,0 +1,356 @@
+{
+  "protocol_version": "nostos-final-max-audit/2.0",
+  "audit_date": "2026-08-29",
+  "status": "complete_with_external_blockers",
+  "terminal_verdict": {
+    "software_release_candidate": "verified_technical_pass",
+    "public_unstained_pshg_profile": "verified_bounded_technical_pass",
+    "new_instrument_or_operator": "not_validated",
+    "intraoperative_workflow": "not_validated",
+    "clinical_decision_support": "not_ready",
+    "high_impact_methods_submission": "not_yet_defensible",
+    "nature_methods_or_nature_biomedical_engineering": "not_ready",
+    "recommended_current_action": "Use the release for research and external bridge studies; do not deploy for patient care or submit a clinical/Nature-level claim yet."
+  },
+  "technical_checks": {
+    "evidence_index_complete": true,
+    "evidence_index_retains_not_ready_boundary": true,
+    "biosr_v9_confirmation_passed": true,
+    "biosr_v9_independent_code_path_audit_passed": true,
+    "pshg_v1_4_deployment_passed": true,
+    "pshg_v1_4_audit_passed": true,
+    "operator_export_audit_passed": true,
+    "operator_reference_excluded": true,
+    "operator_clinical_output_withheld": true,
+    "new_acquisition_workstation_fails_closed": true,
+    "local_runtime_verified": true,
+    "t7_cuda_runtime_verified": true,
+    "legacy_runtime_rejected": true,
+    "bone_source_integrity_retained": true,
+    "failed_bone_primary_gates_not_promoted": true,
+    "release_is_data_free_and_scanner_clean": true,
+    "cleanroom_failures_retained": true,
+    "definitive_cleanroom_passed": true,
+    "release_rebuild_is_byte_identical": true,
+    "release_terminal_manifest_passed": true,
+    "manuscript_production_qa_retained": true
+  },
+  "receipts": {
+    "evidence_index": {
+      "path": "outputs/nostos0-evidence-bundle-v29/evidence_index.json",
+      "bytes": 64510,
+      "sha256": "58a126ea283e0a41108f837efa894223d5f1305b2a72f5a25aee8e52855b1a7d"
+    },
+    "biosr_v9_confirmation": {
+      "path": "outputs/nostos0-biosr-tensor-v9-scale-conditioned-confirmation/confirmation_receipt.json",
+      "bytes": 121189,
+      "sha256": "17c2e876e50ce86dd9d6a5856f7e9ea98937ee8563377c748fd108cdc6cb6f17"
+    },
+    "biosr_v9_audit": {
+      "path": "outputs/nostos0-biosr-tensor-v9-final-audit/final_audit.json",
+      "bytes": 112484,
+      "sha256": "231fed52ee363c38009067fe7bb2e6f5c2cd2e0c94eaa650ac6fd5d524ec192a"
+    },
+    "pshg_v1_4_deployment": {
+      "path": "outputs/nostos0-intraop-pshg-deployment-v1_4/deployment_benchmark.json",
+      "bytes": 9200,
+      "sha256": "7ec709c78f3e3e36ffbce2d47f7bc8288b0eb2b60ec3f9ae69cd09711812e536"
+    },
+    "pshg_v1_4_audit": {
+      "path": "outputs/nostos0-intraop-pshg-deployment-v1_4-final-audit/final_audit.json",
+      "bytes": 3179,
+      "sha256": "15b137671f8b1fca7e2f063b656065344c76e58e301b20c7a4cf38207f934acb"
+    },
+    "pshg_v1_4_audit_manifest": {
+      "path": "manifests/intraop_pshg_deployment_v1_4_audit_manifest.json",
+      "bytes": 1769,
+      "sha256": "fb77ff338ead4adaa62759e03a5cc239932d393f41af11e6af9692fbd029c08f"
+    },
+    "operator_result": {
+      "path": "outputs/nostos0-intraop-operator-workflow-v1/intraop_result.json",
+      "bytes": 9200,
+      "sha256": "4bb59494121fb3cb7184c3578e9c27d4acf0a22ac9a597bfb92106336be1f9e8"
+    },
+    "operator_audit": {
+      "path": "outputs/nostos0-intraop-operator-workflow-v1/workflow_audit.json",
+      "bytes": 1513,
+      "sha256": "6f82ecb55966d5ae58e419504ed7ab93a4667134f152d82f17fe1997754d226a"
+    },
+    "operator_manifest": {
+      "path": "manifests/intraop_operator_workflow_v1_audit_manifest.json",
+      "bytes": 1336,
+      "sha256": "f2be2a941773a62796b2bdd9cf85b04900c3de56fc455937f20dce93a35720fd"
+    },
+    "workstation_audit": {
+      "path": "outputs/nostos0-intraop-workstation-audit-v1/workstation_audit.json",
+      "bytes": 1814,
+      "sha256": "dcad1b2e5b6b77c05afcf2f9f1753da29fd69b01f01d29f852b820d3076bb8c0"
+    },
+    "workstation_manifest": {
+      "path": "manifests/intraop_workstation_v1_audit_manifest.json",
+      "bytes": 1342,
+      "sha256": "d0127cedbbe7f96b9a0f564a4fbbf25ea3fda454c1033b9090f557eab780ec38"
+    },
+    "runtime_local": {
+      "path": "outputs/nostos0-runtime-audit-v1/local_cpu.json",
+      "bytes": 2402,
+      "sha256": "3f0e9c7de9c9c20dd25c26b1f06bbcc8ad52d828df685acc9fc586ad367be6a1"
+    },
+    "runtime_t7": {
+      "path": "outputs/nostos0-runtime-audit-v1/t7_cuda.json",
+      "bytes": 2865,
+      "sha256": "ada64a5c5583a97e87a6d4a0bcfb8dd84d43ed503da52a62da4b4e5f19122c5b"
+    },
+    "runtime_legacy": {
+      "path": "outputs/nostos0-runtime-audit-v1/t7_legacy_py314.json",
+      "bytes": 2774,
+      "sha256": "4ca378ac756c5b95474173a4eea4f9faa774882b805ef6af42a075354d2c45c3"
+    },
+    "runtime_manifest": {
+      "path": "manifests/runtime_audit_v1_manifest.json",
+      "bytes": 2213,
+      "sha256": "fd1a5489ce0199dab9fcdeb7780f4ddfc256fcb8d45c1aff6470206dce0e57e7"
+    },
+    "bone_program": {
+      "path": "outputs/nostos0-bone-contract-summary/bone_contract_program_summary.json",
+      "bytes": 14657,
+      "sha256": "b0a8f66e634df5b2ea78eebccd68c526038c1e689dd72cd2e76c947c1f4fbb94"
+    },
+    "bone_integrity": {
+      "path": "outputs/nostos0-bone-download-integrity/integrity_verification.json",
+      "bytes": 20479,
+      "sha256": "64849ec4598fd13bcf7a4f6aa82fa8a73ef690b8d7a29b7374eabb35054c4dd9"
+    },
+    "manuscript_qa": {
+      "path": "outputs/nostos0-manuscript-qa-v1/manuscript_qa.json",
+      "bytes": 10450,
+      "sha256": "8742fe695b4a0c2c4aa7af3e6b09631b8d7d9e4eef6f1f4b4eb1db0ea0f8cac1"
+    },
+    "release_receipt": {
+      "path": "outputs/nostos0-release-candidate-v29/release_receipt.json",
+      "bytes": 361,
+      "sha256": "3dbacc69c4b76415869228e6501f900b4a24ca0c99d33b74c5b1995e989c1e76"
+    },
+    "release_manifest": {
+      "path": "outputs/nostos0-release-candidate-v29/release_manifest.json",
+      "bytes": 135047,
+      "sha256": "9145548a5c5ddcf07e7256ddb7ff71d9529748d9894ff6bba096e6c26d6187be"
+    },
+    "cleanroom_initial_failure": {
+      "path": "outputs/nostos0-release-candidate-v29/cleanroom_initial_failure.json",
+      "bytes": 1908,
+      "sha256": "ce81fb1fa379d77c50acb47202e85636269b2965e3b9b984a9b1dd7d26a1c3e9"
+    },
+    "cleanroom_second_failure": {
+      "path": "outputs/nostos0-release-candidate-v29/cleanroom_second_failure.json",
+      "bytes": 1908,
+      "sha256": "6a8820f55c1824f4ef12e4b0b13393db28aba4c5901ebf7351592e8e2bb7a82b"
+    },
+    "cleanroom_verification": {
+      "path": "outputs/nostos0-release-candidate-v29/cleanroom_verification.json",
+      "bytes": 1902,
+      "sha256": "b01297377e321f94a451f1c337685a5d34ed40d045270d3f6ff778c3a13b0856"
+    },
+    "release_terminal_manifest": {
+      "path": "manifests/release_candidate_v29_audit_manifest.json",
+      "bytes": 2501,
+      "sha256": "e412190724d72c5bac94f4e0bc0537e6ef72ae5a837ba62d3c9add05231e7d0c"
+    }
+  },
+  "release_identity": {
+    "software_version": "0.3.0",
+    "candidate": "v29",
+    "archive": "nostos-0.3.0-release-candidate.zip",
+    "archive_bytes": 39726594,
+    "archive_sha256": "03c2ea315c550ab8b503b5856a53e481ad67e5395f72e24d30decfdc1437dfa3",
+    "packaged_file_count_including_manifest": 738,
+    "publication_state": "verified_local_release_candidate_not_publicly_archived"
+  },
+  "evidence_index": {
+    "entries": 101,
+    "missing": [],
+    "nature_readiness": "not_ready",
+    "self_reference_note": "Release-level receipts are bound by a separate terminal manifest and are not embedded in the archive whose hash they describe."
+  },
+  "supported_claims": [
+    {
+      "claim": "NOSTOS 0.3.0 is a deterministic, data-free, locally executable structural-measurement software release candidate.",
+      "scope": "738 files plus release manifest; fresh frozen install; 292 clean-room tests passed and 8 dependency/data-dependent tests skipped; byte-identical second build",
+      "evidence": [
+        "release_receipt",
+        "cleanroom_verification",
+        "release_terminal_manifest"
+      ]
+    },
+    {
+      "claim": "The supported local and T7 runtimes execute the full applicable repository test matrices and finite 2048 by 2048 FFT smoke tests.",
+      "scope": "Python 3.13; 297 local tests with 4 skips and 308 T7 tests with no skips; RTX 5070 Ti CUDA execution verified",
+      "evidence": [
+        "runtime_local",
+        "runtime_t7",
+        "runtime_manifest"
+      ]
+    },
+    {
+      "claim": "A frozen scale-conditioned validity contract reduced silent-invalid tensor-coherence risk relative to conventional acquisition QC on untouched BioSR F-actin fields.",
+      "scope": "8 reference fields, 980 primary eligible rows, 95.0% coverage, risk 0.0387 versus 0.0735, 47.4% relative reduction; controlled degradations on one public SIM resource",
+      "evidence": [
+        "biosr_v9_confirmation",
+        "biosr_v9_audit"
+      ]
+    },
+    {
+      "claim": "A declared local structure-tensor endpoint reproduces the deposited PSHG orientation reference within the frozen public acquisition profile.",
+      "scope": "48 breast ROIs and 1,367,747 eligible pixels in the scientific confirmation; median axial error 7.59 degrees after a transform frozen on a separate skin subset",
+      "evidence": [
+        "pshg_breast_orientation",
+        "structure_tensor_comparator"
+      ]
+    },
+    {
+      "claim": "The unstained PSHG production path exports complete, hash-registered measurement artifacts and withholds unsupported clinical conclusions.",
+      "scope": "4 additional hash-selected fields in v1.4; pooled median reference error 7.53 degrees; p95 end-to-end compute/export 0.452 seconds; acquisition time excluded",
+      "evidence": [
+        "pshg_v1_4_deployment",
+        "pshg_v1_4_audit",
+        "operator_audit"
+      ]
+    },
+    {
+      "claim": "A format-compatible but provenance-unverified acquisition remains measurable for research while being explicitly demoted and clinically withheld.",
+      "scope": "author-operated deterministic local HTTP audit; four decoded visual products; not a human-factors or browser-matrix study",
+      "evidence": [
+        "workstation_audit",
+        "workstation_manifest"
+      ]
+    },
+    {
+      "claim": "Reference-mask vascular-network and trabecular-thickness endpoints retain bounded cross-data or cross-software evidence.",
+      "scope": "STARE reference masks and eight public trabecular-bone volumes; these are endpoint-specific measurements, not universal biological or diagnostic validation",
+      "evidence": [
+        "stare_network_confirmation",
+        "bonej_thickness"
+      ]
+    }
+  ],
+  "rejected_or_unsupported_claims": [
+    "one universal score or representation that identifies every specimen across tissues",
+    "universal superiority over focused estimators, radiomics, scattering or established domain tools",
+    "validated automatic cartilage segmentation or a continuous osteochondral-interface claim",
+    "transfer of the PSHG profile to a new microscope, operator, tissue or surgical environment",
+    "intraoperative acquisition speed; current timing starts after image files exist",
+    "diagnosis, disease severity, tissue viability, margin status, mechanics or treatment guidance",
+    "clinical utility, safety, decision impact, patient outcome or regulatory clearance",
+    "Nature Methods or Nature Biomedical Engineering readiness on current public-data evidence",
+    "a double-digit-impact-factor submission that is presently defensible without new external acquisition evidence"
+  ],
+  "readiness_gates": [
+    {
+      "gate": "G0 software integrity",
+      "status": "pass",
+      "evidence": "Definitive v29 archive, two retained failure receipts, verified clean-room execution and byte-identical rebuild."
+    },
+    {
+      "gate": "G1 locked public unstained measurement",
+      "status": "pass_bounded",
+      "evidence": "PSHG orientation and production artifacts pass on the deposited acquisition family only."
+    },
+    {
+      "gate": "G2 independent instrument and operator bridge",
+      "status": "open",
+      "evidence": "No independently operated second instrument or acquisition family has passed a frozen bridge protocol."
+    },
+    {
+      "gate": "G3 fresh target-tissue reference validity",
+      "status": "open",
+      "evidence": "No co-registered fresh surgical tissue study links NOSTOS output to an adjudicated structural, histologic or mechanical reference."
+    },
+    {
+      "gate": "G4 intraoperative workflow and human factors",
+      "status": "open",
+      "evidence": "Ten-frame acquisition, motion, focusing, field selection, sterility, operator time, failure recovery and usability are unmeasured."
+    },
+    {
+      "gate": "G5 prospective clinical endpoint and decision impact",
+      "status": "open",
+      "evidence": "No locked clinical endpoint, prospective cohort, comparison to standard care or patient-level decision study exists."
+    },
+    {
+      "gate": "G6 high-impact methodological generalization",
+      "status": "partial",
+      "evidence": "BioSR v9 supports one selective-validity result, but several cross-domain support and universal-representation gates failed and remain retained."
+    }
+  ],
+  "sample_plan": {
+    "verdict": "Do not add millions of tiles. Add a small number of independent, information-rich specimens in staged gates.",
+    "stages": [
+      {
+        "stage": "engineering bridge",
+        "minimum_design": "3 to 5 independent specimens spanning low, medium and high signal; 2 operators; 3 repositioning repeats; no clinical-performance claim",
+        "purpose": "Find coordinate, focus, motion, support-map and timing failures cheaply before freezing thresholds."
+      },
+      {
+        "stage": "locked external pilot",
+        "minimum_design": "approximately 12 to 20 independent specimens or donors, with specimen-level inference and an adjudicated co-registered reference",
+        "purpose": "Estimate coverage, silent-invalid risk, agreement and failure modes with uncertainty; exact size must be justified by the endpoint precision target."
+      },
+      {
+        "stage": "prospective confirmation",
+        "minimum_design": "sample size derived from the locked clinical endpoint, expected prevalence/effect and confidence-width target; independent operators and temporal separation required",
+        "purpose": "Support a clinical or high-impact translational claim without patch-level pseudoreplication."
+      }
+    ],
+    "unit_rule": "Pixels, tiles, perturbations and repeat frames are technical observations. The specimen, donor or patient remains the inferential unit unless the study design proves otherwise."
+  },
+  "blocking_requirements": [
+    {
+      "category": "independent acquisition",
+      "blocker": "The PSHG claim is tied to one public instrument family and author-operated analysis.",
+      "closure": "Freeze a bridge protocol, then pass it on a second instrument with independent operators, specimen-level clustering and an acquisition-appropriate reference.",
+      "requires_external_authority": true
+    },
+    {
+      "category": "target tissue",
+      "blocker": "The verified unstained profile is breast PSHG, not the intended intraoperative osteochondral or bone use case.",
+      "closure": "Acquire fresh target tissue with co-registered histology, polarimetry/SHG reference and, if claimed, mechanical testing. Lock one clinically meaningful endpoint before analysis.",
+      "requires_external_authority": true
+    },
+    {
+      "category": "workflow",
+      "blocker": "Only compute and export latency are measured; the ten-frame acquisition and operator pathway are not timed or stress tested.",
+      "closure": "Measure specimen-to-result latency, motion failures, refocus/reposition repeats, abstention rate and operator errors in a simulated-use study before any operating-room claim.",
+      "requires_external_authority": true
+    },
+    {
+      "category": "clinical performance",
+      "blocker": "There is no prospective clinical reference, safety, decision-impact or outcome evidence.",
+      "closure": "After technical bridging, register and run a prospective patient-level study with locked intended use, adjudicated reference, uncertainty, subgroup analysis and failure accounting.",
+      "requires_external_authority": true
+    },
+    {
+      "category": "methodological novelty",
+      "blocker": "Most component estimators are established; one BioSR validity-contract success is not yet a general platform-level advantage.",
+      "closure": "Prospectively demonstrate lower silent-invalid risk at matched useful coverage on at least one second modality and show that response-geometry or abstention information changes a scientifically important conclusion beyond individual methods and ordinary QC.",
+      "requires_external_authority": false
+    },
+    {
+      "category": "external reproducibility",
+      "blocker": "No unaided external user has executed the frozen release and returned an unedited receipt.",
+      "closure": "Obtain an identified external execution from the release archive and archive the public tag with a DOI.",
+      "requires_external_authority": true
+    },
+    {
+      "category": "governance",
+      "blocker": "Institutional determination, privacy/security review, authorship declarations and regulatory intended-use analysis are incomplete.",
+      "closure": "Complete institutional, clinical engineering, cybersecurity and regulatory review before patient-data or operating-room deployment.",
+      "requires_external_authority": true
+    }
+  ],
+  "novelty_assessment": {
+    "strongest_novel_object": "A calibrated response-and-validity contract that preserves physical scale, perturbation behavior, evidence maturity and explicit abstention around structural measurements.",
+    "not_novel_by_itself": "FFT, structure tensors, Hessian filters, thickness, topology, variograms and local HTTP visualization are established components.",
+    "current_decisive_result": "The v9 BioSR selective contract reduced silent-invalid tensor-coherence risk at 95% coverage on an untouched controlled-degradation confirmation.",
+    "remaining_review_threat": "The advantage has not yet been shown prospectively on an independent acquisition modality tied to an important biological or clinical endpoint."
+  },
+  "decision_rule": "Technical use on the exact locked public acquisition may be described precisely. Do not call NOSTOS clinically usable, intraoperatively validated, or Nature-ready until G2 through G5 are closed with new immutable, independently generated evidence."
+}

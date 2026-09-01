@@ -1,0 +1,1239 @@
+{
+  "schema_version": "nostos-biosr-v6-family-threshold-development/1.0",
+  "created_at_utc": "2026-08-29T03:31:58Z",
+  "status": "development_pass_pending_implementation_freeze",
+  "config": {
+    "path": "configs/paired_acquisition_support_v6_development.json",
+    "bytes": 4571,
+    "sha256": "f2001aa5200caf69125476029f8cb90e002a347af112dc1f4bfe7d1924a4b83e"
+  },
+  "sources": [
+    {
+      "stage": "score_design",
+      "structure": "CCPs",
+      "archive_receipt": {
+        "path": "outputs/nostos0-biosr-ccp-small-pilot-v5/archive_receipt.json",
+        "bytes": 9831,
+        "sha256": "8068f17af307fa78fb5e846104fd69b7474b37d4142e105b53f37b4984ef6888"
+      },
+      "endpoint_cases": {
+        "path": "outputs/nostos0-biosr-ccp-small-pilot-v5/endpoint_cases.jsonl",
+        "bytes": 2834069,
+        "sha256": "6ba9b92070b2f77b77ed25a9d6f5b2fcb677554de0c4a75ed9c181c91d59fd72"
+      },
+      "pair_index": {
+        "path": "outputs/nostos0-biosr-ccp-small-pilot-v5/pair_index.json",
+        "bytes": 51701,
+        "sha256": "1e7c7dd1efbc50c7bb0824a667ea890f0255ba1dd3198055a9d4a39c895890e6"
+      },
+      "implementation_sha256": "1a33e3c67754674e2da35f69f211dec17e522ea8359fc9ae80b4d03f2b9454d1"
+    },
+    {
+      "stage": "score_design",
+      "structure": "ER",
+      "archive_receipt": {
+        "path": "outputs/nostos0-biosr-er-small-pilot-v5/archive_receipt.json",
+        "bytes": 9819,
+        "sha256": "c49e668a0f2afdd2c32054272924556596f2f7bdedc575b26f6960edd19d7ea7"
+      },
+      "endpoint_cases": {
+        "path": "outputs/nostos0-biosr-er-small-pilot-v5/endpoint_cases.jsonl",
+        "bytes": 1893988,
+        "sha256": "baf745216e6678a4e840837bc40c0f7714bbbf7bdc7923c68297bc05ccbed380"
+      },
+      "pair_index": {
+        "path": "outputs/nostos0-biosr-er-small-pilot-v5/pair_index.json",
+        "bytes": 35119,
+        "sha256": "31d060f1a0ada0c0c96ad791a04fe7ea4c23bb9d977e00d7b2c9d6f8b254a47b"
+      },
+      "implementation_sha256": "1a33e3c67754674e2da35f69f211dec17e522ea8359fc9ae80b4d03f2b9454d1"
+    },
+    {
+      "stage": "threshold_calibration",
+      "structure": "CCPs",
+      "archive_receipt": {
+        "path": "outputs/nostos0-biosr-ccp-threshold-calibration-v5/archive_receipt.json",
+        "bytes": 12897,
+        "sha256": "22da7f632c918fbbdb9fd36426f3b604e5930c6c5affba1c824705bb06b7d9c1"
+      },
+      "endpoint_cases": {
+        "path": "outputs/nostos0-biosr-ccp-threshold-calibration-v5/endpoint_cases.jsonl",
+        "bytes": 14240529,
+        "sha256": "88848985fc1a43011c49f76e935fc0638b4517c8cd526fdc22ff7b32ca9faffc"
+      },
+      "pair_index": {
+        "path": "outputs/nostos0-biosr-ccp-threshold-calibration-v5/pair_index.json",
+        "bytes": 256685,
+        "sha256": "0dd046652f029e03487fb9571c83e2ad4ec7c5e3ebb81f3e4f9378f7e42588ff"
+      },
+      "implementation_sha256": "8810b3baa7a773bae940f2c39ffe32436d7b600238ceefe9d53d117dcdd86a08"
+    },
+    {
+      "stage": "threshold_calibration",
+      "structure": "ER",
+      "archive_receipt": {
+        "path": "outputs/nostos0-biosr-er-threshold-calibration-v5/archive_receipt.json",
+        "bytes": 13455,
+        "sha256": "308926ba4e746cfac7f5638a026fd78a6d86b11127b1f5163bc86be5662e84d6"
+      },
+      "endpoint_cases": {
+        "path": "outputs/nostos0-biosr-er-threshold-calibration-v5/endpoint_cases.jsonl",
+        "bytes": 10467839,
+        "sha256": "e522b9b707b88440d6df1766f9992671d56e5f87af5d2893430b29ceef166203"
+      },
+      "pair_index": {
+        "path": "outputs/nostos0-biosr-er-threshold-calibration-v5/pair_index.json",
+        "bytes": 191125,
+        "sha256": "1a1a2ce913ab19ee7dded2c390157a25b3af66cbb1a4d0ea868d5413f54b0fb5"
+      },
+      "implementation_sha256": "8810b3baa7a773bae940f2c39ffe32436d7b600238ceefe9d53d117dcdd86a08"
+    }
+  ],
+  "scope": {
+    "reference_fields": 75,
+    "paired_acquisitions": 558,
+    "all_source_rows": 11718,
+    "score_design_fields": 12,
+    "threshold_calibration_fields": 63,
+    "field_overlap": []
+  },
+  "policy_semantics": {
+    "always_emit": "Ignore every NOSTOS hard abstention and emit every computable estimate.",
+    "conventional_acquisition_qc": "Apply acquisition-QC score and acquisition-QC hard failures only; do not inherit physical-sampling or identifiability abstentions.",
+    "component_ablation": "When a validity component is removed, remove both its continuous score and its governed hard preconditions."
+  },
+  "policies": {
+    "full_contract": {
+      "status": "pass",
+      "condition": "full_contract",
+      "families": {
+        "hessian_response_shape": {
+          "status": "threshold_selected",
+          "condition": "full_contract",
+          "threshold": 0.4566275011141736,
+          "eligible": 1030,
+          "accepted": 1030,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "structures": [
+            {
+              "structure": "CCPs",
+              "eligible": 574,
+              "accepted": 574,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 36
+            },
+            {
+              "structure": "ER",
+              "eligible": 456,
+              "accepted": 456,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 39
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "candidate_thresholds": 456,
+          "bootstrap_candidates_evaluated": 1
+        },
+        "spectral_order": {
+          "status": "threshold_selected",
+          "condition": "full_contract",
+          "threshold": 0.4566275011141736,
+          "eligible": 1030,
+          "accepted": 1030,
+          "coverage": 1.0,
+          "invalid": 2,
+          "risk": 0.001941747572815534,
+          "structures": [
+            {
+              "structure": "CCPs",
+              "eligible": 574,
+              "accepted": 574,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 36
+            },
+            {
+              "structure": "ER",
+              "eligible": 456,
+              "accepted": 456,
+              "coverage": 1.0,
+              "invalid": 2,
+              "risk": 0.0043859649122807015,
+              "reference_fields": 39
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.004690431519699813,
+          "candidate_thresholds": 456,
+          "bootstrap_candidates_evaluated": 1
+        },
+        "tensor_coherence": {
+          "status": "threshold_selected",
+          "condition": "full_contract",
+          "threshold": 0.30956540595765564,
+          "eligible": 2575,
+          "accepted": 2228,
+          "coverage": 0.8652427184466019,
+          "invalid": 82,
+          "risk": 0.03680430879712747,
+          "structures": [
+            {
+              "structure": "CCPs",
+              "eligible": 1435,
+              "accepted": 1398,
+              "coverage": 0.9742160278745644,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 36
+            },
+            {
+              "structure": "ER",
+              "eligible": 1140,
+              "accepted": 830,
+              "coverage": 0.7280701754385965,
+              "invalid": 82,
+              "risk": 0.09879518072289156,
+              "reference_fields": 39
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.04551266062729768,
+          "candidate_thresholds": 1296,
+          "bootstrap_candidates_evaluated": 1
+        },
+        "tensor_orientation": {
+          "status": "threshold_selected",
+          "condition": "full_contract",
+          "threshold": 0.9964578203269273,
+          "eligible": 188,
+          "accepted": 148,
+          "coverage": 0.7872340425531915,
+          "invalid": 10,
+          "risk": 0.06756756756756757,
+          "structures": [
+            {
+              "structure": "ER",
+              "eligible": 188,
+              "accepted": 148,
+              "coverage": 0.7872340425531915,
+              "invalid": 10,
+              "risk": 0.06756756756756757,
+              "reference_fields": 7
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.12987012987012986,
+          "candidate_thresholds": 35,
+          "bootstrap_candidates_evaluated": 1
+        }
+      },
+      "overall": {
+        "eligible": 4823,
+        "accepted": 4436,
+        "coverage": 0.9197594857972217,
+        "invalid": 94,
+        "risk": 0.021190261496844005,
+        "cluster_bootstrap_risk_upper95": 0.025953663389596447
+      }
+    },
+    "always_emit": {
+      "status": "fail",
+      "condition": "always_emit",
+      "families": {
+        "hessian_response_shape": {
+          "status": "threshold_selected",
+          "condition": "always_emit",
+          "threshold": 0.0,
+          "eligible": 1030,
+          "accepted": 1030,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "structures": [
+            {
+              "structure": "CCPs",
+              "eligible": 574,
+              "accepted": 574,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 36
+            },
+            {
+              "structure": "ER",
+              "eligible": 456,
+              "accepted": 456,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 39
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "candidate_thresholds": 1,
+          "bootstrap_candidates_evaluated": 1
+        },
+        "spectral_order": {
+          "status": "threshold_selected",
+          "condition": "always_emit",
+          "threshold": 0.0,
+          "eligible": 1030,
+          "accepted": 1030,
+          "coverage": 1.0,
+          "invalid": 2,
+          "risk": 0.001941747572815534,
+          "structures": [
+            {
+              "structure": "CCPs",
+              "eligible": 574,
+              "accepted": 574,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 36
+            },
+            {
+              "structure": "ER",
+              "eligible": 456,
+              "accepted": 456,
+              "coverage": 1.0,
+              "invalid": 2,
+              "risk": 0.0043859649122807015,
+              "reference_fields": 39
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.004690431519699813,
+          "candidate_thresholds": 1,
+          "bootstrap_candidates_evaluated": 1
+        },
+        "tensor_coherence": {
+          "status": "no_threshold",
+          "condition": "always_emit",
+          "threshold": null,
+          "eligible": 2575,
+          "accepted": 0,
+          "coverage": 0.0,
+          "invalid": 0,
+          "risk": null,
+          "structures": [],
+          "cluster_bootstrap_risk_upper95": null,
+          "candidate_thresholds": 1,
+          "bootstrap_candidates_evaluated": 0
+        },
+        "tensor_orientation": {
+          "status": "no_threshold",
+          "condition": "always_emit",
+          "threshold": null,
+          "eligible": 188,
+          "accepted": 0,
+          "coverage": 0.0,
+          "invalid": 0,
+          "risk": null,
+          "structures": [],
+          "cluster_bootstrap_risk_upper95": null,
+          "candidate_thresholds": 1,
+          "bootstrap_candidates_evaluated": 0
+        }
+      },
+      "overall": null
+    },
+    "conventional_acquisition_qc": {
+      "status": "pass",
+      "condition": "conventional_acquisition_qc",
+      "families": {
+        "hessian_response_shape": {
+          "status": "threshold_selected",
+          "condition": "conventional_acquisition_qc",
+          "threshold": 0.4566275011141736,
+          "eligible": 1030,
+          "accepted": 1030,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "structures": [
+            {
+              "structure": "CCPs",
+              "eligible": 574,
+              "accepted": 574,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 36
+            },
+            {
+              "structure": "ER",
+              "eligible": 456,
+              "accepted": 456,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 39
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "candidate_thresholds": 456,
+          "bootstrap_candidates_evaluated": 1
+        },
+        "spectral_order": {
+          "status": "threshold_selected",
+          "condition": "conventional_acquisition_qc",
+          "threshold": 0.4566275011141736,
+          "eligible": 1030,
+          "accepted": 1030,
+          "coverage": 1.0,
+          "invalid": 2,
+          "risk": 0.001941747572815534,
+          "structures": [
+            {
+              "structure": "CCPs",
+              "eligible": 574,
+              "accepted": 574,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 36
+            },
+            {
+              "structure": "ER",
+              "eligible": 456,
+              "accepted": 456,
+              "coverage": 1.0,
+              "invalid": 2,
+              "risk": 0.0043859649122807015,
+              "reference_fields": 39
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.004690431519699813,
+          "candidate_thresholds": 456,
+          "bootstrap_candidates_evaluated": 1
+        },
+        "tensor_coherence": {
+          "status": "threshold_selected",
+          "condition": "conventional_acquisition_qc",
+          "threshold": 0.24693006305363735,
+          "eligible": 2575,
+          "accepted": 2325,
+          "coverage": 0.9029126213592233,
+          "invalid": 91,
+          "risk": 0.03913978494623656,
+          "structures": [
+            {
+              "structure": "CCPs",
+              "eligible": 1435,
+              "accepted": 1390,
+              "coverage": 0.9686411149825784,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 36
+            },
+            {
+              "structure": "ER",
+              "eligible": 1140,
+              "accepted": 935,
+              "coverage": 0.8201754385964912,
+              "invalid": 91,
+              "risk": 0.09732620320855614,
+              "reference_fields": 39
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.0480350353479835,
+          "candidate_thresholds": 456,
+          "bootstrap_candidates_evaluated": 1
+        },
+        "tensor_orientation": {
+          "status": "threshold_selected",
+          "condition": "conventional_acquisition_qc",
+          "threshold": 0.24858369520219217,
+          "eligible": 188,
+          "accepted": 155,
+          "coverage": 0.824468085106383,
+          "invalid": 13,
+          "risk": 0.08387096774193549,
+          "structures": [
+            {
+              "structure": "ER",
+              "eligible": 188,
+              "accepted": 155,
+              "coverage": 0.824468085106383,
+              "invalid": 13,
+              "risk": 0.08387096774193549,
+              "reference_fields": 7
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.14482758620689656,
+          "candidate_thresholds": 39,
+          "bootstrap_candidates_evaluated": 1
+        }
+      },
+      "overall": {
+        "eligible": 4823,
+        "accepted": 4540,
+        "coverage": 0.9413228281152809,
+        "invalid": 106,
+        "risk": 0.023348017621145373,
+        "cluster_bootstrap_risk_upper95": 0.02870423746565795
+      }
+    },
+    "physical_sampling_only": {
+      "status": "fail",
+      "condition": "physical_sampling_only",
+      "families": {
+        "hessian_response_shape": {
+          "status": "threshold_selected",
+          "condition": "physical_sampling_only",
+          "threshold": 0.0,
+          "eligible": 1030,
+          "accepted": 1030,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "structures": [
+            {
+              "structure": "CCPs",
+              "eligible": 574,
+              "accepted": 574,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 36
+            },
+            {
+              "structure": "ER",
+              "eligible": 456,
+              "accepted": 456,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 39
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "candidate_thresholds": 1,
+          "bootstrap_candidates_evaluated": 1
+        },
+        "spectral_order": {
+          "status": "threshold_selected",
+          "condition": "physical_sampling_only",
+          "threshold": 0.0,
+          "eligible": 1030,
+          "accepted": 1030,
+          "coverage": 1.0,
+          "invalid": 2,
+          "risk": 0.001941747572815534,
+          "structures": [
+            {
+              "structure": "CCPs",
+              "eligible": 574,
+              "accepted": 574,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 36
+            },
+            {
+              "structure": "ER",
+              "eligible": 456,
+              "accepted": 456,
+              "coverage": 1.0,
+              "invalid": 2,
+              "risk": 0.0043859649122807015,
+              "reference_fields": 39
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.004690431519699813,
+          "candidate_thresholds": 1,
+          "bootstrap_candidates_evaluated": 1
+        },
+        "tensor_coherence": {
+          "status": "no_threshold",
+          "condition": "physical_sampling_only",
+          "threshold": null,
+          "eligible": 2575,
+          "accepted": 0,
+          "coverage": 0.0,
+          "invalid": 0,
+          "risk": null,
+          "structures": [],
+          "cluster_bootstrap_risk_upper95": null,
+          "candidate_thresholds": 1,
+          "bootstrap_candidates_evaluated": 0
+        },
+        "tensor_orientation": {
+          "status": "no_threshold",
+          "condition": "physical_sampling_only",
+          "threshold": null,
+          "eligible": 188,
+          "accepted": 0,
+          "coverage": 0.0,
+          "invalid": 0,
+          "risk": null,
+          "structures": [],
+          "cluster_bootstrap_risk_upper95": null,
+          "candidate_thresholds": 1,
+          "bootstrap_candidates_evaluated": 0
+        }
+      },
+      "overall": null
+    },
+    "perturbation_stability_only": {
+      "status": "fail",
+      "condition": "perturbation_stability_only",
+      "families": {
+        "hessian_response_shape": {
+          "status": "threshold_selected",
+          "condition": "perturbation_stability_only",
+          "threshold": 0.12199053705199464,
+          "eligible": 1030,
+          "accepted": 1030,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "structures": [
+            {
+              "structure": "CCPs",
+              "eligible": 574,
+              "accepted": 574,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 36
+            },
+            {
+              "structure": "ER",
+              "eligible": 456,
+              "accepted": 456,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 39
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "candidate_thresholds": 1030,
+          "bootstrap_candidates_evaluated": 1
+        },
+        "spectral_order": {
+          "status": "threshold_selected",
+          "condition": "perturbation_stability_only",
+          "threshold": 0.2401612796804555,
+          "eligible": 1030,
+          "accepted": 1030,
+          "coverage": 1.0,
+          "invalid": 2,
+          "risk": 0.001941747572815534,
+          "structures": [
+            {
+              "structure": "CCPs",
+              "eligible": 574,
+              "accepted": 574,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 36
+            },
+            {
+              "structure": "ER",
+              "eligible": 456,
+              "accepted": 456,
+              "coverage": 1.0,
+              "invalid": 2,
+              "risk": 0.0043859649122807015,
+              "reference_fields": 39
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.004690431519699813,
+          "candidate_thresholds": 1030,
+          "bootstrap_candidates_evaluated": 1
+        },
+        "tensor_coherence": {
+          "status": "no_threshold",
+          "condition": "perturbation_stability_only",
+          "threshold": null,
+          "eligible": 2575,
+          "accepted": 0,
+          "coverage": 0.0,
+          "invalid": 0,
+          "risk": null,
+          "structures": [],
+          "cluster_bootstrap_risk_upper95": null,
+          "candidate_thresholds": 2575,
+          "bootstrap_candidates_evaluated": 0
+        },
+        "tensor_orientation": {
+          "status": "no_threshold",
+          "condition": "perturbation_stability_only",
+          "threshold": null,
+          "eligible": 188,
+          "accepted": 0,
+          "coverage": 0.0,
+          "invalid": 0,
+          "risk": null,
+          "structures": [],
+          "cluster_bootstrap_risk_upper95": null,
+          "candidate_thresholds": 52,
+          "bootstrap_candidates_evaluated": 8
+        }
+      },
+      "overall": null
+    },
+    "full_contract_without_qc": {
+      "status": "fail",
+      "condition": "full_contract_without_qc",
+      "families": {
+        "hessian_response_shape": {
+          "status": "threshold_selected",
+          "condition": "full_contract_without_qc",
+          "threshold": 0.12199053705199464,
+          "eligible": 1030,
+          "accepted": 1030,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "structures": [
+            {
+              "structure": "CCPs",
+              "eligible": 574,
+              "accepted": 574,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 36
+            },
+            {
+              "structure": "ER",
+              "eligible": 456,
+              "accepted": 456,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 39
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "candidate_thresholds": 1030,
+          "bootstrap_candidates_evaluated": 1
+        },
+        "spectral_order": {
+          "status": "threshold_selected",
+          "condition": "full_contract_without_qc",
+          "threshold": 0.2401612796804555,
+          "eligible": 1030,
+          "accepted": 1030,
+          "coverage": 1.0,
+          "invalid": 2,
+          "risk": 0.001941747572815534,
+          "structures": [
+            {
+              "structure": "CCPs",
+              "eligible": 574,
+              "accepted": 574,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 36
+            },
+            {
+              "structure": "ER",
+              "eligible": 456,
+              "accepted": 456,
+              "coverage": 1.0,
+              "invalid": 2,
+              "risk": 0.0043859649122807015,
+              "reference_fields": 39
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.004690431519699813,
+          "candidate_thresholds": 1030,
+          "bootstrap_candidates_evaluated": 1
+        },
+        "tensor_coherence": {
+          "status": "no_threshold",
+          "condition": "full_contract_without_qc",
+          "threshold": null,
+          "eligible": 2575,
+          "accepted": 0,
+          "coverage": 0.0,
+          "invalid": 0,
+          "risk": null,
+          "structures": [],
+          "cluster_bootstrap_risk_upper95": null,
+          "candidate_thresholds": 2575,
+          "bootstrap_candidates_evaluated": 0
+        },
+        "tensor_orientation": {
+          "status": "threshold_selected",
+          "condition": "full_contract_without_qc",
+          "threshold": 0.9964578203269273,
+          "eligible": 188,
+          "accepted": 148,
+          "coverage": 0.7872340425531915,
+          "invalid": 10,
+          "risk": 0.06756756756756757,
+          "structures": [
+            {
+              "structure": "ER",
+              "eligible": 188,
+              "accepted": 148,
+              "coverage": 0.7872340425531915,
+              "invalid": 10,
+              "risk": 0.06756756756756757,
+              "reference_fields": 7
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.12987012987012986,
+          "candidate_thresholds": 35,
+          "bootstrap_candidates_evaluated": 1
+        }
+      },
+      "overall": null
+    },
+    "full_contract_without_sampling": {
+      "status": "pass",
+      "condition": "full_contract_without_sampling",
+      "families": {
+        "hessian_response_shape": {
+          "status": "threshold_selected",
+          "condition": "full_contract_without_sampling",
+          "threshold": 0.4566275011141736,
+          "eligible": 1030,
+          "accepted": 1030,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "structures": [
+            {
+              "structure": "CCPs",
+              "eligible": 574,
+              "accepted": 574,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 36
+            },
+            {
+              "structure": "ER",
+              "eligible": 456,
+              "accepted": 456,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 39
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "candidate_thresholds": 456,
+          "bootstrap_candidates_evaluated": 1
+        },
+        "spectral_order": {
+          "status": "threshold_selected",
+          "condition": "full_contract_without_sampling",
+          "threshold": 0.4566275011141736,
+          "eligible": 1030,
+          "accepted": 1030,
+          "coverage": 1.0,
+          "invalid": 2,
+          "risk": 0.001941747572815534,
+          "structures": [
+            {
+              "structure": "CCPs",
+              "eligible": 574,
+              "accepted": 574,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 36
+            },
+            {
+              "structure": "ER",
+              "eligible": 456,
+              "accepted": 456,
+              "coverage": 1.0,
+              "invalid": 2,
+              "risk": 0.0043859649122807015,
+              "reference_fields": 39
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.004690431519699813,
+          "candidate_thresholds": 456,
+          "bootstrap_candidates_evaluated": 1
+        },
+        "tensor_coherence": {
+          "status": "threshold_selected",
+          "condition": "full_contract_without_sampling",
+          "threshold": 0.30956540595765564,
+          "eligible": 2575,
+          "accepted": 2228,
+          "coverage": 0.8652427184466019,
+          "invalid": 82,
+          "risk": 0.03680430879712747,
+          "structures": [
+            {
+              "structure": "CCPs",
+              "eligible": 1435,
+              "accepted": 1398,
+              "coverage": 0.9742160278745644,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 36
+            },
+            {
+              "structure": "ER",
+              "eligible": 1140,
+              "accepted": 830,
+              "coverage": 0.7280701754385965,
+              "invalid": 82,
+              "risk": 0.09879518072289156,
+              "reference_fields": 39
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.04551266062729768,
+          "candidate_thresholds": 1296,
+          "bootstrap_candidates_evaluated": 1
+        },
+        "tensor_orientation": {
+          "status": "threshold_selected",
+          "condition": "full_contract_without_sampling",
+          "threshold": 0.9964578203269273,
+          "eligible": 188,
+          "accepted": 148,
+          "coverage": 0.7872340425531915,
+          "invalid": 10,
+          "risk": 0.06756756756756757,
+          "structures": [
+            {
+              "structure": "ER",
+              "eligible": 188,
+              "accepted": 148,
+              "coverage": 0.7872340425531915,
+              "invalid": 10,
+              "risk": 0.06756756756756757,
+              "reference_fields": 7
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.12987012987012986,
+          "candidate_thresholds": 35,
+          "bootstrap_candidates_evaluated": 1
+        }
+      },
+      "overall": {
+        "eligible": 4823,
+        "accepted": 4436,
+        "coverage": 0.9197594857972217,
+        "invalid": 94,
+        "risk": 0.021190261496844005,
+        "cluster_bootstrap_risk_upper95": 0.025953663389596447
+      }
+    },
+    "full_contract_without_perturbation": {
+      "status": "pass",
+      "condition": "full_contract_without_perturbation",
+      "families": {
+        "hessian_response_shape": {
+          "status": "threshold_selected",
+          "condition": "full_contract_without_perturbation",
+          "threshold": 0.4566275011141736,
+          "eligible": 1030,
+          "accepted": 1030,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "structures": [
+            {
+              "structure": "CCPs",
+              "eligible": 574,
+              "accepted": 574,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 36
+            },
+            {
+              "structure": "ER",
+              "eligible": 456,
+              "accepted": 456,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 39
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "candidate_thresholds": 456,
+          "bootstrap_candidates_evaluated": 1
+        },
+        "spectral_order": {
+          "status": "threshold_selected",
+          "condition": "full_contract_without_perturbation",
+          "threshold": 0.4566275011141736,
+          "eligible": 1030,
+          "accepted": 1030,
+          "coverage": 1.0,
+          "invalid": 2,
+          "risk": 0.001941747572815534,
+          "structures": [
+            {
+              "structure": "CCPs",
+              "eligible": 574,
+              "accepted": 574,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 36
+            },
+            {
+              "structure": "ER",
+              "eligible": 456,
+              "accepted": 456,
+              "coverage": 1.0,
+              "invalid": 2,
+              "risk": 0.0043859649122807015,
+              "reference_fields": 39
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.004690431519699813,
+          "candidate_thresholds": 456,
+          "bootstrap_candidates_evaluated": 1
+        },
+        "tensor_coherence": {
+          "status": "threshold_selected",
+          "condition": "full_contract_without_perturbation",
+          "threshold": 0.24693006305363735,
+          "eligible": 2575,
+          "accepted": 2325,
+          "coverage": 0.9029126213592233,
+          "invalid": 91,
+          "risk": 0.03913978494623656,
+          "structures": [
+            {
+              "structure": "CCPs",
+              "eligible": 1435,
+              "accepted": 1390,
+              "coverage": 0.9686411149825784,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 36
+            },
+            {
+              "structure": "ER",
+              "eligible": 1140,
+              "accepted": 935,
+              "coverage": 0.8201754385964912,
+              "invalid": 91,
+              "risk": 0.09732620320855614,
+              "reference_fields": 39
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.0480350353479835,
+          "candidate_thresholds": 456,
+          "bootstrap_candidates_evaluated": 1
+        },
+        "tensor_orientation": {
+          "status": "threshold_selected",
+          "condition": "full_contract_without_perturbation",
+          "threshold": 0.9964578203269273,
+          "eligible": 188,
+          "accepted": 148,
+          "coverage": 0.7872340425531915,
+          "invalid": 10,
+          "risk": 0.06756756756756757,
+          "structures": [
+            {
+              "structure": "ER",
+              "eligible": 188,
+              "accepted": 148,
+              "coverage": 0.7872340425531915,
+              "invalid": 10,
+              "risk": 0.06756756756756757,
+              "reference_fields": 7
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.12987012987012986,
+          "candidate_thresholds": 35,
+          "bootstrap_candidates_evaluated": 1
+        }
+      },
+      "overall": {
+        "eligible": 4823,
+        "accepted": 4533,
+        "coverage": 0.9398714493054116,
+        "invalid": 103,
+        "risk": 0.02272225898963159,
+        "cluster_bootstrap_risk_upper95": 0.027892925695956812
+      }
+    },
+    "full_contract_without_identifiability": {
+      "status": "pass",
+      "condition": "full_contract_without_identifiability",
+      "families": {
+        "hessian_response_shape": {
+          "status": "threshold_selected",
+          "condition": "full_contract_without_identifiability",
+          "threshold": 0.4566275011141736,
+          "eligible": 1030,
+          "accepted": 1030,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "structures": [
+            {
+              "structure": "CCPs",
+              "eligible": 574,
+              "accepted": 574,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 36
+            },
+            {
+              "structure": "ER",
+              "eligible": 456,
+              "accepted": 456,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 39
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "candidate_thresholds": 456,
+          "bootstrap_candidates_evaluated": 1
+        },
+        "spectral_order": {
+          "status": "threshold_selected",
+          "condition": "full_contract_without_identifiability",
+          "threshold": 0.4566275011141736,
+          "eligible": 1030,
+          "accepted": 1030,
+          "coverage": 1.0,
+          "invalid": 2,
+          "risk": 0.001941747572815534,
+          "structures": [
+            {
+              "structure": "CCPs",
+              "eligible": 574,
+              "accepted": 574,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 36
+            },
+            {
+              "structure": "ER",
+              "eligible": 456,
+              "accepted": 456,
+              "coverage": 1.0,
+              "invalid": 2,
+              "risk": 0.0043859649122807015,
+              "reference_fields": 39
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.004690431519699813,
+          "candidate_thresholds": 456,
+          "bootstrap_candidates_evaluated": 1
+        },
+        "tensor_coherence": {
+          "status": "threshold_selected",
+          "condition": "full_contract_without_identifiability",
+          "threshold": 0.30956540595765564,
+          "eligible": 2575,
+          "accepted": 2228,
+          "coverage": 0.8652427184466019,
+          "invalid": 82,
+          "risk": 0.03680430879712747,
+          "structures": [
+            {
+              "structure": "CCPs",
+              "eligible": 1435,
+              "accepted": 1398,
+              "coverage": 0.9742160278745644,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 36
+            },
+            {
+              "structure": "ER",
+              "eligible": 1140,
+              "accepted": 830,
+              "coverage": 0.7280701754385965,
+              "invalid": 82,
+              "risk": 0.09879518072289156,
+              "reference_fields": 39
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.04551266062729768,
+          "candidate_thresholds": 1296,
+          "bootstrap_candidates_evaluated": 1
+        },
+        "tensor_orientation": {
+          "status": "threshold_selected",
+          "condition": "full_contract_without_identifiability",
+          "threshold": 0.24858369520219217,
+          "eligible": 188,
+          "accepted": 150,
+          "coverage": 0.7978723404255319,
+          "invalid": 13,
+          "risk": 0.08666666666666667,
+          "structures": [
+            {
+              "structure": "ER",
+              "eligible": 188,
+              "accepted": 150,
+              "coverage": 0.7978723404255319,
+              "invalid": 13,
+              "risk": 0.08666666666666667,
+              "reference_fields": 7
+            }
+          ],
+          "cluster_bootstrap_risk_upper95": 0.14838709677419354,
+          "candidate_thresholds": 43,
+          "bootstrap_candidates_evaluated": 1
+        }
+      },
+      "overall": {
+        "eligible": 4823,
+        "accepted": 4438,
+        "coverage": 0.9201741654571843,
+        "invalid": 97,
+        "risk": 0.02185669220369536,
+        "cluster_bootstrap_risk_upper95": 0.026687718319746322
+      }
+    }
+  },
+  "threshold_candidate": {
+    "schema_version": "nostos-family-threshold-candidate/1.0",
+    "status": "development_pass_not_yet_frozen_for_confirmation",
+    "condition": "full_contract",
+    "raw_score": "full_contract",
+    "family_map": {
+      "hessian_response_shape": [
+        "hessian_blob_curve",
+        "hessian_tube_curve"
+      ],
+      "spectral_order": [
+        "spectral_anisotropy",
+        "spectral_entropy"
+      ],
+      "tensor_coherence": [
+        "tensor_coherence"
+      ],
+      "tensor_orientation": [
+        "tensor_orientation"
+      ]
+    },
+    "thresholds": {
+      "hessian_response_shape": 0.4566275011141736,
+      "spectral_order": 0.4566275011141736,
+      "tensor_coherence": 0.30956540595765564,
+      "tensor_orientation": 0.9964578203269273
+    },
+    "structure_specific_thresholds": false,
+    "confirmation_access_authorized": false
+  },
+  "confirmation_archives_accessed": false,
+  "confirmation_access_authorized": false,
+  "claim_boundary": "Development of risk calibration for paired-acquisition agreement only; not confirmation, biological truth, acquisition-family transfer, diagnosis, clinical validity or intraoperative utility."
+}

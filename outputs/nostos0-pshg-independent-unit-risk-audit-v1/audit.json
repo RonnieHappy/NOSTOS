@@ -1,0 +1,78 @@
+{
+  "protocol_version": "nostos-pshg-independent-unit-risk-audit/1.0",
+  "audit_class": "retrospective_fixed-policy_finite-sample_audit",
+  "status": "fail",
+  "claim_boundary": "Independent-ROI silent-failure risk for the already frozen PSHG-TISS v1 computational acquisition-shift confirmation; not a prospective guarantee, instrument-transfer, tissue-mechanics, diagnosis or clinical validation.",
+  "inputs": {
+    "profile": "outputs/nostos0-pshg-acquisition-shift-v1-development/development.json",
+    "profile_sha256": "d29ecd442ccadc088da89c90ff1c5ff69f8295333ea4e1a3ca6620a44a7e1b83",
+    "rows": "outputs/nostos0-pshg-acquisition-shift-v1-confirmation/confirmation_rows.jsonl",
+    "rows_sha256": "9438248ee2c95953b94935a01bbd14689ab7d008282a99cce3084e13684d367e",
+    "confirmation": "outputs/nostos0-pshg-acquisition-shift-v1-confirmation/confirmation.json",
+    "confirmation_sha256": "7b378331343bb5fffd6ab534781154e9b057f08435977dde78970f31704fe848",
+    "protocol": "docs/NOSTOS0_PSHG_INDEPENDENT_UNIT_RISK_AUDIT_V1_PROTOCOL.md",
+    "protocol_sha256": "13fe711a0bd6f59ae41df057f64dd7cd0a165e89f79f7d335ae14f99fc6a8549"
+  },
+  "fixed_policy": {
+    "policy": "full_contract",
+    "maximum_predicted_row_risk": 0.15,
+    "risk_map": {
+      "method": "quantile_binned_jeffreys_isotonic",
+      "x_thresholds": [
+        0.17619119538704686,
+        0.18731636517399622,
+        0.2019388617760081,
+        0.22168004684993894,
+        0.2593807678845941,
+        0.5302612217872934
+      ],
+      "y_thresholds": [
+        0.00819672131147541,
+        0.00819672131147541,
+        0.040983606557377046,
+        0.07377049180327869,
+        0.28688524590163933,
+        0.8114754098360656
+      ],
+      "training_cases": 360,
+      "training_invalid": 72,
+      "bins": 6,
+      "prior_alpha": 0.5,
+      "prior_beta": 0.5
+    }
+  },
+  "row_level": {
+    "eligible": 360,
+    "accepted": 230,
+    "coverage": 0.6388888888888888,
+    "accepted_invalid": 7,
+    "observed_risk": 0.030434782608695653
+  },
+  "independent_roi_level": {
+    "eligible": 24,
+    "accepted": 24,
+    "coverage": 1.0,
+    "failing": 7,
+    "failing_roi_ids": [
+      "breast_14",
+      "breast_15",
+      "breast_22",
+      "breast_24",
+      "breast_41",
+      "breast_45",
+      "breast_5"
+    ],
+    "observed_risk": 0.2916666666666667,
+    "one_sided_95_clopper_pearson_upper": 0.4787279058719694,
+    "target_upper_bound": 0.2
+  },
+  "checks": {
+    "exact_24_confirmation_rois": true,
+    "recomputed_row_counts_match_frozen_receipt": true,
+    "row_coverage_at_least_60_percent": true,
+    "roi_coverage_at_least_60_percent": true,
+    "roi_risk_upper95_at_most_20_percent": false
+  },
+  "interpretation": "The original condition-row comparison remains valid, but the stronger independent-ROI finite-sample risk guarantee is not supported if status is fail.",
+  "content_sha256": "d08933f096bc3117c5fc7d229768733387829357dea68e632d8c1806f6d40947"
+}

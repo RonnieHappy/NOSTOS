@@ -1,0 +1,156 @@
+{
+  "protocol_version": "nostos-cartilage-ablation-analysis/1.1",
+  "status": "exploratory_weak_mask",
+  "availability": [
+    {
+      "site": "Medial",
+      "variant": "baseline_072",
+      "sections": 90,
+      "sections_with_tiles": 90,
+      "median_tiles": 138.5,
+      "median_eligible_fraction": 0.10136114660440246
+    },
+    {
+      "site": "Medial",
+      "variant": "strict_095",
+      "sections": 90,
+      "sections_with_tiles": 90,
+      "median_tiles": 110.0,
+      "median_eligible_fraction": 0.10136114660440246
+    },
+    {
+      "site": "Medial",
+      "variant": "eroded_100um",
+      "sections": 90,
+      "sections_with_tiles": 90,
+      "median_tiles": 110.5,
+      "median_eligible_fraction": 0.08404800983014646
+    },
+    {
+      "site": "Medial",
+      "variant": "eroded_250um",
+      "sections": 90,
+      "sections_with_tiles": 89,
+      "median_tiles": 80.5,
+      "median_eligible_fraction": 0.06219008427183445
+    },
+    {
+      "site": "Medial",
+      "variant": "surface_excluded_100um",
+      "sections": 90,
+      "sections_with_tiles": 90,
+      "median_tiles": 118.5,
+      "median_eligible_fraction": 0.0860917314261983
+    },
+    {
+      "site": "Medial",
+      "variant": "surface_excluded_250um",
+      "sections": 90,
+      "sections_with_tiles": 90,
+      "median_tiles": 96.0,
+      "median_eligible_fraction": 0.0682823568300864
+    },
+    {
+      "site": "Medial",
+      "variant": "void_excluded_100um",
+      "sections": 90,
+      "sections_with_tiles": 90,
+      "median_tiles": 138.5,
+      "median_eligible_fraction": 0.10136114660440246
+    },
+    {
+      "site": "Medial",
+      "variant": "internal_hole_excluded_100um",
+      "sections": 90,
+      "sections_with_tiles": 90,
+      "median_tiles": 138.5,
+      "median_eligible_fraction": 0.10136114660440246
+    },
+    {
+      "site": "Medial",
+      "variant": "extreme_dark_object_excluded_25um",
+      "sections": 90,
+      "sections_with_tiles": 90,
+      "median_tiles": 77.5,
+      "median_eligible_fraction": 0.08013131331350065
+    },
+    {
+      "site": "Lateral",
+      "variant": "baseline_072",
+      "sections": 87,
+      "sections_with_tiles": 87,
+      "median_tiles": 130.0,
+      "median_eligible_fraction": 0.085002193126612
+    },
+    {
+      "site": "Lateral",
+      "variant": "strict_095",
+      "sections": 87,
+      "sections_with_tiles": 87,
+      "median_tiles": 103.0,
+      "median_eligible_fraction": 0.085002193126612
+    },
+    {
+      "site": "Lateral",
+      "variant": "eroded_100um",
+      "sections": 87,
+      "sections_with_tiles": 87,
+      "median_tiles": 104.0,
+      "median_eligible_fraction": 0.0685366088989
+    },
+    {
+      "site": "Lateral",
+      "variant": "eroded_250um",
+      "sections": 87,
+      "sections_with_tiles": 84,
+      "median_tiles": 74.0,
+      "median_eligible_fraction": 0.0494743943940281
+    },
+    {
+      "site": "Lateral",
+      "variant": "surface_excluded_100um",
+      "sections": 87,
+      "sections_with_tiles": 87,
+      "median_tiles": 108.0,
+      "median_eligible_fraction": 0.07325275
+    },
+    {
+      "site": "Lateral",
+      "variant": "surface_excluded_250um",
+      "sections": 87,
+      "sections_with_tiles": 85,
+      "median_tiles": 79.0,
+      "median_eligible_fraction": 0.0583115879254
+    },
+    {
+      "site": "Lateral",
+      "variant": "void_excluded_100um",
+      "sections": 87,
+      "sections_with_tiles": 87,
+      "median_tiles": 130.0,
+      "median_eligible_fraction": 0.085002193126612
+    },
+    {
+      "site": "Lateral",
+      "variant": "internal_hole_excluded_100um",
+      "sections": 87,
+      "sections_with_tiles": 87,
+      "median_tiles": 130.0,
+      "median_eligible_fraction": 0.085002193126612
+    },
+    {
+      "site": "Lateral",
+      "variant": "extreme_dark_object_excluded_25um",
+      "sections": 87,
+      "sections_with_tiles": 87,
+      "median_tiles": 68.0,
+      "median_eligible_fraction": 0.0649308888888888
+    }
+  ],
+  "association_rows": 80,
+  "contrast_rows": 75,
+  "prediction_rows": 550,
+  "paired_correlation_contrasts": "participant bootstrap, 2000 draws",
+  "prediction_design": "10 repeats of participant-level 5-fold outer CV with inner RidgeCV; folds paired across families",
+  "claim_boundary": "Results localize sensitivity within proposal-defined compartments and cannot establish matrix specificity before mask review."
+}

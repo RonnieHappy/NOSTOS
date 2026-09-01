@@ -1,0 +1,41 @@
+{
+  "schema_version": "nostos-biosr-small-pilot-artifacts/5.0",
+  "created_at_utc": "2026-08-29T00:08:24Z",
+  "status": "complete_developmental_small_pilot_final_score",
+  "selection_lock": {
+    "path": "manifests/biosr_small_pilot_v5_selection_lock.json",
+    "bytes": 1187,
+    "sha256": "3ed60fa54b4e6a0b133b7da500872aadc9bfe363e8fb87aac98898e75a8aca51"
+  },
+  "shared": {
+    "protocol_version": "nostos-paired-acquisition-support/5.0",
+    "config_sha256": "711e5f4aaac8bcbeccb07bc94fb33dd3e51f5eeec2fea317a25ed0c8b66d7573",
+    "implementation_sha256": "1a33e3c67754674e2da35f69f211dec17e522ea8359fc9ae80b4d03f2b9454d1",
+    "reference_fields": 12,
+    "paired_acquisitions": 90,
+    "endpoint_cases": 1890
+  },
+  "artifacts": [
+    {
+      "structure": "CCPs",
+      "selected_cell_ids": ["Cell_001", "Cell_008", "Cell_012", "Cell_014", "Cell_015", "Cell_017"],
+      "archive_receipt": {"path": "outputs/nostos0-biosr-ccp-small-pilot-v5/archive_receipt.json", "bytes": 9831, "sha256": "8068f17af307fa78fb5e846104fd69b7474b37d4142e105b53f37b4984ef6888"},
+      "endpoint_cases": {"path": "outputs/nostos0-biosr-ccp-small-pilot-v5/endpoint_cases.jsonl", "bytes": 2834069, "sha256": "6ba9b92070b2f77b77ed25a9d6f5b2fcb677554de0c4a75ed9c181c91d59fd72"},
+      "pair_index": {"path": "outputs/nostos0-biosr-ccp-small-pilot-v5/pair_index.json", "bytes": 51701, "sha256": "1e7c7dd1efbc50c7bb0824a667ea890f0255ba1dd3198055a9d4a39c895890e6"},
+      "reference_fields": 6,
+      "paired_acquisitions": 54,
+      "endpoint_cases_count": 1134
+    },
+    {
+      "structure": "ER",
+      "selected_cell_ids": ["Cell_002", "Cell_003", "Cell_004", "Cell_008", "Cell_009", "Cell_011"],
+      "archive_receipt": {"path": "outputs/nostos0-biosr-er-small-pilot-v5/archive_receipt.json", "bytes": 9819, "sha256": "c49e668a0f2afdd2c32054272924556596f2f7bdedc575b26f6960edd19d7ea7"},
+      "endpoint_cases": {"path": "outputs/nostos0-biosr-er-small-pilot-v5/endpoint_cases.jsonl", "bytes": 1893988, "sha256": "baf745216e6678a4e840837bc40c0f7714bbbf7bdc7923c68297bc05ccbed380"},
+      "pair_index": {"path": "outputs/nostos0-biosr-er-small-pilot-v5/pair_index.json", "bytes": 35119, "sha256": "31d060f1a0ada0c0c96ad791a04fe7ea4c23bb9d977e00d7b2c9d6f8b254a47b"},
+      "reference_fields": 6,
+      "paired_acquisitions": 36,
+      "endpoint_cases_count": 756
+    }
+  ],
+  "claim_boundary": "Final developmental evidence from twelve selected fields. The next decision must use untouched threshold-calibration data; this receipt is not confirmation or clinical validation."
+}

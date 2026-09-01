@@ -1,0 +1,133 @@
+{
+  "schema_version": "nostos.heaton_shg_confirmation.v1",
+  "status": "fail",
+  "lock_sha256": "3cba5d2b79f60880e4936ab3db05f6172cf69db29f28c3889bdfd7306a03cb6a",
+  "exp15_stage_receipt_sha256": "b0a62176e4502dd636b4f11c093eea5b1f95aa8f99fab981e94986bbaae555e9",
+  "exp15_official_receipt_sha256": "5c3f218dd3466afae519b9f4aed908ba6d2c6e6bec82923e8cce480d6e3bd0af",
+  "summary": {
+    "clean_fields": 45,
+    "perturbation_endpoint_cases": 600,
+    "mice": 8,
+    "clean_correlations": {
+      "axial_resultant": 0.7802035469358185,
+      "foreground_occupancy": 0.7109354413702239,
+      "median_segment_straightness": 0.597186995943062,
+      "median_segment_length_um": 0.6067075298075748,
+      "median_local_width_um": 0.08478602205027222
+    },
+    "clean_correlation_mouse_bootstrap95": {
+      "axial_resultant": [
+        0.5451378640134359,
+        0.895238355080558
+      ],
+      "foreground_occupancy": [
+        0.5361918156519738,
+        0.8099691821910442
+      ],
+      "median_segment_straightness": [
+        0.1947943833078741,
+        0.8439258470751836
+      ],
+      "median_segment_length_um": [
+        0.3617182446462181,
+        0.7938313227555359
+      ],
+      "median_local_width_um": [
+        -0.26823716858186175,
+        0.33850923262120014
+      ]
+    },
+    "successful_endpoints": [
+      "axial_resultant",
+      "foreground_occupancy"
+    ],
+    "operating": {
+      "acquisition_qc": {
+        "eligible": 600,
+        "accepted": 120,
+        "coverage": 0.2,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "endpoint_qc": {
+        "eligible": 600,
+        "accepted": 120,
+        "coverage": 0.2,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "without_scale_consistency": {
+        "eligible": 600,
+        "accepted": 120,
+        "coverage": 0.2,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "without_threshold_consistency": {
+        "eligible": 600,
+        "accepted": 120,
+        "coverage": 0.2,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "without_nested_consistency": {
+        "eligible": 600,
+        "accepted": 120,
+        "coverage": 0.2,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "full_contract": {
+        "eligible": 600,
+        "accepted": 120,
+        "coverage": 0.2,
+        "invalid": 0,
+        "risk": 0.0
+      }
+    },
+    "matched_acquisition_qc": {
+      "accepted": 120,
+      "risk": 0.0,
+      "full_contract_risk": 0.0,
+      "risk_reduction": 0.0
+    },
+    "risk_coverage_auc": {
+      "acquisition_qc": 0.3215,
+      "endpoint_qc": 0.3349460294171545,
+      "without_scale_consistency": 0.3318028034800273,
+      "without_threshold_consistency": 0.3267768875207021,
+      "without_nested_consistency": 0.34812246919469825,
+      "full_contract": 0.32877830154452925
+    },
+    "ablation_aurc_increases": {
+      "without_scale_consistency": 0.003024501935498025,
+      "without_threshold_consistency": -0.0020014140238271416,
+      "without_nested_consistency": 0.019344167650168997
+    },
+    "clean_multiendpoint_retention": 0.0
+  },
+  "bootstrap": {
+    "draws_requested": 5000,
+    "draws_retained": 5000,
+    "full_risk_95": [
+      0.0,
+      0.0
+    ],
+    "matched_risk_reduction_vs_acquisition_qc_95": [
+      0.0,
+      0.0
+    ]
+  },
+  "success_gates": {
+    "successful_endpoint_pairs": false,
+    "successful_endpoint_cluster_lower95": true,
+    "direction_concordant_all_endpoints": true,
+    "full_coverage": false,
+    "full_risk_upper95": true,
+    "matched_risk_reduction": false,
+    "matched_risk_reduction_ci_excludes_zero": false,
+    "clean_multiendpoint_retention": false,
+    "component_ablation": true
+  },
+  "claim_boundary": "One independent in-vivo SHG acquisition-experiment confirmation of recognized collagen structural descriptors and selective technical validity; not independent-laboratory, mechanical, diagnostic, surgical, treatment-response or clinical validation."
+}

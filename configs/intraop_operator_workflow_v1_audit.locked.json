@@ -1,0 +1,35 @@
+{
+  "schema_version": "nostos-intraop-operator-workflow-audit/1.0",
+  "audit_target": "nostos-intraop-label-free-result/1.4",
+  "lock_path": "manifests/intraop_pshg_deployment_v1_4_lock.json",
+  "lock_bytes": 21119,
+  "lock_sha256": "d8f0d58cf153fad8a204160e156b238de963d13d9a827477c816acd0ddca17b9",
+  "result_path": "outputs/nostos0-intraop-operator-workflow-v1/intraop_result.json",
+  "result_bytes": 9200,
+  "result_sha256": "4bb59494121fb3cb7184c3578e9c27d4acf0a22ac9a597bfb92106336be1f9e8",
+  "source_group": "breast_36",
+  "expected_artifacts": [
+    "orientation_degrees.npy",
+    "coherence.npy",
+    "eligible.npy",
+    "source.png",
+    "orientation.png",
+    "coherence.png",
+    "support.png"
+  ],
+  "required_checks": [
+    "lock_integrity",
+    "locked_implementation_integrity",
+    "result_integrity",
+    "source_integrity",
+    "source_array_reconstruction",
+    "artifact_registry_complete",
+    "artifact_file_integrity",
+    "array_manifest_integrity",
+    "summary_reproduction",
+    "public_provenance_verified",
+    "reference_excluded_from_deployment",
+    "clinical_output_withheld",
+    "no_absolute_local_paths"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "nostos-prospective-lock/1.0",
+  "locked_at_utc": "2026-08-28T22:36:16Z",
+  "stage": "score_design_candidate_lock",
+  "access_state": {
+    "score_design": "in_progress",
+    "threshold_calibration": "sealed",
+    "confirmation_archives": "not_downloaded_not_listed_not_decoded"
+  },
+  "authorized_design_evidence_seen_before_lock": [
+    "CCPs|Cell_001",
+    "CCPs|Cell_008",
+    "CCPs|Cell_012",
+    "ER|Cell_002",
+    "ER|Cell_003",
+    "ER|Cell_004",
+    "ER|Cell_008"
+  ],
+  "files": [
+    {
+      "path": "configs/paired_acquisition_score_design_candidates_v1.locked.json",
+      "bytes": 2813,
+      "sha256": "99bf6111649086bb8cd5e92b18144a09676b4a3dc6a565eee32e2d7543f6c129"
+    },
+    {
+      "path": "docs/NOSTOS0_SCORE_DESIGN_AMENDMENT.md",
+      "bytes": 3092,
+      "sha256": "76a3bb2460465334d9b7af41d50607c3981c3c68b1c7680348bb631be554ed03"
+    }
+  ],
+  "prospective_statement": "The candidate set and deterministic selection rule were frozen while score-design execution was still in progress and before any threshold-calibration or confirmation image was accessed."
+}

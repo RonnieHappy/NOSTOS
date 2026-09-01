@@ -1,0 +1,82 @@
+{
+  "protocol_version": "nostos-paired-acquisition-support/1.0",
+  "dataset_record": "BioSR figshare 13264793 version 9",
+  "dataset_doi": "10.6084/m9.figshare.13264793.v9",
+  "reference_sampling_um": 0.0626,
+  "structures": {
+    "CCPs": {
+      "role": "development",
+      "archive_file_id": 25714583,
+      "upscaling_factor": 2
+    },
+    "ER": {
+      "role": "development",
+      "archive_file_id": 25714658,
+      "upscaling_factor": 2
+    },
+    "Microtubules": {
+      "role": "confirmation_internal",
+      "archive_file_id": 25714514,
+      "upscaling_factor": 2
+    },
+    "F-actin_linear": {
+      "role": "confirmation_internal",
+      "archive_file_id": 25944599,
+      "upscaling_factor": 2
+    },
+    "F-actin_nonlinear": {
+      "role": "confirmation_resolution_stress",
+      "archive_file_id": 25714772,
+      "upscaling_factor": 3
+    }
+  },
+  "physical_scales_um": [0.5008, 0.7512, 1.0016, 1.5024, 2.0032],
+  "minimum_samples_per_scale": 4.0,
+  "mild_input_probes": {
+    "rotation_degrees": [-3.0, 3.0],
+    "gaussian_blur_sigma_input_pixels": 0.5,
+    "translation_pixels_yx": [1, -1],
+    "contrast_gamma": [0.9, 1.1]
+  },
+  "reference_eligibility": {
+    "minimum_tensor_coherence": 0.15,
+    "maximum_reference_orientation_probe_drift_degrees": 5.0,
+    "maximum_reference_scalar_probe_drift": 0.1,
+    "minimum_normalized_curve_energy": 1e-06
+  },
+  "invalidity_tolerances": {
+    "tensor_orientation_degrees": 10.0,
+    "tensor_coherence_absolute": 0.15,
+    "spectral_anisotropy_absolute": 0.15,
+    "spectral_entropy_absolute": 0.1,
+    "spectral_scale_relative": 0.25,
+    "normalized_response_curve_distance": 0.25,
+    "winning_scale_log2_absolute": 0.5,
+    "normalized_variogram_curve_distance": 0.25,
+    "variogram_range_relative": 0.5
+  },
+  "development_partition": {
+    "method": "sha256('BioSR-v9|' + structure + '|' + reference_group_id) first_uint64 modulo 4",
+    "score_design_remainders": [0, 1],
+    "threshold_calibration_remainders": [2, 3]
+  },
+  "target_selective_risk": 0.1,
+  "maximum_cluster_bootstrap_risk_upper95": 0.15,
+  "minimum_overall_confirmation_coverage": 0.8,
+  "minimum_per_structure_endpoint_coverage": 0.7,
+  "minimum_aurc_reduction_fraction": 0.2,
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 26082801,
+  "comparators": [
+    "always_emit",
+    "conventional_acquisition_qc",
+    "optical_sampling_only",
+    "perturbation_stability_only",
+    "full_contract_without_qc",
+    "full_contract_without_sampling",
+    "full_contract_without_perturbation",
+    "full_contract_without_cross_scale_agreement"
+  ],
+  "confirmation_access_rule": "No confirmation archive may be listed, extracted, decoded, summarized, or visualized until the development score formula and acceptance threshold receipt has been written and SHA-256 locked.",
+  "claim_boundary": "Paired-acquisition support for predeclared structural measurements relative to registered high-resolution references; not image restoration, biological phenotype inference, diagnosis, clinical validity, or proof that the reference acquisition is itself ground truth biology."
+}

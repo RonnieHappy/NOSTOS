@@ -1,0 +1,644 @@
+{
+  "schema_version": "nostos.heaton_shg_confirmation_lock.v1",
+  "status": "locked_confirmation_authorized",
+  "protocol_path": "<USER_ROOT>/OneDrive/NOSTOS/docs/NOSTOS0_HEATON_IN_VIVO_SHG_PROTOCOL.md",
+  "protocol_sha256": "d0a67f07d8d8f6e72ef093aea98fb6b3a77475ec40314499cbc06ee227d9b04d",
+  "config_path": "<USER_ROOT>/OneDrive/NOSTOS/configs/heaton_in_vivo_shg_v1.prelock.json",
+  "config_sha256": "f69cfc3f7b4ffbc8471969b26ef304656bf9dfb16d996751dd6eb02996328c6c",
+  "adapter_development_path": "<USER_ROOT>/OneDrive/NOSTOS/outputs/nostos0-heaton-in-vivo-shg-v1-development",
+  "adapter_development_sha256": "42766834c38e85b682b4db419cc5168b03ee9416792d2925afdf2fe67f1a29e4",
+  "exp10_stage_receipt_sha256": "b76f8a506152a924de74fc830458d932bca46fbf0d39d8da8061dc2a44327f32",
+  "exp10_official_receipt_sha256": "fc8e2cb6c6fdb34fc73a32835482c37898662958b588089917e57f5dabc47378",
+  "development_summary_path": "<USER_ROOT>/OneDrive/NOSTOS/outputs/nostos0-heaton-in-vivo-shg-v1-risk-development/development_summary.json",
+  "development_summary_sha256": "c11bcabb86b2b78c99cabfbed8a0d8f056b88236f38dff42e2d7c4a46f5030a3",
+  "development_clean_rows_sha256": "edb8a7ba490b5f37e795adb33ce3566285a12f3c0234adae76c91c16bb91de6b",
+  "development_perturbation_rows_sha256": "4f6903587aa24bc1b13e46bd79cf0eb2e7712db530fd423680da2ea3a15ac628",
+  "selected_adapter": {
+    "background_opening_radius_um": 23.44,
+    "ridge_scales_um": [
+      1.172,
+      2.344,
+      4.688
+    ],
+    "foreground_quantile": 0.75,
+    "minimum_component_length_um": 5.0
+  },
+  "denominator_floors": {
+    "axial_resultant": 0.1065,
+    "foreground_occupancy": 0.44244861602783203,
+    "median_segment_straightness": 0.9154777500000001,
+    "median_segment_length_um": 26.021139549999997,
+    "median_local_width_um": 2.154702955
+  },
+  "risk_maps": {
+    "acquisition_qc": {
+      "axial_resultant": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.12647562561629727,
+          0.7754321735191987
+        ],
+        "y_thresholds": [
+          0.5793650793650794,
+          0.5793650793650794
+        ],
+        "training_cases": 120,
+        "training_invalid": 70,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "foreground_occupancy": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.12647562561629727,
+          0.7754321735191987
+        ],
+        "y_thresholds": [
+          0.976190476190476,
+          0.976190476190476
+        ],
+        "training_cases": 120,
+        "training_invalid": 120,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "median_segment_straightness": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.12647562561629727,
+          0.7754321735191987
+        ],
+        "y_thresholds": [
+          0.023809523809523805,
+          0.023809523809523805
+        ],
+        "training_cases": 120,
+        "training_invalid": 0,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "median_segment_length_um": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.12647562561629727,
+          0.7754321735191987
+        ],
+        "y_thresholds": [
+          0.976190476190476,
+          0.976190476190476
+        ],
+        "training_cases": 120,
+        "training_invalid": 120,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "median_local_width_um": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.12647562561629727,
+          0.7754321735191987
+        ],
+        "y_thresholds": [
+          0.7698412698412699,
+          0.7698412698412699
+        ],
+        "training_cases": 120,
+        "training_invalid": 94,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      }
+    },
+    "endpoint_qc": {
+      "axial_resultant": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.24745619005496441,
+          0.25778816592857723,
+          0.792886845663484
+        ],
+        "y_thresholds": [
+          0.5476190476190477,
+          0.5859231601731603,
+          0.5859231601731603
+        ],
+        "training_cases": 120,
+        "training_invalid": 70,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "foreground_occupancy": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.24745619005496441,
+          0.26400028874736675,
+          0.2708781228970497,
+          0.792886845663484
+        ],
+        "y_thresholds": [
+          0.9761904761904762,
+          0.9761904761904762,
+          0.97619227994228,
+          0.97619227994228
+        ],
+        "training_cases": 120,
+        "training_invalid": 120,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "median_segment_straightness": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.24745619005496441,
+          0.2708781228970497,
+          0.34759660951437554,
+          0.792886845663484
+        ],
+        "y_thresholds": [
+          0.02352894019560686,
+          0.02352894019560686,
+          0.023809523809523808,
+          0.025
+        ],
+        "training_cases": 120,
+        "training_invalid": 0,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "median_segment_length_um": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.24745619005496441,
+          0.26400028874736675,
+          0.2708781228970497,
+          0.792886845663484
+        ],
+        "y_thresholds": [
+          0.9761904761904762,
+          0.9761904761904762,
+          0.97619227994228,
+          0.97619227994228
+        ],
+        "training_cases": 120,
+        "training_invalid": 120,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "median_local_width_um": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.24745619005496441,
+          0.25778816592857723,
+          0.26400028874736675,
+          0.792886845663484
+        ],
+        "y_thresholds": [
+          0.6428571428571429,
+          0.6428571428571429,
+          0.8335430194805195,
+          0.8335430194805195
+        ],
+        "training_cases": 120,
+        "training_invalid": 94,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      }
+    },
+    "without_scale_consistency": {
+      "axial_resultant": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.8050221822471524,
+          0.8209255469566262,
+          1.3352628210108168,
+          1.9798336669824919
+        ],
+        "y_thresholds": [
+          0.2619047619047619,
+          0.5969547693685624,
+          0.5969547693685624,
+          0.9615384615384616
+        ],
+        "training_cases": 120,
+        "training_invalid": 70,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "foreground_occupancy": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.8050221822471524,
+          0.916579414808465,
+          1.3352628210108168,
+          1.9798336669824919
+        ],
+        "y_thresholds": [
+          0.976190476190476,
+          0.976190476190476,
+          0.976392572944297,
+          0.976392572944297
+        ],
+        "training_cases": 120,
+        "training_invalid": 120,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "median_segment_straightness": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.8050221822471524,
+          1.3352628210108168,
+          1.9798336669824919
+        ],
+        "y_thresholds": [
+          0.022106671531958888,
+          0.022106671531958888,
+          0.038461538461538464
+        ],
+        "training_cases": 120,
+        "training_invalid": 0,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "median_segment_length_um": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.8050221822471524,
+          0.916579414808465,
+          1.3352628210108168,
+          1.9798336669824919
+        ],
+        "y_thresholds": [
+          0.976190476190476,
+          0.976190476190476,
+          0.976392572944297,
+          0.976392572944297
+        ],
+        "training_cases": 120,
+        "training_invalid": 120,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "median_local_width_um": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.8050221822471524,
+          0.8209255469566262,
+          1.9798336669824919
+        ],
+        "y_thresholds": [
+          0.6904761904761905,
+          0.786896551724138,
+          0.786896551724138
+        ],
+        "training_cases": 120,
+        "training_invalid": 94,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      }
+    },
+    "without_threshold_consistency": {
+      "axial_resultant": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.7266064735153308,
+          1.3615883043354349,
+          1.6280338969077857,
+          1.7816246707251504,
+          2.1011398908972505
+        ],
+        "y_thresholds": [
+          0.4365079365079365,
+          0.4365079365079365,
+          0.6428571428571429,
+          0.6904761904761905,
+          0.8333333333333334
+        ],
+        "training_cases": 120,
+        "training_invalid": 70,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "foreground_occupancy": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.7266064735153308,
+          2.1011398908972505
+        ],
+        "y_thresholds": [
+          0.976190476190476,
+          0.976190476190476
+        ],
+        "training_cases": 120,
+        "training_invalid": 120,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "median_segment_straightness": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.7266064735153308,
+          2.1011398908972505
+        ],
+        "y_thresholds": [
+          0.023809523809523805,
+          0.023809523809523805
+        ],
+        "training_cases": 120,
+        "training_invalid": 0,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "median_segment_length_um": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.7266064735153308,
+          2.1011398908972505
+        ],
+        "y_thresholds": [
+          0.976190476190476,
+          0.976190476190476
+        ],
+        "training_cases": 120,
+        "training_invalid": 120,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "median_local_width_um": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.7266064735153308,
+          1.092140376475689,
+          1.3615883043354349,
+          1.6280338969077857,
+          2.1011398908972505
+        ],
+        "y_thresholds": [
+          0.5714285714285714,
+          0.5714285714285714,
+          0.8333333333333334,
+          0.880952380952381,
+          0.880952380952381
+        ],
+        "training_cases": 120,
+        "training_invalid": 94,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      }
+    },
+    "without_nested_consistency": {
+      "axial_resultant": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.8301002773174935,
+          1.09177815987417,
+          1.2799294737287112,
+          1.5532179851171195,
+          1.737134037021729,
+          1.9662103842650456
+        ],
+        "y_thresholds": [
+          0.5238095238095238,
+          0.5238095238095238,
+          0.5348168092070531,
+          0.5348168092070531,
+          0.5952380952380952,
+          0.775
+        ],
+        "training_cases": 120,
+        "training_invalid": 70,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "foreground_occupancy": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.8301002773174935,
+          1.2799294737287112,
+          1.5532179851171195,
+          1.9662103842650456
+        ],
+        "y_thresholds": [
+          0.9761904761904762,
+          0.9761904761904762,
+          0.97619227994228,
+          0.97619227994228
+        ],
+        "training_cases": 120,
+        "training_invalid": 120,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "median_segment_straightness": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.8301002773174935,
+          1.5532179851171195,
+          1.737134037021729,
+          1.9662103842650456
+        ],
+        "y_thresholds": [
+          0.02352894019560686,
+          0.02352894019560686,
+          0.023809523809523808,
+          0.025
+        ],
+        "training_cases": 120,
+        "training_invalid": 0,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "median_segment_length_um": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.8301002773174935,
+          1.2799294737287112,
+          1.5532179851171195,
+          1.9662103842650456
+        ],
+        "y_thresholds": [
+          0.9761904761904762,
+          0.9761904761904762,
+          0.97619227994228,
+          0.97619227994228
+        ],
+        "training_cases": 120,
+        "training_invalid": 120,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "median_local_width_um": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.8301002773174935,
+          1.09177815987417,
+          1.2799294737287112,
+          1.5532179851171195,
+          1.737134037021729,
+          1.9662103842650456
+        ],
+        "y_thresholds": [
+          0.40476190476190477,
+          0.5,
+          0.8333333333333334,
+          0.9318181818181818,
+          0.9756105006105006,
+          0.9756105006105006
+        ],
+        "training_cases": 120,
+        "training_invalid": 94,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      }
+    },
+    "full_contract": {
+      "axial_resultant": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.8991616187990072,
+          1.4561902426313562,
+          1.6544184879265043,
+          1.8158083643902778,
+          2.168916481955551
+        ],
+        "y_thresholds": [
+          0.43164210128495845,
+          0.43164210128495845,
+          0.6904761904761905,
+          0.7608695652173914,
+          0.78125
+        ],
+        "training_cases": 120,
+        "training_invalid": 70,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "foreground_occupancy": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.8991616187990072,
+          1.1632513855952709,
+          1.4561902426313562,
+          2.168916481955551
+        ],
+        "y_thresholds": [
+          0.976190476190476,
+          0.976190476190476,
+          0.9762203998447205,
+          0.9762203998447205
+        ],
+        "training_cases": 120,
+        "training_invalid": 120,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "median_segment_straightness": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.8991616187990072,
+          1.4561902426313562,
+          1.6544184879265043,
+          1.8158083643902778,
+          2.168916481955551
+        ],
+        "y_thresholds": [
+          0.02272297808012094,
+          0.02272297808012094,
+          0.022725032041802228,
+          0.022725032041802228,
+          0.03125
+        ],
+        "training_cases": 120,
+        "training_invalid": 0,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "median_segment_length_um": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.8991616187990072,
+          1.1632513855952709,
+          1.4561902426313562,
+          2.168916481955551
+        ],
+        "y_thresholds": [
+          0.976190476190476,
+          0.976190476190476,
+          0.9762203998447205,
+          0.9762203998447205
+        ],
+        "training_cases": 120,
+        "training_invalid": 120,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      },
+      "median_local_width_um": {
+        "method": "quantile_binned_jeffreys_isotonic",
+        "x_thresholds": [
+          0.8991616187990072,
+          1.1632513855952709,
+          1.4561902426313562,
+          2.168916481955551
+        ],
+        "y_thresholds": [
+          0.4523809523809524,
+          0.5952380952380952,
+          0.8936909614389232,
+          0.8936909614389232
+        ],
+        "training_cases": 120,
+        "training_invalid": 94,
+        "bins": 6,
+        "prior_alpha": 0.5,
+        "prior_beta": 0.5
+      }
+    }
+  },
+  "maximum_predicted_risk": 0.15,
+  "success_gates": {
+    "minimum_successful_endpoint_pairs": 3,
+    "minimum_clean_spearman_rho": 0.7,
+    "minimum_cluster_bootstrap_lower95_rho": 0.5,
+    "minimum_full_coverage": 0.5,
+    "maximum_full_risk_upper95": 0.2,
+    "minimum_matched_risk_reduction": 0.05,
+    "matched_risk_reduction_ci_excludes_zero": true,
+    "minimum_clean_multiendpoint_retention": 0.8,
+    "minimum_ablation_aurc_increase": 0.01
+  },
+  "confirmation": {
+    "experiment": "Exp15",
+    "fields": 45,
+    "mice": 8,
+    "pixels_opened_at_lock": false
+  },
+  "claim_boundary": "One independent in-vivo SHG acquisition-experiment confirmation of recognized collagen structural descriptors and selective technical validity; not independent-laboratory, mechanical, diagnostic, surgical, treatment-response or clinical validation."
+}

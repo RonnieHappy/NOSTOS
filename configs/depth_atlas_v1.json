@@ -1,0 +1,11 @@
+{
+  "tile_size_um": 440.0,
+  "stride_fraction": 0.5,
+  "minimum_cartilage_fraction": 0.72,
+  "boundary_exclusion_um": 50.0,
+  "depth_edges": [0.0, 0.1, 0.3, 0.7, 1.0],
+  "minimum_tiles_per_band": 3,
+  "angular_bins": 36,
+  "low_frequency_fraction": 0.02,
+  "high_frequency_fraction": 0.9
+}

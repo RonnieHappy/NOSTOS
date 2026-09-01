@@ -1,0 +1,356 @@
+{
+  "protocol_version": "nostos-bone-contract-orientation/1.0",
+  "status": "confirmation_complete",
+  "config_sha256": "ccca344f5381c48edf4dbdc1dcbed652733fda3204fc95af83310c0f80bf58b6",
+  "dataset": "figshare-20765659",
+  "independent_units": 12,
+  "rows": 576,
+  "summary": {
+    "SHG": {
+      "always_emit": {
+        "tiles": 288,
+        "accepted": 288,
+        "coverage": 1.0,
+        "silent_invalid": 102,
+        "silent_invalid_risk": 0.3541666666666667
+      },
+      "endpoint_qc": {
+        "tiles": 288,
+        "accepted": 201,
+        "coverage": 0.6979166666666666,
+        "silent_invalid": 98,
+        "silent_invalid_risk": 0.48756218905472637
+      },
+      "partial_no_stability": {
+        "tiles": 288,
+        "accepted": 201,
+        "coverage": 0.6979166666666666,
+        "silent_invalid": 98,
+        "silent_invalid_risk": 0.48756218905472637
+      },
+      "partial_no_interscale": {
+        "tiles": 288,
+        "accepted": 103,
+        "coverage": 0.3576388888888889,
+        "silent_invalid": 0,
+        "silent_invalid_risk": 0.0
+      },
+      "full_contract": {
+        "tiles": 288,
+        "accepted": 103,
+        "coverage": 0.3576388888888889,
+        "silent_invalid": 0,
+        "silent_invalid_risk": 0.0
+      }
+    },
+    "TPF": {
+      "always_emit": {
+        "tiles": 288,
+        "accepted": 0,
+        "coverage": 0.0,
+        "silent_invalid": 0,
+        "silent_invalid_risk": null
+      },
+      "endpoint_qc": {
+        "tiles": 288,
+        "accepted": 0,
+        "coverage": 0.0,
+        "silent_invalid": 0,
+        "silent_invalid_risk": null
+      },
+      "partial_no_stability": {
+        "tiles": 288,
+        "accepted": 0,
+        "coverage": 0.0,
+        "silent_invalid": 0,
+        "silent_invalid_risk": null
+      },
+      "partial_no_interscale": {
+        "tiles": 288,
+        "accepted": 0,
+        "coverage": 0.0,
+        "silent_invalid": 0,
+        "silent_invalid_risk": null
+      },
+      "full_contract": {
+        "tiles": 288,
+        "accepted": 0,
+        "coverage": 0.0,
+        "silent_invalid": 0,
+        "silent_invalid_risk": null
+      }
+    }
+  },
+  "mouse_level": {
+    "AA6": {
+      "always_emit": {
+        "coverage": 1.0,
+        "risk": 0.3333333333333333
+      },
+      "endpoint_qc": {
+        "coverage": 0.75,
+        "risk": 0.3888888888888889
+      },
+      "partial_no_stability": {
+        "coverage": 0.75,
+        "risk": 0.3888888888888889
+      },
+      "partial_no_interscale": {
+        "coverage": 0.4583333333333333,
+        "risk": 0.0
+      },
+      "full_contract": {
+        "coverage": 0.4583333333333333,
+        "risk": 0.0
+      }
+    },
+    "AA7.7": {
+      "always_emit": {
+        "coverage": 1.0,
+        "risk": 0.3333333333333333
+      },
+      "endpoint_qc": {
+        "coverage": 0.5416666666666666,
+        "risk": 0.5384615384615384
+      },
+      "partial_no_stability": {
+        "coverage": 0.5416666666666666,
+        "risk": 0.5384615384615384
+      },
+      "partial_no_interscale": {
+        "coverage": 0.25,
+        "risk": 0.0
+      },
+      "full_contract": {
+        "coverage": 0.25,
+        "risk": 0.0
+      }
+    },
+    "AB1": {
+      "always_emit": {
+        "coverage": 1.0,
+        "risk": 0.5416666666666666
+      },
+      "endpoint_qc": {
+        "coverage": 0.75,
+        "risk": 0.7222222222222222
+      },
+      "partial_no_stability": {
+        "coverage": 0.75,
+        "risk": 0.7222222222222222
+      },
+      "partial_no_interscale": {
+        "coverage": 0.20833333333333334,
+        "risk": 0.0
+      },
+      "full_contract": {
+        "coverage": 0.20833333333333334,
+        "risk": 0.0
+      }
+    },
+    "AB6.7": {
+      "always_emit": {
+        "coverage": 1.0,
+        "risk": 0.375
+      },
+      "endpoint_qc": {
+        "coverage": 0.7916666666666666,
+        "risk": 0.47368421052631576
+      },
+      "partial_no_stability": {
+        "coverage": 0.7916666666666666,
+        "risk": 0.47368421052631576
+      },
+      "partial_no_interscale": {
+        "coverage": 0.4166666666666667,
+        "risk": 0.0
+      },
+      "full_contract": {
+        "coverage": 0.4166666666666667,
+        "risk": 0.0
+      }
+    },
+    "AE5.7": {
+      "always_emit": {
+        "coverage": 1.0,
+        "risk": 0.125
+      },
+      "endpoint_qc": {
+        "coverage": 0.5833333333333334,
+        "risk": 0.21428571428571427
+      },
+      "partial_no_stability": {
+        "coverage": 0.5833333333333334,
+        "risk": 0.21428571428571427
+      },
+      "partial_no_interscale": {
+        "coverage": 0.4583333333333333,
+        "risk": 0.0
+      },
+      "full_contract": {
+        "coverage": 0.4583333333333333,
+        "risk": 0.0
+      }
+    },
+    "AE6.7": {
+      "always_emit": {
+        "coverage": 1.0,
+        "risk": 0.3333333333333333
+      },
+      "endpoint_qc": {
+        "coverage": 0.625,
+        "risk": 0.5333333333333333
+      },
+      "partial_no_stability": {
+        "coverage": 0.625,
+        "risk": 0.5333333333333333
+      },
+      "partial_no_interscale": {
+        "coverage": 0.2916666666666667,
+        "risk": 0.0
+      },
+      "full_contract": {
+        "coverage": 0.2916666666666667,
+        "risk": 0.0
+      }
+    },
+    "AF5": {
+      "always_emit": {
+        "coverage": 1.0,
+        "risk": 0.5
+      },
+      "endpoint_qc": {
+        "coverage": 0.7083333333333334,
+        "risk": 0.6470588235294118
+      },
+      "partial_no_stability": {
+        "coverage": 0.7083333333333334,
+        "risk": 0.6470588235294118
+      },
+      "partial_no_interscale": {
+        "coverage": 0.25,
+        "risk": 0.0
+      },
+      "full_contract": {
+        "coverage": 0.25,
+        "risk": 0.0
+      }
+    },
+    "AF6": {
+      "always_emit": {
+        "coverage": 1.0,
+        "risk": 0.20833333333333334
+      },
+      "endpoint_qc": {
+        "coverage": 0.625,
+        "risk": 0.3333333333333333
+      },
+      "partial_no_stability": {
+        "coverage": 0.625,
+        "risk": 0.3333333333333333
+      },
+      "partial_no_interscale": {
+        "coverage": 0.4166666666666667,
+        "risk": 0.0
+      },
+      "full_contract": {
+        "coverage": 0.4166666666666667,
+        "risk": 0.0
+      }
+    },
+    "AJ1": {
+      "always_emit": {
+        "coverage": 1.0,
+        "risk": 0.25
+      },
+      "endpoint_qc": {
+        "coverage": 0.75,
+        "risk": 0.2777777777777778
+      },
+      "partial_no_stability": {
+        "coverage": 0.75,
+        "risk": 0.2777777777777778
+      },
+      "partial_no_interscale": {
+        "coverage": 0.5416666666666666,
+        "risk": 0.0
+      },
+      "full_contract": {
+        "coverage": 0.5416666666666666,
+        "risk": 0.0
+      }
+    },
+    "AJ3": {
+      "always_emit": {
+        "coverage": 1.0,
+        "risk": 0.625
+      },
+      "endpoint_qc": {
+        "coverage": 0.8333333333333334,
+        "risk": 0.75
+      },
+      "partial_no_stability": {
+        "coverage": 0.8333333333333334,
+        "risk": 0.75
+      },
+      "partial_no_interscale": {
+        "coverage": 0.20833333333333334,
+        "risk": 0.0
+      },
+      "full_contract": {
+        "coverage": 0.20833333333333334,
+        "risk": 0.0
+      }
+    },
+    "AO1": {
+      "always_emit": {
+        "coverage": 1.0,
+        "risk": 0.2916666666666667
+      },
+      "endpoint_qc": {
+        "coverage": 0.7083333333333334,
+        "risk": 0.4117647058823529
+      },
+      "partial_no_stability": {
+        "coverage": 0.7083333333333334,
+        "risk": 0.4117647058823529
+      },
+      "partial_no_interscale": {
+        "coverage": 0.4166666666666667,
+        "risk": 0.0
+      },
+      "full_contract": {
+        "coverage": 0.4166666666666667,
+        "risk": 0.0
+      }
+    },
+    "AO2": {
+      "always_emit": {
+        "coverage": 1.0,
+        "risk": 0.3333333333333333
+      },
+      "endpoint_qc": {
+        "coverage": 0.7083333333333334,
+        "risk": 0.47058823529411764
+      },
+      "partial_no_stability": {
+        "coverage": 0.7083333333333334,
+        "risk": 0.47058823529411764
+      },
+      "partial_no_interscale": {
+        "coverage": 0.375,
+        "risk": 0.0
+      },
+      "full_contract": {
+        "coverage": 0.375,
+        "risk": 0.0
+      }
+    }
+  },
+  "gates": {
+    "shg_full_coverage_at_least_0_70": false,
+    "shg_full_risk_below_always_emit": true,
+    "tpf_orientation_abstains": true
+  },
+  "claim_boundary": "Pixel-scale SHG orientation stability only; physical scale is unavailable in the deposited TIFF metadata. TPF is an abstention control for collagen-orientation output."
+}

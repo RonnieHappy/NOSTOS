@@ -1,0 +1,113 @@
+participant_id,specimen_id,site,stain,split,image_path,pixel_size_um
+031,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P031\Medial\PLM\S58.tif,5.16
+031,Medial_HE,Medial,HE,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P031\Medial\HE\HE 58 section 1.tif,1.72
+031,Medial_SafO,Medial,SafO,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P031\Medial\SafO\SafO 58 section 2.tif,1.72
+013,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P013\Medial\PLM\S26.tif,5.16
+013,Lateral_HE,Lateral,HE,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P013\Lateral\HE\HE-25, section 1.tif",1.72
+013,Lateral_SafO,Lateral,SafO,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P013\Lateral\SafO\SafO-25, section 2.tif",1.72
+027,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P027\Medial\PLM\S50.tif,5.16
+027,Medial_SafO,Medial,SafO,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P027\Medial\SafO\SafO 50 section 2.tif,1.72
+027,Medial_HE,Medial,HE,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P027\Medial\HE\HE 50 section 1.tif,1.72
+050,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P050\Medial\PLM\S96.tif,5.16
+050,Lateral_SafO,Lateral,SafO,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P050\Lateral\SafO\SafO 95 section 2.tif,1.72
+050,Lateral_HE,Lateral,HE,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P050\Lateral\HE\HE 95 section 1.tif,1.72
+087,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P087\Medial\PLM\S170.tif,5.16
+087,Medial_HE,Medial,HE,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P087\Medial\HE\HE-170, section 1.tif",1.72
+087,Medial_SafO,Medial,SafO,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P087\Medial\SafO\SafO-170, section 2.tif",1.72
+022,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P022\Medial\PLM\S42.tif,5.16
+022,Lateral_HE,Lateral,HE,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P022\Lateral\HE\HE 41, section 1.tif",1.72
+022,Lateral_SafO,Lateral,SafO,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P022\Lateral\SafO\SafO-41, section 2.tif",1.72
+048,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P048\Medial\PLM\S92.tif,5.16
+048,Medial_SafO,Medial,SafO,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P048\Medial\SafO\SafO 92 section 2.tif,1.72
+048,Medial_HE,Medial,HE,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P048\Medial\HE\HE 92 section 1.tif,1.72
+059,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P059\Medial\PLM\S114.tif,5.16
+059,Lateral_SafO,Lateral,SafO,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P059\Lateral\SafO\SafO 113, section 2.tif",1.72
+059,Lateral_HE,Lateral,HE,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P059\Lateral\HE\HE 113, section 1.tif",1.72
+089,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P089\Medial\PLM\S174.tif,5.16
+089,Medial_HE,Medial,HE,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P089\Medial\HE\HE-174, section 1.tif",1.72
+089,Medial_SafO,Medial,SafO,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P089\Medial\SafO\SafO-174, section 2.tif",1.72
+005,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P005\Medial\PLM\S10.tif,5.16
+005,Lateral_HE,Lateral,HE,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P005\Lateral\HE\HE-9, section 1.tif",1.72
+005,Lateral_SafO,Lateral,SafO,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P005\Lateral\SafO\SafO-9, section 2.tif",1.72
+029,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P029\Medial\PLM\S54.tif,5.16
+029,Medial_SafO,Medial,SafO,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P029\Medial\SafO\SafO 54 section 2.tif,1.72
+029,Medial_HE,Medial,HE,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P029\Medial\HE\HE 54 section 1.tif,1.72
+002,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P002\Medial\PLM\S4.tif,5.16
+002,Lateral_SafO,Lateral,SafO,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P002\Lateral\SafO\SafO3, section 2.tif",1.72
+002,Lateral_HE,Lateral,HE,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P002\Lateral\HE\HE3, section 1.tif",1.72
+018,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P018\Medial\PLM\S34.tif,5.16
+018,Medial_HE,Medial,HE,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P018\Medial\HE\HE 34, section 1.tif",1.72
+018,Medial_SafO,Medial,SafO,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P018\Medial\SafO\SafO-34, section 2.tif",1.72
+049,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P049\Medial\PLM\S94.tif,5.16
+049,Lateral_HE,Lateral,HE,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P049\Lateral\HE\HE 93 section 1.tif,1.72
+049,Lateral_SafO,Lateral,SafO,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P049\Lateral\SafO\SafO 93 section 2.tif,1.72
+066,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P066\Medial\PLM\S128.tif,5.16
+066,Medial_SafO,Medial,SafO,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P066\Medial\SafO\SafO 128, section 2.tif",1.72
+066,Medial_HE,Medial,HE,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P066\Medial\HE\HE 128, section 1.tif",1.72
+069,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P069\Medial\PLM\S134.tif,5.16
+069,Lateral_SafO,Lateral,SafO,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P069\Lateral\SafO\SafO 133, section 2.tif",1.72
+069,Lateral_HE,Lateral,HE,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P069\Lateral\HE\HE 133, section 1.tif",1.72
+076,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P076\Medial\PLM\S148.tif,5.16
+076,Medial_HE,Medial,HE,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P076\Medial\HE\HE-148, section 1.tif",1.72
+076,Medial_SafO,Medial,SafO,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P076\Medial\SafO\SafO-148, section 2.tif",1.72
+082,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P082\Medial\PLM\S160.tif,5.16
+082,Lateral_HE,Lateral,HE,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P082\Lateral\HE\HE-159, section 1.tif",1.72
+082,Lateral_SafO,Lateral,SafO,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P082\Lateral\SafO\SafO-159, section 2.tif",1.72
+088,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P088\Medial\PLM\S172.tif,5.16
+088,Medial_SafO,Medial,SafO,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P088\Medial\SafO\SafO-172, section 2.tif",1.72
+088,Medial_HE,Medial,HE,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P088\Medial\HE\HE-172, section 1.tif",1.72
+092,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P092\Medial\PLM\S180.tif,5.16
+092,Lateral_SafO,Lateral,SafO,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P092\Lateral\SafO\SafO-179, section 2.tif",1.72
+092,Lateral_HE,Lateral,HE,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P092\Lateral\HE\HE-179, section 1.tif",1.72
+054,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P054\Medial\PLM\S104.tif,5.16
+054,Medial_HE,Medial,HE,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P054\Medial\HE\HE 104, section 1.tif",1.72
+054,Medial_SafO,Medial,SafO,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P054\Medial\SafO\SafO 104, section 2.tif",1.72
+068,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P068\Medial\PLM\S132.tif,5.16
+068,Lateral_HE,Lateral,HE,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P068\Lateral\HE\HE 131, section 1.tif",1.72
+068,Lateral_SafO,Lateral,SafO,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P068\Lateral\SafO\SafO 131, section 2.tif",1.72
+080,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P080\Medial\PLM\S156.tif,5.16
+080,Medial_SafO,Medial,SafO,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P080\Medial\SafO\SafO-156, section 2.tif",1.72
+080,Medial_HE,Medial,HE,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P080\Medial\HE\HE-156, section 1.tif",1.72
+090,Medial_PLM,Medial,PLM,train,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P090\Medial\PLM\S176.tif,5.16
+090,Lateral_SafO,Lateral,SafO,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P090\Lateral\SafO\SafO-175, section 2.tif",1.72
+090,Lateral_HE,Lateral,HE,train,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P090\Lateral\HE\HE-175, section 1.tif",1.72
+006,Medial_HE,Medial,HE,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P006\Medial\HE\HE12, section 1.tif",1.72
+006,Lateral_HE,Lateral,HE,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P006\Lateral\HE\HE 11, section 1.tif",1.72
+006,Medial_SafO,Medial,SafO,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P006\Medial\SafO\SafO12, section 2.tif",1.72
+006,Lateral_SafO,Lateral,SafO,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P006\Lateral\SafO\SafO-11, section 2.tif",1.72
+006,Medial_PLM,Medial,PLM,validation,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P006\Medial\PLM\S12.tif,5.16
+008,Medial_HE,Medial,HE,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P008\Medial\HE\HE-16, section 1.tif",1.72
+008,Lateral_HE,Lateral,HE,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P008\Lateral\HE\HE15, section 1.tif",1.72
+008,Medial_SafO,Medial,SafO,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P008\Medial\SafO\SafO-16, section 2.tif",1.72
+008,Lateral_SafO,Lateral,SafO,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P008\Lateral\SafO\SafO15, section 2.tif",1.72
+008,Medial_PLM,Medial,PLM,validation,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P008\Medial\PLM\S16.tif,5.16
+007,Medial_HE,Medial,HE,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P007\Medial\HE\HE-14, section 1.tif",1.72
+007,Lateral_HE,Lateral,HE,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P007\Lateral\HE\HE-13, section 1.tif",1.72
+007,Medial_SafO,Medial,SafO,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P007\Medial\SafO\SafO-14, section 2.tif",1.72
+007,Lateral_SafO,Lateral,SafO,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P007\Lateral\SafO\SafO-13, section 2.tif",1.72
+007,Medial_PLM,Medial,PLM,validation,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P007\Medial\PLM\S14.tif,5.16
+038,Medial_HE,Medial,HE,validation,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P038\Medial\HE\HE 72 section 1.tif,1.72
+038,Lateral_HE,Lateral,HE,validation,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P038\Lateral\HE\HE 71 section 1.tif,1.72
+038,Medial_SafO,Medial,SafO,validation,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P038\Medial\SafO\SafO 72 section 2.tif,1.72
+038,Lateral_SafO,Lateral,SafO,validation,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P038\Lateral\SafO\SafO 71 section 2.tif,1.72
+038,Medial_PLM,Medial,PLM,validation,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P038\Medial\PLM\S72.tif,5.16
+014,Medial_HE,Medial,HE,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P014\Medial\HE\HE28, section 1.tif",1.72
+014,Lateral_HE,Lateral,HE,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P014\Lateral\HE\HE-27, section 1.tif",1.72
+014,Medial_SafO,Medial,SafO,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P014\Medial\SafO\SafO28, section 2.tif",1.72
+014,Lateral_SafO,Lateral,SafO,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P014\Lateral\SafO\SafO-27, section 2.tif",1.72
+014,Medial_PLM,Medial,PLM,validation,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P014\Medial\PLM\S28.tif,5.16
+062,Medial_HE,Medial,HE,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P062\Medial\HE\HE 120, section 1.tif",1.72
+062,Lateral_HE,Lateral,HE,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P062\Lateral\HE\HE 119, section 1.tif",1.72
+062,Medial_SafO,Medial,SafO,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P062\Medial\SafO\SafO 120, section 2.tif",1.72
+062,Lateral_SafO,Lateral,SafO,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P062\Lateral\SafO\SafO 119, section 2.tif",1.72
+062,Medial_PLM,Medial,PLM,validation,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P062\Medial\PLM\S120.tif,5.16
+019,Medial_HE,Medial,HE,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P019\Medial\HE\HE 36, section 1.tif",1.72
+019,Lateral_HE,Lateral,HE,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P019\Lateral\HE\HE 35, section 1.tif",1.72
+019,Medial_SafO,Medial,SafO,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P019\Medial\SafO\SafO-FG 36, section 2.tif",1.72
+019,Lateral_SafO,Lateral,SafO,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P019\Lateral\SafO\SafO-FG 35, section 2.tif",1.72
+019,Medial_PLM,Medial,PLM,validation,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P019\Medial\PLM\S36.tif,5.16
+064,Medial_HE,Medial,HE,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P064\Medial\HE\HE 124, section 1.tif",1.72
+064,Lateral_HE,Lateral,HE,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P064\Lateral\HE\HE 123, section 1.tif",1.72
+064,Medial_SafO,Medial,SafO,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P064\Medial\SafO\SafO 124, section 2.tif",1.72
+064,Lateral_SafO,Lateral,SafO,validation,"<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P064\Lateral\SafO\SafO 123, section 2.tif",1.72
+064,Medial_PLM,Medial,PLM,validation,<DATA_ROOT>\data\public\human-knee-cartilage-histopathology\raw\files\P064\Medial\PLM\S124.tif,5.16

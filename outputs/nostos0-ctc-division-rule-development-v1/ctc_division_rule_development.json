@@ -1,0 +1,1133 @@
+{
+  "protocol_version": "nostos0-ctc-division-rule-development/1.0",
+  "status": "development_complete",
+  "opened_cohort": "Fluo-N2DH-SIM+ sequence 01",
+  "mapping_coverage": 1.0,
+  "candidate_count": 32,
+  "selection_rule": "maximum division F1, then link F1, then fewer incorrect links",
+  "selected": {
+    "parameters": {
+      "division_combined_area_range": [
+        0.6,
+        1.5
+      ],
+      "division_child_area_range": [
+        0.15,
+        0.85
+      ],
+      "division_balance_max": 3.0,
+      "division_distance_radii": 2.0,
+      "division_separation_radii": 3.0
+    },
+    "links": {
+      "true_positive": 2551,
+      "predicted": 2553,
+      "reference": 2571,
+      "precision": 0.9992166079122601,
+      "recall": 0.9922209257098406,
+      "f1": 0.9957064793130367
+    },
+    "divisions": {
+      "true_positive": 48,
+      "predicted": 48,
+      "reference": 59,
+      "precision": 1.0,
+      "recall": 0.8135593220338984,
+      "f1": 0.897196261682243
+    },
+    "incorrect_links": 2,
+    "identity_switch_fraction": 0.0007833920877399138,
+    "unmapped_predicted_edges": 0
+  },
+  "candidates": [
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          1.5
+        ],
+        "division_child_area_range": [
+          0.15,
+          0.85
+        ],
+        "division_balance_max": 3.0,
+        "division_distance_radii": 2.0,
+        "division_separation_radii": 3.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          1.5
+        ],
+        "division_child_area_range": [
+          0.15,
+          0.85
+        ],
+        "division_balance_max": 3.0,
+        "division_distance_radii": 2.0,
+        "division_separation_radii": 4.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          1.5
+        ],
+        "division_child_area_range": [
+          0.15,
+          0.85
+        ],
+        "division_balance_max": 3.0,
+        "division_distance_radii": 3.0,
+        "division_separation_radii": 3.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          1.5
+        ],
+        "division_child_area_range": [
+          0.15,
+          0.85
+        ],
+        "division_balance_max": 3.0,
+        "division_distance_radii": 3.0,
+        "division_separation_radii": 4.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          1.5
+        ],
+        "division_child_area_range": [
+          0.15,
+          0.85
+        ],
+        "division_balance_max": 5.0,
+        "division_distance_radii": 2.0,
+        "division_separation_radii": 3.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          1.5
+        ],
+        "division_child_area_range": [
+          0.15,
+          0.85
+        ],
+        "division_balance_max": 5.0,
+        "division_distance_radii": 2.0,
+        "division_separation_radii": 4.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          1.5
+        ],
+        "division_child_area_range": [
+          0.15,
+          0.85
+        ],
+        "division_balance_max": 5.0,
+        "division_distance_radii": 3.0,
+        "division_separation_radii": 3.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          1.5
+        ],
+        "division_child_area_range": [
+          0.15,
+          0.85
+        ],
+        "division_balance_max": 5.0,
+        "division_distance_radii": 3.0,
+        "division_separation_radii": 4.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          1.5
+        ],
+        "division_child_area_range": [
+          0.15,
+          1.2
+        ],
+        "division_balance_max": 3.0,
+        "division_distance_radii": 2.0,
+        "division_separation_radii": 3.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          1.5
+        ],
+        "division_child_area_range": [
+          0.15,
+          1.2
+        ],
+        "division_balance_max": 3.0,
+        "division_distance_radii": 2.0,
+        "division_separation_radii": 4.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          1.5
+        ],
+        "division_child_area_range": [
+          0.15,
+          1.2
+        ],
+        "division_balance_max": 3.0,
+        "division_distance_radii": 3.0,
+        "division_separation_radii": 3.0
+      },
+      "links": {
+        "true_positive": 2550,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9988249118683902,
+        "recall": 0.9918319719953326,
+        "f1": 0.9953161592505856
+      },
+      "divisions": {
+        "true_positive": 46,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 0.9583333333333334,
+        "recall": 0.7796610169491526,
+        "f1": 0.8598130841121496
+      },
+      "incorrect_links": 3,
+      "identity_switch_fraction": 0.0011750881316098707,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          1.5
+        ],
+        "division_child_area_range": [
+          0.15,
+          1.2
+        ],
+        "division_balance_max": 3.0,
+        "division_distance_radii": 3.0,
+        "division_separation_radii": 4.0
+      },
+      "links": {
+        "true_positive": 2550,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9988249118683902,
+        "recall": 0.9918319719953326,
+        "f1": 0.9953161592505856
+      },
+      "divisions": {
+        "true_positive": 46,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 0.9583333333333334,
+        "recall": 0.7796610169491526,
+        "f1": 0.8598130841121496
+      },
+      "incorrect_links": 3,
+      "identity_switch_fraction": 0.0011750881316098707,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          1.5
+        ],
+        "division_child_area_range": [
+          0.15,
+          1.2
+        ],
+        "division_balance_max": 5.0,
+        "division_distance_radii": 2.0,
+        "division_separation_radii": 3.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          1.5
+        ],
+        "division_child_area_range": [
+          0.15,
+          1.2
+        ],
+        "division_balance_max": 5.0,
+        "division_distance_radii": 2.0,
+        "division_separation_radii": 4.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          1.5
+        ],
+        "division_child_area_range": [
+          0.15,
+          1.2
+        ],
+        "division_balance_max": 5.0,
+        "division_distance_radii": 3.0,
+        "division_separation_radii": 3.0
+      },
+      "links": {
+        "true_positive": 2550,
+        "predicted": 2555,
+        "reference": 2571,
+        "precision": 0.9980430528375733,
+        "recall": 0.9918319719953326,
+        "f1": 0.9949278189621537
+      },
+      "divisions": {
+        "true_positive": 46,
+        "predicted": 52,
+        "reference": 59,
+        "precision": 0.8846153846153846,
+        "recall": 0.7796610169491526,
+        "f1": 0.8288288288288288
+      },
+      "incorrect_links": 5,
+      "identity_switch_fraction": 0.0019569471624266144,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          1.5
+        ],
+        "division_child_area_range": [
+          0.15,
+          1.2
+        ],
+        "division_balance_max": 5.0,
+        "division_distance_radii": 3.0,
+        "division_separation_radii": 4.0
+      },
+      "links": {
+        "true_positive": 2550,
+        "predicted": 2555,
+        "reference": 2571,
+        "precision": 0.9980430528375733,
+        "recall": 0.9918319719953326,
+        "f1": 0.9949278189621537
+      },
+      "divisions": {
+        "true_positive": 46,
+        "predicted": 52,
+        "reference": 59,
+        "precision": 0.8846153846153846,
+        "recall": 0.7796610169491526,
+        "f1": 0.8288288288288288
+      },
+      "incorrect_links": 5,
+      "identity_switch_fraction": 0.0019569471624266144,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          2.2
+        ],
+        "division_child_area_range": [
+          0.15,
+          0.85
+        ],
+        "division_balance_max": 3.0,
+        "division_distance_radii": 2.0,
+        "division_separation_radii": 3.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          2.2
+        ],
+        "division_child_area_range": [
+          0.15,
+          0.85
+        ],
+        "division_balance_max": 3.0,
+        "division_distance_radii": 2.0,
+        "division_separation_radii": 4.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          2.2
+        ],
+        "division_child_area_range": [
+          0.15,
+          0.85
+        ],
+        "division_balance_max": 3.0,
+        "division_distance_radii": 3.0,
+        "division_separation_radii": 3.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          2.2
+        ],
+        "division_child_area_range": [
+          0.15,
+          0.85
+        ],
+        "division_balance_max": 3.0,
+        "division_distance_radii": 3.0,
+        "division_separation_radii": 4.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          2.2
+        ],
+        "division_child_area_range": [
+          0.15,
+          0.85
+        ],
+        "division_balance_max": 5.0,
+        "division_distance_radii": 2.0,
+        "division_separation_radii": 3.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          2.2
+        ],
+        "division_child_area_range": [
+          0.15,
+          0.85
+        ],
+        "division_balance_max": 5.0,
+        "division_distance_radii": 2.0,
+        "division_separation_radii": 4.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          2.2
+        ],
+        "division_child_area_range": [
+          0.15,
+          0.85
+        ],
+        "division_balance_max": 5.0,
+        "division_distance_radii": 3.0,
+        "division_separation_radii": 3.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          2.2
+        ],
+        "division_child_area_range": [
+          0.15,
+          0.85
+        ],
+        "division_balance_max": 5.0,
+        "division_distance_radii": 3.0,
+        "division_separation_radii": 4.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          2.2
+        ],
+        "division_child_area_range": [
+          0.15,
+          1.2
+        ],
+        "division_balance_max": 3.0,
+        "division_distance_radii": 2.0,
+        "division_separation_radii": 3.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          2.2
+        ],
+        "division_child_area_range": [
+          0.15,
+          1.2
+        ],
+        "division_balance_max": 3.0,
+        "division_distance_radii": 2.0,
+        "division_separation_radii": 4.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          2.2
+        ],
+        "division_child_area_range": [
+          0.15,
+          1.2
+        ],
+        "division_balance_max": 3.0,
+        "division_distance_radii": 3.0,
+        "division_separation_radii": 3.0
+      },
+      "links": {
+        "true_positive": 2546,
+        "predicted": 2555,
+        "reference": 2571,
+        "precision": 0.9964774951076321,
+        "recall": 0.9902761571373007,
+        "f1": 0.9933671478735857
+      },
+      "divisions": {
+        "true_positive": 38,
+        "predicted": 52,
+        "reference": 59,
+        "precision": 0.7307692307692307,
+        "recall": 0.6440677966101694,
+        "f1": 0.6846846846846847
+      },
+      "incorrect_links": 9,
+      "identity_switch_fraction": 0.0035225048923679062,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          2.2
+        ],
+        "division_child_area_range": [
+          0.15,
+          1.2
+        ],
+        "division_balance_max": 3.0,
+        "division_distance_radii": 3.0,
+        "division_separation_radii": 4.0
+      },
+      "links": {
+        "true_positive": 2546,
+        "predicted": 2555,
+        "reference": 2571,
+        "precision": 0.9964774951076321,
+        "recall": 0.9902761571373007,
+        "f1": 0.9933671478735857
+      },
+      "divisions": {
+        "true_positive": 38,
+        "predicted": 52,
+        "reference": 59,
+        "precision": 0.7307692307692307,
+        "recall": 0.6440677966101694,
+        "f1": 0.6846846846846847
+      },
+      "incorrect_links": 9,
+      "identity_switch_fraction": 0.0035225048923679062,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          2.2
+        ],
+        "division_child_area_range": [
+          0.15,
+          1.2
+        ],
+        "division_balance_max": 5.0,
+        "division_distance_radii": 2.0,
+        "division_separation_radii": 3.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          2.2
+        ],
+        "division_child_area_range": [
+          0.15,
+          1.2
+        ],
+        "division_balance_max": 5.0,
+        "division_distance_radii": 2.0,
+        "division_separation_radii": 4.0
+      },
+      "links": {
+        "true_positive": 2551,
+        "predicted": 2553,
+        "reference": 2571,
+        "precision": 0.9992166079122601,
+        "recall": 0.9922209257098406,
+        "f1": 0.9957064793130367
+      },
+      "divisions": {
+        "true_positive": 48,
+        "predicted": 48,
+        "reference": 59,
+        "precision": 1.0,
+        "recall": 0.8135593220338984,
+        "f1": 0.897196261682243
+      },
+      "incorrect_links": 2,
+      "identity_switch_fraction": 0.0007833920877399138,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          2.2
+        ],
+        "division_child_area_range": [
+          0.15,
+          1.2
+        ],
+        "division_balance_max": 5.0,
+        "division_distance_radii": 3.0,
+        "division_separation_radii": 3.0
+      },
+      "links": {
+        "true_positive": 2546,
+        "predicted": 2557,
+        "reference": 2571,
+        "precision": 0.9956980836918263,
+        "recall": 0.9902761571373007,
+        "f1": 0.9929797191887675
+      },
+      "divisions": {
+        "true_positive": 38,
+        "predicted": 56,
+        "reference": 59,
+        "precision": 0.6785714285714286,
+        "recall": 0.6440677966101694,
+        "f1": 0.6608695652173914
+      },
+      "incorrect_links": 11,
+      "identity_switch_fraction": 0.004301916308173641,
+      "unmapped_predicted_edges": 0
+    },
+    {
+      "parameters": {
+        "division_combined_area_range": [
+          0.6,
+          2.2
+        ],
+        "division_child_area_range": [
+          0.15,
+          1.2
+        ],
+        "division_balance_max": 5.0,
+        "division_distance_radii": 3.0,
+        "division_separation_radii": 4.0
+      },
+      "links": {
+        "true_positive": 2546,
+        "predicted": 2557,
+        "reference": 2571,
+        "precision": 0.9956980836918263,
+        "recall": 0.9902761571373007,
+        "f1": 0.9929797191887675
+      },
+      "divisions": {
+        "true_positive": 38,
+        "predicted": 56,
+        "reference": 59,
+        "precision": 0.6785714285714286,
+        "recall": 0.6440677966101694,
+        "f1": 0.6608695652173914
+      },
+      "incorrect_links": 11,
+      "identity_switch_fraction": 0.004301916308173641,
+      "unmapped_predicted_edges": 0
+    }
+  ],
+  "interpretation": "Post-failure development only; SIM+ sequence 02 and both HeLa sequences remained unopened."
+}
