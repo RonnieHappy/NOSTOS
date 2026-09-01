@@ -1,0 +1,234 @@
+{
+  "artifacts": [
+    {
+      "bytes": 4794,
+      "path": "configs/fmd_full_archive_strict_support_v1_6.development.json",
+      "sha256": "72b0e82453e318a530c231ac56677b761133b28afc098d3eb08fe66c6c6ce16b"
+    },
+    {
+      "bytes": 6956,
+      "path": "configs/fmd_strict_external_transfer_v1_6.locked.json",
+      "sha256": "be6539a8e75b50d47c61a0ec18aca647e845b709c1135a1eec900ed1920eca23"
+    },
+    {
+      "bytes": 6701,
+      "path": "configs/fmd_widefield_validity_profile_v1_3.locked.json",
+      "sha256": "62f1e77f5e380abb3943e6014c0d0603747a403c50d06a6e2a18a17fb544045b"
+    },
+    {
+      "bytes": 5606,
+      "path": "docs/NOSTOS0_FMD_STRICT_EXTERNAL_TRANSFER_V1_6_PROTOCOL.md",
+      "sha256": "f3bb028c84852efc63bea85f2e5b1aa9b2c1113e657c8ab42e86da1f93de7632"
+    },
+    {
+      "bytes": 22391,
+      "path": "outputs/nostos0-fmd-full-archive-strict-support-v1-6-development/strict_support_profile.json",
+      "sha256": "ddac86a5e0ae60d559975f63935e3e1bceb3bfdc41d31ec4ed1eecbdb6c48e1f"
+    },
+    {
+      "bytes": 70263,
+      "path": "outputs/nostos0-fmd-widefield-v1-3-compiled/validity_profile.json",
+      "sha256": "9c99e6c01359b8b8ab84f1eb6f48cf9101e913ee90269b63573ffd1abc69b737"
+    },
+    {
+      "bytes": 2884,
+      "path": "pyproject.toml",
+      "sha256": "9204767675b912b7f1ece4469799dc1009fa3e2afd966d7956bf6337faa5844c"
+    },
+    {
+      "bytes": 724,
+      "path": "scripts/audit_fmd_strict_external_transfer_v1_6.py",
+      "sha256": "3b9ac9ab01814eb9a81bb2992e3ad328d9c18b691b1d9e5d868c59d0cc912b4a"
+    },
+    {
+      "bytes": 4848,
+      "path": "scripts/freeze_fmd_strict_external_transfer_v1_6.py",
+      "sha256": "ee3f2b89b12fa2f45d41bc3942ea7bee3a31811073b12e19f39d69025a67f04d"
+    },
+    {
+      "bytes": 865,
+      "path": "scripts/run_fmd_strict_external_transfer_v1_6.py",
+      "sha256": "66cd3ac6d22f432ee92db667615c21bb93d0d24db7072d0a11551c2322ab9677"
+    },
+    {
+      "bytes": 25203,
+      "path": "src/nostos/validation/fmd_strict_external_transfer.py",
+      "sha256": "1fc6164bed5ddfef702471c402646a87a51e16d1015d5eff564213c72964ff58"
+    },
+    {
+      "bytes": 2406,
+      "path": "tests/test_fmd_strict_external_transfer.py",
+      "sha256": "e144f96cbe9043b22374797879c084f83044e4b1dd20267d06193eb1afacd51f"
+    }
+  ],
+  "audit_output_absent_at_lock": "<PROJECT_ROOT>\\outputs\\nostos0-fmd-strict-external-transfer-v1-6-audit",
+  "base_profile_content_sha256": "65239b44c66a8bfca80608b1544fd0c892cf8e3209805828a1623d85382eebb8",
+  "combined_gates": {
+    "maximum_two_sided_exact_field_failure_upper95": 0.25,
+    "require_zero_fields_with_any_accepted_failure": true,
+    "require_zero_invalid_accepted_emissions": true,
+    "required_independent_groups": 14
+  },
+  "config_content_sha256": "f5282c738421c55cb09b1e824904e01990c5bb1bb36889dbddfe1ccf2109e420",
+  "config_file_sha256": "be6539a8e75b50d47c61a0ec18aca647e845b709c1135a1eec900ed1920eca23",
+  "confirmation_status_at_lock": "pixels_not_decoded_for_measurement_analysis",
+  "content_sha256": "5fe6caa5af640e34cd6cacdeb4b9a73504a5cbc5daabf82ea1ad355065e68426",
+  "locked_at_utc": "2026-08-31T14:36:21.850968Z",
+  "protocol_id": "fmd-strict-external-transfer-v1-6",
+  "schema_version": "nostos-fmd-strict-external-transfer-lock/1.0",
+  "source_gates": {
+    "require_all_supported_cells_in_every_field": true,
+    "require_zero_fields_with_any_accepted_failure": true,
+    "require_zero_invalid_accepted_emissions": true,
+    "required_independent_groups": 7
+  },
+  "sources": [
+    {
+      "archive_name": "Confocal_BPAE_R.tar",
+      "bytes": 627537920,
+      "confirmation_fields": [
+        7,
+        19,
+        17,
+        2,
+        3,
+        6,
+        16
+      ],
+      "dataset_key": "Confocal_BPAE_R",
+      "figshare_file_id": 43648071,
+      "md5": "3d8b449e7b9284bc1c4c6c66c95526f1",
+      "realization_indices": {
+        "16": [
+          10,
+          40,
+          46,
+          48
+        ],
+        "17": [
+          10,
+          24,
+          39,
+          47
+        ],
+        "19": [
+          2,
+          3,
+          8,
+          39
+        ],
+        "2": [
+          35,
+          41,
+          43,
+          45
+        ],
+        "3": [
+          5,
+          8,
+          13,
+          18
+        ],
+        "6": [
+          6,
+          7,
+          21,
+          29
+        ],
+        "7": [
+          29,
+          33,
+          42,
+          48
+        ]
+      },
+      "sha256": "9b36bb4df24ae81947d6829b1e7ae33c31eb03430614f0de7a3382034f3f81d2"
+    },
+    {
+      "archive_name": "WideField_BPAE_G.tar",
+      "bytes": 792780800,
+      "confirmation_fields": [
+        1,
+        11,
+        5,
+        16,
+        3,
+        15,
+        19
+      ],
+      "dataset_key": "WideField_BPAE_G",
+      "figshare_file_id": 43648113,
+      "md5": "7e2e734f83bf6609bd2fe876f4a54345",
+      "realization_indices": {
+        "1": [
+          9,
+          27,
+          35,
+          44
+        ],
+        "11": [
+          3,
+          9,
+          19,
+          46
+        ],
+        "15": [
+          1,
+          27,
+          43,
+          46
+        ],
+        "16": [
+          5,
+          26,
+          27,
+          48
+        ],
+        "19": [
+          12,
+          14,
+          18,
+          47
+        ],
+        "3": [
+          13,
+          18,
+          25,
+          45
+        ],
+        "5": [
+          7,
+          15,
+          18,
+          36
+        ]
+      },
+      "sha256": "019863658ab0ba45c2b323ef787bad2ed40b017c0cdcfae66eb7818eaf9bdeee"
+    }
+  ],
+  "strict_profile_content_sha256": "1bf6c553321f1957379b2ab7f896222bf9d28cce3cd0ff107267821c98f81ba1",
+  "supported_cells": [
+    {
+      "key": "[\"avg16\",16.0]",
+      "values": [
+        "avg16",
+        16.0
+      ]
+    },
+    {
+      "key": "[\"avg16\",4.0]",
+      "values": [
+        "avg16",
+        4.0
+      ]
+    },
+    {
+      "key": "[\"avg16\",8.0]",
+      "values": [
+        "avg16",
+        8.0
+      ]
+    }
+  ],
+  "transfer_output_absent_at_lock": "<PROJECT_ROOT>\\outputs\\nostos0-fmd-strict-external-transfer-v1-6"
+}

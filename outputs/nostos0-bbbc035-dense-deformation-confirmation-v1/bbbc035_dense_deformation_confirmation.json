@@ -1,0 +1,137 @@
+{
+  "protocol_version": "nostos0-bbbc035-dense-deformation-confirmation/1.0",
+  "status": "pass",
+  "source": {
+    "dataset": "BBBC035v1",
+    "frame_sha256": "dc13c97d5273277dd5b05696dba0ffaa0ec635a685f50ea55d5660bf07409370",
+    "url": "https://bbbc.broadinstitute.org/BBBC035",
+    "license": "CC BY 3.0"
+  },
+  "planes": [
+    0,
+    8,
+    17,
+    25,
+    33,
+    41,
+    50,
+    58
+  ],
+  "summary": {
+    "case_count": 8,
+    "median_endpoint_error_pixels": 0.26972080575524326,
+    "median_case_p95_endpoint_error_pixels": 0.5950792140363728,
+    "median_uncertainty_coverage": 0.9724999030497341,
+    "median_uncertainty_bound_pixels": 0.7408991067104178,
+    "median_eligible_fraction": 0.9865578857948156,
+    "comparator_median_endpoint_error_pixels": 0.5230700714914489
+  },
+  "gates": {
+    "provenance_and_all_cases": true,
+    "median_endpoint_error": true,
+    "p95_endpoint_error": true,
+    "eligible_fraction": true,
+    "uncertainty_coverage_and_efficiency": true,
+    "comparator_noninferiority": true,
+    "finite_and_calibratable": true
+  },
+  "cases": [
+    {
+      "plane": 0,
+      "seed": 9100,
+      "source_plane_sha256": "a03b435ae7d562600e3157a3c2669034a96dd1102bdf81013dd5f60d7abc922e",
+      "median_endpoint_error_pixels": 0.27068026372263543,
+      "p95_endpoint_error_pixels": 0.5941595526944614,
+      "uncertainty_coverage": 0.9721296172823043,
+      "median_uncertainty_bound_pixels": 0.6915932570468156,
+      "eligible_fraction": 0.9942155943255864,
+      "comparator_median_endpoint_error_pixels": 0.534394968093295,
+      "finite": true
+    },
+    {
+      "plane": 8,
+      "seed": 9101,
+      "source_plane_sha256": "309c5f21f709aa1abc97511c367b3954cba28a1a7cc197f710b1fa5140a9feb1",
+      "median_endpoint_error_pixels": 0.27086514839902476,
+      "p95_endpoint_error_pixels": 0.5923821799973137,
+      "uncertainty_coverage": 0.9728701888171639,
+      "median_uncertainty_bound_pixels": 0.6944213218014009,
+      "eligible_fraction": 0.9942057736028794,
+      "comparator_median_endpoint_error_pixels": 0.5249006015738992,
+      "finite": true
+    },
+    {
+      "plane": 17,
+      "seed": 9102,
+      "source_plane_sha256": "2b7395f29debf32079d128a60231cd185cc4858ccb63d27d0284e1b2a4c9b2a9",
+      "median_endpoint_error_pixels": 0.26992536232246805,
+      "p95_endpoint_error_pixels": 0.5959988753782841,
+      "uncertainty_coverage": 0.975885467080181,
+      "median_uncertainty_bound_pixels": 0.7050205736389952,
+      "eligible_fraction": 0.9943088911913027,
+      "comparator_median_endpoint_error_pixels": 0.5230367442051115,
+      "finite": true
+    },
+    {
+      "plane": 25,
+      "seed": 9103,
+      "source_plane_sha256": "bb4e3b58298a590f72e182c5585f5cdcdd6458870b2237856f8d81a775795088",
+      "median_endpoint_error_pixels": 0.26951624918801853,
+      "p95_endpoint_error_pixels": 0.5984088431566895,
+      "uncertainty_coverage": 0.967949351085475,
+      "median_uncertainty_bound_pixels": 0.6734075619159798,
+      "eligible_fraction": 0.9943088911913027,
+      "comparator_median_endpoint_error_pixels": 0.5288481221623347,
+      "finite": true
+    },
+    {
+      "plane": 33,
+      "seed": 9104,
+      "source_plane_sha256": "2e186a75b1552bba1c7f47f59218179ed002603d02cfa97f65a2e141ca5a81c7",
+      "median_endpoint_error_pixels": 0.2159080918598043,
+      "p95_endpoint_error_pixels": 0.48037059919623293,
+      "uncertainty_coverage": 0.9864788703789268,
+      "median_uncertainty_bound_pixels": 0.7767776397818404,
+      "eligible_fraction": 0.9671005789316036,
+      "comparator_median_endpoint_error_pixels": 0.5231033987777863,
+      "finite": true
+    },
+    {
+      "plane": 41,
+      "seed": 9105,
+      "source_plane_sha256": "334640721474cc8bd2a6e8efc46d6f93860c8345b02b5f4905dcc257bd62feaa",
+      "median_endpoint_error_pixels": 0.2440901790647469,
+      "p95_endpoint_error_pixels": 2.642902108470745,
+      "uncertainty_coverage": 0.9219823961428492,
+      "median_uncertainty_bound_pixels": 0.8188098373980848,
+      "eligible_fraction": 0.8758611546223687,
+      "comparator_median_endpoint_error_pixels": 0.43093938175829843,
+      "finite": true
+    },
+    {
+      "plane": 50,
+      "seed": 9106,
+      "source_plane_sha256": "5398de93464d90b6053719f55b0ae460b37071271fd9060c427fede448f60df6",
+      "median_endpoint_error_pixels": 0.27646944065303336,
+      "p95_endpoint_error_pixels": 2.883240910738416,
+      "uncertainty_coverage": 0.8658825904800364,
+      "median_uncertainty_bound_pixels": 0.8602247830702194,
+      "eligible_fraction": 0.8755125189662707,
+      "comparator_median_endpoint_error_pixels": 0.42876107001635433,
+      "finite": true
+    },
+    {
+      "plane": 58,
+      "seed": 9107,
+      "source_plane_sha256": "887c517680c4b20faa6088d9e7eb37b3a39b8c0b53fc5829d253f79146660601",
+      "median_endpoint_error_pixels": 0.2185378145051025,
+      "p95_endpoint_error_pixels": 0.47385751795508396,
+      "uncertainty_coverage": 0.9899977928931158,
+      "median_uncertainty_bound_pixels": 0.791250792082934,
+      "eligible_fraction": 0.9789099979867518,
+      "comparator_median_endpoint_error_pixels": 0.5112849629318659,
+      "finite": true
+    }
+  ],
+  "interpretation": "Public microscopy content under programmed smooth warps; not native motion, tracking, strain or mechanics."
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "nostos-paired-acquisition-score-design/2.0",
+  "protocol_version": "nostos-paired-acquisition-support/2.0",
+  "permitted_partition": "score_design",
+  "selection_unit": "registered reference field",
+  "orientation_observability": {
+    "applies_only_to_endpoint": "tensor_orientation",
+    "matched_endpoint": "tensor_coherence",
+    "matching_keys": [
+      "pair_id",
+      "requested_scale_um"
+    ],
+    "minimum_interpretable_coherence": 0.15,
+    "risk_formula": "0.15 / max(input_tensor_coherence, machine_epsilon)",
+    "interpretation": "A score of 1 is the predeclared minimum directional strength required to interpret an orientation estimate."
+  },
+  "candidate_formulas": {
+    "v2_full_max": {
+      "components": [
+        "acquisition_qc",
+        "physical_sampling",
+        "perturbation_stability",
+        "cross_scale_agreement"
+      ],
+      "aggregation": "maximum"
+    },
+    "v2_full_max_plus_orientation_observability": {
+      "components": [
+        "acquisition_qc",
+        "physical_sampling",
+        "perturbation_stability",
+        "cross_scale_agreement",
+        "orientation_observability_when_applicable"
+      ],
+      "aggregation": "maximum"
+    },
+    "robustness_max_plus_orientation_observability": {
+      "components": [
+        "perturbation_stability",
+        "cross_scale_agreement",
+        "orientation_observability_when_applicable"
+      ],
+      "aggregation": "maximum"
+    }
+  },
+  "primary_design_metric": "unweighted macro AURC across informative structure-endpoint-requested-scale strata",
+  "informative_stratum_definition": "At least one valid and one invalid reference-eligible endpoint case.",
+  "selection_rule": [
+    "Exclude a candidate if its structure-specific macro informative-stratum AURC is more than 0.01 worse than v2_full_max in either CCPs or ER.",
+    "Among remaining candidates, choose the lowest pooled macro informative-stratum AURC.",
+    "Treat absolute pooled macro AURC differences <= 0.01 as ties and choose the formula with fewer components.",
+    "Do not fit continuous weights, endpoint-specific thresholds, or tissue-specific transformations."
+  ],
+  "secondary_reports": [
+    "micro AURC",
+    "per-stratum AURC",
+    "risk-coverage curves",
+    "paired clustered-bootstrap AURC differences",
+    "constant-valid and constant-invalid stratum counts"
+  ],
+  "excluded_candidate": {
+    "name": "single-image Fourier signal-to-noise ratio",
+    "reason": "High-frequency power is inseparable from sample morphology in a single structural image and could introduce tissue-dependent support decisions."
+  },
+  "claim_boundary": "Score design may rank measurement support using input-only evidence. High-resolution references are used only to label endpoint error on the score-design partition."
+}

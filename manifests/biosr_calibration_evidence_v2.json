@@ -1,0 +1,60 @@
+{
+  "schema_version": "nostos-biosr-calibration-evidence/2.0",
+  "dataset": "BioSR figshare 13264793 version 9",
+  "workbook": {
+    "external_path": "<DATA_ROOT>/data/public/measurement-support-benchmark/biosr/source/supplementary-v9/Supplementary Files for BioSR/imaging_conditions.xlsx",
+    "bytes": 12292,
+    "sha256": "b643edf5569524bec970040657cc8df2888ef21ccceb160f860d0227f5aa5d42",
+    "cell_E2_to_E6": "62.6 nm",
+    "column_heading": "Pixel size (raw SIM image)",
+    "upscaling_factors": {
+      "CCPs": 2,
+      "ER": 2,
+      "MTs": 2,
+      "F-actin (linear SIM)": 2,
+      "F-actin (nonlinear-SIM)": 3
+    }
+  },
+  "archives": [
+    {
+      "archive": "CCPs.zip",
+      "bytes": 1176569302,
+      "md5": "41771b9fd0a7c9fd939bdb71b106fa6e",
+      "sha256": "d2f6841be8226463774671f243dfd39601337650c78f224879cf5cfaf6aaa269",
+      "raw_member": "CCPs/Cell_001/RawSIMData_level_01.mrc",
+      "reference_member": "CCPs/Cell_001/SIM_gt.mrc",
+      "raw_header": {
+        "shape_xyz": [502, 502, 9],
+        "mxyz": [1, 1, 1],
+        "spacing_xy_um": [0.06260000169277191, 0.06260000169277191]
+      },
+      "reference_header": {
+        "shape_xyz": [1004, 1004, 1],
+        "mxyz": [1, 1, 1],
+        "spacing_xy_um": [0.031300000846385956, 0.031300000846385956]
+      },
+      "physical_field_of_view_xy_um": [31.4252008497715, 31.4252008497715]
+    },
+    {
+      "archive": "ER.zip",
+      "bytes": 2956077632,
+      "md5": "2bd05c7dba69a10b36a141407927d585",
+      "sha256": "3e0f3d437f3ec2703a5729ff6cdd82ebac838c2bb95e9c41cb52fa9946346c13",
+      "raw_member": "ER/Cell_002/RawSIMData/RawSIMData_level_01.mrc",
+      "reference_member": "ER/Cell_002/GTSIM/GTSIM_level_01.mrc",
+      "raw_header": {
+        "shape_xyz": [502, 502, 9],
+        "mxyz": [1, 1, 1],
+        "spacing_xy_um": [0.06260000169277191, 0.06260000169277191]
+      },
+      "reference_header": {
+        "shape_xyz": [1004, 1004, 1],
+        "mxyz": [1, 1, 1],
+        "spacing_xy_um": [0.031300000846385956, 0.031300000846385956]
+      },
+      "physical_field_of_view_xy_um": [31.4252008497715, 31.4252008497715]
+    }
+  ],
+  "root_cause": "The original protocol assigned the workbook's raw-image pixel size to the upsampled GT-SIM reference, then multiplied it again for the raw input.",
+  "correction": "Use deposited header spacing per image; require raw spacing 0.0626 um, reference spacing raw/upscaling_factor, and equal physical fields of view."
+}

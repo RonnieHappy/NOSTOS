@@ -1,0 +1,52 @@
+{
+  "schema_version": "nostos-developmental-repair-lock/5.0",
+  "locked_at_utc": "2026-08-29T00:02:17Z",
+  "stage": "decision_score_and_acquisition_profile_before_version_5_rerun",
+  "historical_basis": {
+    "version_4_repair_lock_sha256": "629353a98eee27e83e8b92e2d176143da731ca6bdffb3caf0eb0ceac686580c9",
+    "version_4_small_pilot_artifact_receipt_sha256": "402626a78f5acd14db136a19c4e0ced5173a676076171b697ef1425d590e52d5"
+  },
+  "access_state": {
+    "balanced_small_pilot": "observed_under_version_4",
+    "threshold_calibration": "sealed",
+    "confirmation_archives": "not_downloaded_not_listed_not_decoded"
+  },
+  "files": [
+    {
+      "path": "configs/paired_acquisition_support_v5.locked.json",
+      "bytes": 4791,
+      "sha256": "711e5f4aaac8bcbeccb07bc94fb33dd3e51f5eeec2fea317a25ed0c8b66d7573"
+    },
+    {
+      "path": "configs/biosr_widefield_measurement_profile_v1.locked.json",
+      "bytes": 2149,
+      "sha256": "cf27fe2a8b27b0c3889644dab06dc499dcc202c375ed1dd5eddf16aa9b632af0"
+    },
+    {
+      "path": "docs/NOSTOS0_SMALL_PILOT_SCORE_REPAIR_V5.md",
+      "bytes": 1304,
+      "sha256": "cd1c7d046973b2be0d77c7fa65104bad2c6aae3b62c4b37a65d9efc0f6f15fb1"
+    },
+    {
+      "path": "src/nostos/features/spatial_fft.py",
+      "bytes": 7461,
+      "sha256": "2f18db7a1ded0e17ae091a53ddca0b44a37a5dbabd12ee1c61f2518deac23f68"
+    },
+    {
+      "path": "src/nostos/features/response_modules.py",
+      "bytes": 13184,
+      "sha256": "21902711c43675920380abb5762047d63911440cc78f35f14a5fc7d252191a85"
+    },
+    {
+      "path": "src/nostos/validation/paired_acquisition_support.py",
+      "bytes": 49810,
+      "sha256": "101ebbe1bceafa8916511560e3c5bdb8a42d0b9eded76d043fddec3465ede3e0"
+    },
+    {
+      "path": "scripts/run_biosr_paired_support.py",
+      "bytes": 18954,
+      "sha256": "89b586507953b088300bcaf8243d0559b6575f4fa095eab83cb0fdd3fc1e13e3"
+    }
+  ],
+  "prospective_statement": "The version-5 decision score and acquisition profile were frozen before any version-5 rerun and before threshold-calibration or confirmation access. They were selected developmentally from the version-4 twelve-field pilot."
+}

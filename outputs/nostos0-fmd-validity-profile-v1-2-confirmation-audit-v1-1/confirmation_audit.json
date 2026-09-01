@@ -1,0 +1,295 @@
+{
+  "acquisition_qc_matched_count": {
+    "accepted": 142,
+    "boundary_tie_split": true,
+    "coverage": 0.39444444444444443,
+    "deterministic_tie_break": "case_id",
+    "eligible": 360,
+    "invalid": 43,
+    "risk": 0.3028169014084507,
+    "target_accepted": 142,
+    "tie_robust_risk_bounds": {
+      "best_case_invalid": 42,
+      "best_case_risk": 0.29577464788732394,
+      "boundary_calibrated_risk": 0.4315068493150685,
+      "boundary_tie_cases": 147,
+      "boundary_tie_invalid": 47,
+      "cases_required_from_boundary_tie": 142,
+      "strictly_below_boundary": 0,
+      "worst_case_invalid": 47,
+      "worst_case_risk": 0.33098591549295775
+    }
+  },
+  "checks": {
+    "aurc_bootstrap_ci_lower_above_zero": true,
+    "maximum_cluster_bootstrap_risk_upper95": true,
+    "maximum_observed_risk": true,
+    "minimum_coverage": true,
+    "minimum_independent_groups": true,
+    "minimum_invalid_acquisition_qc_emissions": true,
+    "minimum_relative_risk_reduction_vs_acquisition_qc": true,
+    "positive_aurc_difference": true
+  },
+  "claim_boundary": {
+    "claim": "Input-only validity evidence, including declared acquisition support, can reduce silent-invalid dimensionless structural measurements across real fluorescence noise levels and held-out acquisition configurations.",
+    "excluded_claims": [
+      "biological interpretation of any endpoint",
+      "physical-scale measurement because pixel spacing is not supplied",
+      "image restoration or denoising performance",
+      "clinical or intraoperative utility"
+    ],
+    "study_type": "computation_only_public_data_methods_validation"
+  },
+  "confirmation": {
+    "development_group_overlap": [],
+    "eligible_cases": 700,
+    "independent_group_count": 6,
+    "independent_groups": [
+      "Confocal_BPAE_R",
+      "Confocal_MICE",
+      "TwoPhoton_BPAE_R",
+      "TwoPhoton_MICE",
+      "WideField_BPAE_G",
+      "WideField_BPAE_R"
+    ],
+    "source_receipt": {
+      "bytes": 2878148,
+      "name": "confirmation_rows.jsonl",
+      "profile_bytes": 151477,
+      "profile_file_sha256": "b15f61a764a076f15e5d9284da3e6620797438f9e7103b31bc125640e4f3053a",
+      "profile_name": "validity_profile.json",
+      "sha256": "d2a19e9c3823755e4a2d7db162388ff808ead114fec95e9f72f98f8265433298"
+    }
+  },
+  "content_sha256": "f9b6b18c5ea014c2ba066448b92238a6cdcb4a6a905306b0cc9c814837e2b897",
+  "primary_endpoint_family": "tensor_coherence",
+  "primary_operating_point": {
+    "accepted": 142,
+    "accepted_independent_groups": 6,
+    "cluster_bootstrap_risk_upper95": 0.28169014084507044,
+    "coverage": 0.39444444444444443,
+    "eligible": 360,
+    "invalid": 20,
+    "predicted_risk_threshold": 0.3466149237567999,
+    "risk": 0.14084507042253522
+  },
+  "primary_score": "declared_capture_stability_contract",
+  "profile_content_sha256": "eacbb78a8464d547e50d845010b68544324309d8e9054e867b7d86f40987e97e",
+  "relative_risk_reduction_vs_acquisition_qc": {
+    "conservative_lower_bound_over_boundary_tie": 0.5238095238095237,
+    "deterministic_tie_break_estimate": 0.5348837209302325,
+    "optimistic_upper_bound_over_boundary_tie": 0.574468085106383
+  },
+  "risk_coverage": {
+    "candidate_metrics": {
+      "conventional_acquisition_qc": {
+        "brier_score": 0.2721604537149683,
+        "expected_calibration_error": 0.16071046549796653,
+        "logarithmic_loss": 0.7484830764021437,
+        "risk_coverage_auc": 0.32557635159331866
+      },
+      "declared_capture_stability_contract": {
+        "brier_score": 0.16133874087082978,
+        "expected_calibration_error": 0.1409523081171627,
+        "logarithmic_loss": 0.5071382317519968,
+        "risk_coverage_auc": 0.18937329164369904
+      },
+      "full_contract": {
+        "brier_score": 0.29884985605458475,
+        "expected_calibration_error": 0.21005539704603388,
+        "logarithmic_loss": 0.8039532742046798,
+        "risk_coverage_auc": 0.30797449687121575
+      },
+      "full_contract_without_identifiability": {
+        "brier_score": 0.29884985605458475,
+        "expected_calibration_error": 0.21005539704603388,
+        "logarithmic_loss": 0.8039532742046798,
+        "risk_coverage_auc": 0.30797449687121575
+      },
+      "full_contract_without_perturbation": {
+        "brier_score": 0.2721604537149683,
+        "expected_calibration_error": 0.16071046549796653,
+        "logarithmic_loss": 0.7484830764021437,
+        "risk_coverage_auc": 0.32557635159331866
+      },
+      "full_contract_without_qc": {
+        "brier_score": 0.23879974738267104,
+        "expected_calibration_error": 0.08496574698276677,
+        "logarithmic_loss": 0.6686014188275659,
+        "risk_coverage_auc": 0.31063020540098174
+      },
+      "perturbation_stability_only": {
+        "brier_score": 0.23879974738267104,
+        "expected_calibration_error": 0.08496574698276677,
+        "logarithmic_loss": 0.6686014188275659,
+        "risk_coverage_auc": 0.31063020540098174
+      }
+    },
+    "cluster_bootstrap_aurc_difference": {
+      "bootstrap_ci95": [
+        0.024968557430289917,
+        0.24234197294239646
+      ],
+      "bootstrap_probability_positive": 1.0,
+      "definition": "acquisition_qc_AURC_minus_full_contract_AURC; positive favors NOSTOS",
+      "draws": 5000,
+      "independent_groups": 6,
+      "observed": 0.13620305994961962,
+      "seed": 26082932
+    }
+  },
+  "schema_version": "nostos-validity-profile-confirmation-audit/1.1",
+  "status": "pass",
+  "stratified_safety_audit": {
+    "acquisition_modality_heterogeneity": true,
+    "maximum_observed_risk_gate": 0.15,
+    "post_confirmation_descriptive_not_a_frozen_primary_gate": true,
+    "status": "aggregate_pass_with_acquisition_stratum_heterogeneity",
+    "summaries": {
+      "acquisition_level": [
+        {
+          "accepted": 72,
+          "coverage": 1.0,
+          "eligible": 72,
+          "invalid": 0,
+          "risk": 0.0,
+          "stratum": "avg16"
+        },
+        {
+          "accepted": 0,
+          "coverage": 0.0,
+          "eligible": 72,
+          "invalid": 0,
+          "risk": null,
+          "stratum": "avg2"
+        },
+        {
+          "accepted": 0,
+          "coverage": 0.0,
+          "eligible": 72,
+          "invalid": 0,
+          "risk": null,
+          "stratum": "avg4"
+        },
+        {
+          "accepted": 70,
+          "coverage": 0.9722222222222222,
+          "eligible": 72,
+          "invalid": 20,
+          "risk": 0.2857142857142857,
+          "stratum": "avg8"
+        },
+        {
+          "accepted": 0,
+          "coverage": 0.0,
+          "eligible": 72,
+          "invalid": 0,
+          "risk": null,
+          "stratum": "raw"
+        }
+      ],
+      "acquisition_modality": [
+        {
+          "accepted": 48,
+          "coverage": 0.4,
+          "eligible": 120,
+          "invalid": 0,
+          "risk": 0.0,
+          "stratum": "Confocal"
+        },
+        {
+          "accepted": 46,
+          "coverage": 0.38333333333333336,
+          "eligible": 120,
+          "invalid": 0,
+          "risk": 0.0,
+          "stratum": "TwoPhoton"
+        },
+        {
+          "accepted": 48,
+          "coverage": 0.4,
+          "eligible": 120,
+          "invalid": 20,
+          "risk": 0.4166666666666667,
+          "stratum": "WideField"
+        }
+      ],
+      "independent_group": [
+        {
+          "accepted": 24,
+          "coverage": 0.4,
+          "eligible": 60,
+          "invalid": 0,
+          "risk": 0.0,
+          "stratum": "Confocal_BPAE_R"
+        },
+        {
+          "accepted": 24,
+          "coverage": 0.4,
+          "eligible": 60,
+          "invalid": 0,
+          "risk": 0.0,
+          "stratum": "Confocal_MICE"
+        },
+        {
+          "accepted": 24,
+          "coverage": 0.4,
+          "eligible": 60,
+          "invalid": 0,
+          "risk": 0.0,
+          "stratum": "TwoPhoton_BPAE_R"
+        },
+        {
+          "accepted": 22,
+          "coverage": 0.36666666666666664,
+          "eligible": 60,
+          "invalid": 0,
+          "risk": 0.0,
+          "stratum": "TwoPhoton_MICE"
+        },
+        {
+          "accepted": 24,
+          "coverage": 0.4,
+          "eligible": 60,
+          "invalid": 12,
+          "risk": 0.5,
+          "stratum": "WideField_BPAE_G"
+        },
+        {
+          "accepted": 24,
+          "coverage": 0.4,
+          "eligible": 60,
+          "invalid": 8,
+          "risk": 0.3333333333333333,
+          "stratum": "WideField_BPAE_R"
+        }
+      ],
+      "requested_scale": [
+        {
+          "accepted": 48,
+          "coverage": 0.4,
+          "eligible": 120,
+          "invalid": 4,
+          "risk": 0.08333333333333333,
+          "stratum": "16.0"
+        },
+        {
+          "accepted": 46,
+          "coverage": 0.38333333333333336,
+          "eligible": 120,
+          "invalid": 8,
+          "risk": 0.17391304347826086,
+          "stratum": "4.0"
+        },
+        {
+          "accepted": 48,
+          "coverage": 0.4,
+          "eligible": 120,
+          "invalid": 8,
+          "risk": 0.16666666666666666,
+          "stratum": "8.0"
+        }
+      ]
+    }
+  }
+}

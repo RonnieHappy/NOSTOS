@@ -1,0 +1,129 @@
+{
+  "schema_version": "nostos.heaton_in_vivo_shg.prelock.v1",
+  "status": "development_allowed_confirmation_analysis_sealed",
+  "protocol_path": "docs/NOSTOS0_HEATON_IN_VIVO_SHG_PROTOCOL.md",
+  "dataset": {
+    "title": "Quantifying in vivo collagen reorganization during immunotherapy in murine melanoma with second harmonic generation imaging",
+    "publication_doi": "10.1117/1.BIOS.1.1.015004",
+    "repository": "https://github.com/skalalab/heaton_a-in-vivo-collagen-SHG-data",
+    "commit": "5f363f4027cdbf8bd63c36ed431184ae33267841",
+    "root_relative_to_bulk_data": "public/heaton-invivo-shg",
+    "pixel_spacing_um": [0.586, 0.586],
+    "fields": 79,
+    "mice": 16
+  },
+  "split": {
+    "unit": "independent_acquisition_experiment",
+    "development": {"experiment": "Exp10", "mice": 8, "fields": 34},
+    "confirmation": {"experiment": "Exp15", "mice": 8, "fields": 45}
+  },
+  "comparator": {
+    "name": "CurveAlign 6.0 Beta 2 command-line with CT-FIRE",
+    "release_date": "2025-03-24",
+    "zip_sha256": "34A8CA9FB8B59BCA0FD6C222A119D6FD7D52677C8FC84C1CDADB1B3843FF9378",
+    "manual_sha256": "858E27A929D0423DC02BE82745E1D9B0CC3329B731F896B3D62F530245B3B7E6",
+    "runtime": "MATLAB Runtime R2023b (23.2)",
+    "curvealign_threshold_8bit": 50,
+    "curvealign_retained_fraction": 0.04
+  },
+  "measurement": {
+    "tensor_scales_um": [1.172, 2.344, 4.688],
+    "field_width_um": 300.032,
+    "endpoints": [
+      "axial_resultant",
+      "foreground_occupancy",
+      "median_segment_straightness",
+      "median_segment_length_um",
+      "median_local_width_um"
+    ],
+    "adapter_development_grids": {
+      "background_opening_radius_um": [5.86, 11.72, 23.44],
+      "ridge_scales_um": [[0.586, 1.172, 2.344], [1.172, 2.344, 4.688]],
+      "foreground_quantile": [0.65, 0.75, 0.85],
+      "minimum_component_length_um": [5.0, 10.0, 20.0]
+    },
+    "minimum_object_area_pixels": 16,
+    "normalization_percentiles": [1.0, 99.5]
+  },
+  "conditions": [
+    {"id": "clean"},
+    {"id": "blur_sigma_1", "blur_sigma_px": 1.0},
+    {"id": "blur_sigma_2", "blur_sigma_px": 2.0},
+    {"id": "blur_sigma_4", "blur_sigma_px": 4.0},
+    {"id": "noise_snr_20", "noise_snr_db": 20.0},
+    {"id": "noise_snr_10", "noise_snr_db": 10.0},
+    {"id": "noise_snr_5", "noise_snr_db": 5.0},
+    {"id": "resample_factor_2", "resample_factor": 2},
+    {"id": "resample_factor_4", "resample_factor": 4},
+    {"id": "contrast_factor_0_50", "contrast_factor": 0.50},
+    {"id": "contrast_factor_0_25", "contrast_factor": 0.25},
+    {"id": "crop_fraction_0_90", "crop_fraction": 0.90},
+    {"id": "crop_fraction_0_75", "crop_fraction": 0.75},
+    {"id": "compound_moderate", "blur_sigma_px": 2.0, "noise_snr_db": 10.0, "resample_factor": 2},
+    {"id": "compound_severe", "blur_sigma_px": 4.0, "noise_snr_db": 5.0, "resample_factor": 4, "contrast_factor": 0.25}
+  ],
+  "perturbation_subset": {
+    "unit": "mouse",
+    "fields_per_mouse": 1,
+    "selection": "ascending sha256('nostos-heaton-shg-perturb-v1|' + relative_path)",
+    "development_fields": 8,
+    "confirmation_fields": 8,
+    "clean_cross_software_fields": {"development": 34, "confirmation": 45}
+  },
+  "adapter_selection": {
+    "unit": "mouse",
+    "fields_per_mouse": 2,
+    "selection": "ascending sha256('nostos-heaton-shg-adapter-v1|' + relative_path)",
+    "development_fields": 16,
+    "minimum_complete_field_fraction": 0.80,
+    "minimum_median_accepted_segments": 10,
+    "correlation_target": 0.50,
+    "primary_rank": "number of five clean Exp10 Spearman correlations at least target",
+    "secondary_rank": "mean finite Fisher-z-transformed correlation",
+    "tertiary_rank": "lower median endpoint drift under foreground quantile plus or minus 0.05",
+    "final_tie_break": "lexicographic parameter order"
+  },
+  "invalidity_tolerances": {
+    "axial_resultant_absolute": 0.15,
+    "foreground_occupancy_relative": 0.25,
+    "median_segment_straightness_absolute": 0.10,
+    "median_segment_length_relative": 0.30,
+    "median_local_width_relative": 0.30,
+    "relative_denominator_floor": "Exp10 endpoint fifth percentile"
+  },
+  "risk_calibration": {
+    "cluster_unit": "mouse",
+    "folds": 4,
+    "bins": 6,
+    "seed": 8312601,
+    "maximum_predicted_risk": 0.15
+  },
+  "bootstrap": {"draws": 5000, "cluster_unit": "mouse", "seed": 8312602},
+  "success_gates": {
+    "minimum_successful_endpoint_pairs": 3,
+    "minimum_clean_spearman_rho": 0.70,
+    "minimum_cluster_bootstrap_lower95_rho": 0.50,
+    "minimum_full_coverage": 0.50,
+    "maximum_full_risk_upper95": 0.20,
+    "minimum_matched_risk_reduction": 0.05,
+    "matched_risk_reduction_ci_excludes_zero": true,
+    "minimum_clean_multiendpoint_retention": 0.80,
+    "minimum_ablation_aurc_increase": 0.01
+  },
+  "development_policy": {
+    "allowed": [
+      "read and process Exp10 raw image pixels",
+      "run CurveAlign and CT-FIRE on Exp10",
+      "select one adapter parameter tuple from the predeclared grid",
+      "fit risk calibration and denominator floors on Exp10",
+      "debug execution on official packaged test images"
+    ],
+    "prohibited_until_locked_profile": [
+      "compute or summarize any NOSTOS endpoint on Exp15",
+      "run CurveAlign or CT-FIRE on Exp15",
+      "select an endpoint, threshold or adapter using Exp15",
+      "relax a success gate after Exp15 analysis"
+    ]
+  },
+  "claim_boundary": "One independent in-vivo SHG acquisition-experiment confirmation of recognized collagen structural descriptors and selective technical validity; not independent-laboratory, mechanical, diagnostic, surgical, treatment-response or clinical validation."
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": "nostos-runtime-audit-manifest/1.0",
+  "status": "verified_pass",
+  "active_runtime": "t7-python313-cuda",
+  "audit_implementation": {
+    "path": "scripts/audit_python_runtime.py",
+    "bytes": 9183,
+    "sha256": "2768aaccbb065afed325835d18b7a286dc19094250246a320fbc99f9a42a8711"
+  },
+  "verified_runtimes": [
+    {
+      "path": "outputs/nostos0-runtime-audit-v1/local_cpu.json",
+      "bytes": 2402,
+      "sha256": "3f0e9c7de9c9c20dd25c26b1f06bbcc8ad52d828df685acc9fc586ad367be6a1",
+      "status": "verified_pass",
+      "tests_passed": 297,
+      "tests_skipped": 4,
+      "gpu_required": false
+    },
+    {
+      "path": "outputs/nostos0-runtime-audit-v1/t7_cuda.json",
+      "bytes": 2865,
+      "sha256": "ada64a5c5583a97e87a6d4a0bcfb8dd84d43ed503da52a62da4b4e5f19122c5b",
+      "status": "verified_pass",
+      "tests_passed": 308,
+      "tests_skipped": 0,
+      "gpu_required": true,
+      "device": "NVIDIA GeForce RTX 5070 Ti"
+    }
+  ],
+  "retired_runtime": {
+    "path": "outputs/nostos0-runtime-audit-v1/t7_legacy_py314.json",
+    "bytes": 2774,
+    "sha256": "4ca378ac756c5b95474173a4eea4f9faa774882b805ef6af42a075354d2c45c3",
+    "status": "incompatible",
+    "reason": "Python 3.14 environment lacks scikit-image and contains NOSTOS 0.2.0; retained for provenance and not selected by launchers."
+  },
+  "t7_launcher_bindings": [
+    {
+      "path": "storage.json",
+      "bytes": 266,
+      "sha256": "cac4252e2d55838459e6fac9a6f243b063f0b7f4b12ece788a7d6870aba5f531"
+    },
+    {
+      "path": "launch_nostos.ps1",
+      "bytes": 526,
+      "sha256": "d6828d3242cd874833b3da6fa808b67c126fdb45f077fc02b95d14248f246864"
+    },
+    {
+      "path": "run_cpu_pilot.ps1",
+      "bytes": 2278,
+      "sha256": "a456457a889d22020c00736b0852e8c3382306ec54b557d6da51c5dc4a2d3697"
+    },
+    {
+      "path": "run_flagship_validation.ps1",
+      "bytes": 2584,
+      "sha256": "8e805ba47f6aa5a911b7c50213396f6f6240bdc93013c5a57e865029b9e20708"
+    }
+  ],
+  "interpretation": "The supported CPU and T7 CUDA environments execute the complete applicable test matrix and finite 2048 x 2048 FFT smoke tests. Runtime verification is not acquisition validation or clinical validation."
+}

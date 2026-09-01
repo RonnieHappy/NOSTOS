@@ -1,0 +1,416 @@
+{
+  "artifact_hashes": {
+    "v1_1_development": {
+      "path": "outputs/nostos0-fmd-validity-profile-v1-1-compiled/development_audit.json",
+      "sha256": "e2144c365039750949e07b0590efed77ff0dd48576192beea602b4713c33202b"
+    },
+    "v1_1_performance_abort": {
+      "path": "outputs/nostos0-fmd-validity-profile-v1-1-development/performance_abort_receipt.json",
+      "sha256": "b5c63befe8ed11ff5fce3fc3a341358c9cf61998600e16fab104d397c3c55310"
+    },
+    "v1_2_confirmation": {
+      "path": "outputs/nostos0-fmd-validity-profile-v1-2-confirmation-audit-v1-1/confirmation_audit.json",
+      "sha256": "bf4dd2128faa118f757efa73af61a5592fa29b36b4389c2158058e8a563b641a"
+    },
+    "v1_2_development": {
+      "path": "outputs/nostos0-fmd-validity-profile-v1-2-compiled/development_audit.json",
+      "sha256": "2ac42a93c369aeb86a2132c344eb8e82462da3ed75a8b3bb370011fd536f4ea5"
+    },
+    "v1_3_config": {
+      "path": "configs/fmd_widefield_validity_profile_v1_3.locked.json",
+      "sha256": "62f1e77f5e380abb3943e6014c0d0603747a403c50d06a6e2a18a17fb544045b"
+    },
+    "v1_3_confirmation_audit": {
+      "path": "outputs/nostos0-fmd-widefield-v1-3-confirmation-audit/confirmation_audit.json",
+      "sha256": "cd7bc4569434be13a7bcec18ba2f58dbec6010bde2e040aea4563964c6d0fdfc"
+    },
+    "v1_3_confirmation_index": {
+      "path": "outputs/nostos0-fmd-widefield-v1-3-confirmation/confirmation_pair_index.json",
+      "sha256": "0d775c13bff8f479db63b8e63a00006cbce1f9d59ef2111410161509abe9558f"
+    },
+    "v1_3_confirmation_rows": {
+      "path": "outputs/nostos0-fmd-widefield-v1-3-confirmation/confirmation_rows.jsonl",
+      "sha256": "cf22eada35d7e967788c15940fffe21474cf9709dd3a47e00163212695b855cc"
+    },
+    "v1_3_development_index": {
+      "path": "outputs/nostos0-fmd-widefield-v1-3-development/development_pair_index.json",
+      "sha256": "076cd012088ddda8559634067b066a0465734020384649ade6fb907848340d6c"
+    },
+    "v1_3_development_rows": {
+      "path": "outputs/nostos0-fmd-widefield-v1-3-development/development_rows.jsonl",
+      "sha256": "feaf9e734a3b68dd591251c4b17452e953aea2b95a5f99d6b8fb8959459123f6"
+    },
+    "v1_3_lock": {
+      "path": "manifests/fmd_widefield_validity_profile_v1_3_confirmation_lock.json",
+      "sha256": "a12a1e3ca3e6906bbe54ae62fb8562dcd78626c91832e28f1f713e6327c756cf"
+    },
+    "v1_3_profile": {
+      "path": "outputs/nostos0-fmd-widefield-v1-3-compiled/validity_profile.json",
+      "sha256": "9c99e6c01359b8b8ab84f1eb6f48cf9101e913ee90269b63573ffd1abc69b737"
+    },
+    "v1_3_reporting_amendment": {
+      "path": "outputs/nostos0-fmd-widefield-v1-3-confirmation-audit-v1-2-reporting-amendment.json",
+      "sha256": "62b879a63677ede1f38b39948afb7e1790d8a1ab1fcf1c69212d22559158d038"
+    },
+    "v1_4_config": {
+      "path": "configs/fmd_widefield_conditional_support_v1_4.locked.json",
+      "sha256": "c7912e8d64e654c0fff62b9943d03d67afb6a46cfaabd50ad1db94c5d71e148f"
+    },
+    "v1_4_confirmation_audit": {
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-confirmation-audit/confirmation_audit.json",
+      "sha256": "ac2c47392c08bf3a7ba03fb8290e6b955ca903e66e3baf39492c2065601fba02"
+    },
+    "v1_4_confirmation_index": {
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-confirmation/confirmation_pair_index.json",
+      "sha256": "ebbffbad83384ee421bdb897ec29fb58ba0d5c43b38f00282fcda0ede2eca0f3"
+    },
+    "v1_4_confirmation_rows": {
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-confirmation/confirmation_rows.jsonl",
+      "sha256": "d95288907b6fd2ac14a81f6c54469c392661c24c3aa11382551a72eb2c5c4eee"
+    },
+    "v1_4_confirmation_scored": {
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-confirmation-audit/confirmation_scored.jsonl",
+      "sha256": "82d2f71e3c5cb22c6cbc8b9f710fccc92f2590071b09e4b5f7886abe5010960a"
+    },
+    "v1_4_development_audit": {
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-development/development_audit.json",
+      "sha256": "146abf77a43f7e621cdc42c5453d465f4e1ae0336d2f7a5ee67836ddd4cfbf3b"
+    },
+    "v1_4_finite_sample": {
+      "path": "outputs/nostos0-fmd-widefield-v1-4-finite-sample-uncertainty.json",
+      "sha256": "981f0dba11430c75c6574e43c7ecc06b82db1a1d7958acc41d63834ca4e4f057"
+    },
+    "v1_4_lock": {
+      "path": "manifests/fmd_widefield_conditional_support_v1_4_confirmation_lock.json",
+      "sha256": "b82e2ad2d468e156cd08e306d7b1eaeabb70912c0ec8d1db981bfd3e70e72e1d"
+    },
+    "v1_4_profile": {
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-development/conditional_support_profile.json",
+      "sha256": "a1bc92f5658e0cb2dae35f54acd15dab48c8bd70f09a5012d873ab2043ffd141"
+    },
+    "v1_metadata_failure": {
+      "path": "outputs/nostos0-fmd-validity-profile-v1-development/metadata_failure_receipt.json",
+      "sha256": "d1cb4483c9586c99adf737734ebc639ff68d2799f2b2a462b35754592028283e"
+    }
+  },
+  "checks": {
+    "all_required_artifacts_present": true,
+    "deployed_decisions_reference_label_blind": true,
+    "failure_lineage_retained": true,
+    "hash_selection_reproduced": true,
+    "reporting_only_amendment_is_nonanalytical": true,
+    "v1_2_pooled_pass_but_widefield_failure_retained": true,
+    "v1_3_confirmation_rows_integral": true,
+    "v1_3_development_confirmation_groups_disjoint": true,
+    "v1_3_development_rows_integral": true,
+    "v1_3_lock_content_and_artifacts_exact": true,
+    "v1_3_pooled_confirmation_pass_retained": true,
+    "v1_4_confirmation_decisions_exactly_recomputed": true,
+    "v1_4_confirmation_groups_disjoint_from_all_opened_development": true,
+    "v1_4_confirmation_rows_integral": true,
+    "v1_4_finite_sample_caveat_present": true,
+    "v1_4_hierarchical_confirmation_pass": true,
+    "v1_4_lock_content_and_artifacts_exact": true
+  },
+  "content_sha256": "f62e6dddcb89c2903d0530aacf99b071a25ebc614ed391024924bf608bc1b5aa",
+  "failure_repair_lineage": [
+    {
+      "disposition": "retained; zero endpoint analysis",
+      "stage": "v1_metadata",
+      "status": "failed_before_endpoint_analysis"
+    },
+    {
+      "disposition": "retained; endpoint-selective implementation added",
+      "stage": "v1_1_runtime",
+      "status": "development_run_manually_stopped_before_row_export"
+    },
+    {
+      "disposition": "no deployable operating point",
+      "stage": "v1_1_base_contract",
+      "status": "no_operating_point"
+    },
+    {
+      "disposition": "not promoted across modalities",
+      "stage": "v1_2_pooled_profile",
+      "status": "aggregate_pass_with_widefield_failure",
+      "widefield_accepted": 48,
+      "widefield_invalid": 20,
+      "widefield_risk": 0.4166666666666667
+    },
+    {
+      "disposition": "pooled pass; deterministic avg8-by-8px subgroup failure triggered v1.4",
+      "primary_operating_point": {
+        "accepted": 68,
+        "accepted_independent_groups": 4,
+        "cluster_bootstrap_risk_upper95": 0.1111111111111111,
+        "coverage": 0.2833333333333333,
+        "eligible": 240,
+        "invalid": 4,
+        "predicted_risk_threshold": 0.6303073200826219,
+        "risk": 0.058823529411764705
+      },
+      "stage": "v1_3_widefield_profile",
+      "status": "pass"
+    },
+    {
+      "aurc_difference": {
+        "bootstrap_ci95": [
+          0.1871387641754223,
+          0.41602048269528413
+        ],
+        "bootstrap_probability_positive": 1.0,
+        "definition": "acquisition_qc_AURC_minus_conditional_primary_AURC; positive favors NOSTOS",
+        "draws": 5000,
+        "independent_groups": 4,
+        "observed": 0.28067170032216415,
+        "seed": 26082992
+      },
+      "matched_acquisition_qc": {
+        "accepted": 64,
+        "boundary_tie_split": true,
+        "coverage": 0.26666666666666666,
+        "deterministic_tie_break": "case_id",
+        "eligible": 240,
+        "invalid": 31,
+        "risk": 0.484375,
+        "target_accepted": 64,
+        "tie_robust_risk_bounds": {
+          "best_case_invalid": 31,
+          "best_case_risk": 0.484375,
+          "boundary_calibrated_risk": 0.4875994598528003,
+          "boundary_tie_cases": 3,
+          "boundary_tie_invalid": 2,
+          "cases_required_from_boundary_tie": 1,
+          "strictly_below_boundary": 63,
+          "worst_case_invalid": 32,
+          "worst_case_risk": 0.5
+        }
+      },
+      "primary_operating_point": {
+        "accepted": 64,
+        "accepted_independent_groups": 4,
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.26666666666666666,
+        "eligible": 240,
+        "invalid": 0,
+        "predicted_risk_threshold": 0.6303073200826219,
+        "risk": 0.0
+      },
+      "stage": "v1_4_hierarchical_profile",
+      "status": "pass",
+      "supported_cells": [
+        {
+          "summary": {
+            "accepted": 16,
+            "accepted_independent_groups": 4,
+            "cluster_bootstrap_risk_upper95": 0.0,
+            "coverage": 1.0,
+            "eligible": 16,
+            "invalid": 0,
+            "predicted_risk_threshold": 0.6303073200826219,
+            "risk": 0.0
+          },
+          "values": [
+            "avg16",
+            16.0
+          ]
+        },
+        {
+          "summary": {
+            "accepted": 16,
+            "accepted_independent_groups": 4,
+            "cluster_bootstrap_risk_upper95": 0.0,
+            "coverage": 1.0,
+            "eligible": 16,
+            "invalid": 0,
+            "predicted_risk_threshold": 0.6303073200826219,
+            "risk": 0.0
+          },
+          "values": [
+            "avg16",
+            4.0
+          ]
+        },
+        {
+          "summary": {
+            "accepted": 16,
+            "accepted_independent_groups": 4,
+            "cluster_bootstrap_risk_upper95": 0.0,
+            "coverage": 1.0,
+            "eligible": 16,
+            "invalid": 0,
+            "predicted_risk_threshold": 0.6303073200826219,
+            "risk": 0.0
+          },
+          "values": [
+            "avg16",
+            8.0
+          ]
+        },
+        {
+          "summary": {
+            "accepted": 16,
+            "accepted_independent_groups": 4,
+            "cluster_bootstrap_risk_upper95": 0.0,
+            "coverage": 1.0,
+            "eligible": 16,
+            "invalid": 0,
+            "predicted_risk_threshold": 0.6303073200826219,
+            "risk": 0.0
+          },
+          "values": [
+            "avg8",
+            16.0
+          ]
+        }
+      ]
+    }
+  ],
+  "finite_sample_uncertainty": {
+    "accepted_measurement_interval": {
+      "clopper_pearson_95": [
+        0.0,
+        0.05600908938663656
+      ],
+      "events": 0,
+      "observed_proportion": 0.0,
+      "trials": 64
+    },
+    "independent_group_any_failure_interval": {
+      "clopper_pearson_95": [
+        0.0,
+        0.6023646356164746
+      ],
+      "events": 0,
+      "observed_proportion": 0.0,
+      "trials": 4
+    },
+    "warning": "A percentile cluster bootstrap is identically zero when every observed field has zero events; it is an empirical resampling bound, not a population upper confidence limit."
+  },
+  "lock_audits": {
+    "v1_3": {
+      "all_artifacts_match": true,
+      "artifact_count": 21,
+      "artifact_mismatches": [],
+      "content_hash_valid": true
+    },
+    "v1_4": {
+      "all_artifacts_match": true,
+      "artifact_count": 28,
+      "artifact_mismatches": [],
+      "content_hash_valid": true
+    }
+  },
+  "methodological_contribution": [
+    "separate development compilation and one-shot confirmation",
+    "input-only risk scoring with reference labels withheld at deployment",
+    "acquisition-stratum support that hard-abstains on unseen families",
+    "hierarchical acquisition-by-requested-scale support that prevents pooled-risk masking",
+    "matched ordinary-QC and risk-coverage comparisons with FOV-clustered resampling",
+    "immutable failure, amendment, profile and source-hash lineage"
+  ],
+  "prohibited_extensions": [
+    "biological meaning or diagnostic performance",
+    "physical-scale accuracy because FMD pixel spacing was unavailable",
+    "image restoration or denoising superiority",
+    "transfer beyond the declared FMD widefield acquisition family",
+    "population-level zero risk: only four independent confirmation FOVs were used",
+    "clinical or intraoperative utility"
+  ],
+  "row_integrity": {
+    "v1_3_confirmation": {
+      "declared_capture_score_exact": true,
+      "every_pair_has_eight_endpoint_rows": true,
+      "member_error_cases": [],
+      "member_hash_lineage_exact": true,
+      "paired_acquisitions": 80,
+      "partition_exact": true,
+      "pixel_relative_only": true,
+      "rows": 640,
+      "score_error_cases": [],
+      "unique_case_ids": 640
+    },
+    "v1_3_development": {
+      "declared_capture_score_exact": true,
+      "every_pair_has_eight_endpoint_rows": true,
+      "member_error_cases": [],
+      "member_hash_lineage_exact": true,
+      "paired_acquisitions": 80,
+      "partition_exact": true,
+      "pixel_relative_only": true,
+      "rows": 640,
+      "score_error_cases": [],
+      "unique_case_ids": 640
+    },
+    "v1_4_confirmation": {
+      "declared_capture_score_exact": true,
+      "every_pair_has_eight_endpoint_rows": true,
+      "member_error_cases": [],
+      "member_hash_lineage_exact": true,
+      "paired_acquisitions": 80,
+      "partition_exact": true,
+      "pixel_relative_only": true,
+      "rows": 640,
+      "score_error_cases": [],
+      "unique_case_ids": 640
+    }
+  },
+  "schema_version": "nostos-fmd-validity-program-final-audit/1.0",
+  "selection_audit": {
+    "expected_field_prefix": [
+      7,
+      15,
+      13,
+      9,
+      16,
+      17,
+      18,
+      11,
+      20,
+      14,
+      5,
+      1
+    ],
+    "field_order_reproduced": true,
+    "realization_matches_by_field": {
+      "1": true,
+      "11": true,
+      "13": true,
+      "14": true,
+      "15": true,
+      "16": true,
+      "17": true,
+      "18": true,
+      "20": true,
+      "5": true,
+      "7": true,
+      "9": true
+    },
+    "realization_selection_reproduced": true,
+    "recomputed_field_prefix": [
+      7,
+      15,
+      13,
+      9,
+      16,
+      17,
+      18,
+      11,
+      20,
+      14,
+      5,
+      1
+    ],
+    "unused_fields_after_confirmation": [
+      3,
+      12,
+      6,
+      8,
+      4,
+      2,
+      10
+    ]
+  },
+  "status": "verified_pass",
+  "supported_claim": "Within one public widefield acquisition family, a frozen input-only calibrated-risk profile composed with development-only acquisition-by-scale support eliminated the previously reproducible unsafe subgroup on four untouched FOVs, at 26.7% primary coverage, while matched ordinary acquisition QC emitted 31 invalid values."
+}

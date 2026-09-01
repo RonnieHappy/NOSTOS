@@ -1,0 +1,140 @@
+{
+  "accepted_measurements": 64,
+  "content_sha256": "f268549a67395682fb612073f5810e0dfb2bf5db612f29739fc04cd4aefabe7d",
+  "frozen_gate_decisions_changed": false,
+  "independent_group_any_failure_interval": {
+    "clopper_pearson_95": [
+      0.0,
+      0.6023646356164746
+    ],
+    "events": 0,
+    "observed_proportion": 0.0,
+    "trials": 4
+  },
+  "independent_groups": 4,
+  "interpretation": {
+    "cluster_bootstrap_zero_event_warning": "A percentile cluster bootstrap is identically zero when every observed field has zero events; it is an empirical resampling bound, not a population upper confidence limit.",
+    "independent_group_any_failure_interval": "Exact interval for the proportion of comparable fields with at least one invalid accepted measurement. With four fields this bound is necessarily wide.",
+    "nested_measurement_interval": "Describes emitted measurements in this benchmark; repeated measurements within a field are not independent biological samples."
+  },
+  "nested_measurement_interval": {
+    "clopper_pearson_95": [
+      0.0,
+      0.05600908938663656
+    ],
+    "events": 0,
+    "observed_proportion": 0.0,
+    "trials": 64
+  },
+  "predicted_risk_threshold": 0.6303073200826219,
+  "profile_refit": false,
+  "schema_version": "nostos-finite-sample-risk-audit/1.0",
+  "source": {
+    "confirmation_audit_content_sha256": "6c63e990c3e7efbd7673642f843c9dc322fe01c1e25633ce196f0836e58d2272",
+    "confirmation_audit_file_sha256": "ac2c47392c08bf3a7ba03fb8290e6b955ca903e66e3baf39492c2065601fba02",
+    "confirmation_scored_rows_sha256": "82d2f71e3c5cb22c6cbc8b9f710fccc92f2590071b09e4b5f7886abe5010960a"
+  },
+  "status": "supplemental_uncertainty_complete",
+  "supported_cell_intervals": [
+    {
+      "independent_group_any_failure_interval": {
+        "clopper_pearson_95": [
+          0.0,
+          0.6023646356164746
+        ],
+        "events": 0,
+        "observed_proportion": 0.0,
+        "trials": 4
+      },
+      "key": "[\"avg16\",16.0]",
+      "nested_measurement_interval": {
+        "clopper_pearson_95": [
+          0.0,
+          0.20590721420782268
+        ],
+        "events": 0,
+        "observed_proportion": 0.0,
+        "trials": 16
+      },
+      "values": [
+        "avg16",
+        16.0
+      ]
+    },
+    {
+      "independent_group_any_failure_interval": {
+        "clopper_pearson_95": [
+          0.0,
+          0.6023646356164746
+        ],
+        "events": 0,
+        "observed_proportion": 0.0,
+        "trials": 4
+      },
+      "key": "[\"avg16\",4.0]",
+      "nested_measurement_interval": {
+        "clopper_pearson_95": [
+          0.0,
+          0.20590721420782268
+        ],
+        "events": 0,
+        "observed_proportion": 0.0,
+        "trials": 16
+      },
+      "values": [
+        "avg16",
+        4.0
+      ]
+    },
+    {
+      "independent_group_any_failure_interval": {
+        "clopper_pearson_95": [
+          0.0,
+          0.6023646356164746
+        ],
+        "events": 0,
+        "observed_proportion": 0.0,
+        "trials": 4
+      },
+      "key": "[\"avg16\",8.0]",
+      "nested_measurement_interval": {
+        "clopper_pearson_95": [
+          0.0,
+          0.20590721420782268
+        ],
+        "events": 0,
+        "observed_proportion": 0.0,
+        "trials": 16
+      },
+      "values": [
+        "avg16",
+        8.0
+      ]
+    },
+    {
+      "independent_group_any_failure_interval": {
+        "clopper_pearson_95": [
+          0.0,
+          0.6023646356164746
+        ],
+        "events": 0,
+        "observed_proportion": 0.0,
+        "trials": 4
+      },
+      "key": "[\"avg8\",16.0]",
+      "nested_measurement_interval": {
+        "clopper_pearson_95": [
+          0.0,
+          0.20590721420782268
+        ],
+        "events": 0,
+        "observed_proportion": 0.0,
+        "trials": 16
+      },
+      "values": [
+        "avg8",
+        16.0
+      ]
+    }
+  ]
+}

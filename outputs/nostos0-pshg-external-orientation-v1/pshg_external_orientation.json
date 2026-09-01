@@ -1,0 +1,319 @@
+{
+  "protocol_version": "nostos-pshg-external-orientation/1.0",
+  "protocol_sha256": "a38212778a8e1f978471891a0c1b9d52ec1538bdb34bc8521131406ae6099e1f",
+  "dataset": {
+    "doi": "10.17605/OSF.IO/UDTQP",
+    "subset": "skin tissue unstained / FSHG",
+    "manifest_sha256": "47f56b738cc497aff4a26377ba50e45de7922936d43e99ab1f0b991dd18811e5"
+  },
+  "status": "fail",
+  "primary": {
+    "eligible_rois": 53,
+    "eligible_pixels": 1263724,
+    "median_error": 82.24756603453571,
+    "p75_error": 86.42682424771628,
+    "median_roi_median_error": 81.91229895480706,
+    "axial_alignment": -0.8739487915969831,
+    "median_error_roi_bootstrap95": [
+      81.95214965688875,
+      82.53431310003451
+    ]
+  },
+  "comparators": {
+    "sigma4": {
+      "eligible_rois": 53,
+      "eligible_pixels": 1263724,
+      "median_error": 82.67236997255276,
+      "p75_error": 86.6132933161689,
+      "median_roi_median_error": 82.21552060499542,
+      "axial_alignment": -0.886041138381143
+    },
+    "smoothed_gradient": {
+      "eligible_rois": 53,
+      "eligible_pixels": 1263724,
+      "median_error": 63.82583463536841,
+      "p75_error": 79.12983412209019,
+      "median_roi_median_error": 64.14542549186194,
+      "axial_alignment": -0.3265471906885103
+    }
+  },
+  "success_gates": {
+    "eligible_rois_ge_30": true,
+    "eligible_pixels_ge_50000": true,
+    "median_error_le_15_degrees": false,
+    "bootstrap_upper_le_15_degrees": false,
+    "p75_error_le_30_degrees": false,
+    "median_roi_median_error_le_15_degrees": false,
+    "axial_alignment_ge_0_65": false,
+    "noninferior_to_sigma4_within_2_degrees": true,
+    "noninferior_to_gradient_within_2_degrees": false
+  },
+  "scope": "Pristine external-acquisition validation of a scale-declared local 2D direction field against polarization-SHG orientation.",
+  "cases": [
+    {
+      "roi": "skin_1",
+      "eligible_pixels": 11349,
+      "median_error": 84.35626555069693
+    },
+    {
+      "roi": "skin_10",
+      "eligible_pixels": 12146,
+      "median_error": 80.67736040544276
+    },
+    {
+      "roi": "skin_11",
+      "eligible_pixels": 21787,
+      "median_error": 80.34244443586235
+    },
+    {
+      "roi": "skin_12",
+      "eligible_pixels": 36853,
+      "median_error": 83.28587375605817
+    },
+    {
+      "roi": "skin_13",
+      "eligible_pixels": 37924,
+      "median_error": 82.7567508508377
+    },
+    {
+      "roi": "skin_14",
+      "eligible_pixels": 36617,
+      "median_error": 82.53757410216534
+    },
+    {
+      "roi": "skin_15",
+      "eligible_pixels": 36783,
+      "median_error": 83.67021111470207
+    },
+    {
+      "roi": "skin_16",
+      "eligible_pixels": 9983,
+      "median_error": 79.33817321956619
+    },
+    {
+      "roi": "skin_17",
+      "eligible_pixels": 17549,
+      "median_error": 79.59171164349257
+    },
+    {
+      "roi": "skin_18",
+      "eligible_pixels": 17331,
+      "median_error": 82.1927717929112
+    },
+    {
+      "roi": "skin_19",
+      "eligible_pixels": 9457,
+      "median_error": 80.90183368771483
+    },
+    {
+      "roi": "skin_2",
+      "eligible_pixels": 10882,
+      "median_error": 84.16308441727048
+    },
+    {
+      "roi": "skin_20",
+      "eligible_pixels": 24005,
+      "median_error": 81.70047646497609
+    },
+    {
+      "roi": "skin_21",
+      "eligible_pixels": 17871,
+      "median_error": 81.94786096448885
+    },
+    {
+      "roi": "skin_22",
+      "eligible_pixels": 16410,
+      "median_error": 82.4306050544063
+    },
+    {
+      "roi": "skin_23",
+      "eligible_pixels": 15504,
+      "median_error": 82.76693769347578
+    },
+    {
+      "roi": "skin_24",
+      "eligible_pixels": 19205,
+      "median_error": 81.77109897121358
+    },
+    {
+      "roi": "skin_25",
+      "eligible_pixels": 14882,
+      "median_error": 81.16712466711628
+    },
+    {
+      "roi": "skin_26",
+      "eligible_pixels": 5399,
+      "median_error": 81.63682098200144
+    },
+    {
+      "roi": "skin_27",
+      "eligible_pixels": 24715,
+      "median_error": 80.97629258428837
+    },
+    {
+      "roi": "skin_28",
+      "eligible_pixels": 13655,
+      "median_error": 82.8371749770286
+    },
+    {
+      "roi": "skin_29",
+      "eligible_pixels": 10600,
+      "median_error": 82.92532905403183
+    },
+    {
+      "roi": "skin_3",
+      "eligible_pixels": 42213,
+      "median_error": 82.7451261019943
+    },
+    {
+      "roi": "skin_30",
+      "eligible_pixels": 6829,
+      "median_error": 77.91068162516116
+    },
+    {
+      "roi": "skin_31",
+      "eligible_pixels": 9614,
+      "median_error": 79.38825002204734
+    },
+    {
+      "roi": "skin_32",
+      "eligible_pixels": 2801,
+      "median_error": 82.28436551290409
+    },
+    {
+      "roi": "skin_33",
+      "eligible_pixels": 27676,
+      "median_error": 82.90659551451945
+    },
+    {
+      "roi": "skin_34",
+      "eligible_pixels": 30210,
+      "median_error": 82.33421819488476
+    },
+    {
+      "roi": "skin_35",
+      "eligible_pixels": 45023,
+      "median_error": 81.66759305871952
+    },
+    {
+      "roi": "skin_36",
+      "eligible_pixels": 8955,
+      "median_error": 83.6044699309655
+    },
+    {
+      "roi": "skin_37",
+      "eligible_pixels": 14642,
+      "median_error": 82.11014628892406
+    },
+    {
+      "roi": "skin_38",
+      "eligible_pixels": 43542,
+      "median_error": 81.8890905987053
+    },
+    {
+      "roi": "skin_39",
+      "eligible_pixels": 22353,
+      "median_error": 81.77256680592555
+    },
+    {
+      "roi": "skin_4",
+      "eligible_pixels": 45786,
+      "median_error": 83.6944711579045
+    },
+    {
+      "roi": "skin_40",
+      "eligible_pixels": 23275,
+      "median_error": 82.18799751423208
+    },
+    {
+      "roi": "skin_41",
+      "eligible_pixels": 26504,
+      "median_error": 83.15891138249249
+    },
+    {
+      "roi": "skin_42",
+      "eligible_pixels": 49743,
+      "median_error": 83.48238848865881
+    },
+    {
+      "roi": "skin_43",
+      "eligible_pixels": 40256,
+      "median_error": 82.80657495231289
+    },
+    {
+      "roi": "skin_44",
+      "eligible_pixels": 42491,
+      "median_error": 81.91229895480706
+    },
+    {
+      "roi": "skin_45",
+      "eligible_pixels": 39808,
+      "median_error": 82.37297676611541
+    },
+    {
+      "roi": "skin_46",
+      "eligible_pixels": 51449,
+      "median_error": 81.80950301642436
+    },
+    {
+      "roi": "skin_47",
+      "eligible_pixels": 38574,
+      "median_error": 82.93018782242873
+    },
+    {
+      "roi": "skin_48",
+      "eligible_pixels": 33923,
+      "median_error": 82.5625601821189
+    },
+    {
+      "roi": "skin_49",
+      "eligible_pixels": 53544,
+      "median_error": 81.646259034784
+    },
+    {
+      "roi": "skin_5",
+      "eligible_pixels": 3416,
+      "median_error": 78.772513163034
+    },
+    {
+      "roi": "skin_50",
+      "eligible_pixels": 50250,
+      "median_error": 81.72883791922794
+    },
+    {
+      "roi": "skin_51",
+      "eligible_pixels": 27582,
+      "median_error": 81.60836358476107
+    },
+    {
+      "roi": "skin_52",
+      "eligible_pixels": 16421,
+      "median_error": 79.61468331020768
+    },
+    {
+      "roi": "skin_53",
+      "eligible_pixels": 18600,
+      "median_error": 80.14371343230322
+    },
+    {
+      "roi": "skin_6",
+      "eligible_pixels": 3229,
+      "median_error": 78.48462845016229
+    },
+    {
+      "roi": "skin_7",
+      "eligible_pixels": 3714,
+      "median_error": 81.76508741550505
+    },
+    {
+      "roi": "skin_8",
+      "eligible_pixels": 5553,
+      "median_error": 81.50171296912161
+    },
+    {
+      "roi": "skin_9",
+      "eligible_pixels": 14841,
+      "median_error": 80.61511345529208
+    }
+  ]
+}

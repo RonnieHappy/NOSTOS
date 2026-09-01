@@ -1,0 +1,138 @@
+{
+  "schema_version": "nostos-biosr-small-pilot-final-audit/1.0",
+  "created_at_utc": "2026-08-29T01:33:15Z",
+  "status": "developmental_small_pilot_complete_go_for_untouched_threshold_calibration",
+  "scope": {
+    "reference_fields": 12,
+    "structures": {
+      "CCPs": 6,
+      "ER": 6
+    },
+    "paired_acquisitions_total": 90,
+    "paired_acquisitions_reference_eligible": 86,
+    "endpoint_cases": 1890,
+    "confirmation_archives_accessed": false
+  },
+  "locked_inputs": [
+    {
+      "path": "configs/paired_acquisition_support_v5.locked.json",
+      "bytes": 4791,
+      "sha256": "711e5f4aaac8bcbeccb07bc94fb33dd3e51f5eeec2fea317a25ed0c8b66d7573"
+    },
+    {
+      "path": "manifests/biosr_small_pilot_v5_artifact_receipt.json",
+      "bytes": 2558,
+      "sha256": "306bd10c140cdb1c69a7b65c0052972acfa8b459bfc1550369f29722219d6b64"
+    },
+    {
+      "path": "configs/biosr_widefield_measurement_profile_v1.locked.json",
+      "bytes": 3385,
+      "sha256": "321ee833987351fd64c9a358e2b8682bf368d35ea22a14665c05b65d5c2f6942"
+    }
+  ],
+  "audit": {
+    "script": {
+      "path": "scripts/audit_biosr_small_pilot_v5.py",
+      "bytes": 25107,
+      "sha256": "85176618e412dcae049c393af064f3ae5361f8188dce9f6def47f9d11b7975fc"
+    },
+    "machine_readable": {
+      "path": "outputs/nostos0-biosr-small-pilot-v5-audit/pilot_audit.json",
+      "bytes": 32126,
+      "sha256": "1c548c196fe5ca6487bf1df9758e7b851f37e1a75d278a47da845442c9058993"
+    },
+    "human_verdict": {
+      "path": "outputs/nostos0-biosr-small-pilot-v5-audit/PILOT_VERDICT.md",
+      "bytes": 3732,
+      "sha256": "e72843dd60c2f9bae1969eadbc291e3ab8c9c59a6cf08382fb321b3f8c7ad85e"
+    },
+    "final_tool_audit": {
+      "path": "docs/NOSTOS0_SMALL_PILOT_V5_FINAL_TOOL_AUDIT.md",
+      "bytes": 9378,
+      "sha256": "412c8eb8a078daab52801f218081152e4a22fe9c0e504d0c62dcef0396f4d12a"
+    }
+  },
+  "claim_endpoint_results": {
+    "reference_eligible_cases": 1142,
+    "invalid_cases": 51,
+    "always_emit_risk": 0.0446584938704028,
+    "full_contract_aurc": 0.004059213554781581,
+    "always_emit_aurc": 0.0446584938704028,
+    "conventional_acquisition_qc_aurc": 0.005448551090154755,
+    "aurc_reduction_fraction_vs_always_emit": 0.9091054533419497,
+    "development_only_risk_coverage_landmarks": {
+      "closest_at_or_below_80_percent_coverage": {
+        "coverage": 0.7994746059544658,
+        "observed_risk": 0.0
+      },
+      "closest_at_or_below_90_percent_coverage": {
+        "coverage": 0.8957968476357268,
+        "observed_risk": 0.01466275659824047
+      },
+      "closest_at_or_below_95_percent_coverage": {
+        "coverage": 0.9492119089316988,
+        "observed_risk": 0.03413284132841329
+      }
+    }
+  },
+  "profile_decisions": {
+    "retained_endpoint_families": 10,
+    "disabled_scalar_endpoints": [
+      "hessian_blob_scale",
+      "hessian_tube_scale",
+      "spectral_scale"
+    ],
+    "unresolved_retained_endpoint": "ER tensor coherence at the two lowest signal levels",
+    "next_gate": "Frozen threshold selection on untouched threshold-calibration fields with reference-field clustered uncertainty."
+  },
+  "tool_contract_checks": {
+    "profiled_real_field": {
+      "input": {
+        "path": "outputs/nostos0-biosr-small-pilot-v5-audit/cli_smoke_ccp_cell001_level09.npy",
+        "bytes": 2016160,
+        "sha256": "11f05fa57c5e4a51280c1270c319aa5d599e78b522946a5fe8f202a452a76b1f"
+      },
+      "output": {
+        "path": "outputs/nostos0-biosr-small-pilot-v5-audit/cli_smoke_profiled/response_geometry.json",
+        "bytes": 20055,
+        "sha256": "dcf39deedcccd3eb5325e57d235a16a328fdfeb31f078ee40f8cc4b4daba0d31"
+      },
+      "profile_compatibility": "compatible",
+      "developmental_responses": 10,
+      "unvalidated_responses": 9,
+      "profile_disabled_responses": 3
+    },
+    "deliberate_spacing_mismatch": {
+      "output": {
+        "path": "outputs/nostos0-biosr-small-pilot-v5-audit/cli_smoke_incompatible_profile/response_geometry.json",
+        "bytes": 21044,
+        "sha256": "7e3796e04a48d162c4dad05b9cb11c23ac6d44c83c1d505c2e763be8fe844d1e"
+      },
+      "profile_compatibility": "incompatible",
+      "developmental_responses": 0,
+      "unvalidated_responses": 22,
+      "profile_disabled_responses": 0,
+      "expected_behavior": "fail_closed"
+    }
+  },
+  "figure": {
+    "manifest": {
+      "path": "figures/nostos0/figure_small_pilot_v5_audit.manifest.json",
+      "bytes": 2474,
+      "sha256": "681e5bd9f8d40316278a19c52c2f8607d3cf41dbce5c18d52be1bf7b1b863136"
+    },
+    "png_sha256": "7a28ffb0fc5377e2315a2a90a6af90264f419f1a5f25d78bc49b315c3f79cccd",
+    "svg_sha256": "32b628a42bbf98f6f44c27cbcbe2c81b74083a8c55a1f0beb9e425f9e339f8d7",
+    "pdf_sha256": "24abaabd408cb0461bc8d0380441f937fbfcc560df9361209a29a598464db53b"
+  },
+  "verification": {
+    "pytest_command": "uv run --frozen pytest -q",
+    "pytest_result": "214 passed, 4 skipped, 12 dependency deprecation warnings",
+    "pytest_exit_code": 0,
+    "compile_command": "uv run --frozen python -m compileall -q src scripts",
+    "compile_exit_code": 0,
+    "cli_profiled_smoke_exit_code": 0,
+    "cli_incompatible_profile_smoke_exit_code": 0
+  },
+  "claim_boundary": "This receipt closes the twelve-field developmental pilot only. It does not establish a final operating threshold, external confirmation, clinical validity, intraoperative utility or submission readiness."
+}

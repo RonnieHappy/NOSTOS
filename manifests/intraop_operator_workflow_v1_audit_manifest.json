@@ -1,0 +1,30 @@
+{
+  "schema_version": "nostos-intraop-operator-workflow-audit-manifest/1.0",
+  "status": "verified_pass",
+  "target": {
+    "path": "outputs/nostos0-intraop-operator-workflow-v1/intraop_result.json",
+    "bytes": 9200,
+    "sha256": "4bb59494121fb3cb7184c3578e9c27d4acf0a22ac9a597bfb92106336be1f9e8"
+  },
+  "scientific_lock": {
+    "path": "manifests/intraop_pshg_deployment_v1_4_lock.json",
+    "bytes": 21119,
+    "sha256": "d8f0d58cf153fad8a204160e156b238de963d13d9a827477c816acd0ddca17b9"
+  },
+  "audit_config": {
+    "path": "configs/intraop_operator_workflow_v1_audit.locked.json",
+    "bytes": 1147,
+    "sha256": "803fc3989510920c33dc6be53aadd20a494fcf4216ffdfb77f7786bf9fa50c7d"
+  },
+  "audit_implementation": {
+    "path": "scripts/audit_intraop_operator_workflow_v1.py",
+    "bytes": 11437,
+    "sha256": "bd55a1a1ef79684ef733cc50ca4c3c11ebd4ba066819c576fbd8a73d1220073f"
+  },
+  "audit_result": {
+    "path": "outputs/nostos0-intraop-operator-workflow-v1/workflow_audit.json",
+    "bytes": 1513,
+    "sha256": "6f82ecb55966d5ae58e419504ed7ab93a4667134f152d82f17fe1997754d226a"
+  },
+  "claim_boundary": "Verified packaging and fail-closed evidence handling for one hash-identical public unstained-PSHG acquisition. This is not validation of a new instrument, operator, tissue, clinical endpoint or patient-facing decision."
+}

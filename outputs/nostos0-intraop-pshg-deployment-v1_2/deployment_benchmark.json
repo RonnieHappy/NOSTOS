@@ -1,0 +1,227 @@
+{
+  "protocol_version": "nostos-intraop-pshg-deployment/1.2",
+  "status": "fail",
+  "checks": {
+    "completed_rois": true,
+    "production_validation_equivalence": false,
+    "pooled_reference_error": true,
+    "worst_roi_reference_error": true,
+    "analysis_latency": true,
+    "end_to_end_latency": true,
+    "peak_python_memory": true,
+    "deterministic_map_hashes": true,
+    "profile_and_source_hashes": true,
+    "technical_endpoint_promoted_only_in_scope": false,
+    "clinical_decision_withheld": true
+  },
+  "selection": {
+    "salt": "NOSTOS-intraop-pshg-deployment-v1-2026-08-29",
+    "rule": "Reuse the eight ROIs locked in v1; v1 and v1.1 stopped before any reference-error computation.",
+    "selected_rois": [
+      "breast_14",
+      "breast_32",
+      "breast_38",
+      "breast_7",
+      "breast_17",
+      "breast_25",
+      "breast_24",
+      "breast_3"
+    ]
+  },
+  "verification": {
+    "locked_files_verified": 20,
+    "selected_source_files_verified": 104
+  },
+  "summary": {
+    "rois": 8,
+    "eligible_pixels": 203875,
+    "pooled_median_reference_error_degrees": 7.1198883056640625,
+    "pooled_p75_reference_error_degrees": 13.156194686889648,
+    "worst_roi_median_reference_error_degrees": 9.03122329711914,
+    "p95_analysis_seconds": 0.074099714984186,
+    "p95_end_to_end_seconds": 0.4069306749617681,
+    "maximum_peak_python_memory_mb": 28.003087997436523,
+    "maximum_production_validation_orientation_difference_degrees": 7.629390779584355e-06,
+    "all_map_hashes_deterministic": true
+  },
+  "runtime": {
+    "python": "3.13.13",
+    "implementation": "CPython",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.5.2",
+    "author_operated": true,
+    "acquisition_time_measured": false
+  },
+  "lock": {
+    "path": "manifests/intraop_pshg_deployment_v1_2_lock.json",
+    "sha256": "c22999a14fedd560bf053283b4df3bedfbeedd3d33301fa66bd1b1bbdac49ee0"
+  },
+  "config": {
+    "path": "configs/intraop_pshg_deployment_benchmark_v1_2.locked.json",
+    "sha256": "884337e1e65523aec1681fca4caee6778804ae02f188ae50723d26f75e69f8f0"
+  },
+  "cases": [
+    {
+      "roi": "breast_14",
+      "status": "valid",
+      "evidence_status": "confirmed",
+      "eligible_pixels": 33783,
+      "median_reference_error_degrees": 7.738246917724609,
+      "p75_reference_error_degrees": 14.062743186950684,
+      "maximum_production_validation_orientation_difference_degrees": 7.6290523054467485e-06,
+      "maximum_production_validation_coherence_difference": 2.9802276424462093e-08,
+      "deterministic_map_hashes": true,
+      "clinical_decision": "withheld",
+      "runtime": {
+        "load_seconds": 0.02453549997881055,
+        "analysis_seconds": 0.0652592999394983,
+        "export_seconds": 0.28671519993804395,
+        "end_to_end_seconds": 0.38504260010086,
+        "peak_python_memory_mb": 28.002976417541504,
+        "acquisition_time_included": false
+      }
+    },
+    {
+      "roi": "breast_32",
+      "status": "valid",
+      "evidence_status": "confirmed",
+      "eligible_pixels": 17505,
+      "median_reference_error_degrees": 7.14802360534668,
+      "p75_reference_error_degrees": 12.518234252929688,
+      "maximum_production_validation_orientation_difference_degrees": 7.629197028791168e-06,
+      "maximum_production_validation_coherence_difference": 2.9802314838178745e-08,
+      "deterministic_map_hashes": true,
+      "clinical_decision": "withheld",
+      "runtime": {
+        "load_seconds": 0.024288299959152937,
+        "analysis_seconds": 0.065987000009045,
+        "export_seconds": 0.25122969993390143,
+        "end_to_end_seconds": 0.34929080004803836,
+        "peak_python_memory_mb": 28.003087997436523,
+        "acquisition_time_included": false
+      }
+    },
+    {
+      "roi": "breast_38",
+      "status": "review",
+      "evidence_status": "unvalidated",
+      "eligible_pixels": 44544,
+      "median_reference_error_degrees": 5.933642387390137,
+      "p75_reference_error_degrees": 11.057886600494385,
+      "maximum_production_validation_orientation_difference_degrees": 7.6293042923225585e-06,
+      "maximum_production_validation_coherence_difference": 2.9802076806362265e-08,
+      "deterministic_map_hashes": true,
+      "clinical_decision": "withheld",
+      "runtime": {
+        "load_seconds": 0.023585899965837598,
+        "analysis_seconds": 0.06568040000274777,
+        "export_seconds": 0.2333279000595212,
+        "end_to_end_seconds": 0.3304224000312388,
+        "peak_python_memory_mb": 28.00301170349121,
+        "acquisition_time_included": false
+      }
+    },
+    {
+      "roi": "breast_7",
+      "status": "review",
+      "evidence_status": "unvalidated",
+      "eligible_pixels": 25031,
+      "median_reference_error_degrees": 7.095029830932617,
+      "p75_reference_error_degrees": 13.155234575271606,
+      "maximum_production_validation_orientation_difference_degrees": 7.629236392858729e-06,
+      "maximum_production_validation_coherence_difference": 2.9802292300651345e-08,
+      "deterministic_map_hashes": true,
+      "clinical_decision": "withheld",
+      "runtime": {
+        "load_seconds": 0.024063500110059977,
+        "analysis_seconds": 0.07788709993474185,
+        "export_seconds": 0.28416689997538924,
+        "end_to_end_seconds": 0.3957315001171082,
+        "peak_python_memory_mb": 28.003040313720703,
+        "acquisition_time_included": false
+      }
+    },
+    {
+      "roi": "breast_17",
+      "status": "review",
+      "evidence_status": "unvalidated",
+      "eligible_pixels": 13295,
+      "median_reference_error_degrees": 6.6297149658203125,
+      "p75_reference_error_degrees": 12.5366849899292,
+      "maximum_production_validation_orientation_difference_degrees": 7.629263933495167e-06,
+      "maximum_production_validation_coherence_difference": 2.980219737658274e-08,
+      "deterministic_map_hashes": true,
+      "clinical_decision": "withheld",
+      "runtime": {
+        "load_seconds": 0.02021960006095469,
+        "analysis_seconds": 0.06056380015797913,
+        "export_seconds": 0.27310320013202727,
+        "end_to_end_seconds": 0.36203909991309047,
+        "peak_python_memory_mb": 28.00296401977539,
+        "acquisition_time_included": false
+      }
+    },
+    {
+      "roi": "breast_25",
+      "status": "review",
+      "evidence_status": "unvalidated",
+      "eligible_pixels": 23740,
+      "median_reference_error_degrees": 8.1077241897583,
+      "p75_reference_error_degrees": 15.152900695800781,
+      "maximum_production_validation_orientation_difference_degrees": 7.629355280869277e-06,
+      "maximum_production_validation_coherence_difference": 2.9802145862234397e-08,
+      "deterministic_map_hashes": true,
+      "clinical_decision": "withheld",
+      "runtime": {
+        "load_seconds": 0.02042700001038611,
+        "analysis_seconds": 0.06706600007601082,
+        "export_seconds": 0.264406300149858,
+        "end_to_end_seconds": 0.36026829993352294,
+        "peak_python_memory_mb": 28.00291633605957,
+        "acquisition_time_included": false
+      }
+    },
+    {
+      "roi": "breast_24",
+      "status": "review",
+      "evidence_status": "unvalidated",
+      "eligible_pixels": 33086,
+      "median_reference_error_degrees": 7.134186744689941,
+      "p75_reference_error_degrees": 13.082094192504883,
+      "maximum_production_validation_orientation_difference_degrees": 7.629315547319493e-06,
+      "maximum_production_validation_coherence_difference": 2.980176183609018e-08,
+      "deterministic_map_hashes": true,
+      "clinical_decision": "withheld",
+      "runtime": {
+        "load_seconds": 0.022703400114551187,
+        "analysis_seconds": 0.0633372999727726,
+        "export_seconds": 0.2840456999838352,
+        "end_to_end_seconds": 0.37899510003626347,
+        "peak_python_memory_mb": 28.00296401977539,
+        "acquisition_time_included": false
+      }
+    },
+    {
+      "roi": "breast_3",
+      "status": "review",
+      "evidence_status": "unvalidated",
+      "eligible_pixels": 12891,
+      "median_reference_error_degrees": 9.03122329711914,
+      "p75_reference_error_degrees": 17.096901893615723,
+      "maximum_production_validation_orientation_difference_degrees": 7.629390779584355e-06,
+      "maximum_production_validation_coherence_difference": 2.9801475287527524e-08,
+      "deterministic_map_hashes": true,
+      "clinical_decision": "withheld",
+      "runtime": {
+        "load_seconds": 0.022147499956190586,
+        "analysis_seconds": 0.06391849997453392,
+        "export_seconds": 0.3181972000747919,
+        "end_to_end_seconds": 0.4129609998781234,
+        "peak_python_memory_mb": 28.002676010131836,
+        "acquisition_time_included": false
+      }
+    }
+  ],
+  "claim_boundary": "A pass establishes deterministic and bounded-latency production of the already-confirmed PSHG local-orientation endpoint on eight public unstained fields. The amendment repairs evaluation-only missing-reference handling outside locked acquisition support. It does not add independent biological or clinical evidence.",
+  "clinical_readiness": "not_ready"
+}

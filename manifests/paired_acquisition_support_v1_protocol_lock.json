@@ -1,0 +1,32 @@
+{
+  "schema_version": "nostos-prospective-protocol-lock/1.0",
+  "locked_at_utc": "2026-08-28T21:44:47Z",
+  "protocol_version": "nostos-paired-acquisition-support/1.0",
+  "files": [
+    {
+      "path": "docs/NOSTOS0_PAIRED_ACQUISITION_SUPPORT_PROTOCOL.md",
+      "bytes": 12803,
+      "sha256": "7baec4e4070ec28e276a7e9b1be345e7b2e1da709d57a2b96e155fb22ad77b11"
+    },
+    {
+      "path": "configs/paired_acquisition_support_v1.locked.json",
+      "bytes": 3110,
+      "sha256": "e4cd42b13e4066ad6c821bec01bb55caa2028c0e231b494c755b4b919aa907ea"
+    },
+    {
+      "path": "manifests/biosr_paired_acquisition_sources.json",
+      "bytes": 2703,
+      "sha256": "0534c1835d9f1af0137dc2816415b7317cf1e7d0a02adcb720aac0d4d76fc3d0"
+    }
+  ],
+  "prelock_data_access": {
+    "opened": [
+      "Supplementary Files for BioSR.zip",
+      "Supplementary Files for BioSR/imaging_conditions.xlsx"
+    ],
+    "development_archives_decoded": [],
+    "confirmation_archives_listed_or_decoded": [],
+    "statement": "Only official record metadata and the acquisition-conditions workbook were inspected before lock. No biological image archive was listed, extracted, decoded, summarized or visualized."
+  },
+  "confirmation_embargo": "The confirmation archives remain methodologically sealed until a development threshold receipt is written and SHA-256 locked."
+}

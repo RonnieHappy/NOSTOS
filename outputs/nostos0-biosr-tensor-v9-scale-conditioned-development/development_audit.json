@@ -1,0 +1,4417 @@
+{
+  "schema_version": "nostos-biosr-tensor-v9-scale-conditioned-development/1.0",
+  "status": "operating_point_selected",
+  "outcome_role": "development_only_outcome_informed",
+  "v8_failure": {
+    "status": "fail",
+    "assessable": true,
+    "full_coverage": 1.0,
+    "full_risk": 0.07402597402597402,
+    "qc_risk": 0.07402597402597402,
+    "comparator_invalid_emissions": 57,
+    "invalid_reference_fields": 5,
+    "failure_mechanism": "Every eligible coherence row was accepted. Stable blur and resampling bias survived self-perturbation and the v7 resolution margin, so full-contract and QC risk were identical."
+  },
+  "repair": {
+    "name": "scale_conditioned_acquisition_support",
+    "formula": "acquisition_qc_risk * (4 / samples_per_requested_scale)^0.5 / acceptance_boundary",
+    "v7_strong_blur_margin_role": "retained as a diagnostic but removed from coherence acceptance after failing to detect stable degradation bias",
+    "selection_is_outcome_informed": true,
+    "independent_confirmation_required": true
+  },
+  "development_gates": {
+    "minimum_negative_control_coverage": 0.8,
+    "maximum_negative_control_risk": 0.1,
+    "minimum_overall_coverage": 0.8,
+    "maximum_overall_risk": 0.05,
+    "maximum_cluster_bootstrap_risk_upper95": 0.1,
+    "minimum_relative_risk_reduction_vs_qc": 0.25,
+    "minimum_invalid_fraction_among_qc_only_rejections": 0.25,
+    "minimum_bootstrap_probability_full_better": 0.9
+  },
+  "calibration": {
+    "status": "operating_point_selected",
+    "selection_rule": "Most permissive boundary in the frozen grid passing every development gate at the physically prespecified square-root scale exponent.",
+    "minimum_samples_per_scale": 4.0,
+    "primary_exponent": 0.5,
+    "candidate_boundaries": [
+      0.15,
+      0.175,
+      0.2,
+      0.225,
+      0.25,
+      0.275,
+      0.3,
+      0.325,
+      0.35
+    ],
+    "candidates": [
+      {
+        "exponent": 0.5,
+        "acceptance_boundary": 0.15,
+        "passes": false,
+        "checks": {
+          "negative_control_coverage": true,
+          "negative_control_risk": true,
+          "overall_coverage": false,
+          "overall_risk": true,
+          "risk_upper95": true,
+          "relative_risk_reduction": true,
+          "rejected_invalid_fraction": false,
+          "positive_aurc_difference": true,
+          "bootstrap_probability": true,
+          "structure_risk_direction": true
+        },
+        "full": {
+          "eligible": 770,
+          "accepted": 439,
+          "coverage": 0.5701298701298702,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 220,
+              "coverage": 0.5238095238095238,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 75,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 67,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 78,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 219,
+              "coverage": 0.6257142857142857,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 86,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 51,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 82,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            }
+          ]
+        },
+        "qc": {
+          "eligible": 770,
+          "accepted": 770,
+          "coverage": 1.0,
+          "invalid": 57,
+          "risk": 0.07402597402597402,
+          "cluster_bootstrap_risk_upper95": 0.0987012987012987,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 420,
+              "coverage": 1.0,
+              "invalid": 39,
+              "risk": 0.09285714285714286,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.1261904761904762,
+              "worst_field_risk": 0.12857142857142856,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 17,
+                  "risk": 0.12142857142857143
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 18,
+                  "risk": 0.12857142857142856
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 4,
+                  "risk": 0.02857142857142857
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 350,
+              "coverage": 1.0,
+              "invalid": 18,
+              "risk": 0.05142857142857143,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.07142857142857142,
+              "worst_field_risk": 0.08571428571428572,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 6,
+                  "risk": 0.04285714285714286
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 70,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 12,
+                  "risk": 0.08571428571428572
+                }
+              ]
+            }
+          ]
+        },
+        "negative_control_full": {
+          "eligible": 165,
+          "accepted": 148,
+          "coverage": 0.896969696969697,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 90,
+              "accepted": 76,
+              "coverage": 0.8444444444444444,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 30,
+                  "accepted": 27,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 30,
+                  "accepted": 23,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 30,
+                  "accepted": 26,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 75,
+              "accepted": 72,
+              "coverage": 0.96,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 30,
+                  "accepted": 29,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 15,
+                  "accepted": 15,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 30,
+                  "accepted": 28,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            }
+          ]
+        },
+        "operating_point": {
+          "full_accepted": 439,
+          "full_risk": 0.0,
+          "comparator_accepted": 770,
+          "comparator_risk": 0.07402597402597402,
+          "full_minus_comparator_risk": -0.07402597402597402,
+          "coverage_loss_vs_comparator": 0.42987012987012985,
+          "comparator_only_rejections": 331,
+          "invalid_comparator_only_rejections": 57,
+          "comparator_only_rejection_risk": 0.17220543806646527,
+          "invalid_enrichment_among_comparator_only_rejections": 2.3262839879154082,
+          "relative_risk_reduction_vs_qc": 1.0
+        },
+        "risk_coverage_evidence": {
+          "endpoint_family": "tensor_coherence",
+          "eligible_rows": 770,
+          "reference_fields": 6,
+          "invalid_rows": 57,
+          "invalid_reference_fields": 5,
+          "observed": {
+            "full_contract_aurc": 0.005576167118119224,
+            "conventional_acquisition_qc_aurc": 0.01206731561911982,
+            "comparator_minus_full": 0.006491148501000596,
+            "relative_reduction": 0.5379115543075565
+          },
+          "bootstrap": {
+            "draws": 10000,
+            "seed": 26082985,
+            "resampling_unit": "reference_group_id stratified by structure",
+            "difference_direction": "positive comparator-minus-full values favor the complete contract",
+            "finite_draws": 10000,
+            "median": 0.006491148501000596,
+            "ci95": [
+              0.0015662554591348364,
+              0.013528300177127868
+            ],
+            "probability_full_better": 1.0,
+            "probability_full_noninferior": 1.0,
+            "structure_specific": {
+              "F-actin_linear": {
+                "finite_draws": 10000,
+                "median": 0.009234624268498547,
+                "ci95": [
+                  0.0008255176501236883,
+                  0.026652892902118884
+                ],
+                "probability_full_better": 1.0,
+                "probability_full_noninferior": 1.0
+              },
+              "F-actin_nonlinear": {
+                "finite_draws": 10000,
+                "median": 0.004519129729580781,
+                "ci95": [
+                  0.0,
+                  0.012229056964836742
+                ],
+                "probability_full_better": 0.9579,
+                "probability_full_noninferior": 1.0
+              }
+            }
+          }
+        },
+        "structure_risk_direction": [
+          {
+            "structure": "F-actin_linear",
+            "full_risk": 0.0,
+            "qc_risk": 0.09285714285714286,
+            "nonhigher": true
+          },
+          {
+            "structure": "F-actin_nonlinear",
+            "full_risk": 0.0,
+            "qc_risk": 0.05142857142857143,
+            "nonhigher": true
+          }
+        ]
+      },
+      {
+        "exponent": 0.5,
+        "acceptance_boundary": 0.175,
+        "passes": false,
+        "checks": {
+          "negative_control_coverage": true,
+          "negative_control_risk": true,
+          "overall_coverage": false,
+          "overall_risk": true,
+          "risk_upper95": true,
+          "relative_risk_reduction": true,
+          "rejected_invalid_fraction": true,
+          "positive_aurc_difference": true,
+          "bootstrap_probability": true,
+          "structure_risk_direction": true
+        },
+        "full": {
+          "eligible": 770,
+          "accepted": 547,
+          "coverage": 0.7103896103896103,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 284,
+              "coverage": 0.6761904761904762,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 93,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 92,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 99,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 263,
+              "coverage": 0.7514285714285714,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 103,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 58,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 102,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            }
+          ]
+        },
+        "qc": {
+          "eligible": 770,
+          "accepted": 770,
+          "coverage": 1.0,
+          "invalid": 57,
+          "risk": 0.07402597402597402,
+          "cluster_bootstrap_risk_upper95": 0.0988095238095238,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 420,
+              "coverage": 1.0,
+              "invalid": 39,
+              "risk": 0.09285714285714286,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.1261904761904762,
+              "worst_field_risk": 0.12857142857142856,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 17,
+                  "risk": 0.12142857142857143
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 18,
+                  "risk": 0.12857142857142856
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 4,
+                  "risk": 0.02857142857142857
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 350,
+              "coverage": 1.0,
+              "invalid": 18,
+              "risk": 0.05142857142857143,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.07142857142857142,
+              "worst_field_risk": 0.08571428571428572,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 6,
+                  "risk": 0.04285714285714286
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 70,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 12,
+                  "risk": 0.08571428571428572
+                }
+              ]
+            }
+          ]
+        },
+        "negative_control_full": {
+          "eligible": 165,
+          "accepted": 160,
+          "coverage": 0.9696969696969697,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 90,
+              "accepted": 85,
+              "coverage": 0.9444444444444444,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 30,
+                  "accepted": 29,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 30,
+                  "accepted": 27,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 30,
+                  "accepted": 29,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 75,
+              "accepted": 75,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 15,
+                  "accepted": 15,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            }
+          ]
+        },
+        "operating_point": {
+          "full_accepted": 547,
+          "full_risk": 0.0,
+          "comparator_accepted": 770,
+          "comparator_risk": 0.07402597402597402,
+          "full_minus_comparator_risk": -0.07402597402597402,
+          "coverage_loss_vs_comparator": 0.2896103896103896,
+          "comparator_only_rejections": 223,
+          "invalid_comparator_only_rejections": 57,
+          "comparator_only_rejection_risk": 0.2556053811659193,
+          "invalid_enrichment_among_comparator_only_rejections": 3.4529147982062782,
+          "relative_risk_reduction_vs_qc": 1.0
+        },
+        "risk_coverage_evidence": {
+          "endpoint_family": "tensor_coherence",
+          "eligible_rows": 770,
+          "reference_fields": 6,
+          "invalid_rows": 57,
+          "invalid_reference_fields": 5,
+          "observed": {
+            "full_contract_aurc": 0.005576167118119224,
+            "conventional_acquisition_qc_aurc": 0.01206731561911982,
+            "comparator_minus_full": 0.006491148501000596,
+            "relative_reduction": 0.5379115543075565
+          },
+          "bootstrap": {
+            "draws": 10000,
+            "seed": 26083085,
+            "resampling_unit": "reference_group_id stratified by structure",
+            "difference_direction": "positive comparator-minus-full values favor the complete contract",
+            "finite_draws": 10000,
+            "median": 0.006491148501000596,
+            "ci95": [
+              0.0015662554591348364,
+              0.013698377348903574
+            ],
+            "probability_full_better": 1.0,
+            "probability_full_noninferior": 1.0,
+            "structure_specific": {
+              "F-actin_linear": {
+                "finite_draws": 10000,
+                "median": 0.009234624268498547,
+                "ci95": [
+                  0.0008255176501236883,
+                  0.026652892902118884
+                ],
+                "probability_full_better": 1.0,
+                "probability_full_noninferior": 1.0
+              },
+              "F-actin_nonlinear": {
+                "finite_draws": 10000,
+                "median": 0.004519129729580781,
+                "ci95": [
+                  0.0,
+                  0.012229056964836742
+                ],
+                "probability_full_better": 0.9617,
+                "probability_full_noninferior": 1.0
+              }
+            }
+          }
+        },
+        "structure_risk_direction": [
+          {
+            "structure": "F-actin_linear",
+            "full_risk": 0.0,
+            "qc_risk": 0.09285714285714286,
+            "nonhigher": true
+          },
+          {
+            "structure": "F-actin_nonlinear",
+            "full_risk": 0.0,
+            "qc_risk": 0.05142857142857143,
+            "nonhigher": true
+          }
+        ]
+      },
+      {
+        "exponent": 0.5,
+        "acceptance_boundary": 0.2,
+        "passes": true,
+        "checks": {
+          "negative_control_coverage": true,
+          "negative_control_risk": true,
+          "overall_coverage": true,
+          "overall_risk": true,
+          "risk_upper95": true,
+          "relative_risk_reduction": true,
+          "rejected_invalid_fraction": true,
+          "positive_aurc_difference": true,
+          "bootstrap_probability": true,
+          "structure_risk_direction": true
+        },
+        "full": {
+          "eligible": 770,
+          "accepted": 619,
+          "coverage": 0.8038961038961039,
+          "invalid": 3,
+          "risk": 0.004846526655896607,
+          "cluster_bootstrap_risk_upper95": 0.009630818619582664,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 331,
+              "coverage": 0.7880952380952381,
+              "invalid": 1,
+              "risk": 0.0030211480362537764,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.006153846153846154,
+              "worst_field_risk": 0.009174311926605505,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 109,
+                  "invalid": 1,
+                  "risk": 0.009174311926605505
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 107,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 115,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 288,
+              "coverage": 0.8228571428571428,
+              "invalid": 2,
+              "risk": 0.006944444444444444,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.013793103448275862,
+              "worst_field_risk": 0.017543859649122806,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 112,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 62,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 114,
+                  "invalid": 2,
+                  "risk": 0.017543859649122806
+                }
+              ]
+            }
+          ]
+        },
+        "qc": {
+          "eligible": 770,
+          "accepted": 770,
+          "coverage": 1.0,
+          "invalid": 57,
+          "risk": 0.07402597402597402,
+          "cluster_bootstrap_risk_upper95": 0.0987012987012987,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 420,
+              "coverage": 1.0,
+              "invalid": 39,
+              "risk": 0.09285714285714286,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.1261904761904762,
+              "worst_field_risk": 0.12857142857142856,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 17,
+                  "risk": 0.12142857142857143
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 18,
+                  "risk": 0.12857142857142856
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 4,
+                  "risk": 0.02857142857142857
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 350,
+              "coverage": 1.0,
+              "invalid": 18,
+              "risk": 0.05142857142857143,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.07142857142857142,
+              "worst_field_risk": 0.08571428571428572,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 6,
+                  "risk": 0.04285714285714286
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 70,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 12,
+                  "risk": 0.08571428571428572
+                }
+              ]
+            }
+          ]
+        },
+        "negative_control_full": {
+          "eligible": 165,
+          "accepted": 164,
+          "coverage": 0.9939393939393939,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 90,
+              "accepted": 89,
+              "coverage": 0.9888888888888889,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 30,
+                  "accepted": 29,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 75,
+              "accepted": 75,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 15,
+                  "accepted": 15,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            }
+          ]
+        },
+        "operating_point": {
+          "full_accepted": 619,
+          "full_risk": 0.004846526655896607,
+          "comparator_accepted": 770,
+          "comparator_risk": 0.07402597402597402,
+          "full_minus_comparator_risk": -0.06917944737007742,
+          "coverage_loss_vs_comparator": 0.1961038961038961,
+          "comparator_only_rejections": 151,
+          "invalid_comparator_only_rejections": 54,
+          "comparator_only_rejection_risk": 0.3576158940397351,
+          "invalid_enrichment_among_comparator_only_rejections": 4.830951551063088,
+          "relative_risk_reduction_vs_qc": 0.9345293767536774
+        },
+        "risk_coverage_evidence": {
+          "endpoint_family": "tensor_coherence",
+          "eligible_rows": 770,
+          "reference_fields": 6,
+          "invalid_rows": 57,
+          "invalid_reference_fields": 5,
+          "observed": {
+            "full_contract_aurc": 0.005576167118119224,
+            "conventional_acquisition_qc_aurc": 0.01206731561911982,
+            "comparator_minus_full": 0.006491148501000596,
+            "relative_reduction": 0.5379115543075565
+          },
+          "bootstrap": {
+            "draws": 10000,
+            "seed": 26083185,
+            "resampling_unit": "reference_group_id stratified by structure",
+            "difference_direction": "positive comparator-minus-full values favor the complete contract",
+            "finite_draws": 10000,
+            "median": 0.006491148501000596,
+            "ci95": [
+              0.0015662554591348364,
+              0.013698377348903574
+            ],
+            "probability_full_better": 1.0,
+            "probability_full_noninferior": 1.0,
+            "structure_specific": {
+              "F-actin_linear": {
+                "finite_draws": 10000,
+                "median": 0.009234624268498547,
+                "ci95": [
+                  0.0008255176501236883,
+                  0.026652892902118884
+                ],
+                "probability_full_better": 1.0,
+                "probability_full_noninferior": 1.0
+              },
+              "F-actin_nonlinear": {
+                "finite_draws": 10000,
+                "median": 0.004519129729580781,
+                "ci95": [
+                  0.0,
+                  0.012229056964836742
+                ],
+                "probability_full_better": 0.9621,
+                "probability_full_noninferior": 1.0
+              }
+            }
+          }
+        },
+        "structure_risk_direction": [
+          {
+            "structure": "F-actin_linear",
+            "full_risk": 0.0030211480362537764,
+            "qc_risk": 0.09285714285714286,
+            "nonhigher": true
+          },
+          {
+            "structure": "F-actin_nonlinear",
+            "full_risk": 0.006944444444444444,
+            "qc_risk": 0.05142857142857143,
+            "nonhigher": true
+          }
+        ]
+      },
+      {
+        "exponent": 0.5,
+        "acceptance_boundary": 0.225,
+        "passes": true,
+        "checks": {
+          "negative_control_coverage": true,
+          "negative_control_risk": true,
+          "overall_coverage": true,
+          "overall_risk": true,
+          "risk_upper95": true,
+          "relative_risk_reduction": true,
+          "rejected_invalid_fraction": true,
+          "positive_aurc_difference": true,
+          "bootstrap_probability": true,
+          "structure_risk_direction": true
+        },
+        "full": {
+          "eligible": 770,
+          "accepted": 672,
+          "coverage": 0.8727272727272727,
+          "invalid": 9,
+          "risk": 0.013392857142857142,
+          "cluster_bootstrap_risk_upper95": 0.02262443438914027,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 360,
+              "coverage": 0.8571428571428571,
+              "invalid": 5,
+              "risk": 0.013888888888888888,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.022988505747126436,
+              "worst_field_risk": 0.02608695652173913,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 115,
+                  "invalid": 3,
+                  "risk": 0.02608695652173913
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 118,
+                  "invalid": 2,
+                  "risk": 0.01694915254237288
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 127,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 312,
+              "coverage": 0.8914285714285715,
+              "invalid": 4,
+              "risk": 0.01282051282051282,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.02564102564102564,
+              "worst_field_risk": 0.03225806451612903,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 124,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 64,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 124,
+                  "invalid": 4,
+                  "risk": 0.03225806451612903
+                }
+              ]
+            }
+          ]
+        },
+        "qc": {
+          "eligible": 770,
+          "accepted": 770,
+          "coverage": 1.0,
+          "invalid": 57,
+          "risk": 0.07402597402597402,
+          "cluster_bootstrap_risk_upper95": 0.0987012987012987,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 420,
+              "coverage": 1.0,
+              "invalid": 39,
+              "risk": 0.09285714285714286,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.1261904761904762,
+              "worst_field_risk": 0.12857142857142856,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 17,
+                  "risk": 0.12142857142857143
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 18,
+                  "risk": 0.12857142857142856
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 4,
+                  "risk": 0.02857142857142857
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 350,
+              "coverage": 1.0,
+              "invalid": 18,
+              "risk": 0.05142857142857143,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.07142857142857142,
+              "worst_field_risk": 0.08571428571428572,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 6,
+                  "risk": 0.04285714285714286
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 70,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 12,
+                  "risk": 0.08571428571428572
+                }
+              ]
+            }
+          ]
+        },
+        "negative_control_full": {
+          "eligible": 165,
+          "accepted": 165,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 90,
+              "accepted": 90,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 75,
+              "accepted": 75,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 15,
+                  "accepted": 15,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            }
+          ]
+        },
+        "operating_point": {
+          "full_accepted": 672,
+          "full_risk": 0.013392857142857142,
+          "comparator_accepted": 770,
+          "comparator_risk": 0.07402597402597402,
+          "full_minus_comparator_risk": -0.06063311688311688,
+          "coverage_loss_vs_comparator": 0.12727272727272726,
+          "comparator_only_rejections": 98,
+          "invalid_comparator_only_rejections": 48,
+          "comparator_only_rejection_risk": 0.4897959183673469,
+          "invalid_enrichment_among_comparator_only_rejections": 6.616541353383459,
+          "relative_risk_reduction_vs_qc": 0.819078947368421
+        },
+        "risk_coverage_evidence": {
+          "endpoint_family": "tensor_coherence",
+          "eligible_rows": 770,
+          "reference_fields": 6,
+          "invalid_rows": 57,
+          "invalid_reference_fields": 5,
+          "observed": {
+            "full_contract_aurc": 0.005576167118119224,
+            "conventional_acquisition_qc_aurc": 0.01206731561911982,
+            "comparator_minus_full": 0.006491148501000596,
+            "relative_reduction": 0.5379115543075565
+          },
+          "bootstrap": {
+            "draws": 10000,
+            "seed": 26083285,
+            "resampling_unit": "reference_group_id stratified by structure",
+            "difference_direction": "positive comparator-minus-full values favor the complete contract",
+            "finite_draws": 10000,
+            "median": 0.006491148501000596,
+            "ci95": [
+              0.0015662554591348364,
+              0.013698377348903574
+            ],
+            "probability_full_better": 1.0,
+            "probability_full_noninferior": 1.0,
+            "structure_specific": {
+              "F-actin_linear": {
+                "finite_draws": 10000,
+                "median": 0.009234624268498547,
+                "ci95": [
+                  0.0008255176501236883,
+                  0.026652892902118884
+                ],
+                "probability_full_better": 1.0,
+                "probability_full_noninferior": 1.0
+              },
+              "F-actin_nonlinear": {
+                "finite_draws": 10000,
+                "median": 0.004519129729580781,
+                "ci95": [
+                  0.0,
+                  0.012229056964836742
+                ],
+                "probability_full_better": 0.9619,
+                "probability_full_noninferior": 1.0
+              }
+            }
+          }
+        },
+        "structure_risk_direction": [
+          {
+            "structure": "F-actin_linear",
+            "full_risk": 0.013888888888888888,
+            "qc_risk": 0.09285714285714286,
+            "nonhigher": true
+          },
+          {
+            "structure": "F-actin_nonlinear",
+            "full_risk": 0.01282051282051282,
+            "qc_risk": 0.05142857142857143,
+            "nonhigher": true
+          }
+        ]
+      },
+      {
+        "exponent": 0.5,
+        "acceptance_boundary": 0.25,
+        "passes": true,
+        "checks": {
+          "negative_control_coverage": true,
+          "negative_control_risk": true,
+          "overall_coverage": true,
+          "overall_risk": true,
+          "risk_upper95": true,
+          "relative_risk_reduction": true,
+          "rejected_invalid_fraction": true,
+          "positive_aurc_difference": true,
+          "bootstrap_probability": true,
+          "structure_risk_direction": true
+        },
+        "full": {
+          "eligible": 770,
+          "accepted": 707,
+          "coverage": 0.9181818181818182,
+          "invalid": 19,
+          "risk": 0.026874115983026876,
+          "cluster_bootstrap_risk_upper95": 0.04510108864696734,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 383,
+              "coverage": 0.9119047619047619,
+              "invalid": 15,
+              "risk": 0.0391644908616188,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.06544502617801047,
+              "worst_field_risk": 0.07751937984496124,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 124,
+                  "invalid": 5,
+                  "risk": 0.04032258064516129
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 129,
+                  "invalid": 10,
+                  "risk": 0.07751937984496124
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 130,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 324,
+              "coverage": 0.9257142857142857,
+              "invalid": 4,
+              "risk": 0.012345679012345678,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.024691358024691357,
+              "worst_field_risk": 0.031007751937984496,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 129,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 66,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 129,
+                  "invalid": 4,
+                  "risk": 0.031007751937984496
+                }
+              ]
+            }
+          ]
+        },
+        "qc": {
+          "eligible": 770,
+          "accepted": 770,
+          "coverage": 1.0,
+          "invalid": 57,
+          "risk": 0.07402597402597402,
+          "cluster_bootstrap_risk_upper95": 0.0987012987012987,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 420,
+              "coverage": 1.0,
+              "invalid": 39,
+              "risk": 0.09285714285714286,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.1261904761904762,
+              "worst_field_risk": 0.12857142857142856,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 17,
+                  "risk": 0.12142857142857143
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 18,
+                  "risk": 0.12857142857142856
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 4,
+                  "risk": 0.02857142857142857
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 350,
+              "coverage": 1.0,
+              "invalid": 18,
+              "risk": 0.05142857142857143,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.07142857142857142,
+              "worst_field_risk": 0.08571428571428572,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 6,
+                  "risk": 0.04285714285714286
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 70,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 12,
+                  "risk": 0.08571428571428572
+                }
+              ]
+            }
+          ]
+        },
+        "negative_control_full": {
+          "eligible": 165,
+          "accepted": 165,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 90,
+              "accepted": 90,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 75,
+              "accepted": 75,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 15,
+                  "accepted": 15,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            }
+          ]
+        },
+        "operating_point": {
+          "full_accepted": 707,
+          "full_risk": 0.026874115983026876,
+          "comparator_accepted": 770,
+          "comparator_risk": 0.07402597402597402,
+          "full_minus_comparator_risk": -0.04715185804294715,
+          "coverage_loss_vs_comparator": 0.08181818181818182,
+          "comparator_only_rejections": 63,
+          "invalid_comparator_only_rejections": 38,
+          "comparator_only_rejection_risk": 0.6031746031746031,
+          "invalid_enrichment_among_comparator_only_rejections": 8.148148148148149,
+          "relative_risk_reduction_vs_qc": 0.6369636963696369
+        },
+        "risk_coverage_evidence": {
+          "endpoint_family": "tensor_coherence",
+          "eligible_rows": 770,
+          "reference_fields": 6,
+          "invalid_rows": 57,
+          "invalid_reference_fields": 5,
+          "observed": {
+            "full_contract_aurc": 0.005576167118119224,
+            "conventional_acquisition_qc_aurc": 0.01206731561911982,
+            "comparator_minus_full": 0.006491148501000596,
+            "relative_reduction": 0.5379115543075565
+          },
+          "bootstrap": {
+            "draws": 10000,
+            "seed": 26083385,
+            "resampling_unit": "reference_group_id stratified by structure",
+            "difference_direction": "positive comparator-minus-full values favor the complete contract",
+            "finite_draws": 10000,
+            "median": 0.006491148501000596,
+            "ci95": [
+              0.0015662554591348364,
+              0.013528300177127868
+            ],
+            "probability_full_better": 1.0,
+            "probability_full_noninferior": 1.0,
+            "structure_specific": {
+              "F-actin_linear": {
+                "finite_draws": 10000,
+                "median": 0.009234624268498547,
+                "ci95": [
+                  0.0008255176501236883,
+                  0.026652892902118884
+                ],
+                "probability_full_better": 1.0,
+                "probability_full_noninferior": 1.0
+              },
+              "F-actin_nonlinear": {
+                "finite_draws": 10000,
+                "median": 0.004519129729580781,
+                "ci95": [
+                  0.0,
+                  0.012229056964836742
+                ],
+                "probability_full_better": 0.9613,
+                "probability_full_noninferior": 1.0
+              }
+            }
+          }
+        },
+        "structure_risk_direction": [
+          {
+            "structure": "F-actin_linear",
+            "full_risk": 0.0391644908616188,
+            "qc_risk": 0.09285714285714286,
+            "nonhigher": true
+          },
+          {
+            "structure": "F-actin_nonlinear",
+            "full_risk": 0.012345679012345678,
+            "qc_risk": 0.05142857142857143,
+            "nonhigher": true
+          }
+        ]
+      },
+      {
+        "exponent": 0.5,
+        "acceptance_boundary": 0.275,
+        "passes": true,
+        "checks": {
+          "negative_control_coverage": true,
+          "negative_control_risk": true,
+          "overall_coverage": true,
+          "overall_risk": true,
+          "risk_upper95": true,
+          "relative_risk_reduction": true,
+          "rejected_invalid_fraction": true,
+          "positive_aurc_difference": true,
+          "bootstrap_probability": true,
+          "structure_risk_direction": true
+        },
+        "full": {
+          "eligible": 770,
+          "accepted": 725,
+          "coverage": 0.9415584415584416,
+          "invalid": 27,
+          "risk": 0.037241379310344824,
+          "cluster_bootstrap_risk_upper95": 0.05909090909090909,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 396,
+              "coverage": 0.9428571428571428,
+              "invalid": 21,
+              "risk": 0.05303030303030303,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.08375634517766498,
+              "worst_field_risk": 0.09090909090909091,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 130,
+                  "invalid": 9,
+                  "risk": 0.06923076923076923
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 132,
+                  "invalid": 12,
+                  "risk": 0.09090909090909091
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 134,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 329,
+              "coverage": 0.94,
+              "invalid": 6,
+              "risk": 0.0182370820668693,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.03625377643504532,
+              "worst_field_risk": 0.045454545454545456,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 130,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 67,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 132,
+                  "invalid": 6,
+                  "risk": 0.045454545454545456
+                }
+              ]
+            }
+          ]
+        },
+        "qc": {
+          "eligible": 770,
+          "accepted": 770,
+          "coverage": 1.0,
+          "invalid": 57,
+          "risk": 0.07402597402597402,
+          "cluster_bootstrap_risk_upper95": 0.0987012987012987,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 420,
+              "coverage": 1.0,
+              "invalid": 39,
+              "risk": 0.09285714285714286,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.1261904761904762,
+              "worst_field_risk": 0.12857142857142856,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 17,
+                  "risk": 0.12142857142857143
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 18,
+                  "risk": 0.12857142857142856
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 4,
+                  "risk": 0.02857142857142857
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 350,
+              "coverage": 1.0,
+              "invalid": 18,
+              "risk": 0.05142857142857143,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.07142857142857142,
+              "worst_field_risk": 0.08571428571428572,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 6,
+                  "risk": 0.04285714285714286
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 70,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 12,
+                  "risk": 0.08571428571428572
+                }
+              ]
+            }
+          ]
+        },
+        "negative_control_full": {
+          "eligible": 165,
+          "accepted": 165,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 90,
+              "accepted": 90,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 75,
+              "accepted": 75,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 15,
+                  "accepted": 15,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            }
+          ]
+        },
+        "operating_point": {
+          "full_accepted": 725,
+          "full_risk": 0.037241379310344824,
+          "comparator_accepted": 770,
+          "comparator_risk": 0.07402597402597402,
+          "full_minus_comparator_risk": -0.0367845947156292,
+          "coverage_loss_vs_comparator": 0.05844155844155844,
+          "comparator_only_rejections": 45,
+          "invalid_comparator_only_rejections": 30,
+          "comparator_only_rejection_risk": 0.6666666666666666,
+          "invalid_enrichment_among_comparator_only_rejections": 9.005847953216374,
+          "relative_risk_reduction_vs_qc": 0.4969147005444646
+        },
+        "risk_coverage_evidence": {
+          "endpoint_family": "tensor_coherence",
+          "eligible_rows": 770,
+          "reference_fields": 6,
+          "invalid_rows": 57,
+          "invalid_reference_fields": 5,
+          "observed": {
+            "full_contract_aurc": 0.005576167118119224,
+            "conventional_acquisition_qc_aurc": 0.01206731561911982,
+            "comparator_minus_full": 0.006491148501000596,
+            "relative_reduction": 0.5379115543075565
+          },
+          "bootstrap": {
+            "draws": 10000,
+            "seed": 26083485,
+            "resampling_unit": "reference_group_id stratified by structure",
+            "difference_direction": "positive comparator-minus-full values favor the complete contract",
+            "finite_draws": 10000,
+            "median": 0.006491148501000596,
+            "ci95": [
+              0.0015662554591348364,
+              0.013698377348903574
+            ],
+            "probability_full_better": 1.0,
+            "probability_full_noninferior": 1.0,
+            "structure_specific": {
+              "F-actin_linear": {
+                "finite_draws": 10000,
+                "median": 0.009234624268498547,
+                "ci95": [
+                  0.0008255176501236883,
+                  0.026652892902118884
+                ],
+                "probability_full_better": 1.0,
+                "probability_full_noninferior": 1.0
+              },
+              "F-actin_nonlinear": {
+                "finite_draws": 10000,
+                "median": 0.004519129729580781,
+                "ci95": [
+                  0.0,
+                  0.012229056964836742
+                ],
+                "probability_full_better": 0.9621,
+                "probability_full_noninferior": 1.0
+              }
+            }
+          }
+        },
+        "structure_risk_direction": [
+          {
+            "structure": "F-actin_linear",
+            "full_risk": 0.05303030303030303,
+            "qc_risk": 0.09285714285714286,
+            "nonhigher": true
+          },
+          {
+            "structure": "F-actin_nonlinear",
+            "full_risk": 0.0182370820668693,
+            "qc_risk": 0.05142857142857143,
+            "nonhigher": true
+          }
+        ]
+      },
+      {
+        "exponent": 0.5,
+        "acceptance_boundary": 0.3,
+        "passes": true,
+        "checks": {
+          "negative_control_coverage": true,
+          "negative_control_risk": true,
+          "overall_coverage": true,
+          "overall_risk": true,
+          "risk_upper95": true,
+          "relative_risk_reduction": true,
+          "rejected_invalid_fraction": true,
+          "positive_aurc_difference": true,
+          "bootstrap_probability": true,
+          "structure_risk_direction": true
+        },
+        "full": {
+          "eligible": 770,
+          "accepted": 737,
+          "coverage": 0.9571428571428572,
+          "invalid": 33,
+          "risk": 0.04477611940298507,
+          "cluster_bootstrap_risk_upper95": 0.06382978723404255,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 400,
+              "coverage": 0.9523809523809523,
+              "invalid": 24,
+              "risk": 0.06,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.08838383838383838,
+              "worst_field_risk": 0.09774436090225563,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 130,
+                  "invalid": 9,
+                  "risk": 0.06923076923076923
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 133,
+                  "invalid": 13,
+                  "risk": 0.09774436090225563
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 137,
+                  "invalid": 2,
+                  "risk": 0.014598540145985401
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 337,
+              "coverage": 0.9628571428571429,
+              "invalid": 9,
+              "risk": 0.026706231454005934,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.041666666666666664,
+              "worst_field_risk": 0.05223880597014925,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 135,
+                  "invalid": 2,
+                  "risk": 0.014814814814814815
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 68,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 134,
+                  "invalid": 7,
+                  "risk": 0.05223880597014925
+                }
+              ]
+            }
+          ]
+        },
+        "qc": {
+          "eligible": 770,
+          "accepted": 770,
+          "coverage": 1.0,
+          "invalid": 57,
+          "risk": 0.07402597402597402,
+          "cluster_bootstrap_risk_upper95": 0.0987012987012987,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 420,
+              "coverage": 1.0,
+              "invalid": 39,
+              "risk": 0.09285714285714286,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.1261904761904762,
+              "worst_field_risk": 0.12857142857142856,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 17,
+                  "risk": 0.12142857142857143
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 18,
+                  "risk": 0.12857142857142856
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 4,
+                  "risk": 0.02857142857142857
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 350,
+              "coverage": 1.0,
+              "invalid": 18,
+              "risk": 0.05142857142857143,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.07142857142857142,
+              "worst_field_risk": 0.08571428571428572,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 6,
+                  "risk": 0.04285714285714286
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 70,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 12,
+                  "risk": 0.08571428571428572
+                }
+              ]
+            }
+          ]
+        },
+        "negative_control_full": {
+          "eligible": 165,
+          "accepted": 165,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 90,
+              "accepted": 90,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 75,
+              "accepted": 75,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 15,
+                  "accepted": 15,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            }
+          ]
+        },
+        "operating_point": {
+          "full_accepted": 737,
+          "full_risk": 0.04477611940298507,
+          "comparator_accepted": 770,
+          "comparator_risk": 0.07402597402597402,
+          "full_minus_comparator_risk": -0.02924985462298895,
+          "coverage_loss_vs_comparator": 0.04285714285714286,
+          "comparator_only_rejections": 33,
+          "invalid_comparator_only_rejections": 24,
+          "comparator_only_rejection_risk": 0.7272727272727273,
+          "invalid_enrichment_among_comparator_only_rejections": 9.824561403508772,
+          "relative_risk_reduction_vs_qc": 0.39512961508248234
+        },
+        "risk_coverage_evidence": {
+          "endpoint_family": "tensor_coherence",
+          "eligible_rows": 770,
+          "reference_fields": 6,
+          "invalid_rows": 57,
+          "invalid_reference_fields": 5,
+          "observed": {
+            "full_contract_aurc": 0.005576167118119224,
+            "conventional_acquisition_qc_aurc": 0.01206731561911982,
+            "comparator_minus_full": 0.006491148501000596,
+            "relative_reduction": 0.5379115543075565
+          },
+          "bootstrap": {
+            "draws": 10000,
+            "seed": 26083585,
+            "resampling_unit": "reference_group_id stratified by structure",
+            "difference_direction": "positive comparator-minus-full values favor the complete contract",
+            "finite_draws": 10000,
+            "median": 0.006491148501000596,
+            "ci95": [
+              0.0015662554591348364,
+              0.013698377348903574
+            ],
+            "probability_full_better": 1.0,
+            "probability_full_noninferior": 1.0,
+            "structure_specific": {
+              "F-actin_linear": {
+                "finite_draws": 10000,
+                "median": 0.009234624268498547,
+                "ci95": [
+                  0.0008255176501236883,
+                  0.026652892902118884
+                ],
+                "probability_full_better": 1.0,
+                "probability_full_noninferior": 1.0
+              },
+              "F-actin_nonlinear": {
+                "finite_draws": 10000,
+                "median": 0.004519129729580781,
+                "ci95": [
+                  0.0,
+                  0.012229056964836742
+                ],
+                "probability_full_better": 0.9632,
+                "probability_full_noninferior": 1.0
+              }
+            }
+          }
+        },
+        "structure_risk_direction": [
+          {
+            "structure": "F-actin_linear",
+            "full_risk": 0.06,
+            "qc_risk": 0.09285714285714286,
+            "nonhigher": true
+          },
+          {
+            "structure": "F-actin_nonlinear",
+            "full_risk": 0.026706231454005934,
+            "qc_risk": 0.05142857142857143,
+            "nonhigher": true
+          }
+        ]
+      },
+      {
+        "exponent": 0.5,
+        "acceptance_boundary": 0.325,
+        "passes": false,
+        "checks": {
+          "negative_control_coverage": true,
+          "negative_control_risk": true,
+          "overall_coverage": true,
+          "overall_risk": false,
+          "risk_upper95": true,
+          "relative_risk_reduction": true,
+          "rejected_invalid_fraction": true,
+          "positive_aurc_difference": true,
+          "bootstrap_probability": true,
+          "structure_risk_direction": true
+        },
+        "full": {
+          "eligible": 770,
+          "accepted": 750,
+          "coverage": 0.974025974025974,
+          "invalid": 40,
+          "risk": 0.05333333333333334,
+          "cluster_bootstrap_risk_upper95": 0.07711138310893513,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 408,
+              "coverage": 0.9714285714285714,
+              "invalid": 29,
+              "risk": 0.07107843137254902,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.10565110565110565,
+              "worst_field_risk": 0.11678832116788321,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 133,
+                  "invalid": 11,
+                  "risk": 0.08270676691729323
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 137,
+                  "invalid": 16,
+                  "risk": 0.11678832116788321
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 138,
+                  "invalid": 2,
+                  "risk": 0.014492753623188406
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 342,
+              "coverage": 0.9771428571428571,
+              "invalid": 11,
+              "risk": 0.03216374269005848,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.052478134110787174,
+              "worst_field_risk": 0.06569343065693431,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 136,
+                  "invalid": 2,
+                  "risk": 0.014705882352941176
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 69,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 137,
+                  "invalid": 9,
+                  "risk": 0.06569343065693431
+                }
+              ]
+            }
+          ]
+        },
+        "qc": {
+          "eligible": 770,
+          "accepted": 770,
+          "coverage": 1.0,
+          "invalid": 57,
+          "risk": 0.07402597402597402,
+          "cluster_bootstrap_risk_upper95": 0.0987012987012987,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 420,
+              "coverage": 1.0,
+              "invalid": 39,
+              "risk": 0.09285714285714286,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.1261904761904762,
+              "worst_field_risk": 0.12857142857142856,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 17,
+                  "risk": 0.12142857142857143
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 18,
+                  "risk": 0.12857142857142856
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 4,
+                  "risk": 0.02857142857142857
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 350,
+              "coverage": 1.0,
+              "invalid": 18,
+              "risk": 0.05142857142857143,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.07142857142857142,
+              "worst_field_risk": 0.08571428571428572,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 6,
+                  "risk": 0.04285714285714286
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 70,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 12,
+                  "risk": 0.08571428571428572
+                }
+              ]
+            }
+          ]
+        },
+        "negative_control_full": {
+          "eligible": 165,
+          "accepted": 165,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 90,
+              "accepted": 90,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 75,
+              "accepted": 75,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 15,
+                  "accepted": 15,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            }
+          ]
+        },
+        "operating_point": {
+          "full_accepted": 750,
+          "full_risk": 0.05333333333333334,
+          "comparator_accepted": 770,
+          "comparator_risk": 0.07402597402597402,
+          "full_minus_comparator_risk": -0.020692640692640686,
+          "coverage_loss_vs_comparator": 0.025974025974025976,
+          "comparator_only_rejections": 20,
+          "invalid_comparator_only_rejections": 17,
+          "comparator_only_rejection_risk": 0.85,
+          "invalid_enrichment_among_comparator_only_rejections": 11.482456140350877,
+          "relative_risk_reduction_vs_qc": 0.27953216374268997
+        },
+        "risk_coverage_evidence": {
+          "endpoint_family": "tensor_coherence",
+          "eligible_rows": 770,
+          "reference_fields": 6,
+          "invalid_rows": 57,
+          "invalid_reference_fields": 5,
+          "observed": {
+            "full_contract_aurc": 0.005576167118119224,
+            "conventional_acquisition_qc_aurc": 0.01206731561911982,
+            "comparator_minus_full": 0.006491148501000596,
+            "relative_reduction": 0.5379115543075565
+          },
+          "bootstrap": {
+            "draws": 10000,
+            "seed": 26083685,
+            "resampling_unit": "reference_group_id stratified by structure",
+            "difference_direction": "positive comparator-minus-full values favor the complete contract",
+            "finite_draws": 10000,
+            "median": 0.006491148501000596,
+            "ci95": [
+              0.0015662554591348364,
+              0.013698377348903574
+            ],
+            "probability_full_better": 1.0,
+            "probability_full_noninferior": 1.0,
+            "structure_specific": {
+              "F-actin_linear": {
+                "finite_draws": 10000,
+                "median": 0.009234624268498547,
+                "ci95": [
+                  0.0008255176501236883,
+                  0.026652892902118884
+                ],
+                "probability_full_better": 1.0,
+                "probability_full_noninferior": 1.0
+              },
+              "F-actin_nonlinear": {
+                "finite_draws": 10000,
+                "median": 0.004519129729580781,
+                "ci95": [
+                  0.0,
+                  0.012229056964836742
+                ],
+                "probability_full_better": 0.9638,
+                "probability_full_noninferior": 1.0
+              }
+            }
+          }
+        },
+        "structure_risk_direction": [
+          {
+            "structure": "F-actin_linear",
+            "full_risk": 0.07107843137254902,
+            "qc_risk": 0.09285714285714286,
+            "nonhigher": true
+          },
+          {
+            "structure": "F-actin_nonlinear",
+            "full_risk": 0.03216374269005848,
+            "qc_risk": 0.05142857142857143,
+            "nonhigher": true
+          }
+        ]
+      },
+      {
+        "exponent": 0.5,
+        "acceptance_boundary": 0.35,
+        "passes": false,
+        "checks": {
+          "negative_control_coverage": true,
+          "negative_control_risk": true,
+          "overall_coverage": true,
+          "overall_risk": false,
+          "risk_upper95": true,
+          "relative_risk_reduction": false,
+          "rejected_invalid_fraction": true,
+          "positive_aurc_difference": true,
+          "bootstrap_probability": true,
+          "structure_risk_direction": true
+        },
+        "full": {
+          "eligible": 770,
+          "accepted": 757,
+          "coverage": 0.9831168831168832,
+          "invalid": 45,
+          "risk": 0.059445178335535004,
+          "cluster_bootstrap_risk_upper95": 0.08211920529801324,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 412,
+              "coverage": 0.9809523809523809,
+              "invalid": 31,
+              "risk": 0.07524271844660194,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.10922330097087378,
+              "worst_field_risk": 0.11594202898550725,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 136,
+                  "invalid": 13,
+                  "risk": 0.09558823529411764
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 138,
+                  "invalid": 16,
+                  "risk": 0.11594202898550725
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 138,
+                  "invalid": 2,
+                  "risk": 0.014492753623188406
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 345,
+              "coverage": 0.9857142857142858,
+              "invalid": 14,
+              "risk": 0.04057971014492753,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.057971014492753624,
+              "worst_field_risk": 0.07246376811594203,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 138,
+                  "invalid": 4,
+                  "risk": 0.028985507246376812
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 69,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 138,
+                  "invalid": 10,
+                  "risk": 0.07246376811594203
+                }
+              ]
+            }
+          ]
+        },
+        "qc": {
+          "eligible": 770,
+          "accepted": 770,
+          "coverage": 1.0,
+          "invalid": 57,
+          "risk": 0.07402597402597402,
+          "cluster_bootstrap_risk_upper95": 0.0987012987012987,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 420,
+              "coverage": 1.0,
+              "invalid": 39,
+              "risk": 0.09285714285714286,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.1261904761904762,
+              "worst_field_risk": 0.12857142857142856,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 17,
+                  "risk": 0.12142857142857143
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 18,
+                  "risk": 0.12857142857142856
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 4,
+                  "risk": 0.02857142857142857
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 350,
+              "coverage": 1.0,
+              "invalid": 18,
+              "risk": 0.05142857142857143,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.07142857142857142,
+              "worst_field_risk": 0.08571428571428572,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 6,
+                  "risk": 0.04285714285714286
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 70,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 12,
+                  "risk": 0.08571428571428572
+                }
+              ]
+            }
+          ]
+        },
+        "negative_control_full": {
+          "eligible": 165,
+          "accepted": 165,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 90,
+              "accepted": 90,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 75,
+              "accepted": 75,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 15,
+                  "accepted": 15,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            }
+          ]
+        },
+        "operating_point": {
+          "full_accepted": 757,
+          "full_risk": 0.059445178335535004,
+          "comparator_accepted": 770,
+          "comparator_risk": 0.07402597402597402,
+          "full_minus_comparator_risk": -0.014580795690439019,
+          "coverage_loss_vs_comparator": 0.016883116883116882,
+          "comparator_only_rejections": 13,
+          "invalid_comparator_only_rejections": 12,
+          "comparator_only_rejection_risk": 0.9230769230769231,
+          "invalid_enrichment_among_comparator_only_rejections": 12.469635627530366,
+          "relative_risk_reduction_vs_qc": 0.19696864353750954
+        },
+        "risk_coverage_evidence": {
+          "endpoint_family": "tensor_coherence",
+          "eligible_rows": 770,
+          "reference_fields": 6,
+          "invalid_rows": 57,
+          "invalid_reference_fields": 5,
+          "observed": {
+            "full_contract_aurc": 0.005576167118119224,
+            "conventional_acquisition_qc_aurc": 0.01206731561911982,
+            "comparator_minus_full": 0.006491148501000596,
+            "relative_reduction": 0.5379115543075565
+          },
+          "bootstrap": {
+            "draws": 10000,
+            "seed": 26083785,
+            "resampling_unit": "reference_group_id stratified by structure",
+            "difference_direction": "positive comparator-minus-full values favor the complete contract",
+            "finite_draws": 10000,
+            "median": 0.006491148501000596,
+            "ci95": [
+              0.0015662554591348364,
+              0.013528300177127868
+            ],
+            "probability_full_better": 1.0,
+            "probability_full_noninferior": 1.0,
+            "structure_specific": {
+              "F-actin_linear": {
+                "finite_draws": 10000,
+                "median": 0.009234624268498547,
+                "ci95": [
+                  0.0008255176501236883,
+                  0.026652892902118884
+                ],
+                "probability_full_better": 1.0,
+                "probability_full_noninferior": 1.0
+              },
+              "F-actin_nonlinear": {
+                "finite_draws": 10000,
+                "median": 0.004519129729580781,
+                "ci95": [
+                  0.0,
+                  0.012229056964836742
+                ],
+                "probability_full_better": 0.9634,
+                "probability_full_noninferior": 1.0
+              }
+            }
+          }
+        },
+        "structure_risk_direction": [
+          {
+            "structure": "F-actin_linear",
+            "full_risk": 0.07524271844660194,
+            "qc_risk": 0.09285714285714286,
+            "nonhigher": true
+          },
+          {
+            "structure": "F-actin_nonlinear",
+            "full_risk": 0.04057971014492753,
+            "qc_risk": 0.05142857142857143,
+            "nonhigher": true
+          }
+        ]
+      }
+    ],
+    "selected": {
+      "exponent": 0.5,
+      "acceptance_boundary": 0.3,
+      "passes": true,
+      "checks": {
+        "negative_control_coverage": true,
+        "negative_control_risk": true,
+        "overall_coverage": true,
+        "overall_risk": true,
+        "risk_upper95": true,
+        "relative_risk_reduction": true,
+        "rejected_invalid_fraction": true,
+        "positive_aurc_difference": true,
+        "bootstrap_probability": true,
+        "structure_risk_direction": true
+      },
+      "full": {
+        "eligible": 770,
+        "accepted": 737,
+        "coverage": 0.9571428571428572,
+        "invalid": 33,
+        "risk": 0.04477611940298507,
+        "cluster_bootstrap_risk_upper95": 0.06382978723404255,
+        "combinations": [
+          {
+            "structure": "F-actin_linear",
+            "endpoint_family": "tensor_coherence",
+            "eligible": 420,
+            "accepted": 400,
+            "coverage": 0.9523809523809523,
+            "invalid": 24,
+            "risk": 0.06,
+            "reference_fields": 3,
+            "cluster_bootstrap_risk_upper95": 0.08838383838383838,
+            "worst_field_risk": 0.09774436090225563,
+            "by_field": [
+              {
+                "reference_group_id": "F-actin_linear|Cell_008",
+                "eligible": 140,
+                "accepted": 130,
+                "invalid": 9,
+                "risk": 0.06923076923076923
+              },
+              {
+                "reference_group_id": "F-actin_linear|Cell_025",
+                "eligible": 140,
+                "accepted": 133,
+                "invalid": 13,
+                "risk": 0.09774436090225563
+              },
+              {
+                "reference_group_id": "F-actin_linear|Cell_047",
+                "eligible": 140,
+                "accepted": 137,
+                "invalid": 2,
+                "risk": 0.014598540145985401
+              }
+            ]
+          },
+          {
+            "structure": "F-actin_nonlinear",
+            "endpoint_family": "tensor_coherence",
+            "eligible": 350,
+            "accepted": 337,
+            "coverage": 0.9628571428571429,
+            "invalid": 9,
+            "risk": 0.026706231454005934,
+            "reference_fields": 3,
+            "cluster_bootstrap_risk_upper95": 0.041666666666666664,
+            "worst_field_risk": 0.05223880597014925,
+            "by_field": [
+              {
+                "reference_group_id": "F-actin_nonlinear|Cell_015",
+                "eligible": 140,
+                "accepted": 135,
+                "invalid": 2,
+                "risk": 0.014814814814814815
+              },
+              {
+                "reference_group_id": "F-actin_nonlinear|Cell_033",
+                "eligible": 70,
+                "accepted": 68,
+                "invalid": 0,
+                "risk": 0.0
+              },
+              {
+                "reference_group_id": "F-actin_nonlinear|Cell_051",
+                "eligible": 140,
+                "accepted": 134,
+                "invalid": 7,
+                "risk": 0.05223880597014925
+              }
+            ]
+          }
+        ]
+      },
+      "qc": {
+        "eligible": 770,
+        "accepted": 770,
+        "coverage": 1.0,
+        "invalid": 57,
+        "risk": 0.07402597402597402,
+        "cluster_bootstrap_risk_upper95": 0.0987012987012987,
+        "combinations": [
+          {
+            "structure": "F-actin_linear",
+            "endpoint_family": "tensor_coherence",
+            "eligible": 420,
+            "accepted": 420,
+            "coverage": 1.0,
+            "invalid": 39,
+            "risk": 0.09285714285714286,
+            "reference_fields": 3,
+            "cluster_bootstrap_risk_upper95": 0.1261904761904762,
+            "worst_field_risk": 0.12857142857142856,
+            "by_field": [
+              {
+                "reference_group_id": "F-actin_linear|Cell_008",
+                "eligible": 140,
+                "accepted": 140,
+                "invalid": 17,
+                "risk": 0.12142857142857143
+              },
+              {
+                "reference_group_id": "F-actin_linear|Cell_025",
+                "eligible": 140,
+                "accepted": 140,
+                "invalid": 18,
+                "risk": 0.12857142857142856
+              },
+              {
+                "reference_group_id": "F-actin_linear|Cell_047",
+                "eligible": 140,
+                "accepted": 140,
+                "invalid": 4,
+                "risk": 0.02857142857142857
+              }
+            ]
+          },
+          {
+            "structure": "F-actin_nonlinear",
+            "endpoint_family": "tensor_coherence",
+            "eligible": 350,
+            "accepted": 350,
+            "coverage": 1.0,
+            "invalid": 18,
+            "risk": 0.05142857142857143,
+            "reference_fields": 3,
+            "cluster_bootstrap_risk_upper95": 0.07142857142857142,
+            "worst_field_risk": 0.08571428571428572,
+            "by_field": [
+              {
+                "reference_group_id": "F-actin_nonlinear|Cell_015",
+                "eligible": 140,
+                "accepted": 140,
+                "invalid": 6,
+                "risk": 0.04285714285714286
+              },
+              {
+                "reference_group_id": "F-actin_nonlinear|Cell_033",
+                "eligible": 70,
+                "accepted": 70,
+                "invalid": 0,
+                "risk": 0.0
+              },
+              {
+                "reference_group_id": "F-actin_nonlinear|Cell_051",
+                "eligible": 140,
+                "accepted": 140,
+                "invalid": 12,
+                "risk": 0.08571428571428572
+              }
+            ]
+          }
+        ]
+      },
+      "negative_control_full": {
+        "eligible": 165,
+        "accepted": 165,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0,
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "combinations": [
+          {
+            "structure": "F-actin_linear",
+            "endpoint_family": "tensor_coherence",
+            "eligible": 90,
+            "accepted": 90,
+            "coverage": 1.0,
+            "invalid": 0,
+            "risk": 0.0,
+            "reference_fields": 3,
+            "cluster_bootstrap_risk_upper95": 0.0,
+            "worst_field_risk": 0.0,
+            "by_field": [
+              {
+                "reference_group_id": "F-actin_linear|Cell_008",
+                "eligible": 30,
+                "accepted": 30,
+                "invalid": 0,
+                "risk": 0.0
+              },
+              {
+                "reference_group_id": "F-actin_linear|Cell_025",
+                "eligible": 30,
+                "accepted": 30,
+                "invalid": 0,
+                "risk": 0.0
+              },
+              {
+                "reference_group_id": "F-actin_linear|Cell_047",
+                "eligible": 30,
+                "accepted": 30,
+                "invalid": 0,
+                "risk": 0.0
+              }
+            ]
+          },
+          {
+            "structure": "F-actin_nonlinear",
+            "endpoint_family": "tensor_coherence",
+            "eligible": 75,
+            "accepted": 75,
+            "coverage": 1.0,
+            "invalid": 0,
+            "risk": 0.0,
+            "reference_fields": 3,
+            "cluster_bootstrap_risk_upper95": 0.0,
+            "worst_field_risk": 0.0,
+            "by_field": [
+              {
+                "reference_group_id": "F-actin_nonlinear|Cell_015",
+                "eligible": 30,
+                "accepted": 30,
+                "invalid": 0,
+                "risk": 0.0
+              },
+              {
+                "reference_group_id": "F-actin_nonlinear|Cell_033",
+                "eligible": 15,
+                "accepted": 15,
+                "invalid": 0,
+                "risk": 0.0
+              },
+              {
+                "reference_group_id": "F-actin_nonlinear|Cell_051",
+                "eligible": 30,
+                "accepted": 30,
+                "invalid": 0,
+                "risk": 0.0
+              }
+            ]
+          }
+        ]
+      },
+      "operating_point": {
+        "full_accepted": 737,
+        "full_risk": 0.04477611940298507,
+        "comparator_accepted": 770,
+        "comparator_risk": 0.07402597402597402,
+        "full_minus_comparator_risk": -0.02924985462298895,
+        "coverage_loss_vs_comparator": 0.04285714285714286,
+        "comparator_only_rejections": 33,
+        "invalid_comparator_only_rejections": 24,
+        "comparator_only_rejection_risk": 0.7272727272727273,
+        "invalid_enrichment_among_comparator_only_rejections": 9.824561403508772,
+        "relative_risk_reduction_vs_qc": 0.39512961508248234
+      },
+      "risk_coverage_evidence": {
+        "endpoint_family": "tensor_coherence",
+        "eligible_rows": 770,
+        "reference_fields": 6,
+        "invalid_rows": 57,
+        "invalid_reference_fields": 5,
+        "observed": {
+          "full_contract_aurc": 0.005576167118119224,
+          "conventional_acquisition_qc_aurc": 0.01206731561911982,
+          "comparator_minus_full": 0.006491148501000596,
+          "relative_reduction": 0.5379115543075565
+        },
+        "bootstrap": {
+          "draws": 10000,
+          "seed": 26083585,
+          "resampling_unit": "reference_group_id stratified by structure",
+          "difference_direction": "positive comparator-minus-full values favor the complete contract",
+          "finite_draws": 10000,
+          "median": 0.006491148501000596,
+          "ci95": [
+            0.0015662554591348364,
+            0.013698377348903574
+          ],
+          "probability_full_better": 1.0,
+          "probability_full_noninferior": 1.0,
+          "structure_specific": {
+            "F-actin_linear": {
+              "finite_draws": 10000,
+              "median": 0.009234624268498547,
+              "ci95": [
+                0.0008255176501236883,
+                0.026652892902118884
+              ],
+              "probability_full_better": 1.0,
+              "probability_full_noninferior": 1.0
+            },
+            "F-actin_nonlinear": {
+              "finite_draws": 10000,
+              "median": 0.004519129729580781,
+              "ci95": [
+                0.0,
+                0.012229056964836742
+              ],
+              "probability_full_better": 0.9632,
+              "probability_full_noninferior": 1.0
+            }
+          }
+        }
+      },
+      "structure_risk_direction": [
+        {
+          "structure": "F-actin_linear",
+          "full_risk": 0.06,
+          "qc_risk": 0.09285714285714286,
+          "nonhigher": true
+        },
+        {
+          "structure": "F-actin_nonlinear",
+          "full_risk": 0.026706231454005934,
+          "qc_risk": 0.05142857142857143,
+          "nonhigher": true
+        }
+      ]
+    },
+    "exponent_sensitivity_at_selected_boundary": [
+      {
+        "exponent": 0.0,
+        "acceptance_boundary": 0.3,
+        "passes": false,
+        "checks": {
+          "negative_control_coverage": true,
+          "negative_control_risk": true,
+          "overall_coverage": true,
+          "overall_risk": true,
+          "risk_upper95": true,
+          "relative_risk_reduction": true,
+          "rejected_invalid_fraction": true,
+          "positive_aurc_difference": false,
+          "bootstrap_probability": false,
+          "structure_risk_direction": true
+        },
+        "full": {
+          "eligible": 770,
+          "accepted": 635,
+          "coverage": 0.8246753246753247,
+          "invalid": 18,
+          "risk": 0.028346456692913385,
+          "cluster_bootstrap_risk_upper95": 0.050073529411763636,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 350,
+              "coverage": 0.8333333333333334,
+              "invalid": 13,
+              "risk": 0.037142857142857144,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.06764705882352941,
+              "worst_field_risk": 0.08695652173913043,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 110,
+                  "invalid": 3,
+                  "risk": 0.02727272727272727
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 115,
+                  "invalid": 10,
+                  "risk": 0.08695652173913043
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 125,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 285,
+              "coverage": 0.8142857142857143,
+              "invalid": 5,
+              "risk": 0.017543859649122806,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.034482758620689655,
+              "worst_field_risk": 0.043478260869565216,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 110,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 60,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 115,
+                  "invalid": 5,
+                  "risk": 0.043478260869565216
+                }
+              ]
+            }
+          ]
+        },
+        "qc": {
+          "eligible": 770,
+          "accepted": 770,
+          "coverage": 1.0,
+          "invalid": 57,
+          "risk": 0.07402597402597402,
+          "cluster_bootstrap_risk_upper95": 0.0987012987012987,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 420,
+              "coverage": 1.0,
+              "invalid": 39,
+              "risk": 0.09285714285714286,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.1261904761904762,
+              "worst_field_risk": 0.12857142857142856,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 17,
+                  "risk": 0.12142857142857143
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 18,
+                  "risk": 0.12857142857142856
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 4,
+                  "risk": 0.02857142857142857
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 350,
+              "coverage": 1.0,
+              "invalid": 18,
+              "risk": 0.05142857142857143,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.07142857142857142,
+              "worst_field_risk": 0.08571428571428572,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 6,
+                  "risk": 0.04285714285714286
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 70,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 12,
+                  "risk": 0.08571428571428572
+                }
+              ]
+            }
+          ]
+        },
+        "negative_control_full": {
+          "eligible": 165,
+          "accepted": 165,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 90,
+              "accepted": 90,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 75,
+              "accepted": 75,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 15,
+                  "accepted": 15,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            }
+          ]
+        },
+        "operating_point": {
+          "full_accepted": 635,
+          "full_risk": 0.028346456692913385,
+          "comparator_accepted": 770,
+          "comparator_risk": 0.07402597402597402,
+          "full_minus_comparator_risk": -0.04567951733306064,
+          "coverage_loss_vs_comparator": 0.17532467532467533,
+          "comparator_only_rejections": 135,
+          "invalid_comparator_only_rejections": 39,
+          "comparator_only_rejection_risk": 0.28888888888888886,
+          "invalid_enrichment_among_comparator_only_rejections": 3.9025341130604287,
+          "relative_risk_reduction_vs_qc": 0.6170741815167841
+        },
+        "risk_coverage_evidence": {
+          "endpoint_family": "tensor_coherence",
+          "eligible_rows": 770,
+          "reference_fields": 6,
+          "invalid_rows": 57,
+          "invalid_reference_fields": 5,
+          "observed": {
+            "full_contract_aurc": 0.01206731561911982,
+            "conventional_acquisition_qc_aurc": 0.01206731561911982,
+            "comparator_minus_full": 0.0,
+            "relative_reduction": 0.0
+          },
+          "bootstrap": {
+            "draws": 10000,
+            "seed": 26092985,
+            "resampling_unit": "reference_group_id stratified by structure",
+            "difference_direction": "positive comparator-minus-full values favor the complete contract",
+            "finite_draws": 10000,
+            "median": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "probability_full_better": 0.0,
+            "probability_full_noninferior": 1.0,
+            "structure_specific": {
+              "F-actin_linear": {
+                "finite_draws": 10000,
+                "median": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "probability_full_better": 0.0,
+                "probability_full_noninferior": 1.0
+              },
+              "F-actin_nonlinear": {
+                "finite_draws": 10000,
+                "median": 0.0,
+                "ci95": [
+                  0.0,
+                  0.0
+                ],
+                "probability_full_better": 0.0,
+                "probability_full_noninferior": 1.0
+              }
+            }
+          }
+        },
+        "structure_risk_direction": [
+          {
+            "structure": "F-actin_linear",
+            "full_risk": 0.037142857142857144,
+            "qc_risk": 0.09285714285714286,
+            "nonhigher": true
+          },
+          {
+            "structure": "F-actin_nonlinear",
+            "full_risk": 0.017543859649122806,
+            "qc_risk": 0.05142857142857143,
+            "nonhigher": true
+          }
+        ]
+      },
+      {
+        "exponent": 1.0,
+        "acceptance_boundary": 0.3,
+        "passes": false,
+        "checks": {
+          "negative_control_coverage": true,
+          "negative_control_risk": true,
+          "overall_coverage": true,
+          "overall_risk": false,
+          "risk_upper95": true,
+          "relative_risk_reduction": false,
+          "rejected_invalid_fraction": true,
+          "positive_aurc_difference": true,
+          "bootstrap_probability": true,
+          "structure_risk_direction": true
+        },
+        "full": {
+          "eligible": 770,
+          "accepted": 747,
+          "coverage": 0.9701298701298702,
+          "invalid": 42,
+          "risk": 0.05622489959839357,
+          "cluster_bootstrap_risk_upper95": 0.07764390896921017,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 405,
+              "coverage": 0.9642857142857143,
+              "invalid": 29,
+              "risk": 0.07160493827160494,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.10421836228287841,
+              "worst_field_risk": 0.1111111111111111,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 133,
+                  "invalid": 12,
+                  "risk": 0.09022556390977443
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 135,
+                  "invalid": 15,
+                  "risk": 0.1111111111111111
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 137,
+                  "invalid": 2,
+                  "risk": 0.014598540145985401
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 342,
+              "coverage": 0.9771428571428571,
+              "invalid": 13,
+              "risk": 0.038011695906432746,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.05378973105134474,
+              "worst_field_risk": 0.0661764705882353,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 137,
+                  "invalid": 4,
+                  "risk": 0.029197080291970802
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 69,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 136,
+                  "invalid": 9,
+                  "risk": 0.0661764705882353
+                }
+              ]
+            }
+          ]
+        },
+        "qc": {
+          "eligible": 770,
+          "accepted": 770,
+          "coverage": 1.0,
+          "invalid": 57,
+          "risk": 0.07402597402597402,
+          "cluster_bootstrap_risk_upper95": 0.0987012987012987,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 420,
+              "coverage": 1.0,
+              "invalid": 39,
+              "risk": 0.09285714285714286,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.1261904761904762,
+              "worst_field_risk": 0.12857142857142856,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 17,
+                  "risk": 0.12142857142857143
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 18,
+                  "risk": 0.12857142857142856
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 4,
+                  "risk": 0.02857142857142857
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 350,
+              "coverage": 1.0,
+              "invalid": 18,
+              "risk": 0.05142857142857143,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.07142857142857142,
+              "worst_field_risk": 0.08571428571428572,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 6,
+                  "risk": 0.04285714285714286
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 70,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 12,
+                  "risk": 0.08571428571428572
+                }
+              ]
+            }
+          ]
+        },
+        "negative_control_full": {
+          "eligible": 165,
+          "accepted": 165,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 90,
+              "accepted": 90,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 75,
+              "accepted": 75,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 15,
+                  "accepted": 15,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            }
+          ]
+        },
+        "operating_point": {
+          "full_accepted": 747,
+          "full_risk": 0.05622489959839357,
+          "comparator_accepted": 770,
+          "comparator_risk": 0.07402597402597402,
+          "full_minus_comparator_risk": -0.01780107442758045,
+          "coverage_loss_vs_comparator": 0.02987012987012987,
+          "comparator_only_rejections": 23,
+          "invalid_comparator_only_rejections": 15,
+          "comparator_only_rejection_risk": 0.6521739130434783,
+          "invalid_enrichment_among_comparator_only_rejections": 8.810068649885585,
+          "relative_risk_reduction_vs_qc": 0.24047065454801664
+        },
+        "risk_coverage_evidence": {
+          "endpoint_family": "tensor_coherence",
+          "eligible_rows": 770,
+          "reference_fields": 6,
+          "invalid_rows": 57,
+          "invalid_reference_fields": 5,
+          "observed": {
+            "full_contract_aurc": 0.006587546766117485,
+            "conventional_acquisition_qc_aurc": 0.01206731561911982,
+            "comparator_minus_full": 0.005479768853002335,
+            "relative_reduction": 0.454100068810666
+          },
+          "bootstrap": {
+            "draws": 10000,
+            "seed": 26093085,
+            "resampling_unit": "reference_group_id stratified by structure",
+            "difference_direction": "positive comparator-minus-full values favor the complete contract",
+            "finite_draws": 10000,
+            "median": 0.005479768853002335,
+            "ci95": [
+              0.00018331051948152453,
+              0.01348838807347583
+            ],
+            "probability_full_better": 0.9948,
+            "probability_full_noninferior": 0.9948,
+            "structure_specific": {
+              "F-actin_linear": {
+                "finite_draws": 10000,
+                "median": 0.006910529965656333,
+                "ci95": [
+                  0.00032869379185695904,
+                  0.027025369798450414
+                ],
+                "probability_full_better": 1.0,
+                "probability_full_noninferior": 1.0
+              },
+              "F-actin_nonlinear": {
+                "finite_draws": 10000,
+                "median": 0.004403246937952691,
+                "ci95": [
+                  0.0,
+                  0.01232285418646838
+                ],
+                "probability_full_better": 0.9618,
+                "probability_full_noninferior": 1.0
+              }
+            }
+          }
+        },
+        "structure_risk_direction": [
+          {
+            "structure": "F-actin_linear",
+            "full_risk": 0.07160493827160494,
+            "qc_risk": 0.09285714285714286,
+            "nonhigher": true
+          },
+          {
+            "structure": "F-actin_nonlinear",
+            "full_risk": 0.038011695906432746,
+            "qc_risk": 0.05142857142857143,
+            "nonhigher": true
+          }
+        ]
+      },
+      {
+        "exponent": 1.5,
+        "acceptance_boundary": 0.3,
+        "passes": false,
+        "checks": {
+          "negative_control_coverage": true,
+          "negative_control_risk": true,
+          "overall_coverage": true,
+          "overall_risk": false,
+          "risk_upper95": true,
+          "relative_risk_reduction": false,
+          "rejected_invalid_fraction": true,
+          "positive_aurc_difference": true,
+          "bootstrap_probability": true,
+          "structure_risk_direction": true
+        },
+        "full": {
+          "eligible": 770,
+          "accepted": 750,
+          "coverage": 0.974025974025974,
+          "invalid": 44,
+          "risk": 0.058666666666666666,
+          "cluster_bootstrap_risk_upper95": 0.08155080213903744,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 406,
+              "coverage": 0.9666666666666667,
+              "invalid": 30,
+              "risk": 0.07389162561576355,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.10643564356435643,
+              "worst_field_risk": 0.1111111111111111,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 134,
+                  "invalid": 13,
+                  "risk": 0.09701492537313433
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 135,
+                  "invalid": 15,
+                  "risk": 0.1111111111111111
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 137,
+                  "invalid": 2,
+                  "risk": 0.014598540145985401
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 344,
+              "coverage": 0.9828571428571429,
+              "invalid": 14,
+              "risk": 0.040697674418604654,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.05811138014527845,
+              "worst_field_risk": 0.07246376811594203,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 137,
+                  "invalid": 4,
+                  "risk": 0.029197080291970802
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 69,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 138,
+                  "invalid": 10,
+                  "risk": 0.07246376811594203
+                }
+              ]
+            }
+          ]
+        },
+        "qc": {
+          "eligible": 770,
+          "accepted": 770,
+          "coverage": 1.0,
+          "invalid": 57,
+          "risk": 0.07402597402597402,
+          "cluster_bootstrap_risk_upper95": 0.0987012987012987,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 420,
+              "accepted": 420,
+              "coverage": 1.0,
+              "invalid": 39,
+              "risk": 0.09285714285714286,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.1261904761904762,
+              "worst_field_risk": 0.12857142857142856,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 17,
+                  "risk": 0.12142857142857143
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 18,
+                  "risk": 0.12857142857142856
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 4,
+                  "risk": 0.02857142857142857
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 350,
+              "accepted": 350,
+              "coverage": 1.0,
+              "invalid": 18,
+              "risk": 0.05142857142857143,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.07142857142857142,
+              "worst_field_risk": 0.08571428571428572,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 6,
+                  "risk": 0.04285714285714286
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 70,
+                  "accepted": 70,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 140,
+                  "accepted": 140,
+                  "invalid": 12,
+                  "risk": 0.08571428571428572
+                }
+              ]
+            }
+          ]
+        },
+        "negative_control_full": {
+          "eligible": 165,
+          "accepted": 165,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "combinations": [
+            {
+              "structure": "F-actin_linear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 90,
+              "accepted": 90,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_linear|Cell_008",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_025",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_linear|Cell_047",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            },
+            {
+              "structure": "F-actin_nonlinear",
+              "endpoint_family": "tensor_coherence",
+              "eligible": 75,
+              "accepted": 75,
+              "coverage": 1.0,
+              "invalid": 0,
+              "risk": 0.0,
+              "reference_fields": 3,
+              "cluster_bootstrap_risk_upper95": 0.0,
+              "worst_field_risk": 0.0,
+              "by_field": [
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_015",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_033",
+                  "eligible": 15,
+                  "accepted": 15,
+                  "invalid": 0,
+                  "risk": 0.0
+                },
+                {
+                  "reference_group_id": "F-actin_nonlinear|Cell_051",
+                  "eligible": 30,
+                  "accepted": 30,
+                  "invalid": 0,
+                  "risk": 0.0
+                }
+              ]
+            }
+          ]
+        },
+        "operating_point": {
+          "full_accepted": 750,
+          "full_risk": 0.058666666666666666,
+          "comparator_accepted": 770,
+          "comparator_risk": 0.07402597402597402,
+          "full_minus_comparator_risk": -0.015359307359307357,
+          "coverage_loss_vs_comparator": 0.025974025974025976,
+          "comparator_only_rejections": 20,
+          "invalid_comparator_only_rejections": 13,
+          "comparator_only_rejection_risk": 0.65,
+          "invalid_enrichment_among_comparator_only_rejections": 8.780701754385966,
+          "relative_risk_reduction_vs_qc": 0.20748538011695905
+        },
+        "risk_coverage_evidence": {
+          "endpoint_family": "tensor_coherence",
+          "eligible_rows": 770,
+          "reference_fields": 6,
+          "invalid_rows": 57,
+          "invalid_reference_fields": 5,
+          "observed": {
+            "full_contract_aurc": 0.007783557200798968,
+            "conventional_acquisition_qc_aurc": 0.01206731561911982,
+            "comparator_minus_full": 0.004283758418320852,
+            "relative_reduction": 0.35498851223660177
+          },
+          "bootstrap": {
+            "draws": 10000,
+            "seed": 26093185,
+            "resampling_unit": "reference_group_id stratified by structure",
+            "difference_direction": "positive comparator-minus-full values favor the complete contract",
+            "finite_draws": 10000,
+            "median": 0.004283758418320852,
+            "ci95": [
+              -0.0004178742131889018,
+              0.011689052938180605
+            ],
+            "probability_full_better": 0.9131,
+            "probability_full_noninferior": 0.9131,
+            "structure_specific": {
+              "F-actin_linear": {
+                "finite_draws": 10000,
+                "median": 0.005797846653739572,
+                "ci95": [
+                  -0.0005645007221631356,
+                  0.024611505596059305
+                ],
+                "probability_full_better": 0.8548,
+                "probability_full_noninferior": 0.8548
+              },
+              "F-actin_nonlinear": {
+                "finite_draws": 10000,
+                "median": 0.0032968368436067444,
+                "ci95": [
+                  -2.9358563128474135e-05,
+                  0.010400914993696612
+                ],
+                "probability_full_better": 0.8487,
+                "probability_full_noninferior": 0.8856
+              }
+            }
+          }
+        },
+        "structure_risk_direction": [
+          {
+            "structure": "F-actin_linear",
+            "full_risk": 0.07389162561576355,
+            "qc_risk": 0.09285714285714286,
+            "nonhigher": true
+          },
+          {
+            "structure": "F-actin_nonlinear",
+            "full_risk": 0.040697674418604654,
+            "qc_risk": 0.05142857142857143,
+            "nonhigher": true
+          }
+        ]
+      }
+    ]
+  },
+  "lineage": {
+    "v8_lock": {
+      "path": "manifests/paired_acquisition_tensor_v8_controlled_degradation_pilot_lock.json",
+      "bytes": 11366,
+      "sha256": "ac07ae2c7289a15e3b9faca0b0f21183e520e5a1094e8ca09b7f214050362d0f"
+    },
+    "v8_receipt": {
+      "path": "outputs/nostos0-biosr-tensor-v8-controlled-degradation-pilot/pilot_receipt.json",
+      "bytes": 106619,
+      "sha256": "69ea9f9ff2e4f6da909e495aee2e765235a420b3acf604031ffb8362927c9672"
+    },
+    "v8_rows": {
+      "path": "outputs/nostos0-biosr-tensor-v8-controlled-degradation-pilot/tensor_cases.jsonl",
+      "bytes": 7392892,
+      "sha256": "21c1f84abee688e47fc6482a0a9afdb08c6ea11ec354de2f7398e0df91e5cf27"
+    },
+    "auditor": {
+      "path": "scripts/audit_biosr_tensor_v8_and_calibrate_v9.py",
+      "bytes": 7631,
+      "sha256": "d0070eff00f794377580a2bf06f8f0b2fe15603146d0aeb704aae63a3bbd59f1"
+    },
+    "scale_conditioned_support_implementation": {
+      "path": "src/nostos/validation/scale_conditioned_support_v9.py",
+      "bytes": 14833,
+      "sha256": "f664d6f712d9dfd14408f7bccbd42a301aebe181c81dca75ed116d1b3cf2620b"
+    }
+  },
+  "artifacts": {
+    "v9_development_rows": {
+      "path": "outputs/nostos0-biosr-tensor-v9-scale-conditioned-development/development_tensor_cases_v9.jsonl",
+      "bytes": 7880006,
+      "sha256": "b1ce1e71326bf54feee52a447441b290ee0fe98b26fa2b316932bbba9fd3782d"
+    }
+  },
+  "claim_boundary": "The selected v9 boundary is development evidence derived from v8 outcomes. It cannot be described as confirmed until it passes on different cells selected and locked before pixel access."
+}

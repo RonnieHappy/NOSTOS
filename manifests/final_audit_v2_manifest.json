@@ -1,0 +1,39 @@
+{
+  "schema_version": "nostos-final-audit-manifest/2.0",
+  "status": "complete_with_external_blockers",
+  "audit": {
+    "path": "outputs/nostos0-final-max-audit-v2/final_audit.json",
+    "bytes": 19006,
+    "sha256": "6dc11b351f7b02055b42bff4d6220a63271bd83dccf9e351b2112eaf87ef6c5a"
+  },
+  "reviewer_document": {
+    "path": "docs/NOSTOS0_FINAL_MAX_AUDIT.md",
+    "bytes": 16867,
+    "sha256": "8363224b8bf58ceb332c059d29145e0441649c25752a00adfa079bd1ebd5f321"
+  },
+  "implementation": [
+    {
+      "path": "src/nostos/validation/final_audit.py",
+      "bytes": 27338,
+      "sha256": "66834f3f11b0953393c8b6683ff2229f0c08422813591d4d8613f94eb1c6b37e"
+    },
+    {
+      "path": "scripts/build_final_max_audit.py",
+      "bytes": 919,
+      "sha256": "8b2774f7d2f74b1a825f837745f17b29d699945b472fb76acde8abecb9900949"
+    }
+  ],
+  "release_terminal_manifest": {
+    "path": "manifests/release_candidate_v29_audit_manifest.json",
+    "bytes": 2501,
+    "sha256": "e412190724d72c5bac94f4e0bc0537e6ef72ae5a837ba62d3c9add05231e7d0c"
+  },
+  "technical_checks_passed": 21,
+  "external_gates_open": [
+    "independent instrument and operator",
+    "fresh target-tissue reference",
+    "complete acquisition and simulated-use workflow",
+    "prospective clinical endpoint and decision impact",
+    "unaided external execution and public DOI"
+  ]
+}

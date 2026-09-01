@@ -1,0 +1,92 @@
+{
+  "protocol_version": "nostos0-ctc-hela02-lineage-transfer/1.0",
+  "status": "fail",
+  "source": {
+    "dataset": "Fluo-N2DL-HeLa",
+    "sequence": "02",
+    "archive_sha256": "35dd99d58e071aba0b03880128d920bd1c063783cc280f9531fbdc5be614c82e",
+    "url": "https://celltrackingchallenge.net/2d-datasets/"
+  },
+  "parameters": {
+    "division_combined_area_range": [
+      0.4,
+      1.5
+    ],
+    "division_child_area_range": [
+      0.05,
+      1.3
+    ],
+    "division_balance_max": 8.0,
+    "division_distance_radii": 2.0,
+    "division_separation_radii": 3.0
+  },
+  "result": {
+    "frames": 92,
+    "shape": [
+      700,
+      1100
+    ],
+    "tracks": 674,
+    "reference_edges": 25168,
+    "reference_division_edges": 422,
+    "mapping_coverage": 1.0,
+    "metrics": {
+      "links": {
+        "true_positive": 24552,
+        "predicted": 25078,
+        "reference": 25168,
+        "precision": 0.9790254406252492,
+        "recall": 0.9755244755244755,
+        "f1": 0.9772718226326473
+      },
+      "divisions": {
+        "true_positive": 123,
+        "predicted": 178,
+        "reference": 422,
+        "precision": 0.6910112359550562,
+        "recall": 0.2914691943127962,
+        "f1": 0.41
+      },
+      "incorrect_links": 526,
+      "identity_switch_fraction": 0.02097455937475078,
+      "unmapped_predicted_edges": 0
+    },
+    "baseline": {
+      "links": {
+        "true_positive": 24487,
+        "predicted": 24989,
+        "reference": 25168,
+        "precision": 0.9799111609108008,
+        "recall": 0.9729418308963763,
+        "f1": 0.9764140598520645
+      },
+      "divisions": {
+        "true_positive": 0,
+        "predicted": 0,
+        "reference": 422,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "incorrect_links": 502,
+      "identity_switch_fraction": 0.02008883908919925,
+      "unmapped_predicted_edges": 0
+    },
+    "finite_measurement_fraction": 1.0,
+    "assignments_invariant_to_spacing": true,
+    "fourfold_scaling_max_error": 0.0,
+    "runtime_seconds": 253.24475389998406,
+    "mask_stack_sha256": "0f689f3aa90c1018a9bac1a6987e77ce13ccc71e3bb037c51e262b89fdbc0a9f",
+    "reference_stack_sha256": "9a36667134cee4858cee7087fc13ab66b2c6cd0a252ce6d413ab199066bf9968"
+  },
+  "gates": {
+    "mapping_coverage": true,
+    "link_f1": true,
+    "identity_switches": true,
+    "baseline": true,
+    "division_f1": false,
+    "finite_calibrated": true,
+    "runtime": true
+  },
+  "interpretation": "Pristine real-sequence transfer of a post-failure synthetic-developed lineage rule; imported silver masks, not automatic segmentation or hidden CTC test performance."
+}

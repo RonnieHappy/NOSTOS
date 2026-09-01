@@ -1,0 +1,3 @@
+# Generated scientific vector assets are byte-hashed in provenance manifests.
+# Preserve their exact exported bytes on every operating system.
+figures/nostos0/*.svg -text

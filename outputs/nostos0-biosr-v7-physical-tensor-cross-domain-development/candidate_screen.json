@@ -1,0 +1,801 @@
+{
+  "schema_version": "nostos-biosr-v7-physical-tensor-cross-domain-development/1.0",
+  "status": "candidate_screen_complete_no_selection_frozen",
+  "structures": [
+    "CCPs",
+    "ER",
+    "Microtubules"
+  ],
+  "candidate_definitions": [
+    {
+      "name": "d035_i100",
+      "derivative_scale_fraction": 0.35,
+      "integration_scale_factor": 1.0
+    },
+    {
+      "name": "d050_i100",
+      "derivative_scale_fraction": 0.5,
+      "integration_scale_factor": 1.0
+    },
+    {
+      "name": "d050_i150",
+      "derivative_scale_fraction": 0.5,
+      "integration_scale_factor": 1.5
+    },
+    {
+      "name": "d050_i200",
+      "derivative_scale_fraction": 0.5,
+      "integration_scale_factor": 2.0
+    },
+    {
+      "name": "d075_i150",
+      "derivative_scale_fraction": 0.75,
+      "integration_scale_factor": 1.5
+    },
+    {
+      "name": "d100_i200",
+      "derivative_scale_fraction": 1.0,
+      "integration_scale_factor": 2.0
+    }
+  ],
+  "common_evaluation_domain": "The prospective v5/v6 pair-registration and reference-eligibility flags are reused identically for every tensor candidate.",
+  "results": [
+    {
+      "candidate": "d035_i100",
+      "derivative_scale_fraction": 0.35,
+      "integration_scale_factor": 1.0,
+      "structures": [
+        {
+          "structure": "CCPs",
+          "orientation": {
+            "eligible": 0,
+            "invalid": 0,
+            "risk": null,
+            "median_error": null,
+            "q90_error": null,
+            "maximum_error": null
+          },
+          "coherence": {
+            "eligible": 1185,
+            "invalid": 0,
+            "risk": 0.0,
+            "median_error": 0.04946224658926365,
+            "q90_error": 0.08167806487123946,
+            "maximum_error": 0.11695229666045318
+          }
+        },
+        {
+          "structure": "ER",
+          "orientation": {
+            "eligible": 158,
+            "invalid": 17,
+            "risk": 0.10759493670886076,
+            "median_error": 2.171696003124943,
+            "q90_error": 10.907418383938996,
+            "maximum_error": 51.073007160611695
+          },
+          "coherence": {
+            "eligible": 960,
+            "invalid": 18,
+            "risk": 0.01875,
+            "median_error": 0.02176797118016413,
+            "q90_error": 0.04295582836949153,
+            "maximum_error": 0.32705534870021796
+          }
+        },
+        {
+          "structure": "Microtubules",
+          "orientation": {
+            "eligible": 279,
+            "invalid": 23,
+            "risk": 0.08243727598566308,
+            "median_error": 0.7055030420873436,
+            "q90_error": 9.659094733191349,
+            "maximum_error": 14.196017510973633
+          },
+          "coherence": {
+            "eligible": 360,
+            "invalid": 0,
+            "risk": 0.0,
+            "median_error": 0.007786289343128083,
+            "q90_error": 0.022699446581951124,
+            "maximum_error": 0.061859289292759856
+          }
+        }
+      ],
+      "worst_structure_orientation_risk": 0.10759493670886076,
+      "worst_structure_orientation_q90_degrees": 10.907418383938996,
+      "worst_structure_coherence_risk": 0.01875,
+      "worst_structure_coherence_q90": 0.08167806487123946
+    },
+    {
+      "candidate": "d050_i100",
+      "derivative_scale_fraction": 0.5,
+      "integration_scale_factor": 1.0,
+      "structures": [
+        {
+          "structure": "CCPs",
+          "orientation": {
+            "eligible": 0,
+            "invalid": 0,
+            "risk": null,
+            "median_error": null,
+            "q90_error": null,
+            "maximum_error": null
+          },
+          "coherence": {
+            "eligible": 1185,
+            "invalid": 0,
+            "risk": 0.0,
+            "median_error": 0.05354878594078438,
+            "q90_error": 0.09000624818442327,
+            "maximum_error": 0.1127949645661373
+          }
+        },
+        {
+          "structure": "ER",
+          "orientation": {
+            "eligible": 158,
+            "invalid": 12,
+            "risk": 0.0759493670886076,
+            "median_error": 2.0978069645413058,
+            "q90_error": 7.001035838803737,
+            "maximum_error": 18.844706111780496
+          },
+          "coherence": {
+            "eligible": 960,
+            "invalid": 4,
+            "risk": 0.004166666666666667,
+            "median_error": 0.026256176095468098,
+            "q90_error": 0.04414887659064921,
+            "maximum_error": 0.2201433638719565
+          }
+        },
+        {
+          "structure": "Microtubules",
+          "orientation": {
+            "eligible": 279,
+            "invalid": 21,
+            "risk": 0.07526881720430108,
+            "median_error": 0.7287987946488386,
+            "q90_error": 9.377349948134054,
+            "maximum_error": 14.133679948542252
+          },
+          "coherence": {
+            "eligible": 360,
+            "invalid": 0,
+            "risk": 0.0,
+            "median_error": 0.013705431766037474,
+            "q90_error": 0.028560534320035802,
+            "maximum_error": 0.05023034827721118
+          }
+        }
+      ],
+      "worst_structure_orientation_risk": 0.0759493670886076,
+      "worst_structure_orientation_q90_degrees": 9.377349948134054,
+      "worst_structure_coherence_risk": 0.004166666666666667,
+      "worst_structure_coherence_q90": 0.09000624818442327
+    },
+    {
+      "candidate": "d050_i150",
+      "derivative_scale_fraction": 0.5,
+      "integration_scale_factor": 1.5,
+      "structures": [
+        {
+          "structure": "CCPs",
+          "orientation": {
+            "eligible": 0,
+            "invalid": 0,
+            "risk": null,
+            "median_error": null,
+            "q90_error": null,
+            "maximum_error": null
+          },
+          "coherence": {
+            "eligible": 1185,
+            "invalid": 0,
+            "risk": 0.0,
+            "median_error": 0.03799656862447562,
+            "q90_error": 0.060831713541854154,
+            "maximum_error": 0.08829412977022319
+          }
+        },
+        {
+          "structure": "ER",
+          "orientation": {
+            "eligible": 158,
+            "invalid": 12,
+            "risk": 0.0759493670886076,
+            "median_error": 2.1043955094950775,
+            "q90_error": 7.015087968768722,
+            "maximum_error": 18.881841529130682
+          },
+          "coherence": {
+            "eligible": 960,
+            "invalid": 3,
+            "risk": 0.003125,
+            "median_error": 0.01986420765588491,
+            "q90_error": 0.0400148641961198,
+            "maximum_error": 0.1876684719150925
+          }
+        },
+        {
+          "structure": "Microtubules",
+          "orientation": {
+            "eligible": 279,
+            "invalid": 21,
+            "risk": 0.07526881720430108,
+            "median_error": 0.7207966217876844,
+            "q90_error": 9.433915871093744,
+            "maximum_error": 14.180805287453424
+          },
+          "coherence": {
+            "eligible": 360,
+            "invalid": 0,
+            "risk": 0.0,
+            "median_error": 0.007470950456110931,
+            "q90_error": 0.022887156851477467,
+            "maximum_error": 0.05173065509219449
+          }
+        }
+      ],
+      "worst_structure_orientation_risk": 0.0759493670886076,
+      "worst_structure_orientation_q90_degrees": 9.433915871093744,
+      "worst_structure_coherence_risk": 0.003125,
+      "worst_structure_coherence_q90": 0.060831713541854154
+    },
+    {
+      "candidate": "d050_i200",
+      "derivative_scale_fraction": 0.5,
+      "integration_scale_factor": 2.0,
+      "structures": [
+        {
+          "structure": "CCPs",
+          "orientation": {
+            "eligible": 0,
+            "invalid": 0,
+            "risk": null,
+            "median_error": null,
+            "q90_error": null,
+            "maximum_error": null
+          },
+          "coherence": {
+            "eligible": 1185,
+            "invalid": 0,
+            "risk": 0.0,
+            "median_error": 0.02959242781732352,
+            "q90_error": 0.05049252945534711,
+            "maximum_error": 0.08683343095982368
+          }
+        },
+        {
+          "structure": "ER",
+          "orientation": {
+            "eligible": 158,
+            "invalid": 12,
+            "risk": 0.0759493670886076,
+            "median_error": 2.113583042671614,
+            "q90_error": 7.028492216770133,
+            "maximum_error": 18.9337148777624
+          },
+          "coherence": {
+            "eligible": 960,
+            "invalid": 2,
+            "risk": 0.0020833333333333333,
+            "median_error": 0.015899665951361386,
+            "q90_error": 0.036856120244375665,
+            "maximum_error": 0.16366559691183388
+          }
+        },
+        {
+          "structure": "Microtubules",
+          "orientation": {
+            "eligible": 279,
+            "invalid": 22,
+            "risk": 0.07885304659498207,
+            "median_error": 0.7160373162174665,
+            "q90_error": 9.532272032503931,
+            "maximum_error": 14.246904269184284
+          },
+          "coherence": {
+            "eligible": 360,
+            "invalid": 0,
+            "risk": 0.0,
+            "median_error": 0.005848667337405494,
+            "q90_error": 0.02229542917178631,
+            "maximum_error": 0.05243157274811394
+          }
+        }
+      ],
+      "worst_structure_orientation_risk": 0.07885304659498207,
+      "worst_structure_orientation_q90_degrees": 9.532272032503931,
+      "worst_structure_coherence_risk": 0.0020833333333333333,
+      "worst_structure_coherence_q90": 0.05049252945534711
+    },
+    {
+      "candidate": "d075_i150",
+      "derivative_scale_fraction": 0.75,
+      "integration_scale_factor": 1.5,
+      "structures": [
+        {
+          "structure": "CCPs",
+          "orientation": {
+            "eligible": 0,
+            "invalid": 0,
+            "risk": null,
+            "median_error": null,
+            "q90_error": null,
+            "maximum_error": null
+          },
+          "coherence": {
+            "eligible": 1185,
+            "invalid": 0,
+            "risk": 0.0,
+            "median_error": 0.04653304022723148,
+            "q90_error": 0.0725187599854128,
+            "maximum_error": 0.14463392867546598
+          }
+        },
+        {
+          "structure": "ER",
+          "orientation": {
+            "eligible": 158,
+            "invalid": 10,
+            "risk": 0.06329113924050633,
+            "median_error": 1.9732041310656534,
+            "q90_error": 7.339166512587327,
+            "maximum_error": 15.867185554706957
+          },
+          "coherence": {
+            "eligible": 960,
+            "invalid": 0,
+            "risk": 0.0,
+            "median_error": 0.02439428651110978,
+            "q90_error": 0.04205574837378343,
+            "maximum_error": 0.10176295486552872
+          }
+        },
+        {
+          "structure": "Microtubules",
+          "orientation": {
+            "eligible": 279,
+            "invalid": 26,
+            "risk": 0.0931899641577061,
+            "median_error": 1.1827111782533564,
+            "q90_error": 9.828740035062294,
+            "maximum_error": 16.21279849080031
+          },
+          "coherence": {
+            "eligible": 360,
+            "invalid": 0,
+            "risk": 0.0,
+            "median_error": 0.012981638763295139,
+            "q90_error": 0.029003063206126365,
+            "maximum_error": 0.05266744066613693
+          }
+        }
+      ],
+      "worst_structure_orientation_risk": 0.0931899641577061,
+      "worst_structure_orientation_q90_degrees": 9.828740035062294,
+      "worst_structure_coherence_risk": 0.0,
+      "worst_structure_coherence_q90": 0.0725187599854128
+    },
+    {
+      "candidate": "d100_i200",
+      "derivative_scale_fraction": 1.0,
+      "integration_scale_factor": 2.0,
+      "structures": [
+        {
+          "structure": "CCPs",
+          "orientation": {
+            "eligible": 0,
+            "invalid": 0,
+            "risk": null,
+            "median_error": null,
+            "q90_error": null,
+            "maximum_error": null
+          },
+          "coherence": {
+            "eligible": 1185,
+            "invalid": 1,
+            "risk": 0.0008438818565400844,
+            "median_error": 0.04386017835249145,
+            "q90_error": 0.07073776145779744,
+            "maximum_error": 0.26603417136728685
+          }
+        },
+        {
+          "structure": "ER",
+          "orientation": {
+            "eligible": 158,
+            "invalid": 12,
+            "risk": 0.0759493670886076,
+            "median_error": 2.29825259607658,
+            "q90_error": 9.447571610333744,
+            "maximum_error": 15.867185554706957
+          },
+          "coherence": {
+            "eligible": 960,
+            "invalid": 0,
+            "risk": 0.0,
+            "median_error": 0.024296640750854887,
+            "q90_error": 0.04432625107196479,
+            "maximum_error": 0.08738375877294341
+          }
+        },
+        {
+          "structure": "Microtubules",
+          "orientation": {
+            "eligible": 279,
+            "invalid": 33,
+            "risk": 0.11827956989247312,
+            "median_error": 1.224666081753952,
+            "q90_error": 10.679285785635754,
+            "maximum_error": 45.623306511716805
+          },
+          "coherence": {
+            "eligible": 360,
+            "invalid": 0,
+            "risk": 0.0,
+            "median_error": 0.011791310845383207,
+            "q90_error": 0.02897305254468261,
+            "maximum_error": 0.05036921130271743
+          }
+        }
+      ],
+      "worst_structure_orientation_risk": 0.11827956989247312,
+      "worst_structure_orientation_q90_degrees": 10.679285785635754,
+      "worst_structure_coherence_risk": 0.0008438818565400844,
+      "worst_structure_coherence_q90": 0.07073776145779744
+    }
+  ],
+  "selection_rule": "Retain only candidates with raw error risk <=0.10 for every assessable structure and both tensor families; among survivors minimize worst-structure orientation q90, then coherence q90, then computational support size. If none survives, do not select a scalar path and develop a preserved two-scale response surface.",
+  "selection_status": "not_yet_evaluated",
+  "sources": [
+    {
+      "structure": "CCPs",
+      "fields": 30,
+      "pairs": 270,
+      "pair_index_sha256": "0dd046652f029e03487fb9571c83e2ad4ec7c5e3ebb81f3e4f9378f7e42588ff",
+      "legacy_rows_sha256": "88848985fc1a43011c49f76e935fc0638b4517c8cd526fdc22ff7b32ca9faffc"
+    },
+    {
+      "structure": "ER",
+      "fields": 33,
+      "pairs": 198,
+      "pair_index_sha256": "1a1a2ce913ab19ee7dded2c390157a25b3af66cbb1a4d0ea868d5413f54b0fb5",
+      "legacy_rows_sha256": "e522b9b707b88440d6df1766f9992671d56e5f87af5d2893430b29ceef166203"
+    }
+  ],
+  "microtubules_reused_artifact": {
+    "path": "outputs/nostos0-biosr-v7-physical-tensor-development/physical_tensor_candidate_rows.jsonl",
+    "sha256": "ac46e7a61f1ba11423af76daedd02cbf8245a8f9410afd60e6dff97107639592"
+  },
+  "checkpoints": [
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_002",
+      "elapsed_seconds": 41.82577889994718
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_003",
+      "elapsed_seconds": 42.165741600096226
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_004",
+      "elapsed_seconds": 41.79534319997765
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_005",
+      "elapsed_seconds": 41.51763779995963
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_006",
+      "elapsed_seconds": 41.989963500062004
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_007",
+      "elapsed_seconds": 42.49120009993203
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_009",
+      "elapsed_seconds": 42.3291937999893
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_010",
+      "elapsed_seconds": 42.46204570005648
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_011",
+      "elapsed_seconds": 43.07940310006961
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_013",
+      "elapsed_seconds": 42.75694049987942
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_016",
+      "elapsed_seconds": 43.070947599830106
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_021",
+      "elapsed_seconds": 42.977433499880135
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_023",
+      "elapsed_seconds": 42.441613799892366
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_025",
+      "elapsed_seconds": 41.81365860020742
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_026",
+      "elapsed_seconds": 42.01839659991674
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_028",
+      "elapsed_seconds": 42.08468020008877
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_029",
+      "elapsed_seconds": 41.47203360009007
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_030",
+      "elapsed_seconds": 41.93547729984857
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_031",
+      "elapsed_seconds": 41.56524019991048
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_035",
+      "elapsed_seconds": 41.59585170005448
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_040",
+      "elapsed_seconds": 42.306771100033075
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_041",
+      "elapsed_seconds": 42.731535700149834
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_044",
+      "elapsed_seconds": 42.77637670002878
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_046",
+      "elapsed_seconds": 42.1920409000013
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_047",
+      "elapsed_seconds": 41.39776819990948
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_048",
+      "elapsed_seconds": 41.8170527999755
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_049",
+      "elapsed_seconds": 41.77797229983844
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_051",
+      "elapsed_seconds": 41.91324310004711
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_053",
+      "elapsed_seconds": 41.14965929999016
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_054",
+      "elapsed_seconds": 41.02801029989496
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_001",
+      "elapsed_seconds": 33.16950379987247
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_005",
+      "elapsed_seconds": 33.452343499986455
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_006",
+      "elapsed_seconds": 31.206059099873528
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_007",
+      "elapsed_seconds": 31.384151099948213
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_010",
+      "elapsed_seconds": 31.11260059988126
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_013",
+      "elapsed_seconds": 31.139606999931857
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_014",
+      "elapsed_seconds": 30.852981799980626
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_015",
+      "elapsed_seconds": 31.141738400096074
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_018",
+      "elapsed_seconds": 30.788296699989587
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_019",
+      "elapsed_seconds": 30.630132399965078
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_022",
+      "elapsed_seconds": 30.467670700047165
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_023",
+      "elapsed_seconds": 30.535909599857405
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_025",
+      "elapsed_seconds": 30.656592200044543
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_029",
+      "elapsed_seconds": 30.790218400070444
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_030",
+      "elapsed_seconds": 30.06553030014038
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_033",
+      "elapsed_seconds": 30.188438300043344
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_035",
+      "elapsed_seconds": 30.020474100019783
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_036",
+      "elapsed_seconds": 30.335245799971744
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_039",
+      "elapsed_seconds": 29.89053409988992
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_041",
+      "elapsed_seconds": 30.20610209996812
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_043",
+      "elapsed_seconds": 29.81513909995556
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_046",
+      "elapsed_seconds": 30.22141969995573
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_049",
+      "elapsed_seconds": 29.455642299959436
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_051",
+      "elapsed_seconds": 29.560940600000322
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_054",
+      "elapsed_seconds": 29.627533400198445
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_056",
+      "elapsed_seconds": 29.631158999865875
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_057",
+      "elapsed_seconds": 30.034974599955603
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_058",
+      "elapsed_seconds": 30.28598769987002
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_059",
+      "elapsed_seconds": 29.906611799960956
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_060",
+      "elapsed_seconds": 30.160677399951965
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_062",
+      "elapsed_seconds": 29.488606000086293
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_064",
+      "elapsed_seconds": 29.604858400067315
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_067",
+      "elapsed_seconds": 29.916304600192234
+    }
+  ],
+  "f_actin_image_members_decoded": 0,
+  "f_actin_endpoint_outcomes_computed": 0,
+  "claim_boundary": "Cross-domain development screen only; not confirmation.",
+  "artifacts": {
+    "candidate_rows": {
+      "path": "outputs/nostos0-biosr-v7-physical-tensor-cross-domain-development/candidate_rows.jsonl",
+      "bytes": 13039689,
+      "sha256": "a7b8b776d19b5d13f8204ad849bb646628c249e87668cbb33b3d5cee7b9f231d"
+    }
+  }
+}

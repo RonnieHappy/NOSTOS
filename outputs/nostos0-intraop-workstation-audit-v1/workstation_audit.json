@@ -1,0 +1,57 @@
+{
+  "schema_version": "nostos-intraop-workstation-http-audit/1.0",
+  "generated_at_utc": "2026-08-29T09:04:11.298445+00:00",
+  "status": "verified_pass",
+  "checks": {
+    "health_ready": true,
+    "locked_profile_exposed": true,
+    "clinical_default_withheld": true,
+    "http_analysis_completed": true,
+    "unstained_mode_reported": true,
+    "new_acquisition_not_promoted": true,
+    "clinical_decision_withheld": true,
+    "measurement_support_nonempty": true,
+    "four_visual_outputs_decode": true,
+    "no_absolute_local_paths": true,
+    "operator_controls_present": true,
+    "client_requires_support_maps": true
+  },
+  "observed": {
+    "health": {
+      "status": "ready",
+      "device": "cpu",
+      "model_supervision": "classical_stain_aware_segmentation",
+      "label_free_profile": "pshg-tiss-unstained-fshg-local-orientation-v1",
+      "clinical_decision": "withheld"
+    },
+    "measurement_status": "review",
+    "evidence_status": "unvalidated_new_acquisition",
+    "clinical_decision": "withheld",
+    "eligible_pixels": 12544,
+    "image_shapes": {
+      "source_png": [
+        128,
+        128,
+        3
+      ],
+      "orientation_png": [
+        128,
+        128,
+        3
+      ],
+      "coherence_png": [
+        128,
+        128,
+        3
+      ],
+      "support_png": [
+        128,
+        128,
+        3
+      ]
+    },
+    "end_to_end_http_seconds": 0.5223342999815941,
+    "acquisition_time_included": false
+  },
+  "claim_boundary": "This author-operated local HTTP audit verifies software routing, visual-product decoding and fail-closed evidence semantics for a deterministic synthetic acquisition. It is not a human-factors study, independent operator test, clinical validation or browser-compatibility matrix."
+}

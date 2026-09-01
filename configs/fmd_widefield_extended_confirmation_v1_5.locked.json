@@ -1,0 +1,121 @@
+{
+  "schema_version": "nostos-fmd-widefield-extended-confirmation/1.0",
+  "protocol_id": "fmd-widefield-bpae-r-extended-confirmation-v1-5",
+  "locked_at_utc": "2026-08-31T13:33:21.896369Z",
+  "rationale": {
+    "trigger": "The v1.4 one-shot confirmation passed on four untouched fields, but zero field-level failures among four independent fields leaves a two-sided exact 95% upper bound of 60.2% for a field containing any accepted failure.",
+    "extension": "Apply the byte-identical v1.4 base profile and conditional support table, without refitting or threshold changes, to every archive field deliberately left unused after v1.4.",
+    "prospective_boundary": "Field identities and repeated realizations are determined only by the pre-existing SHA-256 selection rules. Pixel values from the seven extension fields have not been decoded for NOSTOS measurement analysis before this lock.",
+    "failure_policy": "Every result is retained. No support cell, threshold, endpoint, perturbation, comparator or gate may be repaired after extension pixels are decoded."
+  },
+  "scope": {
+    "study_type": "computation_only_public_data_no_refit_extended_confirmation",
+    "claim": "A frozen acquisition-by-scale validity contract prevents recurrence of the previously observed pooled-subgroup failure across every remaining unopened field in the same public widefield acquisition family.",
+    "excluded_claims": [
+      "biological interpretation of any endpoint",
+      "physical-scale measurement because pixel spacing is not supplied",
+      "image restoration or denoising performance",
+      "cross-instrument or cross-modality transfer",
+      "population prevalence of invalid measurements",
+      "clinical or intraoperative utility"
+    ]
+  },
+  "source": {
+    "dataset": "Fluorescence Microscopy Denoising (FMD) dataset",
+    "doi": "10.7274/r0-ed2r-4052",
+    "repository_url": "https://curate.nd.edu/articles/dataset/Fluorescence_Microscopy_Denoising_FMD_dataset/24744648",
+    "license": "CC BY-SA 4.0",
+    "figshare_file_id": 43648116,
+    "archive_name": "WideField_BPAE_R.tar",
+    "archive_bytes": 709232640,
+    "archive_md5": "e02b07bc4cfcd19dc911bd9d0c4e65a0",
+    "archive_sha256": "4914cd7d951b4ddc1a01f6c7f121b7e9936fd2a7d1505f3e802984ffee69cad7",
+    "acquisition_modality": "WideField",
+    "sample": "BPAE_R",
+    "reference_definition": "One avg50.png reference per field of view.",
+    "acquisition_levels": {
+      "raw": 1,
+      "avg2": 2,
+      "avg4": 4,
+      "avg8": 8,
+      "avg16": 16
+    },
+    "independent_unit": "field of view",
+    "nested_unit": "four frozen repeated noise realizations per level within a field of view",
+    "image_shape_yx_px": [512, 512]
+  },
+  "selection": {
+    "seed": 26082941,
+    "field_rule": "Exclude FOV 19; sort FOVs 1-20 by SHA-256(seed|WideField_BPAE_R|fov{integer}). V1.4 opened the first twelve; v1.5 uses all seven remaining fields in the unchanged order.",
+    "realization_rule": "Within each selected FOV, sort indices 0-49 by SHA-256(seed|fov{integer}|realization{integer}) and use the four smallest hashes, stored in ascending numeric order, at every acquisition level.",
+    "excluded_prior_field": 19,
+    "previously_opened_fields": [7, 15, 13, 9, 16, 17, 18, 11, 20, 14, 5, 1],
+    "development_fields": [7, 15, 13, 9, 16, 17, 18, 11],
+    "prior_confirmation_fields": [20, 14, 5, 1],
+    "confirmation_fields": [3, 12, 6, 8, 4, 2, 10],
+    "realization_indices": {
+      "3": [8, 23, 29, 34],
+      "12": [11, 12, 27, 41],
+      "6": [11, 23, 27, 44],
+      "8": [2, 15, 29, 48],
+      "4": [4, 19, 35, 49],
+      "2": [9, 24, 31, 40],
+      "10": [7, 32, 36, 37]
+    },
+    "expected_confirmation_fields": 7,
+    "expected_realizations_per_field_level": 4,
+    "expected_input_levels_per_realization": 5,
+    "expected_pairs_per_field": 20,
+    "expected_confirmation_pairs": 140,
+    "expected_cumulative_confirmation_fields": 11
+  },
+  "frozen_v1_4": {
+    "config": {
+      "path": "configs/fmd_widefield_conditional_support_v1_4.locked.json",
+      "file_sha256": "c7912e8d64e654c0fff62b9943d03d67afb6a46cfaabd50ad1db94c5d71e148f"
+    },
+    "base_profile": {
+      "path": "outputs/nostos0-fmd-widefield-v1-3-compiled/validity_profile.json",
+      "file_sha256": "9c99e6c01359b8b8ab84f1eb6f48cf9101e913ee90269b63573ffd1abc69b737",
+      "content_sha256": "65239b44c66a8bfca80608b1544fd0c892cf8e3209805828a1623d85382eebb8"
+    },
+    "conditional_profile": {
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-development/conditional_support_profile.json",
+      "file_sha256": "a1bc92f5658e0cb2dae35f54acd15dab48c8bd70f09a5012d873ab2043ffd141",
+      "content_sha256": "46e4b774c530b6f737e9941d367adb166e1540db51d919fa3ee91a96725f9308"
+    },
+    "confirmation_lock": {
+      "path": "manifests/fmd_widefield_conditional_support_v1_4_confirmation_lock.json",
+      "file_sha256": "b82e2ad2d468e156cd08e306d7b1eaeabb70912c0ec8d1db981bfd3e70e72e1d",
+      "content_sha256": "966ca29d3feaaaae3a34d4314639d0c4d5e4812e51d4a2871978e5d5095441db"
+    },
+    "confirmation_rows": {
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-confirmation/confirmation_rows.jsonl",
+      "file_sha256": "d95288907b6fd2ac14a81f6c54469c392661c24c3aa11382551a72eb2c5c4eee"
+    },
+    "confirmation_audit": {
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-confirmation-audit/confirmation_audit.json",
+      "file_sha256": "ac2c47392c08bf3a7ba03fb8290e6b955ca903e66e3baf39492c2065601fba02",
+      "content_sha256": "6c63e990c3e7efbd7673642f843c9dc322fe01c1e25633ce196f0836e58d2272"
+    }
+  },
+  "extension_gates": {
+    "require_inherited_v1_4_audit_pass": true,
+    "required_independent_groups": 7,
+    "require_zero_invalid_accepted_emissions": true,
+    "require_zero_fields_with_any_accepted_failure": true,
+    "require_all_supported_cells_in_every_field": true
+  },
+  "cumulative_gates": {
+    "require_inherited_v1_4_audit_pass": true,
+    "required_independent_groups": 11,
+    "require_zero_invalid_accepted_emissions": true,
+    "require_zero_fields_with_any_accepted_failure": true,
+    "maximum_two_sided_exact_field_failure_upper95": 0.3
+  },
+  "uncertainty": {
+    "confidence_level": 0.95,
+    "exact_interval": "two-sided Clopper-Pearson",
+    "field_event": "at least one invalid primary-endpoint emission accepted by the frozen v1.4 profile within a field"
+  }
+}

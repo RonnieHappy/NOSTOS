@@ -1,0 +1,4015 @@
+{
+  "cases": {
+    "hessian": [
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-blob-r5-s0.75x0.75x0.75",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "blob",
+          "samples_per_winning_scale": 6.666666666666667,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 5.0
+        },
+        "supported": true,
+        "truth": {
+          "class": "blob",
+          "radius_um": 5.0,
+          "spacing_um": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [
+          "winning_hessian_scale_below_3_5_samples"
+        ],
+        "case_id": "hessian-confirm-blob-r5-s0.75x0.75x1.5",
+        "invalid": true,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 2.5,
+          "scale_relative_error": 0.25,
+          "winning_scale_um": 3.75
+        },
+        "supported": false,
+        "truth": {
+          "class": "blob",
+          "radius_um": 5.0,
+          "spacing_um": [
+            0.75,
+            0.75,
+            1.5
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [
+          "winning_hessian_scale_below_3_5_samples"
+        ],
+        "case_id": "hessian-confirm-blob-r5-s1.25x1.25x1.25",
+        "invalid": true,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 3.0,
+          "scale_relative_error": 0.25,
+          "winning_scale_um": 3.75
+        },
+        "supported": false,
+        "truth": {
+          "class": "blob",
+          "radius_um": 5.0,
+          "spacing_um": [
+            1.25,
+            1.25,
+            1.25
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-blob-r7-s0.75x0.75x0.75",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "blob",
+          "samples_per_winning_scale": 9.333333333333334,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 7.0
+        },
+        "supported": true,
+        "truth": {
+          "class": "blob",
+          "radius_um": 7.0,
+          "spacing_um": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-blob-r7-s0.75x0.75x1.5",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "blob",
+          "samples_per_winning_scale": 4.666666666666667,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 7.0
+        },
+        "supported": true,
+        "truth": {
+          "class": "blob",
+          "radius_um": 7.0,
+          "spacing_um": [
+            0.75,
+            0.75,
+            1.5
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-blob-r7-s1.25x1.25x1.25",
+        "invalid": true,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 4.2,
+          "scale_relative_error": 0.25,
+          "winning_scale_um": 5.25
+        },
+        "supported": true,
+        "truth": {
+          "class": "blob",
+          "radius_um": 7.0,
+          "spacing_um": [
+            1.25,
+            1.25,
+            1.25
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-blob-r9-s0.75x0.75x0.75",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "blob",
+          "samples_per_winning_scale": 9.0,
+          "scale_relative_error": 0.25,
+          "winning_scale_um": 6.75
+        },
+        "supported": true,
+        "truth": {
+          "class": "blob",
+          "radius_um": 9.0,
+          "spacing_um": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-blob-r9-s0.75x0.75x1.5",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "blob",
+          "samples_per_winning_scale": 4.5,
+          "scale_relative_error": 0.25,
+          "winning_scale_um": 6.75
+        },
+        "supported": true,
+        "truth": {
+          "class": "blob",
+          "radius_um": 9.0,
+          "spacing_um": [
+            0.75,
+            0.75,
+            1.5
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-blob-r9-s1.25x1.25x1.25",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "blob",
+          "samples_per_winning_scale": 7.2,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 9.0
+        },
+        "supported": true,
+        "truth": {
+          "class": "blob",
+          "radius_um": 9.0,
+          "spacing_um": [
+            1.25,
+            1.25,
+            1.25
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-tube-r5-s0.75x0.75x0.75",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 6.666666666666667,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 5.0
+        },
+        "supported": true,
+        "truth": {
+          "class": "tube",
+          "radius_um": 5.0,
+          "spacing_um": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [
+          "winning_hessian_scale_below_3_5_samples"
+        ],
+        "case_id": "hessian-confirm-tube-r5-s0.75x0.75x1.5",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 3.3333333333333335,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 5.0
+        },
+        "supported": false,
+        "truth": {
+          "class": "tube",
+          "radius_um": 5.0,
+          "spacing_um": [
+            0.75,
+            0.75,
+            1.5
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-tube-r5-s1.25x1.25x1.25",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 4.0,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 5.0
+        },
+        "supported": true,
+        "truth": {
+          "class": "tube",
+          "radius_um": 5.0,
+          "spacing_um": [
+            1.25,
+            1.25,
+            1.25
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-tube-r7-s0.75x0.75x0.75",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 9.333333333333334,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 7.0
+        },
+        "supported": true,
+        "truth": {
+          "class": "tube",
+          "radius_um": 7.0,
+          "spacing_um": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-tube-r7-s0.75x0.75x1.5",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 4.666666666666667,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 7.0
+        },
+        "supported": true,
+        "truth": {
+          "class": "tube",
+          "radius_um": 7.0,
+          "spacing_um": [
+            0.75,
+            0.75,
+            1.5
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-tube-r7-s1.25x1.25x1.25",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 5.6,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 7.0
+        },
+        "supported": true,
+        "truth": {
+          "class": "tube",
+          "radius_um": 7.0,
+          "spacing_um": [
+            1.25,
+            1.25,
+            1.25
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-tube-r9-s0.75x0.75x0.75",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 12.0,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 9.0
+        },
+        "supported": true,
+        "truth": {
+          "class": "tube",
+          "radius_um": 9.0,
+          "spacing_um": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-tube-r9-s0.75x0.75x1.5",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 6.0,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 9.0
+        },
+        "supported": true,
+        "truth": {
+          "class": "tube",
+          "radius_um": 9.0,
+          "spacing_um": [
+            0.75,
+            0.75,
+            1.5
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-tube-r9-s1.25x1.25x1.25",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 7.2,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 9.0
+        },
+        "supported": true,
+        "truth": {
+          "class": "tube",
+          "radius_um": 9.0,
+          "spacing_um": [
+            1.25,
+            1.25,
+            1.25
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-sheet-r5-s0.75x0.75x0.75",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "sheet",
+          "samples_per_winning_scale": 10.0,
+          "scale_relative_error": 0.5,
+          "winning_scale_um": 7.5
+        },
+        "supported": true,
+        "truth": {
+          "class": "sheet",
+          "radius_um": 5.0,
+          "spacing_um": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-sheet-r5-s0.75x0.75x1.5",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "sheet",
+          "samples_per_winning_scale": 5.0,
+          "scale_relative_error": 0.5,
+          "winning_scale_um": 7.5
+        },
+        "supported": true,
+        "truth": {
+          "class": "sheet",
+          "radius_um": 5.0,
+          "spacing_um": [
+            0.75,
+            0.75,
+            1.5
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-sheet-r5-s1.25x1.25x1.25",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "sheet",
+          "samples_per_winning_scale": 6.0,
+          "scale_relative_error": 0.5,
+          "winning_scale_um": 7.5
+        },
+        "supported": true,
+        "truth": {
+          "class": "sheet",
+          "radius_um": 5.0,
+          "spacing_um": [
+            1.25,
+            1.25,
+            1.25
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-sheet-r7-s0.75x0.75x0.75",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "sheet",
+          "samples_per_winning_scale": 11.666666666666666,
+          "scale_relative_error": 0.25,
+          "winning_scale_um": 8.75
+        },
+        "supported": true,
+        "truth": {
+          "class": "sheet",
+          "radius_um": 7.0,
+          "spacing_um": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-sheet-r7-s0.75x0.75x1.5",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "sheet",
+          "samples_per_winning_scale": 5.833333333333333,
+          "scale_relative_error": 0.25,
+          "winning_scale_um": 8.75
+        },
+        "supported": true,
+        "truth": {
+          "class": "sheet",
+          "radius_um": 7.0,
+          "spacing_um": [
+            0.75,
+            0.75,
+            1.5
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-sheet-r7-s1.25x1.25x1.25",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "sheet",
+          "samples_per_winning_scale": 8.4,
+          "scale_relative_error": 0.5,
+          "winning_scale_um": 10.5
+        },
+        "supported": true,
+        "truth": {
+          "class": "sheet",
+          "radius_um": 7.0,
+          "spacing_um": [
+            1.25,
+            1.25,
+            1.25
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-sheet-r9-s0.75x0.75x0.75",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "sheet",
+          "samples_per_winning_scale": 12.0,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 9.0
+        },
+        "supported": true,
+        "truth": {
+          "class": "sheet",
+          "radius_um": 9.0,
+          "spacing_um": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-sheet-r9-s0.75x0.75x1.5",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "sheet",
+          "samples_per_winning_scale": 6.0,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 9.0
+        },
+        "supported": true,
+        "truth": {
+          "class": "sheet",
+          "radius_um": 9.0,
+          "spacing_um": [
+            0.75,
+            0.75,
+            1.5
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-confirm-sheet-r9-s1.25x1.25x1.25",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "sheet",
+          "samples_per_winning_scale": 10.8,
+          "scale_relative_error": 0.5,
+          "winning_scale_um": 13.5
+        },
+        "supported": true,
+        "truth": {
+          "class": "sheet",
+          "radius_um": 9.0,
+          "spacing_um": [
+            1.25,
+            1.25,
+            1.25
+          ]
+        }
+      }
+    ],
+    "network": [
+      {
+        "case_id": "network-confirm-w6-s0.75x0.75",
+        "estimated_fragmentation_threshold_um": 3.0,
+        "fragmentation_relative_error": 0.0,
+        "monotone": true,
+        "spacing_um": [
+          0.75,
+          0.75
+        ],
+        "surviving_fraction": [
+          1.0,
+          0.7164119066773934,
+          0.499195494770716,
+          0.27996781979082863,
+          0.019710378117457763,
+          0.00925181013676589,
+          0.002011263073209976
+        ],
+        "thresholds_um": [
+          0.0,
+          0.75,
+          1.5,
+          2.25,
+          3.0,
+          3.75,
+          4.5
+        ],
+        "truth_fragmentation_threshold_um": 3.0
+      },
+      {
+        "case_id": "network-confirm-w6-s1.25x1.25",
+        "estimated_fragmentation_threshold_um": 2.25,
+        "fragmentation_relative_error": 0.25,
+        "monotone": true,
+        "spacing_um": [
+          1.25,
+          1.25
+        ],
+        "surviving_fraction": [
+          1.0,
+          0.6088193456614509,
+          0.4786628733997155,
+          0.08036984352773827,
+          0.01422475106685633,
+          0.004267425320056899,
+          0.0007112375533428165
+        ],
+        "thresholds_um": [
+          0.0,
+          0.75,
+          1.5,
+          2.25,
+          3.0,
+          3.75,
+          4.5
+        ],
+        "truth_fragmentation_threshold_um": 3.0
+      },
+      {
+        "case_id": "network-confirm-w6-s0.75x1.5",
+        "estimated_fragmentation_threshold_um": 3.0,
+        "fragmentation_relative_error": 0.0,
+        "monotone": true,
+        "spacing_um": [
+          0.75,
+          1.5
+        ],
+        "surviving_fraction": [
+          1.0,
+          0.8368076235854676,
+          0.5128052412150089,
+          0.34782608695652173,
+          0.016676593210244194,
+          0.011316259678379988,
+          0.0023823704586063135
+        ],
+        "thresholds_um": [
+          0.0,
+          0.75,
+          1.5,
+          2.25,
+          3.0,
+          3.75,
+          4.5
+        ],
+        "truth_fragmentation_threshold_um": 3.0
+      },
+      {
+        "case_id": "network-confirm-w10-s0.75x0.75",
+        "estimated_fragmentation_threshold_um": 5.0,
+        "fragmentation_relative_error": 0.0,
+        "monotone": true,
+        "spacing_um": [
+          0.75,
+          0.75
+        ],
+        "surviving_fraction": [
+          1.0,
+          0.7621092817943211,
+          0.5609639704127893,
+          0.3111429253161537,
+          0.03937007874015748,
+          0.02052016225244572,
+          0.0054879503698401335
+        ],
+        "thresholds_um": [
+          0.0,
+          1.25,
+          2.5,
+          3.75,
+          5.0,
+          6.25,
+          7.5
+        ],
+        "truth_fragmentation_threshold_um": 5.0
+      },
+      {
+        "case_id": "network-confirm-w10-s1.25x1.25",
+        "estimated_fragmentation_threshold_um": 5.0,
+        "fragmentation_relative_error": 0.0,
+        "monotone": true,
+        "spacing_um": [
+          1.25,
+          1.25
+        ],
+        "surviving_fraction": [
+          1.0,
+          0.7164119066773934,
+          0.499195494770716,
+          0.27996781979082863,
+          0.019710378117457763,
+          0.00925181013676589,
+          0.002011263073209976
+        ],
+        "thresholds_um": [
+          0.0,
+          1.25,
+          2.5,
+          3.75,
+          5.0,
+          6.25,
+          7.5
+        ],
+        "truth_fragmentation_threshold_um": 5.0
+      },
+      {
+        "case_id": "network-confirm-w10-s0.75x1.5",
+        "estimated_fragmentation_threshold_um": 5.0,
+        "fragmentation_relative_error": 0.0,
+        "monotone": true,
+        "spacing_um": [
+          0.75,
+          1.5
+        ],
+        "surviving_fraction": [
+          1.0,
+          0.7363875328576793,
+          0.570409312805107,
+          0.2992865189635749,
+          0.026661659782200527,
+          0.011641006383777694,
+          0.0022530980097634247
+        ],
+        "thresholds_um": [
+          0.0,
+          1.25,
+          2.5,
+          3.75,
+          5.0,
+          6.25,
+          7.5
+        ],
+        "truth_fragmentation_threshold_um": 5.0
+      },
+      {
+        "case_id": "network-confirm-w14-s0.75x0.75",
+        "estimated_fragmentation_threshold_um": 7.0,
+        "fragmentation_relative_error": 0.0,
+        "monotone": true,
+        "spacing_um": [
+          0.75,
+          0.75
+        ],
+        "surviving_fraction": [
+          1.0,
+          0.7722028932429957,
+          0.5032045412928036,
+          0.287126899835195,
+          0.06464017579197949,
+          0.01794543123969969,
+          0.003845449551364219
+        ],
+        "thresholds_um": [
+          0.0,
+          1.75,
+          3.5,
+          5.25,
+          7.0,
+          8.75,
+          10.5
+        ],
+        "truth_fragmentation_threshold_um": 7.0
+      },
+      {
+        "case_id": "network-confirm-w14-s1.25x1.25",
+        "estimated_fragmentation_threshold_um": 7.0,
+        "fragmentation_relative_error": 0.0,
+        "monotone": true,
+        "spacing_um": [
+          1.25,
+          1.25
+        ],
+        "surviving_fraction": [
+          1.0,
+          0.8079977311401021,
+          0.5116279069767442,
+          0.3111174134997164,
+          0.030062393647192286,
+          0.01559841179807147,
+          0.006239364719228588
+        ],
+        "thresholds_um": [
+          0.0,
+          1.75,
+          3.5,
+          5.25,
+          7.0,
+          8.75,
+          10.5
+        ],
+        "truth_fragmentation_threshold_um": 7.0
+      },
+      {
+        "case_id": "network-confirm-w14-s0.75x1.5",
+        "estimated_fragmentation_threshold_um": 8.75,
+        "fragmentation_relative_error": 0.25,
+        "monotone": true,
+        "spacing_um": [
+          0.75,
+          1.5
+        ],
+        "surviving_fraction": [
+          1.0,
+          0.7728260869565218,
+          0.5157608695652174,
+          0.30135869565217394,
+          0.08505434782608695,
+          0.01684782608695652,
+          0.004891304347826087
+        ],
+        "thresholds_um": [
+          0.0,
+          1.75,
+          3.5,
+          5.25,
+          7.0,
+          8.75,
+          10.5
+        ],
+        "truth_fragmentation_threshold_um": 7.0
+      }
+    ],
+    "organization": [
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-000",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.6396219081574621,
+        "measurement": {
+          "characteristic_wavelength_um": 9.107359661284933,
+          "samples_per_characteristic_wavelength": 12.143146215046578,
+          "spectral_anisotropy": 0.9973685527486956,
+          "spectral_orientation_degrees": 18.99999565999621,
+          "tensor_coherency": [
+            0.9998756164547448,
+            0.9998547615991131,
+            0.9998483946623553
+          ],
+          "tensor_orientation_degrees": [
+            19.639621908157455,
+            19.639621908157462,
+            19.639621908157455
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 19.0,
+          "spacing_um": 0.75,
+          "wavelength_um": 9.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-001",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.09021571376479187,
+        "measurement": {
+          "characteristic_wavelength_um": 8.845849682408899,
+          "samples_per_characteristic_wavelength": 11.794466243211865,
+          "spectral_anisotropy": 0.9973687556711578,
+          "spectral_orientation_degrees": 47.000001261313756,
+          "tensor_coherency": [
+            0.9996688126361697,
+            0.9996373352991884,
+            0.9996354299800786
+          ],
+          "tensor_orientation_degrees": [
+            46.90978428623522,
+            46.90978428623522,
+            46.90978428623522
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 47.0,
+          "spacing_um": 0.75,
+          "wavelength_um": 9.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-002",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.3122255800871585,
+        "measurement": {
+          "characteristic_wavelength_um": 8.93050089042301,
+          "samples_per_characteristic_wavelength": 11.907334520564014,
+          "spectral_anisotropy": 0.9973684114132411,
+          "spectral_orientation_degrees": 83.00000053251892,
+          "tensor_coherency": [
+            0.9999820712268958,
+            0.9999787045249497,
+            0.9999772221932096
+          ],
+          "tensor_orientation_degrees": [
+            82.68777441991288,
+            82.68777441991288,
+            82.68777441991286
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 83.0,
+          "spacing_um": 0.75,
+          "wavelength_um": 9.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-003",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.3455746972107079,
+        "measurement": {
+          "characteristic_wavelength_um": 9.107359661284933,
+          "samples_per_characteristic_wavelength": 12.143146215046578,
+          "spectral_anisotropy": 0.9973688368044706,
+          "spectral_orientation_degrees": 126.999995113966,
+          "tensor_coherency": [
+            0.9996916667304284,
+            0.9996596665138582,
+            0.9996570505154814
+          ],
+          "tensor_orientation_degrees": [
+            127.34557469721071,
+            127.34557469721071,
+            127.34557469721071
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 127.0,
+          "spacing_um": 0.75,
+          "wavelength_um": 9.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-004",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.6109731379558525,
+        "measurement": {
+          "characteristic_wavelength_um": 9.107359661284933,
+          "samples_per_characteristic_wavelength": 12.143146215046578,
+          "spectral_anisotropy": 0.9973682465824578,
+          "spectral_orientation_degrees": 163.00000624219047,
+          "tensor_coherency": [
+            0.9999023395792701,
+            0.9998853327860072,
+            0.9998791840759655
+          ],
+          "tensor_orientation_degrees": [
+            162.38902686204415,
+            162.38902686204415,
+            162.38902686204415
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 163.0,
+          "spacing_um": 0.75,
+          "wavelength_um": 9.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-005",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.22690546256728084,
+        "measurement": {
+          "characteristic_wavelength_um": 15.178932768808222,
+          "samples_per_characteristic_wavelength": 20.23857702507763,
+          "spectral_anisotropy": 0.9926911782277954,
+          "spectral_orientation_degrees": 18.999976862112796,
+          "tensor_coherency": [
+            0.9999608133072156,
+            0.9999518610978294,
+            0.9999487179004896
+          ],
+          "tensor_orientation_degrees": [
+            19.22690546256728,
+            19.226905462567277,
+            19.226905462567277
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 19.0,
+          "spacing_um": 0.75,
+          "wavelength_um": 15.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-006",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.03242922631915235,
+        "measurement": {
+          "characteristic_wavelength_um": 14.546196641551834,
+          "samples_per_characteristic_wavelength": 19.394928855402444,
+          "spectral_anisotropy": 0.9926934847644311,
+          "spectral_orientation_degrees": 47.00000929943907,
+          "tensor_coherency": [
+            0.9998953750308831,
+            0.9998752302530798,
+            0.9998718523631195
+          ],
+          "tensor_orientation_degrees": [
+            46.967570773680855,
+            46.967570773680855,
+            46.967570773680855
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 47.0,
+          "spacing_um": 0.75,
+          "wavelength_um": 15.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-007",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.11046305200625284,
+        "measurement": {
+          "characteristic_wavelength_um": 14.4,
+          "samples_per_characteristic_wavelength": 19.2,
+          "spectral_anisotropy": 0.9926898837860679,
+          "spectral_orientation_degrees": 83.00007058120792,
+          "tensor_coherency": [
+            0.999995115270703,
+            0.9999938755408244,
+            0.9999933713770762
+          ],
+          "tensor_orientation_degrees": [
+            82.88953694799375,
+            82.88953694799375,
+            82.88953694799375
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 83.0,
+          "spacing_um": 0.75,
+          "wavelength_um": 15.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-008",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.12353674936032633,
+        "measurement": {
+          "characteristic_wavelength_um": 15.263969472091585,
+          "samples_per_characteristic_wavelength": 20.351959296122114,
+          "spectral_anisotropy": 0.9926933669421713,
+          "spectral_orientation_degrees": 126.999919018809,
+          "tensor_coherency": [
+            0.9999012890632634,
+            0.9998815694792333,
+            0.999877719187159
+          ],
+          "tensor_orientation_degrees": [
+            127.12353674936033,
+            127.12353674936033,
+            127.12353674936033
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 127.0,
+          "spacing_um": 0.75,
+          "wavelength_um": 15.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-009",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.2161860609664359,
+        "measurement": {
+          "characteristic_wavelength_um": 15.178932768808222,
+          "samples_per_characteristic_wavelength": 20.23857702507763,
+          "spectral_anisotropy": 0.9926873961664812,
+          "spectral_orientation_degrees": 163.000024491277,
+          "tensor_coherency": [
+            0.9999704296634111,
+            0.9999634244615991,
+            0.9999607670050618
+          ],
+          "tensor_orientation_degrees": [
+            162.78381393903356,
+            162.78381393903356,
+            162.78381393903356
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 163.0,
+          "spacing_um": 0.75,
+          "wavelength_um": 15.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-010",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.06963822878677206,
+        "measurement": {
+          "characteristic_wavelength_um": 26.74012869749547,
+          "samples_per_characteristic_wavelength": 35.653504929993964,
+          "spectral_anisotropy": 0.9762653904692028,
+          "spectral_orientation_degrees": 18.999123353107045,
+          "tensor_coherency": [
+            0.9999905374169626,
+            0.9999879070877569,
+            0.9999866021942072
+          ],
+          "tensor_orientation_degrees": [
+            19.069638228786772,
+            19.069638228786765,
+            19.069638228786772
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 19.0,
+          "spacing_um": 0.75,
+          "wavelength_um": 27.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-011",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.010142934118618996,
+        "measurement": {
+          "characteristic_wavelength_um": 25.455844122715714,
+          "samples_per_characteristic_wavelength": 33.941125496954285,
+          "spectral_anisotropy": 0.9763718145811923,
+          "spectral_orientation_degrees": 47.00012467490574,
+          "tensor_coherency": [
+            0.9999714378583939,
+            0.999963931637655,
+            0.9999607888471557
+          ],
+          "tensor_orientation_degrees": [
+            46.98985706588138,
+            46.98985706588138,
+            46.98985706588138
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 47.0,
+          "spacing_um": 0.75,
+          "wavelength_um": 27.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-012",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.03249611384072182,
+        "measurement": {
+          "characteristic_wavelength_um": 28.240723459898504,
+          "samples_per_characteristic_wavelength": 37.65429794653134,
+          "spectral_anisotropy": 0.9762409536380203,
+          "spectral_orientation_degrees": 83.0000867277721,
+          "tensor_coherency": [
+            0.9999984135862018,
+            0.9999979654954735,
+            0.9999977552671541
+          ],
+          "tensor_orientation_degrees": [
+            82.96750388615928,
+            82.96750388615928,
+            82.96750388615928
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 83.0,
+          "spacing_um": 0.75,
+          "wavelength_um": 27.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-013",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.03840897037251523,
+        "measurement": {
+          "characteristic_wavelength_um": 26.74012869749547,
+          "samples_per_characteristic_wavelength": 35.653504929993964,
+          "spectral_anisotropy": 0.97634511850103,
+          "spectral_orientation_degrees": 126.99972801508446,
+          "tensor_coherency": [
+            0.9999731955350252,
+            0.9999659337250534,
+            0.9999629808040514
+          ],
+          "tensor_orientation_degrees": [
+            127.03840897037252,
+            127.03840897037252,
+            127.03840897037252
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 127.0,
+          "spacing_um": 0.75,
+          "wavelength_um": 27.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-014",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.06638097403927645,
+        "measurement": {
+          "characteristic_wavelength_um": 26.74012869749547,
+          "samples_per_characteristic_wavelength": 35.653504929993964,
+          "spectral_anisotropy": 0.9762751888675127,
+          "spectral_orientation_degrees": 163.001939438309,
+          "tensor_coherency": [
+            0.9999917866664033,
+            0.9999894886278826,
+            0.9999883610390987
+          ],
+          "tensor_orientation_degrees": [
+            162.93361902596072,
+            162.93361902596072,
+            162.93361902596072
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 163.0,
+          "spacing_um": 0.75,
+          "wavelength_um": 27.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-015",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.03797146595101708,
+        "measurement": {
+          "characteristic_wavelength_um": 34.925130005231956,
+          "samples_per_characteristic_wavelength": 46.566840006975944,
+          "spectral_anisotropy": 0.9581454303090594,
+          "spectral_orientation_degrees": 18.992033581818617,
+          "tensor_coherency": [
+            0.9999942043427377,
+            0.9999926511767036,
+            0.9999918785242541
+          ],
+          "tensor_orientation_degrees": [
+            19.037971465951017,
+            19.037971465951014,
+            19.03797146595101
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 19.0,
+          "spacing_um": 0.75,
+          "wavelength_um": 36.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-016",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.005749095920663194,
+        "measurement": {
+          "characteristic_wavelength_um": 33.941125496954285,
+          "samples_per_characteristic_wavelength": 45.254833995939045,
+          "spectral_anisotropy": 0.9580327353990099,
+          "spectral_orientation_degrees": 47.00168581638855,
+          "tensor_coherency": [
+            0.9999849481908075,
+            0.9999807850465878,
+            0.9999786630475237
+          ],
+          "tensor_orientation_degrees": [
+            46.99425090407933,
+            46.99425090407933,
+            46.99425090407933
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 47.0,
+          "spacing_um": 0.75,
+          "wavelength_um": 36.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-017",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.01889487945328483,
+        "measurement": {
+          "characteristic_wavelength_um": 36.00000000000001,
+          "samples_per_characteristic_wavelength": 48.00000000000001,
+          "spectral_anisotropy": 0.9576268788933435,
+          "spectral_orientation_degrees": 83.00578447475324,
+          "tensor_coherency": [
+            0.9999991330995802,
+            0.9999988807876417,
+            0.9999987400540932
+          ],
+          "tensor_orientation_degrees": [
+            82.98110512054673,
+            82.98110512054673,
+            82.98110512054673
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 83.0,
+          "spacing_um": 0.75,
+          "wavelength_um": 36.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-018",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.021503099744634824,
+        "measurement": {
+          "characteristic_wavelength_um": 33.941125496954285,
+          "samples_per_characteristic_wavelength": 45.254833995939045,
+          "spectral_anisotropy": 0.958098645134228,
+          "spectral_orientation_degrees": 126.99731205667335,
+          "tensor_coherency": [
+            0.9999857730113915,
+            0.9999818249432122,
+            0.9999798020501298
+          ],
+          "tensor_orientation_degrees": [
+            127.02150309974463,
+            127.02150309974463,
+            127.02150309974463
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 127.0,
+          "spacing_um": 0.75,
+          "wavelength_um": 36.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-019",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.03630458516053636,
+        "measurement": {
+          "characteristic_wavelength_um": 34.925130005231956,
+          "samples_per_characteristic_wavelength": 46.566840006975944,
+          "spectral_anisotropy": 0.9581233893341904,
+          "spectral_orientation_degrees": 163.00302669802136,
+          "tensor_coherency": [
+            0.9999951983851258,
+            0.9999938460342332,
+            0.9999931519145385
+          ],
+          "tensor_orientation_degrees": [
+            162.96369541483946,
+            162.96369541483946,
+            162.96369541483946
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 163.0,
+          "spacing_um": 0.75,
+          "wavelength_um": 36.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-020",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 1.8520990411011446,
+        "measurement": {
+          "characteristic_wavelength_um": 9.032519153939777,
+          "samples_per_characteristic_wavelength": 7.226015323151822,
+          "spectral_anisotropy": 0.9990526459965453,
+          "spectral_orientation_degrees": 18.999999483585555,
+          "tensor_coherency": [
+            0.9996810561325421,
+            0.9995738866153109,
+            0.9995339029264807
+          ],
+          "tensor_orientation_degrees": [
+            20.85209904110114,
+            20.852099041101145,
+            20.852099041101145
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 19.0,
+          "spacing_um": 1.25,
+          "wavelength_um": 9.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-021",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.25629011891888354,
+        "measurement": {
+          "characteristic_wavelength_um": 8.931875130777442,
+          "samples_per_characteristic_wavelength": 7.145500104621954,
+          "spectral_anisotropy": 0.9990526785900373,
+          "spectral_orientation_degrees": 47.0000000893187,
+          "tensor_coherency": [
+            0.9991275760675468,
+            0.9989769595032463,
+            0.9989602350238186
+          ],
+          "tensor_orientation_degrees": [
+            46.74370988108112,
+            46.74370988108112,
+            46.74370988108112
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 47.0,
+          "spacing_um": 1.25,
+          "wavelength_um": 9.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-022",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.9170683973833889,
+        "measurement": {
+          "characteristic_wavelength_um": 9.123431055236466,
+          "samples_per_characteristic_wavelength": 7.298744844189173,
+          "spectral_anisotropy": 0.9990526451841167,
+          "spectral_orientation_degrees": 83.00000036030376,
+          "tensor_coherency": [
+            0.9999517376430649,
+            0.9999337953005112,
+            0.9999246758515608
+          ],
+          "tensor_orientation_degrees": [
+            82.08293160261661,
+            82.08293160261661,
+            82.08293160261661
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 83.0,
+          "spacing_um": 1.25,
+          "wavelength_um": 9.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-023",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.9782089901585209,
+        "measurement": {
+          "characteristic_wavelength_um": 9.090648228942841,
+          "samples_per_characteristic_wavelength": 7.272518583154273,
+          "spectral_anisotropy": 0.9990526649006156,
+          "spectral_orientation_degrees": 126.99999964226674,
+          "tensor_coherency": [
+            0.9991916964204975,
+            0.9990336720574498,
+            0.9990127553865079
+          ],
+          "tensor_orientation_degrees": [
+            127.97820899015852,
+            127.97820899015852,
+            127.97820899015852
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 127.0,
+          "spacing_um": 1.25,
+          "wavelength_um": 9.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-024",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 1.775893751530873,
+        "measurement": {
+          "characteristic_wavelength_um": 8.91337623249849,
+          "samples_per_characteristic_wavelength": 7.130700985998791,
+          "spectral_anisotropy": 0.9990526410871172,
+          "spectral_orientation_degrees": 163.00000046254618,
+          "tensor_coherency": [
+            0.9997317511069064,
+            0.9996388585268379,
+            0.9996000398390046
+          ],
+          "tensor_orientation_degrees": [
+            161.22410624846916,
+            161.22410624846913,
+            161.22410624846913
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 163.0,
+          "spacing_um": 1.25,
+          "wavelength_um": 9.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-025",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.6396219081574621,
+        "measurement": {
+          "characteristic_wavelength_um": 15.178932768808219,
+          "samples_per_characteristic_wavelength": 12.143146215046574,
+          "spectral_anisotropy": 0.9973685527486957,
+          "spectral_orientation_degrees": 18.999995659996205,
+          "tensor_coherency": [
+            0.999908122919202,
+            0.9998678474739929,
+            0.9998520706543907
+          ],
+          "tensor_orientation_degrees": [
+            19.639621908157462,
+            19.639621908157455,
+            19.639621908157455
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 19.0,
+          "spacing_um": 1.25,
+          "wavelength_um": 15.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-026",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.09021571376479187,
+        "measurement": {
+          "characteristic_wavelength_um": 14.743082804014826,
+          "samples_per_characteristic_wavelength": 11.794466243211861,
+          "spectral_anisotropy": 0.9973687556711578,
+          "spectral_orientation_degrees": 47.000001261313756,
+          "tensor_coherency": [
+            0.9997419682148815,
+            0.9996537945445149,
+            0.9996362916306143
+          ],
+          "tensor_orientation_degrees": [
+            46.90978428623522,
+            46.90978428623522,
+            46.90978428623522
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 47.0,
+          "spacing_um": 1.25,
+          "wavelength_um": 15.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-027",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.3122255800871585,
+        "measurement": {
+          "characteristic_wavelength_um": 14.884168150705012,
+          "samples_per_characteristic_wavelength": 11.90733452056401,
+          "spectral_anisotropy": 0.9973684114132411,
+          "spectral_orientation_degrees": 83.00000053251892,
+          "tensor_coherency": [
+            0.9999870450606302,
+            0.9999808369004122,
+            0.9999782239710528
+          ],
+          "tensor_orientation_degrees": [
+            82.68777441991288,
+            82.68777441991286,
+            82.68777441991288
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 83.0,
+          "spacing_um": 1.25,
+          "wavelength_um": 15.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-028",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.3455746972107079,
+        "measurement": {
+          "characteristic_wavelength_um": 15.178932768808219,
+          "samples_per_characteristic_wavelength": 12.143146215046574,
+          "spectral_anisotropy": 0.9973688368044706,
+          "spectral_orientation_degrees": 126.999995113966,
+          "tensor_coherency": [
+            0.9997609289729578,
+            0.999677139078071,
+            0.9996581788203153
+          ],
+          "tensor_orientation_degrees": [
+            127.34557469721071,
+            127.34557469721071,
+            127.34557469721071
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 127.0,
+          "spacing_um": 1.25,
+          "wavelength_um": 15.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-029",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.6109731379558525,
+        "measurement": {
+          "characteristic_wavelength_um": 15.178932768808219,
+          "samples_per_characteristic_wavelength": 12.143146215046574,
+          "spectral_anisotropy": 0.9973682465824578,
+          "spectral_orientation_degrees": 163.00000624219047,
+          "tensor_coherency": [
+            0.9999283090324322,
+            0.9998960969923367,
+            0.9998829542256398
+          ],
+          "tensor_orientation_degrees": [
+            162.38902686204415,
+            162.38902686204415,
+            162.38902686204415
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 163.0,
+          "spacing_um": 1.25,
+          "wavelength_um": 15.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-030",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.1936381601748174,
+        "measurement": {
+          "characteristic_wavelength_um": 28.089875327071333,
+          "samples_per_characteristic_wavelength": 22.471900261657066,
+          "spectral_anisotropy": 0.9914705658513275,
+          "spectral_orientation_degrees": 18.999942875109358,
+          "tensor_coherency": [
+            0.9999770896456358,
+            0.9999649675073496,
+            0.9999588491147949
+          ],
+          "tensor_orientation_degrees": [
+            19.193638160174814,
+            19.193638160174817,
+            19.193638160174814
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 19.0,
+          "spacing_um": 1.25,
+          "wavelength_um": 27.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-031",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.027837616727481418,
+        "measurement": {
+          "characteristic_wavelength_um": 26.03165493823874,
+          "samples_per_characteristic_wavelength": 20.82532395059099,
+          "spectral_anisotropy": 0.9914781969010937,
+          "spectral_orientation_degrees": 47.00002249012348,
+          "tensor_coherency": [
+            0.9999356783432443,
+            0.9999054404086616,
+            0.999891914147216
+          ],
+          "tensor_orientation_degrees": [
+            46.97216238327252,
+            46.97216238327252,
+            46.97216238327252
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 47.0,
+          "spacing_um": 1.25,
+          "wavelength_um": 27.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-032",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.0934443910113032,
+        "measurement": {
+          "characteristic_wavelength_um": 26.503566257963172,
+          "samples_per_characteristic_wavelength": 21.20285300637054,
+          "spectral_anisotropy": 0.9914744185920888,
+          "spectral_orientation_degrees": 83.00005825572485,
+          "tensor_coherency": [
+            0.9999967061354146,
+            0.9999948542084034,
+            0.9999938683596413
+          ],
+          "tensor_orientation_degrees": [
+            82.90655560898868,
+            82.90655560898868,
+            82.90655560898868
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 83.0,
+          "spacing_um": 1.25,
+          "wavelength_um": 27.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-033",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.10567142657635031,
+        "measurement": {
+          "characteristic_wavelength_um": 27.899433298516623,
+          "samples_per_characteristic_wavelength": 22.3195466388133,
+          "spectral_anisotropy": 0.9914779071944585,
+          "spectral_orientation_degrees": 126.99998414898509,
+          "tensor_coherency": [
+            0.9999398311890381,
+            0.9999109513023218,
+            0.9998977866880364
+          ],
+          "tensor_orientation_degrees": [
+            127.10567142657635,
+            127.10567142657635,
+            127.10567142657635
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 127.0,
+          "spacing_um": 1.25,
+          "wavelength_um": 27.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-034",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.18542403912758232,
+        "measurement": {
+          "characteristic_wavelength_um": 26.503566257963172,
+          "samples_per_characteristic_wavelength": 21.20285300637054,
+          "spectral_anisotropy": 0.9914696937776362,
+          "spectral_orientation_degrees": 163.0001841230886,
+          "tensor_coherency": [
+            0.9999809435770931,
+            0.999970872633479,
+            0.9999656895402753
+          ],
+          "tensor_orientation_degrees": [
+            162.81457596087242,
+            162.81457596087242,
+            162.81457596087242
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 163.0,
+          "spacing_um": 1.25,
+          "wavelength_um": 27.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-035",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.11005735578198639,
+        "measurement": {
+          "characteristic_wavelength_um": 35.77708763999664,
+          "samples_per_characteristic_wavelength": 28.62167011199731,
+          "spectral_anisotropy": 0.9848475804442369,
+          "spectral_orientation_degrees": 18.999701007578626,
+          "tensor_coherency": [
+            0.9999885360845661,
+            0.9999820565583049,
+            0.9999780967091993
+          ],
+          "tensor_orientation_degrees": [
+            19.110057355781986,
+            19.110057355781983,
+            19.110057355781986
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 19.0,
+          "spacing_um": 1.25,
+          "wavelength_um": 36.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-036",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.01573688550425345,
+        "measurement": {
+          "characteristic_wavelength_um": 37.48170285326545,
+          "samples_per_characteristic_wavelength": 29.985362282612364,
+          "spectral_anisotropy": 0.9848659024034684,
+          "spectral_orientation_degrees": 46.99988388959638,
+          "tensor_coherency": [
+            0.9999661664506264,
+            0.9999489942981483,
+            0.9999397858452791
+          ],
+          "tensor_orientation_degrees": [
+            46.98426311449575,
+            46.98426311449575,
+            46.98426311449575
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 47.0,
+          "spacing_um": 1.25,
+          "wavelength_um": 36.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-037",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.053344266470105595,
+        "measurement": {
+          "characteristic_wavelength_um": 34.285714285714285,
+          "samples_per_characteristic_wavelength": 27.428571428571427,
+          "spectral_anisotropy": 0.9848306690918573,
+          "spectral_orientation_degrees": 82.9998649987566,
+          "tensor_coherency": [
+            0.9999979835732322,
+            0.9999968286508847,
+            0.9999961350157163
+          ],
+          "tensor_orientation_degrees": [
+            82.94665573352991,
+            82.94665573352991,
+            82.94665573352991
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 83.0,
+          "spacing_um": 1.25,
+          "wavelength_um": 36.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-038",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.05949797173711602,
+        "measurement": {
+          "characteristic_wavelength_um": 37.48170285326545,
+          "samples_per_characteristic_wavelength": 29.985362282612364,
+          "spectral_anisotropy": 0.9848448990853761,
+          "spectral_orientation_degrees": 126.9996451416184,
+          "tensor_coherency": [
+            0.9999687730589113,
+            0.999952793552083,
+            0.9999442938577602
+          ],
+          "tensor_orientation_degrees": [
+            127.05949797173712,
+            127.05949797173712,
+            127.05949797173712
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 127.0,
+          "spacing_um": 1.25,
+          "wavelength_um": 36.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-039",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.10378248185887173,
+        "measurement": {
+          "characteristic_wavelength_um": 37.94733192202055,
+          "samples_per_characteristic_wavelength": 30.35786553761644,
+          "spectral_anisotropy": 0.9848334288851718,
+          "spectral_orientation_degrees": 163.00007329331547,
+          "tensor_coherency": [
+            0.9999902422016769,
+            0.9999847878400474,
+            0.9999816686544969
+          ],
+          "tensor_orientation_degrees": [
+            162.89621751814113,
+            162.89621751814113,
+            162.89621751814113
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 163.0,
+          "spacing_um": 1.25,
+          "wavelength_um": 36.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "characteristic_wavelength_below_six_samples"
+        ],
+        "case_id": "organization-confirm-040",
+        "invalid": true,
+        "maximum_tensor_error_degrees": 3.872211466784119,
+        "measurement": {
+          "characteristic_wavelength_um": 8.999282611293749,
+          "samples_per_characteristic_wavelength": 5.1424472064535705,
+          "spectral_anisotropy": 0.9995166615376195,
+          "spectral_orientation_degrees": 18.999999932482613,
+          "tensor_coherency": [
+            0.999390064623224,
+            0.9990161027972477,
+            0.9988486873211304
+          ],
+          "tensor_orientation_degrees": [
+            22.87221146678412,
+            22.87221146678412,
+            22.87221146678412
+          ]
+        },
+        "supported": false,
+        "truth": {
+          "orientation_degrees": 19.0,
+          "spacing_um": 1.75,
+          "wavelength_um": 9.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "characteristic_wavelength_below_six_samples"
+        ],
+        "case_id": "organization-confirm-041",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.5138516658340677,
+        "measurement": {
+          "characteristic_wavelength_um": 8.9639848790051,
+          "samples_per_characteristic_wavelength": 5.1222770737172,
+          "spectral_anisotropy": 0.9995166660823952,
+          "spectral_orientation_degrees": 47.00000001452097,
+          "tensor_coherency": [
+            0.9984382171330293,
+            0.9979434885645193,
+            0.9978616932435486
+          ],
+          "tensor_orientation_degrees": [
+            46.48614833416594,
+            46.48614833416594,
+            46.48614833416594
+          ]
+        },
+        "supported": false,
+        "truth": {
+          "orientation_degrees": 47.0,
+          "spacing_um": 1.75,
+          "wavelength_um": 9.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "characteristic_wavelength_below_six_samples"
+        ],
+        "case_id": "organization-confirm-042",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 1.9582916954375094,
+        "measurement": {
+          "characteristic_wavelength_um": 8.999282611293749,
+          "samples_per_characteristic_wavelength": 5.1424472064535705,
+          "spectral_anisotropy": 0.9995166587250488,
+          "spectral_orientation_degrees": 83.00000005434687,
+          "tensor_coherency": [
+            0.999904173313243,
+            0.9998417358267431,
+            0.9998023375081231
+          ],
+          "tensor_orientation_degrees": [
+            81.04170830456249,
+            81.04170830456249,
+            81.04170830456249
+          ]
+        },
+        "supported": false,
+        "truth": {
+          "orientation_degrees": 83.0,
+          "spacing_um": 1.75,
+          "wavelength_um": 9.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "characteristic_wavelength_below_six_samples"
+        ],
+        "case_id": "organization-confirm-043",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 1.976029328654505,
+        "measurement": {
+          "characteristic_wavelength_um": 9.031735953583903,
+          "samples_per_characteristic_wavelength": 5.1609919734765155,
+          "spectral_anisotropy": 0.9995166671523087,
+          "spectral_orientation_degrees": 126.99999995976688,
+          "tensor_coherency": [
+            0.9985585661393711,
+            0.9980550011917543,
+            0.9979629277271189
+          ],
+          "tensor_orientation_degrees": [
+            128.9760293286545,
+            128.9760293286545,
+            128.9760293286545
+          ]
+        },
+        "supported": false,
+        "truth": {
+          "orientation_degrees": 127.0,
+          "spacing_um": 1.75,
+          "wavelength_um": 9.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "characteristic_wavelength_below_six_samples"
+        ],
+        "case_id": "organization-confirm-044",
+        "invalid": true,
+        "maximum_tensor_error_degrees": 3.7321523994209826,
+        "measurement": {
+          "characteristic_wavelength_um": 8.925947996479165,
+          "samples_per_characteristic_wavelength": 5.100541712273809,
+          "spectral_anisotropy": 0.999516660147243,
+          "spectral_orientation_degrees": 163.0000000899336,
+          "tensor_coherency": [
+            0.9994964284438289,
+            0.9991789325055088,
+            0.9990199398434817
+          ],
+          "tensor_orientation_degrees": [
+            159.26784760057902,
+            159.26784760057902,
+            159.26784760057902
+          ]
+        },
+        "supported": false,
+        "truth": {
+          "orientation_degrees": 163.0,
+          "spacing_um": 1.75,
+          "wavelength_um": 9.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-045",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 1.2819372687190835,
+        "measurement": {
+          "characteristic_wavelength_um": 15.178932768808222,
+          "samples_per_characteristic_wavelength": 8.673675867890413,
+          "spectral_anisotropy": 0.9986573996197006,
+          "spectral_orientation_degrees": 18.99999887114625,
+          "tensor_coherency": [
+            0.9998510931482423,
+            0.9997415415415403,
+            0.9996934625489752
+          ],
+          "tensor_orientation_degrees": [
+            20.28193726871908,
+            20.281937268719084,
+            20.28193726871908
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 19.0,
+          "spacing_um": 1.75,
+          "wavelength_um": 15.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-046",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.1793880670520025,
+        "measurement": {
+          "characteristic_wavelength_um": 14.849242404917497,
+          "samples_per_characteristic_wavelength": 8.48528137423857,
+          "spectral_anisotropy": 0.9986574439542161,
+          "spectral_orientation_degrees": 47.00000019042695,
+          "tensor_coherency": [
+            0.9995628996307743,
+            0.9993259090151132,
+            0.9992742927551355
+          ],
+          "tensor_orientation_degrees": [
+            46.82061193294799,
+            46.82061193294799,
+            46.82061193294799
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 47.0,
+          "spacing_um": 1.75,
+          "wavelength_um": 15.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-047",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.6286485881969952,
+        "measurement": {
+          "characteristic_wavelength_um": 15.132678930131114,
+          "samples_per_characteristic_wavelength": 8.647245102932064,
+          "spectral_anisotropy": 0.9986573489454368,
+          "spectral_orientation_degrees": 83.00000001565652,
+          "tensor_coherency": [
+            0.9999797790971121,
+            0.999963933533605,
+            0.999956166182683
+          ],
+          "tensor_orientation_degrees": [
+            82.371351411803,
+            82.371351411803,
+            82.371351411803
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 83.0,
+          "spacing_um": 1.75,
+          "wavelength_um": 15.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-048",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.6837703030683286,
+        "measurement": {
+          "characteristic_wavelength_um": 15.132678930131114,
+          "samples_per_characteristic_wavelength": 8.647245102932064,
+          "spectral_anisotropy": 0.9986574585534914,
+          "spectral_orientation_degrees": 126.99999965633971,
+          "tensor_coherency": [
+            0.9996014505672529,
+            0.9993796428204944,
+            0.999324911505598
+          ],
+          "tensor_orientation_degrees": [
+            127.68377030306833,
+            127.68377030306833,
+            127.68377030306833
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 127.0,
+          "spacing_um": 1.75,
+          "wavelength_um": 15.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-049",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 1.2281249963911591,
+        "measurement": {
+          "characteristic_wavelength_um": 15.178932768808222,
+          "samples_per_characteristic_wavelength": 8.673675867890413,
+          "spectral_anisotropy": 0.9986573607253545,
+          "spectral_orientation_degrees": 163.00000165963542,
+          "tensor_coherency": [
+            0.9998813467046465,
+            0.999791866294365,
+            0.9997509853743203
+          ],
+          "tensor_orientation_degrees": [
+            161.77187500360884,
+            161.77187500360884,
+            161.77187500360884
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 163.0,
+          "spacing_um": 1.75,
+          "wavelength_um": 15.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-050",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.3830480704494903,
+        "measurement": {
+          "characteristic_wavelength_um": 26.563132345414388,
+          "samples_per_characteristic_wavelength": 15.178932768808222,
+          "spectral_anisotropy": 0.995650143298778,
+          "spectral_orientation_degrees": 18.99998723332947,
+          "tensor_coherency": [
+            0.999967050526415,
+            0.999937819777388,
+            0.9999213249240237
+          ],
+          "tensor_orientation_degrees": [
+            19.38304807044949,
+            19.38304807044949,
+            19.383048070449487
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 19.0,
+          "spacing_um": 1.75,
+          "wavelength_um": 27.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-051",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.05438271687546603,
+        "measurement": {
+          "characteristic_wavelength_um": 26.39865316429778,
+          "samples_per_characteristic_wavelength": 15.084944665313017,
+          "spectral_anisotropy": 0.9956508632114536,
+          "spectral_orientation_degrees": 47.00000272653937,
+          "tensor_coherency": [
+            0.9998990210438997,
+            0.9998241650414226,
+            0.9997880644162523
+          ],
+          "tensor_orientation_degrees": [
+            46.945617283124534,
+            46.945617283124534,
+            46.945617283124534
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 47.0,
+          "spacing_um": 1.75,
+          "wavelength_um": 27.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-052",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.18615471383401427,
+        "measurement": {
+          "characteristic_wavelength_um": 27.61902986730003,
+          "samples_per_characteristic_wavelength": 15.782302781314302,
+          "spectral_anisotropy": 0.995648865770098,
+          "spectral_orientation_degrees": 83.00001440292708,
+          "tensor_coherency": [
+            0.9999951899950476,
+            0.9999907454633727,
+            0.9999880760291602
+          ],
+          "tensor_orientation_degrees": [
+            82.813845286166,
+            82.813845286166,
+            82.813845286166
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 83.0,
+          "spacing_um": 1.75,
+          "wavelength_um": 27.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-053",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.20791826849084316,
+        "measurement": {
+          "characteristic_wavelength_um": 27.52619252943976,
+          "samples_per_characteristic_wavelength": 15.729252873965578,
+          "spectral_anisotropy": 0.9956510314920841,
+          "spectral_orientation_degrees": 126.99999319858121,
+          "tensor_coherency": [
+            0.9999070595109197,
+            0.9998367465015561,
+            0.9998026852555599
+          ],
+          "tensor_orientation_degrees": [
+            127.20791826849084,
+            127.20791826849084,
+            127.20791826849084
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 127.0,
+          "spacing_um": 1.75,
+          "wavelength_um": 27.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-054",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.36771182951733294,
+        "measurement": {
+          "characteristic_wavelength_um": 26.563132345414388,
+          "samples_per_characteristic_wavelength": 15.178932768808222,
+          "spectral_anisotropy": 0.9956494194668853,
+          "spectral_orientation_degrees": 163.00002619542005,
+          "tensor_coherency": [
+            0.9999735859353177,
+            0.9999497931972949,
+            0.9999358823112443
+          ],
+          "tensor_orientation_degrees": [
+            162.63228817048267,
+            162.63228817048267,
+            162.63228817048267
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 163.0,
+          "spacing_um": 1.75,
+          "wavelength_um": 27.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-055",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.21405607579320574,
+        "measurement": {
+          "characteristic_wavelength_um": 35.417509793885856,
+          "samples_per_characteristic_wavelength": 20.238577025077632,
+          "spectral_anisotropy": 0.9922675219981246,
+          "spectral_orientation_degrees": 18.999969363504505,
+          "tensor_coherency": [
+            0.9999832467345823,
+            0.9999675954418106,
+            0.9999577127297948
+          ],
+          "tensor_orientation_degrees": [
+            19.214056075793206,
+            19.214056075793206,
+            19.214056075793206
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 19.0,
+          "spacing_um": 1.75,
+          "wavelength_um": 36.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-056",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.030571309100480448,
+        "measurement": {
+          "characteristic_wavelength_um": 36.44431691353424,
+          "samples_per_characteristic_wavelength": 20.82532395059099,
+          "spectral_anisotropy": 0.9922710404838486,
+          "spectral_orientation_degrees": 46.99992461718628,
+          "tensor_coherency": [
+            0.9999487166895284,
+            0.9999080969794575,
+            0.9998845785328385
+          ],
+          "tensor_orientation_degrees": [
+            46.96942869089952,
+            46.96942869089952,
+            46.96942869089952
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 47.0,
+          "spacing_um": 1.75,
+          "wavelength_um": 36.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-057",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.10507864230802966,
+        "measurement": {
+          "characteristic_wavelength_um": 37.104992761148445,
+          "samples_per_characteristic_wavelength": 21.20285300637054,
+          "spectral_anisotropy": 0.992266377507339,
+          "spectral_orientation_degrees": 83.0000541056545,
+          "tensor_coherency": [
+            0.9999976516826231,
+            0.9999952773980834,
+            0.9999935509245244
+          ],
+          "tensor_orientation_degrees": [
+            82.89492135769197,
+            82.89492135769197,
+            82.89492135769197
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 83.0,
+          "spacing_um": 1.75,
+          "wavelength_um": 36.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-058",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.11629881124677866,
+        "measurement": {
+          "characteristic_wavelength_um": 36.44431691353424,
+          "samples_per_characteristic_wavelength": 20.82532395059099,
+          "spectral_anisotropy": 0.9922711923699589,
+          "spectral_orientation_degrees": 126.9998592520814,
+          "tensor_coherency": [
+            0.9999538173178756,
+            0.9999154321414762,
+            0.9998926013081078
+          ],
+          "tensor_orientation_degrees": [
+            127.11629881124678,
+            127.11629881124678,
+            127.11629881124678
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 127.0,
+          "spacing_um": 1.75,
+          "wavelength_um": 36.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "organization-confirm-059",
+        "invalid": false,
+        "maximum_tensor_error_degrees": 0.20601389303848805,
+        "measurement": {
+          "characteristic_wavelength_um": 35.417509793885856,
+          "samples_per_characteristic_wavelength": 20.238577025077632,
+          "spectral_anisotropy": 0.9922639296249774,
+          "spectral_orientation_degrees": 163.00006640541613,
+          "tensor_coherency": [
+            0.9999870062967149,
+            0.9999747341175189,
+            0.999966642931309
+          ],
+          "tensor_orientation_degrees": [
+            162.7939861069615,
+            162.7939861069615,
+            162.7939861069615
+          ]
+        },
+        "supported": true,
+        "truth": {
+          "orientation_degrees": 163.0,
+          "spacing_um": 1.75,
+          "wavelength_um": 36.0
+        }
+      }
+    ],
+    "organization_controls": [
+      {
+        "abstention_reasons": [
+          "characteristic_wavelength_below_six_samples",
+          "spectral_orientation_not_identifiable"
+        ],
+        "case_id": "control-white-noise-0",
+        "control": "white_noise",
+        "invalid": true,
+        "measurement": {
+          "characteristic_wavelength_um": 3.1577409811236894,
+          "samples_per_characteristic_wavelength": 3.1577409811236894,
+          "spectral_anisotropy": 0.01080487673529524
+        },
+        "supported": false
+      },
+      {
+        "abstention_reasons": [
+          "characteristic_wavelength_below_six_samples",
+          "spectral_orientation_not_identifiable"
+        ],
+        "case_id": "control-white-noise-1",
+        "control": "white_noise",
+        "invalid": true,
+        "measurement": {
+          "characteristic_wavelength_um": 3.140795642912456,
+          "samples_per_characteristic_wavelength": 3.140795642912456,
+          "spectral_anisotropy": 0.0011203447482990494
+        },
+        "supported": false
+      },
+      {
+        "abstention_reasons": [
+          "characteristic_wavelength_below_six_samples",
+          "spectral_orientation_not_identifiable"
+        ],
+        "case_id": "control-white-noise-2",
+        "control": "white_noise",
+        "invalid": true,
+        "measurement": {
+          "characteristic_wavelength_um": 3.1081147595432452,
+          "samples_per_characteristic_wavelength": 3.1081147595432452,
+          "spectral_anisotropy": 0.0013544570837251406
+        },
+        "supported": false
+      },
+      {
+        "abstention_reasons": [
+          "characteristic_wavelength_below_six_samples",
+          "spectral_orientation_not_identifiable"
+        ],
+        "case_id": "control-white-noise-3",
+        "control": "white_noise",
+        "invalid": true,
+        "measurement": {
+          "characteristic_wavelength_um": 3.1458505747931156,
+          "samples_per_characteristic_wavelength": 3.1458505747931156,
+          "spectral_anisotropy": 0.015096102296547226
+        },
+        "supported": false
+      },
+      {
+        "abstention_reasons": [
+          "characteristic_wavelength_below_six_samples",
+          "spectral_orientation_not_identifiable"
+        ],
+        "case_id": "control-white-noise-4",
+        "control": "white_noise",
+        "invalid": true,
+        "measurement": {
+          "characteristic_wavelength_um": 3.1719292821844314,
+          "samples_per_characteristic_wavelength": 3.1719292821844314,
+          "spectral_anisotropy": 0.027519026812995076
+        },
+        "supported": false
+      },
+      {
+        "abstention_reasons": [
+          "spectral_orientation_not_identifiable"
+        ],
+        "case_id": "control-crossed-0",
+        "control": "orthogonal_crossed_orientation",
+        "invalid": true,
+        "measurement": {
+          "characteristic_wavelength_um": 23.28342000348797,
+          "samples_per_characteristic_wavelength": 23.28342000348797,
+          "spectral_anisotropy": 2.1875122205468472e-16
+        },
+        "supported": false
+      },
+      {
+        "abstention_reasons": [
+          "spectral_orientation_not_identifiable"
+        ],
+        "case_id": "control-crossed-1",
+        "control": "orthogonal_crossed_orientation",
+        "invalid": true,
+        "measurement": {
+          "characteristic_wavelength_um": 23.814669041128028,
+          "samples_per_characteristic_wavelength": 23.814669041128028,
+          "spectral_anisotropy": 1.2509408849120608e-16
+        },
+        "supported": false
+      },
+      {
+        "abstention_reasons": [
+          "spectral_orientation_not_identifiable"
+        ],
+        "case_id": "control-crossed-2",
+        "control": "orthogonal_crossed_orientation",
+        "invalid": true,
+        "measurement": {
+          "characteristic_wavelength_um": 24.58308094711603,
+          "samples_per_characteristic_wavelength": 24.58308094711603,
+          "spectral_anisotropy": 1.124396083780008e-16
+        },
+        "supported": false
+      },
+      {
+        "abstention_reasons": [
+          "spectral_orientation_not_identifiable"
+        ],
+        "case_id": "control-crossed-3",
+        "control": "orthogonal_crossed_orientation",
+        "invalid": true,
+        "measurement": {
+          "characteristic_wavelength_um": 23.28342000348797,
+          "samples_per_characteristic_wavelength": 23.28342000348797,
+          "spectral_anisotropy": 6.614870530497814e-17
+        },
+        "supported": false
+      },
+      {
+        "abstention_reasons": [
+          "spectral_orientation_not_identifiable"
+        ],
+        "case_id": "control-crossed-4",
+        "control": "orthogonal_crossed_orientation",
+        "invalid": true,
+        "measurement": {
+          "characteristic_wavelength_um": 23.814669041128028,
+          "samples_per_characteristic_wavelength": 23.814669041128028,
+          "spectral_anisotropy": 9.473490342707372e-17
+        },
+        "supported": false
+      }
+    ],
+    "perturbations": [
+      {
+        "abstention_reasons": [],
+        "case_id": "perturbation-rotation",
+        "invalid": false,
+        "measurement": {
+          "maximum_tensor_error_degrees": 0.8474174097318397,
+          "samples_per_characteristic_wavelength": 26.625609418811,
+          "spectral_anisotropy": 0.9866236834618411
+        },
+        "perturbation": {
+          "kind": "rotation",
+          "magnitude": 23.0,
+          "seed": 2718
+        },
+        "supported": true
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "perturbation-resampling",
+        "invalid": false,
+        "measurement": {
+          "maximum_tensor_error_degrees": 0.027581323834709792,
+          "samples_per_characteristic_wavelength": 21.778888860545663,
+          "spectral_anisotropy": 0.9866822266415318
+        },
+        "perturbation": {
+          "kind": "resampling",
+          "magnitude": 0.8,
+          "seed": 2718
+        },
+        "supported": true
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "perturbation-crop",
+        "invalid": false,
+        "measurement": {
+          "maximum_tensor_error_degrees": 0.018023083349930857,
+          "samples_per_characteristic_wavelength": 25.455844122715714,
+          "spectral_anisotropy": 0.9762910130000549
+        },
+        "perturbation": {
+          "kind": "crop",
+          "magnitude": 0.75,
+          "seed": 2718
+        },
+        "supported": true
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "perturbation-blur",
+        "invalid": false,
+        "measurement": {
+          "maximum_tensor_error_degrees": 0.017884556560659348,
+          "samples_per_characteristic_wavelength": 27.152900397563428,
+          "spectral_anisotropy": 0.9866829988482796
+        },
+        "perturbation": {
+          "kind": "blur",
+          "magnitude": 1.2,
+          "seed": 2718
+        },
+        "supported": true
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "perturbation-noise",
+        "invalid": false,
+        "measurement": {
+          "maximum_tensor_error_degrees": 0.03720700730724502,
+          "samples_per_characteristic_wavelength": 27.152900397563428,
+          "spectral_anisotropy": 0.9726524932431955
+        },
+        "perturbation": {
+          "kind": "noise",
+          "magnitude": 0.15,
+          "seed": 2718
+        },
+        "supported": true
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "perturbation-contrast",
+        "invalid": false,
+        "measurement": {
+          "maximum_tensor_error_degrees": 0.017788665133934956,
+          "samples_per_characteristic_wavelength": 27.152900397563428,
+          "spectral_anisotropy": 0.9866829930838807
+        },
+        "perturbation": {
+          "kind": "contrast",
+          "magnitude": 0.5,
+          "seed": 2718
+        },
+        "supported": true
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "perturbation-psf",
+        "invalid": false,
+        "measurement": {
+          "maximum_tensor_error_degrees": 0.21610798842917234,
+          "samples_per_characteristic_wavelength": 27.152900397563428,
+          "spectral_anisotropy": 0.9866830489297859
+        },
+        "perturbation": {
+          "kind": "psf",
+          "magnitude": 1.0,
+          "seed": 2718
+        },
+        "supported": true
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "perturbation-partial_volume",
+        "invalid": false,
+        "measurement": {
+          "maximum_tensor_error_degrees": 0.017865010833958195,
+          "samples_per_characteristic_wavelength": 27.152900397563428,
+          "spectral_anisotropy": 0.9866653438610854
+        },
+        "perturbation": {
+          "kind": "partial_volume",
+          "magnitude": 0.65,
+          "seed": 2718
+        },
+        "supported": true
+      }
+    ],
+    "spatial": [
+      {
+        "abstention_reasons": [
+          "spatial_anisotropy_below_0_20"
+        ],
+        "case_id": "spatial-confirm-c10-a1-seed0",
+        "invalid": true,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 166.61099528803885,
+          "major_e_fold_range_um": 12.849228844374407,
+          "median_angular_anisotropy": 0.03210195798246259,
+          "minor_e_fold_range_um": 13.828128381747547
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 10.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "spatial_anisotropy_below_0_20"
+        ],
+        "case_id": "spatial-confirm-c10-a1-seed1",
+        "invalid": true,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 93.89346632308475,
+          "major_e_fold_range_um": 15.999229099471865,
+          "median_angular_anisotropy": 0.10694833375836625,
+          "minor_e_fold_range_um": 13.999346620698722
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 10.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "spatial_anisotropy_below_0_20"
+        ],
+        "case_id": "spatial-confirm-c10-a1-seed2",
+        "invalid": true,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 77.68210034437716,
+          "major_e_fold_range_um": 14.96007937471284,
+          "median_angular_anisotropy": 0.04430298397451517,
+          "minor_e_fold_range_um": 15.192921524238503
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 10.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "spatial_anisotropy_below_0_20"
+        ],
+        "case_id": "spatial-confirm-c10-a1-seed3",
+        "invalid": true,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 3.79859818721565,
+          "major_e_fold_range_um": 15.481854660978659,
+          "median_angular_anisotropy": 0.10876321298116012,
+          "minor_e_fold_range_um": 14.572458727344515
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 10.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "spatial_anisotropy_below_0_20"
+        ],
+        "case_id": "spatial-confirm-c10-a1-seed4",
+        "invalid": true,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 117.09038159581144,
+          "major_e_fold_range_um": 15.677753075885933,
+          "median_angular_anisotropy": 0.08922979711255516,
+          "minor_e_fold_range_um": 16.29652445375164
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 10.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "spatial_anisotropy_below_0_20"
+        ],
+        "case_id": "spatial-confirm-c10-a1.8-seed0",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 2.2718609685340225,
+          "major_e_fold_range_um": 11.901443153543653,
+          "median_angular_anisotropy": 0.10238678615192705,
+          "minor_e_fold_range_um": 7.8749071665840376
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 10.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "spatial_anisotropy_below_0_20"
+        ],
+        "case_id": "spatial-confirm-c10-a1.8-seed1",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 179.6565867590579,
+          "major_e_fold_range_um": 13.464183382616524,
+          "median_angular_anisotropy": 0.189983371286043,
+          "minor_e_fold_range_um": 8.103091009458074
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 10.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "spatial_anisotropy_below_0_20"
+        ],
+        "case_id": "spatial-confirm-c10-a1.8-seed2",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 1.648359337654279,
+          "major_e_fold_range_um": 13.111361305660056,
+          "median_angular_anisotropy": 0.11984065833408472,
+          "minor_e_fold_range_um": 8.722835912176954
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 10.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "spatial-confirm-c10-a1.8-seed3",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": 1.9185243646947059,
+          "axis_consensus_degrees": 2.9265214504396164,
+          "major_e_fold_range_um": 14.414379633392155,
+          "median_angular_anisotropy": 0.22283480520839313,
+          "minor_e_fold_range_um": 7.5132637868197785
+        },
+        "relative_ratio_error": 0.06584686927483657,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 10.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "spatial_anisotropy_below_0_20"
+        ],
+        "case_id": "spatial-confirm-c10-a1.8-seed4",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 175.61823772739132,
+          "major_e_fold_range_um": 14.777400991923427,
+          "median_angular_anisotropy": 0.18742935452905377,
+          "minor_e_fold_range_um": 8.046960374357631
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 10.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "spatial_anisotropy_below_0_20"
+        ],
+        "case_id": "spatial-confirm-c10-a2.6-seed0",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 0.23730655800274086,
+          "major_e_fold_range_um": 12.132997408190807,
+          "median_angular_anisotropy": 0.13533146766623574,
+          "minor_e_fold_range_um": 5.724881425388203
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 2.6,
+          "correlation_length_um": 10.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "spatial_anisotropy_below_0_20"
+        ],
+        "case_id": "spatial-confirm-c10-a2.6-seed1",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 1.3500786958840842,
+          "major_e_fold_range_um": 11.068564279660592,
+          "median_angular_anisotropy": 0.06751680828385043,
+          "minor_e_fold_range_um": 5.294931478688615
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 2.6,
+          "correlation_length_um": 10.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "spatial_anisotropy_below_0_20"
+        ],
+        "case_id": "spatial-confirm-c10-a2.6-seed2",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 178.64408796589439,
+          "major_e_fold_range_um": 11.849944219080264,
+          "median_angular_anisotropy": 0.07302865224892921,
+          "minor_e_fold_range_um": 5.549638273218447
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 2.6,
+          "correlation_length_um": 10.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "spatial_anisotropy_below_0_20"
+        ],
+        "case_id": "spatial-confirm-c10-a2.6-seed3",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 179.637903643346,
+          "major_e_fold_range_um": 11.712217706692744,
+          "median_angular_anisotropy": 0.08785931222600811,
+          "minor_e_fold_range_um": 5.254518357788768
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 2.6,
+          "correlation_length_um": 10.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "spatial_anisotropy_below_0_20"
+        ],
+        "case_id": "spatial-confirm-c10-a2.6-seed4",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 0.11069691787664539,
+          "major_e_fold_range_um": 11.540808726302245,
+          "median_angular_anisotropy": 0.10630236753641156,
+          "minor_e_fold_range_um": 5.764682882701331
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 2.6,
+          "correlation_length_um": 10.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "directional_axis_not_identifiable",
+          "spatial_anisotropy_below_0_20"
+        ],
+        "case_id": "spatial-confirm-c18-a1-seed0",
+        "invalid": true,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": null,
+          "major_e_fold_range_um": 25.884931224087428,
+          "median_angular_anisotropy": 0.19174685869948618,
+          "minor_e_fold_range_um": 30.124802187447848
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 18.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "spatial_anisotropy_below_0_20"
+        ],
+        "case_id": "spatial-confirm-c18-a1-seed1",
+        "invalid": true,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 27.41352578214767,
+          "major_e_fold_range_um": 22.401020281799468,
+          "median_angular_anisotropy": 0.1024163436301446,
+          "minor_e_fold_range_um": 21.690276836120454
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 18.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "spatial_anisotropy_below_0_20"
+        ],
+        "case_id": "spatial-confirm-c18-a1-seed2",
+        "invalid": true,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 70.49561978833357,
+          "major_e_fold_range_um": 22.518009195560328,
+          "median_angular_anisotropy": 0.12988909337216129,
+          "minor_e_fold_range_um": 27.58679502163926
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 18.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "spatial_anisotropy_below_0_20"
+        ],
+        "case_id": "spatial-confirm-c18-a1-seed3",
+        "invalid": true,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 70.26035212518087,
+          "major_e_fold_range_um": 29.32348314468003,
+          "median_angular_anisotropy": 0.1576963513001388,
+          "minor_e_fold_range_um": 25.192572741847368
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 18.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "spatial_anisotropy_below_0_20"
+        ],
+        "case_id": "spatial-confirm-c18-a1-seed4",
+        "invalid": true,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 118.34649002061403,
+          "major_e_fold_range_um": 23.027753663606433,
+          "median_angular_anisotropy": 0.16529849395233542,
+          "minor_e_fold_range_um": 18.306831906588485
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 18.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "spatial-confirm-c18-a1.8-seed0",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": 0.977790736617978,
+          "axis_consensus_degrees": 174.69346738672812,
+          "major_e_fold_range_um": 20.14848588929077,
+          "median_angular_anisotropy": 0.2871874290327962,
+          "minor_e_fold_range_um": 20.60613292265497
+        },
+        "relative_ratio_error": 0.45678292410112337,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 18.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "spatial-confirm-c18-a1.8-seed1",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": 1.7630575717734696,
+          "axis_consensus_degrees": 176.1676953695191,
+          "major_e_fold_range_um": 25.017074602720648,
+          "median_angular_anisotropy": 0.42111363672382546,
+          "minor_e_fold_range_um": 14.189595962856636
+        },
+        "relative_ratio_error": 0.020523571236961382,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 18.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "spatial-confirm-c18-a1.8-seed2",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": 1.4369822648348918,
+          "axis_consensus_degrees": 176.1784604076471,
+          "major_e_fold_range_um": 23.86973869816005,
+          "median_angular_anisotropy": 0.31397216977713027,
+          "minor_e_fold_range_um": 16.61101830014768
+        },
+        "relative_ratio_error": 0.20167651953617124,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 18.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "spatial-confirm-c18-a1.8-seed3",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": 1.1483577545797656,
+          "axis_consensus_degrees": 5.060704982409727,
+          "major_e_fold_range_um": 19.8225696878255,
+          "median_angular_anisotropy": 0.238969957847276,
+          "minor_e_fold_range_um": 17.261667462749397
+        },
+        "relative_ratio_error": 0.362023469677908,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 18.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "spatial_anisotropy_below_0_20"
+        ],
+        "case_id": "spatial-confirm-c18-a1.8-seed4",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 174.79725832354654,
+          "major_e_fold_range_um": 19.77629363099417,
+          "median_angular_anisotropy": 0.15072001122334175,
+          "minor_e_fold_range_um": 20.456263078746318
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 18.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "spatial-confirm-c18-a2.6-seed0",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": 1.517888600100706,
+          "axis_consensus_degrees": 9.584839616565123,
+          "major_e_fold_range_um": 17.464812993990265,
+          "median_angular_anisotropy": 0.29978971656483117,
+          "minor_e_fold_range_um": 11.505991278168597
+        },
+        "relative_ratio_error": 0.4161966922689593,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.6,
+          "correlation_length_um": 18.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "spatial-confirm-c18-a2.6-seed1",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": 1.9045072066968716,
+          "axis_consensus_degrees": 8.277165339001044,
+          "major_e_fold_range_um": 21.793498335342118,
+          "median_angular_anisotropy": 0.449195430449497,
+          "minor_e_fold_range_um": 11.44311675939531
+        },
+        "relative_ratio_error": 0.26749722819351096,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.6,
+          "correlation_length_um": 18.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "spatial-confirm-c18-a2.6-seed2",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": 1.9829335248333677,
+          "axis_consensus_degrees": 4.300562022717917,
+          "major_e_fold_range_um": 21.278941669380764,
+          "median_angular_anisotropy": 0.4156405540065183,
+          "minor_e_fold_range_um": 10.731041360132787
+        },
+        "relative_ratio_error": 0.237333259679474,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.6,
+          "correlation_length_um": 18.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "spatial-confirm-c18-a2.6-seed3",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": 2.082382623782221,
+          "axis_consensus_degrees": 5.456535968271664,
+          "major_e_fold_range_um": 21.429125699135614,
+          "median_angular_anisotropy": 0.3776163694520803,
+          "minor_e_fold_range_um": 10.290676388863638
+        },
+        "relative_ratio_error": 0.19908360623760735,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.6,
+          "correlation_length_um": 18.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "spatial-confirm-c18-a2.6-seed4",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": 1.8569678666615197,
+          "axis_consensus_degrees": 178.72343162850396,
+          "major_e_fold_range_um": 20.085205943545,
+          "median_angular_anisotropy": 0.39120859735639557,
+          "minor_e_fold_range_um": 10.816130049495383
+        },
+        "relative_ratio_error": 0.2857815897455694,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.6,
+          "correlation_length_um": 18.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "minor_variogram_plateau_not_observed",
+          "spatial_anisotropy_below_0_20",
+          "intrinsic_ranges_not_identifiable"
+        ],
+        "case_id": "spatial-confirm-c26-a1-seed0",
+        "invalid": true,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 43.15986110215322,
+          "major_e_fold_range_um": 38.65153023681478,
+          "median_angular_anisotropy": 0.06653909836476203,
+          "minor_e_fold_range_um": null
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 26.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "spatial-confirm-c26-a1-seed1",
+        "invalid": true,
+        "measurement": {
+          "anisotropy_ratio": 0.7722511594357252,
+          "axis_consensus_degrees": 167.80266690080535,
+          "major_e_fold_range_um": 29.09103176459921,
+          "median_angular_anisotropy": 0.24378833529563604,
+          "minor_e_fold_range_um": 37.670428084375665
+        },
+        "relative_ratio_error": 0.2277488405642748,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 26.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "spatial_anisotropy_below_0_20"
+        ],
+        "case_id": "spatial-confirm-c26-a1-seed2",
+        "invalid": true,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 105.87361015511141,
+          "major_e_fold_range_um": 27.81960375183379,
+          "median_angular_anisotropy": 0.1762534352881434,
+          "minor_e_fold_range_um": 29.437734524248917
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 26.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "spatial-confirm-c26-a1-seed3",
+        "invalid": true,
+        "measurement": {
+          "anisotropy_ratio": 1.2979416942419724,
+          "axis_consensus_degrees": 0.3709736779105658,
+          "major_e_fold_range_um": 37.31543057858061,
+          "median_angular_anisotropy": 0.297667948972552,
+          "minor_e_fold_range_um": 28.749697112067636
+        },
+        "relative_ratio_error": 0.29794169424197237,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 26.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "major_variogram_plateau_not_observed",
+          "intrinsic_ranges_not_identifiable"
+        ],
+        "case_id": "spatial-confirm-c26-a1-seed4",
+        "invalid": true,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 86.79780135162095,
+          "major_e_fold_range_um": null,
+          "median_angular_anisotropy": 0.3004195237911201,
+          "minor_e_fold_range_um": 31.38583668699286
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 26.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "spatial-confirm-c26-a1.8-seed0",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": 1.3972567541785523,
+          "axis_consensus_degrees": 10.230872033012242,
+          "major_e_fold_range_um": 25.618416991656577,
+          "median_angular_anisotropy": 0.2977482423615924,
+          "minor_e_fold_range_um": 18.334795602199577
+        },
+        "relative_ratio_error": 0.22374624767858206,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 26.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "spatial_anisotropy_below_0_20"
+        ],
+        "case_id": "spatial-confirm-c26-a1.8-seed1",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 0.2606093274135904,
+          "major_e_fold_range_um": 37.67466719153329,
+          "median_angular_anisotropy": 0.16052533043431183,
+          "minor_e_fold_range_um": 31.900934451330045
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 26.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "major_variogram_plateau_not_observed",
+          "intrinsic_ranges_not_identifiable"
+        ],
+        "case_id": "spatial-confirm-c26-a1.8-seed2",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 8.282970221267659,
+          "major_e_fold_range_um": null,
+          "median_angular_anisotropy": 0.24739115137306963,
+          "minor_e_fold_range_um": 22.352123468590925
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 26.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "minor_variogram_plateau_not_observed",
+          "intrinsic_ranges_not_identifiable"
+        ],
+        "case_id": "spatial-confirm-c26-a1.8-seed3",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 9.174260942519656,
+          "major_e_fold_range_um": 29.709651052918012,
+          "median_angular_anisotropy": 0.5368626303513561,
+          "minor_e_fold_range_um": null
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 26.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "spatial-confirm-c26-a1.8-seed4",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": 1.611183362439895,
+          "axis_consensus_degrees": 10.954515721229479,
+          "major_e_fold_range_um": 32.89167796261772,
+          "median_angular_anisotropy": 0.2526759513689423,
+          "minor_e_fold_range_um": 20.414608746212608
+        },
+        "relative_ratio_error": 0.10489813197783612,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 26.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "spatial-confirm-c26-a2.6-seed0",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": 1.893051955618868,
+          "axis_consensus_degrees": 2.929328793640417,
+          "major_e_fold_range_um": 28.627012037312383,
+          "median_angular_anisotropy": 0.4629029165905517,
+          "minor_e_fold_range_um": 15.122148101822049
+        },
+        "relative_ratio_error": 0.2719030939927431,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.6,
+          "correlation_length_um": 26.0
+        }
+      },
+      {
+        "abstention_reasons": [
+          "minor_variogram_plateau_not_observed",
+          "intrinsic_ranges_not_identifiable"
+        ],
+        "case_id": "spatial-confirm-c26-a2.6-seed1",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": null,
+          "axis_consensus_degrees": 179.16884224115773,
+          "major_e_fold_range_um": 28.356864185367762,
+          "median_angular_anisotropy": 0.2593073525285497,
+          "minor_e_fold_range_um": null
+        },
+        "relative_ratio_error": null,
+        "supported": false,
+        "truth": {
+          "anisotropy_ratio": 2.6,
+          "correlation_length_um": 26.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "spatial-confirm-c26-a2.6-seed2",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": 1.735878106990122,
+          "axis_consensus_degrees": 4.263358534378547,
+          "major_e_fold_range_um": 33.01446309389021,
+          "median_angular_anisotropy": 0.35864478924122434,
+          "minor_e_fold_range_um": 19.01888327351206
+        },
+        "relative_ratio_error": 0.33235457423456854,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.6,
+          "correlation_length_um": 26.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "spatial-confirm-c26-a2.6-seed3",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": 1.7303073287154214,
+          "axis_consensus_degrees": 1.5911666713436396,
+          "major_e_fold_range_um": 23.487860542650107,
+          "median_angular_anisotropy": 0.3624074686358554,
+          "minor_e_fold_range_um": 13.574386557148477
+        },
+        "relative_ratio_error": 0.33449718126329947,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.6,
+          "correlation_length_um": 26.0
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "spatial-confirm-c26-a2.6-seed4",
+        "invalid": false,
+        "measurement": {
+          "anisotropy_ratio": 2.165266777553677,
+          "axis_consensus_degrees": 5.237361290446449,
+          "major_e_fold_range_um": 25.044265915560963,
+          "median_angular_anisotropy": 0.46161836645404714,
+          "minor_e_fold_range_um": 11.566365020321436
+        },
+        "relative_ratio_error": 0.16720508555627814,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.6,
+          "correlation_length_um": 26.0
+        }
+      }
+    ],
+    "thickness": [
+      {
+        "anisotropic": false,
+        "case_id": "thickness-sheet2d-d10-s0.75x0.75",
+        "estimated_p95_um": 10.5,
+        "relative_error": 0.05,
+        "spacing_um": [
+          0.75,
+          0.75
+        ],
+        "truth_diameter_um": 10.0
+      },
+      {
+        "anisotropic": false,
+        "case_id": "thickness-sheet2d-d10-s1.25x1.25",
+        "estimated_p95_um": 10.0,
+        "relative_error": 0.0,
+        "spacing_um": [
+          1.25,
+          1.25
+        ],
+        "truth_diameter_um": 10.0
+      },
+      {
+        "anisotropic": true,
+        "case_id": "thickness-sheet2d-d10-s0.75x1.5",
+        "estimated_p95_um": 10.5,
+        "relative_error": 0.05,
+        "spacing_um": [
+          0.75,
+          1.5
+        ],
+        "truth_diameter_um": 10.0
+      },
+      {
+        "anisotropic": false,
+        "case_id": "thickness-sheet2d-d18-s0.75x0.75",
+        "estimated_p95_um": 18.0,
+        "relative_error": 0.0,
+        "spacing_um": [
+          0.75,
+          0.75
+        ],
+        "truth_diameter_um": 18.0
+      },
+      {
+        "anisotropic": false,
+        "case_id": "thickness-sheet2d-d18-s1.25x1.25",
+        "estimated_p95_um": 17.5,
+        "relative_error": 0.027777777777777776,
+        "spacing_um": [
+          1.25,
+          1.25
+        ],
+        "truth_diameter_um": 18.0
+      },
+      {
+        "anisotropic": true,
+        "case_id": "thickness-sheet2d-d18-s0.75x1.5",
+        "estimated_p95_um": 18.0,
+        "relative_error": 0.0,
+        "spacing_um": [
+          0.75,
+          1.5
+        ],
+        "truth_diameter_um": 18.0
+      },
+      {
+        "anisotropic": false,
+        "case_id": "thickness-sheet2d-d30-s0.75x0.75",
+        "estimated_p95_um": 30.0,
+        "relative_error": 0.0,
+        "spacing_um": [
+          0.75,
+          0.75
+        ],
+        "truth_diameter_um": 30.0
+      },
+      {
+        "anisotropic": false,
+        "case_id": "thickness-sheet2d-d30-s1.25x1.25",
+        "estimated_p95_um": 30.0,
+        "relative_error": 0.0,
+        "spacing_um": [
+          1.25,
+          1.25
+        ],
+        "truth_diameter_um": 30.0
+      },
+      {
+        "anisotropic": true,
+        "case_id": "thickness-sheet2d-d30-s0.75x1.5",
+        "estimated_p95_um": 30.0,
+        "relative_error": 0.0,
+        "spacing_um": [
+          0.75,
+          1.5
+        ],
+        "truth_diameter_um": 30.0
+      },
+      {
+        "anisotropic": false,
+        "case_id": "thickness-tube3d-d10-s0.75x0.75x0.75",
+        "estimated_p95_um": 9.124143600463867,
+        "relative_error": 0.08758563995361328,
+        "spacing_um": [
+          0.75,
+          0.75,
+          0.75
+        ],
+        "truth_diameter_um": 10.0
+      },
+      {
+        "anisotropic": true,
+        "case_id": "thickness-tube3d-d10-s0.75x0.75x1.5",
+        "estimated_p95_um": 9.124143600463867,
+        "relative_error": 0.08758563995361328,
+        "spacing_um": [
+          0.75,
+          0.75,
+          1.5
+        ],
+        "truth_diameter_um": 10.0
+      },
+      {
+        "anisotropic": false,
+        "case_id": "thickness-tube3d-d14-s0.75x0.75x0.75",
+        "estimated_p95_um": 13.416407585144043,
+        "relative_error": 0.041685172489711216,
+        "spacing_um": [
+          0.75,
+          0.75,
+          0.75
+        ],
+        "truth_diameter_um": 14.0
+      },
+      {
+        "anisotropic": true,
+        "case_id": "thickness-tube3d-d14-s0.75x0.75x1.5",
+        "estimated_p95_um": 13.416407585144043,
+        "relative_error": 0.041685172489711216,
+        "spacing_um": [
+          0.75,
+          0.75,
+          1.5
+        ],
+        "truth_diameter_um": 14.0
+      },
+      {
+        "anisotropic": false,
+        "case_id": "thickness-tube3d-d18-s0.75x0.75x0.75",
+        "estimated_p95_um": 16.970561981201172,
+        "relative_error": 0.05719100104437934,
+        "spacing_um": [
+          0.75,
+          0.75,
+          0.75
+        ],
+        "truth_diameter_um": 18.0
+      },
+      {
+        "anisotropic": true,
+        "case_id": "thickness-tube3d-d18-s0.75x0.75x1.5",
+        "estimated_p95_um": 16.970561981201172,
+        "relative_error": 0.05719100104437934,
+        "spacing_um": [
+          0.75,
+          0.75,
+          1.5
+        ],
+        "truth_diameter_um": 18.0
+      },
+      {
+        "anisotropic": false,
+        "case_id": "thickness-sheet3d-d10-s0.75x0.75x0.75",
+        "estimated_p95_um": 10.5,
+        "relative_error": 0.05,
+        "spacing_um": [
+          0.75,
+          0.75,
+          0.75
+        ],
+        "truth_diameter_um": 10.0
+      },
+      {
+        "anisotropic": true,
+        "case_id": "thickness-sheet3d-d10-s0.75x0.75x1.5",
+        "estimated_p95_um": 10.5,
+        "relative_error": 0.05,
+        "spacing_um": [
+          0.75,
+          0.75,
+          1.5
+        ],
+        "truth_diameter_um": 10.0
+      },
+      {
+        "anisotropic": false,
+        "case_id": "thickness-sheet3d-d14-s0.75x0.75x0.75",
+        "estimated_p95_um": 13.5,
+        "relative_error": 0.03571428571428571,
+        "spacing_um": [
+          0.75,
+          0.75,
+          0.75
+        ],
+        "truth_diameter_um": 14.0
+      },
+      {
+        "anisotropic": true,
+        "case_id": "thickness-sheet3d-d14-s0.75x0.75x1.5",
+        "estimated_p95_um": 13.5,
+        "relative_error": 0.03571428571428571,
+        "spacing_um": [
+          0.75,
+          0.75,
+          1.5
+        ],
+        "truth_diameter_um": 14.0
+      },
+      {
+        "anisotropic": false,
+        "case_id": "thickness-sheet3d-d18-s0.75x0.75x0.75",
+        "estimated_p95_um": 18.0,
+        "relative_error": 0.0,
+        "spacing_um": [
+          0.75,
+          0.75,
+          0.75
+        ],
+        "truth_diameter_um": 18.0
+      },
+      {
+        "anisotropic": true,
+        "case_id": "thickness-sheet3d-d18-s0.75x0.75x1.5",
+        "estimated_p95_um": 18.0,
+        "relative_error": 0.0,
+        "spacing_um": [
+          0.75,
+          0.75,
+          1.5
+        ],
+        "truth_diameter_um": 18.0
+      }
+    ]
+  },
+  "content_sha256": "8377fd7f29bf31c65a787624d43d9ec4c82be78ece5993da54ae45b9e39e79e2",
+  "development": "outputs/nostos0-synthetic-repair-development-v2-1/development.json",
+  "development_sha256": "c40ab9f619508e2319a9b6c65e84034ea5b742ae103bfdc6a5337d8a5620ace5",
+  "execution_reproducibility": {
+    "canonical_payloads_identical_before_repeat_annotation": true,
+    "independent_recomputation": true
+  },
+  "label_blindness": {
+    "geometry_sha256": "529f136ecefed9d1fd44e3ecf399ba8de49b75e7fddaf5deac306e985a3c5702",
+    "label_complement_geometry_sha256": "529f136ecefed9d1fd44e3ecf399ba8de49b75e7fddaf5deac306e985a3c5702",
+    "unchanged": true
+  },
+  "metrics": {
+    "hessian": {
+      "accepted": 24,
+      "all_misclassifications_rejected": false,
+      "balanced_accuracy": 0.9523809523809524,
+      "cases": 27,
+      "coverage": 0.8888888888888888,
+      "invalid": 1,
+      "median_scale_relative_error": 0.0,
+      "p95_scale_relative_error": 0.5,
+      "per_class_recall": {
+        "blob": 0.8571428571428571,
+        "sheet": 1.0,
+        "tube": 1.0
+      },
+      "risk": 0.041666666666666664
+    },
+    "network": {
+      "all_survival_curves_monotone": true,
+      "median_fragmentation_relative_error": 0.0,
+      "p95_fragmentation_relative_error": 0.25
+    },
+    "organization": {
+      "accepted": 55,
+      "all_errors_above_2_5_rejected": true,
+      "cases": 60,
+      "coverage": 0.9166666666666666,
+      "invalid": 0,
+      "p95_error_degrees": 1.2442686780895362,
+      "risk": 0.0
+    },
+    "organization_controls": {
+      "controls": 10,
+      "rejected": 10
+    },
+    "perturbations": {
+      "accepted": 8,
+      "all_supported_errors_le_2_5": true,
+      "cases": 8
+    },
+    "spatial": {
+      "accepted": 16,
+      "anisotropic_cases": 30,
+      "anisotropic_coverage": 0.5333333333333333,
+      "isotropic_abstention": 0.8666666666666667,
+      "median_relative_ratio_error": 0.2524152439364925,
+      "p95_relative_ratio_error": 0.4263432502270003,
+      "spearman_rho": 0.5876093775450646
+    },
+    "thickness": {
+      "anisotropic_p95_relative_error": 0.07542778438991969,
+      "median_relative_error": 0.03571428571428571,
+      "p95_relative_error": 0.08758563995361328
+    }
+  },
+  "protocol": "docs/NOSTOS0_SYNTHETIC_PHYSICAL_TRUTH_V2_1_CONFIRMATION_PROTOCOL.md",
+  "protocol_sha256": "9723b7b5923ce21210c3dfc7fae8bbb61b074355cd637e3bcf176546c627b786",
+  "protocol_version": "nostos-synthetic-physical-truth/2.1-confirmation",
+  "scope": "Disjoint analytic confirmation of fail-closed response support; not biological, segmentation, acquisition-transfer, clinical, mechanical or intraoperative validation.",
+  "status": "fail",
+  "success_gates": {
+    "byte_identical_independent_repeat": true,
+    "hessian_classification": false,
+    "hessian_scale": true,
+    "label_complement_geometry_unchanged": true,
+    "network": true,
+    "organization": true,
+    "organization_controls": true,
+    "perturbations": true,
+    "spatial": false,
+    "thickness": true
+  },
+  "validated_responses": "src/nostos/features/validated_responses.py",
+  "validated_responses_sha256": "0205f85a9982f1e572ebc1de167f04c6560a984773bb2f6b80aa702214c4b461"
+}

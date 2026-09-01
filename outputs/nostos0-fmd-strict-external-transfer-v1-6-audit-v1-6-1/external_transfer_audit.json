@@ -1,0 +1,1414 @@
+{
+  "audit_only_repair": {
+    "change": "When accepted count is zero, accepted-emission risk and its descriptive exact interval are serialized as null and zero_coverage is true.",
+    "original_exception": "ValueError: Exact binomial interval requires 0 <= events <= total and total > 0.",
+    "status": "post_measurement_reporting_defect_repaired",
+    "trigger": "A source-specific branch emitted zero accepted measurements.",
+    "unchanged": [
+      "evidence rows",
+      "source selection",
+      "measurements",
+      "invalidity labels",
+      "profiles",
+      "support cells",
+      "thresholds",
+      "comparators",
+      "gates"
+    ]
+  },
+  "auditor_version": "nostos-fmd-strict-external-transfer-auditor/1.1",
+  "checks": {
+    "Confocal_BPAE_R:all_supported_cells_in_every_field": false,
+    "Confocal_BPAE_R:inherited_profile_audit_pass": false,
+    "Confocal_BPAE_R:required_independent_groups": true,
+    "Confocal_BPAE_R:zero_fields_with_any_accepted_failure": true,
+    "Confocal_BPAE_R:zero_invalid_accepted_emissions": true,
+    "WideField_BPAE_G:all_supported_cells_in_every_field": true,
+    "WideField_BPAE_G:inherited_profile_audit_pass": false,
+    "WideField_BPAE_G:required_independent_groups": true,
+    "WideField_BPAE_G:zero_fields_with_any_accepted_failure": false,
+    "WideField_BPAE_G:zero_invalid_accepted_emissions": false,
+    "combined:inherited_profile_audit_pass": false,
+    "combined:maximum_two_sided_exact_field_failure_upper95": false,
+    "combined:required_independent_groups": true,
+    "combined:zero_fields_with_any_accepted_failure": false,
+    "combined:zero_invalid_accepted_emissions": false
+  },
+  "claim_boundary": {
+    "claim": "A conservative three-cell acquisition-by-scale support profile developed on widefield mitochondrial images can be tested without refitting across a different microscope with the same channel and a different structural channel with the same microscope.",
+    "excluded_claims": [
+      "universal transfer to arbitrary microscopes, tissues or channels",
+      "physical-scale measurement because FMD does not provide pixel spacing",
+      "biological interpretation of tensor coherence",
+      "image restoration or denoising performance",
+      "clinical or intraoperative utility"
+    ],
+    "study_type": "computation_only_public_data_no_refit_external_transfer"
+  },
+  "combined": {
+    "checks": {
+      "inherited_profile_audit_pass": false,
+      "maximum_two_sided_exact_field_failure_upper95": false,
+      "required_independent_groups": true,
+      "zero_fields_with_any_accepted_failure": false,
+      "zero_invalid_accepted_emissions": false
+    },
+    "field_event_summary": {
+      "accepted_emission_exact_ci_descriptive": [
+        0.3210789143084083,
+        0.5412490305991046
+      ],
+      "accepted_emission_risk": 0.42857142857142855,
+      "accepted_emissions": 84,
+      "field_event_exact_ci": [
+        0.04657928788986731,
+        0.5079756770484718
+      ],
+      "field_event_rate": 0.21428571428571427,
+      "fields": [
+        {
+          "accepted": 0,
+          "any_accepted_failure": false,
+          "invalid": 0,
+          "reference_group_id": "Confocal_BPAE_R|fov16"
+        },
+        {
+          "accepted": 0,
+          "any_accepted_failure": false,
+          "invalid": 0,
+          "reference_group_id": "Confocal_BPAE_R|fov17"
+        },
+        {
+          "accepted": 0,
+          "any_accepted_failure": false,
+          "invalid": 0,
+          "reference_group_id": "Confocal_BPAE_R|fov19"
+        },
+        {
+          "accepted": 0,
+          "any_accepted_failure": false,
+          "invalid": 0,
+          "reference_group_id": "Confocal_BPAE_R|fov2"
+        },
+        {
+          "accepted": 0,
+          "any_accepted_failure": false,
+          "invalid": 0,
+          "reference_group_id": "Confocal_BPAE_R|fov3"
+        },
+        {
+          "accepted": 0,
+          "any_accepted_failure": false,
+          "invalid": 0,
+          "reference_group_id": "Confocal_BPAE_R|fov6"
+        },
+        {
+          "accepted": 0,
+          "any_accepted_failure": false,
+          "invalid": 0,
+          "reference_group_id": "Confocal_BPAE_R|fov7"
+        },
+        {
+          "accepted": 12,
+          "any_accepted_failure": true,
+          "invalid": 12,
+          "reference_group_id": "WideField_BPAE_G|fov1"
+        },
+        {
+          "accepted": 12,
+          "any_accepted_failure": true,
+          "invalid": 12,
+          "reference_group_id": "WideField_BPAE_G|fov11"
+        },
+        {
+          "accepted": 12,
+          "any_accepted_failure": false,
+          "invalid": 0,
+          "reference_group_id": "WideField_BPAE_G|fov15"
+        },
+        {
+          "accepted": 12,
+          "any_accepted_failure": false,
+          "invalid": 0,
+          "reference_group_id": "WideField_BPAE_G|fov16"
+        },
+        {
+          "accepted": 12,
+          "any_accepted_failure": false,
+          "invalid": 0,
+          "reference_group_id": "WideField_BPAE_G|fov19"
+        },
+        {
+          "accepted": 12,
+          "any_accepted_failure": false,
+          "invalid": 0,
+          "reference_group_id": "WideField_BPAE_G|fov3"
+        },
+        {
+          "accepted": 12,
+          "any_accepted_failure": true,
+          "invalid": 12,
+          "reference_group_id": "WideField_BPAE_G|fov5"
+        }
+      ],
+      "fields_with_any_accepted_failure": 3,
+      "independent_groups": 14,
+      "invalid_accepted_emissions": 36,
+      "zero_coverage": false
+    },
+    "inherited_profile_audit": {
+      "acquisition_qc_matched_count": {
+        "accepted": 84,
+        "boundary_tie_split": false,
+        "coverage": 0.1,
+        "deterministic_tie_break": "case_id",
+        "eligible": 840,
+        "invalid": 42,
+        "risk": 0.5,
+        "target_accepted": 84,
+        "tie_robust_risk_bounds": {
+          "best_case_invalid": 42,
+          "best_case_risk": 0.5,
+          "boundary_calibrated_risk": 0.4595882150689408,
+          "boundary_tie_cases": 3,
+          "boundary_tie_invalid": 3,
+          "cases_required_from_boundary_tie": 3,
+          "strictly_below_boundary": 81,
+          "worst_case_invalid": 42,
+          "worst_case_risk": 0.5
+        }
+      },
+      "base_profile_content_sha256": "65239b44c66a8bfca80608b1544fd0c892cf8e3209805828a1623d85382eebb8",
+      "checks": {
+        "aurc_bootstrap_ci_lower_above_zero": true,
+        "every_supported_cell_passes": false,
+        "maximum_cluster_bootstrap_risk_upper95": false,
+        "maximum_observed_risk": false,
+        "minimum_coverage": false,
+        "minimum_independent_groups": true,
+        "minimum_invalid_acquisition_qc_emissions": true,
+        "minimum_relative_risk_reduction_vs_acquisition_qc": false,
+        "no_unregistered_supported_cell": true,
+        "positive_aurc_difference": true
+      },
+      "claim_boundary": {
+        "claim": "A conservative full-archive support profile can be compiled after retaining the failed v1.5 extension and before opening external transfer archives.",
+        "excluded_claims": [
+          "prospective confirmation within WideField_BPAE_R",
+          "cross-instrument or cross-structure transfer",
+          "physical-scale measurement",
+          "biological or clinical interpretation"
+        ],
+        "study_type": "computation_only_public_data_post_failure_development"
+      },
+      "conditional_profile_content_sha256": "1bf6c553321f1957379b2ab7f896222bf9d28cce3cd0ff107267821c98f81ba1",
+      "confirmation": {
+        "development_group_overlap": [],
+        "eligible_primary_cases": 840,
+        "independent_group_count": 14,
+        "independent_groups": [
+          "Confocal_BPAE_R|fov16",
+          "Confocal_BPAE_R|fov17",
+          "Confocal_BPAE_R|fov19",
+          "Confocal_BPAE_R|fov2",
+          "Confocal_BPAE_R|fov3",
+          "Confocal_BPAE_R|fov6",
+          "Confocal_BPAE_R|fov7",
+          "WideField_BPAE_G|fov1",
+          "WideField_BPAE_G|fov11",
+          "WideField_BPAE_G|fov15",
+          "WideField_BPAE_G|fov16",
+          "WideField_BPAE_G|fov19",
+          "WideField_BPAE_G|fov3",
+          "WideField_BPAE_G|fov5"
+        ],
+        "source_receipt": {
+          "rows": {
+            "bytes": 7332881,
+            "path": "external_transfer_rows.jsonl",
+            "sha256": "2309b23dcf6facf9fc5406e571cc94c277822cd055fac0e3f3de912539672e39"
+          }
+        }
+      },
+      "content_sha256": "adedb1b4fb545dc118b4bd67e13103ca45370cc95b618d36015b374d1ed44509",
+      "descriptive_strata": {
+        "acquisition_level": [
+          {
+            "accepted": 84,
+            "coverage": 0.5,
+            "eligible": 168,
+            "invalid": 36,
+            "risk": 0.42857142857142855,
+            "stratum": "avg16"
+          },
+          {
+            "accepted": 0,
+            "coverage": 0.0,
+            "eligible": 168,
+            "invalid": 0,
+            "risk": null,
+            "stratum": "avg2"
+          },
+          {
+            "accepted": 0,
+            "coverage": 0.0,
+            "eligible": 168,
+            "invalid": 0,
+            "risk": null,
+            "stratum": "avg4"
+          },
+          {
+            "accepted": 0,
+            "coverage": 0.0,
+            "eligible": 168,
+            "invalid": 0,
+            "risk": null,
+            "stratum": "avg8"
+          },
+          {
+            "accepted": 0,
+            "coverage": 0.0,
+            "eligible": 168,
+            "invalid": 0,
+            "risk": null,
+            "stratum": "raw"
+          }
+        ],
+        "acquisition_modality": [
+          {
+            "accepted": 0,
+            "coverage": 0.0,
+            "eligible": 420,
+            "invalid": 0,
+            "risk": null,
+            "stratum": "Confocal"
+          },
+          {
+            "accepted": 84,
+            "coverage": 0.2,
+            "eligible": 420,
+            "invalid": 36,
+            "risk": 0.42857142857142855,
+            "stratum": "WideField"
+          }
+        ],
+        "independent_group": [
+          {
+            "accepted": 0,
+            "coverage": 0.0,
+            "eligible": 60,
+            "invalid": 0,
+            "risk": null,
+            "stratum": "Confocal_BPAE_R|fov16"
+          },
+          {
+            "accepted": 0,
+            "coverage": 0.0,
+            "eligible": 60,
+            "invalid": 0,
+            "risk": null,
+            "stratum": "Confocal_BPAE_R|fov17"
+          },
+          {
+            "accepted": 0,
+            "coverage": 0.0,
+            "eligible": 60,
+            "invalid": 0,
+            "risk": null,
+            "stratum": "Confocal_BPAE_R|fov19"
+          },
+          {
+            "accepted": 0,
+            "coverage": 0.0,
+            "eligible": 60,
+            "invalid": 0,
+            "risk": null,
+            "stratum": "Confocal_BPAE_R|fov2"
+          },
+          {
+            "accepted": 0,
+            "coverage": 0.0,
+            "eligible": 60,
+            "invalid": 0,
+            "risk": null,
+            "stratum": "Confocal_BPAE_R|fov3"
+          },
+          {
+            "accepted": 0,
+            "coverage": 0.0,
+            "eligible": 60,
+            "invalid": 0,
+            "risk": null,
+            "stratum": "Confocal_BPAE_R|fov6"
+          },
+          {
+            "accepted": 0,
+            "coverage": 0.0,
+            "eligible": 60,
+            "invalid": 0,
+            "risk": null,
+            "stratum": "Confocal_BPAE_R|fov7"
+          },
+          {
+            "accepted": 12,
+            "coverage": 0.2,
+            "eligible": 60,
+            "invalid": 12,
+            "risk": 1.0,
+            "stratum": "WideField_BPAE_G|fov1"
+          },
+          {
+            "accepted": 12,
+            "coverage": 0.2,
+            "eligible": 60,
+            "invalid": 12,
+            "risk": 1.0,
+            "stratum": "WideField_BPAE_G|fov11"
+          },
+          {
+            "accepted": 12,
+            "coverage": 0.2,
+            "eligible": 60,
+            "invalid": 0,
+            "risk": 0.0,
+            "stratum": "WideField_BPAE_G|fov15"
+          },
+          {
+            "accepted": 12,
+            "coverage": 0.2,
+            "eligible": 60,
+            "invalid": 0,
+            "risk": 0.0,
+            "stratum": "WideField_BPAE_G|fov16"
+          },
+          {
+            "accepted": 12,
+            "coverage": 0.2,
+            "eligible": 60,
+            "invalid": 0,
+            "risk": 0.0,
+            "stratum": "WideField_BPAE_G|fov19"
+          },
+          {
+            "accepted": 12,
+            "coverage": 0.2,
+            "eligible": 60,
+            "invalid": 0,
+            "risk": 0.0,
+            "stratum": "WideField_BPAE_G|fov3"
+          },
+          {
+            "accepted": 12,
+            "coverage": 0.2,
+            "eligible": 60,
+            "invalid": 12,
+            "risk": 1.0,
+            "stratum": "WideField_BPAE_G|fov5"
+          }
+        ],
+        "requested_scale": [
+          {
+            "accepted": 28,
+            "coverage": 0.1,
+            "eligible": 280,
+            "invalid": 12,
+            "risk": 0.42857142857142855,
+            "stratum": "16.0"
+          },
+          {
+            "accepted": 28,
+            "coverage": 0.1,
+            "eligible": 280,
+            "invalid": 12,
+            "risk": 0.42857142857142855,
+            "stratum": "4.0"
+          },
+          {
+            "accepted": 28,
+            "coverage": 0.1,
+            "eligible": 280,
+            "invalid": 12,
+            "risk": 0.42857142857142855,
+            "stratum": "8.0"
+          }
+        ]
+      },
+      "primary_operating_point": {
+        "accepted": 84,
+        "accepted_independent_groups": 7,
+        "cluster_bootstrap_risk_upper95": 0.75,
+        "coverage": 0.1,
+        "eligible": 840,
+        "invalid": 36,
+        "predicted_risk_threshold": 0.6303073200826219,
+        "risk": 0.42857142857142855
+      },
+      "protocol_id": "fmd-full-archive-strict-support-v1-6",
+      "relative_risk_reduction_vs_acquisition_qc": {
+        "conservative_lower_bound_over_boundary_tie": 0.1428571428571429,
+        "deterministic_tie_break_estimate": 0.1428571428571429
+      },
+      "risk_coverage": {
+        "acquisition_qc_metrics": {
+          "brier_score": 0.5307523567898751,
+          "expected_calibration_error": 0.545321410273385,
+          "logarithmic_loss": 9.967258130481566,
+          "risk_coverage_auc": 0.6808043394646548
+        },
+        "cluster_bootstrap_aurc_difference": {
+          "bootstrap_ci95": [
+            0.13459658267932645,
+            0.3803077384232443
+          ],
+          "bootstrap_probability_positive": 1.0,
+          "definition": "acquisition_qc_AURC_minus_conditional_primary_AURC; positive favors NOSTOS",
+          "draws": 5000,
+          "independent_groups": 14,
+          "observed": 0.26346612831619537,
+          "seed": 26083164
+        },
+        "primary_metrics": {
+          "brier_score": 0.5030247187101505,
+          "expected_calibration_error": 0.5090437783359089,
+          "logarithmic_loss": 9.877264382623135,
+          "risk_coverage_auc": 0.4173382111484594
+        }
+      },
+      "schema_version": "nostos-conditional-support-confirmation-audit/1.0",
+      "status": "fail",
+      "supported_cell_audit": [
+        {
+          "checks": {
+            "maximum_cluster_bootstrap_risk_upper95": false,
+            "maximum_observed_risk": false,
+            "minimum_accepted_cases": true,
+            "minimum_accepted_independent_groups": true
+          },
+          "key": "[\"avg16\",16.0]",
+          "passes": false,
+          "summary": {
+            "accepted": 28,
+            "accepted_independent_groups": 7,
+            "cluster_bootstrap_risk_upper95": 0.75,
+            "coverage": 0.5,
+            "eligible": 56,
+            "invalid": 12,
+            "predicted_risk_threshold": 0.6303073200826219,
+            "risk": 0.42857142857142855
+          },
+          "values": [
+            "avg16",
+            16.0
+          ]
+        },
+        {
+          "checks": {
+            "maximum_cluster_bootstrap_risk_upper95": false,
+            "maximum_observed_risk": false,
+            "minimum_accepted_cases": true,
+            "minimum_accepted_independent_groups": true
+          },
+          "key": "[\"avg16\",4.0]",
+          "passes": false,
+          "summary": {
+            "accepted": 28,
+            "accepted_independent_groups": 7,
+            "cluster_bootstrap_risk_upper95": 0.75,
+            "coverage": 0.5,
+            "eligible": 56,
+            "invalid": 12,
+            "predicted_risk_threshold": 0.6303073200826219,
+            "risk": 0.42857142857142855
+          },
+          "values": [
+            "avg16",
+            4.0
+          ]
+        },
+        {
+          "checks": {
+            "maximum_cluster_bootstrap_risk_upper95": false,
+            "maximum_observed_risk": false,
+            "minimum_accepted_cases": true,
+            "minimum_accepted_independent_groups": true
+          },
+          "key": "[\"avg16\",8.0]",
+          "passes": false,
+          "summary": {
+            "accepted": 28,
+            "accepted_independent_groups": 7,
+            "cluster_bootstrap_risk_upper95": 0.75,
+            "coverage": 0.5,
+            "eligible": 56,
+            "invalid": 12,
+            "predicted_risk_threshold": 0.6303073200826219,
+            "risk": 0.42857142857142855
+          },
+          "values": [
+            "avg16",
+            8.0
+          ]
+        }
+      ]
+    },
+    "passes": false
+  },
+  "content_sha256": "3288812e826e68e098ef1fe3db12d8b9b48192400a165e53ff770a6754a198ed",
+  "frozen_profile": {
+    "base_profile_content_sha256": "65239b44c66a8bfca80608b1544fd0c892cf8e3209805828a1623d85382eebb8",
+    "predicted_risk_threshold": 0.6303073200826219,
+    "strict_profile_content_sha256": "1bf6c553321f1957379b2ab7f896222bf9d28cce3cd0ff107267821c98f81ba1",
+    "supported_cells": [
+      {
+        "key": "[\"avg16\",16.0]",
+        "values": [
+          "avg16",
+          16.0
+        ]
+      },
+      {
+        "key": "[\"avg16\",4.0]",
+        "values": [
+          "avg16",
+          4.0
+        ]
+      },
+      {
+        "key": "[\"avg16\",8.0]",
+        "values": [
+          "avg16",
+          8.0
+        ]
+      }
+    ]
+  },
+  "per_source": [
+    {
+      "checks": {
+        "all_supported_cells_in_every_field": false,
+        "inherited_profile_audit_pass": false,
+        "required_independent_groups": true,
+        "zero_fields_with_any_accepted_failure": true,
+        "zero_invalid_accepted_emissions": true
+      },
+      "dataset_key": "Confocal_BPAE_R",
+      "field_event_summary": {
+        "accepted_emission_exact_ci_descriptive": null,
+        "accepted_emission_risk": null,
+        "accepted_emissions": 0,
+        "field_event_exact_ci": [
+          0.0,
+          0.40961639722500337
+        ],
+        "field_event_rate": 0.0,
+        "fields": [
+          {
+            "accepted": 0,
+            "any_accepted_failure": false,
+            "invalid": 0,
+            "reference_group_id": "Confocal_BPAE_R|fov16"
+          },
+          {
+            "accepted": 0,
+            "any_accepted_failure": false,
+            "invalid": 0,
+            "reference_group_id": "Confocal_BPAE_R|fov17"
+          },
+          {
+            "accepted": 0,
+            "any_accepted_failure": false,
+            "invalid": 0,
+            "reference_group_id": "Confocal_BPAE_R|fov19"
+          },
+          {
+            "accepted": 0,
+            "any_accepted_failure": false,
+            "invalid": 0,
+            "reference_group_id": "Confocal_BPAE_R|fov2"
+          },
+          {
+            "accepted": 0,
+            "any_accepted_failure": false,
+            "invalid": 0,
+            "reference_group_id": "Confocal_BPAE_R|fov3"
+          },
+          {
+            "accepted": 0,
+            "any_accepted_failure": false,
+            "invalid": 0,
+            "reference_group_id": "Confocal_BPAE_R|fov6"
+          },
+          {
+            "accepted": 0,
+            "any_accepted_failure": false,
+            "invalid": 0,
+            "reference_group_id": "Confocal_BPAE_R|fov7"
+          }
+        ],
+        "fields_with_any_accepted_failure": 0,
+        "independent_groups": 7,
+        "invalid_accepted_emissions": 0,
+        "zero_coverage": true
+      },
+      "inherited_profile_audit": {
+        "acquisition_qc_matched_count": {
+          "accepted": 0,
+          "boundary_tie_split": false,
+          "coverage": 0.0,
+          "deterministic_tie_break": "case_id",
+          "eligible": 420,
+          "invalid": 0,
+          "risk": null,
+          "target_accepted": 0,
+          "tie_robust_risk_bounds": null
+        },
+        "base_profile_content_sha256": "65239b44c66a8bfca80608b1544fd0c892cf8e3209805828a1623d85382eebb8",
+        "checks": {
+          "aurc_bootstrap_ci_lower_above_zero": false,
+          "every_supported_cell_passes": false,
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "maximum_observed_risk": false,
+          "minimum_coverage": false,
+          "minimum_independent_groups": true,
+          "minimum_invalid_acquisition_qc_emissions": false,
+          "minimum_relative_risk_reduction_vs_acquisition_qc": false,
+          "no_unregistered_supported_cell": true,
+          "positive_aurc_difference": false
+        },
+        "claim_boundary": {
+          "claim": "A conservative full-archive support profile can be compiled after retaining the failed v1.5 extension and before opening external transfer archives.",
+          "excluded_claims": [
+            "prospective confirmation within WideField_BPAE_R",
+            "cross-instrument or cross-structure transfer",
+            "physical-scale measurement",
+            "biological or clinical interpretation"
+          ],
+          "study_type": "computation_only_public_data_post_failure_development"
+        },
+        "conditional_profile_content_sha256": "1bf6c553321f1957379b2ab7f896222bf9d28cce3cd0ff107267821c98f81ba1",
+        "confirmation": {
+          "development_group_overlap": [],
+          "eligible_primary_cases": 420,
+          "independent_group_count": 7,
+          "independent_groups": [
+            "Confocal_BPAE_R|fov16",
+            "Confocal_BPAE_R|fov17",
+            "Confocal_BPAE_R|fov19",
+            "Confocal_BPAE_R|fov2",
+            "Confocal_BPAE_R|fov3",
+            "Confocal_BPAE_R|fov6",
+            "Confocal_BPAE_R|fov7"
+          ],
+          "source_receipt": {
+            "rows": {
+              "bytes": 7332881,
+              "path": "external_transfer_rows.jsonl",
+              "sha256": "2309b23dcf6facf9fc5406e571cc94c277822cd055fac0e3f3de912539672e39"
+            }
+          }
+        },
+        "content_sha256": "1081303f455f0e5afa0f7e808860f907ccb4ba998ab782e0de7acffbdebfc724",
+        "descriptive_strata": {
+          "acquisition_level": [
+            {
+              "accepted": 0,
+              "coverage": 0.0,
+              "eligible": 84,
+              "invalid": 0,
+              "risk": null,
+              "stratum": "avg16"
+            },
+            {
+              "accepted": 0,
+              "coverage": 0.0,
+              "eligible": 84,
+              "invalid": 0,
+              "risk": null,
+              "stratum": "avg2"
+            },
+            {
+              "accepted": 0,
+              "coverage": 0.0,
+              "eligible": 84,
+              "invalid": 0,
+              "risk": null,
+              "stratum": "avg4"
+            },
+            {
+              "accepted": 0,
+              "coverage": 0.0,
+              "eligible": 84,
+              "invalid": 0,
+              "risk": null,
+              "stratum": "avg8"
+            },
+            {
+              "accepted": 0,
+              "coverage": 0.0,
+              "eligible": 84,
+              "invalid": 0,
+              "risk": null,
+              "stratum": "raw"
+            }
+          ],
+          "acquisition_modality": [
+            {
+              "accepted": 0,
+              "coverage": 0.0,
+              "eligible": 420,
+              "invalid": 0,
+              "risk": null,
+              "stratum": "Confocal"
+            }
+          ],
+          "independent_group": [
+            {
+              "accepted": 0,
+              "coverage": 0.0,
+              "eligible": 60,
+              "invalid": 0,
+              "risk": null,
+              "stratum": "Confocal_BPAE_R|fov16"
+            },
+            {
+              "accepted": 0,
+              "coverage": 0.0,
+              "eligible": 60,
+              "invalid": 0,
+              "risk": null,
+              "stratum": "Confocal_BPAE_R|fov17"
+            },
+            {
+              "accepted": 0,
+              "coverage": 0.0,
+              "eligible": 60,
+              "invalid": 0,
+              "risk": null,
+              "stratum": "Confocal_BPAE_R|fov19"
+            },
+            {
+              "accepted": 0,
+              "coverage": 0.0,
+              "eligible": 60,
+              "invalid": 0,
+              "risk": null,
+              "stratum": "Confocal_BPAE_R|fov2"
+            },
+            {
+              "accepted": 0,
+              "coverage": 0.0,
+              "eligible": 60,
+              "invalid": 0,
+              "risk": null,
+              "stratum": "Confocal_BPAE_R|fov3"
+            },
+            {
+              "accepted": 0,
+              "coverage": 0.0,
+              "eligible": 60,
+              "invalid": 0,
+              "risk": null,
+              "stratum": "Confocal_BPAE_R|fov6"
+            },
+            {
+              "accepted": 0,
+              "coverage": 0.0,
+              "eligible": 60,
+              "invalid": 0,
+              "risk": null,
+              "stratum": "Confocal_BPAE_R|fov7"
+            }
+          ],
+          "requested_scale": [
+            {
+              "accepted": 0,
+              "coverage": 0.0,
+              "eligible": 140,
+              "invalid": 0,
+              "risk": null,
+              "stratum": "16.0"
+            },
+            {
+              "accepted": 0,
+              "coverage": 0.0,
+              "eligible": 140,
+              "invalid": 0,
+              "risk": null,
+              "stratum": "4.0"
+            },
+            {
+              "accepted": 0,
+              "coverage": 0.0,
+              "eligible": 140,
+              "invalid": 0,
+              "risk": null,
+              "stratum": "8.0"
+            }
+          ]
+        },
+        "primary_operating_point": {
+          "accepted": 0,
+          "accepted_independent_groups": 0,
+          "cluster_bootstrap_risk_upper95": null,
+          "coverage": 0.0,
+          "eligible": 420,
+          "invalid": 0,
+          "predicted_risk_threshold": 0.6303073200826219,
+          "risk": null
+        },
+        "protocol_id": "fmd-full-archive-strict-support-v1-6",
+        "relative_risk_reduction_vs_acquisition_qc": {
+          "conservative_lower_bound_over_boundary_tie": null,
+          "deterministic_tie_break_estimate": null
+        },
+        "risk_coverage": {
+          "acquisition_qc_metrics": {
+            "brier_score": 0.9452380952380952,
+            "expected_calibration_error": 0.9452380952380952,
+            "logarithmic_loss": 19.588420353615835,
+            "risk_coverage_auc": 0.02738095238095238
+          },
+          "cluster_bootstrap_aurc_difference": {
+            "bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "bootstrap_probability_positive": 0.0,
+            "definition": "acquisition_qc_AURC_minus_conditional_primary_AURC; positive favors NOSTOS",
+            "draws": 5000,
+            "independent_groups": 7,
+            "observed": 0.0,
+            "seed": 26083164
+          },
+          "primary_metrics": {
+            "brier_score": 0.9452380952380952,
+            "expected_calibration_error": 0.9452380952380952,
+            "logarithmic_loss": 19.588420353615835,
+            "risk_coverage_auc": 0.02738095238095238
+          }
+        },
+        "schema_version": "nostos-conditional-support-confirmation-audit/1.0",
+        "status": "fail",
+        "supported_cell_audit": [
+          {
+            "checks": {
+              "maximum_cluster_bootstrap_risk_upper95": false,
+              "maximum_observed_risk": false,
+              "minimum_accepted_cases": false,
+              "minimum_accepted_independent_groups": false
+            },
+            "key": "[\"avg16\",16.0]",
+            "passes": false,
+            "summary": {
+              "accepted": 0,
+              "accepted_independent_groups": 0,
+              "cluster_bootstrap_risk_upper95": null,
+              "coverage": 0.0,
+              "eligible": 28,
+              "invalid": 0,
+              "predicted_risk_threshold": 0.6303073200826219,
+              "risk": null
+            },
+            "values": [
+              "avg16",
+              16.0
+            ]
+          },
+          {
+            "checks": {
+              "maximum_cluster_bootstrap_risk_upper95": false,
+              "maximum_observed_risk": false,
+              "minimum_accepted_cases": false,
+              "minimum_accepted_independent_groups": false
+            },
+            "key": "[\"avg16\",4.0]",
+            "passes": false,
+            "summary": {
+              "accepted": 0,
+              "accepted_independent_groups": 0,
+              "cluster_bootstrap_risk_upper95": null,
+              "coverage": 0.0,
+              "eligible": 28,
+              "invalid": 0,
+              "predicted_risk_threshold": 0.6303073200826219,
+              "risk": null
+            },
+            "values": [
+              "avg16",
+              4.0
+            ]
+          },
+          {
+            "checks": {
+              "maximum_cluster_bootstrap_risk_upper95": false,
+              "maximum_observed_risk": false,
+              "minimum_accepted_cases": false,
+              "minimum_accepted_independent_groups": false
+            },
+            "key": "[\"avg16\",8.0]",
+            "passes": false,
+            "summary": {
+              "accepted": 0,
+              "accepted_independent_groups": 0,
+              "cluster_bootstrap_risk_upper95": null,
+              "coverage": 0.0,
+              "eligible": 28,
+              "invalid": 0,
+              "predicted_risk_threshold": 0.6303073200826219,
+              "risk": null
+            },
+            "values": [
+              "avg16",
+              8.0
+            ]
+          }
+        ]
+      },
+      "missing_supported_cells_by_field": {
+        "Confocal_BPAE_R|fov16": [
+          "[\"avg16\",16.0]",
+          "[\"avg16\",4.0]",
+          "[\"avg16\",8.0]"
+        ],
+        "Confocal_BPAE_R|fov17": [
+          "[\"avg16\",16.0]",
+          "[\"avg16\",4.0]",
+          "[\"avg16\",8.0]"
+        ],
+        "Confocal_BPAE_R|fov19": [
+          "[\"avg16\",16.0]",
+          "[\"avg16\",4.0]",
+          "[\"avg16\",8.0]"
+        ],
+        "Confocal_BPAE_R|fov2": [
+          "[\"avg16\",16.0]",
+          "[\"avg16\",4.0]",
+          "[\"avg16\",8.0]"
+        ],
+        "Confocal_BPAE_R|fov3": [
+          "[\"avg16\",16.0]",
+          "[\"avg16\",4.0]",
+          "[\"avg16\",8.0]"
+        ],
+        "Confocal_BPAE_R|fov6": [
+          "[\"avg16\",16.0]",
+          "[\"avg16\",4.0]",
+          "[\"avg16\",8.0]"
+        ],
+        "Confocal_BPAE_R|fov7": [
+          "[\"avg16\",16.0]",
+          "[\"avg16\",4.0]",
+          "[\"avg16\",8.0]"
+        ]
+      },
+      "passes": false
+    },
+    {
+      "checks": {
+        "all_supported_cells_in_every_field": true,
+        "inherited_profile_audit_pass": false,
+        "required_independent_groups": true,
+        "zero_fields_with_any_accepted_failure": false,
+        "zero_invalid_accepted_emissions": false
+      },
+      "dataset_key": "WideField_BPAE_G",
+      "field_event_summary": {
+        "accepted_emission_exact_ci_descriptive": [
+          0.3210789143084083,
+          0.5412490305991046
+        ],
+        "accepted_emission_risk": 0.42857142857142855,
+        "accepted_emissions": 84,
+        "field_event_exact_ci": [
+          0.09898827844250789,
+          0.8159484323599169
+        ],
+        "field_event_rate": 0.42857142857142855,
+        "fields": [
+          {
+            "accepted": 12,
+            "any_accepted_failure": true,
+            "invalid": 12,
+            "reference_group_id": "WideField_BPAE_G|fov1"
+          },
+          {
+            "accepted": 12,
+            "any_accepted_failure": true,
+            "invalid": 12,
+            "reference_group_id": "WideField_BPAE_G|fov11"
+          },
+          {
+            "accepted": 12,
+            "any_accepted_failure": false,
+            "invalid": 0,
+            "reference_group_id": "WideField_BPAE_G|fov15"
+          },
+          {
+            "accepted": 12,
+            "any_accepted_failure": false,
+            "invalid": 0,
+            "reference_group_id": "WideField_BPAE_G|fov16"
+          },
+          {
+            "accepted": 12,
+            "any_accepted_failure": false,
+            "invalid": 0,
+            "reference_group_id": "WideField_BPAE_G|fov19"
+          },
+          {
+            "accepted": 12,
+            "any_accepted_failure": false,
+            "invalid": 0,
+            "reference_group_id": "WideField_BPAE_G|fov3"
+          },
+          {
+            "accepted": 12,
+            "any_accepted_failure": true,
+            "invalid": 12,
+            "reference_group_id": "WideField_BPAE_G|fov5"
+          }
+        ],
+        "fields_with_any_accepted_failure": 3,
+        "independent_groups": 7,
+        "invalid_accepted_emissions": 36,
+        "zero_coverage": false
+      },
+      "inherited_profile_audit": {
+        "acquisition_qc_matched_count": {
+          "accepted": 84,
+          "boundary_tie_split": false,
+          "coverage": 0.2,
+          "deterministic_tie_break": "case_id",
+          "eligible": 420,
+          "invalid": 42,
+          "risk": 0.5,
+          "target_accepted": 84,
+          "tie_robust_risk_bounds": {
+            "best_case_invalid": 42,
+            "best_case_risk": 0.5,
+            "boundary_calibrated_risk": 0.4595882150689408,
+            "boundary_tie_cases": 3,
+            "boundary_tie_invalid": 3,
+            "cases_required_from_boundary_tie": 3,
+            "strictly_below_boundary": 81,
+            "worst_case_invalid": 42,
+            "worst_case_risk": 0.5
+          }
+        },
+        "base_profile_content_sha256": "65239b44c66a8bfca80608b1544fd0c892cf8e3209805828a1623d85382eebb8",
+        "checks": {
+          "aurc_bootstrap_ci_lower_above_zero": true,
+          "every_supported_cell_passes": false,
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "maximum_observed_risk": false,
+          "minimum_coverage": true,
+          "minimum_independent_groups": true,
+          "minimum_invalid_acquisition_qc_emissions": true,
+          "minimum_relative_risk_reduction_vs_acquisition_qc": false,
+          "no_unregistered_supported_cell": true,
+          "positive_aurc_difference": true
+        },
+        "claim_boundary": {
+          "claim": "A conservative full-archive support profile can be compiled after retaining the failed v1.5 extension and before opening external transfer archives.",
+          "excluded_claims": [
+            "prospective confirmation within WideField_BPAE_R",
+            "cross-instrument or cross-structure transfer",
+            "physical-scale measurement",
+            "biological or clinical interpretation"
+          ],
+          "study_type": "computation_only_public_data_post_failure_development"
+        },
+        "conditional_profile_content_sha256": "1bf6c553321f1957379b2ab7f896222bf9d28cce3cd0ff107267821c98f81ba1",
+        "confirmation": {
+          "development_group_overlap": [],
+          "eligible_primary_cases": 420,
+          "independent_group_count": 7,
+          "independent_groups": [
+            "WideField_BPAE_G|fov1",
+            "WideField_BPAE_G|fov11",
+            "WideField_BPAE_G|fov15",
+            "WideField_BPAE_G|fov16",
+            "WideField_BPAE_G|fov19",
+            "WideField_BPAE_G|fov3",
+            "WideField_BPAE_G|fov5"
+          ],
+          "source_receipt": {
+            "rows": {
+              "bytes": 7332881,
+              "path": "external_transfer_rows.jsonl",
+              "sha256": "2309b23dcf6facf9fc5406e571cc94c277822cd055fac0e3f3de912539672e39"
+            }
+          }
+        },
+        "content_sha256": "cc1d57738777c11c8bd3f309db87bab2504d23fd9b2b59251205a18a55cfb512",
+        "descriptive_strata": {
+          "acquisition_level": [
+            {
+              "accepted": 84,
+              "coverage": 1.0,
+              "eligible": 84,
+              "invalid": 36,
+              "risk": 0.42857142857142855,
+              "stratum": "avg16"
+            },
+            {
+              "accepted": 0,
+              "coverage": 0.0,
+              "eligible": 84,
+              "invalid": 0,
+              "risk": null,
+              "stratum": "avg2"
+            },
+            {
+              "accepted": 0,
+              "coverage": 0.0,
+              "eligible": 84,
+              "invalid": 0,
+              "risk": null,
+              "stratum": "avg4"
+            },
+            {
+              "accepted": 0,
+              "coverage": 0.0,
+              "eligible": 84,
+              "invalid": 0,
+              "risk": null,
+              "stratum": "avg8"
+            },
+            {
+              "accepted": 0,
+              "coverage": 0.0,
+              "eligible": 84,
+              "invalid": 0,
+              "risk": null,
+              "stratum": "raw"
+            }
+          ],
+          "acquisition_modality": [
+            {
+              "accepted": 84,
+              "coverage": 0.2,
+              "eligible": 420,
+              "invalid": 36,
+              "risk": 0.42857142857142855,
+              "stratum": "WideField"
+            }
+          ],
+          "independent_group": [
+            {
+              "accepted": 12,
+              "coverage": 0.2,
+              "eligible": 60,
+              "invalid": 12,
+              "risk": 1.0,
+              "stratum": "WideField_BPAE_G|fov1"
+            },
+            {
+              "accepted": 12,
+              "coverage": 0.2,
+              "eligible": 60,
+              "invalid": 12,
+              "risk": 1.0,
+              "stratum": "WideField_BPAE_G|fov11"
+            },
+            {
+              "accepted": 12,
+              "coverage": 0.2,
+              "eligible": 60,
+              "invalid": 0,
+              "risk": 0.0,
+              "stratum": "WideField_BPAE_G|fov15"
+            },
+            {
+              "accepted": 12,
+              "coverage": 0.2,
+              "eligible": 60,
+              "invalid": 0,
+              "risk": 0.0,
+              "stratum": "WideField_BPAE_G|fov16"
+            },
+            {
+              "accepted": 12,
+              "coverage": 0.2,
+              "eligible": 60,
+              "invalid": 0,
+              "risk": 0.0,
+              "stratum": "WideField_BPAE_G|fov19"
+            },
+            {
+              "accepted": 12,
+              "coverage": 0.2,
+              "eligible": 60,
+              "invalid": 0,
+              "risk": 0.0,
+              "stratum": "WideField_BPAE_G|fov3"
+            },
+            {
+              "accepted": 12,
+              "coverage": 0.2,
+              "eligible": 60,
+              "invalid": 12,
+              "risk": 1.0,
+              "stratum": "WideField_BPAE_G|fov5"
+            }
+          ],
+          "requested_scale": [
+            {
+              "accepted": 28,
+              "coverage": 0.2,
+              "eligible": 140,
+              "invalid": 12,
+              "risk": 0.42857142857142855,
+              "stratum": "16.0"
+            },
+            {
+              "accepted": 28,
+              "coverage": 0.2,
+              "eligible": 140,
+              "invalid": 12,
+              "risk": 0.42857142857142855,
+              "stratum": "4.0"
+            },
+            {
+              "accepted": 28,
+              "coverage": 0.2,
+              "eligible": 140,
+              "invalid": 12,
+              "risk": 0.42857142857142855,
+              "stratum": "8.0"
+            }
+          ]
+        },
+        "primary_operating_point": {
+          "accepted": 84,
+          "accepted_independent_groups": 7,
+          "cluster_bootstrap_risk_upper95": 0.7142857142857143,
+          "coverage": 0.2,
+          "eligible": 420,
+          "invalid": 36,
+          "predicted_risk_threshold": 0.6303073200826219,
+          "risk": 0.42857142857142855
+        },
+        "protocol_id": "fmd-full-archive-strict-support-v1-6",
+        "relative_risk_reduction_vs_acquisition_qc": {
+          "conservative_lower_bound_over_boundary_tie": 0.1428571428571429,
+          "deterministic_tie_break_estimate": 0.1428571428571429
+        },
+        "risk_coverage": {
+          "acquisition_qc_metrics": {
+            "brier_score": 0.11626661834165503,
+            "expected_calibration_error": 0.1558157104507337,
+            "logarithmic_loss": 0.34609590734729256,
+            "risk_coverage_auc": 0.6836324884531191
+          },
+          "cluster_bootstrap_aurc_difference": {
+            "bootstrap_ci95": [
+              0.04136751195313706,
+              0.19968057034978665
+            ],
+            "bootstrap_probability_positive": 0.9892,
+            "definition": "acquisition_qc_AURC_minus_conditional_primary_AURC; positive favors NOSTOS",
+            "draws": 5000,
+            "independent_groups": 7,
+            "observed": 0.13217035187048587,
+            "seed": 26083164
+          },
+          "primary_metrics": {
+            "brier_score": 0.06081134218220586,
+            "expected_calibration_error": 0.07284946143372245,
+            "logarithmic_loss": 0.16610841163043558,
+            "risk_coverage_auc": 0.5514621365826332
+          }
+        },
+        "schema_version": "nostos-conditional-support-confirmation-audit/1.0",
+        "status": "fail",
+        "supported_cell_audit": [
+          {
+            "checks": {
+              "maximum_cluster_bootstrap_risk_upper95": false,
+              "maximum_observed_risk": false,
+              "minimum_accepted_cases": true,
+              "minimum_accepted_independent_groups": true
+            },
+            "key": "[\"avg16\",16.0]",
+            "passes": false,
+            "summary": {
+              "accepted": 28,
+              "accepted_independent_groups": 7,
+              "cluster_bootstrap_risk_upper95": 0.7142857142857143,
+              "coverage": 1.0,
+              "eligible": 28,
+              "invalid": 12,
+              "predicted_risk_threshold": 0.6303073200826219,
+              "risk": 0.42857142857142855
+            },
+            "values": [
+              "avg16",
+              16.0
+            ]
+          },
+          {
+            "checks": {
+              "maximum_cluster_bootstrap_risk_upper95": false,
+              "maximum_observed_risk": false,
+              "minimum_accepted_cases": true,
+              "minimum_accepted_independent_groups": true
+            },
+            "key": "[\"avg16\",4.0]",
+            "passes": false,
+            "summary": {
+              "accepted": 28,
+              "accepted_independent_groups": 7,
+              "cluster_bootstrap_risk_upper95": 0.7142857142857143,
+              "coverage": 1.0,
+              "eligible": 28,
+              "invalid": 12,
+              "predicted_risk_threshold": 0.6303073200826219,
+              "risk": 0.42857142857142855
+            },
+            "values": [
+              "avg16",
+              4.0
+            ]
+          },
+          {
+            "checks": {
+              "maximum_cluster_bootstrap_risk_upper95": false,
+              "maximum_observed_risk": false,
+              "minimum_accepted_cases": true,
+              "minimum_accepted_independent_groups": true
+            },
+            "key": "[\"avg16\",8.0]",
+            "passes": false,
+            "summary": {
+              "accepted": 28,
+              "accepted_independent_groups": 7,
+              "cluster_bootstrap_risk_upper95": 0.7142857142857143,
+              "coverage": 1.0,
+              "eligible": 28,
+              "invalid": 12,
+              "predicted_risk_threshold": 0.6303073200826219,
+              "risk": 0.42857142857142855
+            },
+            "values": [
+              "avg16",
+              8.0
+            ]
+          }
+        ]
+      },
+      "missing_supported_cells_by_field": {},
+      "passes": false
+    }
+  ],
+  "protocol_id": "fmd-strict-external-transfer-v1-6",
+  "schema_version": "nostos-fmd-strict-external-transfer-audit/1.0",
+  "source_receipt": {
+    "rows": {
+      "bytes": 7332881,
+      "path": "external_transfer_rows.jsonl",
+      "sha256": "2309b23dcf6facf9fc5406e571cc94c277822cd055fac0e3f3de912539672e39"
+    }
+  },
+  "status": "fail"
+}

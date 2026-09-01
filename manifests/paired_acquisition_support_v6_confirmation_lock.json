@@ -1,0 +1,236 @@
+{
+  "schema_version": "nostos-paired-acquisition-v6-confirmation-lock/1.0",
+  "locked_at_utc": "2026-08-29T03:48:31Z",
+  "status": "locked_before_any_v6_confirmation_archive_download_or_access",
+  "protocol_version": "nostos-paired-acquisition-support/6.0",
+  "implementation_sha256": "03db51eecd8ca2babc342a037275f27b1e695fffbe663c4501d0a991dbe6542c",
+  "config": {
+    "path": "configs/paired_acquisition_support_v6.locked.json",
+    "bytes": 8867,
+    "sha256": "967aa36afe94c296ff94e17fdc933a5140dbfa7dd5274e855363453eb26dd3f6"
+  },
+  "profile": {
+    "path": "configs/biosr_widefield_measurement_profile_v2.locked.json",
+    "bytes": 5082,
+    "sha256": "d7a911361d436f1587050e69e010202c016db2607c41d601eeb6cc86f9b1207a"
+  },
+  "development_gate": {
+    "status": "development_pass_pending_implementation_freeze",
+    "reference_fields": 75,
+    "paired_acquisitions": 558,
+    "full_contract": {
+      "eligible": 4823,
+      "accepted": 4436,
+      "coverage": 0.9197594857972217,
+      "invalid": 94,
+      "risk": 0.021190261496844005,
+      "cluster_bootstrap_risk_upper95": 0.025953663389596447
+    },
+    "thresholds": {
+      "hessian_response_shape": 0.4566275011141736,
+      "spectral_order": 0.4566275011141736,
+      "tensor_coherence": 0.30956540595765564,
+      "tensor_orientation": 0.9964578203269273
+    },
+    "structure_specific_thresholds": false
+  },
+  "confirmation": {
+    "structures": [
+      "Microtubules",
+      "F-actin_linear",
+      "F-actin_nonlinear"
+    ],
+    "fields_per_structure": 8,
+    "field_selection_rule": "Sort all indexed reference_group_id values by sha256('NOSTOS-v6-initial-confirmation|' + structure + '|' + reference_group_id) and select the first eight. Selection cannot use pixels, dimensions, intensity, registration or endpoint outcomes.",
+    "threshold_refitting_permitted": false,
+    "endpoint_addition_or_removal_permitted": false,
+    "archive_integrity_source": "manifests/biosr_paired_acquisition_sources.json locked before development"
+  },
+  "access_state": {
+    "CCPs_and_ER": "development_closed",
+    "Microtubules": "sealed_not_downloaded_not_listed_not_decoded_before_this_lock",
+    "F_actin_linear": "sealed_not_downloaded_not_listed_not_decoded_before_this_lock",
+    "F_actin_nonlinear": "sealed_not_downloaded_not_listed_not_decoded_before_this_lock",
+    "authorized_after_lock": "download and integrity verification of all three archives; index all fields for hash-only selection; decode only the selected eight fields per structure"
+  },
+  "files": [
+    {
+      "path": "configs/biosr_widefield_measurement_profile_v2.locked.json",
+      "bytes": 5082,
+      "sha256": "d7a911361d436f1587050e69e010202c016db2607c41d601eeb6cc86f9b1207a"
+    },
+    {
+      "path": "configs/paired_acquisition_support_v6.locked.json",
+      "bytes": 8867,
+      "sha256": "967aa36afe94c296ff94e17fdc933a5140dbfa7dd5274e855363453eb26dd3f6"
+    },
+    {
+      "path": "configs/paired_acquisition_support_v6_development.json",
+      "bytes": 4571,
+      "sha256": "f2001aa5200caf69125476029f8cb90e002a347af112dc1f4bfe7d1924a4b83e"
+    },
+    {
+      "path": "docs/NOSTOS0_V5_COMPARATOR_SEMANTICS_ADDENDUM.md",
+      "bytes": 3075,
+      "sha256": "e8059e810fc517592096143d8f2fd9c85d75149f08e8b71a40ceec325e709572"
+    },
+    {
+      "path": "manifests/biosr_paired_acquisition_sources.json",
+      "bytes": 2703,
+      "sha256": "0534c1835d9f1af0137dc2816415b7317cf1e7d0a02adcb720aac0d4d76fc3d0"
+    },
+    {
+      "path": "manifests/paired_acquisition_support_threshold_failure_receipt_v5.json",
+      "bytes": 8746,
+      "sha256": "ea1f2a476447b7dbc94ca5f8528fdd4ee6379954a260d9800a838dbc5057a9f9"
+    },
+    {
+      "path": "manifests/paired_acquisition_support_v5_comparator_semantics_addendum_receipt.json",
+      "bytes": 2198,
+      "sha256": "82eb827eb4427ceb4eb3b05501bfa08149ac328d0afcf6a6e870f22c0206db30"
+    },
+    {
+      "path": "outputs/nostos0-biosr-v6-family-calibration-development/candidate_benchmark.json",
+      "bytes": 46650,
+      "sha256": "9c0fc1b0d86d6a88a3878fc378a83d4d633f6a9e3f5a1fc0336a0161db9614da"
+    },
+    {
+      "path": "outputs/nostos0-biosr-v6-family-threshold-development/DEVELOPMENT_VERDICT.md",
+      "bytes": 2048,
+      "sha256": "52110d23d60db44fff6c583a56fc7bdd9c83afbf58cd66297a8f5fe284748450"
+    },
+    {
+      "path": "outputs/nostos0-biosr-v6-family-threshold-development/family_policy_comparison.csv",
+      "bytes": 4711,
+      "sha256": "14ce055f4ba041efdf83750cd341da37d351bfb7095122623fd572d40b9345dd"
+    },
+    {
+      "path": "outputs/nostos0-biosr-v6-family-threshold-development/family_threshold_calibration.json",
+      "bytes": 40824,
+      "sha256": "e32b7238d97531c53569d388fc0106d5866e45824c240a917c5a7bb3e6c302a2"
+    },
+    {
+      "path": "outputs/nostos0-biosr-v6-family-threshold-development/family_thresholds_candidate.json",
+      "bytes": 833,
+      "sha256": "edf1b1d08c51f05a06507d97a113ab619d9aba2ce2a0d1600d0613dcc80f35b7"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 2884,
+      "sha256": "9204767675b912b7f1ece4469799dc1009fa3e2afd966d7956bf6337faa5844c"
+    },
+    {
+      "path": "scripts/audit_biosr_v6_confirmation.py",
+      "bytes": 11341,
+      "sha256": "d361ea6f8960c20f488fe1d938a1a653563ae6a8909d05846d7bce0ab01becf0"
+    },
+    {
+      "path": "scripts/build_biosr_v6_confirmation_lock.py",
+      "bytes": 9011,
+      "sha256": "ae35afd413b32758cd90a0fd6a02ab8693d5b38767a4c2d93e1b7bf34ed4445c"
+    },
+    {
+      "path": "scripts/calibrate_biosr_v6_family_thresholds.py",
+      "bytes": 12002,
+      "sha256": "88722b98136231c2c1a63038d931e3e3f0638bafe5870b355d929a26df108bcb"
+    },
+    {
+      "path": "scripts/develop_biosr_v6_family_calibration.py",
+      "bytes": 14141,
+      "sha256": "06394e9c8b88bc782cb86736086dbfdf01db8aeb920ae63cd7180ed9d85c5b50"
+    },
+    {
+      "path": "scripts/run_biosr_paired_support_v6.py",
+      "bytes": 17038,
+      "sha256": "37e575420216a0e9d0943dcf091472ce36e38a8f248df7ee81cef3ea3110312e"
+    },
+    {
+      "path": "src/nostos/core/qc.py",
+      "bytes": 2241,
+      "sha256": "9e9fc39a35a2c000cf5ad47f07595c2052e327bad9c08b42b62011429e272353"
+    },
+    {
+      "path": "src/nostos/features/intrinsic_variogram.py",
+      "bytes": 10897,
+      "sha256": "ca2a2e81321470adcf64f6054fc78bc91e4d901708e0324d6e749214df16ec17"
+    },
+    {
+      "path": "src/nostos/features/response_modules.py",
+      "bytes": 13184,
+      "sha256": "21902711c43675920380abb5762047d63911440cc78f35f14a5fc7d252191a85"
+    },
+    {
+      "path": "src/nostos/features/spatial_fft.py",
+      "bytes": 7461,
+      "sha256": "2f18db7a1ded0e17ae091a53ddca0b44a37a5dbabd12ee1c61f2518deac23f68"
+    },
+    {
+      "path": "src/nostos/validation/confirmation_v6.py",
+      "bytes": 12228,
+      "sha256": "33df65a92189e4198c2ffedd28f036c13cf78c07e1877f9de9fd3f42b7fe1a6a"
+    },
+    {
+      "path": "src/nostos/validation/family_risk_calibration.py",
+      "bytes": 14258,
+      "sha256": "8ae6fd73c5360ff53bab37541604bbdb065ca841e59be98f36ea0a4fa426dac2"
+    },
+    {
+      "path": "src/nostos/validation/metrics.py",
+      "bytes": 1785,
+      "sha256": "74e16c4479a6e5cb1c35246d70a2f3b1ab491627e8a815a3c4c429d1d759962e"
+    },
+    {
+      "path": "src/nostos/validation/paired_acquisition_support.py",
+      "bytes": 49810,
+      "sha256": "101ebbe1bceafa8916511560e3c5bdb8a42d0b9eded76d043fddec3465ede3e0"
+    },
+    {
+      "path": "src/nostos/validation/selective_policy_v6.py",
+      "bytes": 11665,
+      "sha256": "465c25daa2040f3d610d31c447b5b1eef0e94fe221d5e3161e22004a24a7e641"
+    },
+    {
+      "path": "tests/test_biosr_profile_v2.py",
+      "bytes": 599,
+      "sha256": "b9f70a0b4be532d10308721c42fbcbdc975fd3918b86ddbf6f3471c9eaf08d85"
+    },
+    {
+      "path": "tests/test_biosr_v6_freeze_contract.py",
+      "bytes": 3118,
+      "sha256": "1476be9f6b534c7bfcd7da6da7d13e07a0822fa570a23009849fa168a6d20fd5"
+    },
+    {
+      "path": "tests/test_confirmation_v6.py",
+      "bytes": 3067,
+      "sha256": "0d9b7838473e42fc1a14e6a37bab7405bcb4599abcea3364e3716019efe4e583"
+    },
+    {
+      "path": "tests/test_family_risk_calibration.py",
+      "bytes": 3794,
+      "sha256": "d20f6184b0b5449847d169e582de65980d2815169927baf31702947a9667f223"
+    },
+    {
+      "path": "tests/test_intrinsic_variogram.py",
+      "bytes": 3650,
+      "sha256": "90ede72dd3dff245121216157b726cbbd0a283adfc9e65edd717e33c27d0576c"
+    },
+    {
+      "path": "tests/test_selective_policy_v6.py",
+      "bytes": 2808,
+      "sha256": "a753bfbd55443f84291eabd245a6410932b93a8e337476659ecf05d77cf492cc"
+    },
+    {
+      "path": "uv.lock",
+      "bytes": 266139,
+      "sha256": "48b9cd1ba22e808fa8ec60105551c1ad6c9549abdf4df44c9ed2c5a897b1efb1"
+    }
+  ],
+  "verification": {
+    "pytest_command": "uv run --frozen pytest -q",
+    "pytest_result": "242 passed, 4 skipped, 12 dependency deprecation warnings",
+    "pytest_exit_code": 0,
+    "compile_command": "uv run --frozen python -m compileall -q src scripts",
+    "compile_exit_code": 0
+  },
+  "claim_boundary": "Paired-acquisition support for predeclared structural measurements relative to registered high-resolution references; not image restoration, biological phenotype inference, diagnosis, clinical validity, diffraction-limit estimation, or proof that the reference acquisition is itself ground-truth biology."
+}

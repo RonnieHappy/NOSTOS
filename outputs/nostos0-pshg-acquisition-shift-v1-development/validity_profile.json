@@ -1,0 +1,191 @@
+{
+  "schema_version": "nostos-pshg-acquisition-shift-profile/1.0",
+  "protocol_version": "nostos-pshg-acquisition-shift/1.0",
+  "protocol_sha256": "3fd79e499b11477e16d3e238f57227456f076554227a639b2c15bd2efdd7b56e",
+  "config_sha256": "901cbc6e847d17e218dba94ae638067564ed86f7a59e8e8e6469f7311051492f",
+  "split": {
+    "development": [
+      "breast_37",
+      "breast_46",
+      "breast_2",
+      "breast_27",
+      "breast_1",
+      "breast_8",
+      "breast_29",
+      "breast_6",
+      "breast_11",
+      "breast_42",
+      "breast_26",
+      "breast_38",
+      "breast_12",
+      "breast_17",
+      "breast_39",
+      "breast_25",
+      "breast_47",
+      "breast_16",
+      "breast_28",
+      "breast_23",
+      "breast_4",
+      "breast_43",
+      "breast_9",
+      "breast_18"
+    ],
+    "confirmation": [
+      "breast_15",
+      "breast_21",
+      "breast_31",
+      "breast_3",
+      "breast_24",
+      "breast_30",
+      "breast_40",
+      "breast_34",
+      "breast_44",
+      "breast_14",
+      "breast_41",
+      "breast_13",
+      "breast_35",
+      "breast_10",
+      "breast_32",
+      "breast_22",
+      "breast_45",
+      "breast_36",
+      "breast_5",
+      "breast_33",
+      "breast_48",
+      "breast_20",
+      "breast_19",
+      "breast_7"
+    ]
+  },
+  "policies": {
+    "acquisition_qc": [
+      "acquisition_qc"
+    ],
+    "endpoint_qc": [
+      "acquisition_qc",
+      "coherence"
+    ],
+    "without_scale_consistency": [
+      "acquisition_qc",
+      "coherence",
+      "split_stack"
+    ],
+    "without_split_consistency": [
+      "acquisition_qc",
+      "coherence",
+      "scale_consistency"
+    ],
+    "full_contract": [
+      "acquisition_qc",
+      "coherence",
+      "scale_consistency",
+      "split_stack"
+    ]
+  },
+  "risk_maps": {
+    "acquisition_qc": {
+      "method": "quantile_binned_jeffreys_isotonic",
+      "x_thresholds": [
+        0.028677048867476258,
+        0.20965278476390573
+      ],
+      "y_thresholds": [
+        0.20491803278688525,
+        0.20491803278688525
+      ],
+      "training_cases": 360,
+      "training_invalid": 72,
+      "bins": 6,
+      "prior_alpha": 0.5,
+      "prior_beta": 0.5
+    },
+    "endpoint_qc": {
+      "method": "quantile_binned_jeffreys_isotonic",
+      "x_thresholds": [
+        0.17369854123922435,
+        0.22337987899660877,
+        0.34783925703502144
+      ],
+      "y_thresholds": [
+        0.10983606557377049,
+        0.10983606557377049,
+        0.680327868852459
+      ],
+      "training_cases": 360,
+      "training_invalid": 72,
+      "bins": 6,
+      "prior_alpha": 0.5,
+      "prior_beta": 0.5
+    },
+    "without_scale_consistency": {
+      "method": "quantile_binned_jeffreys_isotonic",
+      "x_thresholds": [
+        0.17369854123922435,
+        0.20422179838171536,
+        0.22633184909047627,
+        0.48938017709096865
+      ],
+      "y_thresholds": [
+        0.11065573770491802,
+        0.11065573770491802,
+        0.12295081967213115,
+        0.6639344262295082
+      ],
+      "training_cases": 360,
+      "training_invalid": 72,
+      "bins": 6,
+      "prior_alpha": 0.5,
+      "prior_beta": 0.5
+    },
+    "without_split_consistency": {
+      "method": "quantile_binned_jeffreys_isotonic",
+      "x_thresholds": [
+        0.17619119538704686,
+        0.18731636517399622,
+        0.20174736006436353,
+        0.22144364281192372,
+        0.25834100348218186,
+        0.3946446296217368
+      ],
+      "y_thresholds": [
+        0.00819672131147541,
+        0.00819672131147541,
+        0.040983606557377046,
+        0.07377049180327869,
+        0.28688524590163933,
+        0.8114754098360656
+      ],
+      "training_cases": 360,
+      "training_invalid": 72,
+      "bins": 6,
+      "prior_alpha": 0.5,
+      "prior_beta": 0.5
+    },
+    "full_contract": {
+      "method": "quantile_binned_jeffreys_isotonic",
+      "x_thresholds": [
+        0.17619119538704686,
+        0.18731636517399622,
+        0.2019388617760081,
+        0.22168004684993894,
+        0.2593807678845941,
+        0.5302612217872934
+      ],
+      "y_thresholds": [
+        0.00819672131147541,
+        0.00819672131147541,
+        0.040983606557377046,
+        0.07377049180327869,
+        0.28688524590163933,
+        0.8114754098360656
+      ],
+      "training_cases": 360,
+      "training_invalid": 72,
+      "bins": 6,
+      "prior_alpha": 0.5,
+      "prior_beta": 0.5
+    }
+  },
+  "maximum_predicted_risk": 0.15,
+  "reference_values_available_at_deployment": false
+}

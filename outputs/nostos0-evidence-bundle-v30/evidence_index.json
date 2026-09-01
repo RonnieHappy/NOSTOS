@@ -1,0 +1,1135 @@
+{
+  "bundle_version": "nostos0-evidence-index/1.1",
+  "status": "complete_index",
+  "project_root": "<PROJECT_ROOT>",
+  "entries": [
+    {
+      "identifier": "synthetic_truth",
+      "path": "outputs/nostos0-synthetic-v1/validation.json",
+      "sha256": "f406cce0826032ceb5d5146dc7e7181144ea7dd492ba2b950bd7abc9b98c146b",
+      "bytes": 11493,
+      "protocol_version": "nostos-synthetic/1.1",
+      "reported_status": "pass",
+      "evidence_level": "synthetic_validation",
+      "interpretation": "Analytic recovery and perturbation gates."
+    },
+    {
+      "identifier": "module_perturbations",
+      "path": "outputs/nostos0-module-perturbations-v1/module_perturbation_matrix.json",
+      "sha256": "b8de6dacb398b20ba320f3163b4d5d43d5178ed5d5dda23e25c70f47463d44fe",
+      "bytes": 7488,
+      "protocol_version": "nostos-module-perturbations/1.0",
+      "reported_status": "pass",
+      "evidence_level": "synthetic_validation",
+      "interpretation": "Per-module invariance and sensitivity matrix."
+    },
+    {
+      "identifier": "figure1_traceability",
+      "path": "figures/nostos0/figure_1_response_geometry_reference.manifest.json",
+      "sha256": "4e1a47f6b2002a9f7ce546d24fec735173997dc0941dc42dd79b3ef92359633c",
+      "bytes": 3821,
+      "protocol_version": "nostos0-figure1/2.0",
+      "reported_status": "generated_from_traceable_sources",
+      "evidence_level": "figure_provenance",
+      "interpretation": "Figure 1 is deterministically generated from hash-locked public microscopy, micro-CT and frozen validation receipts; no generative imagery."
+    },
+    {
+      "identifier": "validity_figures_traceability",
+      "path": "figures/nostos0/validity_figures.manifest.json",
+      "sha256": "a338ef51cbcd0ad1ba37545b6c34c086672b3878a26ffa24606ef4dcae1189c1",
+      "bytes": 6479,
+      "protocol_version": null,
+      "reported_status": "complete",
+      "evidence_level": "figure_provenance",
+      "interpretation": "The four computational-methods figures are deterministic composites of checksum-locked BioSR and FMD microscopy, frozen evidence rows and declared transforms; PNG, PDF and SVG outputs are hash indexed and no generative scientific imagery is used."
+    },
+    {
+      "identifier": "dynamic_bulk_translation",
+      "path": "outputs/nostos0-dynamic-synthetic-v1/dynamic_validation.json",
+      "sha256": "3651c5d2885cbd6d97af337d63ae5a627e41d70a0778bb2dcf433418c01a312b",
+      "bytes": 1513,
+      "protocol_version": "nostos-dynamic-synthetic/1.0",
+      "reported_status": "pass",
+      "evidence_level": "synthetic_validation",
+      "interpretation": "Explicit 2-D+t contract: calibrated integer bulk translation and blank-field abstention."
+    },
+    {
+      "identifier": "bbbc035_dynamic_confirmation",
+      "path": "outputs/nostos0-bbbc035-dynamic-confirmation-v1/bbbc035_dynamic_confirmation.json",
+      "sha256": "373a1dfa7bcad32cf272be0b320e21ae5b9b4f9aa4d2c220f7118a5c862a94b4",
+      "bytes": 3019,
+      "protocol_version": "nostos-bbbc035-dynamic-confirmation/1.0",
+      "reported_status": "pass",
+      "evidence_level": "external_public_content_confirmation",
+      "interpretation": "Frozen bulk-registration endpoint passed all six gates on untouched BBBC035 microscopy content under programmed translations; not dense flow, tracking or native biological motion."
+    },
+    {
+      "identifier": "dense_deformation_initial",
+      "path": "outputs/nostos0-dense-deformation-analytic-v1/dense_deformation_validation.json",
+      "sha256": "deec8cac94c8123344cc58f64e1c84f8c1f8e4f71c63ed1341f8624dfd5481e1",
+      "bytes": 12103,
+      "protocol_version": "nostos0-dense-deformation-analytic/1.0",
+      "reported_status": "fail",
+      "evidence_level": "synthetic_prospective_failed_gate",
+      "interpretation": "Frozen dense-deformation run passed six of seven gates with 0.109-pixel median error, but forward-backward uncertainty ranking failed at Spearman 0.202."
+    },
+    {
+      "identifier": "dense_uncertainty_development",
+      "path": "outputs/nostos0-dense-uncertainty-development-v1/dense_uncertainty_development.json",
+      "sha256": "e9fecb1156a70f752aff50d74b00e652d3f1a7ed15796ee62e48d45005d90dea",
+      "bytes": 950,
+      "protocol_version": "nostos0-dense-uncertainty-development/1.0",
+      "reported_status": "development_complete",
+      "evidence_level": "synthetic_post_failure_development",
+      "interpretation": "Opened-cohort comparison selected estimator disagreement and froze a 95% additive conformal offset; development only."
+    },
+    {
+      "identifier": "dense_deformation_analytic_confirmation",
+      "path": "outputs/nostos0-dense-deformation-analytic-confirmation-v1/dense_deformation_analytic_confirmation.json",
+      "sha256": "872065df08c39be5bcd427d5a0f7c25f41fdcdff16e5d8499c5a03f92861c16e",
+      "bytes": 15848,
+      "protocol_version": "nostos0-dense-deformation-analytic-confirmation/1.0",
+      "reported_status": "pass",
+      "evidence_level": "synthetic_identity_disjoint_confirmation",
+      "interpretation": "Disjoint analytic confirmation passed all six gates with 0.107-pixel median error, 99.97% uncertainty coverage and 0.441-pixel median bound."
+    },
+    {
+      "identifier": "bbbc035_dense_deformation_confirmation",
+      "path": "outputs/nostos0-bbbc035-dense-deformation-confirmation-v1/bbbc035_dense_deformation_confirmation.json",
+      "sha256": "7babed3f53f28c6a2976169a94f5b17e8d182a5d3fd6f84538499d4e39c11f04",
+      "bytes": 5433,
+      "protocol_version": "nostos0-bbbc035-dense-deformation-confirmation/1.0",
+      "reported_status": "pass",
+      "evidence_level": "external_public_content_confirmation",
+      "interpretation": "Eight prespecified BBBC035 planes passed all seven dense-deformation gates under programmed smooth warps; not native motion, tracking, strain or mechanics."
+    },
+    {
+      "identifier": "dense_tool_workflow_initial",
+      "path": "outputs/nostos0-dense-tool-workflow-v1/dense_tool_workflow_initial_failure.json",
+      "sha256": "af827a081a2af5e371464f0c036b1eceedfde174dbf8afde9a3614c5263954e2",
+      "bytes": 607,
+      "protocol_version": "nostos0-dense-tool-workflow/1.0",
+      "reported_status": "fail",
+      "evidence_level": "software_public_data_failed_execution",
+      "interpretation": "Initial frozen file workflow exposed a time-axis loader defect before measurement and is retained as failure evidence."
+    },
+    {
+      "identifier": "dense_tool_workflow",
+      "path": "outputs/nostos0-dense-tool-workflow-v1/dense_tool_workflow.json",
+      "sha256": "255e6abd22cf95a5cf9a654c85a2fbdcdfe311bd77b74a9ae28ebc883776fcde",
+      "bytes": 709,
+      "protocol_version": "nostos0-dense-tool-workflow/1.0",
+      "reported_status": "pass",
+      "evidence_level": "software_public_data_end_to_end",
+      "interpretation": "Unchanged dense file workflow passed all seven gates after introducing the explicit time-first loader."
+    },
+    {
+      "identifier": "ctc_tracking_development",
+      "path": "outputs/nostos0-ctc-tracking-development-v1/ctc_tracking_development.json",
+      "sha256": "519fe1706ba73adc7c62c0c5a0e05f29d8523407f8db630eeb18d58341ba02fa",
+      "bytes": 4802,
+      "protocol_version": "nostos0-ctc-tracking-development/1.0",
+      "reported_status": "development_complete",
+      "evidence_level": "external_public_development",
+      "interpretation": "Initial SIM+ sequence-01 tracking development showed strong continuation links but failed division inference and was inferior to the centroid-only continuation baseline."
+    },
+    {
+      "identifier": "ctc_division_geometry_development",
+      "path": "outputs/nostos0-ctc-division-geometry-v1/ctc_division_geometry.json",
+      "sha256": "be17cdee431f9a894c8ceb8c06d1bd0d828c03fb0fb3d4b645f7b16af559b509",
+      "bytes": 11745,
+      "protocol_version": "nostos0-ctc-division-geometry-audit/1.0",
+      "reported_status": "development_complete",
+      "evidence_level": "external_public_post_failure_development",
+      "interpretation": "Outcome-aware geometry audit on opened SIM+ sequence 01; development only."
+    },
+    {
+      "identifier": "ctc_division_rule_development",
+      "path": "outputs/nostos0-ctc-division-rule-development-v1/ctc_division_rule_development.json",
+      "sha256": "4d91aef4b60d2a0a6f71fe8b3cc0c289f61ba1f252508dd9984070e8270c037b",
+      "bytes": 30459,
+      "protocol_version": "nostos0-ctc-division-rule-development/1.0",
+      "reported_status": "development_complete",
+      "evidence_level": "external_public_post_failure_development",
+      "interpretation": "A 32-cell lineage-rule grid on opened SIM+ sequence 01 achieved development link F1 0.996 and division F1 0.897."
+    },
+    {
+      "identifier": "ctc_native_tracking_confirmation",
+      "path": "outputs/nostos0-ctc-native-tracking-confirmation-v1/ctc_native_tracking_confirmation.json",
+      "sha256": "c90c17f8e3bef0cf64bec4c381dbc03ebb9244d5c95d4bc54c74b3917ef2a3a6",
+      "bytes": 4775,
+      "protocol_version": "nostos0-ctc-native-tracking-confirmation/1.0",
+      "reported_status": "fail",
+      "evidence_level": "external_public_prospective_partial_gate",
+      "interpretation": "Locked SIM+ sequence 02 and real HeLa sequence 01 tracking passed all continuation and real-data gates but failed the synthetic division-F1 gate, 0.758 versus 0.80."
+    },
+    {
+      "identifier": "ctc_division_geometry_post_confirmation",
+      "path": "outputs/nostos0-ctc-division-geometry-v1_1/ctc_division_geometry.json",
+      "sha256": "00a62b4a1be5db75dacc21bc1fac616ec2b8f8d2dcadcdae3424a956fd82872c",
+      "bytes": 14272,
+      "protocol_version": "nostos0-ctc-division-geometry-audit/1.0",
+      "reported_status": "development_complete",
+      "evidence_level": "external_public_post_failure_development",
+      "interpretation": "Outcome-aware audit of now-open SIM+ sequence 02 after the division gate failed."
+    },
+    {
+      "identifier": "ctc_division_rule_post_confirmation",
+      "path": "outputs/nostos0-ctc-division-rule-development-v1_2/ctc_division_rule_development.json",
+      "sha256": "caef2743418da9e9925895321413c50444cba5d616c0311736aea284987589ef",
+      "bytes": 29997,
+      "protocol_version": "nostos0-ctc-division-rule-development/1.0",
+      "reported_status": "development_complete",
+      "evidence_level": "external_public_post_failure_development",
+      "interpretation": "Expanded rule grid on opened SIM+ sequence 02 reached division F1 0.848; not confirmation."
+    },
+    {
+      "identifier": "ctc_hela02_lineage_initial",
+      "path": "outputs/nostos0-ctc-hela02-lineage-transfer-v1/ctc_hela02_lineage_transfer_initial_runtime.json",
+      "sha256": "009ef54075e5a1c1e91b6e85e5f395574554623d5e28232568114acb1eb80530",
+      "bytes": 2733,
+      "protocol_version": "nostos0-ctc-hela02-lineage-transfer/1.0",
+      "reported_status": "fail",
+      "evidence_level": "external_public_pristine_failed_gate",
+      "interpretation": "Reserved HeLa sequence 02 transfer failed division and runtime gates before removal of provably unused overlap computation."
+    },
+    {
+      "identifier": "ctc_hela02_lineage_transfer",
+      "path": "outputs/nostos0-ctc-hela02-lineage-transfer-v1/ctc_hela02_lineage_transfer.json",
+      "sha256": "3b259905763057d4a2a25df2bda37ab7a457c25872202945b589a8c9eccb0aa0",
+      "bytes": 2733,
+      "protocol_version": "nostos0-ctc-hela02-lineage-transfer/1.0",
+      "reported_status": "fail",
+      "evidence_level": "external_public_pristine_failed_gate",
+      "interpretation": "Optimized identical assignments passed six of seven transfer gates; continuation F1 was 0.977 but division F1 0.410 missed the frozen 0.45 gate."
+    },
+    {
+      "identifier": "ctc_tracking_tool_workflow",
+      "path": "outputs/nostos0-ctc-tracking-tool-workflow-v1/ctc_tracking_tool_workflow.json",
+      "sha256": "a25adb65aa27c10308f0bdff7d4bd5687d41baea7b418695d1e73e6eb925c936",
+      "bytes": 768,
+      "protocol_version": "nostos0-ctc-tracking-tool-workflow/1.0",
+      "reported_status": "pass",
+      "evidence_level": "software_public_data_end_to_end",
+      "interpretation": "The continuation-only application processed 92 real HeLa frames and 8,436 edges in 22.5 s; all eight workflow gates passed."
+    },
+    {
+      "identifier": "bbbc006_spatial_confirmation",
+      "path": "outputs/nostos0-bbbc006-spatial-confirmation-v1/bbbc006_spatial_confirmation.json",
+      "sha256": "511e1ed21391f082f221d64b76fb39b509b6e9d0f82e0c4848f4227fe91877fb",
+      "bytes": 185494,
+      "protocol_version": "nostos-bbbc006-spatial-confirmation/1.0",
+      "reported_status": "pass",
+      "evidence_level": "external_public_pristine_confirmation",
+      "interpretation": "Frozen spatial-response confirmation passed all six gates on 64 hash-selected matched BBBC006 focal triplets, demonstrating adjacent-focus repeatability and defocus sensitivity."
+    },
+    {
+      "identifier": "public_tool_workflows",
+      "path": "outputs/nostos0-public-tool-workflows-v1/public_tool_workflows.json",
+      "sha256": "d071a495745586d61bcbce7987e6fe4dff87adca92f24b4a38ca0f4fe9171eb4",
+      "bytes": 4141,
+      "protocol_version": "nostos-public-tool-workflows/1.0",
+      "reported_status": "pass",
+      "evidence_level": "software_public_data_end_to_end",
+      "interpretation": "Four frozen public-data contracts passed all seven schema, module, calibration and runtime gates across 2-D, masked 2-D, masked 3-D and 2-D+t inputs."
+    },
+    {
+      "identifier": "structure_tensor_comparator",
+      "path": "outputs/nostos0-structure-tensor-comparator-v1/structure_tensor_comparator.json",
+      "sha256": "288cdc44be9bb405bb95e032fcfefcda39037a39cf95c48f35adc88373156d66",
+      "bytes": 11917,
+      "protocol_version": "nostos-structure-tensor-comparator/1.0",
+      "reported_status": "pass",
+      "evidence_level": "upstream_cross_software_confirmation",
+      "interpretation": "Frozen PSHG cross-software audit passed all six gates against scikit-image 0.25.2 over 1,367,747 eligible pixels."
+    },
+    {
+      "identifier": "bbbc006_qc_initial",
+      "path": "outputs/nostos0-bbbc006-qc-v1/bbbc006_qc_validation.json",
+      "sha256": "7dd2551bff68c502ee7c3c461afe3579f1a00c1efa31f1db78cba179b370ff6d",
+      "bytes": 108985,
+      "protocol_version": "nostos-bbbc006-qc/1.0",
+      "reported_status": "fail",
+      "evidence_level": "external_public_endpoint_new_failed_gate",
+      "interpretation": "Normalized-Laplacian focus ordering failed on the 64-case opened BBBC006 development subset and is retained as a rejected QC endpoint."
+    },
+    {
+      "identifier": "focus_metric_development",
+      "path": "outputs/nostos0-focus-metric-development-v1/focus_metric_development.json",
+      "sha256": "d60cabaff875b1fb4eee97fbd8c3ca9793de3c1d6549cd4e13709a3df7092b2f",
+      "bytes": 1595,
+      "protocol_version": "nostos-focus-metric-development/1.0",
+      "reported_status": "development_complete",
+      "evidence_level": "external_public_post_failure_development",
+      "interpretation": "Five focus metrics compared only on opened development identities; mean Tenengrad energy selected by frozen rule."
+    },
+    {
+      "identifier": "bbbc006_qc_confirmation",
+      "path": "outputs/nostos0-bbbc006-qc-confirmation-v1/bbbc006_qc_confirmation.json",
+      "sha256": "ddbe43e9c54d428625ce34769aa61fcdcf1ef0494ed0909b8450f99b2e6ca856",
+      "bytes": 27930,
+      "protocol_version": "nostos-bbbc006-qc-confirmation/1.0",
+      "reported_status": "pass",
+      "evidence_level": "external_public_identity_disjoint_confirmation",
+      "interpretation": "Tenengrad focus and failure semantics passed all six gates on 128 hash-selected identities disjoint from development."
+    },
+    {
+      "identifier": "hrf_network_initial",
+      "path": "outputs/nostos0-hrf-network-v1/hrf_network_validation.json",
+      "sha256": "73c6c146a452b119e40754d6dcb040d675556c763eb21790a865299126e00f00",
+      "bytes": 47849,
+      "protocol_version": "nostos-hrf-network/1.0",
+      "reported_status": "fail",
+      "evidence_level": "external_public_prospective_failed_gate",
+      "interpretation": "Frozen HRF reference-mask experiment failed absolute erosion-survival stability despite strong ranking and skeleton-length stability; image-derived vessel Dice was poor and remains separate."
+    },
+    {
+      "identifier": "network_resampling_development",
+      "path": "outputs/nostos0-network-resampling-development-v1_1/network_resampling_development.json",
+      "sha256": "b72dac67ec14d0c6026557cd1572f0179c81ebe14fee150faa76f9ed1d9fec3a",
+      "bytes": 2144,
+      "protocol_version": "nostos-network-resampling-development/1.1",
+      "reported_status": "development_complete",
+      "evidence_level": "external_public_post_failure_development",
+      "interpretation": "HRF-only correction of center-to-boundary distance and selection of a twofold occupancy policy; not confirmation."
+    },
+    {
+      "identifier": "stare_network_confirmation",
+      "path": "outputs/nostos0-stare-network-confirmation-v1/stare_network_confirmation.json",
+      "sha256": "da9c59ad2508685325ab2ee805b94c23d90b5ce80a583cd51f5b41a0305fdb96",
+      "bytes": 16784,
+      "protocol_version": "nostos-stare-network-confirmation/1.0",
+      "reported_status": "pass",
+      "evidence_level": "external_public_pristine_confirmation",
+      "interpretation": "Untouched STARE confirmation passed all seven gates on 20 manual vascular networks, including sampling stability, skeleton-length concordance and inter-observer survival ranking."
+    },
+    {
+      "identifier": "representation_benchmark",
+      "path": "outputs/nostos0-benchmark-v1/representation_benchmark.json",
+      "sha256": "f1b3c03ca213b57f0981a865573a3b8beb26e53f1890589db3aa24cff0b53a0c",
+      "bytes": 8198,
+      "protocol_version": "nostos-representation-benchmark/1.0",
+      "reported_status": "not_declared",
+      "evidence_level": "synthetic_descriptive",
+      "interpretation": "Frozen held-out construct discrimination; not biological validation."
+    },
+    {
+      "identifier": "response_geometry_benchmark_v2",
+      "path": "outputs/nostos0-response-benchmark-v2/response_geometry_benchmark_v2.json",
+      "sha256": "dfa571f05ae6725ea168f9bcab10a8567dab1dcd4a2be0e029bcb4682443cd49",
+      "bytes": 113376,
+      "protocol_version": "nostos-response-geometry-benchmark/2.0",
+      "reported_status": "fail",
+      "evidence_level": "synthetic_prospective_failed_gate",
+      "interpretation": "Larger prospectively frozen distribution-shift test: raw response concatenation failed three of five gates and was inferior to matched collapsed summaries and PyRadiomics."
+    },
+    {
+      "identifier": "canonical_confirmation_v3",
+      "path": "outputs/nostos0-canonical-confirmation-v3/canonical_confirmation_v3.json",
+      "sha256": "49c80dcdb543a49c1f36b6412db54988372856d01fa5a7f4d88318fc9bb8cd64",
+      "bytes": 154632,
+      "protocol_version": "nostos-canonical-confirmation/3.0",
+      "reported_status": "fail",
+      "evidence_level": "synthetic_prospective_failed_gate",
+      "interpretation": "New-seed confirmation of rotation-quotiented comparison geometry failed four of seven gates; improvement over raw coordinates was uncertain and perturbation distance fell only 3%."
+    },
+    {
+      "identifier": "stability_weighting_development",
+      "path": "outputs/nostos0-stability-development-v1_1/stability_weighting_development.json",
+      "sha256": "640e05d4351708bb1ea757a5aad0383d8ee2725bc388240f7b0f0478a1d54a56",
+      "bytes": 14882,
+      "protocol_version": "nostos-stability-weighting-development/1.0",
+      "reported_status": "not_declared",
+      "evidence_level": "synthetic_development",
+      "interpretation": "Training-only paired-perturbation audit: corrected label-free stability weighting matched, but did not improve upon, augmented canonical performance."
+    },
+    {
+      "identifier": "selective_fft_confirmation",
+      "path": "outputs/nostos0-selective-fft-confirmation-v1/selective_fft_confirmation.json",
+      "sha256": "08046196a3b778f671674a4aac9e4fdb14033d3911c65055e64e925097891bb3",
+      "bytes": 900334,
+      "protocol_version": "nostos-selective-fft-confirmation/1.0",
+      "reported_status": "fail",
+      "evidence_level": "synthetic_prospective_partial_gate",
+      "interpretation": "Prospective selective-measurement confirmation passed five of six gates: 93.8% coverage, 1.07% selective risk, Wilson upper 2.31%, and invalid-detection AUC 0.980; an absolute risk-reduction gate was unattainable because cohort risk was 4.67%."
+    },
+    {
+      "identifier": "selective_filament_transfer",
+      "path": "outputs/nostos0-selective-filament-transfer-v1/selective_filament_transfer.json",
+      "sha256": "546451eb570243696e1ac399c689405bbd8d592c5970aa16229ebabb5fc32842",
+      "bytes": 40834,
+      "protocol_version": "nostos-selective-filament-transfer/1.0",
+      "reported_status": "fail",
+      "evidence_level": "external_public_prospective_failed_gate",
+      "interpretation": "Frozen transfer of the FFT abstention rule to MyceliumSeg failed because only two of 30 branching-network masks supplied an eligible global reference axis; the dataset is unsuitable for inferential global-orientation validation."
+    },
+    {
+      "identifier": "selective_shg_transfer",
+      "path": "outputs/nostos0-selective-shg-transfer-v1/selective_shg_transfer.json",
+      "sha256": "5ccfda00dfc16081913c2807c1dd8d3d24182b52bcfb9677509947901e3a08bd",
+      "bytes": 276181,
+      "protocol_version": "nostos-selective-shg-transfer/1.0",
+      "reported_status": "fail",
+      "evidence_level": "external_public_prospective_failed_gate",
+      "interpretation": "Frozen transfer to 199 annotated SHG collagen test patches failed three of six gates: 95.1% coverage carried 33.3% selective risk, cluster-bootstrap upper 40.5%, median disagreement 6.44 degrees, and invalid-detection AUC 0.677."
+    },
+    {
+      "identifier": "consensus_reliability",
+      "path": "outputs/nostos0-consensus-reliability-v1/consensus_reliability.json",
+      "sha256": "1dde4bdc13995da65f6cbb3813c231aae613e5ec01dff5a3618ad910b2c72017",
+      "bytes": 2109589,
+      "protocol_version": "nostos-consensus-reliability/1.0",
+      "reported_status": "fail",
+      "evidence_level": "external_public_group_separated_failed_gate",
+      "interpretation": "Estimator-consensus redesign failed before confirmation: development AUC was 0.740 and no threshold attained 10% risk at 30% coverage; the locked confirmation therefore accepted no cases and had AUC 0.705."
+    },
+    {
+      "identifier": "local_orientation_adaptive",
+      "path": "outputs/nostos0-local-orientation-v1/local_orientation_validation.json",
+      "sha256": "052526f68f3158d94ee5311666f0d46f729d2d57c87af726070ae8f5ff3a04e0",
+      "bytes": 450016,
+      "protocol_version": "nostos-local-orientation/1.0",
+      "reported_status": "fail",
+      "evidence_level": "external_public_group_separated_failed_gate",
+      "interpretation": "Adaptive local scale selection failed because no development confidence threshold attained the frozen risk/coverage criterion; the failure motivated a scale-declared endpoint."
+    },
+    {
+      "identifier": "local_orientation_external_test",
+      "path": "outputs/nostos0-local-orientation-external-v1/local_orientation_external_test.json",
+      "sha256": "517563bbf327d04253f77fcc198950f19689c1ba100ae6c32760ffce3bd58498",
+      "bytes": 67133,
+      "protocol_version": "nostos-local-orientation-external-test/1.0",
+      "reported_status": "pass",
+      "evidence_level": "external_public_endpoint_new_pass",
+      "interpretation": "Scale-declared sigma-2 local orientation passed all eight gates on 19,657 annotated tangent pixels from 115 source groups: median axial error 6.72 degrees, group-bootstrap interval 6.24\u20137.25 degrees, and axial alignment 0.832."
+    },
+    {
+      "identifier": "pshg_skin_orientation",
+      "path": "outputs/nostos0-pshg-external-orientation-v1/pshg_external_orientation.json",
+      "sha256": "c3dee84e5f594b82030fbed3b9413f2ccc6f3774f55b010ea8f5b28e1ec559a3",
+      "bytes": 7891,
+      "protocol_version": "nostos-pshg-external-orientation/1.0",
+      "reported_status": "fail",
+      "evidence_level": "external_public_prospective_failed_gate",
+      "interpretation": "Pristine PSHG skin transfer failed because the archived polarization-phase axis was approximately orthogonal to the raster ridge axis; median error was 82.25 degrees across 53 ROIs. Retained as development and coordinate-calibration evidence."
+    },
+    {
+      "identifier": "pshg_breast_orientation",
+      "path": "outputs/nostos0-pshg-breast-orientation-v1/pshg_external_orientation.json",
+      "sha256": "4093cf2eba0f7013f9ce4d62f031dc06f33f9ae39ed839832be2f1984e062e01",
+      "bytes": 7476,
+      "protocol_version": "nostos-pshg-breast-orientation/1.0",
+      "reported_status": "pass",
+      "evidence_level": "external_public_pristine_confirmation",
+      "interpretation": "After freezing the 90-degree instrument-to-raster calibration learned only from skin, untouched breast confirmation passed all nine gates across 48 ROIs and 1,367,747 pixels: median error 7.59 degrees, ROI-bootstrap interval 7.26\u20137.91 degrees, and axial alignment 0.877."
+    },
+    {
+      "identifier": "intraop_pshg_v1_failure",
+      "path": "outputs/nostos0-intraop-pshg-deployment-v1/failure_receipt.json",
+      "sha256": "1dfa717be7f27f89c90de09e9adf34e8dd28a28dd62ea4cc67c213c821303c25",
+      "bytes": 1966,
+      "protocol_version": "nostos-intraop-pshg-deployment/1.0",
+      "reported_status": "failed_before_reference_evaluation",
+      "evidence_level": "software_pre_outcome_failed_execution",
+      "interpretation": "The first locked production execution stopped before reference-error computation because the public instrument maps use non-finite values outside acquisition support; the failure is retained without overwriting."
+    },
+    {
+      "identifier": "intraop_pshg_v1_1_failure",
+      "path": "outputs/nostos0-intraop-pshg-deployment-v1_1/failure_receipt.json",
+      "sha256": "35da53d4b1e02d72e0c71aff2190bcc32496ae239f839c58abcebd592dc5374d",
+      "bytes": 2571,
+      "protocol_version": "nostos-intraop-pshg-deployment/1.1",
+      "reported_status": "failed_before_reference_evaluation",
+      "evidence_level": "software_pre_outcome_failed_execution",
+      "interpretation": "The support-map amendment stopped before reference-error computation when the evaluation-only FI map used the same missing-outside-support convention; zero missing FI values occurred inside locked R2/SNR support."
+    },
+    {
+      "identifier": "intraop_pshg_v1_2_failure",
+      "path": "outputs/nostos0-intraop-pshg-deployment-v1_2/failure_receipt.json",
+      "sha256": "978c897bef239763317ca9717bfa1418820d863611822719f8b5eb76af744291",
+      "bytes": 2925,
+      "protocol_version": "nostos-intraop-pshg-deployment/1.2",
+      "reported_status": "failed_after_full_evaluation",
+      "evidence_level": "software_post_outcome_failed_gate",
+      "interpretation": "All eight fields were evaluated and the overall gate failed: numerical accuracy, latency and determinism passed, but a sub-float32 equality threshold and full-rectangle QC made the production contract internally inconsistent. The outcome-informed correction moved to new fields."
+    },
+    {
+      "identifier": "intraop_pshg_v1_3_deployment",
+      "path": "outputs/nostos0-intraop-pshg-deployment-v1_3/deployment_benchmark.json",
+      "sha256": "f500b4b4ed76501082bd5a0c76dc0a144291384d30d7ce3da999a77bc2abaca9",
+      "bytes": 10434,
+      "protocol_version": "nostos-intraop-pshg-deployment/1.3",
+      "reported_status": "pass",
+      "evidence_level": "software_public_data_new_field_confirmation",
+      "interpretation": "On eight newly hash-selected unstained PSHG fields, the support-aware production path passed all declared numerical, runtime, memory, determinism, source-integrity and clinical-withholding gates."
+    },
+    {
+      "identifier": "intraop_pshg_v1_3_audit",
+      "path": "outputs/nostos0-intraop-pshg-deployment-v1_3-final-audit/final_audit.json",
+      "sha256": "36ed50f26bb545e7f69fdffd3c2daf6d16caf01336291d9b0d3d653a0ab3f446",
+      "bytes": 5541,
+      "protocol_version": null,
+      "reported_status": "audit_fail",
+      "evidence_level": "independent_code_path_audit_failed_packaging",
+      "interpretation": "Independent recomputation verified the v1.3 measurements but failed release integrity because coherence.npy was present yet absent from the case provenance registry. The defect was not waived."
+    },
+    {
+      "identifier": "intraop_pshg_v1_4_deployment",
+      "path": "outputs/nostos0-intraop-pshg-deployment-v1_4/deployment_benchmark.json",
+      "sha256": "7ec709c78f3e3e36ffbce2d47f7bc8288b0eb2b60ec3f9ae69cd09711812e536",
+      "bytes": 9200,
+      "protocol_version": "nostos-intraop-pshg-deployment/1.4",
+      "reported_status": "pass",
+      "evidence_level": "software_public_data_release_candidate_confirmation",
+      "interpretation": "Four additional hash-selected unstained PSHG fields passed 13 gates, including complete one-to-one provenance for seven numerical and visual artifacts per case; pooled median reference error was 7.53 degrees and p95 end-to-end compute/export time was 0.452 s, excluding acquisition."
+    },
+    {
+      "identifier": "intraop_pshg_v1_4_final_audit",
+      "path": "outputs/nostos0-intraop-pshg-deployment-v1_4-final-audit/final_audit.json",
+      "sha256": "15b137671f8b1fca7e2f063b656065344c76e58e301b20c7a4cf38207f934acb",
+      "bytes": 3179,
+      "protocol_version": null,
+      "reported_status": "verified_pass",
+      "evidence_level": "independent_code_path_audit_author_operated",
+      "interpretation": "A separate audit rehashed the complete v1.4 lock and public sources, independently recomputed tensor maps and reference metrics, verified every case receipt and artifact, and passed all ten checks. It is author-operated, same-dataset technical evidence, not clinical validation."
+    },
+    {
+      "identifier": "intraop_pshg_v1_4_audit_manifest",
+      "path": "manifests/intraop_pshg_deployment_v1_4_audit_manifest.json",
+      "sha256": "fb77ff338ead4adaa62759e03a5cc239932d393f41af11e6af9692fbd029c08f",
+      "bytes": 1769,
+      "protocol_version": null,
+      "reported_status": "verified_pass",
+      "evidence_level": "audit_provenance",
+      "interpretation": "Hash manifest binding the v1.4 lock, result, audit protocol, audit implementation and verified audit receipt while preserving the explicit non-clinical claim boundary."
+    },
+    {
+      "identifier": "intraop_operator_workflow",
+      "path": "outputs/nostos0-intraop-operator-workflow-v1/intraop_result.json",
+      "sha256": "4bb59494121fb3cb7184c3578e9c27d4acf0a22ac9a597bfb92106336be1f9e8",
+      "bytes": 9200,
+      "protocol_version": null,
+      "reported_status": "valid",
+      "evidence_level": "software_public_data_operator_workflow",
+      "interpretation": "The command-line operator path exported seven registered numerical and visual artifacts for one hash-identical public unstained-PSHG field without using the evaluation-only FI reference; clinical output remained withheld."
+    },
+    {
+      "identifier": "intraop_operator_workflow_audit",
+      "path": "outputs/nostos0-intraop-operator-workflow-v1/workflow_audit.json",
+      "sha256": "6f82ecb55966d5ae58e419504ed7ab93a4667134f152d82f17fe1997754d226a",
+      "bytes": 1513,
+      "protocol_version": null,
+      "reported_status": "verified_pass",
+      "evidence_level": "independent_packaging_audit_author_operated",
+      "interpretation": "A separate packaging audit passed all 13 checks: source reconstruction, public-input identity, array and artifact integrity, summary reproduction, reference exclusion, path safety and fail-closed clinical output."
+    },
+    {
+      "identifier": "intraop_operator_workflow_manifest",
+      "path": "manifests/intraop_operator_workflow_v1_audit_manifest.json",
+      "sha256": "f2be2a941773a62796b2bdd9cf85b04900c3de56fc455937f20dce93a35720fd",
+      "bytes": 1336,
+      "protocol_version": null,
+      "reported_status": "verified_pass",
+      "evidence_level": "audit_provenance",
+      "interpretation": "Hash manifest binding the operator result, scientific lock, audit configuration, audit implementation and verified audit output."
+    },
+    {
+      "identifier": "intraop_workstation_http_audit",
+      "path": "outputs/nostos0-intraop-workstation-audit-v1/workstation_audit.json",
+      "sha256": "dcad1b2e5b6b77c05afcf2f9f1753da29fd69b01f01d29f852b820d3076bb8c0",
+      "bytes": 1814,
+      "protocol_version": null,
+      "reported_status": "verified_pass",
+      "evidence_level": "software_http_workflow_author_operated",
+      "interpretation": "A deterministic local HTTP test passed all 12 routing and fail-closed checks, decoded four visual products and correctly demoted a format-compatible but unverified acquisition to review. This is not a browser matrix or human-factors study."
+    },
+    {
+      "identifier": "intraop_workstation_manifest",
+      "path": "manifests/intraop_workstation_v1_audit_manifest.json",
+      "sha256": "d0127cedbbe7f96b9a0f564a4fbbf25ea3fda454c1033b9090f557eab780ec38",
+      "bytes": 1342,
+      "protocol_version": null,
+      "reported_status": "verified_pass",
+      "evidence_level": "audit_provenance",
+      "interpretation": "Hash manifest binding the HTTP server, workstation assets, audit implementation and audit receipt."
+    },
+    {
+      "identifier": "runtime_local_cpu",
+      "path": "outputs/nostos0-runtime-audit-v1/local_cpu.json",
+      "sha256": "3f0e9c7de9c9c20dd25c26b1f06bbcc8ad52d828df685acc9fc586ad367be6a1",
+      "bytes": 2402,
+      "protocol_version": null,
+      "reported_status": "verified_pass",
+      "evidence_level": "software_runtime_verification",
+      "interpretation": "The supported local Python 3.13 runtime passed dependency checks, a finite 2048 by 2048 CPU FFT and 297 tests with four intentional GPU-dependent skips."
+    },
+    {
+      "identifier": "runtime_t7_cuda",
+      "path": "outputs/nostos0-runtime-audit-v1/t7_cuda.json",
+      "sha256": "ada64a5c5583a97e87a6d4a0bcfb8dd84d43ed503da52a62da4b4e5f19122c5b",
+      "bytes": 2865,
+      "protocol_version": null,
+      "reported_status": "verified_pass",
+      "evidence_level": "software_runtime_verification",
+      "interpretation": "The active T7 Python 3.13 CUDA runtime passed dependency checks, finite CPU and RTX 5070 Ti CUDA FFT smoke tests and all 308 applicable tests."
+    },
+    {
+      "identifier": "runtime_t7_legacy",
+      "path": "outputs/nostos0-runtime-audit-v1/t7_legacy_py314.json",
+      "sha256": "4ca378ac756c5b95474173a4eea4f9faa774882b805ef6af42a075354d2c45c3",
+      "bytes": 2774,
+      "protocol_version": null,
+      "reported_status": "incompatible",
+      "evidence_level": "software_runtime_incompatibility_retained",
+      "interpretation": "The retired T7 Python 3.14 environment remains recorded as incompatible because scikit-image is absent and NOSTOS 0.2.0 is installed; launchers do not select it."
+    },
+    {
+      "identifier": "runtime_audit_manifest",
+      "path": "manifests/runtime_audit_v1_manifest.json",
+      "sha256": "fd1a5489ce0199dab9fcdeb7780f4ddfc256fcb8d45c1aff6470206dce0e57e7",
+      "bytes": 2213,
+      "protocol_version": null,
+      "reported_status": "verified_pass",
+      "evidence_level": "audit_provenance",
+      "interpretation": "Hash manifest binds the runtime audit implementation, both verified runtime receipts, the retired-runtime failure receipt and the T7 launcher configuration."
+    },
+    {
+      "identifier": "biological_retrieval_development",
+      "path": "outputs/nostos0-biological-retrieval-development-v1/biological_retrieval_development.json",
+      "sha256": "20e700333b736764d1ec15477747e2a13b9cbf07400a8037395fe6452f73e92a",
+      "bytes": 28552,
+      "protocol_version": "nostos-biological-retrieval-development/1.0",
+      "reported_status": "development_only",
+      "evidence_level": "external_public_development",
+      "interpretation": "Development-only same-specimen retrieval across four biological domains under a mild synthetic acquisition shift."
+    },
+    {
+      "identifier": "biological_retrieval_confirmation",
+      "path": "outputs/nostos0-biological-retrieval-confirmation-v1/biological_retrieval_confirmation.json",
+      "sha256": "2a5931cea56dac5262d32577697e555afed19beff61e0d8ccb03c100737ded03",
+      "bytes": 23838,
+      "protocol_version": "nostos-biological-retrieval-confirmation/1.0",
+      "reported_status": "fail",
+      "evidence_level": "external_public_prospective_failed_gate",
+      "interpretation": "Prospectively frozen, identity-disjoint confirmation under a severe compound acquisition shift failed six substantive gates: primary macro top-1 accuracy was 0.100 (bootstrap interval 0.033\u20130.183). This rejects use of the compact response geometry as a universal specimen-identity fingerprint."
+    },
+    {
+      "identifier": "biological_retrieval_orbit_redesign",
+      "path": "outputs/nostos0-orbit-redesign-development-v1/orbit_redesign_development.json",
+      "sha256": "c6eacfeb5d988e1b4f40491461718a64992a74bb09b6f1770f1f985f43e016e4",
+      "bytes": 11303,
+      "protocol_version": "nostos-orbit-redesign-development/1.0",
+      "reported_status": "development_only",
+      "evidence_level": "external_public_post_test_development",
+      "interpretation": "Post-failure orbit-aggregation redesign on the opened confirmation cases remained weak and is retained as development evidence only; the best tested ablation reached macro top-1 accuracy 0.233."
+    },
+    {
+      "identifier": "osteochondral_interface_development",
+      "path": "outputs/nostos0-osteochondral-interface-development-v1/osteochondral_interface_development.json",
+      "sha256": "9402fb0d99efb0ed829b983892736eda70eb3421de6c3b5b4fc6f6ff971bf42c",
+      "bytes": 35303,
+      "protocol_version": "nostos-osteochondral-interface-development/1.0",
+      "reported_status": "development_only",
+      "evidence_level": "external_public_group_separated_development",
+      "interpretation": "Development of a training-free dynamic-path adapter on nine patients failed to reach usable boundary error and was worse than a global-threshold comparator."
+    },
+    {
+      "identifier": "osteochondral_interface_confirmation",
+      "path": "outputs/nostos0-osteochondral-interface-confirmation-v1/osteochondral_interface_confirmation.json",
+      "sha256": "de8971122445aceaffec6320b668ee7dcbc18ee308304f2bb586d7a1cb69111c",
+      "bytes": 733160,
+      "protocol_version": "nostos-osteochondral-interface-confirmation/1.0",
+      "reported_status": "fail",
+      "evidence_level": "external_public_prospective_failed_gate",
+      "interpretation": "Patient-disjoint confirmation on 532 slices from ten patients failed seven substantive gates: median interface error 537.2 micrometres, bootstrap interval 465.2\u2013846.2, 0.39% of columns within 30 micrometres and zero of six downstream measurements concordant. The training-free PTA micro-CT adapter is rejected."
+    },
+    {
+      "identifier": "osteochondral_learned_adapter",
+      "path": "outputs/nostos0-osteochondral-learned-adapter-v1_1/osteochondral_learned_adapter_summary.json",
+      "sha256": "e978bbddd301f3baa1376683b8dc5a65d785352ce4d8496261c1628ac56f8a06",
+      "bytes": 12163,
+      "protocol_version": "nostos-osteochondral-learned-adapter/1.1",
+      "reported_status": "fail",
+      "evidence_level": "external_public_post_failure_development",
+      "interpretation": "Five-fold patient-grouped U-Net development improved median Dice to 0.912 and interface error to 21.6 micrometres but failed six of nine gates, including uncertainty, band overlap, complete coverage, comparator superiority and downstream measurement agreement. Independent-acquisition confirmation remains required."
+    },
+    {
+      "identifier": "osteochondral_boundary_adapter_v2",
+      "path": "outputs/nostos0-osteochondral-boundary-adapter-v2/osteochondral_learned_adapter_summary.json",
+      "sha256": "9dbf2e38c65c04d692be9fce544b83dd0603fad2e152f19b894e18ea078158b8",
+      "bytes": 12262,
+      "protocol_version": "nostos-osteochondral-boundary-adapter/2.0",
+      "reported_status": "fail",
+      "evidence_level": "external_public_post_failure_development",
+      "interpretation": "A prespecified boundary-aware loss did not repair the endpoint: median interface error worsened to 27.2 micrometres, five substantive gates remained failed and only three of six downstream measurements reached CCC 0.85."
+    },
+    {
+      "identifier": "osteochondral_reference_definition_audit",
+      "path": "outputs/nostos0-osteochondral-reference-audit-v1/osteochondral_reference_definition_audit_summary.json",
+      "sha256": "8afa7525ada6851db9a4eb60b241c0105273c89204390c0469c296fed72e1ee6",
+      "bytes": 36777,
+      "protocol_version": "nostos-osteochondral-reference-audit/1.0",
+      "reported_status": "reference_inadequate_for_definitive_interface_claim",
+      "evidence_level": "external_public_post_test_reference_audit",
+      "interpretation": "The threshold-derived mineralized-tissue masks are not unique traced interfaces. Across four frozen extraction policies, patient-median error ranged from 16.0 to 512.8 micrometres and model ranking changed; the public masks are inadequate for definitive continuous-interface validation."
+    },
+    {
+      "identifier": "kymatio",
+      "path": "outputs/nostos0-benchmark-v1/kymatio_benchmark.json",
+      "sha256": "7fb52ac52d5695c2de442e476ffc4b73afff0c32582e33ddcabf428a04d3eae1",
+      "bytes": 1036,
+      "protocol_version": "nostos-kymatio-comparator/1.0",
+      "reported_status": "not_declared",
+      "evidence_level": "upstream_comparator",
+      "interpretation": "Official scattering comparator on the synthetic split."
+    },
+    {
+      "identifier": "pyradiomics",
+      "path": "outputs/nostos0-benchmark-v1/pyradiomics_benchmark.json",
+      "sha256": "d15c4f03ccc53f6a26f7585320fd934079ec67b12877a32c46ea71415161e078",
+      "bytes": 8138,
+      "protocol_version": "nostos-pyradiomics-comparator/1.0",
+      "reported_status": "pass",
+      "evidence_level": "upstream_comparator",
+      "interpretation": "IBSI first-order subset conformance and synthetic comparator."
+    },
+    {
+      "identifier": "pyradiomics_ibsi_texture",
+      "path": "outputs/nostos0-ibsi-texture-conformance-v1/ibsi_texture_conformance.json",
+      "sha256": "adc2edc38cec52978d57940b77aa1d542d087a329a4c08e92f20675cf985d859",
+      "bytes": 37547,
+      "protocol_version": "nostos-pyradiomics-ibsi-texture/1.0",
+      "reported_status": "pass",
+      "evidence_level": "upstream_comparator",
+      "interpretation": "Official IBSI workbook audit of 75 definitionally matched 3-D texture features, with unsupported features retained as not comparable."
+    },
+    {
+      "identifier": "replication_reference",
+      "path": "outputs/nostos0-replication-reference-v1/replication_receipt.json",
+      "sha256": "b9adc109364fa14d3010924de0948c9f8e8c7120835e5dc668dbf4aa37b4948d",
+      "bytes": 1674,
+      "protocol_version": "nostos-external-replication/1.0",
+      "reported_status": "pass",
+      "evidence_level": "software_conformance",
+      "interpretation": "Author-operated reference execution of the public replication challenge; not independent replication."
+    },
+    {
+      "identifier": "replication_reference_attested",
+      "path": "outputs/nostos0-replication-reference-v2/replication_receipt.json",
+      "sha256": "297e1970618fca040c4454aaff0fe3c8dbc5c36c0007ed6d3630b8adf116d245",
+      "bytes": 1998,
+      "protocol_version": "nostos-external-replication/1.0",
+      "reported_status": "pass",
+      "evidence_level": "software_conformance_not_independent",
+      "interpretation": "Author-operated dry run passes artifact integrity but is machine-rejected as independent external execution."
+    },
+    {
+      "identifier": "comparator_imports",
+      "path": "outputs/nostos0-comparator-conformance-v1/comparator_conformance.json",
+      "sha256": "0010fd49b6382961f3284a5eaaf8e8673e531d437eb8203a51e2d13ccee47249",
+      "bytes": 1373,
+      "protocol_version": "nostos-comparator-conformance/1.0",
+      "reported_status": "pass",
+      "evidence_level": "software_conformance",
+      "interpretation": "Pinned upstream implementations import in declared interpreters."
+    },
+    {
+      "identifier": "bone",
+      "path": "outputs/external-bone-v1/external_bone_validation.json",
+      "sha256": "d0be3f11fb75dbd5221edf6659040e1cb043ddb710a32f66ab20533a05b4288f",
+      "bytes": 7891,
+      "protocol_version": "nostos-external-bone/1.0",
+      "reported_status": "preliminary_external_validation",
+      "evidence_level": "external_public_validation",
+      "interpretation": "Thickness agreement in eight public micro-CT volumes."
+    },
+    {
+      "identifier": "bonej_thickness",
+      "path": "outputs/nostos0-bonej-thickness-v1/bonej_thickness_comparator.json",
+      "sha256": "561f5592e9d05f66240d1c17caa9f1fbd84d18a5af203cabaec37caf499a04f7",
+      "bytes": 5592,
+      "protocol_version": "nostos-bonej-thickness/1.0",
+      "reported_status": "pass",
+      "evidence_level": "upstream_cross_software_confirmation",
+      "interpretation": "Frozen BoneJ 1.4.3 cross-software comparison passed all six gates on eight public masks; NOSTOS-BoneJ CCC 0.926 and median relative difference 7.14%."
+    },
+    {
+      "identifier": "bone_download_integrity",
+      "path": "outputs/nostos0-bone-download-integrity/integrity_verification.json",
+      "sha256": "64849ec4598fd13bcf7a4f6aa82fa8a73ef690b8d7a29b7374eabb35054c4dd9",
+      "bytes": 20479,
+      "protocol_version": "nostos-bone-download-integrity/1.0",
+      "reported_status": "pass",
+      "evidence_level": "data_integrity",
+      "interpretation": "All 73 public bone-program files (54,948,569,793 bytes) passed receipt SHA-256 and available deposited-MD5 verification."
+    },
+    {
+      "identifier": "bone_orientation_compact",
+      "path": "outputs/nostos0-bone-contract-orientation-confirmation-v1/bone_orientation_confirmation.json",
+      "sha256": "083e13ebaeea58e56b3adbe492448a1839910358875e89afaa703e96aace3fb8",
+      "bytes": 8931,
+      "protocol_version": "nostos-bone-contract-orientation/1.0",
+      "reported_status": "confirmation_complete",
+      "evidence_level": "external_public_prospective_failed_coverage",
+      "interpretation": "Paired SHG/TPF diagnostic run eliminated observed accepted-case instability but retained only 35.8% SHG coverage, below the frozen 70% gate; its acceptance and invalidity perturbations were partly circular and the result is not confirmatory."
+    },
+    {
+      "identifier": "bone_orientation_v2",
+      "path": "outputs/nostos0-bone-orientation-v2/bone_orientation_v2.json",
+      "sha256": "b5c9738fe72df60d2458782fb2c65592f729f006e8f032f694a75aab5f0ccc61",
+      "bytes": 506,
+      "protocol_version": "nostos-bone-orientation-contract/2.0",
+      "reported_status": "fail_no_promotable_threshold",
+      "evidence_level": "external_public_group_separated_failed_gate",
+      "interpretation": "Mouse-separated SHG development found no promotable perturbation-only threshold; locally coherent annotations were too sparse and support discrimination was inadequate."
+    },
+    {
+      "identifier": "bone_network_3d_v1",
+      "path": "outputs/nostos0-bone-network-3d/bone_network_3d.json",
+      "sha256": "543e24034ebea8926aaad75b0e5e9748051f53a395c611dd46e1542947902cd4",
+      "bytes": 1821,
+      "protocol_version": "nostos-bone-3d-network-contract/1.0",
+      "reported_status": "complete",
+      "evidence_level": "external_public_stress_test_noninformative",
+      "interpretation": "The first frozen 3D imported-mask corruption series generated no invalid cases and is retained as a stress-test design failure."
+    },
+    {
+      "identifier": "bone_network_3d_v2",
+      "path": "outputs/nostos0-bone-network-3d-v2/bone_network_3d.json",
+      "sha256": "a14acaee3071567f49b9260b4cbce74c8af2731630079e052a4b463330a2c97a",
+      "bytes": 1973,
+      "protocol_version": "nostos-bone-3d-network-contract/2.0",
+      "reported_status": "complete",
+      "evidence_level": "external_public_post_failure_development",
+      "interpretation": "Escalated corruption development reduced risk-coverage area but full-contract coverage was 53.8%, below the master 80% gate; not independent confirmation."
+    },
+    {
+      "identifier": "human_nanoct_scalar_v1",
+      "path": "outputs/nostos0-human-nanoct-transfer/human_nanoct_transfer.json",
+      "sha256": "3e0071062bf1b9a7cf59125ffd041d198dc09f169da1887c8c5b5d01b4457c9b",
+      "bytes": 2061,
+      "protocol_version": "nostos-human-nanoct-transfer/1.0",
+      "reported_status": "complete",
+      "evidence_level": "external_public_prospective_failed_gate",
+      "interpretation": "A scalar 3D tensor retained 92.0% coverage but failed to reject blur and resampling bias; full silent-invalid risk remained 38.9%."
+    },
+    {
+      "identifier": "human_nanoct_scale_v2",
+      "path": "outputs/nostos0-human-nanoct-scale-response-v2/human_nanoct_scale_response.json",
+      "sha256": "a00c674d79f7dce71f192808d5811c18c9f58953ac9ca1f4ac47192d7b526d0c",
+      "bytes": 3872,
+      "protocol_version": "nostos-human-nanoct-scale-response/2.0",
+      "reported_status": "development_complete",
+      "evidence_level": "external_public_post_failure_development",
+      "interpretation": "Scale-indexed 3D response lowered risk at 0.4 and 0.8 micrometres but coverage remained 36.5% and 39.9%, below the frozen 80% gate."
+    },
+    {
+      "identifier": "uvpam_abstention",
+      "path": "outputs/nostos0-uvpam-abstention/uvpam_abstention.json",
+      "sha256": "efbdb98e39ecc1a77b3ec06feac85fab5f454c94f59c3f8d9d9d69a68c9f0a06",
+      "bytes": 1452,
+      "protocol_version": "nostos-uvpam-abstention/1.0",
+      "reported_status": "pass",
+      "evidence_level": "external_public_semantic_contract_control",
+      "interpretation": "The complete contract correctly withheld a physical collagen endpoint from uncalibrated UV-PAM PNGs while emitting only explicitly pixel-domain generic descriptors; this is governance evidence, not accuracy validation."
+    },
+    {
+      "identifier": "bone_contract_program_summary",
+      "path": "outputs/nostos0-bone-contract-summary/bone_contract_program_summary.json",
+      "sha256": "b0a8f66e634df5b2ea78eebccd68c526038c1e689dd72cd2e76c947c1f4fbb94",
+      "bytes": 14657,
+      "protocol_version": "nostos-bone-contract-program-summary/1.0",
+      "reported_status": "complete_with_failed_primary_gates",
+      "evidence_level": "frozen_program_gate_table",
+      "interpretation": "The consolidated five-record program is complete with failed primary gates: source integrity passed, but useful-coverage and matched cross-stratum validity advantage were not demonstrated."
+    },
+    {
+      "identifier": "bone_contract_figure_traceability",
+      "path": "figures/nostos0/supplementary_figure_1_bone_contract_stress.manifest.json",
+      "sha256": "33bba5fb8f3b60a2db55db103c8da081af25eda843c384cddbbc5e4eb7470ead",
+      "bytes": 3838,
+      "protocol_version": "nostos-bone-contract-figure/1.0",
+      "reported_status": "complete",
+      "evidence_level": "figure_provenance",
+      "interpretation": "Supplementary Figure 1 is deterministically generated from checksum-verified public bone images and frozen receipts; no generative scientific imagery is used."
+    },
+    {
+      "identifier": "biosr_tensor_v7_mixed_transfer",
+      "path": "outputs/nostos0-biosr-tensor-v7-mixed-lock-combined-audit/combined_confirmation_audit.json",
+      "sha256": "a15f854797fd797d02f6aade6bf3d730d3a87de46a5a1211fc27d1c295d397ea",
+      "bytes": 28339,
+      "protocol_version": null,
+      "reported_status": "measurement_safety_confirmed_incremental_utility_not_assessable",
+      "evidence_level": "external_public_locked_transfer_confirmation",
+      "interpretation": "A frozen linear/nonlinear BioSR F-actin transfer audit accepted all 1,590 eligible endpoint rows across 16 independent reference fields without an invalid clean paired-acquisition emission; selective-QC utility was not assessable because the conventional comparator also emitted no invalid cases."
+    },
+    {
+      "identifier": "biosr_tensor_v8_stress_failure",
+      "path": "outputs/nostos0-biosr-tensor-v8-controlled-degradation-pilot/pilot_receipt.json",
+      "sha256": "69ea9f9ff2e4f6da909e495aee2e765235a420b3acf604031ffb8362927c9672",
+      "bytes": 106619,
+      "protocol_version": "nostos-paired-acquisition-tensor/8.0-controlled-degradation-pilot",
+      "reported_status": "complete_v8_controlled_degradation_pilot",
+      "evidence_level": "external_public_locked_engineering_failure",
+      "interpretation": "A prospectively locked six-field controlled-degradation challenge exposed a real failure: the original complete contract accepted every eligible coherence row and did not improve on acquisition QC, with silent-invalid risk 0.0740. The failed receipt is retained as the pre-repair record."
+    },
+    {
+      "identifier": "biosr_tensor_v9_scale_development",
+      "path": "outputs/nostos0-biosr-tensor-v9-scale-conditioned-development/development_audit.json",
+      "sha256": "239a5480bdbb5c7e3135fd4fe03cb526592b063ec31844dd6ef9b997d058669e",
+      "bytes": 157195,
+      "protocol_version": null,
+      "reported_status": "operating_point_selected",
+      "evidence_level": "external_public_post_failure_development",
+      "interpretation": "Outcome-informed development on the failed v8 fields selected a physical-scale support score and frozen balanced operating boundary. This record is development evidence only and is not counted as confirmation."
+    },
+    {
+      "identifier": "biosr_tensor_v9_confirmation",
+      "path": "outputs/nostos0-biosr-tensor-v9-scale-conditioned-confirmation/confirmation_receipt.json",
+      "sha256": "17c2e876e50ce86dd9d6a5856f7e9ea98937ee8563377c748fd108cdc6cb6f17",
+      "bytes": 121189,
+      "protocol_version": "nostos-paired-acquisition-tensor/9.0-scale-conditioned-confirmation",
+      "reported_status": "complete_v9_scale_conditioned_confirmation",
+      "evidence_level": "external_public_pristine_confirmation",
+      "interpretation": "On eight untouched linear/nonlinear BioSR F-actin fields and 2,240 endpoint rows, the frozen v9 tensor-coherence profile passed all 11 prespecified gates: 95.0% coverage, silent-invalid risk 0.0387 versus 0.0735 for acquisition QC, 47.4% relative reduction, and a positive clustered AURC-difference interval."
+    },
+    {
+      "identifier": "biosr_tensor_v9_final_audit",
+      "path": "outputs/nostos0-biosr-tensor-v9-final-audit/final_audit.json",
+      "sha256": "231fed52ee363c38009067fe7bb2e6f5c2cd2e0c94eaa650ac6fd5d524ec192a",
+      "bytes": 112484,
+      "protocol_version": null,
+      "reported_status": "verified_pass",
+      "evidence_level": "independent_code_path_audit_author_operated",
+      "interpretation": "A separate post-result audit rehashed both full archives and 27 locked artifacts, verified disjoint selections, all 2,240 unique rows and score formulas, and exactly recomputed the confirmation. It is an independent code path operated by the author, not external replication."
+    },
+    {
+      "identifier": "fmd_v1_metadata_failure",
+      "path": "outputs/nostos0-fmd-validity-profile-v1-development/metadata_failure_receipt.json",
+      "sha256": "d1cb4483c9586c99adf737734ebc639ff68d2799f2b2a462b35754592028283e",
+      "bytes": 1165,
+      "protocol_version": null,
+      "reported_status": "failed_before_endpoint_analysis",
+      "evidence_level": "public_data_pre_analysis_failure",
+      "interpretation": "The first FMD protocol stopped before endpoint analysis when the locked image geometry and repeated-capture semantics disagreed with the official source. The failure was retained."
+    },
+    {
+      "identifier": "fmd_v1_1_performance_abort",
+      "path": "outputs/nostos0-fmd-validity-profile-v1-1-development/performance_abort_receipt.json",
+      "sha256": "b5c63befe8ed11ff5fce3fc3a341358c9cf61998600e16fab104d397c3c55310",
+      "bytes": 722,
+      "protocol_version": null,
+      "reported_status": "development_run_manually_stopped_before_row_export",
+      "evidence_level": "public_data_pre_export_engineering_failure",
+      "interpretation": "The corrected FMD development run was stopped before row export because the generic evaluator computed modules excluded from the frozen benchmark; the endpoint-selective path was subsequently proven numerically identical for retained endpoints."
+    },
+    {
+      "identifier": "fmd_v1_1_no_operating_point",
+      "path": "outputs/nostos0-fmd-validity-profile-v1-1-compiled/development_audit.json",
+      "sha256": "e2144c365039750949e07b0590efed77ff0dd48576192beea602b4713c33202b",
+      "bytes": 66601,
+      "protocol_version": null,
+      "reported_status": "no_operating_point",
+      "evidence_level": "external_public_grouped_failed_gate",
+      "interpretation": "The original perturbation/QC validity score produced no deployable cross-fitted operating point on six FMD acquisition groups."
+    },
+    {
+      "identifier": "fmd_v1_2_pooled_heterogeneity",
+      "path": "outputs/nostos0-fmd-validity-profile-v1-2-confirmation-audit-v1-1/confirmation_audit.json",
+      "sha256": "bf4dd2128faa118f757efa73af61a5592fa29b36b4389c2158058e8a563b641a",
+      "bytes": 9079,
+      "protocol_version": null,
+      "reported_status": "pass",
+      "evidence_level": "external_public_pristine_aggregate_pass_with_stratum_failure",
+      "interpretation": "A physics-constrained declared-capture score passed every pooled confirmation gate, but the post-confirmation safety audit exposed 41.7% risk in widefield while confocal and two-photon accepted emissions had zero observed risk. The aggregate profile was not promoted across modalities."
+    },
+    {
+      "identifier": "fmd_v1_3_widefield_confirmation",
+      "path": "outputs/nostos0-fmd-widefield-v1-3-confirmation-audit-v1-2-reporting-amendment.json",
+      "sha256": "62b879a63677ede1f38b39948afb7e1790d8a1ab1fcf1c69212d22559158d038",
+      "bytes": 9038,
+      "protocol_version": null,
+      "reported_status": "pass",
+      "evidence_level": "external_public_pristine_confirmation_with_subgroup_failure",
+      "interpretation": "A widefield-specific profile passed all frozen pooled gates on four untouched FOVs, but the same avg8-by-8-pixel subgroup was fully invalid in development and confirmation; this deterministic subgroup failure triggered hierarchical v1.4 support."
+    },
+    {
+      "identifier": "fmd_v1_4_conditional_development",
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-development/development_receipt.json",
+      "sha256": "eb4116e7ff8d68ad387c8640ed4667d20f91a3d5d7f23c144ea07614a84e7c8c",
+      "bytes": 2499,
+      "protocol_version": null,
+      "reported_status": "operating_point_selected",
+      "evidence_level": "external_public_post_failure_development",
+      "interpretation": "Eight opened FOVs compiled four supported acquisition-by-scale cells at 26.7% coverage and zero observed invalid emissions; this is development evidence only."
+    },
+    {
+      "identifier": "fmd_v1_4_conditional_confirmation",
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-confirmation-audit/confirmation_audit.json",
+      "sha256": "ac2c47392c08bf3a7ba03fb8290e6b955ca903e66e3baf39492c2065601fba02",
+      "bytes": 8916,
+      "protocol_version": null,
+      "reported_status": "pass",
+      "evidence_level": "external_public_pristine_hierarchical_confirmation",
+      "interpretation": "On four new untouched FOVs, the frozen hierarchical profile passed all ten pooled and cellwise gates: 64/240 primary emissions, zero invalid, versus 31/64 invalid for matched ordinary QC; clustered AURC difference 0.281, 95% interval 0.187-0.416."
+    },
+    {
+      "identifier": "fmd_v1_4_finite_sample",
+      "path": "outputs/nostos0-fmd-widefield-v1-4-finite-sample-uncertainty.json",
+      "sha256": "981f0dba11430c75c6574e43c7ecc06b82db1a1d7958acc41d63834ca4e4f057",
+      "bytes": 3877,
+      "protocol_version": null,
+      "reported_status": "supplemental_uncertainty_complete",
+      "evidence_level": "finite_sample_uncertainty_audit",
+      "interpretation": "The supplemental exact audit prevents zero-event overstatement: the nested-row upper 95% limit is 5.6%, while the 0/4 independent-FOV any-failure upper limit is 60.2%."
+    },
+    {
+      "identifier": "fmd_program_final_audit",
+      "path": "outputs/nostos0-fmd-validity-program-final-audit-v1/final_audit.json",
+      "sha256": "05069d090f05812a11924d733963cc675528ddc5b3e259a10a89ed58ef71e6c6",
+      "bytes": 14674,
+      "protocol_version": null,
+      "reported_status": "verified_pass",
+      "evidence_level": "independent_code_path_audit_author_operated",
+      "interpretation": "The terminal 17-check audit reproduced all hash selections, score formulas, row lineages, locked artifacts and v1.4 decisions, proved reference-label-blind deployment and retained the full failure-repair history."
+    },
+    {
+      "identifier": "manuscript_render_qa",
+      "path": "outputs/nostos0-manuscript-qa-v1/manuscript_qa.json",
+      "sha256": "8742fe695b4a0c2c4aa7af3e6b09631b8d7d9e4eef6f1f4b4eb1db0ea0f8cac1",
+      "bytes": 10450,
+      "protocol_version": "nostos-manuscript-render-qa/1.0",
+      "reported_status": "pass",
+      "evidence_level": "document_production_qa",
+      "interpretation": "The eight-page Word submission candidate passed machine and visual production checks, including figure identity, page continuity, Times New Roman use, caption presence and local-path/credential scans. The receipt explicitly retains external and administrative submission blockers."
+    },
+    {
+      "identifier": "computational_methods_manuscript_render_qa",
+      "path": "outputs/nostos0-manuscript-qa-v2/manuscript_qa.json",
+      "sha256": "dc13b932d68cab02715886bb4891b21c1d344d56cd651ed89834a90cbb550bd7",
+      "bytes": 12419,
+      "protocol_version": "nostos-manuscript-render-qa/1.0",
+      "reported_status": "pass",
+      "evidence_level": "document_production_qa",
+      "interpretation": "The 15-page computational-methods submission candidate passed machine, accessibility and complete visual production checks with four embedded evidence figures, continuous pagination, Times New Roman throughout and no private paths or credentials."
+    },
+    {
+      "identifier": "nuclei_sign_agnostic",
+      "path": "outputs/external-nuclei-v1/external_nuclei_validation.json",
+      "sha256": "b92f62de0f082c77860af269e5f115074ddbaaf339ae8fdaccf09e0f0dd750e7",
+      "bytes": 26567,
+      "protocol_version": "nostos-external-nuclei/1.0",
+      "reported_status": "external_public_validation",
+      "evidence_level": "external_public_development",
+      "interpretation": "Initial BBBC039 test showing the failure of sign-agnostic Hessian localization."
+    },
+    {
+      "identifier": "nuclei_polarity_refinement",
+      "path": "outputs/external-nuclei-v1_1/external_nuclei_validation.json",
+      "sha256": "5fdc48fcbfa81f3843593caaa89c54f93d21ffbf85921f62559d13d5f3065fc7",
+      "bytes": 26963,
+      "protocol_version": "nostos-external-nuclei/1.1",
+      "reported_status": "external_public_validation",
+      "evidence_level": "external_public_post_test_refinement",
+      "interpretation": "Polarity-aware BBBC039 result; same test set, therefore not pristine confirmatory evidence."
+    },
+    {
+      "identifier": "nuclei_bbbc007_prospective",
+      "path": "outputs/external-nuclei-confirmatory-v1/external_nuclei_confirmatory.json",
+      "sha256": "58311566dc05a53b9219cac21ee71c3e575c0d1cbf7b8b3dc6a5677e6121c4e8",
+      "bytes": 10591,
+      "protocol_version": "nostos-external-nuclei-confirmatory/1.0",
+      "reported_status": "fail",
+      "evidence_level": "external_public_prospective_failed_gate",
+      "interpretation": "Prospectively frozen BBBC007 transfer: strong localization, but the prespecified ROC-AUC superiority interval versus LoG crossed zero."
+    },
+    {
+      "identifier": "nuclei_bbbc020_independent",
+      "path": "outputs/external-nuclei-bbbc020-v1/external_nuclei_bbbc020.json",
+      "sha256": "029c61b7070a448ed377cda6e8442f5b35a5b4eda1abce37dc50f9c91a79437a",
+      "bytes": 13365,
+      "protocol_version": "nostos-external-nuclei-bbbc020/1.0",
+      "reported_status": "fail",
+      "evidence_level": "external_public_prospective_failed_gate",
+      "interpretation": "Independent murine BBBC020 acquisition: strong local localization, but no prespecified AP superiority over LoG."
+    },
+    {
+      "identifier": "filament",
+      "path": "outputs/external-filament-v1/external_filament_validation.json",
+      "sha256": "a7e1c31a63c96798f60a0e495ada367bfd0a4704a62ad91461f115339c41f266",
+      "bytes": 13202,
+      "protocol_version": "nostos-external-filament/1.0",
+      "reported_status": "exploratory_cross_domain",
+      "evidence_level": "external_public_exploratory",
+      "interpretation": "Cross-species structural information; acquisition confounded."
+    },
+    {
+      "identifier": "cartilage",
+      "path": "outputs/external-cartilage-v1/external_cartilage_validation.json",
+      "sha256": "3fe68297f518be1f3cbdfbfa6236a324b96b624fbd48bb82001eeaeec2e6b9ca",
+      "bytes": 46915,
+      "protocol_version": "nostos-external-cartilage/1.0",
+      "reported_status": "exploratory_weak_mask",
+      "evidence_level": "external_public_exploratory",
+      "interpretation": "Site-matched OA associations with unvalidated ROI proposal."
+    },
+    {
+      "identifier": "cartilage_mask_review",
+      "path": "manifests/cartilage_mask_review_packet.json",
+      "sha256": "f56b5bc42b56f438d92abc2130dc0d379b0625a6f53f88de8b8198aff568c949",
+      "bytes": 817,
+      "protocol_version": "nostos-cartilage-mask-review-pointer/1.1",
+      "reported_status": "pending_human_reference_masks",
+      "evidence_level": "validation_infrastructure_pending",
+      "interpretation": "Locked 40-case review packet; human reference masks remain pending."
+    },
+    {
+      "identifier": "cartilage_review_evaluator_dry_run",
+      "path": "outputs/nostos0-cartilage-review-evaluator-dry-run-v1/dry_run_receipt.json",
+      "sha256": "b69682d55df92bf71f37646f2f756de8283293871f63911e8daea7a287802926",
+      "bytes": 423,
+      "protocol_version": "nostos-cartilage-review-evaluator-dry-run/1.0",
+      "reported_status": "software_pass",
+      "evidence_level": "software_conformance_not_human_validation",
+      "interpretation": "Analytic-mask dry run exercises the blinded review evaluator; explicitly inadmissible as human-reference segmentation evidence."
+    },
+    {
+      "identifier": "cartilage_ablation_medial",
+      "path": "outputs/cartilage-ablations-v1_1/safo_medial.receipt.json",
+      "sha256": "e54e6d0221f271ea3e367ce5d316092fb3e76f79cee6e4d1de5fbc926d3b9223",
+      "bytes": 690,
+      "protocol_version": "nostos-cartilage-ablations/1.1",
+      "reported_status": "exploratory_weak_semantic_proposals",
+      "evidence_level": "external_public_exploratory",
+      "interpretation": "Frozen medial boundary, purity, dark-object and conventional-feature extraction."
+    },
+    {
+      "identifier": "cartilage_ablation_lateral",
+      "path": "outputs/cartilage-ablations-v1_1/safo_lateral.receipt.json",
+      "sha256": "18929f5d47d150359c2284025971974eba771cb36b90bfa1daf96344cb1eeed7",
+      "bytes": 692,
+      "protocol_version": "nostos-cartilage-ablations/1.1",
+      "reported_status": "exploratory_weak_semantic_proposals",
+      "evidence_level": "external_public_exploratory",
+      "interpretation": "Frozen lateral boundary, purity, dark-object and conventional-feature extraction."
+    },
+    {
+      "identifier": "cartilage_ablation_analysis",
+      "path": "outputs/cartilage-ablation-analysis-v1_1/cartilage_ablation_analysis.json",
+      "sha256": "6e0b3d90af3ead5fedcaf3138fcd531158b1bdd2875179e50e2a6cd4a3de5554",
+      "bytes": 4543,
+      "protocol_version": "nostos-cartilage-ablation-analysis/1.1",
+      "reported_status": "exploratory_weak_mask",
+      "evidence_level": "external_public_exploratory",
+      "interpretation": "Paired correlations and participant-level nested prediction ablations."
+    }
+  ],
+  "missing": [],
+  "nature_readiness": "computational_methods_reach_candidate_pending_archival_doi_and_external_execution",
+  "blocking_evidence": [
+    "an unaided external computational user must execute the frozen release and return the unedited receipt",
+    "the final public tag, source archive and evidence index require an archival DOI",
+    "the FMD population-generalization claim must remain bounded because the final prospective test contains four independent FOVs"
+  ],
+  "scope_rule": "A complete index proves receipt availability and integrity. Venue acceptance, external adoption and population generalization are not produced by an integrity index."
+}

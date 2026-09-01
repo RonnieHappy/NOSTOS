@@ -1,0 +1,175 @@
+{
+  "archive_md5": "e02b07bc4cfcd19dc911bd9d0c4e65a0",
+  "archive_sha256": "4914cd7d951b4ddc1a01f6c7f121b7e9936fd2a7d1505f3e802984ffee69cad7",
+  "artifacts": [
+    {
+      "bytes": 6701,
+      "path": "configs/fmd_widefield_validity_profile_v1_3.locked.json",
+      "sha256": "62f1e77f5e380abb3943e6014c0d0603747a403c50d06a6e2a18a17fb544045b"
+    },
+    {
+      "bytes": 2197,
+      "path": "docs/NOSTOS0_FMD_WIDEFIELD_VALIDITY_PROFILE_V1_3_PROTOCOL.md",
+      "sha256": "5759f8815f79781a5e5eb324fe367c2d48ea2daf4d5fdee466c2a85ee0926d82"
+    },
+    {
+      "bytes": 53069,
+      "path": "outputs/nostos0-fmd-widefield-v1-3-compiled/development_audit.json",
+      "sha256": "6d0be04faec72de159e58541b068e04eb6650c40a6b07a9afb8f5d8d1abfee37"
+    },
+    {
+      "bytes": 2038611,
+      "path": "outputs/nostos0-fmd-widefield-v1-3-compiled/development_scored.jsonl",
+      "sha256": "be764f7471a50469e32d0afff8a663c9f8d45fea07f9867feaa097e0faa73aa3"
+    },
+    {
+      "bytes": 70263,
+      "path": "outputs/nostos0-fmd-widefield-v1-3-compiled/validity_profile.json",
+      "sha256": "9c99e6c01359b8b8ab84f1eb6f48cf9101e913ee90269b63573ffd1abc69b737"
+    },
+    {
+      "bytes": 2132,
+      "path": "outputs/nostos0-fmd-widefield-v1-3-development/development_evidence_receipt.json",
+      "sha256": "0ef0574def282f5bc90bd566f31af23ae43390d135d5ab116ec3a46e0dd28f81"
+    },
+    {
+      "bytes": 57334,
+      "path": "outputs/nostos0-fmd-widefield-v1-3-development/development_pair_index.json",
+      "sha256": "076cd012088ddda8559634067b066a0465734020384649ade6fb907848340d6c"
+    },
+    {
+      "bytes": 2032155,
+      "path": "outputs/nostos0-fmd-widefield-v1-3-development/development_rows.jsonl",
+      "sha256": "feaf9e734a3b68dd591251c4b17452e953aea2b95a5f99d6b8fb8959459123f6"
+    },
+    {
+      "bytes": 2884,
+      "path": "pyproject.toml",
+      "sha256": "9204767675b912b7f1ece4469799dc1009fa3e2afd966d7956bf6337faa5844c"
+    },
+    {
+      "bytes": 6087,
+      "path": "scripts/freeze_fmd_widefield_confirmation_v1_3.py",
+      "sha256": "f691429c21dd37d743be235dd32924a2f3744e4b7f9be854f32f3fdff2bda52e"
+    },
+    {
+      "bytes": 1353,
+      "path": "scripts/run_fmd_widefield_validity_profile_v1_3.py",
+      "sha256": "b40989510282d95fcb851489f7fd1bb84ee6f517776c0cbd7992f952c6f43527"
+    },
+    {
+      "bytes": 2241,
+      "path": "src/nostos/core/qc.py",
+      "sha256": "9e9fc39a35a2c000cf5ad47f07595c2052e327bad9c08b42b62011429e272353"
+    },
+    {
+      "bytes": 13184,
+      "path": "src/nostos/features/response_modules.py",
+      "sha256": "21902711c43675920380abb5762047d63911440cc78f35f14a5fc7d252191a85"
+    },
+    {
+      "bytes": 7461,
+      "path": "src/nostos/features/spatial_fft.py",
+      "sha256": "2f18db7a1ded0e17ae091a53ddca0b44a37a5dbabd12ee1c61f2518deac23f68"
+    },
+    {
+      "bytes": 23417,
+      "path": "src/nostos/validation/fmd_validity_profile.py",
+      "sha256": "c07502012e9ad49e2df70449222f8de5a3262613e25d3094faf2323408dda1b0"
+    },
+    {
+      "bytes": 22234,
+      "path": "src/nostos/validation/fmd_widefield_profile.py",
+      "sha256": "11652acfe1c8a1664e04c435206ec91a3d674d32b9663055fd6d36dcb91137f3"
+    },
+    {
+      "bytes": 49810,
+      "path": "src/nostos/validation/paired_acquisition_support.py",
+      "sha256": "101ebbe1bceafa8916511560e3c5bdb8a42d0b9eded76d043fddec3465ede3e0"
+    },
+    {
+      "bytes": 44317,
+      "path": "src/nostos/validation/validity_profile_compiler.py",
+      "sha256": "7f54b86a4a0e1337b46d7855d609a7b38ddc3b20b4400b013957b15adc4aa803"
+    },
+    {
+      "bytes": 6623,
+      "path": "tests/test_fmd_validity_profile.py",
+      "sha256": "6b4841ca05ac3958eb4331a529080665fd4ea72ae74c3dca11450fb68f69a2c4"
+    },
+    {
+      "bytes": 3391,
+      "path": "tests/test_fmd_widefield_profile.py",
+      "sha256": "d0224a9e8e2334cdd69cde7e502e9e019e7056b04cac3d9ac4564d746a6f9ca7"
+    },
+    {
+      "bytes": 9685,
+      "path": "tests/test_validity_profile_compiler.py",
+      "sha256": "eb81fe8821bfdef9f666109a574cf094dfcb533ac546db87108ab2b79a25c010"
+    }
+  ],
+  "config_content_sha256": "de24869e0176c1f9c2be1035fa41f6376a66e21b5cc4eab5fd59e5775c3c7643",
+  "config_file_sha256": "62f1e77f5e380abb3943e6014c0d0603747a403c50d06a6e2a18a17fb544045b",
+  "confirmation_fields": [
+    16,
+    17,
+    18,
+    11
+  ],
+  "confirmation_output_absent_at_lock": "<PROJECT_ROOT>\\outputs\\nostos0-fmd-widefield-v1-3-confirmation",
+  "confirmation_realization_indices": {
+    "11": [
+      14,
+      16,
+      42,
+      44
+    ],
+    "16": [
+      12,
+      29,
+      36,
+      40
+    ],
+    "17": [
+      5,
+      17,
+      22,
+      24
+    ],
+    "18": [
+      23,
+      34,
+      38,
+      42
+    ]
+  },
+  "confirmation_status_at_lock": "pixels_not_decoded_for_measurement_analysis",
+  "content_sha256": "e674157cfcb248197f2fd7bf1c388be1cabd64cc14de9c247c65a8422adafadc",
+  "development_fields": [
+    7,
+    15,
+    13,
+    9
+  ],
+  "locked_at_utc": "2026-08-29T15:51:46.103711Z",
+  "profile_content_sha256": "65239b44c66a8bfca80608b1544fd0c892cf8e3209805828a1623d85382eebb8",
+  "profile_file_sha256": "9c99e6c01359b8b8ab84f1eb6f48cf9101e913ee90269b63573ffd1abc69b737",
+  "profile_operating_point": {
+    "accepted": 71,
+    "accepted_independent_groups": 4,
+    "checks": {
+      "maximum_cluster_bootstrap_risk_upper95": true,
+      "minimum_coverage": true,
+      "target_observed_risk": true
+    },
+    "cluster_bootstrap_risk_upper95": 0.16883116883116883,
+    "coverage": 0.29583333333333334,
+    "eligible": 240,
+    "invalid": 7,
+    "passes": true,
+    "predicted_risk_threshold": 0.6303073200826219,
+    "risk": 0.09859154929577464
+  },
+  "protocol_id": "fmd-widefield-bpae-r-validity-profile-v1-3",
+  "schema_version": "nostos-fmd-widefield-confirmation-lock/1.0"
+}

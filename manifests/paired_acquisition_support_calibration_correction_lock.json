@@ -1,0 +1,29 @@
+{
+  "schema_version": "nostos-prospective-lock/2.0",
+  "locked_at_utc": "2026-08-28T22:56:41Z",
+  "stage": "biosr_calibration_correction",
+  "supersedes_for_future_execution": "configs/paired_acquisition_support_v1.locked.json",
+  "access_state": {
+    "score_design": "quarantined_and_restart_required",
+    "threshold_calibration": "sealed",
+    "confirmation_archives": "not_downloaded_not_listed_not_decoded"
+  },
+  "files": [
+    {
+      "path": "configs/paired_acquisition_support_v2.locked.json",
+      "bytes": 3333,
+      "sha256": "aa0f96b17d2278dcb5eb524c0c5e1d73233d32d4aed0d62486d9a58fff6bda39"
+    },
+    {
+      "path": "docs/NOSTOS0_BIOSR_CALIBRATION_CORRECTION.md",
+      "bytes": 3474,
+      "sha256": "e7369cec2bef528743ef47ce260511d40bf731f7ba1fe971c1a286396c7df2bc"
+    },
+    {
+      "path": "manifests/biosr_calibration_evidence_v2.json",
+      "bytes": 2451,
+      "sha256": "ebca6145dc0a83ef3c65542e830f5103d12c17b692eabb5980938daf467d7e32"
+    }
+  ],
+  "prospective_statement": "The physical calibration correction was locked before restarting score design and before any threshold-calibration or confirmation image was accessed. Every prior BioSR endpoint output is quarantined."
+}

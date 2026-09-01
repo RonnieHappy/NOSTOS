@@ -1,0 +1,30 @@
+{
+  "protocol_version": "nostos-bone-orientation-contract/2.0",
+  "dataset_doi": "10.5281/zenodo.3355937",
+  "development_mice": ["Mouse20", "Mouse21", "Mouse22", "Mouse23"],
+  "evaluation_mice": ["Mouse24", "Mouse25", "Mouse26", "Mouse27"],
+  "tile_size_pixels": 128,
+  "tile_stride_pixels": 128,
+  "maximum_tiles_per_slice": 16,
+  "maximum_slices_per_scan": 12,
+  "tensor_scales_pixels": [2.0, 4.0],
+  "minimum_dynamic_range_fraction": 0.05,
+  "internal_probes": {
+    "gaussian_blur_sigma": 0.75,
+    "contrast_gamma": 1.15,
+    "translation_pixels": [2, -2]
+  },
+  "withheld_tests": {
+    "anisotropic_y_factor": 0.65,
+    "crop_border_pixels": 12,
+    "maximum_axial_drift_degrees": 10.0
+  },
+  "development_minimum_coverage": 0.70,
+  "development_maximum_cluster_risk_upper95": 0.15,
+  "label_semantics": {
+    "green": "locally_similar_orientation",
+    "red": "dissimilar_orientation",
+    "blue": "not_of_interest"
+  },
+  "claim_boundary": "Selective support for local 2D axial orientation in label-free mouse-bone SHG; annotations are coarse compatibility regions, not angular ground truth."
+}

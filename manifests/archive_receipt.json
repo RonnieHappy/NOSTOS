@@ -1,0 +1,11 @@
+{
+  "format": "tar.gz",
+  "member_count": 1883,
+  "uncompressed_bytes": 36784584751,
+  "archive": "<DATA_ROOT>\\data\\public\\human-knee-cartilage-histopathology\\Human_Knee_Cartilage_Histopathology_Archive.part",
+  "archive_bytes": 29870468517,
+  "archive_sha256": "064140a82fb70364e4f2459c52edba64491e48ecd20b3e164487763218b41126",
+  "destination": "<DATA_ROOT>\\data\\public\\human-knee-cartilage-histopathology\\raw",
+  "extracted_file_count": 1063,
+  "extracted_bytes": 36784584751
+}

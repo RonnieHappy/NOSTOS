@@ -1,0 +1,212 @@
+{
+  "schema_version": "nostos-paired-acquisition-threshold-failure-receipt/1.0",
+  "created_at_utc": "2026-08-29T03:14:05Z",
+  "status": "threshold_calibration_failed_no_operating_point",
+  "protocol_version": "nostos-paired-acquisition-support/5.0",
+  "scope": {
+    "reference_fields": 63,
+    "paired_acquisitions": 468,
+    "claim_endpoint_rows": 8424,
+    "reference_eligible_claim_cases": 5678,
+    "structures": [
+      "CCPs",
+      "ER"
+    ]
+  },
+  "prospective_result": {
+    "operating_point_selected": false,
+    "candidate_thresholds": 1258,
+    "bootstrap_candidates_evaluated": 0,
+    "full_contract_aurc": 0.013173323531485601,
+    "always_emit_aurc": 0.054948925678055656,
+    "conventional_acquisition_qc_aurc": 0.014075815266995676,
+    "aurc_reduction_fraction_vs_always_emit": 0.7602624006032845,
+    "aurc_gate_passed": true
+  },
+  "failure_diagnosis": {
+    "irreducible_structure_endpoint_failures": [
+      {
+        "structure": "ER",
+        "endpoint": "variogram_range_vertical",
+        "best": {
+          "threshold": 0.9999999999999998,
+          "accepted": 158,
+          "coverage": 1.0,
+          "invalid": 17,
+          "risk": 0.10759493670886076
+        }
+      }
+    ],
+    "primary_score_scale_conflict": {
+      "structure": "ER",
+      "endpoint_a": "tensor_coherence",
+      "threshold_a": 0.2999141693723138,
+      "endpoint_b": "tensor_orientation",
+      "threshold_b": 0.9964578203269273
+    },
+    "interpretation": "The v5 score ranks error overall but cannot support one commensurate cutoff; ER vertical variogram range also fails independently at the frozen coverage floor."
+  },
+  "failure_reasons": [
+    "No global threshold met every frozen aggregate and structure-endpoint risk/coverage constraint.",
+    "ER vertical variogram range retained 17 invalid cases among 158 at its best diagnostic point, risk 0.10759493670886076.",
+    "Endpoint families require non-commensurate raw-score cutoffs.",
+    "Conventional acquisition QC also had no operating point under the identical selector."
+  ],
+  "threshold_lock_written": false,
+  "confirmation_access_authorized": false,
+  "confirmation_archives_accessed": false,
+  "next_gate": "Prospectively freeze a new v6 endpoint-family-calibrated validity contract and rotation-invariant variogram definition before any confirmation access.",
+  "files": [
+    {
+      "path": "configs/paired_acquisition_support_v5.locked.json",
+      "bytes": 4791,
+      "sha256": "711e5f4aaac8bcbeccb07bc94fb33dd3e51f5eeec2fea317a25ed0c8b66d7573"
+    },
+    {
+      "path": "configs/biosr_widefield_measurement_profile_v1.locked.json",
+      "bytes": 3385,
+      "sha256": "321ee833987351fd64c9a358e2b8682bf368d35ea22a14665c05b65d5c2f6942"
+    },
+    {
+      "path": "manifests/paired_acquisition_support_score_formula_lock_v2.json",
+      "bytes": 6523,
+      "sha256": "ddee8aeda81b8d42763903676c4ec8b316a9f1a992cc257cd7718fe00eb27c7c"
+    },
+    {
+      "path": "manifests/paired_acquisition_support_profile_lineage_amendment_lock.json",
+      "bytes": 3098,
+      "sha256": "246a4c8309a77471010aab18116575898d0af2ce7b323cec0cc46b50f7072cf5"
+    },
+    {
+      "path": "manifests/biosr_small_pilot_v5_selection_lock.json",
+      "bytes": 1187,
+      "sha256": "3ed60fa54b4e6a0b133b7da500872aadc9bfe363e8fb87aac98898e75a8aca51"
+    },
+    {
+      "path": "outputs/nostos0-biosr-ccp-threshold-calibration-v5/archive_receipt.json",
+      "bytes": 12897,
+      "sha256": "22da7f632c918fbbdb9fd36426f3b604e5930c6c5affba1c824705bb06b7d9c1"
+    },
+    {
+      "path": "outputs/nostos0-biosr-ccp-threshold-calibration-v5/endpoint_cases.jsonl",
+      "bytes": 14240529,
+      "sha256": "88848985fc1a43011c49f76e935fc0638b4517c8cd526fdc22ff7b32ca9faffc"
+    },
+    {
+      "path": "outputs/nostos0-biosr-ccp-threshold-calibration-v5/pair_index.json",
+      "bytes": 256685,
+      "sha256": "0dd046652f029e03487fb9571c83e2ad4ec7c5e3ebb81f3e4f9378f7e42588ff"
+    },
+    {
+      "path": "outputs/nostos0-biosr-er-threshold-calibration-v5/archive_receipt.json",
+      "bytes": 13455,
+      "sha256": "308926ba4e746cfac7f5638a026fd78a6d86b11127b1f5163bc86be5662e84d6"
+    },
+    {
+      "path": "outputs/nostos0-biosr-er-threshold-calibration-v5/endpoint_cases.jsonl",
+      "bytes": 10467839,
+      "sha256": "e522b9b707b88440d6df1766f9992671d56e5f87af5d2893430b29ceef166203"
+    },
+    {
+      "path": "outputs/nostos0-biosr-er-threshold-calibration-v5/pair_index.json",
+      "bytes": 191125,
+      "sha256": "1a1a2ce913ab19ee7dded2c390157a25b3af66cbb1a4d0ea868d5413f54b0fb5"
+    },
+    {
+      "path": "outputs/nostos0-biosr-threshold-calibration-v5/threshold_calibration.json",
+      "bytes": 7042,
+      "sha256": "fa87b78ee4077c39deaf09490fe34ff24322a76c74afeee0b5caf913e9a90531"
+    },
+    {
+      "path": "outputs/nostos0-biosr-threshold-calibration-v5/THRESHOLD_VERDICT.md",
+      "bytes": 1326,
+      "sha256": "a9f084e170b910bd31e38a716bf7701edf3dd4f79f40d1b5ecc721df0acc528a"
+    },
+    {
+      "path": "outputs/nostos0-biosr-threshold-calibration-v5/structure_endpoint_operating_points.csv",
+      "bytes": 87,
+      "sha256": "3e4bfe587dfdffa59f07e0db6f365ce567d4232c968432b571dcc008e97a0071"
+    },
+    {
+      "path": "outputs/nostos0-biosr-threshold-calibration-v5/failure_diagnostics.json",
+      "bytes": 23777,
+      "sha256": "d4c6af8d802bae5739d0d1b29e274cea2ec2e7523893485454a0197a11320d87"
+    },
+    {
+      "path": "outputs/nostos0-biosr-threshold-calibration-v5/structure_endpoint_best_points.csv",
+      "bytes": 2335,
+      "sha256": "116907c9e9355b2614e0a21be8444161196f1bc7a73df53d6ac004ac1f3445b8"
+    },
+    {
+      "path": "outputs/nostos0-biosr-threshold-calibration-v5/FAILURE_DIAGNOSTIC.md",
+      "bytes": 3000,
+      "sha256": "feb31e5c82c4a2e6de727ff0f76f6ce0a3e6f5caf9e842e2d8b0462a6d832f15"
+    },
+    {
+      "path": "src/nostos/validation/threshold_calibration.py",
+      "bytes": 10586,
+      "sha256": "844ede65119fc4fdaa0f66b712c7eaf21dbde22eb891f8c94da2334d57e536f4"
+    },
+    {
+      "path": "src/nostos/validation/failure_diagnostics.py",
+      "bytes": 7909,
+      "sha256": "861b3190bbf4ad63baf0e50acd14dad71756d70e3cc4347007a55de68c1d725a"
+    },
+    {
+      "path": "scripts/calibrate_biosr_threshold_v5.py",
+      "bytes": 13634,
+      "sha256": "d607a8ba95aac8004f3f6b20c7fa1bb639110a78df256835bfdd79b41f11dbf7"
+    },
+    {
+      "path": "scripts/audit_biosr_threshold_failure_v5.py",
+      "bytes": 11132,
+      "sha256": "881e70538de73ec7a5d931cd066e42818355d7e69b6afda0b639d9d1ab5f0516"
+    },
+    {
+      "path": "scripts/build_biosr_threshold_failure_receipt_v5.py",
+      "bytes": 8892,
+      "sha256": "d0308793b9087483c4ab2b1536a20c40f4d13628905f7fc957d6557ec588fbc0"
+    },
+    {
+      "path": "tests/test_threshold_calibration.py",
+      "bytes": 4486,
+      "sha256": "37796a3aab33815bf1ca55e6032f6c393442040bbc07b137e525c90a16fa35c0"
+    },
+    {
+      "path": "tests/test_failure_diagnostics.py",
+      "bytes": 2449,
+      "sha256": "c8ffc4160a9e65e5ec17246ad08b82314e95dab7286cc59d34d00bbf89e32929"
+    },
+    {
+      "path": "tests/test_biosr_lock_lineage.py",
+      "bytes": 778,
+      "sha256": "9df16af692a07b4a94c677896eed3f555cf7e1edc85df3858579f0c3f6606a4a"
+    },
+    {
+      "path": "docs/NOSTOS0_THRESHOLD_CALIBRATION_V5_FAILURE_AUDIT.md",
+      "bytes": 15764,
+      "sha256": "abfea8057092a23a46227e03424c69596764236429baa2373aac98a93605f367"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 2884,
+      "sha256": "9204767675b912b7f1ece4469799dc1009fa3e2afd966d7956bf6337faa5844c"
+    },
+    {
+      "path": "uv.lock",
+      "bytes": 266139,
+      "sha256": "48b9cd1ba22e808fa8ec60105551c1ad6c9549abdf4df44c9ed2c5a897b1efb1"
+    }
+  ],
+  "verification": {
+    "focused_test_command": "uv run --frozen pytest -q tests/test_failure_diagnostics.py tests/test_threshold_calibration.py tests/test_biosr_lock_lineage.py",
+    "focused_test_result": "10 passed, 0 failed",
+    "full_test_command": "uv run --frozen pytest -q",
+    "full_test_result": "224 passed, 4 skipped, 12 dependency deprecation warnings",
+    "full_test_exit_code": 0,
+    "compile_command": "uv run --frozen python -m compileall -q src scripts",
+    "compile_exit_code": 0,
+    "passing_threshold_lock_state": "absent"
+  },
+  "claim_boundary": "This receipt records a failed research validation gate. It does not establish an operating threshold, confirmation, acquisition-family generalization, biological truth, diagnosis, clinical validity, intraoperative utility or submission readiness."
+}

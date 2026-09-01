@@ -1,0 +1,18 @@
+{
+  "schema_version": "nostos-prospective-lock/2.0",
+  "locked_at_utc": "2026-08-28T23:03:58Z",
+  "stage": "score_design_code_audit_corrections",
+  "access_state": {
+    "score_design": "restart_pending",
+    "threshold_calibration": "sealed",
+    "confirmation_archives": "not_downloaded_not_listed_not_decoded"
+  },
+  "files": [
+    {
+      "path": "docs/NOSTOS0_SUPPORT_SCORE_CODE_AUDIT_CORRECTIONS.md",
+      "bytes": 1903,
+      "sha256": "15a6a79949212b4562103e18378f66c98049c0a67c7f45c93575e9d74ede1c9f"
+    }
+  ],
+  "prospective_statement": "Canonical-spacing and entropy-semantics corrections were frozen before the final correctly calibrated score-design restart and before threshold-calibration or confirmation access. Exact source hashes are captured by every run receipt."
+}

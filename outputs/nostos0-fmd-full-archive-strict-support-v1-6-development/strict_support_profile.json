@@ -1,0 +1,818 @@
+{
+  "base_predicted_risk_threshold": 0.6303073200826219,
+  "base_profile_content_sha256": "65239b44c66a8bfca80608b1544fd0c892cf8e3209805828a1623d85382eebb8",
+  "base_profile_file_sha256": "9c99e6c01359b8b8ab84f1eb6f48cf9101e913ee90269b63573ffd1abc69b737",
+  "cell_dimensions": [
+    {
+      "key": "acquisition_level",
+      "source": "metadata"
+    },
+    {
+      "key": "requested_scale_value",
+      "source": "row"
+    }
+  ],
+  "claim_boundary": {
+    "claim": "A conservative full-archive support profile can be compiled after retaining the failed v1.5 extension and before opening external transfer archives.",
+    "excluded_claims": [
+      "prospective confirmation within WideField_BPAE_R",
+      "cross-instrument or cross-structure transfer",
+      "physical-scale measurement",
+      "biological or clinical interpretation"
+    ],
+    "study_type": "computation_only_public_data_post_failure_development"
+  },
+  "compiler_version": "nostos-conditional-support-compiler/1.0",
+  "config_sha256": "1ccd9f1cb193fb89063ce4fe75f1bbebd83890e079c70ff6e0bb4ec43c35b3e3",
+  "confirmation_gates": {
+    "bootstrap_replicates": 5000,
+    "bootstrap_seed": 26083163,
+    "maximum_cluster_bootstrap_risk_upper95": 0.3,
+    "maximum_cluster_bootstrap_risk_upper95_per_supported_cell": 0.4,
+    "maximum_observed_risk": 0.1,
+    "maximum_observed_risk_per_supported_cell": 0.15,
+    "minimum_accepted_cases_per_supported_cell": 20,
+    "minimum_accepted_independent_groups_per_supported_cell": 7,
+    "minimum_coverage": 0.18,
+    "minimum_independent_groups": 7,
+    "minimum_invalid_acquisition_qc_emissions": 5,
+    "minimum_relative_risk_reduction_vs_acquisition_qc": 0.2,
+    "require_aurc_bootstrap_ci_lower_above_zero": true,
+    "require_positive_aurc_difference": true
+  },
+  "content_sha256": "1bf6c553321f1957379b2ab7f896222bf9d28cce3cd0ff107267821c98f81ba1",
+  "development": {
+    "eligible_primary_cases": 1140,
+    "independent_group_count": 19,
+    "independent_groups": [
+      "WideField_BPAE_R|fov1",
+      "WideField_BPAE_R|fov10",
+      "WideField_BPAE_R|fov11",
+      "WideField_BPAE_R|fov12",
+      "WideField_BPAE_R|fov13",
+      "WideField_BPAE_R|fov14",
+      "WideField_BPAE_R|fov15",
+      "WideField_BPAE_R|fov16",
+      "WideField_BPAE_R|fov17",
+      "WideField_BPAE_R|fov18",
+      "WideField_BPAE_R|fov2",
+      "WideField_BPAE_R|fov20",
+      "WideField_BPAE_R|fov3",
+      "WideField_BPAE_R|fov4",
+      "WideField_BPAE_R|fov5",
+      "WideField_BPAE_R|fov6",
+      "WideField_BPAE_R|fov7",
+      "WideField_BPAE_R|fov8",
+      "WideField_BPAE_R|fov9"
+    ],
+    "source_receipts": [
+      {
+        "bytes": 2032155,
+        "fields": [
+          7,
+          15,
+          13,
+          9
+        ],
+        "path": "outputs/nostos0-fmd-widefield-v1-3-development/development_rows.jsonl",
+        "rows": 640,
+        "sha256": "feaf9e734a3b68dd591251c4b17452e953aea2b95a5f99d6b8fb8959459123f6"
+      },
+      {
+        "bytes": 2029061,
+        "fields": [
+          16,
+          17,
+          18,
+          11
+        ],
+        "path": "outputs/nostos0-fmd-widefield-v1-3-confirmation/confirmation_rows.jsonl",
+        "rows": 640,
+        "sha256": "cf22eada35d7e967788c15940fffe21474cf9709dd3a47e00163212695b855cc"
+      },
+      {
+        "bytes": 2090836,
+        "fields": [
+          20,
+          14,
+          5,
+          1
+        ],
+        "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-confirmation/confirmation_rows.jsonl",
+        "rows": 640,
+        "sha256": "d95288907b6fd2ac14a81f6c54469c392661c24c3aa11382551a72eb2c5c4eee"
+      },
+      {
+        "bytes": 3664826,
+        "fields": [
+          3,
+          12,
+          6,
+          8,
+          4,
+          2,
+          10
+        ],
+        "path": "outputs/nostos0-fmd-widefield-v1-5-extended-confirmation/extension_rows.jsonl",
+        "rows": 1120,
+        "sha256": "29edddac437fa256e2a3db134af2c5d31d1d1d1f714b53c0bf72f572a795dddb"
+      }
+    ]
+  },
+  "development_operating_point": {
+    "accepted": 228,
+    "accepted_independent_groups": 19,
+    "checks": {
+      "exactly_three_supported_cells": true,
+      "maximum_fields_with_any_accepted_failure": true,
+      "maximum_observed_risk": true,
+      "minimum_coverage": true
+    },
+    "cluster_bootstrap_risk_upper95": 0.0,
+    "coverage": 0.2,
+    "eligible": 1140,
+    "failing_groups": [],
+    "fields_with_any_accepted_failure": 0,
+    "invalid": 0,
+    "passes": true,
+    "predicted_risk_threshold": 0.6303073200826219,
+    "risk": 0.0
+  },
+  "primary_endpoint_family": "tensor_coherence",
+  "primary_score": "declared_capture_stability_contract",
+  "protocol_id": "fmd-full-archive-strict-support-v1-6",
+  "schema_version": "nostos-conditional-support-profile/1.0",
+  "status": "operating_point_selected",
+  "strict_compiler_version": "nostos-fmd-full-archive-strict-compiler/1.0",
+  "supported_cells": [
+    {
+      "checks": {
+        "maximum_fields_with_any_accepted_failure": true,
+        "maximum_observed_risk": true,
+        "maximum_two_sided_exact_field_failure_upper95": true,
+        "minimum_accepted_cases": true,
+        "required_accepted_independent_groups": true
+      },
+      "development_summary": {
+        "accepted": 76,
+        "accepted_independent_groups": 19,
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 1.0,
+        "eligible": 76,
+        "invalid": 0,
+        "predicted_risk_threshold": 0.6303073200826219,
+        "risk": 0.0
+      },
+      "dimensions": [
+        {
+          "key": "acquisition_level",
+          "source": "metadata"
+        },
+        {
+          "key": "requested_scale_value",
+          "source": "row"
+        }
+      ],
+      "field_event_summary": {
+        "failing_groups": [],
+        "fields": 19,
+        "fields_with_any_accepted_failure": 0,
+        "two_sided_exact_ci95": [
+          0.0,
+          0.17646691180696533
+        ]
+      },
+      "key": "[\"avg16\",16.0]",
+      "supported": true,
+      "values": [
+        "avg16",
+        16.0
+      ]
+    },
+    {
+      "checks": {
+        "maximum_fields_with_any_accepted_failure": true,
+        "maximum_observed_risk": true,
+        "maximum_two_sided_exact_field_failure_upper95": true,
+        "minimum_accepted_cases": true,
+        "required_accepted_independent_groups": true
+      },
+      "development_summary": {
+        "accepted": 76,
+        "accepted_independent_groups": 19,
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 1.0,
+        "eligible": 76,
+        "invalid": 0,
+        "predicted_risk_threshold": 0.6303073200826219,
+        "risk": 0.0
+      },
+      "dimensions": [
+        {
+          "key": "acquisition_level",
+          "source": "metadata"
+        },
+        {
+          "key": "requested_scale_value",
+          "source": "row"
+        }
+      ],
+      "field_event_summary": {
+        "failing_groups": [],
+        "fields": 19,
+        "fields_with_any_accepted_failure": 0,
+        "two_sided_exact_ci95": [
+          0.0,
+          0.17646691180696533
+        ]
+      },
+      "key": "[\"avg16\",4.0]",
+      "supported": true,
+      "values": [
+        "avg16",
+        4.0
+      ]
+    },
+    {
+      "checks": {
+        "maximum_fields_with_any_accepted_failure": true,
+        "maximum_observed_risk": true,
+        "maximum_two_sided_exact_field_failure_upper95": true,
+        "minimum_accepted_cases": true,
+        "required_accepted_independent_groups": true
+      },
+      "development_summary": {
+        "accepted": 76,
+        "accepted_independent_groups": 19,
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 1.0,
+        "eligible": 76,
+        "invalid": 0,
+        "predicted_risk_threshold": 0.6303073200826219,
+        "risk": 0.0
+      },
+      "dimensions": [
+        {
+          "key": "acquisition_level",
+          "source": "metadata"
+        },
+        {
+          "key": "requested_scale_value",
+          "source": "row"
+        }
+      ],
+      "field_event_summary": {
+        "failing_groups": [],
+        "fields": 19,
+        "fields_with_any_accepted_failure": 0,
+        "two_sided_exact_ci95": [
+          0.0,
+          0.17646691180696533
+        ]
+      },
+      "key": "[\"avg16\",8.0]",
+      "supported": true,
+      "values": [
+        "avg16",
+        8.0
+      ]
+    }
+  ],
+  "unsupported_cells": [
+    {
+      "checks": {
+        "maximum_fields_with_any_accepted_failure": true,
+        "maximum_observed_risk": false,
+        "maximum_two_sided_exact_field_failure_upper95": true,
+        "minimum_accepted_cases": false,
+        "required_accepted_independent_groups": false
+      },
+      "development_summary": {
+        "accepted": 0,
+        "accepted_independent_groups": 0,
+        "cluster_bootstrap_risk_upper95": null,
+        "coverage": 0.0,
+        "eligible": 76,
+        "invalid": 0,
+        "predicted_risk_threshold": 0.6303073200826219,
+        "risk": null
+      },
+      "dimensions": [
+        {
+          "key": "acquisition_level",
+          "source": "metadata"
+        },
+        {
+          "key": "requested_scale_value",
+          "source": "row"
+        }
+      ],
+      "field_event_summary": {
+        "failing_groups": [],
+        "fields": 19,
+        "fields_with_any_accepted_failure": 0,
+        "two_sided_exact_ci95": [
+          0.0,
+          0.17646691180696533
+        ]
+      },
+      "key": "[\"avg2\",16.0]",
+      "supported": false,
+      "values": [
+        "avg2",
+        16.0
+      ]
+    },
+    {
+      "checks": {
+        "maximum_fields_with_any_accepted_failure": true,
+        "maximum_observed_risk": false,
+        "maximum_two_sided_exact_field_failure_upper95": true,
+        "minimum_accepted_cases": false,
+        "required_accepted_independent_groups": false
+      },
+      "development_summary": {
+        "accepted": 0,
+        "accepted_independent_groups": 0,
+        "cluster_bootstrap_risk_upper95": null,
+        "coverage": 0.0,
+        "eligible": 76,
+        "invalid": 0,
+        "predicted_risk_threshold": 0.6303073200826219,
+        "risk": null
+      },
+      "dimensions": [
+        {
+          "key": "acquisition_level",
+          "source": "metadata"
+        },
+        {
+          "key": "requested_scale_value",
+          "source": "row"
+        }
+      ],
+      "field_event_summary": {
+        "failing_groups": [],
+        "fields": 19,
+        "fields_with_any_accepted_failure": 0,
+        "two_sided_exact_ci95": [
+          0.0,
+          0.17646691180696533
+        ]
+      },
+      "key": "[\"avg2\",4.0]",
+      "supported": false,
+      "values": [
+        "avg2",
+        4.0
+      ]
+    },
+    {
+      "checks": {
+        "maximum_fields_with_any_accepted_failure": true,
+        "maximum_observed_risk": false,
+        "maximum_two_sided_exact_field_failure_upper95": true,
+        "minimum_accepted_cases": false,
+        "required_accepted_independent_groups": false
+      },
+      "development_summary": {
+        "accepted": 0,
+        "accepted_independent_groups": 0,
+        "cluster_bootstrap_risk_upper95": null,
+        "coverage": 0.0,
+        "eligible": 76,
+        "invalid": 0,
+        "predicted_risk_threshold": 0.6303073200826219,
+        "risk": null
+      },
+      "dimensions": [
+        {
+          "key": "acquisition_level",
+          "source": "metadata"
+        },
+        {
+          "key": "requested_scale_value",
+          "source": "row"
+        }
+      ],
+      "field_event_summary": {
+        "failing_groups": [],
+        "fields": 19,
+        "fields_with_any_accepted_failure": 0,
+        "two_sided_exact_ci95": [
+          0.0,
+          0.17646691180696533
+        ]
+      },
+      "key": "[\"avg2\",8.0]",
+      "supported": false,
+      "values": [
+        "avg2",
+        8.0
+      ]
+    },
+    {
+      "checks": {
+        "maximum_fields_with_any_accepted_failure": true,
+        "maximum_observed_risk": false,
+        "maximum_two_sided_exact_field_failure_upper95": true,
+        "minimum_accepted_cases": false,
+        "required_accepted_independent_groups": false
+      },
+      "development_summary": {
+        "accepted": 0,
+        "accepted_independent_groups": 0,
+        "cluster_bootstrap_risk_upper95": null,
+        "coverage": 0.0,
+        "eligible": 76,
+        "invalid": 0,
+        "predicted_risk_threshold": 0.6303073200826219,
+        "risk": null
+      },
+      "dimensions": [
+        {
+          "key": "acquisition_level",
+          "source": "metadata"
+        },
+        {
+          "key": "requested_scale_value",
+          "source": "row"
+        }
+      ],
+      "field_event_summary": {
+        "failing_groups": [],
+        "fields": 19,
+        "fields_with_any_accepted_failure": 0,
+        "two_sided_exact_ci95": [
+          0.0,
+          0.17646691180696533
+        ]
+      },
+      "key": "[\"avg4\",16.0]",
+      "supported": false,
+      "values": [
+        "avg4",
+        16.0
+      ]
+    },
+    {
+      "checks": {
+        "maximum_fields_with_any_accepted_failure": true,
+        "maximum_observed_risk": false,
+        "maximum_two_sided_exact_field_failure_upper95": true,
+        "minimum_accepted_cases": false,
+        "required_accepted_independent_groups": false
+      },
+      "development_summary": {
+        "accepted": 0,
+        "accepted_independent_groups": 0,
+        "cluster_bootstrap_risk_upper95": null,
+        "coverage": 0.0,
+        "eligible": 76,
+        "invalid": 0,
+        "predicted_risk_threshold": 0.6303073200826219,
+        "risk": null
+      },
+      "dimensions": [
+        {
+          "key": "acquisition_level",
+          "source": "metadata"
+        },
+        {
+          "key": "requested_scale_value",
+          "source": "row"
+        }
+      ],
+      "field_event_summary": {
+        "failing_groups": [],
+        "fields": 19,
+        "fields_with_any_accepted_failure": 0,
+        "two_sided_exact_ci95": [
+          0.0,
+          0.17646691180696533
+        ]
+      },
+      "key": "[\"avg4\",4.0]",
+      "supported": false,
+      "values": [
+        "avg4",
+        4.0
+      ]
+    },
+    {
+      "checks": {
+        "maximum_fields_with_any_accepted_failure": true,
+        "maximum_observed_risk": false,
+        "maximum_two_sided_exact_field_failure_upper95": true,
+        "minimum_accepted_cases": false,
+        "required_accepted_independent_groups": false
+      },
+      "development_summary": {
+        "accepted": 0,
+        "accepted_independent_groups": 0,
+        "cluster_bootstrap_risk_upper95": null,
+        "coverage": 0.0,
+        "eligible": 76,
+        "invalid": 0,
+        "predicted_risk_threshold": 0.6303073200826219,
+        "risk": null
+      },
+      "dimensions": [
+        {
+          "key": "acquisition_level",
+          "source": "metadata"
+        },
+        {
+          "key": "requested_scale_value",
+          "source": "row"
+        }
+      ],
+      "field_event_summary": {
+        "failing_groups": [],
+        "fields": 19,
+        "fields_with_any_accepted_failure": 0,
+        "two_sided_exact_ci95": [
+          0.0,
+          0.17646691180696533
+        ]
+      },
+      "key": "[\"avg4\",8.0]",
+      "supported": false,
+      "values": [
+        "avg4",
+        8.0
+      ]
+    },
+    {
+      "checks": {
+        "maximum_fields_with_any_accepted_failure": false,
+        "maximum_observed_risk": false,
+        "maximum_two_sided_exact_field_failure_upper95": false,
+        "minimum_accepted_cases": true,
+        "required_accepted_independent_groups": true
+      },
+      "development_summary": {
+        "accepted": 74,
+        "accepted_independent_groups": 19,
+        "cluster_bootstrap_risk_upper95": 0.1891891891891892,
+        "coverage": 0.9736842105263158,
+        "eligible": 76,
+        "invalid": 6,
+        "predicted_risk_threshold": 0.6303073200826219,
+        "risk": 0.08108108108108109
+      },
+      "dimensions": [
+        {
+          "key": "acquisition_level",
+          "source": "metadata"
+        },
+        {
+          "key": "requested_scale_value",
+          "source": "row"
+        }
+      ],
+      "field_event_summary": {
+        "failing_groups": [
+          "WideField_BPAE_R|fov3",
+          "WideField_BPAE_R|fov4"
+        ],
+        "fields": 19,
+        "fields_with_any_accepted_failure": 2,
+        "two_sided_exact_ci95": [
+          0.01301216437177747,
+          0.33137666445676595
+        ]
+      },
+      "key": "[\"avg8\",16.0]",
+      "supported": false,
+      "values": [
+        "avg8",
+        16.0
+      ]
+    },
+    {
+      "checks": {
+        "maximum_fields_with_any_accepted_failure": true,
+        "maximum_observed_risk": false,
+        "maximum_two_sided_exact_field_failure_upper95": true,
+        "minimum_accepted_cases": false,
+        "required_accepted_independent_groups": false
+      },
+      "development_summary": {
+        "accepted": 0,
+        "accepted_independent_groups": 0,
+        "cluster_bootstrap_risk_upper95": null,
+        "coverage": 0.0,
+        "eligible": 76,
+        "invalid": 0,
+        "predicted_risk_threshold": 0.6303073200826219,
+        "risk": null
+      },
+      "dimensions": [
+        {
+          "key": "acquisition_level",
+          "source": "metadata"
+        },
+        {
+          "key": "requested_scale_value",
+          "source": "row"
+        }
+      ],
+      "field_event_summary": {
+        "failing_groups": [],
+        "fields": 19,
+        "fields_with_any_accepted_failure": 0,
+        "two_sided_exact_ci95": [
+          0.0,
+          0.17646691180696533
+        ]
+      },
+      "key": "[\"avg8\",4.0]",
+      "supported": false,
+      "values": [
+        "avg8",
+        4.0
+      ]
+    },
+    {
+      "checks": {
+        "maximum_fields_with_any_accepted_failure": false,
+        "maximum_observed_risk": false,
+        "maximum_two_sided_exact_field_failure_upper95": false,
+        "minimum_accepted_cases": false,
+        "required_accepted_independent_groups": false
+      },
+      "development_summary": {
+        "accepted": 8,
+        "accepted_independent_groups": 3,
+        "cluster_bootstrap_risk_upper95": 1.0,
+        "coverage": 0.10526315789473684,
+        "eligible": 76,
+        "invalid": 8,
+        "predicted_risk_threshold": 0.6303073200826219,
+        "risk": 1.0
+      },
+      "dimensions": [
+        {
+          "key": "acquisition_level",
+          "source": "metadata"
+        },
+        {
+          "key": "requested_scale_value",
+          "source": "row"
+        }
+      ],
+      "field_event_summary": {
+        "failing_groups": [
+          "WideField_BPAE_R|fov11",
+          "WideField_BPAE_R|fov20",
+          "WideField_BPAE_R|fov7"
+        ],
+        "fields": 19,
+        "fields_with_any_accepted_failure": 3,
+        "two_sided_exact_ci95": [
+          0.033826249001764674,
+          0.3957845512666743
+        ]
+      },
+      "key": "[\"avg8\",8.0]",
+      "supported": false,
+      "values": [
+        "avg8",
+        8.0
+      ]
+    },
+    {
+      "checks": {
+        "maximum_fields_with_any_accepted_failure": true,
+        "maximum_observed_risk": false,
+        "maximum_two_sided_exact_field_failure_upper95": true,
+        "minimum_accepted_cases": false,
+        "required_accepted_independent_groups": false
+      },
+      "development_summary": {
+        "accepted": 0,
+        "accepted_independent_groups": 0,
+        "cluster_bootstrap_risk_upper95": null,
+        "coverage": 0.0,
+        "eligible": 76,
+        "invalid": 0,
+        "predicted_risk_threshold": 0.6303073200826219,
+        "risk": null
+      },
+      "dimensions": [
+        {
+          "key": "acquisition_level",
+          "source": "metadata"
+        },
+        {
+          "key": "requested_scale_value",
+          "source": "row"
+        }
+      ],
+      "field_event_summary": {
+        "failing_groups": [],
+        "fields": 19,
+        "fields_with_any_accepted_failure": 0,
+        "two_sided_exact_ci95": [
+          0.0,
+          0.17646691180696533
+        ]
+      },
+      "key": "[\"raw\",16.0]",
+      "supported": false,
+      "values": [
+        "raw",
+        16.0
+      ]
+    },
+    {
+      "checks": {
+        "maximum_fields_with_any_accepted_failure": true,
+        "maximum_observed_risk": false,
+        "maximum_two_sided_exact_field_failure_upper95": true,
+        "minimum_accepted_cases": false,
+        "required_accepted_independent_groups": false
+      },
+      "development_summary": {
+        "accepted": 0,
+        "accepted_independent_groups": 0,
+        "cluster_bootstrap_risk_upper95": null,
+        "coverage": 0.0,
+        "eligible": 76,
+        "invalid": 0,
+        "predicted_risk_threshold": 0.6303073200826219,
+        "risk": null
+      },
+      "dimensions": [
+        {
+          "key": "acquisition_level",
+          "source": "metadata"
+        },
+        {
+          "key": "requested_scale_value",
+          "source": "row"
+        }
+      ],
+      "field_event_summary": {
+        "failing_groups": [],
+        "fields": 19,
+        "fields_with_any_accepted_failure": 0,
+        "two_sided_exact_ci95": [
+          0.0,
+          0.17646691180696533
+        ]
+      },
+      "key": "[\"raw\",4.0]",
+      "supported": false,
+      "values": [
+        "raw",
+        4.0
+      ]
+    },
+    {
+      "checks": {
+        "maximum_fields_with_any_accepted_failure": true,
+        "maximum_observed_risk": false,
+        "maximum_two_sided_exact_field_failure_upper95": true,
+        "minimum_accepted_cases": false,
+        "required_accepted_independent_groups": false
+      },
+      "development_summary": {
+        "accepted": 0,
+        "accepted_independent_groups": 0,
+        "cluster_bootstrap_risk_upper95": null,
+        "coverage": 0.0,
+        "eligible": 76,
+        "invalid": 0,
+        "predicted_risk_threshold": 0.6303073200826219,
+        "risk": null
+      },
+      "dimensions": [
+        {
+          "key": "acquisition_level",
+          "source": "metadata"
+        },
+        {
+          "key": "requested_scale_value",
+          "source": "row"
+        }
+      ],
+      "field_event_summary": {
+        "failing_groups": [],
+        "fields": 19,
+        "fields_with_any_accepted_failure": 0,
+        "two_sided_exact_ci95": [
+          0.0,
+          0.17646691180696533
+        ]
+      },
+      "key": "[\"raw\",8.0]",
+      "supported": false,
+      "values": [
+        "raw",
+        8.0
+      ]
+    }
+  ]
+}

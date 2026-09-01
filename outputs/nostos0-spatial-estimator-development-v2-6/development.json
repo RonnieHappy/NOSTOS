@@ -1,0 +1,1023 @@
+{
+  "axis_candidates": [
+    {
+      "axis_cases": 23,
+      "axis_coverage": 0.8518518518518519,
+      "median_turn_error_degrees": 0.39948049778587347,
+      "method": "uniform",
+      "p95_turn_error_degrees": 2.8124460899253063,
+      "supported_cases": 27
+    },
+    {
+      "axis_cases": 25,
+      "axis_coverage": 0.9259259259259259,
+      "median_turn_error_degrees": 0.18433621101181075,
+      "method": "hann_tapered",
+      "p95_turn_error_degrees": 0.4668020526196185,
+      "supported_cases": 27
+    }
+  ],
+  "axis_cases": [
+    {
+      "case_id": "equivariance-v24-c16-a1.6-seed0",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 1.6632470049650565,
+        "rotated_ratio": 1.674084055625287,
+        "turn_error_degrees": 0.6535541389506818
+      },
+      "supported": false,
+      "truth_ratio": 1.6,
+      "uniform": {
+        "axis_available": false,
+        "reference_ratio": 1.658793734521758,
+        "rotated_ratio": 1.6158088446440098,
+        "turn_error_degrees": 2.010289575663137
+      }
+    },
+    {
+      "case_id": "equivariance-v24-c16-a1.6-seed1",
+      "hann_tapered": {
+        "axis_available": false,
+        "reference_ratio": 1.3788732446283938,
+        "rotated_ratio": 1.3776671706197514,
+        "turn_error_degrees": 0.14872155130345277
+      },
+      "supported": true,
+      "truth_ratio": 1.6,
+      "uniform": {
+        "axis_available": false,
+        "reference_ratio": 1.4838231427175004,
+        "rotated_ratio": 1.4118484685191326,
+        "turn_error_degrees": 2.7978845537389816
+      }
+    },
+    {
+      "case_id": "equivariance-v24-c16-a2.1-seed0",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.404330370185938,
+        "rotated_ratio": 2.4168055967139614,
+        "turn_error_degrees": 0.48453283616669296
+      },
+      "supported": true,
+      "truth_ratio": 2.1,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 2.199434775490014,
+        "rotated_ratio": 2.110193069355943,
+        "turn_error_degrees": 0.28063056254296725
+      }
+    },
+    {
+      "case_id": "equivariance-v24-c16-a2.1-seed1",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.0033693837583084,
+        "rotated_ratio": 2.0161525141518544,
+        "turn_error_degrees": 0.008871819202767028
+      },
+      "supported": true,
+      "truth_ratio": 2.1,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 2.155947802480162,
+        "rotated_ratio": 2.191203609201412,
+        "turn_error_degrees": 0.2388263721080932
+      }
+    },
+    {
+      "case_id": "equivariance-v24-c16-a2.6-seed0",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.5960814315132406,
+        "rotated_ratio": 2.5898821868661233,
+        "turn_error_degrees": 0.053101534278198415
+      },
+      "supported": true,
+      "truth_ratio": 2.6,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 2.6942087988942185,
+        "rotated_ratio": 2.4876712690891853,
+        "turn_error_degrees": 0.22693280556978834
+      }
+    },
+    {
+      "case_id": "equivariance-v24-c16-a2.6-seed1",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.8314843426701524,
+        "rotated_ratio": 2.8897194983910586,
+        "turn_error_degrees": 0.24682247235722343
+      },
+      "supported": true,
+      "truth_ratio": 2.6,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 2.848764297131581,
+        "rotated_ratio": 2.925146510440942,
+        "turn_error_degrees": 0.12598826427279164
+      }
+    },
+    {
+      "case_id": "equivariance-v24-c16-a3.1-seed0",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 3.484414062250766,
+        "rotated_ratio": 3.5527343927362107,
+        "turn_error_degrees": 0.21706839657653632
+      },
+      "supported": true,
+      "truth_ratio": 3.1,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 3.2799912803850297,
+        "rotated_ratio": 3.4817813491057854,
+        "turn_error_degrees": 0.17275240181717777
+      }
+    },
+    {
+      "case_id": "equivariance-v24-c16-a3.1-seed1",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.8955487205111763,
+        "rotated_ratio": 2.927682446424592,
+        "turn_error_degrees": 0.21005155749421078
+      },
+      "supported": true,
+      "truth_ratio": 3.1,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 3.069206809137535,
+        "rotated_ratio": 3.2720139610509618,
+        "turn_error_degrees": 0.26393720977372936
+      }
+    },
+    {
+      "case_id": "equivariance-v24-c24-a1.6-seed0",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 1.9512613786506416,
+        "rotated_ratio": 1.9871990229695544,
+        "turn_error_degrees": 0.023903872040961005
+      },
+      "supported": true,
+      "truth_ratio": 1.6,
+      "uniform": {
+        "axis_available": false,
+        "reference_ratio": 1.7202056478633914,
+        "rotated_ratio": 1.6428110739907023,
+        "turn_error_degrees": 6.602855563804951
+      }
+    },
+    {
+      "case_id": "equivariance-v24-c24-a1.6-seed1",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 1.7941411820331556,
+        "rotated_ratio": 1.7897790214123643,
+        "turn_error_degrees": 0.6434235646279092
+      },
+      "supported": true,
+      "truth_ratio": 1.6,
+      "uniform": {
+        "axis_available": false,
+        "reference_ratio": 1.631677263482531,
+        "rotated_ratio": 1.6991367477465593,
+        "turn_error_degrees": 4.684315146277868
+      }
+    },
+    {
+      "case_id": "equivariance-v24-c24-a2.1-seed0",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 1.9824381030515308,
+        "rotated_ratio": 1.991387708605321,
+        "turn_error_degrees": 0.18433621101181075
+      },
+      "supported": true,
+      "truth_ratio": 2.1,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 2.2944905358726606,
+        "rotated_ratio": 2.271038826643816,
+        "turn_error_degrees": 0.8164277056921492
+      }
+    },
+    {
+      "case_id": "equivariance-v24-c24-a2.1-seed1",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.340160333067846,
+        "rotated_ratio": 2.3548835982708134,
+        "turn_error_degrees": 0.004691901124715514
+      },
+      "supported": true,
+      "truth_ratio": 2.1,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 2.335786308492491,
+        "rotated_ratio": 2.2553187951782943,
+        "turn_error_degrees": 0.1319223588338332
+      }
+    },
+    {
+      "case_id": "equivariance-v24-c24-a2.6-seed0",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.5615610295616777,
+        "rotated_ratio": 2.643125877921055,
+        "turn_error_degrees": 0.2892691339515636
+      },
+      "supported": false,
+      "truth_ratio": 2.6,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 3.0284953293141585,
+        "rotated_ratio": 3.0336028359889893,
+        "turn_error_degrees": 1.4690132304171186
+      }
+    },
+    {
+      "case_id": "equivariance-v24-c24-a2.6-seed1",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.870798938336904,
+        "rotated_ratio": 2.8757949466829396,
+        "turn_error_degrees": 0.06693155708060772
+      },
+      "supported": false,
+      "truth_ratio": 2.6,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 2.6229373029209877,
+        "rotated_ratio": 2.612088897489365,
+        "turn_error_degrees": 0.6895560571523447
+      }
+    },
+    {
+      "case_id": "equivariance-v24-c24-a3.1-seed0",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 3.390766814806073,
+        "rotated_ratio": 3.429175205354934,
+        "turn_error_degrees": 0.08163640919960358
+      },
+      "supported": false,
+      "truth_ratio": 3.1,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 3.4788688856621968,
+        "rotated_ratio": 3.4435022271401805,
+        "turn_error_degrees": 0.6453142830357308
+      }
+    },
+    {
+      "case_id": "equivariance-v24-c24-a3.1-seed1",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 3.021626899595257,
+        "rotated_ratio": 3.0268306636897315,
+        "turn_error_degrees": 0.21997210072373719
+      },
+      "supported": true,
+      "truth_ratio": 3.1,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 3.3517254023949365,
+        "rotated_ratio": 3.3592903841207757,
+        "turn_error_degrees": 1.1930087052494969
+      }
+    },
+    {
+      "case_id": "equivariance-v24-c32-a1.6-seed0",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 1.6758741692456014,
+        "rotated_ratio": 1.704247718413572,
+        "turn_error_degrees": 0.6732256868547495
+      },
+      "supported": false,
+      "truth_ratio": 1.6,
+      "uniform": {
+        "axis_available": false,
+        "reference_ratio": 1.6313797146557614,
+        "rotated_ratio": 1.6323710369378202,
+        "turn_error_degrees": 2.8038034718761082
+      }
+    },
+    {
+      "case_id": "equivariance-v24-c32-a1.6-seed1",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 1.905790443528905,
+        "rotated_ratio": 1.9197823623131107,
+        "turn_error_degrees": 1.3161151489283611
+      },
+      "supported": false,
+      "truth_ratio": 1.6,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 1.9293315832210265,
+        "rotated_ratio": 1.8881572021670265,
+        "turn_error_degrees": 1.716571722563856
+      }
+    },
+    {
+      "case_id": "equivariance-v24-c32-a2.1-seed0",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.2020471364757346,
+        "rotated_ratio": 2.146785259934221,
+        "turn_error_degrees": 0.7347895170242111
+      },
+      "supported": false,
+      "truth_ratio": 2.1,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 2.1879121928080294,
+        "rotated_ratio": 1.816883889198218,
+        "turn_error_degrees": 1.947274505920177
+      }
+    },
+    {
+      "case_id": "equivariance-v24-c32-a2.1-seed1",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.40626333691815,
+        "rotated_ratio": 2.362088332263065,
+        "turn_error_degrees": 0.6581434038255907
+      },
+      "supported": false,
+      "truth_ratio": 2.1,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 2.130796030372747,
+        "rotated_ratio": 2.1166309232506006,
+        "turn_error_degrees": 0.5386184086136154
+      }
+    },
+    {
+      "case_id": "equivariance-v24-c32-a2.6-seed0",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.7610860374448016,
+        "rotated_ratio": 2.7413073324891855,
+        "turn_error_degrees": 0.17211797456809563
+      },
+      "supported": false,
+      "truth_ratio": 2.6,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 3.067177723413273,
+        "rotated_ratio": 2.901923647191251,
+        "turn_error_degrees": 0.6641883001113911
+      }
+    },
+    {
+      "case_id": "equivariance-v24-c32-a2.6-seed1",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.4557443619026107,
+        "rotated_ratio": 2.4907521340305157,
+        "turn_error_degrees": 0.2051291544540561
+      },
+      "supported": false,
+      "truth_ratio": 2.6,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 2.273322093359065,
+        "rotated_ratio": 2.354392052384083,
+        "turn_error_degrees": 1.7506152591784598
+      }
+    },
+    {
+      "case_id": "equivariance-v24-c32-a3.1-seed0",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 3.1784204667600617,
+        "rotated_ratio": 3.2123987480518874,
+        "turn_error_degrees": 0.008163518132306535
+      },
+      "supported": true,
+      "truth_ratio": 3.1,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 3.438932890214227,
+        "rotated_ratio": 3.395021641777776,
+        "turn_error_degrees": 1.2159841856608864
+      }
+    },
+    {
+      "case_id": "equivariance-v24-c32-a3.1-seed1",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 4.187538736452404,
+        "rotated_ratio": 4.242151665433023,
+        "turn_error_degrees": 0.1006516258262593
+      },
+      "supported": true,
+      "truth_ratio": 3.1,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 3.2098010573520805,
+        "rotated_ratio": 3.156418194664458,
+        "turn_error_degrees": 1.1358286588931605
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c18-a1.7-seed0",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.286097047472969,
+        "rotated_ratio": 2.274962281261835,
+        "turn_error_degrees": 0.0975126514910869
+      },
+      "supported": true,
+      "truth_ratio": 1.7,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 2.047446727644815,
+        "rotated_ratio": 2.043482798296729,
+        "turn_error_degrees": 0.8666022261507464
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c18-a1.7-seed1",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 1.9342323495872855,
+        "rotated_ratio": 1.9429050541743644,
+        "turn_error_degrees": 0.39587891843132184
+      },
+      "supported": true,
+      "truth_ratio": 1.7,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 1.9838387267348971,
+        "rotated_ratio": 2.0267429613714394,
+        "turn_error_degrees": 2.9381048667969196
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c18-a2.2-seed0",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.6653557060232944,
+        "rotated_ratio": 2.699121376516621,
+        "turn_error_degrees": 0.3345053358306984
+      },
+      "supported": true,
+      "truth_ratio": 2.2,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 2.596044688843801,
+        "rotated_ratio": 2.562796363229682,
+        "turn_error_degrees": 1.2684035460125358
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c18-a2.2-seed1",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.097811112898799,
+        "rotated_ratio": 2.0946606648003554,
+        "turn_error_degrees": 0.16233996692102437
+      },
+      "supported": false,
+      "truth_ratio": 2.2,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 2.1772773128989966,
+        "rotated_ratio": 1.9163546120201358,
+        "turn_error_degrees": 1.8930584941616928
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c18-a2.7-seed0",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 3.0591849335664523,
+        "rotated_ratio": 3.0909194586383095,
+        "turn_error_degrees": 0.10482380763448873
+      },
+      "supported": true,
+      "truth_ratio": 2.7,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 2.9088242053137456,
+        "rotated_ratio": 2.968052085959815,
+        "turn_error_degrees": 1.6815170980808034
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c18-a2.7-seed1",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.687552204397232,
+        "rotated_ratio": 2.7110303828420985,
+        "turn_error_degrees": 0.2496286740992275
+      },
+      "supported": true,
+      "truth_ratio": 2.7,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 2.535262870347176,
+        "rotated_ratio": 2.6341631139344597,
+        "turn_error_degrees": 1.1457170729203767
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c18-a3.2-seed0",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 3.627219682031198,
+        "rotated_ratio": 3.661695835600056,
+        "turn_error_degrees": 0.2754275352487525
+      },
+      "supported": true,
+      "truth_ratio": 3.2,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 3.5317067447266304,
+        "rotated_ratio": 3.5450603823051132,
+        "turn_error_degrees": 0.2344762006757719
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c18-a3.2-seed1",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.874105630415677,
+        "rotated_ratio": 2.8783660834140186,
+        "turn_error_degrees": 0.1399729030149217
+      },
+      "supported": true,
+      "truth_ratio": 3.2,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 3.1014620858328654,
+        "rotated_ratio": 3.0174953359274532,
+        "turn_error_degrees": 0.2923094391945824
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c26-a1.7-seed0",
+      "hann_tapered": {
+        "axis_available": false,
+        "reference_ratio": 1.5132017572646301,
+        "rotated_ratio": 1.5669814912002,
+        "turn_error_degrees": 0.14608145632428204
+      },
+      "supported": false,
+      "truth_ratio": 1.7,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 1.763157004409128,
+        "rotated_ratio": 1.8564251887265009,
+        "turn_error_degrees": 5.686147760888275
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c26-a1.7-seed1",
+      "hann_tapered": {
+        "axis_available": false,
+        "reference_ratio": 1.4698770079288699,
+        "rotated_ratio": 1.4487778756415475,
+        "turn_error_degrees": 0.18112244343001294
+      },
+      "supported": true,
+      "truth_ratio": 1.7,
+      "uniform": {
+        "axis_available": false,
+        "reference_ratio": 1.6565242775798155,
+        "rotated_ratio": 1.5530553177494895,
+        "turn_error_degrees": 0.3250102237480519
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c26-a2.2-seed0",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.127312371080597,
+        "rotated_ratio": 2.1429562861184404,
+        "turn_error_degrees": 0.7671735157812236
+      },
+      "supported": false,
+      "truth_ratio": 2.2,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 2.075868597963122,
+        "rotated_ratio": 1.9580652026056935,
+        "turn_error_degrees": 0.6816627172783569
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c26-a2.2-seed1",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.212954496580937,
+        "rotated_ratio": 2.2508110011019262,
+        "turn_error_degrees": 0.361279844569907
+      },
+      "supported": true,
+      "truth_ratio": 2.2,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 2.0359436783651166,
+        "rotated_ratio": 2.1524445978763467,
+        "turn_error_degrees": 3.6939349684772367
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c26-a2.7-seed0",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.65943392397514,
+        "rotated_ratio": 2.704243554589136,
+        "turn_error_degrees": 0.15335849200437224
+      },
+      "supported": false,
+      "truth_ratio": 2.7,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 3.16818373136224,
+        "rotated_ratio": 3.1361049411190565,
+        "turn_error_degrees": 1.0246169549637614
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c26-a2.7-seed1",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.407160270506448,
+        "rotated_ratio": 2.376623253015966,
+        "turn_error_degrees": 0.13779031872394398
+      },
+      "supported": true,
+      "truth_ratio": 2.7,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 2.53211539946025,
+        "rotated_ratio": 2.677886576430583,
+        "turn_error_degrees": 0.39948049778587347
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c26-a3.2-seed0",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 3.1646926370055,
+        "rotated_ratio": 3.2077943543718597,
+        "turn_error_degrees": 0.21569801586866788
+      },
+      "supported": true,
+      "truth_ratio": 3.2,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 3.0351651637124584,
+        "rotated_ratio": 3.1661350018901193,
+        "turn_error_degrees": 1.0807728352475294
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c26-a3.2-seed1",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 3.191902266781044,
+        "rotated_ratio": 3.220428970008477,
+        "turn_error_degrees": 0.13175429867879984
+      },
+      "supported": true,
+      "truth_ratio": 3.2,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 3.851428861154908,
+        "rotated_ratio": 3.59810265602968,
+        "turn_error_degrees": 0.29485372060202053
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c34-a1.7-seed0",
+      "hann_tapered": {
+        "axis_available": false,
+        "reference_ratio": 1.3010533549470829,
+        "rotated_ratio": 1.3334736649719343,
+        "turn_error_degrees": 2.3331208830324783
+      },
+      "supported": false,
+      "truth_ratio": 1.7,
+      "uniform": {
+        "axis_available": false,
+        "reference_ratio": 1.2600860728821928,
+        "rotated_ratio": 1.3584493501717494,
+        "turn_error_degrees": 14.951715324951635
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c34-a1.7-seed1",
+      "hann_tapered": {
+        "axis_available": false,
+        "reference_ratio": 1.321027609342571,
+        "rotated_ratio": 1.3007565089547968,
+        "turn_error_degrees": 1.2023971111211722
+      },
+      "supported": false,
+      "truth_ratio": 1.7,
+      "uniform": {
+        "axis_available": false,
+        "reference_ratio": 1.6106573347495612,
+        "rotated_ratio": 1.5389834290653552,
+        "turn_error_degrees": 2.8623198935417804
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c34-a2.2-seed0",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.6537928378304367,
+        "rotated_ratio": 2.6180584006150722,
+        "turn_error_degrees": 0.15320821672219154
+      },
+      "supported": false,
+      "truth_ratio": 2.2,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 2.9968068338786096,
+        "rotated_ratio": 2.9043440823042994,
+        "turn_error_degrees": 0.3266554461244482
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c34-a2.2-seed1",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.634087526843241,
+        "rotated_ratio": 2.7235360697976563,
+        "turn_error_degrees": 0.5047295064227058
+      },
+      "supported": false,
+      "truth_ratio": 2.2,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 2.249245326379771,
+        "rotated_ratio": 2.6866924540052897,
+        "turn_error_degrees": 1.3836815386329704
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c34-a2.7-seed0",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.4161972798762794,
+        "rotated_ratio": 2.4029340821454825,
+        "turn_error_degrees": 0.36389123966705483
+      },
+      "supported": false,
+      "truth_ratio": 2.7,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 2.5900758390446477,
+        "rotated_ratio": 2.648025318807238,
+        "turn_error_degrees": 1.819124790468294
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c34-a2.7-seed1",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 3.4074344304172426,
+        "rotated_ratio": 3.413429738108621,
+        "turn_error_degrees": 0.009253988128136825
+      },
+      "supported": false,
+      "truth_ratio": 2.7,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 3.5253159634152538,
+        "rotated_ratio": 3.2500436862337936,
+        "turn_error_degrees": 0.36913018853653057
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c34-a3.2-seed0",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 2.722340812149972,
+        "rotated_ratio": 2.6687254435703807,
+        "turn_error_degrees": 0.028928989013877526
+      },
+      "supported": false,
+      "truth_ratio": 3.2,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 3.3513472249172858,
+        "rotated_ratio": 3.0546031579413206,
+        "turn_error_degrees": 0.49025346617480636
+      }
+    },
+    {
+      "case_id": "equivariance-v25-c34-a3.2-seed1",
+      "hann_tapered": {
+        "axis_available": true,
+        "reference_ratio": 3.3700177972668177,
+        "rotated_ratio": 3.424528548867839,
+        "turn_error_degrees": 0.16332931966448427
+      },
+      "supported": true,
+      "truth_ratio": 3.2,
+      "uniform": {
+        "axis_available": true,
+        "reference_ratio": 3.1700347707804353,
+        "rotated_ratio": 3.162081752757226,
+        "turn_error_degrees": 0.1607991742351942
+      }
+    }
+  ],
+  "content_sha256": "6925cdf7bcffd683433c8c349b63dac2afb094b8877215cf5ef166a6ee461abf",
+  "evidence_status": "opened_failed_v2_4_and_v2_5_development_only",
+  "opened_receipts": [
+    {
+      "name": "v2.4",
+      "path": "outputs/nostos0-synthetic-physical-truth-v2-4-confirmation/validation.json",
+      "sha256": "b7078d570df4e660dd4db57e74e2d41f874962064f13d84109ec25949c8100dc"
+    },
+    {
+      "name": "v2.5",
+      "path": "outputs/nostos0-synthetic-physical-truth-v2-5-confirmation/validation.json",
+      "sha256": "121464876029429df8dd1735c9be466e12098eda34faac11e7d6146154b4f488"
+    }
+  ],
+  "protocol_version": "nostos-spatial-estimator-development/2.6",
+  "selected_axis_by_frozen_rule": {
+    "axis_cases": 25,
+    "axis_coverage": 0.9259259259259259,
+    "median_turn_error_degrees": 0.18433621101181075,
+    "method": "hann_tapered",
+    "p95_turn_error_degrees": 0.4668020526196185,
+    "supported_cases": 27
+  },
+  "selected_support_by_frozen_rule": {
+    "by_opened_receipt": {
+      "v2.4": {
+        "accepted": 102,
+        "accepted_isotropic": 11,
+        "anisotropic_coverage": 0.7583333333333333,
+        "coverage": 0.68,
+        "invalid_risk": 0.03296703296703297,
+        "isotropic_p95_ratio": 1.2147830267965287,
+        "median_relative_error": 0.07631314907744713,
+        "p95_relative_error": 0.22558886567065772
+      },
+      "v2.5": {
+        "accepted": 87,
+        "accepted_isotropic": 7,
+        "anisotropic_coverage": 0.6666666666666666,
+        "coverage": 0.58,
+        "invalid_risk": 0.05,
+        "isotropic_p95_ratio": 1.236580824876655,
+        "median_relative_error": 0.06994382004079873,
+        "p95_relative_error": 0.2298240884066445
+      }
+    },
+    "deployable": true,
+    "minimum_characteristic_spans": 2.25
+  },
+  "selection_rules": {
+    "axis": "Among methods with axis coverage >=0.60 and p95 turn error <=3 degrees, maximize coverage then minimize p95 error.",
+    "support": "Choose the lowest characteristic-span threshold for which each opened receipt separately has p95 error <=0.25, invalid risk <=0.05 and isotropic p95 ratio <=1.50 when estimable."
+  },
+  "support_candidates": [
+    {
+      "by_opened_receipt": {
+        "v2.4": {
+          "accepted": 122,
+          "accepted_isotropic": 18,
+          "anisotropic_coverage": 0.8666666666666667,
+          "coverage": 0.8133333333333334,
+          "invalid_risk": 0.028846153846153848,
+          "isotropic_p95_ratio": 1.4430849018569438,
+          "median_relative_error": 0.07619932835911081,
+          "p95_relative_error": 0.21548075167680994
+        },
+        "v2.5": {
+          "accepted": 108,
+          "accepted_isotropic": 18,
+          "anisotropic_coverage": 0.75,
+          "coverage": 0.72,
+          "invalid_risk": 0.06666666666666667,
+          "isotropic_p95_ratio": 1.3475666250149458,
+          "median_relative_error": 0.06994382004079873,
+          "p95_relative_error": 0.25563429538852106
+        }
+      },
+      "deployable": false,
+      "minimum_characteristic_spans": 2.0
+    },
+    {
+      "by_opened_receipt": {
+        "v2.4": {
+          "accepted": 102,
+          "accepted_isotropic": 11,
+          "anisotropic_coverage": 0.7583333333333333,
+          "coverage": 0.68,
+          "invalid_risk": 0.03296703296703297,
+          "isotropic_p95_ratio": 1.2147830267965287,
+          "median_relative_error": 0.07631314907744713,
+          "p95_relative_error": 0.22558886567065772
+        },
+        "v2.5": {
+          "accepted": 87,
+          "accepted_isotropic": 7,
+          "anisotropic_coverage": 0.6666666666666666,
+          "coverage": 0.58,
+          "invalid_risk": 0.05,
+          "isotropic_p95_ratio": 1.236580824876655,
+          "median_relative_error": 0.06994382004079873,
+          "p95_relative_error": 0.2298240884066445
+        }
+      },
+      "deployable": true,
+      "minimum_characteristic_spans": 2.25
+    },
+    {
+      "by_opened_receipt": {
+        "v2.4": {
+          "accepted": 102,
+          "accepted_isotropic": 11,
+          "anisotropic_coverage": 0.7583333333333333,
+          "coverage": 0.68,
+          "invalid_risk": 0.03296703296703297,
+          "isotropic_p95_ratio": 1.2147830267965287,
+          "median_relative_error": 0.07631314907744713,
+          "p95_relative_error": 0.22558886567065772
+        },
+        "v2.5": {
+          "accepted": 87,
+          "accepted_isotropic": 7,
+          "anisotropic_coverage": 0.6666666666666666,
+          "coverage": 0.58,
+          "invalid_risk": 0.05,
+          "isotropic_p95_ratio": 1.236580824876655,
+          "median_relative_error": 0.06994382004079873,
+          "p95_relative_error": 0.2298240884066445
+        }
+      },
+      "deployable": true,
+      "minimum_characteristic_spans": 2.5
+    },
+    {
+      "by_opened_receipt": {
+        "v2.4": {
+          "accepted": 102,
+          "accepted_isotropic": 11,
+          "anisotropic_coverage": 0.7583333333333333,
+          "coverage": 0.68,
+          "invalid_risk": 0.03296703296703297,
+          "isotropic_p95_ratio": 1.2147830267965287,
+          "median_relative_error": 0.07631314907744713,
+          "p95_relative_error": 0.22558886567065772
+        },
+        "v2.5": {
+          "accepted": 87,
+          "accepted_isotropic": 7,
+          "anisotropic_coverage": 0.6666666666666666,
+          "coverage": 0.58,
+          "invalid_risk": 0.05,
+          "isotropic_p95_ratio": 1.236580824876655,
+          "median_relative_error": 0.06994382004079873,
+          "p95_relative_error": 0.2298240884066445
+        }
+      },
+      "deployable": true,
+      "minimum_characteristic_spans": 2.75
+    },
+    {
+      "by_opened_receipt": {
+        "v2.4": {
+          "accepted": 92,
+          "accepted_isotropic": 8,
+          "anisotropic_coverage": 0.7,
+          "coverage": 0.6133333333333333,
+          "invalid_risk": 0.03571428571428571,
+          "isotropic_p95_ratio": 1.1781326470545987,
+          "median_relative_error": 0.07830089212751935,
+          "p95_relative_error": 0.23511939496627424
+        },
+        "v2.5": {
+          "accepted": 77,
+          "accepted_isotropic": 4,
+          "anisotropic_coverage": 0.6083333333333333,
+          "coverage": 0.5133333333333333,
+          "invalid_risk": 0.0410958904109589,
+          "isotropic_p95_ratio": 1.2012332581538463,
+          "median_relative_error": 0.06813226171996062,
+          "p95_relative_error": 0.20389508267709003
+        }
+      },
+      "deployable": true,
+      "minimum_characteristic_spans": 3.0
+    }
+  ]
+}

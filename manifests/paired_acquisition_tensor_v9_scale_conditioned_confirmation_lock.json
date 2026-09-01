@@ -1,0 +1,396 @@
+{
+  "schema_version": "nostos-paired-acquisition-tensor-v9-scale-conditioned-confirmation-lock/1.0",
+  "locked_at_utc": "2026-08-29T07:08:48Z",
+  "status": "locked_before_selected_field_pixel_decode_or_endpoint_outcome",
+  "protocol_version": "nostos-paired-acquisition-tensor/9.0-scale-conditioned-confirmation",
+  "config": {
+    "path": "configs/paired_acquisition_tensor_v9_scale_conditioned_confirmation.locked.json",
+    "bytes": 6603,
+    "sha256": "184fef945f665b80bfd26380da65fd2a4f4727d98ec28f34c7ac40cd51a5693b"
+  },
+  "implementation_sha256": "4cb4fa06809f1f3d0b63a1e61c21bd06a896732392a16639c0f63c955a13c704",
+  "selected_cells": {
+    "F-actin_linear": [
+      "Cell_018",
+      "Cell_024",
+      "Cell_039",
+      "Cell_035"
+    ],
+    "F-actin_nonlinear": [
+      "Cell_048",
+      "Cell_034",
+      "Cell_016",
+      "Cell_011"
+    ]
+  },
+  "selected_signal_levels": {
+    "F-actin_linear": [
+      1,
+      12
+    ],
+    "F-actin_nonlinear": [
+      1,
+      9
+    ]
+  },
+  "degradations": [
+    {
+      "id": "clean",
+      "family": "negative_control",
+      "operation": "identity",
+      "severity_rank": 0
+    },
+    {
+      "id": "gamma_0_5",
+      "family": "negative_control",
+      "operation": "gamma",
+      "gamma": 0.5,
+      "severity_rank": 0
+    },
+    {
+      "id": "gamma_2_0",
+      "family": "negative_control",
+      "operation": "gamma",
+      "gamma": 2.0,
+      "severity_rank": 0
+    },
+    {
+      "id": "blur_1px",
+      "family": "isotropic_blur",
+      "operation": "gaussian_blur",
+      "sigma_input_pixels": 1.0,
+      "severity_rank": 1
+    },
+    {
+      "id": "blur_2px",
+      "family": "isotropic_blur",
+      "operation": "gaussian_blur",
+      "sigma_input_pixels": 2.0,
+      "severity_rank": 2
+    },
+    {
+      "id": "blur_4px",
+      "family": "isotropic_blur",
+      "operation": "gaussian_blur",
+      "sigma_input_pixels": 4.0,
+      "severity_rank": 3
+    },
+    {
+      "id": "blur_8px",
+      "family": "isotropic_blur",
+      "operation": "gaussian_blur",
+      "sigma_input_pixels": 8.0,
+      "severity_rank": 4
+    },
+    {
+      "id": "anisotropic_y_0_5_x_3",
+      "family": "anisotropic_blur",
+      "operation": "anisotropic_gaussian_blur",
+      "sigma_yx_input_pixels": [
+        0.5,
+        3.0
+      ],
+      "severity_rank": 1
+    },
+    {
+      "id": "anisotropic_y_3_x_0_5",
+      "family": "anisotropic_blur",
+      "operation": "anisotropic_gaussian_blur",
+      "sigma_yx_input_pixels": [
+        3.0,
+        0.5
+      ],
+      "severity_rank": 1
+    },
+    {
+      "id": "resample_2x",
+      "family": "resampling",
+      "operation": "downsample_restore",
+      "factor": 2,
+      "severity_rank": 1
+    },
+    {
+      "id": "resample_4x",
+      "family": "resampling",
+      "operation": "downsample_restore",
+      "factor": 4,
+      "severity_rank": 2
+    },
+    {
+      "id": "noise_0_03",
+      "family": "additive_noise",
+      "operation": "gaussian_noise",
+      "sigma_fraction_robust_range": 0.03,
+      "severity_rank": 1
+    },
+    {
+      "id": "noise_0_08",
+      "family": "additive_noise",
+      "operation": "gaussian_noise",
+      "sigma_fraction_robust_range": 0.08,
+      "severity_rank": 2
+    },
+    {
+      "id": "noise_0_15",
+      "family": "additive_noise",
+      "operation": "gaussian_noise",
+      "sigma_fraction_robust_range": 0.15,
+      "severity_rank": 3
+    }
+  ],
+  "v9_scale_conditioned_support": {
+    "endpoint_family": "tensor_coherence",
+    "source_component": "unchanged v7 acquisition_qc risk",
+    "minimum_samples_per_scale": 4.0,
+    "scale_exponent": 0.5,
+    "acceptance_boundary": 0.3,
+    "raw_formula": "acquisition_qc_risk * (4 / samples_per_requested_scale)^0.5",
+    "normalized_score_formula": "raw_scale_conditioned_acquisition_risk / 0.30",
+    "combination_rule": "maximum of v7 acquisition QC, physical sampling, mild-perturbation stability, identifiability and v9 scale-conditioned acquisition support",
+    "v7_strong_blur_resolution_margin_role": "diagnostic only; it failed to detect stable degradation bias in v8 and is excluded from v9 coherence acceptance",
+    "orientation_distribution_rule": "unchanged v7 contract; v9 superiority is not claimed for this family",
+    "threshold_refitting_permitted": false
+  },
+  "confirmation_gates": {
+    "minimum_negative_control_coverage": 0.8,
+    "maximum_negative_control_risk": 0.1,
+    "minimum_overall_coverage": 0.8,
+    "maximum_overall_risk": 0.05,
+    "maximum_cluster_bootstrap_risk_upper95": 0.1,
+    "minimum_comparator_invalid_emissions": 10,
+    "minimum_invalid_reference_fields": 4,
+    "minimum_relative_risk_reduction_vs_qc": 0.25,
+    "minimum_invalid_fraction_among_qc_only_rejections": 0.25,
+    "minimum_bootstrap_probability_full_better": 0.95,
+    "require_bootstrap_ci95_lower_above_zero": true,
+    "require_positive_comparator_minus_full_aurc": true,
+    "require_nonhigher_full_risk_in_each_assessable_structure": true,
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 26082991
+  },
+  "archives": {
+    "F-actin_linear": {
+      "path": "<DATA_ROOT>\\data\\public\\measurement-support-benchmark\\biosr\\archives\\F-actin.zip",
+      "bytes": 2233338886,
+      "md5": "80fafab68f26fb71de12be0141face74",
+      "sha256": "d7b83be427b7e579d6450943844d5553f2e9fe61309ed9d91976598e7095c3d7",
+      "figshare_file_id": 25944599,
+      "central_directory_cell_count": 51,
+      "central_directory_expected_levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "primary_reference_basename": "SIM_gt.mrc",
+      "excluded_reference_basenames": [],
+      "verified_sha256_before_v9_lock": "d7b83be427b7e579d6450943844d5553f2e9fe61309ed9d91976598e7095c3d7",
+      "header_index_pairs": 612
+    },
+    "F-actin_nonlinear": {
+      "path": "<DATA_ROOT>\\data\\public\\measurement-support-benchmark\\biosr\\archives\\F-actin_Nonlinear.zip",
+      "bytes": 4480187050,
+      "md5": "b2884114e5fb034b9261855b3c8dbf77",
+      "sha256": "a5c97793c3b72e1f6b7e22d41670be0ef97d6c0bcdab9b6e5c392cc95dd4dcd8",
+      "figshare_file_id": 25714772,
+      "central_directory_cell_count": 51,
+      "central_directory_expected_levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "primary_reference_basename": "SIM_gt_a.mrc",
+      "excluded_reference_basenames": [
+        "SIM_gt_b.mrc"
+      ],
+      "verified_sha256_before_v7_1_lock": "a5c97793c3b72e1f6b7e22d41670be0ef97d6c0bcdab9b6e5c392cc95dd4dcd8",
+      "header_index_pairs": 459,
+      "raw_spacing_yx_um": [
+        0.06040000170469284,
+        0.06040000170469284
+      ],
+      "reference_spacing_yx_um": [
+        0.020133333280682564,
+        0.020133333280682564
+      ],
+      "verified_sha256_before_v9_lock": "a5c97793c3b72e1f6b7e22d41670be0ef97d6c0bcdab9b6e5c392cc95dd4dcd8"
+    }
+  },
+  "header_pair_counts": {
+    "F-actin_linear": 612,
+    "F-actin_nonlinear": 459
+  },
+  "selected_pair_counts": {
+    "F-actin_linear": 8,
+    "F-actin_nonlinear": 8
+  },
+  "source_lineage": {
+    "v8_failure_receipt_sha256": "69ea9f9ff2e4f6da909e495aee2e765235a420b3acf604031ffb8362927c9672",
+    "v9_development_audit_sha256": "239a5480bdbb5c7e3135fd4fe03cb526592b063ec31844dd6ef9b997d058669e"
+  },
+  "access_state": {
+    "central_directory_read": true,
+    "mrc_headers_read": true,
+    "selected_cell_pixel_arrays_decoded_by_v9": 0,
+    "selected_cell_endpoint_outcomes_computed_by_v9": 0,
+    "authorized_after_lock": "Decode only the eight selected v9 cells, two frozen signal levels per cell and the unchanged fourteen v8 degradations."
+  },
+  "files": [
+    {
+      "path": "configs/paired_acquisition_tensor_v7.locked.json",
+      "bytes": 7701,
+      "sha256": "51bc51cd69f2945c04b56a65fbf6a5a677c0c7661087ec945043eec9ab5f54eb"
+    },
+    {
+      "path": "configs/paired_acquisition_tensor_v7_1_nonlinear.locked.json",
+      "bytes": 8651,
+      "sha256": "21dfa01f02cca9ccd90da66f767ec7b6783f2b1e17d8e6d4acdc2bcd777334fb"
+    },
+    {
+      "path": "configs/paired_acquisition_tensor_v8_controlled_degradation_pilot.locked.json",
+      "bytes": 7334,
+      "sha256": "bcf9561682a01f18ba341df32b75b6a12abb56cd3246497867e61bc715c75c93"
+    },
+    {
+      "path": "configs/paired_acquisition_tensor_v9_scale_conditioned_confirmation.locked.json",
+      "bytes": 6603,
+      "sha256": "184fef945f665b80bfd26380da65fd2a4f4727d98ec28f34c7ac40cd51a5693b"
+    },
+    {
+      "path": "docs/NOSTOS0_BIOSR_V9_SCALE_CONDITIONED_CONFIRMATION.md",
+      "bytes": 3485,
+      "sha256": "5e17053b4c55d761843239eaf6375c34a407ab0940dc32aa5c89670fe791d592"
+    },
+    {
+      "path": "manifests/paired_acquisition_tensor_v7_1_nonlinear_lock.json",
+      "bytes": 8033,
+      "sha256": "d0b29d6a1d137e1442eeb7c66245f9e1e29234636558d5eeef2297929121dc99"
+    },
+    {
+      "path": "manifests/paired_acquisition_tensor_v7_confirmation_lock.json",
+      "bytes": 12873,
+      "sha256": "9ff48c5b35e1e472a43706385c0d529f13703dccf467627821aea769c575225e"
+    },
+    {
+      "path": "manifests/paired_acquisition_tensor_v8_controlled_degradation_pilot_lock.json",
+      "bytes": 11366,
+      "sha256": "ac07ae2c7289a15e3b9faca0b0f21183e520e5a1094e8ca09b7f214050362d0f"
+    },
+    {
+      "path": "outputs/nostos0-biosr-tensor-v8-controlled-degradation-pilot/pilot_receipt.json",
+      "bytes": 106619,
+      "sha256": "69ea9f9ff2e4f6da909e495aee2e765235a420b3acf604031ffb8362927c9672"
+    },
+    {
+      "path": "outputs/nostos0-biosr-tensor-v9-scale-conditioned-development/development_audit.json",
+      "bytes": 157195,
+      "sha256": "239a5480bdbb5c7e3135fd4fe03cb526592b063ec31844dd6ef9b997d058669e"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 2884,
+      "sha256": "9204767675b912b7f1ece4469799dc1009fa3e2afd966d7956bf6337faa5844c"
+    },
+    {
+      "path": "scripts/build_biosr_tensor_v9_scale_conditioned_confirmation_lock.py",
+      "bytes": 13353,
+      "sha256": "a74851792d52243629b8e0bee8c3aa8f8729ecb6d9d51f99d34336b8a79e5a97"
+    },
+    {
+      "path": "scripts/run_biosr_tensor_v8_controlled_degradation_pilot.py",
+      "bytes": 21021,
+      "sha256": "6a2bc5db99b546f92b98bc9fa13e4b6bda5a6981cb760e24ebcabcc3467c6e74"
+    },
+    {
+      "path": "scripts/run_biosr_tensor_v9_scale_conditioned_confirmation.py",
+      "bytes": 15824,
+      "sha256": "1b053607e1eb834d17133be406b3b982e44f9031038b69d74a4bb13b9853ee8a"
+    },
+    {
+      "path": "src/nostos/core/qc.py",
+      "bytes": 2241,
+      "sha256": "9e9fc39a35a2c000cf5ad47f07595c2052e327bad9c08b42b62011429e272353"
+    },
+    {
+      "path": "src/nostos/features/physical_tensor.py",
+      "bytes": 10227,
+      "sha256": "4208a544d1e94da47711bd200c14b5f4e2a1c7ed13d86aab7e7894c9a037620c"
+    },
+    {
+      "path": "src/nostos/features/spatial_fft.py",
+      "bytes": 7461,
+      "sha256": "2f18db7a1ded0e17ae091a53ddca0b44a37a5dbabd12ee1c61f2518deac23f68"
+    },
+    {
+      "path": "src/nostos/validation/biosr_tensor_confirmation_v7.py",
+      "bytes": 14672,
+      "sha256": "80122d0e5bf574f4402ce705ef3ca922f3fbc897e9bfcd4646b2733728515ff5"
+    },
+    {
+      "path": "src/nostos/validation/controlled_degradation_v8.py",
+      "bytes": 13198,
+      "sha256": "e3688f4c01d398822668f22d13bcf78a8dc019ba82a29590c49ed44595d768a5"
+    },
+    {
+      "path": "src/nostos/validation/metrics.py",
+      "bytes": 1785,
+      "sha256": "74e16c4479a6e5cb1c35246d70a2f3b1ab491627e8a815a3c4c429d1d759962e"
+    },
+    {
+      "path": "src/nostos/validation/paired_acquisition_support.py",
+      "bytes": 49810,
+      "sha256": "101ebbe1bceafa8916511560e3c5bdb8a42d0b9eded76d043fddec3465ede3e0"
+    },
+    {
+      "path": "src/nostos/validation/scale_conditioned_support_v9.py",
+      "bytes": 14833,
+      "sha256": "f664d6f712d9dfd14408f7bccbd42a301aebe181c81dca75ed116d1b3cf2620b"
+    },
+    {
+      "path": "src/nostos/validation/tensor_contract_audit_v7.py",
+      "bytes": 6835,
+      "sha256": "89676a5880e70628d0c053ba8a21e9db8eded7f412beb34515e12890faf16fdb"
+    },
+    {
+      "path": "src/nostos/validation/tensor_evidence_v7.py",
+      "bytes": 12384,
+      "sha256": "3907cc6ef6e3617f710ced54930c1fe9ffc4ec88cdd62d6404d0ca4c9a5aedd2"
+    },
+    {
+      "path": "src/nostos/validation/tensor_support_v7.py",
+      "bytes": 21461,
+      "sha256": "4604200c69e2804bcdd4d0dc0eb69e430a1ac163ed9e4133d247fffc489558e5"
+    },
+    {
+      "path": "tests/test_scale_conditioned_support_v9.py",
+      "bytes": 4670,
+      "sha256": "57a4a04a3c886ac44d3a241729eb1b1ea8cbff76b3f0a68d6eba080507a67015"
+    },
+    {
+      "path": "uv.lock",
+      "bytes": 266139,
+      "sha256": "48b9cd1ba22e808fa8ec60105551c1ad6c9549abdf4df44c9ed2c5a897b1efb1"
+    }
+  ],
+  "verification": {
+    "focused_pytest_command": ".venv/Scripts/python.exe -m pytest -q tests/test_scale_conditioned_support_v9.py tests/test_controlled_degradation_v8.py tests/test_biosr_tensor_v7_1_amendment.py tests/test_biosr_tensor_confirmation_v7.py tests/test_tensor_support_v7.py tests/test_tensor_evidence_v7.py",
+    "focused_pytest_result": "19 passed in 0.84s",
+    "compile_command": ".venv/Scripts/python.exe -m compileall -q src scripts tests",
+    "compile_exit_code": 0
+  },
+  "claim_boundary": "Independent-cell confirmation of selective tensor-coherence support under a specified BioSR controlled-degradation challenge. Not biological ground truth, image-restoration accuracy, diagnosis, clinical validity, universal tissue validity or Nature-level external validation by itself."
+}

@@ -1,0 +1,61 @@
+{
+  "dataset": {
+    "name": "Human Knee Cartilage Histopathology Assessment",
+    "doi": "10.18735/77ye-yh24",
+    "expected_participants": 90,
+    "expected_specimens_per_participant": 2,
+    "expected_images_per_participant": 9,
+    "participant_split_required": true
+  },
+  "modalities": ["HE", "SafO", "PLM"],
+  "segmentation": {
+    "classes": {
+      "0": "slide_background",
+      "1": "articular_cartilage",
+      "2": "calcified_cartilage_tidemark",
+      "3": "bone_trabeculae",
+      "4": "marrow_fat_void",
+      "5": "artifact_unusable"
+    },
+    "model": "stain_conditioned_unet",
+    "model_pixel_size_um": 5.16,
+    "input_tile_pixels": 512,
+    "minimum_cartilage_dice": 0.9,
+    "minimum_cartilage_iou": 0.82,
+    "maximum_boundary_error_um": 100.0,
+    "held_out_participant_validation_required": true,
+    "fft_allowed_classes": ["articular_cartilage"],
+    "fft_boundary_exclusion_um": 100.0
+  },
+  "tasks": [
+    "image_quality_control",
+    "cartilage_region_segmentation",
+    "morphology_representation_learning",
+    "oarsi_grade_estimation",
+    "plm_order_estimation"
+  ],
+  "prohibited_claims": [
+    "mechanical_competence",
+    "elastic_modulus",
+    "permeability",
+    "intraoperative_decision_support"
+  ],
+  "split": {
+    "seed": 240826,
+    "train_fraction": 0.7,
+    "validation_fraction": 0.15,
+    "test_fraction": 0.15
+  },
+  "spatial_fft": {
+    "tile_size_pixels": 512,
+    "tile_overlap_fraction": 0.5,
+    "minimum_tissue_fraction": 0.8,
+    "window": "hann",
+    "detrend": "plane",
+    "angular_bins": 36,
+    "exclude_low_frequency_fraction": 0.02,
+    "exclude_high_frequency_fraction": 0.9,
+    "rotation_invariance_tolerance": 0.05,
+    "require_pixel_size_metadata": true
+  }
+}

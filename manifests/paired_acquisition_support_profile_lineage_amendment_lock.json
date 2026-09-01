@@ -1,0 +1,68 @@
+{
+  "schema_version": "nostos-paired-acquisition-profile-lineage-amendment/1.0",
+  "locked_at_utc": "2026-08-29T02:38:56Z",
+  "status": "prospective_lineage_amendment_before_threshold_pixel_access",
+  "historical_pilot_repair_lock_sha256": "925fa9ed56b2c7c835396fd4a30956f2e5f4df4eceae0ee733e2e556e78c12a5",
+  "historical_profile": {
+    "path": "configs/biosr_widefield_measurement_profile_v1.locked.json",
+    "bytes": 2149,
+    "sha256": "cf27fe2a8b27b0c3889644dab06dc499dcc202c375ed1dd5eddf16aa9b632af0"
+  },
+  "current_profile": {
+    "path": "configs/biosr_widefield_measurement_profile_v1.locked.json",
+    "bytes": 3385,
+    "sha256": "321ee833987351fd64c9a358e2b8682bf368d35ea22a14665c05b65d5c2f6942"
+  },
+  "historical_runner": {
+    "path": "scripts/run_biosr_paired_support.py",
+    "bytes": 18954,
+    "sha256": "89b586507953b088300bcaf8243d0559b6575f4fa095eab83cb0fdd3fc1e13e3"
+  },
+  "current_runner": {
+    "path": "scripts/run_biosr_paired_support.py",
+    "bytes": 21519,
+    "sha256": "bba32d80cdf28c5909f73d82a9ca6a4dbd3be6ea062161a997ddf6cfc38d6c3f"
+  },
+  "amendment_scope": [
+    "Replace the provisional version-4 basis link with the completed version-5 pilot receipt and audit.",
+    "Add fail-closed dimensionality, unit, spacing, scale-grid, preprocessing, spectral-band and artifact-integrity contracts.",
+    "Teach the runner to verify the immutable historical profile and runner receipts through this explicit amendment instead of rewriting either historical lock.",
+    "Do not change the paired-acquisition estimator, endpoint values, invalidity tolerances or full-contract score formula."
+  ],
+  "failed_pre_access_attempt": {
+    "result": "Both CCP and ER threshold commands stopped at the historical profile-hash check before archive hashing, indexing or pixel decoding.",
+    "data_exposure": "none"
+  },
+  "files": [
+    {
+      "path": "manifests/paired_acquisition_support_pilot_repair_v5_lock.json",
+      "bytes": 2151,
+      "sha256": "925fa9ed56b2c7c835396fd4a30956f2e5f4df4eceae0ee733e2e556e78c12a5"
+    },
+    {
+      "path": "configs/biosr_widefield_measurement_profile_v1.locked.json",
+      "bytes": 3385,
+      "sha256": "321ee833987351fd64c9a358e2b8682bf368d35ea22a14665c05b65d5c2f6942"
+    },
+    {
+      "path": "manifests/biosr_small_pilot_v5_final_audit_receipt.json",
+      "bytes": 5404,
+      "sha256": "bbd6ae9489f788186531d6f150f716bd70ca13db8591960a18350d2812e2d308"
+    },
+    {
+      "path": "docs/NOSTOS0_SMALL_PILOT_V5_FINAL_TOOL_AUDIT.md",
+      "bytes": 9378,
+      "sha256": "412c8eb8a078daab52801f218081152e4a22fe9c0e504d0c62dcef0396f4d12a"
+    },
+    {
+      "path": "scripts/run_biosr_paired_support.py",
+      "bytes": 21519,
+      "sha256": "bba32d80cdf28c5909f73d82a9ca6a4dbd3be6ea062161a997ddf6cfc38d6c3f"
+    }
+  ],
+  "access_state": {
+    "threshold_calibration": "authorized_after_score_formula_lock_v2",
+    "confirmation_archives": "sealed_not_downloaded_not_listed_not_decoded"
+  },
+  "claim_boundary": "Lineage repair only; this amendment cannot change any measurement result or scientific acceptance threshold."
+}

@@ -1,0 +1,321 @@
+{
+  "acquisition_qc_matched_count": {
+    "accepted": 64,
+    "boundary_tie_split": true,
+    "coverage": 0.26666666666666666,
+    "deterministic_tie_break": "case_id",
+    "eligible": 240,
+    "invalid": 31,
+    "risk": 0.484375,
+    "target_accepted": 64,
+    "tie_robust_risk_bounds": {
+      "best_case_invalid": 31,
+      "best_case_risk": 0.484375,
+      "boundary_calibrated_risk": 0.4875994598528003,
+      "boundary_tie_cases": 3,
+      "boundary_tie_invalid": 2,
+      "cases_required_from_boundary_tie": 1,
+      "strictly_below_boundary": 63,
+      "worst_case_invalid": 32,
+      "worst_case_risk": 0.5
+    }
+  },
+  "base_profile_content_sha256": "65239b44c66a8bfca80608b1544fd0c892cf8e3209805828a1623d85382eebb8",
+  "checks": {
+    "aurc_bootstrap_ci_lower_above_zero": true,
+    "every_supported_cell_passes": true,
+    "maximum_cluster_bootstrap_risk_upper95": true,
+    "maximum_observed_risk": true,
+    "minimum_coverage": true,
+    "minimum_independent_groups": true,
+    "minimum_invalid_acquisition_qc_emissions": true,
+    "minimum_relative_risk_reduction_vs_acquisition_qc": true,
+    "no_unregistered_supported_cell": true,
+    "positive_aurc_difference": true
+  },
+  "claim_boundary": {
+    "claim": "A hierarchical input-known acquisition-by-scale support layer can prevent a pooled validity profile from hiding concentrated silent-invalid structural measurements in an unsafe subgroup.",
+    "excluded_claims": [
+      "biological interpretation of any endpoint",
+      "physical-scale measurement because pixel spacing is not supplied",
+      "image restoration or denoising performance",
+      "cross-modality equivalence of calibrated risk",
+      "population prevalence of invalid measurements",
+      "clinical or intraoperative utility"
+    ],
+    "study_type": "computation_only_public_data_methods_validation"
+  },
+  "conditional_profile_content_sha256": "46e4b774c530b6f737e9941d367adb166e1540db51d919fa3ee91a96725f9308",
+  "confirmation": {
+    "development_group_overlap": [],
+    "eligible_primary_cases": 240,
+    "independent_group_count": 4,
+    "independent_groups": [
+      "WideField_BPAE_R|fov1",
+      "WideField_BPAE_R|fov14",
+      "WideField_BPAE_R|fov20",
+      "WideField_BPAE_R|fov5"
+    ],
+    "source_receipt": {
+      "bytes": 2090836,
+      "name": "confirmation_rows.jsonl",
+      "sha256": "d95288907b6fd2ac14a81f6c54469c392661c24c3aa11382551a72eb2c5c4eee"
+    }
+  },
+  "content_sha256": "6c63e990c3e7efbd7673642f843c9dc322fe01c1e25633ce196f0836e58d2272",
+  "descriptive_strata": {
+    "acquisition_level": [
+      {
+        "accepted": 48,
+        "coverage": 1.0,
+        "eligible": 48,
+        "invalid": 0,
+        "risk": 0.0,
+        "stratum": "avg16"
+      },
+      {
+        "accepted": 0,
+        "coverage": 0.0,
+        "eligible": 48,
+        "invalid": 0,
+        "risk": null,
+        "stratum": "avg2"
+      },
+      {
+        "accepted": 0,
+        "coverage": 0.0,
+        "eligible": 48,
+        "invalid": 0,
+        "risk": null,
+        "stratum": "avg4"
+      },
+      {
+        "accepted": 16,
+        "coverage": 0.3333333333333333,
+        "eligible": 48,
+        "invalid": 0,
+        "risk": 0.0,
+        "stratum": "avg8"
+      },
+      {
+        "accepted": 0,
+        "coverage": 0.0,
+        "eligible": 48,
+        "invalid": 0,
+        "risk": null,
+        "stratum": "raw"
+      }
+    ],
+    "acquisition_modality": [
+      {
+        "accepted": 64,
+        "coverage": 0.26666666666666666,
+        "eligible": 240,
+        "invalid": 0,
+        "risk": 0.0,
+        "stratum": "WideField"
+      }
+    ],
+    "independent_group": [
+      {
+        "accepted": 16,
+        "coverage": 0.26666666666666666,
+        "eligible": 60,
+        "invalid": 0,
+        "risk": 0.0,
+        "stratum": "WideField_BPAE_R|fov1"
+      },
+      {
+        "accepted": 16,
+        "coverage": 0.26666666666666666,
+        "eligible": 60,
+        "invalid": 0,
+        "risk": 0.0,
+        "stratum": "WideField_BPAE_R|fov14"
+      },
+      {
+        "accepted": 16,
+        "coverage": 0.26666666666666666,
+        "eligible": 60,
+        "invalid": 0,
+        "risk": 0.0,
+        "stratum": "WideField_BPAE_R|fov20"
+      },
+      {
+        "accepted": 16,
+        "coverage": 0.26666666666666666,
+        "eligible": 60,
+        "invalid": 0,
+        "risk": 0.0,
+        "stratum": "WideField_BPAE_R|fov5"
+      }
+    ],
+    "requested_scale": [
+      {
+        "accepted": 32,
+        "coverage": 0.4,
+        "eligible": 80,
+        "invalid": 0,
+        "risk": 0.0,
+        "stratum": "16.0"
+      },
+      {
+        "accepted": 16,
+        "coverage": 0.2,
+        "eligible": 80,
+        "invalid": 0,
+        "risk": 0.0,
+        "stratum": "4.0"
+      },
+      {
+        "accepted": 16,
+        "coverage": 0.2,
+        "eligible": 80,
+        "invalid": 0,
+        "risk": 0.0,
+        "stratum": "8.0"
+      }
+    ]
+  },
+  "primary_operating_point": {
+    "accepted": 64,
+    "accepted_independent_groups": 4,
+    "cluster_bootstrap_risk_upper95": 0.0,
+    "coverage": 0.26666666666666666,
+    "eligible": 240,
+    "invalid": 0,
+    "predicted_risk_threshold": 0.6303073200826219,
+    "risk": 0.0
+  },
+  "protocol_id": "fmd-widefield-bpae-r-conditional-support-v1-4",
+  "relative_risk_reduction_vs_acquisition_qc": {
+    "conservative_lower_bound_over_boundary_tie": 1.0,
+    "deterministic_tie_break_estimate": 1.0
+  },
+  "risk_coverage": {
+    "acquisition_qc_metrics": {
+      "brier_score": 0.17839211445610073,
+      "expected_calibration_error": 0.08170008277937833,
+      "logarithmic_loss": 0.5038198604787641,
+      "risk_coverage_auc": 0.5434494780999419
+    },
+    "cluster_bootstrap_aurc_difference": {
+      "bootstrap_ci95": [
+        0.1871387641754223,
+        0.41602048269528413
+      ],
+      "bootstrap_probability_positive": 1.0,
+      "definition": "acquisition_qc_AURC_minus_conditional_primary_AURC; positive favors NOSTOS",
+      "draws": 5000,
+      "independent_groups": 4,
+      "observed": 0.28067170032216415,
+      "seed": 26082992
+    },
+    "primary_metrics": {
+      "brier_score": 0.0376689308602717,
+      "expected_calibration_error": 0.060924663233585315,
+      "logarithmic_loss": 0.40683710639623205,
+      "risk_coverage_auc": 0.2627777777777778
+    }
+  },
+  "schema_version": "nostos-conditional-support-confirmation-audit/1.0",
+  "status": "pass",
+  "supported_cell_audit": [
+    {
+      "checks": {
+        "maximum_cluster_bootstrap_risk_upper95": true,
+        "maximum_observed_risk": true,
+        "minimum_accepted_cases": true,
+        "minimum_accepted_independent_groups": true
+      },
+      "key": "[\"avg16\",16.0]",
+      "passes": true,
+      "summary": {
+        "accepted": 16,
+        "accepted_independent_groups": 4,
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 1.0,
+        "eligible": 16,
+        "invalid": 0,
+        "predicted_risk_threshold": 0.6303073200826219,
+        "risk": 0.0
+      },
+      "values": [
+        "avg16",
+        16.0
+      ]
+    },
+    {
+      "checks": {
+        "maximum_cluster_bootstrap_risk_upper95": true,
+        "maximum_observed_risk": true,
+        "minimum_accepted_cases": true,
+        "minimum_accepted_independent_groups": true
+      },
+      "key": "[\"avg16\",4.0]",
+      "passes": true,
+      "summary": {
+        "accepted": 16,
+        "accepted_independent_groups": 4,
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 1.0,
+        "eligible": 16,
+        "invalid": 0,
+        "predicted_risk_threshold": 0.6303073200826219,
+        "risk": 0.0
+      },
+      "values": [
+        "avg16",
+        4.0
+      ]
+    },
+    {
+      "checks": {
+        "maximum_cluster_bootstrap_risk_upper95": true,
+        "maximum_observed_risk": true,
+        "minimum_accepted_cases": true,
+        "minimum_accepted_independent_groups": true
+      },
+      "key": "[\"avg16\",8.0]",
+      "passes": true,
+      "summary": {
+        "accepted": 16,
+        "accepted_independent_groups": 4,
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 1.0,
+        "eligible": 16,
+        "invalid": 0,
+        "predicted_risk_threshold": 0.6303073200826219,
+        "risk": 0.0
+      },
+      "values": [
+        "avg16",
+        8.0
+      ]
+    },
+    {
+      "checks": {
+        "maximum_cluster_bootstrap_risk_upper95": true,
+        "maximum_observed_risk": true,
+        "minimum_accepted_cases": true,
+        "minimum_accepted_independent_groups": true
+      },
+      "key": "[\"avg8\",16.0]",
+      "passes": true,
+      "summary": {
+        "accepted": 16,
+        "accepted_independent_groups": 4,
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 1.0,
+        "eligible": 16,
+        "invalid": 0,
+        "predicted_risk_threshold": 0.6303073200826219,
+        "risk": 0.0
+      },
+      "values": [
+        "avg8",
+        16.0
+      ]
+    }
+  ]
+}

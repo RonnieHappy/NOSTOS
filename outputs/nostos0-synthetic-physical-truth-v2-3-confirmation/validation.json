@@ -1,0 +1,4871 @@
+{
+  "cases": {
+    "equivariance": [
+      {
+        "axis_identifiable": false,
+        "case_id": "equivariance-v23-c14-a1.4-seed0",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": null,
+          "reference_ratio": 1.2938723026538113,
+          "resampled_ratio": 1.2905156532260933,
+          "resampling_ratio_relative_drift": 0.002594266389993254,
+          "rotated_axis_degrees": null,
+          "rotated_ratio": 1.365426765508228,
+          "rotation_ratio_relative_drift": 0.05530256943258938,
+          "rotation_turn_error_degrees": null
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "equivariance-v23-c14-a1.4-seed1",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": null,
+          "reference_ratio": 1.3739454312850707,
+          "resampled_ratio": 1.3716449900984518,
+          "resampling_ratio_relative_drift": 0.0016743322800435742,
+          "rotated_axis_degrees": null,
+          "rotated_ratio": 1.3176878747122185,
+          "rotation_ratio_relative_drift": 0.04094599049704162,
+          "rotation_turn_error_degrees": null
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c14-a1.8-seed0",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": 1.5335034465254296,
+          "reference_ratio": 1.7755955933085765,
+          "resampled_ratio": 1.7650025804071927,
+          "resampling_ratio_relative_drift": 0.0059658927637037,
+          "rotated_axis_degrees": 140.24579026996724,
+          "rotated_ratio": 1.8591644869492054,
+          "rotation_ratio_relative_drift": 0.047065274297572374,
+          "rotation_turn_error_degrees": 0.28771317655818507
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c14-a1.8-seed1",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": 179.2994057034976,
+          "reference_ratio": 1.5504337499302925,
+          "resampled_ratio": 1.5433707279336397,
+          "resampling_ratio_relative_drift": 0.004555513576101086,
+          "rotated_axis_degrees": null,
+          "rotated_ratio": 1.5305769773422306,
+          "rotation_ratio_relative_drift": 0.012807237064437357,
+          "rotation_turn_error_degrees": null
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c14-a2.2-seed0",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": 0.9221781026839437,
+          "reference_ratio": 2.3991824579736876,
+          "resampled_ratio": 2.38062461921847,
+          "resampling_ratio_relative_drift": 0.007735067707560401,
+          "rotated_axis_degrees": 138.39555978515338,
+          "rotated_ratio": 2.333555009441021,
+          "rotation_ratio_relative_drift": 0.02735408818722966,
+          "rotation_turn_error_degrees": 1.5266183175305628
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c14-a2.2-seed1",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": 178.85764648828683,
+          "reference_ratio": 2.0622615593526192,
+          "resampled_ratio": 2.0440266055382668,
+          "resampling_ratio_relative_drift": 0.008842211954955293,
+          "rotated_axis_degrees": 136.622455535189,
+          "rotated_ratio": 2.1602464076086476,
+          "rotation_ratio_relative_drift": 0.047513298112770705,
+          "rotation_turn_error_degrees": 1.2351909530978276
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c14-a2.8-seed0",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": 0.6354108952177171,
+          "reference_ratio": 2.874479059364734,
+          "resampled_ratio": 2.836580296114651,
+          "resampling_ratio_relative_drift": 0.013184567522456959,
+          "rotated_axis_degrees": 139.24751493372474,
+          "rotated_ratio": 2.9078819575492396,
+          "rotation_ratio_relative_drift": 0.011620504966172097,
+          "rotation_turn_error_degrees": 0.3878959614929727
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c14-a2.8-seed1",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": 0.040312367044379016,
+          "reference_ratio": 2.875870990333671,
+          "resampled_ratio": 2.839636235604923,
+          "resampling_ratio_relative_drift": 0.012599575867811687,
+          "rotated_axis_degrees": 139.15419554284557,
+          "rotated_ratio": 2.8749056332665535,
+          "rotation_ratio_relative_drift": 0.0003356746774672006,
+          "rotation_turn_error_degrees": 0.11388317580119178
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c14-a3.2-seed0",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": 1.723596504373944,
+          "reference_ratio": 3.361931421599178,
+          "resampled_ratio": 3.296197207811457,
+          "resampling_ratio_relative_drift": 0.019552514773324217,
+          "rotated_axis_degrees": 140.43761255651523,
+          "rotated_ratio": 3.3678985456367756,
+          "rotation_ratio_relative_drift": 0.0017749095056671875,
+          "rotation_turn_error_degrees": 0.2859839478587105
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c14-a3.2-seed1",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": 1.224052251429839,
+          "reference_ratio": 2.8680776762407754,
+          "resampled_ratio": 2.8107218030511825,
+          "resampling_ratio_relative_drift": 0.019998019462558612,
+          "rotated_axis_degrees": 139.08933713153294,
+          "rotated_ratio": 2.9175352208173178,
+          "rotation_ratio_relative_drift": 0.017244144043325565,
+          "rotation_turn_error_degrees": 1.1347151198968959
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "equivariance-v23-c22-a1.4-seed0",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": null,
+          "reference_ratio": 1.2536930780169862,
+          "resampled_ratio": 1.2521754851297773,
+          "resampling_ratio_relative_drift": 0.0012104979391042887,
+          "rotated_axis_degrees": null,
+          "rotated_ratio": 1.2770675644231593,
+          "rotation_ratio_relative_drift": 0.01864450463676918,
+          "rotation_turn_error_degrees": null
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "equivariance-v23-c22-a1.4-seed1",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": null,
+          "reference_ratio": 1.2395124187826667,
+          "resampled_ratio": 1.239164213571188,
+          "resampling_ratio_relative_drift": 0.00028092111559534704,
+          "rotated_axis_degrees": null,
+          "rotated_ratio": 1.333494503930142,
+          "rotation_ratio_relative_drift": 0.07582181809826136,
+          "rotation_turn_error_degrees": null
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "equivariance-v23-c22-a1.8-seed0",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": null,
+          "reference_ratio": 1.5319002310125125,
+          "resampled_ratio": 1.5282136676724545,
+          "resampling_ratio_relative_drift": 0.0024065296586719435,
+          "rotated_axis_degrees": null,
+          "rotated_ratio": 1.501492279606576,
+          "rotation_ratio_relative_drift": 0.019849824936600705,
+          "rotation_turn_error_degrees": null
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c22-a1.8-seed1",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": 174.0984607970764,
+          "reference_ratio": 1.9183504927419288,
+          "resampled_ratio": 1.9126095423981357,
+          "resampling_ratio_relative_drift": 0.0029926493440661306,
+          "rotated_axis_degrees": 135.39007632372292,
+          "rotated_ratio": 1.9188835371027355,
+          "rotation_ratio_relative_drift": 0.0002778659910289968,
+          "rotation_turn_error_degrees": 2.291615526646524
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c22-a2.2-seed0",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": 2.676247494189994,
+          "reference_ratio": 2.2249412406638682,
+          "resampled_ratio": 2.214938452690752,
+          "resampling_ratio_relative_drift": 0.004495753771066587,
+          "rotated_axis_degrees": 140.82795999278704,
+          "rotated_ratio": 2.3501059715422015,
+          "rotation_ratio_relative_drift": 0.05625529725944005,
+          "rotation_turn_error_degrees": 0.8482875014029503
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c22-a2.2-seed1",
+        "invalid": true,
+        "measurement": {
+          "reference_axis_degrees": 174.3500881548634,
+          "reference_ratio": 1.8641792945879563,
+          "resampled_ratio": 1.8587622897449896,
+          "resampling_ratio_relative_drift": 0.002905838970904369,
+          "rotated_axis_degrees": 136.74034056110057,
+          "rotated_ratio": 1.897359881060388,
+          "rotation_ratio_relative_drift": 0.01779903176092603,
+          "rotation_turn_error_degrees": 3.3902524062371526
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c22-a2.8-seed0",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": 179.21039566419776,
+          "reference_ratio": 2.9602983652580908,
+          "resampled_ratio": 2.9442197917082407,
+          "resampling_ratio_relative_drift": 0.0054314030432024716,
+          "rotated_axis_degrees": 138.47500948678294,
+          "rotated_ratio": 3.238628975677372,
+          "rotation_ratio_relative_drift": 0.0940211343848833,
+          "rotation_turn_error_degrees": 0.26461382258517574
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c22-a2.8-seed1",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": 179.35240615728335,
+          "reference_ratio": 3.005881948304642,
+          "resampled_ratio": 2.9890548416960083,
+          "resampling_ratio_relative_drift": 0.005598059703616883,
+          "rotated_axis_degrees": 137.73318077881618,
+          "rotated_ratio": 3.0136948887171022,
+          "rotation_ratio_relative_drift": 0.002599217316856666,
+          "rotation_turn_error_degrees": 0.6192253784671777
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c22-a3.2-seed0",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": 1.1116236520649068,
+          "reference_ratio": 2.9279003700038113,
+          "resampled_ratio": 2.9058264764702697,
+          "resampling_ratio_relative_drift": 0.00753915459681877,
+          "rotated_axis_degrees": 140.67155528620998,
+          "rotated_ratio": 2.9619130661884134,
+          "rotation_ratio_relative_drift": 0.011616753265603038,
+          "rotation_turn_error_degrees": 0.5599316341450731
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c22-a3.2-seed1",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": 179.3364886585408,
+          "reference_ratio": 3.2833720451850272,
+          "resampled_ratio": 3.255198216217236,
+          "resampling_ratio_relative_drift": 0.00858076044385747,
+          "rotated_axis_degrees": 138.46182598784748,
+          "rotated_ratio": 3.3411077493408317,
+          "rotation_ratio_relative_drift": 0.017584271097292253,
+          "rotation_turn_error_degrees": 0.12533732930668862
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c30-a1.4-seed0",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": 11.244129720352674,
+          "reference_ratio": 1.9535161837371633,
+          "resampled_ratio": 1.9528764160426402,
+          "resampling_ratio_relative_drift": 0.00032749546681472324,
+          "rotated_axis_degrees": 148.05334668762984,
+          "rotated_ratio": 1.8727902865251544,
+          "rotation_ratio_relative_drift": 0.04132338287445186,
+          "rotation_turn_error_degrees": 2.190783032722834
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "equivariance-v23-c30-a1.4-seed1",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": null,
+          "reference_ratio": 1.305891347952903,
+          "resampled_ratio": 1.3057980184202118,
+          "resampling_ratio_relative_drift": 7.14680687926736e-05,
+          "rotated_axis_degrees": null,
+          "rotated_ratio": 1.1582997345320007,
+          "rotation_ratio_relative_drift": 0.11301982638315573,
+          "rotation_turn_error_degrees": null
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c30-a1.8-seed0",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": 172.27370793889233,
+          "reference_ratio": 2.6800647323665285,
+          "resampled_ratio": 2.677248233675534,
+          "resampling_ratio_relative_drift": 0.001050906963917781,
+          "rotated_axis_degrees": 130.78616062755145,
+          "rotated_ratio": 2.3558544545887714,
+          "rotation_ratio_relative_drift": 0.1209710623263475,
+          "rotation_turn_error_degrees": 0.4875473113408759
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c30-a1.8-seed1",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": 6.937700127521879,
+          "reference_ratio": 1.9736769069671798,
+          "resampled_ratio": 1.9706471411932187,
+          "resampling_ratio_relative_drift": 0.0015350870060169687,
+          "rotated_axis_degrees": 144.4437639832688,
+          "rotated_ratio": 2.032523131598905,
+          "rotation_ratio_relative_drift": 0.029815530811550264,
+          "rotation_turn_error_degrees": 1.4939361442530696
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c30-a2.2-seed0",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": 2.519789328774891,
+          "reference_ratio": 2.759485252212196,
+          "resampled_ratio": 2.7573760917055457,
+          "resampling_ratio_relative_drift": 0.0007643311392803072,
+          "rotated_axis_degrees": 139.8288527719474,
+          "rotated_ratio": 2.8002465923336906,
+          "rotation_ratio_relative_drift": 0.014771356392942202,
+          "rotation_turn_error_degrees": 1.690936556827495
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c30-a2.2-seed1",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": 176.56798325035993,
+          "reference_ratio": 2.260718242221058,
+          "resampled_ratio": 2.2573434554623244,
+          "resampling_ratio_relative_drift": 0.0014927940579707638,
+          "rotated_axis_degrees": 135.21478888592188,
+          "rotated_ratio": 2.099235657682738,
+          "rotation_ratio_relative_drift": 0.07142977020421203,
+          "rotation_turn_error_degrees": 0.3531943644380533
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c30-a2.8-seed0",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": 0.46693178051009454,
+          "reference_ratio": 3.6283049595393924,
+          "resampled_ratio": 3.61658055944103,
+          "resampling_ratio_relative_drift": 0.0032313711854724866,
+          "rotated_axis_degrees": 139.5230125703789,
+          "rotated_ratio": 3.6379770209087243,
+          "rotation_ratio_relative_drift": 0.0026657244849010203,
+          "rotation_turn_error_degrees": 0.05608078986881537
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c30-a2.8-seed1",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": 179.2782931590379,
+          "reference_ratio": 2.561904038434599,
+          "resampled_ratio": 2.5536538550602192,
+          "resampling_ratio_relative_drift": 0.003220332709815572,
+          "rotated_axis_degrees": 140.07860203317475,
+          "rotated_ratio": 2.5736994929550305,
+          "rotation_ratio_relative_drift": 0.004604174997764209,
+          "rotation_turn_error_degrees": 1.8003088741368458
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c30-a3.2-seed0",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": 2.766533179014573,
+          "reference_ratio": 3.527751964479628,
+          "resampled_ratio": 3.513845214609947,
+          "resampling_ratio_relative_drift": 0.003942099674156754,
+          "rotated_axis_degrees": 140.71493228384244,
+          "rotated_ratio": 3.2715777373400945,
+          "rotation_ratio_relative_drift": 0.07261684770327137,
+          "rotation_turn_error_degrees": 1.051600895172129
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "equivariance-v23-c30-a3.2-seed1",
+        "invalid": false,
+        "measurement": {
+          "reference_axis_degrees": 2.5363261112641737,
+          "reference_ratio": 3.1920370516243968,
+          "resampled_ratio": 3.1805596359213184,
+          "resampling_ratio_relative_drift": 0.0035956398743045973,
+          "rotated_axis_degrees": 140.20387474824045,
+          "rotated_ratio": 3.2451158855855127,
+          "rotation_ratio_relative_drift": 0.01662851436329807,
+          "rotation_turn_error_degrees": 1.332451363023722
+        },
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 30.0
+        }
+      }
+    ],
+    "hessian": [
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-blob-r6.5-s0.7x0.7x0.7",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "blob",
+          "samples_per_winning_scale": 9.285714285714286,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 6.5
+        },
+        "supported": true,
+        "truth": {
+          "class": "blob",
+          "radius_um": 6.5,
+          "spacing_um": [
+            0.7,
+            0.7,
+            0.7
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [
+          "winning_hessian_scale_below_3_5_samples"
+        ],
+        "case_id": "hessian-v23-blob-r6.5-s1.1x1.1x1.1",
+        "invalid": true,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 4.431818181818182,
+          "scale_relative_error": 0.25,
+          "winning_scale_um": 4.875
+        },
+        "supported": false,
+        "truth": {
+          "class": "blob",
+          "radius_um": 6.5,
+          "spacing_um": [
+            1.1,
+            1.1,
+            1.1
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [
+          "winning_hessian_scale_below_3_5_samples"
+        ],
+        "case_id": "hessian-v23-blob-r6.5-s1.1x1.1x2.2",
+        "invalid": true,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 2.215909090909091,
+          "scale_relative_error": 0.25,
+          "winning_scale_um": 4.875
+        },
+        "supported": false,
+        "truth": {
+          "class": "blob",
+          "radius_um": 6.5,
+          "spacing_um": [
+            1.1,
+            1.1,
+            2.2
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [
+          "winning_hessian_scale_below_3_5_samples"
+        ],
+        "case_id": "hessian-v23-blob-r6.5-s1.6x1.6x1.6",
+        "invalid": true,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 4.0625,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 6.5
+        },
+        "supported": false,
+        "truth": {
+          "class": "blob",
+          "radius_um": 6.5,
+          "spacing_um": [
+            1.6,
+            1.6,
+            1.6
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-blob-r8.5-s0.7x0.7x0.7",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "blob",
+          "samples_per_winning_scale": 9.107142857142858,
+          "scale_relative_error": 0.25,
+          "winning_scale_um": 6.375
+        },
+        "supported": true,
+        "truth": {
+          "class": "blob",
+          "radius_um": 8.5,
+          "spacing_um": [
+            0.7,
+            0.7,
+            0.7
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-blob-r8.5-s1.1x1.1x1.1",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "blob",
+          "samples_per_winning_scale": 7.727272727272727,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 8.5
+        },
+        "supported": true,
+        "truth": {
+          "class": "blob",
+          "radius_um": 8.5,
+          "spacing_um": [
+            1.1,
+            1.1,
+            1.1
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [
+          "winning_hessian_scale_below_3_5_samples"
+        ],
+        "case_id": "hessian-v23-blob-r8.5-s1.1x1.1x2.2",
+        "invalid": true,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 2.8977272727272725,
+          "scale_relative_error": 0.25,
+          "winning_scale_um": 6.375
+        },
+        "supported": false,
+        "truth": {
+          "class": "blob",
+          "radius_um": 8.5,
+          "spacing_um": [
+            1.1,
+            1.1,
+            2.2
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [
+          "winning_hessian_scale_below_3_5_samples"
+        ],
+        "case_id": "hessian-v23-blob-r8.5-s1.6x1.6x1.6",
+        "invalid": true,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 3.984375,
+          "scale_relative_error": 0.25,
+          "winning_scale_um": 6.375
+        },
+        "supported": false,
+        "truth": {
+          "class": "blob",
+          "radius_um": 8.5,
+          "spacing_um": [
+            1.6,
+            1.6,
+            1.6
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-blob-r10.5-s0.7x0.7x0.7",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "blob",
+          "samples_per_winning_scale": 11.25,
+          "scale_relative_error": 0.25,
+          "winning_scale_um": 7.875
+        },
+        "supported": true,
+        "truth": {
+          "class": "blob",
+          "radius_um": 10.5,
+          "spacing_um": [
+            0.7,
+            0.7,
+            0.7
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-blob-r10.5-s1.1x1.1x1.1",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "blob",
+          "samples_per_winning_scale": 9.545454545454545,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 10.5
+        },
+        "supported": true,
+        "truth": {
+          "class": "blob",
+          "radius_um": 10.5,
+          "spacing_um": [
+            1.1,
+            1.1,
+            1.1
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-blob-r10.5-s1.1x1.1x2.2",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "blob",
+          "samples_per_winning_scale": 4.7727272727272725,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 10.5
+        },
+        "supported": true,
+        "truth": {
+          "class": "blob",
+          "radius_um": 10.5,
+          "spacing_um": [
+            1.1,
+            1.1,
+            2.2
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-blob-r10.5-s1.6x1.6x1.6",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "blob",
+          "samples_per_winning_scale": 6.5625,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 10.5
+        },
+        "supported": true,
+        "truth": {
+          "class": "blob",
+          "radius_um": 10.5,
+          "spacing_um": [
+            1.6,
+            1.6,
+            1.6
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-tube-r6.5-s0.7x0.7x0.7",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 9.285714285714286,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 6.5
+        },
+        "supported": true,
+        "truth": {
+          "class": "tube",
+          "radius_um": 6.5,
+          "spacing_um": [
+            0.7,
+            0.7,
+            0.7
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-tube-r6.5-s1.1x1.1x1.1",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 5.909090909090908,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 6.5
+        },
+        "supported": true,
+        "truth": {
+          "class": "tube",
+          "radius_um": 6.5,
+          "spacing_um": [
+            1.1,
+            1.1,
+            1.1
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [
+          "winning_hessian_scale_below_3_5_samples"
+        ],
+        "case_id": "hessian-v23-tube-r6.5-s1.1x1.1x2.2",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 2.954545454545454,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 6.5
+        },
+        "supported": false,
+        "truth": {
+          "class": "tube",
+          "radius_um": 6.5,
+          "spacing_um": [
+            1.1,
+            1.1,
+            2.2
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [
+          "winning_hessian_scale_below_3_5_samples"
+        ],
+        "case_id": "hessian-v23-tube-r6.5-s1.6x1.6x1.6",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 4.0625,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 6.5
+        },
+        "supported": false,
+        "truth": {
+          "class": "tube",
+          "radius_um": 6.5,
+          "spacing_um": [
+            1.6,
+            1.6,
+            1.6
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-tube-r8.5-s0.7x0.7x0.7",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 12.142857142857144,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 8.5
+        },
+        "supported": true,
+        "truth": {
+          "class": "tube",
+          "radius_um": 8.5,
+          "spacing_um": [
+            0.7,
+            0.7,
+            0.7
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-tube-r8.5-s1.1x1.1x1.1",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 7.727272727272727,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 8.5
+        },
+        "supported": true,
+        "truth": {
+          "class": "tube",
+          "radius_um": 8.5,
+          "spacing_um": [
+            1.1,
+            1.1,
+            1.1
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [
+          "winning_hessian_scale_below_3_5_samples"
+        ],
+        "case_id": "hessian-v23-tube-r8.5-s1.1x1.1x2.2",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 3.8636363636363633,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 8.5
+        },
+        "supported": false,
+        "truth": {
+          "class": "tube",
+          "radius_um": 8.5,
+          "spacing_um": [
+            1.1,
+            1.1,
+            2.2
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-tube-r8.5-s1.6x1.6x1.6",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 5.3125,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 8.5
+        },
+        "supported": true,
+        "truth": {
+          "class": "tube",
+          "radius_um": 8.5,
+          "spacing_um": [
+            1.6,
+            1.6,
+            1.6
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-tube-r10.5-s0.7x0.7x0.7",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 11.25,
+          "scale_relative_error": 0.25,
+          "winning_scale_um": 7.875
+        },
+        "supported": true,
+        "truth": {
+          "class": "tube",
+          "radius_um": 10.5,
+          "spacing_um": [
+            0.7,
+            0.7,
+            0.7
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-tube-r10.5-s1.1x1.1x1.1",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 9.545454545454545,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 10.5
+        },
+        "supported": true,
+        "truth": {
+          "class": "tube",
+          "radius_um": 10.5,
+          "spacing_um": [
+            1.1,
+            1.1,
+            1.1
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-tube-r10.5-s1.1x1.1x2.2",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 4.7727272727272725,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 10.5
+        },
+        "supported": true,
+        "truth": {
+          "class": "tube",
+          "radius_um": 10.5,
+          "spacing_um": [
+            1.1,
+            1.1,
+            2.2
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-tube-r10.5-s1.6x1.6x1.6",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "tube",
+          "samples_per_winning_scale": 6.5625,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 10.5
+        },
+        "supported": true,
+        "truth": {
+          "class": "tube",
+          "radius_um": 10.5,
+          "spacing_um": [
+            1.6,
+            1.6,
+            1.6
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-sheet-r6.5-s0.7x0.7x0.7",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "sheet",
+          "samples_per_winning_scale": 11.607142857142858,
+          "scale_relative_error": 0.25,
+          "winning_scale_um": 8.125
+        },
+        "supported": true,
+        "truth": {
+          "class": "sheet",
+          "radius_um": 6.5,
+          "spacing_um": [
+            0.7,
+            0.7,
+            0.7
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-sheet-r6.5-s1.1x1.1x1.1",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "sheet",
+          "samples_per_winning_scale": 8.863636363636363,
+          "scale_relative_error": 0.5,
+          "winning_scale_um": 9.75
+        },
+        "supported": true,
+        "truth": {
+          "class": "sheet",
+          "radius_um": 6.5,
+          "spacing_um": [
+            1.1,
+            1.1,
+            1.1
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [
+          "winning_hessian_scale_below_3_5_samples"
+        ],
+        "case_id": "hessian-v23-sheet-r6.5-s1.1x1.1x2.2",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "sheet",
+          "samples_per_winning_scale": 4.431818181818182,
+          "scale_relative_error": 0.5,
+          "winning_scale_um": 9.75
+        },
+        "supported": false,
+        "truth": {
+          "class": "sheet",
+          "radius_um": 6.5,
+          "spacing_um": [
+            1.1,
+            1.1,
+            2.2
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-sheet-r6.5-s1.6x1.6x1.6",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "sheet",
+          "samples_per_winning_scale": 6.09375,
+          "scale_relative_error": 0.5,
+          "winning_scale_um": 9.75
+        },
+        "supported": true,
+        "truth": {
+          "class": "sheet",
+          "radius_um": 6.5,
+          "spacing_um": [
+            1.6,
+            1.6,
+            1.6
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-sheet-r8.5-s0.7x0.7x0.7",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "sheet",
+          "samples_per_winning_scale": 15.178571428571429,
+          "scale_relative_error": 0.25,
+          "winning_scale_um": 10.625
+        },
+        "supported": true,
+        "truth": {
+          "class": "sheet",
+          "radius_um": 8.5,
+          "spacing_um": [
+            0.7,
+            0.7,
+            0.7
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-sheet-r8.5-s1.1x1.1x1.1",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "sheet",
+          "samples_per_winning_scale": 11.59090909090909,
+          "scale_relative_error": 0.5,
+          "winning_scale_um": 12.75
+        },
+        "supported": true,
+        "truth": {
+          "class": "sheet",
+          "radius_um": 8.5,
+          "spacing_um": [
+            1.1,
+            1.1,
+            1.1
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-sheet-r8.5-s1.1x1.1x2.2",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "sheet",
+          "samples_per_winning_scale": 5.795454545454545,
+          "scale_relative_error": 0.5,
+          "winning_scale_um": 12.75
+        },
+        "supported": true,
+        "truth": {
+          "class": "sheet",
+          "radius_um": 8.5,
+          "spacing_um": [
+            1.1,
+            1.1,
+            2.2
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-sheet-r8.5-s1.6x1.6x1.6",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "sheet",
+          "samples_per_winning_scale": 7.96875,
+          "scale_relative_error": 0.5,
+          "winning_scale_um": 12.75
+        },
+        "supported": true,
+        "truth": {
+          "class": "sheet",
+          "radius_um": 8.5,
+          "spacing_um": [
+            1.6,
+            1.6,
+            1.6
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-sheet-r10.5-s0.7x0.7x0.7",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "sheet",
+          "samples_per_winning_scale": 15.000000000000002,
+          "scale_relative_error": 0.0,
+          "winning_scale_um": 10.5
+        },
+        "supported": true,
+        "truth": {
+          "class": "sheet",
+          "radius_um": 10.5,
+          "spacing_um": [
+            0.7,
+            0.7,
+            0.7
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-sheet-r10.5-s1.1x1.1x1.1",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "sheet",
+          "samples_per_winning_scale": 11.931818181818182,
+          "scale_relative_error": 0.25,
+          "winning_scale_um": 13.125
+        },
+        "supported": true,
+        "truth": {
+          "class": "sheet",
+          "radius_um": 10.5,
+          "spacing_um": [
+            1.1,
+            1.1,
+            1.1
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-sheet-r10.5-s1.1x1.1x2.2",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "sheet",
+          "samples_per_winning_scale": 5.965909090909091,
+          "scale_relative_error": 0.25,
+          "winning_scale_um": 13.125
+        },
+        "supported": true,
+        "truth": {
+          "class": "sheet",
+          "radius_um": 10.5,
+          "spacing_um": [
+            1.1,
+            1.1,
+            2.2
+          ]
+        }
+      },
+      {
+        "abstention_reasons": [],
+        "case_id": "hessian-v23-sheet-r10.5-s1.6x1.6x1.6",
+        "invalid": false,
+        "measurement": {
+          "estimated_class": "sheet",
+          "samples_per_winning_scale": 9.84375,
+          "scale_relative_error": 0.5,
+          "winning_scale_um": 15.75
+        },
+        "supported": true,
+        "truth": {
+          "class": "sheet",
+          "radius_um": 10.5,
+          "spacing_um": [
+            1.6,
+            1.6,
+            1.6
+          ]
+        }
+      }
+    ],
+    "spatial": [
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c14-a1-seed0",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.005045919909150166,
+            0.005436706223396078
+          ],
+          "gradient_moment_ratio": 1.0380009634825118,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.03800096348251181,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c14-a1-seed1",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.003890719938422118,
+            0.005410400994221932
+          ],
+          "gradient_moment_ratio": 1.179233319641238,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.1792333196412379,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c14-a1-seed2",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004808687852771906,
+            0.005799744001891051
+          ],
+          "gradient_moment_ratio": 1.0982244769694027,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.09822447696940273,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c14-a1-seed3",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0030981353895102254,
+            0.004493419596465296
+          ],
+          "gradient_moment_ratio": 1.204309996224811,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.20430999622481094,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c14-a1-seed4",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004159348674943443,
+            0.004808986459570389
+          ],
+          "gradient_moment_ratio": 1.075261541684053,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.07526154168405297,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c14-a1-seed5",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.003731785278241095,
+            0.005114029608543558
+          ],
+          "gradient_moment_ratio": 1.1706398272878455,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.17063982728784555,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c14-a1-seed6",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004733051585520514,
+            0.006069640751223571
+          ],
+          "gradient_moment_ratio": 1.13242871831954,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.13242871831954006,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c14-a1-seed7",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0045669221330741985,
+            0.0064391385060054256
+          ],
+          "gradient_moment_ratio": 1.187413767358992,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.18741376735899196,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c14-a1-seed8",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.00442616248376313,
+            0.005405157892683134
+          ],
+          "gradient_moment_ratio": 1.1050718499381529,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.10507184993815288,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c14-a1-seed9",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004462432244813362,
+            0.006301209047829649
+          ],
+          "gradient_moment_ratio": 1.1883000801838144,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.1883000801838144,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c14-a1.4-seed0",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.005769713148167405,
+            0.009659108720025043
+          ],
+          "gradient_moment_ratio": 1.2938723026538113,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.07580549810442047,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c14-a1.4-seed1",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004773372927250049,
+            0.009010820412299728
+          ],
+          "gradient_moment_ratio": 1.3739454312850707,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.01861040622494941,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c14-a1.4-seed2",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004202626384785131,
+            0.009878181934812094
+          ],
+          "gradient_moment_ratio": 1.5331269535916894,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.09509068113692105,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c14-a1.4-seed3",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.005329258117895494,
+            0.009833380859408717
+          ],
+          "gradient_moment_ratio": 1.3583699091071795,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.029735779209157456,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c14-a1.4-seed4",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004719442817009333,
+            0.009657684374764525
+          ],
+          "gradient_moment_ratio": 1.4305107962601482,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.02179342590010593,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c14-a1.4-seed5",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004173613578061075,
+            0.008227294829813374
+          ],
+          "gradient_moment_ratio": 1.4040171479650227,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.0028693914035877416,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a1.4-seed6",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.003359215465730018,
+            0.008893087468797085
+          ],
+          "gradient_moment_ratio": 1.6270741727294684,
+          "major_axis_degrees": 7.064081857025428
+        },
+        "relative_ratio_error": 0.16219583766390608,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c14-a1.4-seed7",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004049098251788047,
+            0.008497154536922371
+          ],
+          "gradient_moment_ratio": 1.4486304202554845,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.03473601446820328,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c14-a1.4-seed8",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.005045238875639841,
+            0.010043417704559937
+          ],
+          "gradient_moment_ratio": 1.4109118983199036,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.007794213085645494,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a1.4-seed9",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004618510271546865,
+            0.011485264111007927
+          ],
+          "gradient_moment_ratio": 1.5769558564735606,
+          "major_axis_degrees": 174.07631410973917
+        },
+        "relative_ratio_error": 0.12639704033825766,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a1.8-seed0",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004427687733134212,
+            0.013959346944057234
+          ],
+          "gradient_moment_ratio": 1.7755955933085765,
+          "major_axis_degrees": 1.5335034465254296
+        },
+        "relative_ratio_error": 0.01355800371745751,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a1.8-seed1",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0054232597541953986,
+            0.01303667482925618
+          ],
+          "gradient_moment_ratio": 1.5504337499302925,
+          "major_axis_degrees": 179.2994057034976
+        },
+        "relative_ratio_error": 0.1386479167053931,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a1.8-seed2",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004136245217069303,
+            0.014490097972220521
+          ],
+          "gradient_moment_ratio": 1.8716839747265424,
+          "major_axis_degrees": 4.41207287401329
+        },
+        "relative_ratio_error": 0.03982443040363461,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a1.8-seed3",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.005178374844394879,
+            0.018078326473833797
+          ],
+          "gradient_moment_ratio": 1.868453828125517,
+          "major_axis_degrees": 1.4619697788196504
+        },
+        "relative_ratio_error": 0.038029904514176066,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a1.8-seed4",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004669778188487835,
+            0.014969252943546861
+          ],
+          "gradient_moment_ratio": 1.7904077014433006,
+          "major_axis_degrees": 174.79992502366844
+        },
+        "relative_ratio_error": 0.005329054753721893,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a1.8-seed5",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.005384234293544921,
+            0.014716113680912562
+          ],
+          "gradient_moment_ratio": 1.6532350042865394,
+          "major_axis_degrees": 0.8320507737152809
+        },
+        "relative_ratio_error": 0.08153610872970038,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a1.8-seed6",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.005572590180249072,
+            0.016194646887160366
+          ],
+          "gradient_moment_ratio": 1.7047362209846695,
+          "major_axis_degrees": 1.1348677368096673
+        },
+        "relative_ratio_error": 0.05292432167518364,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a1.8-seed7",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.006255168279532796,
+            0.01964279831092167
+          ],
+          "gradient_moment_ratio": 1.7720753309523287,
+          "major_axis_degrees": 177.56200724738437
+        },
+        "relative_ratio_error": 0.01551370502648407,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a1.8-seed8",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0048417715297117215,
+            0.013779348026970728
+          ],
+          "gradient_moment_ratio": 1.686988757912489,
+          "major_axis_degrees": 174.283010494439
+        },
+        "relative_ratio_error": 0.06278402338195062,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a1.8-seed9",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.005188002632573097,
+            0.017543130543625322
+          ],
+          "gradient_moment_ratio": 1.838880272250689,
+          "major_axis_degrees": 179.24390664531114
+        },
+        "relative_ratio_error": 0.021600151250382726,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a2.2-seed0",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004841207998590458,
+            0.027866363430837822
+          ],
+          "gradient_moment_ratio": 2.3991824579736876,
+          "major_axis_degrees": 0.9221781026839437
+        },
+        "relative_ratio_error": 0.09053748089713062,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a2.2-seed1",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.005300509613365528,
+            0.02254265786394298
+          ],
+          "gradient_moment_ratio": 2.0622615593526192,
+          "major_axis_degrees": 178.85764648828683
+        },
+        "relative_ratio_error": 0.06260838211244588,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a2.2-seed2",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.005145174884781175,
+            0.021956158666254985
+          ],
+          "gradient_moment_ratio": 2.0657516568348226,
+          "major_axis_degrees": 178.80108994072017
+        },
+        "relative_ratio_error": 0.061021974165989784,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a2.2-seed3",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.005040169667568571,
+            0.022623007994441016
+          ],
+          "gradient_moment_ratio": 2.118617700116758,
+          "major_axis_degrees": 178.5579680354125
+        },
+        "relative_ratio_error": 0.036991954492382864,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a2.2-seed4",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0054256365637574645,
+            0.025143911684408306
+          ],
+          "gradient_moment_ratio": 2.152737477946287,
+          "major_axis_degrees": 177.53911606064108
+        },
+        "relative_ratio_error": 0.021482964569869572,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a2.2-seed5",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.005035610727520896,
+            0.027582420541094214
+          ],
+          "gradient_moment_ratio": 2.3404001261100755,
+          "major_axis_degrees": 177.23997831289856
+        },
+        "relative_ratio_error": 0.06381823914094334,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a2.2-seed6",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0034880244490764095,
+            0.02501953349798474
+          ],
+          "gradient_moment_ratio": 2.678242168640148,
+          "major_axis_degrees": 1.3313206382028682
+        },
+        "relative_ratio_error": 0.21738280392733994,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a2.2-seed7",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004991274104918553,
+            0.018444296713183
+          ],
+          "gradient_moment_ratio": 1.9223184744392499,
+          "major_axis_degrees": 178.92933626886514
+        },
+        "relative_ratio_error": 0.1262188752548865,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a2.2-seed8",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004987297785249445,
+            0.02093328287771388
+          ],
+          "gradient_moment_ratio": 2.048736104674667,
+          "major_axis_degrees": 0.9841036544677024
+        },
+        "relative_ratio_error": 0.0687563160569696,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a2.2-seed9",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0050272954094662545,
+            0.020639633515716287
+          ],
+          "gradient_moment_ratio": 2.0262068907236928,
+          "major_axis_degrees": 176.9058469618167
+        },
+        "relative_ratio_error": 0.078996867852867,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a2.8-seed0",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.005143120271886501,
+            0.042495699146082755
+          ],
+          "gradient_moment_ratio": 2.874479059364734,
+          "major_axis_degrees": 0.6354108952177171
+        },
+        "relative_ratio_error": 0.026599664058833645,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a2.8-seed1",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004968656923032024,
+            0.04109394264864968
+          ],
+          "gradient_moment_ratio": 2.875870990333671,
+          "major_axis_degrees": 0.040312367044379016
+        },
+        "relative_ratio_error": 0.027096782262025422,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a2.8-seed2",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004301827359771206,
+            0.039430611923596634
+          ],
+          "gradient_moment_ratio": 3.02754264915136,
+          "major_axis_degrees": 179.72929190037482
+        },
+        "relative_ratio_error": 0.08126523183977157,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a2.8-seed3",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004628449397648147,
+            0.04371180740411871
+          ],
+          "gradient_moment_ratio": 3.0731348814375896,
+          "major_axis_degrees": 179.98902849192726
+        },
+        "relative_ratio_error": 0.09754817194199636,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a2.8-seed4",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.006053411583828709,
+            0.042089778302253945
+          ],
+          "gradient_moment_ratio": 2.6368669529018365,
+          "major_axis_degrees": 177.02765769686428
+        },
+        "relative_ratio_error": 0.05826180253505834,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a2.8-seed5",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004415096647706353,
+            0.032946906190099746
+          ],
+          "gradient_moment_ratio": 2.7317264782959114,
+          "major_axis_degrees": 2.0353012301620197
+        },
+        "relative_ratio_error": 0.024383400608603,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a2.8-seed6",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004597747541477641,
+            0.034536441356693204
+          ],
+          "gradient_moment_ratio": 2.740729866476482,
+          "major_axis_degrees": 178.80496195246573
+        },
+        "relative_ratio_error": 0.021167904829827763,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a2.8-seed7",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0038602776406983976,
+            0.03221732755595685
+          ],
+          "gradient_moment_ratio": 2.888919801273731,
+          "major_axis_degrees": 177.95961398981927
+        },
+        "relative_ratio_error": 0.0317570718834754,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a2.8-seed8",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004958522429383496,
+            0.039015840558546074
+          ],
+          "gradient_moment_ratio": 2.80507412987763,
+          "major_axis_degrees": 0.3747718742097277
+        },
+        "relative_ratio_error": 0.0018121892420107169,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a2.8-seed9",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004132694417211294,
+            0.031771341108799846
+          ],
+          "gradient_moment_ratio": 2.7726887921192684,
+          "major_axis_degrees": 1.5822479984695406
+        },
+        "relative_ratio_error": 0.009754002814546922,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a3.2-seed0",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.003969535286199425,
+            0.044866001581389287
+          ],
+          "gradient_moment_ratio": 3.361931421599178,
+          "major_axis_degrees": 1.723596504373944
+        },
+        "relative_ratio_error": 0.050603569249743074,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a3.2-seed1",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.005204327665181555,
+            0.04281012050541319
+          ],
+          "gradient_moment_ratio": 2.8680776762407754,
+          "major_axis_degrees": 1.224052251429839
+        },
+        "relative_ratio_error": 0.10372572617475775,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a3.2-seed2",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.005359646221772545,
+            0.045501475023759896
+          ],
+          "gradient_moment_ratio": 2.913698938867725,
+          "major_axis_degrees": 179.77449235740846
+        },
+        "relative_ratio_error": 0.08946908160383599,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a3.2-seed3",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0044596141775141715,
+            0.04614426439945753
+          ],
+          "gradient_moment_ratio": 3.216697487549815,
+          "major_axis_degrees": 0.3976605782035847
+        },
+        "relative_ratio_error": 0.005217964859317165,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a3.2-seed4",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.00500855301130513,
+            0.05200652654328568
+          ],
+          "gradient_moment_ratio": 3.2223505700324218,
+          "major_axis_degrees": 179.45640840019348
+        },
+        "relative_ratio_error": 0.006984553135131744,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a3.2-seed5",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004863687714651296,
+            0.04782796750047827
+          ],
+          "gradient_moment_ratio": 3.1358705146806694,
+          "major_axis_degrees": 1.0322676613797626
+        },
+        "relative_ratio_error": 0.020040464162290883,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a3.2-seed6",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004061506975520802,
+            0.05353833695751389
+          ],
+          "gradient_moment_ratio": 3.6306872211250583,
+          "major_axis_degrees": 0.8582703513290539
+        },
+        "relative_ratio_error": 0.13458975660158065,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a3.2-seed7",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.004497803040114894,
+            0.04637925778373103
+          ],
+          "gradient_moment_ratio": 3.211158040146415,
+          "major_axis_degrees": 0.6498049570437558
+        },
+        "relative_ratio_error": 0.0034868875457545745,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a3.2-seed8",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0051331697334951005,
+            0.05113857791789772
+          ],
+          "gradient_moment_ratio": 3.156323515631397,
+          "major_axis_degrees": 179.0071143975204
+        },
+        "relative_ratio_error": 0.013648901365188454,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c14-a3.2-seed9",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0041564035976082055,
+            0.057907512866671174
+          ],
+          "gradient_moment_ratio": 3.732575491780276,
+          "major_axis_degrees": 0.8995024071622311
+        },
+        "relative_ratio_error": 0.16642984118133614,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 14.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c22-a1-seed0",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0011375978124772061,
+            0.0016510761389594703
+          ],
+          "gradient_moment_ratio": 1.2047284776559193,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.20472847765591928,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c22-a1-seed1",
+        "invalid": true,
+        "measurement": {
+          "eigenvalues": [
+            0.0015036941390243871,
+            0.0025059864159763176
+          ],
+          "gradient_moment_ratio": 1.2909505377635482,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.2909505377635482,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c22-a1-seed2",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.001821044583897243,
+            0.002487048223460734
+          ],
+          "gradient_moment_ratio": 1.168642870252124,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.1686428702521241,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c22-a1-seed3",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0018493585699611438,
+            0.002161682043065542
+          ],
+          "gradient_moment_ratio": 1.0811484882207163,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.0811484882207163,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c22-a1-seed4",
+        "invalid": true,
+        "measurement": {
+          "eigenvalues": [
+            0.0010263200020240461,
+            0.0017496030422202093
+          ],
+          "gradient_moment_ratio": 1.3056547892183314,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.30565478921833145,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c22-a1-seed5",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0024061639960248427,
+            0.0031258139349105577
+          ],
+          "gradient_moment_ratio": 1.1397745343629206,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.13977453436292064,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c22-a1-seed6",
+        "invalid": true,
+        "measurement": {
+          "eigenvalues": [
+            0.0012549917992202102,
+            0.002318055743927889
+          ],
+          "gradient_moment_ratio": 1.3590689604675357,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.35906896046753567,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c22-a1-seed7",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.002109161590326004,
+            0.0022591741159189876
+          ],
+          "gradient_moment_ratio": 1.0349513249190332,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.03495132491903319,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c22-a1-seed8",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0018242517717605225,
+            0.0021153245066700397
+          ],
+          "gradient_moment_ratio": 1.0768274356370595,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.07682743563705952,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c22-a1-seed9",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.001629346180813808,
+            0.002157571495366311
+          ],
+          "gradient_moment_ratio": 1.150736568393129,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.150736568393129,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c22-a1.4-seed0",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0016281410713889976,
+            0.0025590247599750937
+          ],
+          "gradient_moment_ratio": 1.2536930780169862,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.10450494427358126,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c22-a1.4-seed1",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.002685990911173915,
+            0.004126732359555075
+          ],
+          "gradient_moment_ratio": 1.2395124187826667,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.11463398658380944,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c22-a1.4-seed2",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0022810427204001654,
+            0.004791512756340261
+          ],
+          "gradient_moment_ratio": 1.4493377856716514,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.03524127547975106,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a1.4-seed3",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0019121311682529071,
+            0.005839619606592367
+          ],
+          "gradient_moment_ratio": 1.747565404636174,
+          "major_axis_degrees": 0.5338495325912902
+        },
+        "relative_ratio_error": 0.2482610033115529,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c22-a1.4-seed4",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.002187809328375625,
+            0.004671880585626903
+          ],
+          "gradient_moment_ratio": 1.4613058803627124,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.04378991454479461,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a1.4-seed5",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0021886533230962703,
+            0.00600032310400064
+          ],
+          "gradient_moment_ratio": 1.6557655044764028,
+          "major_axis_degrees": 5.924684117203611
+        },
+        "relative_ratio_error": 0.1826896460545735,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a1.4-seed6",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0018416694128394625,
+            0.004847556682312914
+          ],
+          "gradient_moment_ratio": 1.6223913059628834,
+          "major_axis_degrees": 175.30354429721433
+        },
+        "relative_ratio_error": 0.15885093283063106,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c22-a1.4-seed7",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.002087760336577511,
+            0.004678332538066793
+          ],
+          "gradient_moment_ratio": 1.4969428592394562,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.06924489945675454,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a1.4-seed8",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0016291316915690139,
+            0.004327647996693163
+          ],
+          "gradient_moment_ratio": 1.6298508688674913,
+          "major_axis_degrees": 168.08958617265344
+        },
+        "relative_ratio_error": 0.16417919204820816,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a1.4-seed9",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.001743870229034828,
+            0.004696231689783784
+          ],
+          "gradient_moment_ratio": 1.6410343645571308,
+          "major_axis_degrees": 176.8753186335687
+        },
+        "relative_ratio_error": 0.1721674032550935,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c22-a1.8-seed0",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.002020377443438153,
+            0.00474125675533814
+          ],
+          "gradient_moment_ratio": 1.5319002310125125,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.14894431610415976,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a1.8-seed1",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0024744245519604897,
+            0.009106052128914306
+          ],
+          "gradient_moment_ratio": 1.9183504927419288,
+          "major_axis_degrees": 174.0984607970764
+        },
+        "relative_ratio_error": 0.06575027374551598,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a1.8-seed2",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.002121420541389258,
+            0.006814312701764436
+          ],
+          "gradient_moment_ratio": 1.7922461025537146,
+          "major_axis_degrees": 174.01564180214726
+        },
+        "relative_ratio_error": 0.004307720803491893,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a1.8-seed3",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.002092142261731435,
+            0.006022898297029197
+          ],
+          "gradient_moment_ratio": 1.6967081996524482,
+          "major_axis_degrees": 179.2126731620902
+        },
+        "relative_ratio_error": 0.05738433352641767,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a1.8-seed4",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0014078328987515766,
+            0.004187408416972422
+          ],
+          "gradient_moment_ratio": 1.7246346444897653,
+          "major_axis_degrees": 0.7420278662931139
+        },
+        "relative_ratio_error": 0.0418696419501304,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a1.8-seed5",
+        "invalid": true,
+        "measurement": {
+          "eigenvalues": [
+            0.0018088849383414314,
+            0.009303364846582977
+          ],
+          "gradient_moment_ratio": 2.2678511959342185,
+          "major_axis_degrees": 172.03918644557612
+        },
+        "relative_ratio_error": 0.25991733107456577,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c22-a1.8-seed6",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0021320344336046267,
+            0.004881463729199174
+          ],
+          "gradient_moment_ratio": 1.5131358680281175,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.1593689622066014,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a1.8-seed7",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0017249500597217458,
+            0.0065036964956920185
+          ],
+          "gradient_moment_ratio": 1.9417435447494296,
+          "major_axis_degrees": 0.6855881183592203
+        },
+        "relative_ratio_error": 0.07874641374968307,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c22-a1.8-seed8",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.002534638011735219,
+            0.005317901874802947
+          ],
+          "gradient_moment_ratio": 1.448478949092587,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.19528947272634062,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a1.8-seed9",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.002097334866911856,
+            0.0062500835937274665
+          ],
+          "gradient_moment_ratio": 1.726271197997559,
+          "major_axis_degrees": 4.910137500056948
+        },
+        "relative_ratio_error": 0.040960445556911744,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a2.2-seed0",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0022925021828078406,
+            0.011348719185395071
+          ],
+          "gradient_moment_ratio": 2.2249412406638682,
+          "major_axis_degrees": 2.676247494189994
+        },
+        "relative_ratio_error": 0.011336927574485475,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a2.2-seed1",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0024450489429623363,
+            0.008496947146438165
+          ],
+          "gradient_moment_ratio": 1.8641792945879563,
+          "major_axis_degrees": 174.3500881548634
+        },
+        "relative_ratio_error": 0.15264577518729266,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a2.2-seed2",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0020010746522987374,
+            0.009461500020554115
+          ],
+          "gradient_moment_ratio": 2.174444623281116,
+          "major_axis_degrees": 179.11226640323778
+        },
+        "relative_ratio_error": 0.011616080326765591,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a2.2-seed3",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.00139669541572907,
+            0.008275018829121307
+          ],
+          "gradient_moment_ratio": 2.434073238268265,
+          "major_axis_degrees": 174.51468663333478
+        },
+        "relative_ratio_error": 0.10639692648557483,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a2.2-seed4",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0019582459966952406,
+            0.009269018476696273
+          ],
+          "gradient_moment_ratio": 2.1756210405568304,
+          "major_axis_degrees": 177.88963613670725
+        },
+        "relative_ratio_error": 0.011081345201440823,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a2.2-seed5",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0014899886889981583,
+            0.007690095492039471
+          ],
+          "gradient_moment_ratio": 2.271822416924866,
+          "major_axis_degrees": 3.5815059378080605
+        },
+        "relative_ratio_error": 0.03264655314766627,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a2.2-seed6",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.001796644811392013,
+            0.011828296925705252
+          ],
+          "gradient_moment_ratio": 2.5658425051426152,
+          "major_axis_degrees": 2.7612503655713567
+        },
+        "relative_ratio_error": 0.16629204779209775,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a2.2-seed7",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0016996191364508347,
+            0.009275040679630961
+          ],
+          "gradient_moment_ratio": 2.336049846001427,
+          "major_axis_degrees": 2.5590740792668782
+        },
+        "relative_ratio_error": 0.06184083909155772,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a2.2-seed8",
+        "invalid": true,
+        "measurement": {
+          "eigenvalues": [
+            0.0014326450537088063,
+            0.011068995989000279
+          ],
+          "gradient_moment_ratio": 2.779616062673912,
+          "major_axis_degrees": 2.1867421149791255
+        },
+        "relative_ratio_error": 0.26346184666996,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a2.2-seed9",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0016401293146567977,
+            0.009309252440015186
+          ],
+          "gradient_moment_ratio": 2.382420174949014,
+          "major_axis_degrees": 2.5937860276413005
+        },
+        "relative_ratio_error": 0.08291826134046089,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a2.8-seed0",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.001449566511927598,
+            0.012703082481643691
+          ],
+          "gradient_moment_ratio": 2.9602983652580908,
+          "major_axis_degrees": 179.21039566419776
+        },
+        "relative_ratio_error": 0.05724941616360391,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a2.8-seed1",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0019485632449787276,
+            0.017605904709518345
+          ],
+          "gradient_moment_ratio": 3.005881948304642,
+          "major_axis_degrees": 179.35240615728335
+        },
+        "relative_ratio_error": 0.07352926725165791,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a2.8-seed2",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.002207092307079591,
+            0.015554627946855804
+          ],
+          "gradient_moment_ratio": 2.6547251567250516,
+          "major_axis_degrees": 179.1863271404741
+        },
+        "relative_ratio_error": 0.051883872598195796,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a2.8-seed3",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.001639029550367339,
+            0.01875642002752219
+          ],
+          "gradient_moment_ratio": 3.3828409800235377,
+          "major_axis_degrees": 179.8985370433251
+        },
+        "relative_ratio_error": 0.20815749286554927,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a2.8-seed4",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0024781831491309594,
+            0.015750242705261392
+          ],
+          "gradient_moment_ratio": 2.521023682464088,
+          "major_axis_degrees": 0.7409063320346831
+        },
+        "relative_ratio_error": 0.09963439911996855,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a2.8-seed5",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0015183591755448373,
+            0.016105081978846074
+          ],
+          "gradient_moment_ratio": 3.2568234077048865,
+          "major_axis_degrees": 175.26801269489926
+        },
+        "relative_ratio_error": 0.16315121703745955,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a2.8-seed6",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.002072276552718402,
+            0.01718862969455449
+          ],
+          "gradient_moment_ratio": 2.8800284052551692,
+          "major_axis_degrees": 176.5701065137045
+        },
+        "relative_ratio_error": 0.02858157330541765,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a2.8-seed7",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0018148323946004115,
+            0.017234569419180862
+          ],
+          "gradient_moment_ratio": 3.081640388642144,
+          "major_axis_degrees": 0.7570378229742971
+        },
+        "relative_ratio_error": 0.10058585308648005,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a2.8-seed8",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.002345886012443811,
+            0.01631744292634026
+          ],
+          "gradient_moment_ratio": 2.6373793308261724,
+          "major_axis_degrees": 0.115726963800455
+        },
+        "relative_ratio_error": 0.058078810419224094,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a2.8-seed9",
+        "invalid": true,
+        "measurement": {
+          "eigenvalues": [
+            0.0011167432026465928,
+            0.014770124305922089
+          ],
+          "gradient_moment_ratio": 3.6367664868249587,
+          "major_axis_degrees": 179.94485620843275
+        },
+        "relative_ratio_error": 0.29884517386605675,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a3.2-seed0",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0015496429075495118,
+            0.013284469682889127
+          ],
+          "gradient_moment_ratio": 2.9279003700038113,
+          "major_axis_degrees": 1.1116236520649068
+        },
+        "relative_ratio_error": 0.08503113437380902,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a3.2-seed1",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0017188617701123438,
+            0.018530244294103763
+          ],
+          "gradient_moment_ratio": 3.2833720451850272,
+          "major_axis_degrees": 179.3364886585408
+        },
+        "relative_ratio_error": 0.026053764120320955,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a3.2-seed2",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0018803941811788287,
+            0.019143979148600696
+          ],
+          "gradient_moment_ratio": 3.190741764610174,
+          "major_axis_degrees": 177.85650064074656
+        },
+        "relative_ratio_error": 0.0028931985593207143,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a3.2-seed3",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0020565548010986075,
+            0.025307558467255596
+          ],
+          "gradient_moment_ratio": 3.507962814797972,
+          "major_axis_degrees": 1.5085378847020934
+        },
+        "relative_ratio_error": 0.09623837962436613,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a3.2-seed4",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0015654908325336463,
+            0.015342059719174279
+          ],
+          "gradient_moment_ratio": 3.1305206297806007,
+          "major_axis_degrees": 0.6552930247080155
+        },
+        "relative_ratio_error": 0.02171230319356232,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a3.2-seed5",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0014558077643182807,
+            0.02121003843707611
+          ],
+          "gradient_moment_ratio": 3.8169696973523206,
+          "major_axis_degrees": 178.45755723337956
+        },
+        "relative_ratio_error": 0.19280303042260014,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a3.2-seed6",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0021685945697762837,
+            0.02115153854754278
+          ],
+          "gradient_moment_ratio": 3.1230705755682404,
+          "major_axis_degrees": 179.06161888727274
+        },
+        "relative_ratio_error": 0.024040445134924926,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a3.2-seed7",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0024334912574141675,
+            0.021763922046273927
+          ],
+          "gradient_moment_ratio": 2.9905680259029315,
+          "major_axis_degrees": 176.42464160971306
+        },
+        "relative_ratio_error": 0.06544749190533397,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a3.2-seed8",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0019533840241494397,
+            0.019472070644996987
+          ],
+          "gradient_moment_ratio": 3.157273849429795,
+          "major_axis_degrees": 179.80057118462875
+        },
+        "relative_ratio_error": 0.013351922053189136,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c22-a3.2-seed9",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0014883397340817418,
+            0.018732249332297984
+          ],
+          "gradient_moment_ratio": 3.547675810231978,
+          "major_axis_degrees": 178.46440019895218
+        },
+        "relative_ratio_error": 0.10864869069749303,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 22.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c30-a1-seed0",
+        "invalid": true,
+        "measurement": {
+          "eigenvalues": [
+            0.0005458367115407254,
+            0.0009544366611640596
+          ],
+          "gradient_moment_ratio": 1.322337108071819,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.3223371080718189,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c30-a1-seed1",
+        "invalid": true,
+        "measurement": {
+          "eigenvalues": [
+            0.0008671188105585313,
+            0.0017073680604727504
+          ],
+          "gradient_moment_ratio": 1.403215174854648,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.403215174854648,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c30-a1-seed2",
+        "invalid": true,
+        "measurement": {
+          "eigenvalues": [
+            0.0010653104223036004,
+            0.0017224662448013174
+          ],
+          "gradient_moment_ratio": 1.2715612129391134,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.2715612129391134,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c30-a1-seed3",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.000952932480352354,
+            0.0013419069882778048
+          ],
+          "gradient_moment_ratio": 1.1866704894505529,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.18667048945055287,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c30-a1-seed4",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0010298285242544628,
+            0.0012813468300500023
+          ],
+          "gradient_moment_ratio": 1.1154520115895319,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.11545201158953189,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a1-seed5",
+        "invalid": true,
+        "measurement": {
+          "eigenvalues": [
+            0.0007905688338018853,
+            0.0019720846969019535
+          ],
+          "gradient_moment_ratio": 1.5794029208528186,
+          "major_axis_degrees": 77.0221708013517
+        },
+        "relative_ratio_error": 0.5794029208528186,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c30-a1-seed6",
+        "invalid": true,
+        "measurement": {
+          "eigenvalues": [
+            0.000565907660251247,
+            0.0009853508449127746
+          ],
+          "gradient_moment_ratio": 1.3195403054669932,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.3195403054669932,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c30-a1-seed7",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0007730135535956908,
+            0.0011626709684419542
+          ],
+          "gradient_moment_ratio": 1.2264076754065367,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.22640767540653672,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a1-seed8",
+        "invalid": true,
+        "measurement": {
+          "eigenvalues": [
+            0.000351837304962969,
+            0.0008895888086924785
+          ],
+          "gradient_moment_ratio": 1.5900973458452619,
+          "major_axis_degrees": 167.34157128066047
+        },
+        "relative_ratio_error": 0.5900973458452619,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c30-a1-seed9",
+        "invalid": true,
+        "measurement": {
+          "eigenvalues": [
+            0.0010553629113500016,
+            0.0018679529981003961
+          ],
+          "gradient_moment_ratio": 1.3303994548707576,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.3303994548707576,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.0,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a1.4-seed0",
+        "invalid": true,
+        "measurement": {
+          "eigenvalues": [
+            0.0005652033260811148,
+            0.002156943334441025
+          ],
+          "gradient_moment_ratio": 1.9535161837371633,
+          "major_axis_degrees": 11.244129720352674
+        },
+        "relative_ratio_error": 0.39536870266940244,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c30-a1.4-seed1",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0009421875644912567,
+            0.0016067616478442526
+          ],
+          "gradient_moment_ratio": 1.305891347952903,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.06722046574792633,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c30-a1.4-seed2",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.000825330547064069,
+            0.001659153067847695
+          ],
+          "gradient_moment_ratio": 1.4178466697720953,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.012747621265782407,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c30-a1.4-seed3",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0011054044071563567,
+            0.0026513547421813063
+          ],
+          "gradient_moment_ratio": 1.5487214858913314,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.1062296327795225,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a1.4-seed4",
+        "invalid": true,
+        "measurement": {
+          "eigenvalues": [
+            0.0006063175402317518,
+            0.0024504119950201743
+          ],
+          "gradient_moment_ratio": 2.0103398834303863,
+          "major_axis_degrees": 3.7237658261740023
+        },
+        "relative_ratio_error": 0.43595705959313313,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c30-a1.4-seed5",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0009134195872059345,
+            0.002007792282691629
+          ],
+          "gradient_moment_ratio": 1.4826008000879505,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.05900057149139327,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a1.4-seed6",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0009578909194381786,
+            0.002829545712641343
+          ],
+          "gradient_moment_ratio": 1.7187009979579722,
+          "major_axis_degrees": 170.44256566089553
+        },
+        "relative_ratio_error": 0.2276435699699802,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a1.4-seed7",
+        "invalid": true,
+        "measurement": {
+          "eigenvalues": [
+            0.0007945890723310481,
+            0.0030606449589701415
+          ],
+          "gradient_moment_ratio": 1.9626153114712321,
+          "major_axis_degrees": 177.19261683985468
+        },
+        "relative_ratio_error": 0.40186807962230875,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c30-a1.4-seed8",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0008834877991790944,
+            0.001078143358935901
+          ],
+          "gradient_moment_ratio": 1.1046837813781143,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.21094015615848974,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": false,
+        "case_id": "spatial-v23-c30-a1.4-seed9",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0013036557119755939,
+            0.002638443684248728
+          ],
+          "gradient_moment_ratio": 1.4226316240843169,
+          "major_axis_degrees": null
+        },
+        "relative_ratio_error": 0.016165445774512115,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.4,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a1.8-seed0",
+        "invalid": true,
+        "measurement": {
+          "eigenvalues": [
+            0.0007338526408925544,
+            0.005271077832558898
+          ],
+          "gradient_moment_ratio": 2.6800647323665285,
+          "major_axis_degrees": 172.27370793889233
+        },
+        "relative_ratio_error": 0.48892485131473806,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a1.8-seed1",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0008259142911398677,
+            0.0032172669699974607
+          ],
+          "gradient_moment_ratio": 1.9736769069671798,
+          "major_axis_degrees": 6.937700127521879
+        },
+        "relative_ratio_error": 0.09648717053732207,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a1.8-seed2",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0008513184910475303,
+            0.004298533437045804
+          ],
+          "gradient_moment_ratio": 2.247057167037477,
+          "major_axis_degrees": 3.5495739532867674
+        },
+        "relative_ratio_error": 0.24836509279859834,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a1.8-seed3",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0009907718096765414,
+            0.004260601638143821
+          ],
+          "gradient_moment_ratio": 2.0737129722073178,
+          "major_axis_degrees": 176.2911279028376
+        },
+        "relative_ratio_error": 0.15206276233739874,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a1.8-seed4",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0007512819210159598,
+            0.0024386252522247704
+          ],
+          "gradient_moment_ratio": 1.801652647913793,
+          "major_axis_degrees": 163.5380621164237
+        },
+        "relative_ratio_error": 0.0009181377298850268,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a1.8-seed5",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0014249245205828305,
+            0.003908665930340081
+          ],
+          "gradient_moment_ratio": 1.6562212276101977,
+          "major_axis_degrees": 176.74110834411482
+        },
+        "relative_ratio_error": 0.07987709577211238,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a1.8-seed6",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0007214825715144824,
+            0.002261089178829832
+          ],
+          "gradient_moment_ratio": 1.7702961444605572,
+          "major_axis_degrees": 178.23085342746037
+        },
+        "relative_ratio_error": 0.016502141966357155,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a1.8-seed7",
+        "invalid": true,
+        "measurement": {
+          "eigenvalues": [
+            0.0008571108499745202,
+            0.004707981043855212
+          ],
+          "gradient_moment_ratio": 2.343682927251227,
+          "major_axis_degrees": 177.59770489257292
+        },
+        "relative_ratio_error": 0.3020460706951262,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a1.8-seed8",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0006863621860501384,
+            0.0029494241770794726
+          ],
+          "gradient_moment_ratio": 2.0729648761737476,
+          "major_axis_degrees": 175.98168703962588
+        },
+        "relative_ratio_error": 0.15164715342985974,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a1.8-seed9",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.001184036816240275,
+            0.004997757919783926
+          ],
+          "gradient_moment_ratio": 2.054494603209282,
+          "major_axis_degrees": 4.948038967406006
+        },
+        "relative_ratio_error": 0.14138589067182336,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 1.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a2.2-seed0",
+        "invalid": true,
+        "measurement": {
+          "eigenvalues": [
+            0.0006792012356198844,
+            0.005171953624741811
+          ],
+          "gradient_moment_ratio": 2.759485252212196,
+          "major_axis_degrees": 2.519789328774891
+        },
+        "relative_ratio_error": 0.2543114782782709,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a2.2-seed1",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0009397120131763823,
+            0.004802724295883315
+          ],
+          "gradient_moment_ratio": 2.260718242221058,
+          "major_axis_degrees": 176.56798325035993
+        },
+        "relative_ratio_error": 0.027599201009571785,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a2.2-seed2",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0013515840632243683,
+            0.0037356501951174483
+          ],
+          "gradient_moment_ratio": 1.6624996785439585,
+          "major_axis_degrees": 174.93556329013992
+        },
+        "relative_ratio_error": 0.24431832793456437,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a2.2-seed3",
+        "invalid": true,
+        "measurement": {
+          "eigenvalues": [
+            0.0010069139801839044,
+            0.008159145756752632
+          ],
+          "gradient_moment_ratio": 2.846598134467097,
+          "major_axis_degrees": 178.40431220107368
+        },
+        "relative_ratio_error": 0.2939082429395895,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a2.2-seed4",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0011212411956317298,
+            0.004532880583956265
+          ],
+          "gradient_moment_ratio": 2.0106552679728646,
+          "major_axis_degrees": 177.63393529195804
+        },
+        "relative_ratio_error": 0.0860657872850616,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a2.2-seed5",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0008123846401787376,
+            0.0050596283791993196
+          ],
+          "gradient_moment_ratio": 2.495620004091498,
+          "major_axis_degrees": 176.63978749124288
+        },
+        "relative_ratio_error": 0.13437272913249898,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a2.2-seed6",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0009971429225741112,
+            0.004681544213052401
+          ],
+          "gradient_moment_ratio": 2.1667851928086375,
+          "major_axis_degrees": 173.2673454799088
+        },
+        "relative_ratio_error": 0.015097639632437597,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a2.2-seed7",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0009789650531486212,
+            0.005037503703026082
+          ],
+          "gradient_moment_ratio": 2.2684232757354317,
+          "major_axis_degrees": 2.3423351643004082
+        },
+        "relative_ratio_error": 0.031101488970650678,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a2.2-seed8",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0009233667716405103,
+            0.00623731672769756
+          ],
+          "gradient_moment_ratio": 2.599032905297026,
+          "major_axis_degrees": 179.86756645994134
+        },
+        "relative_ratio_error": 0.1813785933168299,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a2.2-seed9",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0012894756418307342,
+            0.007912774799819975
+          ],
+          "gradient_moment_ratio": 2.477181520158444,
+          "major_axis_degrees": 178.98960304435914
+        },
+        "relative_ratio_error": 0.12599160007201998,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.2,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a2.8-seed0",
+        "invalid": true,
+        "measurement": {
+          "eigenvalues": [
+            0.0009448210507119398,
+            0.012438188255810983
+          ],
+          "gradient_moment_ratio": 3.6283049595393924,
+          "major_axis_degrees": 0.46693178051009454
+        },
+        "relative_ratio_error": 0.2958231998354974,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a2.8-seed1",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0012200874411157677,
+            0.008007863715468435
+          ],
+          "gradient_moment_ratio": 2.561904038434599,
+          "major_axis_degrees": 179.2782931590379
+        },
+        "relative_ratio_error": 0.08503427198764323,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a2.8-seed2",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0008628074658701661,
+            0.005163694359139539
+          ],
+          "gradient_moment_ratio": 2.4463766167316803,
+          "major_axis_degrees": 0.7761994093867486
+        },
+        "relative_ratio_error": 0.12629406545297128,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a2.8-seed3",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0008297097343411345,
+            0.00788571843146772
+          ],
+          "gradient_moment_ratio": 3.082886530989748,
+          "major_axis_degrees": 2.48332424677767
+        },
+        "relative_ratio_error": 0.10103090392491006,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a2.8-seed4",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0009144984194765515,
+            0.008643676254702718
+          ],
+          "gradient_moment_ratio": 3.0743815592973482,
+          "major_axis_degrees": 3.4063076888601813
+        },
+        "relative_ratio_error": 0.0979934140347673,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a2.8-seed5",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0007919428327964807,
+            0.006367285723872454
+          ],
+          "gradient_moment_ratio": 2.835503926341034,
+          "major_axis_degrees": 175.43648161217862
+        },
+        "relative_ratio_error": 0.012679973693226567,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a2.8-seed6",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.000873488667164524,
+            0.008132179399389984
+          ],
+          "gradient_moment_ratio": 3.0512292432356296,
+          "major_axis_degrees": 176.95512662440632
+        },
+        "relative_ratio_error": 0.08972472972701065,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a2.8-seed7",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0007433727262162217,
+            0.008303582617787986
+          ],
+          "gradient_moment_ratio": 3.3421769831601935,
+          "major_axis_degrees": 1.624328718085735
+        },
+        "relative_ratio_error": 0.19363463684292634,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a2.8-seed8",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0013814882600169816,
+            0.009678998151502638
+          ],
+          "gradient_moment_ratio": 2.6469248068770224,
+          "major_axis_degrees": 1.059767495039182
+        },
+        "relative_ratio_error": 0.05466971182963481,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a2.8-seed9",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0011857238504501683,
+            0.008929787087798584
+          ],
+          "gradient_moment_ratio": 2.7442822351410325,
+          "major_axis_degrees": 179.4735664212338
+        },
+        "relative_ratio_error": 0.019899201735345463,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 2.8,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a3.2-seed0",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0009148557327786756,
+            0.011385410628980892
+          ],
+          "gradient_moment_ratio": 3.527751964479628,
+          "major_axis_degrees": 2.766533179014573
+        },
+        "relative_ratio_error": 0.1024224888998837,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a3.2-seed1",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0009631978252471316,
+            0.009814119480334248
+          ],
+          "gradient_moment_ratio": 3.1920370516243968,
+          "major_axis_degrees": 2.5363261112641737
+        },
+        "relative_ratio_error": 0.0024884213673760647,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a3.2-seed2",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0011056032296364346,
+            0.0116077629413576
+          ],
+          "gradient_moment_ratio": 3.240220876012448,
+          "major_axis_degrees": 176.21873343435828
+        },
+        "relative_ratio_error": 0.01256902375388988,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a3.2-seed3",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0008331265701841471,
+            0.01077195927194086
+          ],
+          "gradient_moment_ratio": 3.5957696191456634,
+          "major_axis_degrees": 2.2629301787116844
+        },
+        "relative_ratio_error": 0.12367800598301976,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a3.2-seed4",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0008199577318009734,
+            0.011204393520511688
+          ],
+          "gradient_moment_ratio": 3.6965658252771414,
+          "major_axis_degrees": 2.3845701124200787
+        },
+        "relative_ratio_error": 0.15517682039910663,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a3.2-seed5",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0009246428930603845,
+            0.010808466833294575
+          ],
+          "gradient_moment_ratio": 3.4189679458077116,
+          "major_axis_degrees": 0.004034875927175108
+        },
+        "relative_ratio_error": 0.06842748306490981,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a3.2-seed6",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0009931937415776134,
+            0.008561889951603677
+          ],
+          "gradient_moment_ratio": 2.9360796542564187,
+          "major_axis_degrees": 1.504062371149871
+        },
+        "relative_ratio_error": 0.08247510804486921,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a3.2-seed7",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.001037687605382081,
+            0.011490584403628785
+          ],
+          "gradient_moment_ratio": 3.3276507868943765,
+          "major_axis_degrees": 3.535349749759888
+        },
+        "relative_ratio_error": 0.039890870904492615,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a3.2-seed8",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.001054121126310007,
+            0.012501280665530442
+          ],
+          "gradient_moment_ratio": 3.443752996667332,
+          "major_axis_degrees": 178.44727552982604
+        },
+        "relative_ratio_error": 0.07617281145854124,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 30.0
+        }
+      },
+      {
+        "axis_identifiable": true,
+        "case_id": "spatial-v23-c30-a3.2-seed9",
+        "invalid": false,
+        "measurement": {
+          "eigenvalues": [
+            0.0009734661694299948,
+            0.0100004807633899
+          ],
+          "gradient_moment_ratio": 3.205162166991094,
+          "major_axis_degrees": 3.2536329679707308
+        },
+        "relative_ratio_error": 0.0016131771847167908,
+        "supported": true,
+        "truth": {
+          "anisotropy_ratio": 3.2,
+          "correlation_length_um": 30.0
+        }
+      }
+    ]
+  },
+  "content_sha256": "1e87bbb52a310c42e7b50a711735cd058581d6a4d68949c271275622afd89138",
+  "development": "outputs/nostos0-synthetic-repair-development-v2-3/development.json",
+  "development_sha256": "8641770172f31870f69d5b95cd4b68b5eb06c19085549bd0f365c8d4a84d7862",
+  "execution_reproducibility": {
+    "canonical_payloads_identical_before_repeat_annotation": true,
+    "independent_recomputation": true
+  },
+  "implementation": "src/nostos/features/validated_responses.py",
+  "implementation_sha256": "13f35bb457374d0c0dcfba90cf039b60d43db3620c08f8db8720955454d47471",
+  "label_blindness": {
+    "geometry_sha256": "ab9c0ffeb3d4fe80220fd24574b07dff5746f8bec611d9505afb5b513d40b651",
+    "label_complement_geometry_sha256": "ab9c0ffeb3d4fe80220fd24574b07dff5746f8bec611d9505afb5b513d40b651",
+    "unchanged": true
+  },
+  "metrics": {
+    "equivariance": {
+      "cases": 30,
+      "resampling_median_ratio_drift": 0.0034135055298885417,
+      "resampling_p95_ratio_drift": 0.016686938510433933,
+      "rotation_axis_cases": 23,
+      "rotation_median_ratio_drift": 0.019247164786684944,
+      "rotation_p95_ratio_drift": 0.10447041498393309,
+      "rotation_p95_turn_error_degrees": 2.2815322772541546
+    },
+    "hessian": {
+      "accepted": 27,
+      "accepted_invalid": 0,
+      "accepted_risk": 0.0,
+      "all_raw_misclassifications_rejected": true,
+      "balanced_accuracy": 1.0,
+      "cases": 36,
+      "coverage": 0.75,
+      "median_scale_relative_error": 0.0,
+      "p95_scale_relative_error": 0.5,
+      "per_class_recall": {
+        "blob": 1.0,
+        "sheet": 1.0,
+        "tube": 1.0
+      },
+      "raw_invalid": 5
+    },
+    "spatial": {
+      "gradient_median_relative_error": 0.07466738267803918,
+      "gradient_p95_relative_error": 0.2802073646182557,
+      "gradient_spearman_rho": 0.9274518599934451,
+      "isotropic_axis_abstention": 0.9333333333333333,
+      "isotropic_median_ratio": 1.1870421284047725,
+      "isotropic_p95_ratio": 1.5001184351536414,
+      "ratio_ge_2_axis_retention": 1.0
+    }
+  },
+  "protocol": "docs/NOSTOS0_SYNTHETIC_PHYSICAL_TRUTH_V2_3_CONFIRMATION_PROTOCOL.md",
+  "protocol_sha256": "e17a9ce5a3951c33d4199ada6996ec0bf0ca9000a76abae0599710a70dab8332",
+  "protocol_version": "nostos-synthetic-physical-truth/2.3-confirmation",
+  "scope": "Disjoint terminal analytic confirmation; not biological, segmentation, clinical, mechanical, acquisition-transfer or intraoperative validation.",
+  "status": "fail",
+  "success_gates": {
+    "anisotropic_axis_retention": true,
+    "byte_identical_independent_repeat": true,
+    "gradient_ratio": false,
+    "hessian_classification": true,
+    "hessian_scale": true,
+    "isotropic_behavior": false,
+    "label_complement_geometry_unchanged": true,
+    "resampling_equivariance": true,
+    "rotation_equivariance": true
+  }
+}

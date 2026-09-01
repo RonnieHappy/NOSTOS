@@ -1,0 +1,17 @@
+{
+  "manifest_version": "nostos-ibsi-reference/1.0",
+  "source": "https://github.com/theibsi/data_sets.git",
+  "commit": "6da96021bc91faf4c0cb7fd7fa56a4225d2064a8",
+  "local_root": "<DATA_ROOT>\\data\\reference\\ibsi-data_sets",
+  "files": [
+    {
+      "relative_path": "ibsi_1_digital_phantom/nifti/image/phantom.nii.gz",
+      "sha256": "83773ac2a288aa93cf819a98eaf301c18d35d5876182ec9c18733184e2b7a83a"
+    },
+    {
+      "relative_path": "ibsi_1_digital_phantom/nifti/mask/mask.nii.gz",
+      "sha256": "3032d340944b577b83bc559ea7ae9a6034b84633a840eff39570ec17aa1d6281"
+    }
+  ],
+  "frozen_synthetic_dataset_sha256": "f84e1fbf6ac7ef16285a7aaa9e40d2036cdff77a7ffff5faa7df96b12a532d55"
+}

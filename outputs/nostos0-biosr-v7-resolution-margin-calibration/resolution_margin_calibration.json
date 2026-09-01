@@ -1,0 +1,798 @@
+{
+  "schema_version": "nostos-biosr-v7-resolution-margin-calibration/1.0",
+  "status": "threshold_selected_pending_v7_freeze",
+  "probe": {
+    "operation": "Gaussian blur on the normalized input before measurement",
+    "sigma_effective_input_pixels": 2.0,
+    "score": "endpoint drift divided by endpoint invalidity tolerance"
+  },
+  "selection_rule": "Evaluate unique observed normalized drifts from most to least permissive and select the first satisfying every overall, structure-family, clustered-risk and incremental-comparator rule.",
+  "rules": {
+    "target_observed_risk": 0.1,
+    "maximum_cluster_bootstrap_risk_upper95": 0.15,
+    "minimum_overall_coverage": 0.8,
+    "minimum_structure_family_coverage": 0.7,
+    "maximum_full_minus_qc_risk": 0.0,
+    "maximum_coverage_loss_vs_qc": 0.1,
+    "minimum_invalid_enrichment_among_qc_only_rejections": 2.0
+  },
+  "candidate_thresholds": 5400,
+  "evaluated_candidates": 4,
+  "selected": {
+    "threshold_fraction_of_endpoint_tolerance": 0.8479366097649129,
+    "full": {
+      "eligible": 5010,
+      "accepted": 5008,
+      "coverage": 0.9996007984031936,
+      "invalid": 44,
+      "risk": 0.00878594249201278,
+      "cluster_bootstrap_risk_upper95": 0.015381769710040736
+    },
+    "combinations": [
+      {
+        "structure": "CCPs",
+        "endpoint_family": "tensor_coherence",
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0,
+        "cluster_bootstrap_risk_upper95": 0.0
+      },
+      {
+        "structure": "CCPs",
+        "endpoint_family": "tensor_orientation_distribution",
+        "coverage": 1.0,
+        "invalid": 36,
+        "risk": 0.030379746835443037,
+        "cluster_bootstrap_risk_upper95": 0.05738396624472574
+      },
+      {
+        "structure": "ER",
+        "endpoint_family": "tensor_coherence",
+        "coverage": 0.9979166666666667,
+        "invalid": 3,
+        "risk": 0.003131524008350731,
+        "cluster_bootstrap_risk_upper95": 0.006237006237006237
+      },
+      {
+        "structure": "ER",
+        "endpoint_family": "tensor_orientation_distribution",
+        "coverage": 1.0,
+        "invalid": 5,
+        "risk": 0.005208333333333333,
+        "cluster_bootstrap_risk_upper95": 0.010471204188481676
+      },
+      {
+        "structure": "Microtubules",
+        "endpoint_family": "tensor_coherence",
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0,
+        "cluster_bootstrap_risk_upper95": 0.0
+      },
+      {
+        "structure": "Microtubules",
+        "endpoint_family": "tensor_orientation_distribution",
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0,
+        "cluster_bootstrap_risk_upper95": 0.0
+      }
+    ],
+    "incremental_comparator": {
+      "full_accepted": 5008,
+      "full_risk": 0.00878594249201278,
+      "comparator_accepted": 5010,
+      "comparator_risk": 0.008982035928143712,
+      "full_minus_comparator_risk": -0.00019609343613093307,
+      "coverage_loss_vs_comparator": 0.0003992015968063872,
+      "comparator_only_rejections": 2,
+      "invalid_comparator_only_rejections": 1,
+      "comparator_only_rejection_risk": 0.5,
+      "invalid_enrichment_among_comparator_only_rejections": 55.66666666666667
+    },
+    "passes": true
+  },
+  "evaluations": [
+    {
+      "threshold_fraction_of_endpoint_tolerance": 0.8773813721646655,
+      "full": {
+        "eligible": 5010,
+        "accepted": 5010,
+        "coverage": 1.0,
+        "invalid": 45,
+        "risk": 0.008982035928143712,
+        "cluster_bootstrap_risk_upper95": 0.015587419403208872
+      },
+      "combinations": [
+        {
+          "structure": "CCPs",
+          "endpoint_family": "tensor_coherence",
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0
+        },
+        {
+          "structure": "CCPs",
+          "endpoint_family": "tensor_orientation_distribution",
+          "coverage": 1.0,
+          "invalid": 36,
+          "risk": 0.030379746835443037,
+          "cluster_bootstrap_risk_upper95": 0.05738396624472574
+        },
+        {
+          "structure": "ER",
+          "endpoint_family": "tensor_coherence",
+          "coverage": 1.0,
+          "invalid": 4,
+          "risk": 0.004166666666666667,
+          "cluster_bootstrap_risk_upper95": 0.007329842931937173
+        },
+        {
+          "structure": "ER",
+          "endpoint_family": "tensor_orientation_distribution",
+          "coverage": 1.0,
+          "invalid": 5,
+          "risk": 0.005208333333333333,
+          "cluster_bootstrap_risk_upper95": 0.010471204188481676
+        },
+        {
+          "structure": "Microtubules",
+          "endpoint_family": "tensor_coherence",
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0
+        },
+        {
+          "structure": "Microtubules",
+          "endpoint_family": "tensor_orientation_distribution",
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0
+        }
+      ],
+      "incremental_comparator": {
+        "full_accepted": 5010,
+        "full_risk": 0.008982035928143712,
+        "comparator_accepted": 5010,
+        "comparator_risk": 0.008982035928143712,
+        "full_minus_comparator_risk": 0.0,
+        "coverage_loss_vs_comparator": 0.0,
+        "comparator_only_rejections": 0,
+        "invalid_comparator_only_rejections": 0,
+        "comparator_only_rejection_risk": null,
+        "invalid_enrichment_among_comparator_only_rejections": null
+      },
+      "passes": false
+    },
+    {
+      "threshold_fraction_of_endpoint_tolerance": 0.8711762584126889,
+      "full": {
+        "eligible": 5010,
+        "accepted": 5009,
+        "coverage": 0.9998003992015968,
+        "invalid": 45,
+        "risk": 0.008983829107606308,
+        "cluster_bootstrap_risk_upper95": 0.015593720954184457
+      },
+      "combinations": [
+        {
+          "structure": "CCPs",
+          "endpoint_family": "tensor_coherence",
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0
+        },
+        {
+          "structure": "CCPs",
+          "endpoint_family": "tensor_orientation_distribution",
+          "coverage": 1.0,
+          "invalid": 36,
+          "risk": 0.030379746835443037,
+          "cluster_bootstrap_risk_upper95": 0.05738396624472574
+        },
+        {
+          "structure": "ER",
+          "endpoint_family": "tensor_coherence",
+          "coverage": 0.9989583333333333,
+          "invalid": 4,
+          "risk": 0.004171011470281543,
+          "cluster_bootstrap_risk_upper95": 0.007345225603357817
+        },
+        {
+          "structure": "ER",
+          "endpoint_family": "tensor_orientation_distribution",
+          "coverage": 1.0,
+          "invalid": 5,
+          "risk": 0.005208333333333333,
+          "cluster_bootstrap_risk_upper95": 0.010471204188481676
+        },
+        {
+          "structure": "Microtubules",
+          "endpoint_family": "tensor_coherence",
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0
+        },
+        {
+          "structure": "Microtubules",
+          "endpoint_family": "tensor_orientation_distribution",
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0
+        }
+      ],
+      "incremental_comparator": {
+        "full_accepted": 5009,
+        "full_risk": 0.008983829107606308,
+        "comparator_accepted": 5010,
+        "comparator_risk": 0.008982035928143712,
+        "full_minus_comparator_risk": 1.7931794625957592e-06,
+        "coverage_loss_vs_comparator": 0.0001996007984031936,
+        "comparator_only_rejections": 1,
+        "invalid_comparator_only_rejections": 0,
+        "comparator_only_rejection_risk": 0.0,
+        "invalid_enrichment_among_comparator_only_rejections": 0.0
+      },
+      "passes": false
+    },
+    {
+      "threshold_fraction_of_endpoint_tolerance": 0.8480877099421199,
+      "full": {
+        "eligible": 5010,
+        "accepted": 5009,
+        "coverage": 0.9998003992015968,
+        "invalid": 45,
+        "risk": 0.008983829107606308,
+        "cluster_bootstrap_risk_upper95": 0.015593720954184457
+      },
+      "combinations": [
+        {
+          "structure": "CCPs",
+          "endpoint_family": "tensor_coherence",
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0
+        },
+        {
+          "structure": "CCPs",
+          "endpoint_family": "tensor_orientation_distribution",
+          "coverage": 1.0,
+          "invalid": 36,
+          "risk": 0.030379746835443037,
+          "cluster_bootstrap_risk_upper95": 0.05738396624472574
+        },
+        {
+          "structure": "ER",
+          "endpoint_family": "tensor_coherence",
+          "coverage": 0.9989583333333333,
+          "invalid": 4,
+          "risk": 0.004171011470281543,
+          "cluster_bootstrap_risk_upper95": 0.007345225603357817
+        },
+        {
+          "structure": "ER",
+          "endpoint_family": "tensor_orientation_distribution",
+          "coverage": 1.0,
+          "invalid": 5,
+          "risk": 0.005208333333333333,
+          "cluster_bootstrap_risk_upper95": 0.010471204188481676
+        },
+        {
+          "structure": "Microtubules",
+          "endpoint_family": "tensor_coherence",
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0
+        },
+        {
+          "structure": "Microtubules",
+          "endpoint_family": "tensor_orientation_distribution",
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0
+        }
+      ],
+      "incremental_comparator": {
+        "full_accepted": 5009,
+        "full_risk": 0.008983829107606308,
+        "comparator_accepted": 5010,
+        "comparator_risk": 0.008982035928143712,
+        "full_minus_comparator_risk": 1.7931794625957592e-06,
+        "coverage_loss_vs_comparator": 0.0001996007984031936,
+        "comparator_only_rejections": 1,
+        "invalid_comparator_only_rejections": 0,
+        "comparator_only_rejection_risk": 0.0,
+        "invalid_enrichment_among_comparator_only_rejections": 0.0
+      },
+      "passes": false
+    },
+    {
+      "threshold_fraction_of_endpoint_tolerance": 0.8479366097649129,
+      "full": {
+        "eligible": 5010,
+        "accepted": 5008,
+        "coverage": 0.9996007984031936,
+        "invalid": 44,
+        "risk": 0.00878594249201278,
+        "cluster_bootstrap_risk_upper95": 0.015381769710040736
+      },
+      "combinations": [
+        {
+          "structure": "CCPs",
+          "endpoint_family": "tensor_coherence",
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0
+        },
+        {
+          "structure": "CCPs",
+          "endpoint_family": "tensor_orientation_distribution",
+          "coverage": 1.0,
+          "invalid": 36,
+          "risk": 0.030379746835443037,
+          "cluster_bootstrap_risk_upper95": 0.05738396624472574
+        },
+        {
+          "structure": "ER",
+          "endpoint_family": "tensor_coherence",
+          "coverage": 0.9979166666666667,
+          "invalid": 3,
+          "risk": 0.003131524008350731,
+          "cluster_bootstrap_risk_upper95": 0.006237006237006237
+        },
+        {
+          "structure": "ER",
+          "endpoint_family": "tensor_orientation_distribution",
+          "coverage": 1.0,
+          "invalid": 5,
+          "risk": 0.005208333333333333,
+          "cluster_bootstrap_risk_upper95": 0.010471204188481676
+        },
+        {
+          "structure": "Microtubules",
+          "endpoint_family": "tensor_coherence",
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0
+        },
+        {
+          "structure": "Microtubules",
+          "endpoint_family": "tensor_orientation_distribution",
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "cluster_bootstrap_risk_upper95": 0.0
+        }
+      ],
+      "incremental_comparator": {
+        "full_accepted": 5008,
+        "full_risk": 0.00878594249201278,
+        "comparator_accepted": 5010,
+        "comparator_risk": 0.008982035928143712,
+        "full_minus_comparator_risk": -0.00019609343613093307,
+        "coverage_loss_vs_comparator": 0.0003992015968063872,
+        "comparator_only_rejections": 2,
+        "invalid_comparator_only_rejections": 1,
+        "comparator_only_rejection_risk": 0.5,
+        "invalid_enrichment_among_comparator_only_rejections": 55.66666666666667
+      },
+      "passes": true
+    }
+  ],
+  "scope": {
+    "structures": [
+      "CCPs",
+      "ER",
+      "Microtubules"
+    ],
+    "reference_fields": 71,
+    "paired_acquisitions": 540,
+    "endpoint_rows": 5400,
+    "f_actin_image_members_decoded": 0,
+    "f_actin_endpoint_outcomes_computed": 0
+  },
+  "sources": [
+    {
+      "structure": "CCPs",
+      "fields": 30,
+      "pairs": 270,
+      "pair_index_sha256": "0dd046652f029e03487fb9571c83e2ad4ec7c5e3ebb81f3e4f9378f7e42588ff"
+    },
+    {
+      "structure": "ER",
+      "fields": 33,
+      "pairs": 198,
+      "pair_index_sha256": "1a1a2ce913ab19ee7dded2c390157a25b3af66cbb1a4d0ea868d5413f54b0fb5"
+    },
+    {
+      "structure": "Microtubules",
+      "fields": 8,
+      "pairs": 72,
+      "pair_index_sha256": "644cf26d3aeb752475d343741611a34d7a6e0ab363a33d1265569f0f10256fd9"
+    }
+  ],
+  "lineage": {
+    "base_development": {
+      "path": "outputs/nostos0-biosr-v7-tensor-distribution-development/tensor_distribution_development.json",
+      "sha256": "7adeadec7cd299e87e00360e849d64027da56794bb430c70e838805abb588dfd"
+    },
+    "base_rows_sha256": "8486185227ba71467bea1d999c766ed65052014cdc14f99d25fa3a241099eb4b",
+    "implementation_sha256": "c20ac23203781d587e6dc220b69234b1c8d4ae0ebc0f874dbb1f911a1443202b"
+  },
+  "checkpoints": [
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_002",
+      "elapsed_seconds": 3.07367409998551
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_003",
+      "elapsed_seconds": 3.076523100025952
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_004",
+      "elapsed_seconds": 3.102559700142592
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_005",
+      "elapsed_seconds": 3.1084038000553846
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_006",
+      "elapsed_seconds": 3.2659994999412447
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_007",
+      "elapsed_seconds": 3.265964100137353
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_009",
+      "elapsed_seconds": 3.2968462000135332
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_010",
+      "elapsed_seconds": 3.289649600163102
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_011",
+      "elapsed_seconds": 3.2631051000207663
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_013",
+      "elapsed_seconds": 3.2560697000008076
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_016",
+      "elapsed_seconds": 3.272309099789709
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_021",
+      "elapsed_seconds": 3.2878690001089126
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_023",
+      "elapsed_seconds": 3.2423622000496835
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_025",
+      "elapsed_seconds": 3.277284099953249
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_026",
+      "elapsed_seconds": 3.2721010001841933
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_028",
+      "elapsed_seconds": 3.317436199868098
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_029",
+      "elapsed_seconds": 3.258257200010121
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_030",
+      "elapsed_seconds": 3.235167499864474
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_031",
+      "elapsed_seconds": 3.301329599926248
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_035",
+      "elapsed_seconds": 3.3163050001021475
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_040",
+      "elapsed_seconds": 3.2912620999850333
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_041",
+      "elapsed_seconds": 3.2659497000277042
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_044",
+      "elapsed_seconds": 3.2865990998689085
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_046",
+      "elapsed_seconds": 3.2567402001004666
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_047",
+      "elapsed_seconds": 3.365900200093165
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_048",
+      "elapsed_seconds": 3.3270594999194145
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_049",
+      "elapsed_seconds": 3.335830499883741
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_051",
+      "elapsed_seconds": 3.3347891001030803
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_053",
+      "elapsed_seconds": 3.288192499894649
+    },
+    {
+      "structure": "CCPs",
+      "cell_id": "Cell_054",
+      "elapsed_seconds": 3.2364894000347704
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_001",
+      "elapsed_seconds": 2.1931358000729233
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_005",
+      "elapsed_seconds": 2.2011218999978155
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_006",
+      "elapsed_seconds": 2.2227994999848306
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_007",
+      "elapsed_seconds": 2.1976999000180513
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_010",
+      "elapsed_seconds": 2.2226383998058736
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_013",
+      "elapsed_seconds": 2.2041561000514776
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_014",
+      "elapsed_seconds": 2.2090309001505375
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_015",
+      "elapsed_seconds": 2.154417200013995
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_018",
+      "elapsed_seconds": 2.1882058000192046
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_019",
+      "elapsed_seconds": 2.1984184999018908
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_022",
+      "elapsed_seconds": 2.254037900129333
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_023",
+      "elapsed_seconds": 2.2319902000017464
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_025",
+      "elapsed_seconds": 2.250912500079721
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_029",
+      "elapsed_seconds": 2.1998268000315875
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_030",
+      "elapsed_seconds": 2.186236900044605
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_033",
+      "elapsed_seconds": 2.184516599867493
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_035",
+      "elapsed_seconds": 2.242814199998975
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_036",
+      "elapsed_seconds": 2.1531317001208663
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_039",
+      "elapsed_seconds": 2.229212700156495
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_041",
+      "elapsed_seconds": 2.2012934000231326
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_043",
+      "elapsed_seconds": 2.19461979996413
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_046",
+      "elapsed_seconds": 2.1996305000502616
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_049",
+      "elapsed_seconds": 2.1880781000945717
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_051",
+      "elapsed_seconds": 2.184188300045207
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_054",
+      "elapsed_seconds": 2.1896242001093924
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_056",
+      "elapsed_seconds": 2.2569263000041246
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_057",
+      "elapsed_seconds": 2.176893100142479
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_058",
+      "elapsed_seconds": 2.1988367999438196
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_059",
+      "elapsed_seconds": 2.246094899950549
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_060",
+      "elapsed_seconds": 2.21027070004493
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_062",
+      "elapsed_seconds": 2.1108977999538183
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_064",
+      "elapsed_seconds": 2.154669800074771
+    },
+    {
+      "structure": "ER",
+      "cell_id": "Cell_067",
+      "elapsed_seconds": 2.170498700113967
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_001",
+      "elapsed_seconds": 3.3025690999347717
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_002",
+      "elapsed_seconds": 3.2045456001069397
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_015",
+      "elapsed_seconds": 3.2664510998874903
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_019",
+      "elapsed_seconds": 3.2101775999180973
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_041",
+      "elapsed_seconds": 3.2422414000611752
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_044",
+      "elapsed_seconds": 3.2471648000646383
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_051",
+      "elapsed_seconds": 3.233407400082797
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_055",
+      "elapsed_seconds": 3.2136897000018507
+    }
+  ],
+  "artifacts": {
+    "resolution_margin_rows": {
+      "path": "outputs/nostos0-biosr-v7-resolution-margin-calibration/resolution_margin_rows.jsonl",
+      "bytes": 958329,
+      "sha256": "05bd34452588fdb831961de97dcfa6d6aa62394cb6c815cf4db882a8244e6778"
+    }
+  },
+  "claim_boundary": "Development calibration only; not confirmation or evidence about F-actin."
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "nostos-biosr-developmental-pilot/1.0",
+  "created_at_utc": "2026-08-28T23:16:55Z",
+  "purpose": "A small, balanced developmental audit of the corrected paired-acquisition measurement-support implementation before any broader run.",
+  "status": "post_consolidation_deterministic_receipt",
+  "selection_rule": "For each development structure, use the first six lexicographically sorted score-design cell identifiers. The rule was declared before pilot consolidation; this file was written after the high-level runner summaries were visible and is therefore not represented as a prospective confirmatory lock.",
+  "allowed_uses": [
+    "detect implementation or endpoint failures",
+    "compare prospectively locked support-score candidates provisionally",
+    "decide which endpoints require repair or explicit abstention",
+    "exercise the complete audit and provenance path"
+  ],
+  "forbidden_claims": [
+    "clinical validity",
+    "cross-dataset generalization",
+    "confirmatory performance",
+    "final operating thresholds",
+    "Nature-level validation completeness"
+  ],
+  "shared": {
+    "protocol_version": "nostos-paired-acquisition-support/2.0",
+    "stage": "score_design",
+    "receipt_status": "smoke_test",
+    "config_sha256": "aa0f96b17d2278dcb5eb524c0c5e1d73233d32d4aed0d62486d9a58fff6bda39",
+    "implementation_sha256": "f9339b7d777eef281d0e93e0454275448aeca4b604268bd0909b1c6a71f8b3da",
+    "reference_field_total": 12,
+    "paired_acquisition_total": 90,
+    "endpoint_case_total": 1890
+  },
+  "inputs": [
+    {
+      "structure": "CCPs",
+      "endpoint_cases_path": "outputs/nostos0-biosr-ccp-score-design-v3-calibrated/endpoint_cases.jsonl",
+      "archive_receipt_path": "outputs/nostos0-biosr-ccp-score-design-v3-calibrated/archive_receipt.json",
+      "archive_receipt_bytes": 8326,
+      "archive_receipt_sha256": "7b2461e000451dcc9ef8222d9da4f2f0a272a98c1953f4e1725dc09e6d4cc813",
+      "endpoint_cases_sha256": "e0f492060e821bba2c027f3bb64daf550c16a31388ad8698e891c850573fe7a0",
+      "pair_index_sha256": "fa43bb0383b40eebd74856e184f3ff346feb2929758b410acbc01472410c7084",
+      "selected_cell_ids": [
+        "Cell_001",
+        "Cell_008",
+        "Cell_012",
+        "Cell_014",
+        "Cell_015",
+        "Cell_017"
+      ],
+      "reference_fields": 6,
+      "paired_acquisitions": 54,
+      "endpoint_cases": 1134
+    },
+    {
+      "structure": "ER",
+      "endpoint_cases_path": "outputs/nostos0-biosr-er-score-design-v3-calibrated/endpoint_cases.jsonl",
+      "archive_receipt_path": "outputs/nostos0-biosr-er-score-design-v3-calibrated/archive_receipt.json",
+      "archive_receipt_bytes": 8331,
+      "archive_receipt_sha256": "246db5f08f0a2b4dd85169c346a45aa757ea4e734aeda46c4b42c28022990c87",
+      "endpoint_cases_sha256": "d71e7092e75a87c23d0ad74150960c53127eb2b4cea75766c4c4fab798df4480",
+      "pair_index_sha256": "b9debd8674d29f1f9bd9f3899e6fafa42e0aeaf4ef1bf93e5cf7037c0295d476",
+      "selected_cell_ids": [
+        "Cell_002",
+        "Cell_003",
+        "Cell_004",
+        "Cell_008",
+        "Cell_009",
+        "Cell_011"
+      ],
+      "reference_fields": 6,
+      "paired_acquisitions": 36,
+      "endpoint_cases": 756
+    }
+  ]
+}

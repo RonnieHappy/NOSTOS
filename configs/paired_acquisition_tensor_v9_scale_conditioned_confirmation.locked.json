@@ -1,0 +1,102 @@
+{
+  "protocol_version": "nostos-paired-acquisition-tensor/9.0-scale-conditioned-confirmation",
+  "status": "candidate_for_outcome_free_lock_before_selected_field_pixel_decode",
+  "study_role": "untouched small confirmation of the v9 repair after the sealed v8 failure",
+  "question": "Does the v9 scale-conditioned acquisition-support repair reduce silent-invalid tensor-coherence risk on different BioSR cells under the unchanged v8 challenge while preserving useful coverage?",
+  "source_lineage": {
+    "v7_linear_config_path": "configs/paired_acquisition_tensor_v7.locked.json",
+    "v7_linear_config_sha256": "51bc51cd69f2945c04b56a65fbf6a5a677c0c7661087ec945043eec9ab5f54eb",
+    "v7_1_nonlinear_config_path": "configs/paired_acquisition_tensor_v7_1_nonlinear.locked.json",
+    "v7_1_nonlinear_config_sha256": "21dfa01f02cca9ccd90da66f767ec7b6783f2b1e17d8e6d4acdc2bcd777334fb",
+    "v7_confirmation_lock_path": "manifests/paired_acquisition_tensor_v7_confirmation_lock.json",
+    "v7_confirmation_lock_sha256": "9ff48c5b35e1e472a43706385c0d529f13703dccf467627821aea769c575225e",
+    "v7_1_nonlinear_lock_path": "manifests/paired_acquisition_tensor_v7_1_nonlinear_lock.json",
+    "v7_1_nonlinear_lock_sha256": "d0b29d6a1d137e1442eeb7c66245f9e1e29234636558d5eeef2297929121dc99",
+    "v8_challenge_config_path": "configs/paired_acquisition_tensor_v8_controlled_degradation_pilot.locked.json",
+    "v8_challenge_config_sha256": "bcf9561682a01f18ba341df32b75b6a12abb56cd3246497867e61bc715c75c93",
+    "v8_challenge_lock_path": "manifests/paired_acquisition_tensor_v8_controlled_degradation_pilot_lock.json",
+    "v8_challenge_lock_sha256": "ac07ae2c7289a15e3b9faca0b0f21183e520e5a1094e8ca09b7f214050362d0f",
+    "v8_failure_receipt_path": "outputs/nostos0-biosr-tensor-v8-controlled-degradation-pilot/pilot_receipt.json",
+    "v8_failure_receipt_sha256": "69ea9f9ff2e4f6da909e495aee2e765235a420b3acf604031ffb8362927c9672",
+    "v9_development_audit_path": "outputs/nostos0-biosr-tensor-v9-scale-conditioned-development/development_audit.json",
+    "v9_development_audit_sha256": "239a5480bdbb5c7e3135fd4fe03cb526592b063ec31844dd6ef9b997d058669e"
+  },
+  "measurement_rule": "Use the unchanged v7 linear and v7.1 nonlinear estimators, physical scales, reference policies and invalidity tolerances. Only tensor-coherence validity scoring changes as declared below.",
+  "challenge_rule": "Reuse all fourteen v8 degradation definitions exactly. Use a new stochastic base seed and different source cells; do not remove or alter any condition.",
+  "selection": {
+    "fields_per_structure": 4,
+    "selection_salt": "NOSTOS-v9-scale-conditioned-confirmation-2026-08-29",
+    "selection_rule": "Exclude every v7 and v8 F-actin cell, then rank remaining central-directory identifiers with the unchanged v7 SHA-256 selector. Pixel values and endpoint outcomes are forbidden inputs.",
+    "selected_cells": {
+      "F-actin_linear": [
+        "Cell_018",
+        "Cell_024",
+        "Cell_039",
+        "Cell_035"
+      ],
+      "F-actin_nonlinear": [
+        "Cell_048",
+        "Cell_034",
+        "Cell_016",
+        "Cell_011"
+      ]
+    },
+    "signal_levels": {
+      "F-actin_linear": [
+        1,
+        12
+      ],
+      "F-actin_nonlinear": [
+        1,
+        9
+      ]
+    },
+    "base_reference_fields": 8,
+    "base_paired_acquisitions": 16
+  },
+  "randomness": {
+    "base_seed": 26082990,
+    "rule": "For stochastic conditions, derive a NumPy seed from SHA-256(base_seed|base_pair_id|condition_id), using the first eight digest bytes modulo 2^32."
+  },
+  "registration": {
+    "rule": "Audit registration once on each undegraded source pair and reuse that eligibility record for every coordinate-preserving degradation of that pair.",
+    "rationale": "Every frozen transformation preserves array extent and specimen coordinates; registration cannot act as a hidden degradation classifier."
+  },
+  "v9_scale_conditioned_support": {
+    "endpoint_family": "tensor_coherence",
+    "source_component": "unchanged v7 acquisition_qc risk",
+    "minimum_samples_per_scale": 4.0,
+    "scale_exponent": 0.5,
+    "acceptance_boundary": 0.3,
+    "raw_formula": "acquisition_qc_risk * (4 / samples_per_requested_scale)^0.5",
+    "normalized_score_formula": "raw_scale_conditioned_acquisition_risk / 0.30",
+    "combination_rule": "maximum of v7 acquisition QC, physical sampling, mild-perturbation stability, identifiability and v9 scale-conditioned acquisition support",
+    "v7_strong_blur_resolution_margin_role": "diagnostic only; it failed to detect stable degradation bias in v8 and is excluded from v9 coherence acceptance",
+    "orientation_distribution_rule": "unchanged v7 contract; v9 superiority is not claimed for this family",
+    "threshold_refitting_permitted": false
+  },
+  "confirmation_gates": {
+    "minimum_negative_control_coverage": 0.8,
+    "maximum_negative_control_risk": 0.1,
+    "minimum_overall_coverage": 0.8,
+    "maximum_overall_risk": 0.05,
+    "maximum_cluster_bootstrap_risk_upper95": 0.1,
+    "minimum_comparator_invalid_emissions": 10,
+    "minimum_invalid_reference_fields": 4,
+    "minimum_relative_risk_reduction_vs_qc": 0.25,
+    "minimum_invalid_fraction_among_qc_only_rejections": 0.25,
+    "minimum_bootstrap_probability_full_better": 0.95,
+    "require_bootstrap_ci95_lower_above_zero": true,
+    "require_positive_comparator_minus_full_aurc": true,
+    "require_nonhigher_full_risk_in_each_assessable_structure": true,
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 26082991
+  },
+  "decision_rules": {
+    "pass": "The repair is confirmed for this BioSR stress challenge and may enter the tool profile with its exact scope. Publication-wide universal validity claims still require broader independent modalities and users.",
+    "fail": "The v9 repair is not promoted. Preserve the failure, diagnose it on development evidence and use different cells for any later confirmation.",
+    "not_assessable": "Do not describe superiority. The confirmation did not contain enough invalid comparator emissions."
+  },
+  "access_boundary": "Before this configuration and its lock are completed, no pixel array or endpoint outcome from the eight selected v9 cells may be decoded or computed. Central-directory names and MRC headers are permitted.",
+  "claim_boundary": "Independent-cell confirmation of selective tensor-coherence support under a specified BioSR controlled-degradation challenge. Not biological ground truth, image-restoration accuracy, diagnosis, clinical validity, universal tissue validity or Nature-level external validation by itself."
+}

@@ -1,0 +1,2530 @@
+{
+  "schema_version": "nostos-biosr-v6-confirmation-pair-index/1.0",
+  "selection_status": "selected_before_pixel_decode_by_frozen_hash_rule",
+  "selection_rule": "Sort all indexed reference_group_id values by sha256('NOSTOS-v6-initial-confirmation|' + structure + '|' + reference_group_id) and select the first eight. Selection cannot use pixels, dimensions, intensity, registration or endpoint outcomes.",
+  "archive": "Microtubules.zip",
+  "archive_bytes": 1633356198,
+  "archive_md5": "df983755a1b45d512b000475e3072fc7",
+  "archive_sha256": "853d978053d4ad632e55d96324012b587f2b5376c9e12cdd4007e7e98b690c77",
+  "structure": "Microtubules",
+  "upscaling_factor": 2,
+  "expected_level_count": 9,
+  "implementation_sha256": "03db51eecd8ca2babc342a037275f27b1e695fffbe663c4501d0a991dbe6542c",
+  "selected_cells": [
+    "Cell_041",
+    "Cell_001",
+    "Cell_055",
+    "Cell_002",
+    "Cell_044",
+    "Cell_051",
+    "Cell_015",
+    "Cell_019"
+  ],
+  "available_reference_group_ids": [
+    "Microtubules|Cell_001",
+    "Microtubules|Cell_002",
+    "Microtubules|Cell_003",
+    "Microtubules|Cell_004",
+    "Microtubules|Cell_005",
+    "Microtubules|Cell_006",
+    "Microtubules|Cell_007",
+    "Microtubules|Cell_008",
+    "Microtubules|Cell_009",
+    "Microtubules|Cell_010",
+    "Microtubules|Cell_011",
+    "Microtubules|Cell_012",
+    "Microtubules|Cell_013",
+    "Microtubules|Cell_014",
+    "Microtubules|Cell_015",
+    "Microtubules|Cell_016",
+    "Microtubules|Cell_017",
+    "Microtubules|Cell_018",
+    "Microtubules|Cell_019",
+    "Microtubules|Cell_020",
+    "Microtubules|Cell_021",
+    "Microtubules|Cell_022",
+    "Microtubules|Cell_023",
+    "Microtubules|Cell_024",
+    "Microtubules|Cell_025",
+    "Microtubules|Cell_026",
+    "Microtubules|Cell_027",
+    "Microtubules|Cell_028",
+    "Microtubules|Cell_029",
+    "Microtubules|Cell_030",
+    "Microtubules|Cell_031",
+    "Microtubules|Cell_032",
+    "Microtubules|Cell_033",
+    "Microtubules|Cell_034",
+    "Microtubules|Cell_035",
+    "Microtubules|Cell_036",
+    "Microtubules|Cell_037",
+    "Microtubules|Cell_038",
+    "Microtubules|Cell_039",
+    "Microtubules|Cell_040",
+    "Microtubules|Cell_041",
+    "Microtubules|Cell_042",
+    "Microtubules|Cell_043",
+    "Microtubules|Cell_044",
+    "Microtubules|Cell_045",
+    "Microtubules|Cell_046",
+    "Microtubules|Cell_047",
+    "Microtubules|Cell_048",
+    "Microtubules|Cell_049",
+    "Microtubules|Cell_050",
+    "Microtubules|Cell_051",
+    "Microtubules|Cell_052",
+    "Microtubules|Cell_053",
+    "Microtubules|Cell_054",
+    "Microtubules|Cell_055"
+  ],
+  "records": [
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_001",
+      "signal_level": 1,
+      "pair_id": "Microtubules|Cell_001|level_01",
+      "reference_group_id": "Microtubules|Cell_001",
+      "input_member": "Microtubules/Cell_001/RawSIMData_level_01.mrc",
+      "reference_member": "Microtubules/Cell_001/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_001",
+      "signal_level": 2,
+      "pair_id": "Microtubules|Cell_001|level_02",
+      "reference_group_id": "Microtubules|Cell_001",
+      "input_member": "Microtubules/Cell_001/RawSIMData_level_02.mrc",
+      "reference_member": "Microtubules/Cell_001/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_001",
+      "signal_level": 3,
+      "pair_id": "Microtubules|Cell_001|level_03",
+      "reference_group_id": "Microtubules|Cell_001",
+      "input_member": "Microtubules/Cell_001/RawSIMData_level_03.mrc",
+      "reference_member": "Microtubules/Cell_001/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_001",
+      "signal_level": 4,
+      "pair_id": "Microtubules|Cell_001|level_04",
+      "reference_group_id": "Microtubules|Cell_001",
+      "input_member": "Microtubules/Cell_001/RawSIMData_level_04.mrc",
+      "reference_member": "Microtubules/Cell_001/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_001",
+      "signal_level": 5,
+      "pair_id": "Microtubules|Cell_001|level_05",
+      "reference_group_id": "Microtubules|Cell_001",
+      "input_member": "Microtubules/Cell_001/RawSIMData_level_05.mrc",
+      "reference_member": "Microtubules/Cell_001/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_001",
+      "signal_level": 6,
+      "pair_id": "Microtubules|Cell_001|level_06",
+      "reference_group_id": "Microtubules|Cell_001",
+      "input_member": "Microtubules/Cell_001/RawSIMData_level_06.mrc",
+      "reference_member": "Microtubules/Cell_001/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_001",
+      "signal_level": 7,
+      "pair_id": "Microtubules|Cell_001|level_07",
+      "reference_group_id": "Microtubules|Cell_001",
+      "input_member": "Microtubules/Cell_001/RawSIMData_level_07.mrc",
+      "reference_member": "Microtubules/Cell_001/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_001",
+      "signal_level": 8,
+      "pair_id": "Microtubules|Cell_001|level_08",
+      "reference_group_id": "Microtubules|Cell_001",
+      "input_member": "Microtubules/Cell_001/RawSIMData_level_08.mrc",
+      "reference_member": "Microtubules/Cell_001/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_001",
+      "signal_level": 9,
+      "pair_id": "Microtubules|Cell_001|level_09",
+      "reference_group_id": "Microtubules|Cell_001",
+      "input_member": "Microtubules/Cell_001/RawSIMData_level_09.mrc",
+      "reference_member": "Microtubules/Cell_001/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_002",
+      "signal_level": 1,
+      "pair_id": "Microtubules|Cell_002|level_01",
+      "reference_group_id": "Microtubules|Cell_002",
+      "input_member": "Microtubules/Cell_002/RawSIMData_level_01.mrc",
+      "reference_member": "Microtubules/Cell_002/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_002",
+      "signal_level": 2,
+      "pair_id": "Microtubules|Cell_002|level_02",
+      "reference_group_id": "Microtubules|Cell_002",
+      "input_member": "Microtubules/Cell_002/RawSIMData_level_02.mrc",
+      "reference_member": "Microtubules/Cell_002/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_002",
+      "signal_level": 3,
+      "pair_id": "Microtubules|Cell_002|level_03",
+      "reference_group_id": "Microtubules|Cell_002",
+      "input_member": "Microtubules/Cell_002/RawSIMData_level_03.mrc",
+      "reference_member": "Microtubules/Cell_002/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_002",
+      "signal_level": 4,
+      "pair_id": "Microtubules|Cell_002|level_04",
+      "reference_group_id": "Microtubules|Cell_002",
+      "input_member": "Microtubules/Cell_002/RawSIMData_level_04.mrc",
+      "reference_member": "Microtubules/Cell_002/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_002",
+      "signal_level": 5,
+      "pair_id": "Microtubules|Cell_002|level_05",
+      "reference_group_id": "Microtubules|Cell_002",
+      "input_member": "Microtubules/Cell_002/RawSIMData_level_05.mrc",
+      "reference_member": "Microtubules/Cell_002/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_002",
+      "signal_level": 6,
+      "pair_id": "Microtubules|Cell_002|level_06",
+      "reference_group_id": "Microtubules|Cell_002",
+      "input_member": "Microtubules/Cell_002/RawSIMData_level_06.mrc",
+      "reference_member": "Microtubules/Cell_002/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_002",
+      "signal_level": 7,
+      "pair_id": "Microtubules|Cell_002|level_07",
+      "reference_group_id": "Microtubules|Cell_002",
+      "input_member": "Microtubules/Cell_002/RawSIMData_level_07.mrc",
+      "reference_member": "Microtubules/Cell_002/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_002",
+      "signal_level": 8,
+      "pair_id": "Microtubules|Cell_002|level_08",
+      "reference_group_id": "Microtubules|Cell_002",
+      "input_member": "Microtubules/Cell_002/RawSIMData_level_08.mrc",
+      "reference_member": "Microtubules/Cell_002/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_002",
+      "signal_level": 9,
+      "pair_id": "Microtubules|Cell_002|level_09",
+      "reference_group_id": "Microtubules|Cell_002",
+      "input_member": "Microtubules/Cell_002/RawSIMData_level_09.mrc",
+      "reference_member": "Microtubules/Cell_002/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_015",
+      "signal_level": 1,
+      "pair_id": "Microtubules|Cell_015|level_01",
+      "reference_group_id": "Microtubules|Cell_015",
+      "input_member": "Microtubules/Cell_015/RawSIMData_level_01.mrc",
+      "reference_member": "Microtubules/Cell_015/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_015",
+      "signal_level": 2,
+      "pair_id": "Microtubules|Cell_015|level_02",
+      "reference_group_id": "Microtubules|Cell_015",
+      "input_member": "Microtubules/Cell_015/RawSIMData_level_02.mrc",
+      "reference_member": "Microtubules/Cell_015/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_015",
+      "signal_level": 3,
+      "pair_id": "Microtubules|Cell_015|level_03",
+      "reference_group_id": "Microtubules|Cell_015",
+      "input_member": "Microtubules/Cell_015/RawSIMData_level_03.mrc",
+      "reference_member": "Microtubules/Cell_015/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_015",
+      "signal_level": 4,
+      "pair_id": "Microtubules|Cell_015|level_04",
+      "reference_group_id": "Microtubules|Cell_015",
+      "input_member": "Microtubules/Cell_015/RawSIMData_level_04.mrc",
+      "reference_member": "Microtubules/Cell_015/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_015",
+      "signal_level": 5,
+      "pair_id": "Microtubules|Cell_015|level_05",
+      "reference_group_id": "Microtubules|Cell_015",
+      "input_member": "Microtubules/Cell_015/RawSIMData_level_05.mrc",
+      "reference_member": "Microtubules/Cell_015/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_015",
+      "signal_level": 6,
+      "pair_id": "Microtubules|Cell_015|level_06",
+      "reference_group_id": "Microtubules|Cell_015",
+      "input_member": "Microtubules/Cell_015/RawSIMData_level_06.mrc",
+      "reference_member": "Microtubules/Cell_015/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_015",
+      "signal_level": 7,
+      "pair_id": "Microtubules|Cell_015|level_07",
+      "reference_group_id": "Microtubules|Cell_015",
+      "input_member": "Microtubules/Cell_015/RawSIMData_level_07.mrc",
+      "reference_member": "Microtubules/Cell_015/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_015",
+      "signal_level": 8,
+      "pair_id": "Microtubules|Cell_015|level_08",
+      "reference_group_id": "Microtubules|Cell_015",
+      "input_member": "Microtubules/Cell_015/RawSIMData_level_08.mrc",
+      "reference_member": "Microtubules/Cell_015/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_015",
+      "signal_level": 9,
+      "pair_id": "Microtubules|Cell_015|level_09",
+      "reference_group_id": "Microtubules|Cell_015",
+      "input_member": "Microtubules/Cell_015/RawSIMData_level_09.mrc",
+      "reference_member": "Microtubules/Cell_015/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_019",
+      "signal_level": 1,
+      "pair_id": "Microtubules|Cell_019|level_01",
+      "reference_group_id": "Microtubules|Cell_019",
+      "input_member": "Microtubules/Cell_019/RawSIMData_level_01.mrc",
+      "reference_member": "Microtubules/Cell_019/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_019",
+      "signal_level": 2,
+      "pair_id": "Microtubules|Cell_019|level_02",
+      "reference_group_id": "Microtubules|Cell_019",
+      "input_member": "Microtubules/Cell_019/RawSIMData_level_02.mrc",
+      "reference_member": "Microtubules/Cell_019/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_019",
+      "signal_level": 3,
+      "pair_id": "Microtubules|Cell_019|level_03",
+      "reference_group_id": "Microtubules|Cell_019",
+      "input_member": "Microtubules/Cell_019/RawSIMData_level_03.mrc",
+      "reference_member": "Microtubules/Cell_019/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_019",
+      "signal_level": 4,
+      "pair_id": "Microtubules|Cell_019|level_04",
+      "reference_group_id": "Microtubules|Cell_019",
+      "input_member": "Microtubules/Cell_019/RawSIMData_level_04.mrc",
+      "reference_member": "Microtubules/Cell_019/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_019",
+      "signal_level": 5,
+      "pair_id": "Microtubules|Cell_019|level_05",
+      "reference_group_id": "Microtubules|Cell_019",
+      "input_member": "Microtubules/Cell_019/RawSIMData_level_05.mrc",
+      "reference_member": "Microtubules/Cell_019/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_019",
+      "signal_level": 6,
+      "pair_id": "Microtubules|Cell_019|level_06",
+      "reference_group_id": "Microtubules|Cell_019",
+      "input_member": "Microtubules/Cell_019/RawSIMData_level_06.mrc",
+      "reference_member": "Microtubules/Cell_019/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_019",
+      "signal_level": 7,
+      "pair_id": "Microtubules|Cell_019|level_07",
+      "reference_group_id": "Microtubules|Cell_019",
+      "input_member": "Microtubules/Cell_019/RawSIMData_level_07.mrc",
+      "reference_member": "Microtubules/Cell_019/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_019",
+      "signal_level": 8,
+      "pair_id": "Microtubules|Cell_019|level_08",
+      "reference_group_id": "Microtubules|Cell_019",
+      "input_member": "Microtubules/Cell_019/RawSIMData_level_08.mrc",
+      "reference_member": "Microtubules/Cell_019/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_019",
+      "signal_level": 9,
+      "pair_id": "Microtubules|Cell_019|level_09",
+      "reference_group_id": "Microtubules|Cell_019",
+      "input_member": "Microtubules/Cell_019/RawSIMData_level_09.mrc",
+      "reference_member": "Microtubules/Cell_019/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_041",
+      "signal_level": 1,
+      "pair_id": "Microtubules|Cell_041|level_01",
+      "reference_group_id": "Microtubules|Cell_041",
+      "input_member": "Microtubules/Cell_041/RawSIMData_level_01.mrc",
+      "reference_member": "Microtubules/Cell_041/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_041",
+      "signal_level": 2,
+      "pair_id": "Microtubules|Cell_041|level_02",
+      "reference_group_id": "Microtubules|Cell_041",
+      "input_member": "Microtubules/Cell_041/RawSIMData_level_02.mrc",
+      "reference_member": "Microtubules/Cell_041/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_041",
+      "signal_level": 3,
+      "pair_id": "Microtubules|Cell_041|level_03",
+      "reference_group_id": "Microtubules|Cell_041",
+      "input_member": "Microtubules/Cell_041/RawSIMData_level_03.mrc",
+      "reference_member": "Microtubules/Cell_041/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_041",
+      "signal_level": 4,
+      "pair_id": "Microtubules|Cell_041|level_04",
+      "reference_group_id": "Microtubules|Cell_041",
+      "input_member": "Microtubules/Cell_041/RawSIMData_level_04.mrc",
+      "reference_member": "Microtubules/Cell_041/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_041",
+      "signal_level": 5,
+      "pair_id": "Microtubules|Cell_041|level_05",
+      "reference_group_id": "Microtubules|Cell_041",
+      "input_member": "Microtubules/Cell_041/RawSIMData_level_05.mrc",
+      "reference_member": "Microtubules/Cell_041/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_041",
+      "signal_level": 6,
+      "pair_id": "Microtubules|Cell_041|level_06",
+      "reference_group_id": "Microtubules|Cell_041",
+      "input_member": "Microtubules/Cell_041/RawSIMData_level_06.mrc",
+      "reference_member": "Microtubules/Cell_041/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_041",
+      "signal_level": 7,
+      "pair_id": "Microtubules|Cell_041|level_07",
+      "reference_group_id": "Microtubules|Cell_041",
+      "input_member": "Microtubules/Cell_041/RawSIMData_level_07.mrc",
+      "reference_member": "Microtubules/Cell_041/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_041",
+      "signal_level": 8,
+      "pair_id": "Microtubules|Cell_041|level_08",
+      "reference_group_id": "Microtubules|Cell_041",
+      "input_member": "Microtubules/Cell_041/RawSIMData_level_08.mrc",
+      "reference_member": "Microtubules/Cell_041/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_041",
+      "signal_level": 9,
+      "pair_id": "Microtubules|Cell_041|level_09",
+      "reference_group_id": "Microtubules|Cell_041",
+      "input_member": "Microtubules/Cell_041/RawSIMData_level_09.mrc",
+      "reference_member": "Microtubules/Cell_041/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_044",
+      "signal_level": 1,
+      "pair_id": "Microtubules|Cell_044|level_01",
+      "reference_group_id": "Microtubules|Cell_044",
+      "input_member": "Microtubules/Cell_044/RawSIMData_level_01.mrc",
+      "reference_member": "Microtubules/Cell_044/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_044",
+      "signal_level": 2,
+      "pair_id": "Microtubules|Cell_044|level_02",
+      "reference_group_id": "Microtubules|Cell_044",
+      "input_member": "Microtubules/Cell_044/RawSIMData_level_02.mrc",
+      "reference_member": "Microtubules/Cell_044/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_044",
+      "signal_level": 3,
+      "pair_id": "Microtubules|Cell_044|level_03",
+      "reference_group_id": "Microtubules|Cell_044",
+      "input_member": "Microtubules/Cell_044/RawSIMData_level_03.mrc",
+      "reference_member": "Microtubules/Cell_044/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_044",
+      "signal_level": 4,
+      "pair_id": "Microtubules|Cell_044|level_04",
+      "reference_group_id": "Microtubules|Cell_044",
+      "input_member": "Microtubules/Cell_044/RawSIMData_level_04.mrc",
+      "reference_member": "Microtubules/Cell_044/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_044",
+      "signal_level": 5,
+      "pair_id": "Microtubules|Cell_044|level_05",
+      "reference_group_id": "Microtubules|Cell_044",
+      "input_member": "Microtubules/Cell_044/RawSIMData_level_05.mrc",
+      "reference_member": "Microtubules/Cell_044/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_044",
+      "signal_level": 6,
+      "pair_id": "Microtubules|Cell_044|level_06",
+      "reference_group_id": "Microtubules|Cell_044",
+      "input_member": "Microtubules/Cell_044/RawSIMData_level_06.mrc",
+      "reference_member": "Microtubules/Cell_044/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_044",
+      "signal_level": 7,
+      "pair_id": "Microtubules|Cell_044|level_07",
+      "reference_group_id": "Microtubules|Cell_044",
+      "input_member": "Microtubules/Cell_044/RawSIMData_level_07.mrc",
+      "reference_member": "Microtubules/Cell_044/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_044",
+      "signal_level": 8,
+      "pair_id": "Microtubules|Cell_044|level_08",
+      "reference_group_id": "Microtubules|Cell_044",
+      "input_member": "Microtubules/Cell_044/RawSIMData_level_08.mrc",
+      "reference_member": "Microtubules/Cell_044/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_044",
+      "signal_level": 9,
+      "pair_id": "Microtubules|Cell_044|level_09",
+      "reference_group_id": "Microtubules|Cell_044",
+      "input_member": "Microtubules/Cell_044/RawSIMData_level_09.mrc",
+      "reference_member": "Microtubules/Cell_044/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_051",
+      "signal_level": 1,
+      "pair_id": "Microtubules|Cell_051|level_01",
+      "reference_group_id": "Microtubules|Cell_051",
+      "input_member": "Microtubules/Cell_051/RawSIMData_level_01.mrc",
+      "reference_member": "Microtubules/Cell_051/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_051",
+      "signal_level": 2,
+      "pair_id": "Microtubules|Cell_051|level_02",
+      "reference_group_id": "Microtubules|Cell_051",
+      "input_member": "Microtubules/Cell_051/RawSIMData_level_02.mrc",
+      "reference_member": "Microtubules/Cell_051/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_051",
+      "signal_level": 3,
+      "pair_id": "Microtubules|Cell_051|level_03",
+      "reference_group_id": "Microtubules|Cell_051",
+      "input_member": "Microtubules/Cell_051/RawSIMData_level_03.mrc",
+      "reference_member": "Microtubules/Cell_051/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_051",
+      "signal_level": 4,
+      "pair_id": "Microtubules|Cell_051|level_04",
+      "reference_group_id": "Microtubules|Cell_051",
+      "input_member": "Microtubules/Cell_051/RawSIMData_level_04.mrc",
+      "reference_member": "Microtubules/Cell_051/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_051",
+      "signal_level": 5,
+      "pair_id": "Microtubules|Cell_051|level_05",
+      "reference_group_id": "Microtubules|Cell_051",
+      "input_member": "Microtubules/Cell_051/RawSIMData_level_05.mrc",
+      "reference_member": "Microtubules/Cell_051/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_051",
+      "signal_level": 6,
+      "pair_id": "Microtubules|Cell_051|level_06",
+      "reference_group_id": "Microtubules|Cell_051",
+      "input_member": "Microtubules/Cell_051/RawSIMData_level_06.mrc",
+      "reference_member": "Microtubules/Cell_051/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_051",
+      "signal_level": 7,
+      "pair_id": "Microtubules|Cell_051|level_07",
+      "reference_group_id": "Microtubules|Cell_051",
+      "input_member": "Microtubules/Cell_051/RawSIMData_level_07.mrc",
+      "reference_member": "Microtubules/Cell_051/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_051",
+      "signal_level": 8,
+      "pair_id": "Microtubules|Cell_051|level_08",
+      "reference_group_id": "Microtubules|Cell_051",
+      "input_member": "Microtubules/Cell_051/RawSIMData_level_08.mrc",
+      "reference_member": "Microtubules/Cell_051/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_051",
+      "signal_level": 9,
+      "pair_id": "Microtubules|Cell_051|level_09",
+      "reference_group_id": "Microtubules|Cell_051",
+      "input_member": "Microtubules/Cell_051/RawSIMData_level_09.mrc",
+      "reference_member": "Microtubules/Cell_051/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_055",
+      "signal_level": 1,
+      "pair_id": "Microtubules|Cell_055|level_01",
+      "reference_group_id": "Microtubules|Cell_055",
+      "input_member": "Microtubules/Cell_055/RawSIMData_level_01.mrc",
+      "reference_member": "Microtubules/Cell_055/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_055",
+      "signal_level": 2,
+      "pair_id": "Microtubules|Cell_055|level_02",
+      "reference_group_id": "Microtubules|Cell_055",
+      "input_member": "Microtubules/Cell_055/RawSIMData_level_02.mrc",
+      "reference_member": "Microtubules/Cell_055/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_055",
+      "signal_level": 3,
+      "pair_id": "Microtubules|Cell_055|level_03",
+      "reference_group_id": "Microtubules|Cell_055",
+      "input_member": "Microtubules/Cell_055/RawSIMData_level_03.mrc",
+      "reference_member": "Microtubules/Cell_055/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_055",
+      "signal_level": 4,
+      "pair_id": "Microtubules|Cell_055|level_04",
+      "reference_group_id": "Microtubules|Cell_055",
+      "input_member": "Microtubules/Cell_055/RawSIMData_level_04.mrc",
+      "reference_member": "Microtubules/Cell_055/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_055",
+      "signal_level": 5,
+      "pair_id": "Microtubules|Cell_055|level_05",
+      "reference_group_id": "Microtubules|Cell_055",
+      "input_member": "Microtubules/Cell_055/RawSIMData_level_05.mrc",
+      "reference_member": "Microtubules/Cell_055/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_055",
+      "signal_level": 6,
+      "pair_id": "Microtubules|Cell_055|level_06",
+      "reference_group_id": "Microtubules|Cell_055",
+      "input_member": "Microtubules/Cell_055/RawSIMData_level_06.mrc",
+      "reference_member": "Microtubules/Cell_055/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_055",
+      "signal_level": 7,
+      "pair_id": "Microtubules|Cell_055|level_07",
+      "reference_group_id": "Microtubules|Cell_055",
+      "input_member": "Microtubules/Cell_055/RawSIMData_level_07.mrc",
+      "reference_member": "Microtubules/Cell_055/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_055",
+      "signal_level": 8,
+      "pair_id": "Microtubules|Cell_055|level_08",
+      "reference_group_id": "Microtubules|Cell_055",
+      "input_member": "Microtubules/Cell_055/RawSIMData_level_08.mrc",
+      "reference_member": "Microtubules/Cell_055/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    },
+    {
+      "structure": "Microtubules",
+      "cell_id": "Cell_055",
+      "signal_level": 9,
+      "pair_id": "Microtubules|Cell_055|level_09",
+      "reference_group_id": "Microtubules|Cell_055",
+      "input_member": "Microtubules/Cell_055/RawSIMData_level_09.mrc",
+      "reference_member": "Microtubules/Cell_055/SIM_gt.mrc",
+      "input_frames": 9,
+      "input_shape_yx": [
+        502,
+        502
+      ],
+      "reference_shape_yx": [
+        1004,
+        1004
+      ],
+      "input_grid_spacing_um": 0.0626,
+      "effective_input_spacing_um": 0.0626,
+      "reference_spacing_um": 0.0313,
+      "input_header_spacing_yx_um": [
+        0.06260000169277191,
+        0.06260000169277191
+      ],
+      "reference_header_spacing_yx_um": [
+        0.031300000846385956,
+        0.031300000846385956
+      ],
+      "physical_field_of_view_yx_um": [
+        31.4252,
+        31.4252
+      ],
+      "archive_layout": "shared_reference_flat"
+    }
+  ]
+}

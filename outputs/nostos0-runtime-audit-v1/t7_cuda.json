@@ -1,0 +1,115 @@
+{
+  "schema_version": "nostos-python-runtime-audit/1.0",
+  "generated_at_utc": "2026-08-29T09:00:08.712799+00:00",
+  "runtime_label": "t7-python313-cuda",
+  "status": "verified_pass",
+  "checks": {
+    "core_imports": true,
+    "dependency_consistency": true,
+    "cpu_fft_finite": true,
+    "gpu_fft_finite_if_required": true,
+    "full_test_suite": true
+  },
+  "environment": {
+    "python_version": "3.13.13",
+    "implementation": "CPython",
+    "operating_system": "Windows",
+    "operating_system_release": "11",
+    "machine": "AMD64",
+    "environment_name": ".venv313",
+    "absolute_paths_recorded": false
+  },
+  "imports": {
+    "numpy": {
+      "available": true,
+      "error_type": null
+    },
+    "scipy": {
+      "available": true,
+      "error_type": null
+    },
+    "skimage": {
+      "available": true,
+      "error_type": null
+    },
+    "tifffile": {
+      "available": true,
+      "error_type": null
+    },
+    "PIL": {
+      "available": true,
+      "error_type": null
+    },
+    "nostos": {
+      "available": true,
+      "error_type": null
+    }
+  },
+  "package_versions": {
+    "nostos": "0.3.0",
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "scikit-image": "0.25.2",
+    "tifffile": "2026.8.23",
+    "pillow": "12.3.0",
+    "pytest": "9.1.1",
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128"
+  },
+  "dependency_check": {
+    "status": "pass",
+    "tool": "uv_pip_check",
+    "exit_code": 0,
+    "elapsed_seconds": 0.0454390998929739,
+    "summary": "All installed packages are compatible"
+  },
+  "cpu_smoke": {
+    "status": "pass",
+    "operation": "numpy_rfft2",
+    "input_shape": [
+      2048,
+      2048
+    ],
+    "input_dtype": "float32",
+    "output_shape": [
+      2048,
+      1025
+    ],
+    "finite": true,
+    "elapsed_seconds": 0.08974800002761185
+  },
+  "gpu_smoke": {
+    "status": "pass",
+    "operation": "torch_cuda_rfft2",
+    "input_shape": [
+      2048,
+      2048
+    ],
+    "input_dtype": "float32",
+    "output_shape": [
+      2048,
+      1025
+    ],
+    "finite": true,
+    "elapsed_seconds": 0.07512639998458326,
+    "device_name": "NVIDIA GeForce RTX 5070 Ti",
+    "compute_capability": [
+      12,
+      0
+    ],
+    "device_memory_bytes": 17094475776,
+    "torch_version": "2.11.0+cu128",
+    "cuda_runtime": "12.8",
+    "cudnn_version": 91900
+  },
+  "tests": {
+    "status": "pass",
+    "exit_code": 0,
+    "elapsed_seconds": 30.287730999989435,
+    "passed": 308,
+    "skipped": 0,
+    "failed": 0,
+    "warnings": 12
+  },
+  "interpretation": "This receipt verifies software execution and numerical finiteness in one runtime. It does not establish measurement validity on a new acquisition, clinical utility, diagnostic performance or intraoperative acquisition latency."
+}

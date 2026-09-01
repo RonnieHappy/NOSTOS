@@ -1,0 +1,28 @@
+{
+  "schema_version": "nostos-prospective-amendment-lock/1.0",
+  "locked_at_utc": "2026-08-28T22:20:30Z",
+  "amendment_version": "nostos-paired-acquisition-er-layout/1.0",
+  "parent_protocol": "nostos-paired-acquisition-support/1.0",
+  "file": {
+    "path": "docs/NOSTOS0_PAIRED_ACQUISITION_ER_LAYOUT_AMENDMENT.md",
+    "bytes": 2088,
+    "sha256": "c8336c1d927224c442db22958341ce9b9b4ca17fda6a4dcfb471ca33fbc643ac"
+  },
+  "official_code": {
+    "repository": "https://github.com/qc17-THU/DL-SR",
+    "commit": "7f9c8865aea1e6a067d055d419b19a459e7102c1",
+    "files_inspected": [
+      "data_agmt_matlab/DataAugumentation_ForTest.m",
+      "data_agmt_matlab/DataAugumentation_ForTrain.m"
+    ]
+  },
+  "evidence_seen_before_amendment": {
+    "archive": "ER.zip",
+    "archive_md5": "2bd05c7dba69a10b36a141407927d585",
+    "archive_member_names_listed": true,
+    "mrc_headers_read": true,
+    "biological_pixels_decoded": false,
+    "image_statistics_or_visuals_seen": false,
+    "confirmation_archives_opened": false
+  }
+}

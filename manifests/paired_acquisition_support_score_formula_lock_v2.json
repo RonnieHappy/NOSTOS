@@ -1,0 +1,156 @@
+{
+  "schema_version": "nostos-paired-acquisition-score-formula-lock/2.0",
+  "locked_at_utc": "2026-08-29T02:42:34Z",
+  "status": "locked_before_threshold_calibration_pixel_access",
+  "protocol_version": "nostos-paired-acquisition-support/5.0",
+  "implementation_sha256": "8810b3baa7a773bae940f2c39ffe32436d7b600238ceefe9d53d117dcdd86a08",
+  "supersedes": {
+    "path": "manifests/paired_acquisition_support_score_formula_lock.json",
+    "bytes": 5488,
+    "sha256": "cf31b304e646c29061cee852fc0d2f49b1ddca57b451fea1b3b062b44bed68a4",
+    "reason": "The first threshold commands stopped before archive access because the immutable pilot lock referenced the historical profile. Version 2 adds explicit historical-profile and runner lineage verification; estimator and selector semantics are unchanged."
+  },
+  "calibration_selection": {
+    "structures": ["CCPs", "ER"],
+    "partition": "threshold_calibration",
+    "rule": "Use every reference field assigned by sha256('BioSR-v9|' + structure + '|' + reference_group_id) first_uint64 modulo 4 in remainders 2 or 3.",
+    "pixel_or_reference_outcome_selection": false,
+    "score_design_overlap_allowed": false
+  },
+  "claim_endpoints": [
+    "hessian_blob_curve",
+    "hessian_tube_curve",
+    "spectral_anisotropy",
+    "spectral_entropy",
+    "tensor_coherence",
+    "tensor_orientation",
+    "variogram_horizontal_curve",
+    "variogram_vertical_curve",
+    "variogram_range_horizontal",
+    "variogram_range_vertical"
+  ],
+  "score": {
+    "condition": "full_contract",
+    "aggregation": "maximum",
+    "components": [
+      "acquisition_qc",
+      "physical_sampling",
+      "perturbation_stability",
+      "measurement_identifiability"
+    ],
+    "cross_scale_agreement": "diagnostic_only"
+  },
+  "threshold_selector": {
+    "candidate_rule": "Tied observed full-contract scores among reference-eligible, non-hard-abstention calibration cases.",
+    "selection_rule": "Select the highest-coverage candidate satisfying every aggregate and assessable structure-endpoint constraint; do not tune endpoints or score components.",
+    "target_overall_and_structure_endpoint_observed_risk": 0.1,
+    "maximum_stratified_reference_field_cluster_bootstrap_overall_risk_upper95": 0.15,
+    "minimum_overall_coverage": 0.8,
+    "minimum_assessable_structure_endpoint_coverage": 0.7,
+    "minimum_aurc_reduction_fraction_vs_always_emit": 0.2,
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 26082801,
+    "bootstrap_strata": "structure",
+    "bootstrap_cluster": "reference_group_id",
+    "not_assessable_rule": "A structure-endpoint combination with zero reference-eligible cases is reported as not assessable and cannot be called a pass.",
+    "failure_rule": "If no operating point passes, threshold calibration fails and these fields cannot be used for further tuning."
+  },
+  "comparators": {
+    "primary": "always_emit",
+    "ordinary_qc": "conventional_acquisition_qc evaluated under the identical risk and coverage selector",
+    "interpretation": "A pass versus always emit does not imply superiority to conventional QC; the QC comparison must be reported without spin."
+  },
+  "files": [
+    {
+      "path": "manifests/paired_acquisition_support_score_formula_lock.json",
+      "bytes": 5488,
+      "sha256": "cf31b304e646c29061cee852fc0d2f49b1ddca57b451fea1b3b062b44bed68a4"
+    },
+    {
+      "path": "manifests/paired_acquisition_support_profile_lineage_amendment_lock.json",
+      "bytes": 3098,
+      "sha256": "246a4c8309a77471010aab18116575898d0af2ce7b323cec0cc46b50f7072cf5"
+    },
+    {
+      "path": "configs/paired_acquisition_support_v5.locked.json",
+      "bytes": 4791,
+      "sha256": "711e5f4aaac8bcbeccb07bc94fb33dd3e51f5eeec2fea317a25ed0c8b66d7573"
+    },
+    {
+      "path": "configs/biosr_widefield_measurement_profile_v1.locked.json",
+      "bytes": 3385,
+      "sha256": "321ee833987351fd64c9a358e2b8682bf368d35ea22a14665c05b65d5c2f6942"
+    },
+    {
+      "path": "scripts/run_biosr_paired_support.py",
+      "bytes": 21519,
+      "sha256": "bba32d80cdf28c5909f73d82a9ca6a4dbd3be6ea062161a997ddf6cfc38d6c3f"
+    },
+    {
+      "path": "src/nostos/validation/paired_acquisition_support.py",
+      "bytes": 49810,
+      "sha256": "101ebbe1bceafa8916511560e3c5bdb8a42d0b9eded76d043fddec3465ede3e0"
+    },
+    {
+      "path": "src/nostos/features/spatial_fft.py",
+      "bytes": 7461,
+      "sha256": "2f18db7a1ded0e17ae091a53ddca0b44a37a5dbabd12ee1c61f2518deac23f68"
+    },
+    {
+      "path": "src/nostos/features/response_modules.py",
+      "bytes": 13184,
+      "sha256": "21902711c43675920380abb5762047d63911440cc78f35f14a5fc7d252191a85"
+    },
+    {
+      "path": "src/nostos/core/qc.py",
+      "bytes": 2241,
+      "sha256": "9e9fc39a35a2c000cf5ad47f07595c2052e327bad9c08b42b62011429e272353"
+    },
+    {
+      "path": "src/nostos/validation/metrics.py",
+      "bytes": 1785,
+      "sha256": "74e16c4479a6e5cb1c35246d70a2f3b1ab491627e8a815a3c4c429d1d759962e"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 2884,
+      "sha256": "9204767675b912b7f1ece4469799dc1009fa3e2afd966d7956bf6337faa5844c"
+    },
+    {
+      "path": "uv.lock",
+      "bytes": 266139,
+      "sha256": "48b9cd1ba22e808fa8ec60105551c1ad6c9549abdf4df44c9ed2c5a897b1efb1"
+    },
+    {
+      "path": "src/nostos/validation/threshold_calibration.py",
+      "bytes": 10586,
+      "sha256": "844ede65119fc4fdaa0f66b712c7eaf21dbde22eb891f8c94da2334d57e536f4"
+    },
+    {
+      "path": "scripts/calibrate_biosr_threshold_v5.py",
+      "bytes": 13634,
+      "sha256": "d607a8ba95aac8004f3f6b20c7fa1bb639110a78df256835bfdd79b41f11dbf7"
+    },
+    {
+      "path": "tests/test_threshold_calibration.py",
+      "bytes": 4486,
+      "sha256": "37796a3aab33815bf1ca55e6032f6c393442040bbc07b137e525c90a16fa35c0"
+    },
+    {
+      "path": "tests/test_biosr_lock_lineage.py",
+      "bytes": 778,
+      "sha256": "9df16af692a07b4a94c677896eed3f555cf7e1edc85df3858579f0c3f6606a4a"
+    },
+    {
+      "path": "manifests/biosr_small_pilot_v5_final_audit_receipt.json",
+      "bytes": 5404,
+      "sha256": "bbd6ae9489f788186531d6f150f716bd70ca13db8591960a18350d2812e2d308"
+    }
+  ],
+  "access_state": {
+    "score_design_pilot": "closed",
+    "threshold_calibration": "authorized_after_this_lock",
+    "confirmation_archives": "sealed_not_downloaded_not_listed_not_decoded"
+  },
+  "claim_boundary": "This lock authorizes one threshold-calibration analysis only. It does not authorize confirmation-data access until a passing threshold receipt is written and locked."
+}

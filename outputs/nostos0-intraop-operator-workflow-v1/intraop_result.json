@@ -1,0 +1,241 @@
+{
+  "schema_version": "nostos-intraop-label-free-result/1.4",
+  "status": "valid",
+  "intended_use": "research_use_only_intraoperative_integration",
+  "specimen_state": "unstained",
+  "modality": "polarization-resolved_forward_second_harmonic_generation",
+  "input": {
+    "shape": [
+      512,
+      512
+    ],
+    "pixel_size_um": 1.0,
+    "verified_stack_frame_count": 10,
+    "support_maps_supplied": true,
+    "mask_supplied": false,
+    "source_array_sha256": "0b55d705664db90bdcf74a66ab7c17966208649c41460cc86588e6fbb67467bb"
+  },
+  "profile": {
+    "profile_id": "pshg-tiss-unstained-fshg-local-orientation-v1",
+    "profile_sha256": "f3b93cd78cc772891e21a4867d0282fc2308e67c38fb8c7516b2a182a1b2bc9d",
+    "verified_evidence": {
+      "path": "outputs/nostos0-pshg-breast-orientation-v1/pshg_external_orientation.json",
+      "bytes": 7476,
+      "sha256": "4093cf2eba0f7013f9ce4d62f031dc06f33f9ae39ed839832be2f1984e062e01",
+      "status": "pass"
+    },
+    "exact_input_contract_satisfied": true,
+    "claim_boundary": "Confirms reference concordance for one local 2-D direction field on unstained breast tissue acquired with the deposited PSHG platform and the exact ten-frame construction. It does not establish an instrument-independent transform, molecular orientation, tissue diagnosis, cartilage transfer, mechanics, margins, treatment guidance or clinical utility."
+  },
+  "measurement": {
+    "endpoint": "local_axial_structure_orientation",
+    "integration_sigma_pixels": 2.0,
+    "integration_sigma_um": 2.0,
+    "evidence_status": "confirmed",
+    "summary": {
+      "eligible_pixels": 22410,
+      "eligible_fraction": 0.08548736572265625,
+      "mean_axial_orientation_degrees": 68.12788417574994,
+      "axial_resultant": 0.6453400538223901,
+      "median_coherence": 0.8396421884093686,
+      "p10_coherence": 0.5635272298082747,
+      "p90_coherence": 0.9492410224658565
+    },
+    "map_hashes": {
+      "orientation_degrees": "9fa3084746285c2e89a6e3651d53d7f86a82979e711bba09e21a8a34e908f426",
+      "coherence": "e076828f1255db737b690f1f69d8edae2e6e9f030d46dd7b94fed0b7a5b51258",
+      "eligible": "d66eb6586b7bb590b3d3c786fd2236d0523da44bd6c8b76e257f796704aaa9f9"
+    }
+  },
+  "acquisition_qc": {
+    "schema_version": "nostos-acquisition-qc-on-support/1.0",
+    "status": "pass",
+    "support_pixels": 23421,
+    "support_fraction": 0.08934402465820312,
+    "derivative_interior_pixels": 1024,
+    "robust_dynamic_range": 154.67999999999995,
+    "variance": 1089.9059147477856,
+    "normalized_laplacian_focus": 0.9306635425654721,
+    "tenengrad_focus_v2": 24106.37169921875,
+    "contrast_to_residual": 15.193026889880944,
+    "observed_endpoint_fraction": 8.539345032236028e-05,
+    "flags": [],
+    "domain_policy": "R2/SNR acquisition support before measurement-level edge and energy exclusions",
+    "outside_support_used": false,
+    "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+  },
+  "validity_reasons": [],
+  "reference_evaluation": null,
+  "clinical_output": {
+    "status": "withheld",
+    "diagnosis": null,
+    "margin_or_boundary": null,
+    "mechanical_property": null,
+    "treatment_recommendation": null,
+    "reason": "No locked prospective clinical endpoint, decision-impact study or patient-outcome evidence is registered for this acquisition profile."
+  },
+  "support_map_handling": {
+    "pixels": 262144,
+    "r2_nonfinite_pixels": 201541,
+    "snr_nonfinite_pixels": 201541,
+    "joint_finite_pixels": 60603,
+    "joint_nonfinite_pixels": 201541,
+    "policy": "non-finite support values are excluded without interpolation",
+    "interface_sentinels": {
+      "R2": -1.0,
+      "SNR": -1000000.0
+    },
+    "scientific_measurement_use": false
+  },
+  "acquisition_qc_full_field_diagnostic": {
+    "schema_version": "nostos-acquisition-qc/1.0",
+    "status": "review",
+    "robust_dynamic_range": 91.1,
+    "variance": 322.4502646294724,
+    "normalized_laplacian_focus": 0.3937176963627337,
+    "tenengrad_focus_v2": 3528.998205566406,
+    "contrast_to_residual": 627.5795225808381,
+    "observed_endpoint_fraction": 0.4332313537597656,
+    "flags": [
+      "HIGH_ENDPOINT_FRACTION"
+    ],
+    "interpretation": "Acquisition diagnostics only; thresholds are not tissue-quality or diagnostic criteria."
+  },
+  "support_aware_qc_contract": {
+    "reason": "unsupported rectangular-field background is not an acquired specimen signal",
+    "support_definition": "finite R2 and SNR at or above the frozen acquisition-profile thresholds",
+    "measurement_mask_changed": false,
+    "orientation_estimator_changed": false,
+    "clinical_interpretation_changed": false
+  },
+  "case_id": "breast_36",
+  "source_files": [
+    {
+      "name": "breast_36_FSHG_p0.tif",
+      "bytes": 266972,
+      "sha256": "ee2679a1a8630bc1d9f4821ef50e7e5b306883f75c88b0f6ed9e9e3ed816ee14"
+    },
+    {
+      "name": "breast_36_FSHG_p20.tif",
+      "bytes": 266972,
+      "sha256": "253a8579211839caeb88efd696b6a79a1c50ff87489943ed7d112c00f6dcc18a"
+    },
+    {
+      "name": "breast_36_FSHG_p40.tif",
+      "bytes": 266972,
+      "sha256": "cc83d4b90b98334f33536599fb9367649d312f95aa1176167a01446abb0c9138"
+    },
+    {
+      "name": "breast_36_FSHG_p60.tif",
+      "bytes": 266972,
+      "sha256": "b1b99d17b976084455e10dc02d04b97db23d206ad6b2e001e4e703ac9a9d6085"
+    },
+    {
+      "name": "breast_36_FSHG_p80.tif",
+      "bytes": 266972,
+      "sha256": "340aa8c61048a62e1695895232fd4f5cb30e2007f5d0da81264792bfbdb56a3d"
+    },
+    {
+      "name": "breast_36_FSHG_p100.tif",
+      "bytes": 266972,
+      "sha256": "bc14e681e2200cd7abc28f55b3ab3e70eda57457c3b452cbb62f674d7845b8bf"
+    },
+    {
+      "name": "breast_36_FSHG_p120.tif",
+      "bytes": 266972,
+      "sha256": "b68b6cf29ababf19659b65a3e843e3bd105d8350fe6734785149f6666d1b8b67"
+    },
+    {
+      "name": "breast_36_FSHG_p140.tif",
+      "bytes": 266972,
+      "sha256": "2bd1a29cd5ecb6c7aad806aaa709ce2da4042c196b26016fbe7ab95d7d56533a"
+    },
+    {
+      "name": "breast_36_FSHG_p160.tif",
+      "bytes": 266972,
+      "sha256": "998be15fa76c9d43da7e6575d21b429474a4db5e90b2b65bc3317be8b6cadc5f"
+    },
+    {
+      "name": "breast_36_FSHG_p180.tif",
+      "bytes": 266972,
+      "sha256": "9f2dfdbd0f4d2f0a013b459823440a16c40c4e611d8034336f9652df84178f2c"
+    },
+    {
+      "name": "R2.tif",
+      "bytes": 1048752,
+      "sha256": "4a72d96f0ef0e042e59012843a17a3ec8560c9bc017bfe3352d0269de791735e"
+    },
+    {
+      "name": "SNR.tif",
+      "bytes": 1048752,
+      "sha256": "9a713087fcc243c1ec0aff9cbedab86d45384567f29d77f77df8e5027a0d13ce"
+    }
+  ],
+  "runtime": {
+    "load_seconds": 0.025765900034457445,
+    "analysis_seconds": 0.09081170009449124,
+    "export_seconds": 0.26791579998098314,
+    "end_to_end_seconds": 0.39188340003602207,
+    "peak_python_memory_mb": 26.00392246246338,
+    "acquisition_time_included": false
+  },
+  "artifact_manifest": {
+    "schema_version": "nostos-artifact-manifest/1.0",
+    "expected_count": 7,
+    "unique_keys": true,
+    "unique_paths": true
+  },
+  "artifacts": {
+    "orientation_array": {
+      "path": "orientation_degrees.npy",
+      "media_type": "application/x-npy",
+      "bytes": 1048704,
+      "sha256": "f70ee2e948d9d3d31b3af7ab4c3e3d8b5e6ff8d7d23a7da7eb824abf5327c583"
+    },
+    "coherence_array": {
+      "path": "coherence.npy",
+      "media_type": "application/x-npy",
+      "bytes": 1048704,
+      "sha256": "e8a09be938333b11a14d277335cfa4cbefe1f1b9d7bcbe759eb1970e69180986"
+    },
+    "eligible_array": {
+      "path": "eligible.npy",
+      "media_type": "application/x-npy",
+      "bytes": 262272,
+      "sha256": "1649eed06dca2e44d1a5ac63a152e4c4ef7006dfdc74a57f3e398dba7fb4a4f4"
+    },
+    "source_image": {
+      "path": "source.png",
+      "media_type": "image/png",
+      "bytes": 173850,
+      "sha256": "7c22cf6d6469c62a4fe0bc50066e2e1269ba4967ba4a24fa23eae9b2d1649032"
+    },
+    "orientation_image": {
+      "path": "orientation.png",
+      "media_type": "image/png",
+      "bytes": 157920,
+      "sha256": "c6f4e120a0da6999c76d80e7052089e12b9a5641ae274028a2b06aac521c8e4d"
+    },
+    "coherence_image": {
+      "path": "coherence.png",
+      "media_type": "image/png",
+      "bytes": 260495,
+      "sha256": "7dbf65069ddf1e58f2c4af83c73fe761c76c32a3b67e61bc9bfe62c149777634"
+    },
+    "support_image": {
+      "path": "support.png",
+      "media_type": "image/png",
+      "bytes": 20968,
+      "sha256": "6460b03ddf5500ceccca8ba47f88127b802a742bb749de787ae24077d360e3a7"
+    }
+  },
+  "operator_provenance": {
+    "status": "verified_public_bundle",
+    "verified": true,
+    "matched_group": "breast_36",
+    "lock_file": "intraop_pshg_deployment_v1_4_lock.json",
+    "lock_sha256": "d8f0d58cf153fad8a204160e156b238de963d13d9a827477c816acd0ddca17b9",
+    "required_files": 12,
+    "policy": "Hash identity can confirm archived public inputs; formatting alone cannot validate a new instrument or acquisition."
+  }
+}

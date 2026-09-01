@@ -1,0 +1,2307 @@
+{
+  "schema_version": "nostos-biosr-v7-family-specific-evidence-audit/1.0",
+  "status": "safety_supported_but_incremental_benefit_not_established",
+  "family_specific_contract": {
+    "tensor_coherence": {
+      "strong_resolution_margin_governs": true,
+      "sigma_effective_input_pixels": 2.0,
+      "threshold_fraction_of_endpoint_tolerance": 0.8479366097649129,
+      "threshold_absolute_coherence": 0.12719049146473693
+    },
+    "tensor_orientation_distribution": {
+      "strong_resolution_margin_governs": false,
+      "reason": "Development risk-coverage discrimination was negligible; retaining the component would add rejection without supported benefit."
+    }
+  },
+  "safety_gate": {
+    "passes": true,
+    "full_contract": {
+      "eligible": 5010,
+      "accepted": 5008,
+      "coverage": 0.9996007984031936,
+      "invalid": 44,
+      "risk": 0.00878594249201278,
+      "cluster_bootstrap_risk_upper95": 0.015381769710040736,
+      "combinations": [
+        {
+          "structure": "CCPs",
+          "endpoint_family": "tensor_coherence",
+          "eligible": 1185,
+          "accepted": 1185,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "reference_fields": 30,
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "worst_field_risk": 0.0,
+          "by_field": [
+            {
+              "reference_group_id": "CCPs|Cell_002",
+              "eligible": 40,
+              "accepted": 40,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_003",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_004",
+              "eligible": 10,
+              "accepted": 10,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_005",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_006",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_007",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_009",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_010",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_011",
+              "eligible": 35,
+              "accepted": 35,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_013",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_016",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_021",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_023",
+              "eligible": 5,
+              "accepted": 5,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_025",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_026",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_028",
+              "eligible": 40,
+              "accepted": 40,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_029",
+              "eligible": 40,
+              "accepted": 40,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_030",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_031",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_035",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_040",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_041",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_044",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_046",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_047",
+              "eligible": 20,
+              "accepted": 20,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_048",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_049",
+              "eligible": 40,
+              "accepted": 40,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_051",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_053",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_054",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            }
+          ]
+        },
+        {
+          "structure": "CCPs",
+          "endpoint_family": "tensor_orientation_distribution",
+          "eligible": 1185,
+          "accepted": 1185,
+          "coverage": 1.0,
+          "invalid": 36,
+          "risk": 0.030379746835443037,
+          "reference_fields": 30,
+          "cluster_bootstrap_risk_upper95": 0.05738396624472574,
+          "worst_field_risk": 0.4,
+          "by_field": [
+            {
+              "reference_group_id": "CCPs|Cell_002",
+              "eligible": 40,
+              "accepted": 40,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_003",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_004",
+              "eligible": 10,
+              "accepted": 10,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_005",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_006",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 8,
+              "risk": 0.17777777777777778
+            },
+            {
+              "reference_group_id": "CCPs|Cell_007",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_009",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_010",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_011",
+              "eligible": 35,
+              "accepted": 35,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_013",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_016",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_021",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_023",
+              "eligible": 5,
+              "accepted": 5,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_025",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_026",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 3,
+              "risk": 0.06666666666666667
+            },
+            {
+              "reference_group_id": "CCPs|Cell_028",
+              "eligible": 40,
+              "accepted": 40,
+              "invalid": 16,
+              "risk": 0.4
+            },
+            {
+              "reference_group_id": "CCPs|Cell_029",
+              "eligible": 40,
+              "accepted": 40,
+              "invalid": 2,
+              "risk": 0.05
+            },
+            {
+              "reference_group_id": "CCPs|Cell_030",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 1,
+              "risk": 0.022222222222222223
+            },
+            {
+              "reference_group_id": "CCPs|Cell_031",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 5,
+              "risk": 0.2
+            },
+            {
+              "reference_group_id": "CCPs|Cell_035",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_040",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_041",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_044",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_046",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_047",
+              "eligible": 20,
+              "accepted": 20,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_048",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_049",
+              "eligible": 40,
+              "accepted": 40,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_051",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 1,
+              "risk": 0.022222222222222223
+            },
+            {
+              "reference_group_id": "CCPs|Cell_053",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_054",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            }
+          ]
+        },
+        {
+          "structure": "ER",
+          "endpoint_family": "tensor_coherence",
+          "eligible": 960,
+          "accepted": 958,
+          "coverage": 0.9979166666666667,
+          "invalid": 3,
+          "risk": 0.003131524008350731,
+          "reference_fields": 33,
+          "cluster_bootstrap_risk_upper95": 0.006237006237006237,
+          "worst_field_risk": 0.03333333333333333,
+          "by_field": [
+            {
+              "reference_group_id": "ER|Cell_001",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_005",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_006",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_007",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_010",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_013",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_014",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_015",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 1,
+              "risk": 0.03333333333333333
+            },
+            {
+              "reference_group_id": "ER|Cell_018",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_019",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_022",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_023",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_025",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_029",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_030",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_033",
+              "eligible": 30,
+              "accepted": 29,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_035",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_036",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_039",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_041",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_043",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_046",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_049",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 1,
+              "risk": 0.03333333333333333
+            },
+            {
+              "reference_group_id": "ER|Cell_051",
+              "eligible": 30,
+              "accepted": 29,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_054",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 1,
+              "risk": 0.03333333333333333
+            },
+            {
+              "reference_group_id": "ER|Cell_056",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_057",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_058",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_059",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_060",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_062",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_064",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_067",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            }
+          ]
+        },
+        {
+          "structure": "ER",
+          "endpoint_family": "tensor_orientation_distribution",
+          "eligible": 960,
+          "accepted": 960,
+          "coverage": 1.0,
+          "invalid": 5,
+          "risk": 0.005208333333333333,
+          "reference_fields": 33,
+          "cluster_bootstrap_risk_upper95": 0.010471204188481676,
+          "worst_field_risk": 0.06666666666666667,
+          "by_field": [
+            {
+              "reference_group_id": "ER|Cell_001",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_005",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_006",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_007",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_010",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_013",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_014",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_015",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_018",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_019",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_022",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_023",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_025",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_029",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_030",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_033",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_035",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_036",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_039",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_041",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_043",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_046",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_049",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_051",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 2,
+              "risk": 0.06666666666666667
+            },
+            {
+              "reference_group_id": "ER|Cell_054",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 2,
+              "risk": 0.06666666666666667
+            },
+            {
+              "reference_group_id": "ER|Cell_056",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_057",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_058",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 1,
+              "risk": 0.03333333333333333
+            },
+            {
+              "reference_group_id": "ER|Cell_059",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_060",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_062",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_064",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_067",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            }
+          ]
+        },
+        {
+          "structure": "Microtubules",
+          "endpoint_family": "tensor_coherence",
+          "eligible": 360,
+          "accepted": 360,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "reference_fields": 8,
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "worst_field_risk": 0.0,
+          "by_field": [
+            {
+              "reference_group_id": "Microtubules|Cell_001",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_002",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_015",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_019",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_041",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_044",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_051",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_055",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            }
+          ]
+        },
+        {
+          "structure": "Microtubules",
+          "endpoint_family": "tensor_orientation_distribution",
+          "eligible": 360,
+          "accepted": 360,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "reference_fields": 8,
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "worst_field_risk": 0.0,
+          "by_field": [
+            {
+              "reference_group_id": "Microtubules|Cell_001",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_002",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_015",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_019",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_041",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_044",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_051",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_055",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    "conventional_acquisition_qc": {
+      "eligible": 5010,
+      "accepted": 5010,
+      "coverage": 1.0,
+      "invalid": 45,
+      "risk": 0.008982035928143712,
+      "cluster_bootstrap_risk_upper95": 0.015587419403208872,
+      "combinations": [
+        {
+          "structure": "CCPs",
+          "endpoint_family": "tensor_coherence",
+          "eligible": 1185,
+          "accepted": 1185,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "reference_fields": 30,
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "worst_field_risk": 0.0,
+          "by_field": [
+            {
+              "reference_group_id": "CCPs|Cell_002",
+              "eligible": 40,
+              "accepted": 40,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_003",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_004",
+              "eligible": 10,
+              "accepted": 10,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_005",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_006",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_007",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_009",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_010",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_011",
+              "eligible": 35,
+              "accepted": 35,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_013",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_016",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_021",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_023",
+              "eligible": 5,
+              "accepted": 5,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_025",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_026",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_028",
+              "eligible": 40,
+              "accepted": 40,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_029",
+              "eligible": 40,
+              "accepted": 40,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_030",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_031",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_035",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_040",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_041",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_044",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_046",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_047",
+              "eligible": 20,
+              "accepted": 20,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_048",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_049",
+              "eligible": 40,
+              "accepted": 40,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_051",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_053",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_054",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            }
+          ]
+        },
+        {
+          "structure": "CCPs",
+          "endpoint_family": "tensor_orientation_distribution",
+          "eligible": 1185,
+          "accepted": 1185,
+          "coverage": 1.0,
+          "invalid": 36,
+          "risk": 0.030379746835443037,
+          "reference_fields": 30,
+          "cluster_bootstrap_risk_upper95": 0.05738396624472574,
+          "worst_field_risk": 0.4,
+          "by_field": [
+            {
+              "reference_group_id": "CCPs|Cell_002",
+              "eligible": 40,
+              "accepted": 40,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_003",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_004",
+              "eligible": 10,
+              "accepted": 10,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_005",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_006",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 8,
+              "risk": 0.17777777777777778
+            },
+            {
+              "reference_group_id": "CCPs|Cell_007",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_009",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_010",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_011",
+              "eligible": 35,
+              "accepted": 35,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_013",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_016",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_021",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_023",
+              "eligible": 5,
+              "accepted": 5,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_025",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_026",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 3,
+              "risk": 0.06666666666666667
+            },
+            {
+              "reference_group_id": "CCPs|Cell_028",
+              "eligible": 40,
+              "accepted": 40,
+              "invalid": 16,
+              "risk": 0.4
+            },
+            {
+              "reference_group_id": "CCPs|Cell_029",
+              "eligible": 40,
+              "accepted": 40,
+              "invalid": 2,
+              "risk": 0.05
+            },
+            {
+              "reference_group_id": "CCPs|Cell_030",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 1,
+              "risk": 0.022222222222222223
+            },
+            {
+              "reference_group_id": "CCPs|Cell_031",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 5,
+              "risk": 0.2
+            },
+            {
+              "reference_group_id": "CCPs|Cell_035",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_040",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_041",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_044",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_046",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_047",
+              "eligible": 20,
+              "accepted": 20,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_048",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_049",
+              "eligible": 40,
+              "accepted": 40,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_051",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 1,
+              "risk": 0.022222222222222223
+            },
+            {
+              "reference_group_id": "CCPs|Cell_053",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "CCPs|Cell_054",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            }
+          ]
+        },
+        {
+          "structure": "ER",
+          "endpoint_family": "tensor_coherence",
+          "eligible": 960,
+          "accepted": 960,
+          "coverage": 1.0,
+          "invalid": 4,
+          "risk": 0.004166666666666667,
+          "reference_fields": 33,
+          "cluster_bootstrap_risk_upper95": 0.007329842931937173,
+          "worst_field_risk": 0.03333333333333333,
+          "by_field": [
+            {
+              "reference_group_id": "ER|Cell_001",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_005",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_006",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_007",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_010",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_013",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_014",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_015",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 1,
+              "risk": 0.03333333333333333
+            },
+            {
+              "reference_group_id": "ER|Cell_018",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_019",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_022",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_023",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_025",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_029",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_030",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_033",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_035",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_036",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_039",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_041",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_043",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_046",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_049",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 1,
+              "risk": 0.03333333333333333
+            },
+            {
+              "reference_group_id": "ER|Cell_051",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 1,
+              "risk": 0.03333333333333333
+            },
+            {
+              "reference_group_id": "ER|Cell_054",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 1,
+              "risk": 0.03333333333333333
+            },
+            {
+              "reference_group_id": "ER|Cell_056",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_057",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_058",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_059",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_060",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_062",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_064",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_067",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            }
+          ]
+        },
+        {
+          "structure": "ER",
+          "endpoint_family": "tensor_orientation_distribution",
+          "eligible": 960,
+          "accepted": 960,
+          "coverage": 1.0,
+          "invalid": 5,
+          "risk": 0.005208333333333333,
+          "reference_fields": 33,
+          "cluster_bootstrap_risk_upper95": 0.010471204188481676,
+          "worst_field_risk": 0.06666666666666667,
+          "by_field": [
+            {
+              "reference_group_id": "ER|Cell_001",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_005",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_006",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_007",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_010",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_013",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_014",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_015",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_018",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_019",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_022",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_023",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_025",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_029",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_030",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_033",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_035",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_036",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_039",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_041",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_043",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_046",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_049",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_051",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 2,
+              "risk": 0.06666666666666667
+            },
+            {
+              "reference_group_id": "ER|Cell_054",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 2,
+              "risk": 0.06666666666666667
+            },
+            {
+              "reference_group_id": "ER|Cell_056",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_057",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_058",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 1,
+              "risk": 0.03333333333333333
+            },
+            {
+              "reference_group_id": "ER|Cell_059",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_060",
+              "eligible": 30,
+              "accepted": 30,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_062",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_064",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "ER|Cell_067",
+              "eligible": 25,
+              "accepted": 25,
+              "invalid": 0,
+              "risk": 0.0
+            }
+          ]
+        },
+        {
+          "structure": "Microtubules",
+          "endpoint_family": "tensor_coherence",
+          "eligible": 360,
+          "accepted": 360,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "reference_fields": 8,
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "worst_field_risk": 0.0,
+          "by_field": [
+            {
+              "reference_group_id": "Microtubules|Cell_001",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_002",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_015",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_019",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_041",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_044",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_051",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_055",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            }
+          ]
+        },
+        {
+          "structure": "Microtubules",
+          "endpoint_family": "tensor_orientation_distribution",
+          "eligible": 360,
+          "accepted": 360,
+          "coverage": 1.0,
+          "invalid": 0,
+          "risk": 0.0,
+          "reference_fields": 8,
+          "cluster_bootstrap_risk_upper95": 0.0,
+          "worst_field_risk": 0.0,
+          "by_field": [
+            {
+              "reference_group_id": "Microtubules|Cell_001",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_002",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_015",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_019",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_041",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_044",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_051",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            },
+            {
+              "reference_group_id": "Microtubules|Cell_055",
+              "eligible": 45,
+              "accepted": 45,
+              "invalid": 0,
+              "risk": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "incremental_comparator_operating_point": {
+    "full_accepted": 5008,
+    "full_risk": 0.00878594249201278,
+    "comparator_accepted": 5010,
+    "comparator_risk": 0.008982035928143712,
+    "full_minus_comparator_risk": -0.00019609343613093307,
+    "coverage_loss_vs_comparator": 0.0003992015968063872,
+    "comparator_only_rejections": 2,
+    "invalid_comparator_only_rejections": 1,
+    "comparator_only_rejection_risk": 0.5,
+    "invalid_enrichment_among_comparator_only_rejections": 55.66666666666667
+  },
+  "coherence_risk_coverage_evidence": {
+    "endpoint_family": "tensor_coherence",
+    "eligible_rows": 2505,
+    "reference_fields": 71,
+    "invalid_rows": 4,
+    "invalid_reference_fields": 4,
+    "observed": {
+      "full_contract_aurc": 3.190999906073685e-06,
+      "conventional_acquisition_qc_aurc": 3.059254009078788e-05,
+      "comparator_minus_full": 2.7401540184714197e-05,
+      "relative_reduction": 0.8956935286640494
+    },
+    "bootstrap": {
+      "draws": 10000,
+      "seed": 26082929,
+      "resampling_unit": "reference_group_id stratified by structure",
+      "difference_direction": "positive comparator-minus-full values favor the complete contract",
+      "finite_draws": 10000,
+      "median": 2.6317327597249477e-05,
+      "ci95": [
+        2.8995804334028842e-06,
+        7.35439905435041e-05
+      ],
+      "probability_full_better": 0.9876,
+      "probability_full_noninferior": 1.0,
+      "structure_specific": {
+        "CCPs": {
+          "finite_draws": 10000,
+          "median": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "probability_full_better": 0.0,
+          "probability_full_noninferior": 1.0
+        },
+        "ER": {
+          "finite_draws": 10000,
+          "median": 9.983739706708128e-05,
+          "ci95": [
+            2.2610545539135454e-06,
+            0.0003137644999822707
+          ],
+          "probability_full_better": 0.9838,
+          "probability_full_noninferior": 0.9962
+        },
+        "Microtubules": {
+          "finite_draws": 10000,
+          "median": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "probability_full_better": 0.0,
+          "probability_full_noninferior": 1.0
+        }
+      }
+    }
+  },
+  "evidence_strength_gate": {
+    "minimum_probability_full_better": 0.95,
+    "requires_positive_ci95_lower_bound": true,
+    "requires_evaluation_independent_of_threshold_selection": true,
+    "evaluation_independent_of_threshold_selection": false,
+    "observed_invalid_reference_fields": 4,
+    "selection_warning": "The coherence cutoff was selected from these same development outcomes. A field-cluster bootstrap conditional on that selected cutoff does not account for selection optimism and is descriptive only.",
+    "passes": false,
+    "decision": "do not claim incremental benefit from development; require untouched F-actin confirmation"
+  },
+  "freeze_decision": {
+    "eligible_to_freeze_measurement_safety_contract": true,
+    "eligible_to_freeze_incremental_benefit_claim": false,
+    "rationale": "A safety-valid estimator may proceed to untouched confirmation even when sparse development failures cannot establish contract superiority. The confirmation lock must keep those claims separate."
+  },
+  "scope": {
+    "structures": [
+      "CCPs",
+      "ER",
+      "Microtubules"
+    ],
+    "reference_fields": 71,
+    "endpoint_rows": 5400,
+    "f_actin_image_members_decoded": 0,
+    "f_actin_endpoint_outcomes_computed": 0
+  },
+  "lineage": {
+    "base_rows_sha256": "8486185227ba71467bea1d999c766ed65052014cdc14f99d25fa3a241099eb4b",
+    "resolution_margin_rows_sha256": "05bd34452588fdb831961de97dcfa6d6aa62394cb6c815cf4db882a8244e6778",
+    "calibration_receipt_sha256": "496f2ec5377540c9f5fc94f3578cf4604b8f327e7ab9a4e80bb26121aa4d4900",
+    "implementation_sha256": "3907cc6ef6e3617f710ced54930c1fe9ffc4ec88cdd62d6404d0ca4c9a5aedd2",
+    "runner_sha256": "167209fee88606a3a876cdbba8c0d30008007ff0807c1cc494b2ae352ca691cd"
+  },
+  "artifacts": {
+    "family_specific_tensor_cases": {
+      "path": "outputs/nostos0-biosr-v7-family-specific-evidence-audit/family_specific_tensor_cases.jsonl",
+      "bytes": 19454537,
+      "sha256": "59d12bcc8001f1eba58ff399d0b621fbe2724431956409ebae9e68707fc4a18c"
+    }
+  },
+  "claim_boundary": "Post-failure development only. It supports freezing a family-specific safety contract, not an incremental-superiority claim and not any conclusion about F-actin."
+}

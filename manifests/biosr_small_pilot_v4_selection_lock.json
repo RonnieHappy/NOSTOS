@@ -1,0 +1,30 @@
+{
+  "schema_version": "nostos-biosr-small-pilot-selection/4.0",
+  "locked_at_utc": "2026-08-28T23:48:04Z",
+  "analysis_role": "developmental_balanced_pilot",
+  "selection_rule": "First six lexicographically sorted score-design cell identifiers in each development structure.",
+  "version_4_repair_lock": {
+    "path": "manifests/paired_acquisition_support_pilot_repair_v4_lock.json",
+    "bytes": 2319,
+    "sha256": "629353a98eee27e83e8b92e2d176143da731ca6bdffb3caf0eb0ceac686580c9"
+  },
+  "selected": {
+    "CCPs": ["Cell_001", "Cell_008", "Cell_012", "Cell_014", "Cell_015", "Cell_017"],
+    "ER": ["Cell_002", "Cell_003", "Cell_004", "Cell_008", "Cell_009", "Cell_011"]
+  },
+  "expected": {
+    "reference_fields": 12,
+    "paired_acquisitions": 90,
+    "endpoint_cases": 1890,
+    "CCPs_levels_per_field": 9,
+    "ER_levels_per_field": 6,
+    "endpoints_per_pair": 21
+  },
+  "access_state": {
+    "version_4_smoke": "Cell_001 CCPs and Cell_002 ER observed",
+    "other_selected_fields_under_version_4": "not_observed",
+    "threshold_calibration": "sealed",
+    "confirmation_archives": "not_downloaded_not_listed_not_decoded"
+  },
+  "claim_boundary": "This pilot may test implementation behavior and expose endpoint failures. It cannot establish final thresholds, generalization, clinical validity, or submission readiness."
+}

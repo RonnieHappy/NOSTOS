@@ -1,0 +1,2237 @@
+{
+  "acquisition_stratum_support": {
+    "independent_groups_by_stratum": {
+      "WideField": 4
+    },
+    "metadata_key": "acquisition_modality",
+    "minimum_independent_development_groups": 2,
+    "supported_strata": [
+      "WideField"
+    ],
+    "unsupported_action": "hard_abstention",
+    "unsupported_strata": []
+  },
+  "calibration": {
+    "bins": 5,
+    "candidates": {
+      "conventional_acquisition_qc": {
+        "cross_fitted_metrics": {
+          "brier_score": 0.11043902445007175,
+          "expected_calibration_error": 0.04487934389583573,
+          "logarithmic_loss": 0.3379098942210867,
+          "risk_coverage_auc": 0.14938879170209812
+        },
+        "risk_maps": {
+          "spectral_order": {
+            "bins": 5,
+            "method": "quantile_binned_jeffreys_isotonic",
+            "prior_alpha": 0.5,
+            "prior_beta": 0.5,
+            "training_cases": 160,
+            "training_invalid": 0,
+            "x_thresholds": [
+              0.11766932336849868,
+              0.24348001532769048
+            ],
+            "y_thresholds": [
+              0.015151515151515152,
+              0.015151515151515152
+            ]
+          },
+          "tensor_coherence": {
+            "bins": 5,
+            "method": "quantile_binned_jeffreys_isotonic",
+            "prior_alpha": 0.5,
+            "prior_beta": 0.5,
+            "training_cases": 240,
+            "training_invalid": 175,
+            "x_thresholds": [
+              0.11766932336849871,
+              0.14597139778421564,
+              0.15636427140416773,
+              0.19248441605920816,
+              0.24348001532769045
+            ],
+            "y_thresholds": [
+              0.4387755102040816,
+              0.6020408163265306,
+              0.6020408163265306,
+              0.9897959183673469,
+              0.9897959183673469
+            ]
+          },
+          "tensor_orientation_distribution": {
+            "bins": 5,
+            "method": "quantile_binned_jeffreys_isotonic",
+            "prior_alpha": 0.5,
+            "prior_beta": 0.5,
+            "training_cases": 100,
+            "training_invalid": 48,
+            "x_thresholds": [
+              0.11585863360635053,
+              0.14546932002722707,
+              0.15741734978877714,
+              0.20057086238337551,
+              0.24129902971192385
+            ],
+            "y_thresholds": [
+              0.021739130434782608,
+              0.022727272727272728,
+              0.6590909090909091,
+              0.880952380952381,
+              0.9705882352941176
+            ]
+          }
+        }
+      },
+      "declared_capture_stability_contract": {
+        "cross_fitted_metrics": {
+          "brier_score": 0.06496510047259284,
+          "expected_calibration_error": 0.09735345254070732,
+          "logarithmic_loss": 1.0354039042697032,
+          "risk_coverage_auc": 0.14174091768560876
+        },
+        "risk_maps": {
+          "spectral_order": {
+            "bins": 5,
+            "method": "quantile_binned_jeffreys_isotonic",
+            "prior_alpha": 0.5,
+            "prior_beta": 0.5,
+            "training_cases": 160,
+            "training_invalid": 0,
+            "x_thresholds": [
+              0.027473839856072102,
+              3.0284787526566883
+            ],
+            "y_thresholds": [
+              0.015151515151515152,
+              0.015151515151515152
+            ]
+          },
+          "tensor_coherence": {
+            "bins": 5,
+            "method": "quantile_binned_jeffreys_isotonic",
+            "prior_alpha": 0.5,
+            "prior_beta": 0.5,
+            "training_cases": 240,
+            "training_invalid": 175,
+            "x_thresholds": [
+              0.2811533073692816,
+              0.6937346091974042,
+              1.219433697526872,
+              3.081061607461909
+            ],
+            "y_thresholds": [
+              0.01020408163265306,
+              0.6428571428571429,
+              0.9897959183673469,
+              0.9897959183673469
+            ]
+          },
+          "tensor_orientation_distribution": {
+            "bins": 5,
+            "method": "quantile_binned_jeffreys_isotonic",
+            "prior_alpha": 0.5,
+            "prior_beta": 0.5,
+            "training_cases": 29,
+            "training_invalid": 0,
+            "x_thresholds": [
+              0.11003173898124317,
+              0.14838931748255363,
+              0.18915892585716967,
+              0.49796800656970147,
+              0.7319824713683524
+            ],
+            "y_thresholds": [
+              0.06235827664399093,
+              0.06235827664399093,
+              0.07142857142857142,
+              0.07142857142857142,
+              0.125
+            ]
+          }
+        }
+      },
+      "full_contract": {
+        "cross_fitted_metrics": {
+          "brier_score": 0.1442094059996432,
+          "expected_calibration_error": 0.09747344001935146,
+          "logarithmic_loss": 1.2564305925964925,
+          "risk_coverage_auc": 0.18667606223874667
+        },
+        "risk_maps": {
+          "spectral_order": {
+            "bins": 5,
+            "method": "quantile_binned_jeffreys_isotonic",
+            "prior_alpha": 0.5,
+            "prior_beta": 0.5,
+            "training_cases": 160,
+            "training_invalid": 0,
+            "x_thresholds": [
+              0.11766932336849868,
+              0.24348001532769048
+            ],
+            "y_thresholds": [
+              0.015151515151515152,
+              0.015151515151515152
+            ]
+          },
+          "tensor_coherence": {
+            "bins": 5,
+            "method": "quantile_binned_jeffreys_isotonic",
+            "prior_alpha": 0.5,
+            "prior_beta": 0.5,
+            "training_cases": 240,
+            "training_invalid": 175,
+            "x_thresholds": [
+              0.17998230599844636,
+              0.33242532785858525
+            ],
+            "y_thresholds": [
+              0.7245170422335601,
+              0.7245170422335601
+            ]
+          },
+          "tensor_orientation_distribution": {
+            "bins": 5,
+            "method": "quantile_binned_jeffreys_isotonic",
+            "prior_alpha": 0.5,
+            "prior_beta": 0.5,
+            "training_cases": 29,
+            "training_invalid": 0,
+            "x_thresholds": [
+              0.8681958553564565,
+              0.9606468846188808,
+              0.979133543464728
+            ],
+            "y_thresholds": [
+              0.06654456654456654,
+              0.06654456654456654,
+              0.125
+            ]
+          }
+        }
+      },
+      "full_contract_without_identifiability": {
+        "cross_fitted_metrics": {
+          "brier_score": 0.13140772978305074,
+          "expected_calibration_error": 0.06139362447902218,
+          "logarithmic_loss": 0.39679857985524514,
+          "risk_coverage_auc": 0.18248634821037435
+        },
+        "risk_maps": {
+          "spectral_order": {
+            "bins": 5,
+            "method": "quantile_binned_jeffreys_isotonic",
+            "prior_alpha": 0.5,
+            "prior_beta": 0.5,
+            "training_cases": 160,
+            "training_invalid": 0,
+            "x_thresholds": [
+              0.11766932336849868,
+              0.24348001532769048
+            ],
+            "y_thresholds": [
+              0.015151515151515152,
+              0.015151515151515152
+            ]
+          },
+          "tensor_coherence": {
+            "bins": 5,
+            "method": "quantile_binned_jeffreys_isotonic",
+            "prior_alpha": 0.5,
+            "prior_beta": 0.5,
+            "training_cases": 240,
+            "training_invalid": 175,
+            "x_thresholds": [
+              0.17998230599844636,
+              0.33242532785858525
+            ],
+            "y_thresholds": [
+              0.7245170422335601,
+              0.7245170422335601
+            ]
+          },
+          "tensor_orientation_distribution": {
+            "bins": 5,
+            "method": "quantile_binned_jeffreys_isotonic",
+            "prior_alpha": 0.5,
+            "prior_beta": 0.5,
+            "training_cases": 100,
+            "training_invalid": 48,
+            "x_thresholds": [
+              0.12192457228099689,
+              0.18051948182685212,
+              0.25301112132802694,
+              0.3539496704607249,
+              0.5665326726936125
+            ],
+            "y_thresholds": [
+              0.022727272727272728,
+              0.20454545454545456,
+              0.6428571428571429,
+              0.6428571428571429,
+              0.9736842105263158
+            ]
+          }
+        }
+      },
+      "full_contract_without_perturbation": {
+        "cross_fitted_metrics": {
+          "brier_score": 0.12494730328564498,
+          "expected_calibration_error": 0.08562539456784365,
+          "logarithmic_loss": 1.19227728479642,
+          "risk_coverage_auc": 0.16360349557240708
+        },
+        "risk_maps": {
+          "spectral_order": {
+            "bins": 5,
+            "method": "quantile_binned_jeffreys_isotonic",
+            "prior_alpha": 0.5,
+            "prior_beta": 0.5,
+            "training_cases": 160,
+            "training_invalid": 0,
+            "x_thresholds": [
+              0.11766932336849868,
+              0.24348001532769048
+            ],
+            "y_thresholds": [
+              0.015151515151515152,
+              0.015151515151515152
+            ]
+          },
+          "tensor_coherence": {
+            "bins": 5,
+            "method": "quantile_binned_jeffreys_isotonic",
+            "prior_alpha": 0.5,
+            "prior_beta": 0.5,
+            "training_cases": 240,
+            "training_invalid": 175,
+            "x_thresholds": [
+              0.11766932336849871,
+              0.14597139778421564,
+              0.15636427140416773,
+              0.19248441605920816,
+              0.24348001532769045
+            ],
+            "y_thresholds": [
+              0.4387755102040816,
+              0.6020408163265306,
+              0.6020408163265306,
+              0.9897959183673469,
+              0.9897959183673469
+            ]
+          },
+          "tensor_orientation_distribution": {
+            "bins": 5,
+            "method": "quantile_binned_jeffreys_isotonic",
+            "prior_alpha": 0.5,
+            "prior_beta": 0.5,
+            "training_cases": 29,
+            "training_invalid": 0,
+            "x_thresholds": [
+              0.8681958553564565,
+              0.9606468846188808,
+              0.979133543464728
+            ],
+            "y_thresholds": [
+              0.06654456654456654,
+              0.06654456654456654,
+              0.125
+            ]
+          }
+        }
+      },
+      "full_contract_without_qc": {
+        "cross_fitted_metrics": {
+          "brier_score": 0.14218999660899653,
+          "expected_calibration_error": 0.06751176470588234,
+          "logarithmic_loss": 1.2516284851796617,
+          "risk_coverage_auc": 0.17792926747685972
+        },
+        "risk_maps": {
+          "spectral_order": {
+            "bins": 5,
+            "method": "quantile_binned_jeffreys_isotonic",
+            "prior_alpha": 0.5,
+            "prior_beta": 0.5,
+            "training_cases": 160,
+            "training_invalid": 0,
+            "x_thresholds": [
+              0.008639411653904201,
+              0.07153663179324762
+            ],
+            "y_thresholds": [
+              0.015151515151515152,
+              0.015151515151515152
+            ]
+          },
+          "tensor_coherence": {
+            "bins": 5,
+            "method": "quantile_binned_jeffreys_isotonic",
+            "prior_alpha": 0.5,
+            "prior_beta": 0.5,
+            "training_cases": 240,
+            "training_invalid": 175,
+            "x_thresholds": [
+              0.07102466802518215,
+              0.3314220399294752
+            ],
+            "y_thresholds": [
+              0.7244897959183674,
+              0.7244897959183674
+            ]
+          },
+          "tensor_orientation_distribution": {
+            "bins": 5,
+            "method": "quantile_binned_jeffreys_isotonic",
+            "prior_alpha": 0.5,
+            "prior_beta": 0.5,
+            "training_cases": 29,
+            "training_invalid": 0,
+            "x_thresholds": [
+              0.8681958553564565,
+              0.9606468846188808,
+              0.979133543464728
+            ],
+            "y_thresholds": [
+              0.06654456654456654,
+              0.06654456654456654,
+              0.125
+            ]
+          }
+        }
+      },
+      "perturbation_stability_only": {
+        "cross_fitted_metrics": {
+          "brier_score": 0.14129855110112904,
+          "expected_calibration_error": 0.02866195092020339,
+          "logarithmic_loss": 0.42069635734005534,
+          "risk_coverage_auc": 0.17838570809307652
+        },
+        "risk_maps": {
+          "spectral_order": {
+            "bins": 5,
+            "method": "quantile_binned_jeffreys_isotonic",
+            "prior_alpha": 0.5,
+            "prior_beta": 0.5,
+            "training_cases": 160,
+            "training_invalid": 0,
+            "x_thresholds": [
+              0.008639411653904201,
+              0.07153663179324762
+            ],
+            "y_thresholds": [
+              0.015151515151515152,
+              0.015151515151515152
+            ]
+          },
+          "tensor_coherence": {
+            "bins": 5,
+            "method": "quantile_binned_jeffreys_isotonic",
+            "prior_alpha": 0.5,
+            "prior_beta": 0.5,
+            "training_cases": 240,
+            "training_invalid": 175,
+            "x_thresholds": [
+              0.07102466802518215,
+              0.3314220399294752
+            ],
+            "y_thresholds": [
+              0.7244897959183674,
+              0.7244897959183674
+            ]
+          },
+          "tensor_orientation_distribution": {
+            "bins": 5,
+            "method": "quantile_binned_jeffreys_isotonic",
+            "prior_alpha": 0.5,
+            "prior_beta": 0.5,
+            "training_cases": 100,
+            "training_invalid": 48,
+            "x_thresholds": [
+              0.09985932284413278,
+              0.15537113752509352,
+              0.2172281999642917,
+              0.3522267770576074,
+              0.5665326726936125
+            ],
+            "y_thresholds": [
+              0.11904761904761904,
+              0.3953384014359624,
+              0.3953384014359624,
+              0.5681818181818182,
+              0.9736842105263158
+            ]
+          }
+        }
+      }
+    },
+    "fold_seed": 26082951,
+    "folds": 2,
+    "prior_alpha": 0.5,
+    "prior_beta": 0.5
+  },
+  "claim_boundary": {
+    "claim": "A widefield-specific, input-only validity profile can control silent-invalid dimensionless structural measurements on independently held-out fields of view.",
+    "excluded_claims": [
+      "biological interpretation of any endpoint",
+      "physical-scale measurement because pixel spacing is not supplied",
+      "image restoration or denoising performance",
+      "cross-modality equivalence of calibrated risk",
+      "clinical or intraoperative utility"
+    ],
+    "study_type": "computation_only_public_data_methods_validation"
+  },
+  "compiler_version": "nostos-validity-profile-compiler/1.0",
+  "config_sha256": "de24869e0176c1f9c2be1035fa41f6376a66e21b5cc4eab5fd59e5775c3c7643",
+  "confirmation_gates": {
+    "bootstrap_replicates": 5000,
+    "bootstrap_seed": 26082971,
+    "maximum_cluster_bootstrap_risk_upper95": 0.4,
+    "maximum_observed_risk": 0.15,
+    "minimum_coverage": 0.2,
+    "minimum_independent_groups": 4,
+    "minimum_invalid_acquisition_qc_emissions": 5,
+    "minimum_relative_risk_reduction_vs_acquisition_qc": 0.2,
+    "require_aurc_bootstrap_ci_lower_above_zero": true,
+    "require_positive_aurc_difference": true
+  },
+  "content_sha256": "65239b44c66a8bfca80608b1544fd0c892cf8e3209805828a1623d85382eebb8",
+  "development": {
+    "calibration_cases": 500,
+    "calibration_independent_group_count": 4,
+    "eligible_cases": 500,
+    "group_set_sha256": "6a9689b96ce6d66341f66a9e1047eaf8dcf1660a678df2897e9384a659cc7a54",
+    "independent_group_count": 4,
+    "independent_groups": [
+      "WideField_BPAE_R|fov13",
+      "WideField_BPAE_R|fov15",
+      "WideField_BPAE_R|fov7",
+      "WideField_BPAE_R|fov9"
+    ],
+    "source_receipt": {
+      "bytes": 2032155,
+      "config_bytes": 6701,
+      "config_file_sha256": "62f1e77f5e380abb3943e6014c0d0603747a403c50d06a6e2a18a17fb544045b",
+      "config_name": "fmd_widefield_validity_profile_v1_3.locked.json",
+      "name": "development_rows.jsonl",
+      "sha256": "feaf9e734a3b68dd591251c4b17452e953aea2b95a5f99d6b8fb8959459123f6"
+    }
+  },
+  "measurement": {
+    "analysis_scales_px": [
+      4.0,
+      8.0,
+      16.0
+    ],
+    "calibration_status": "pixel_relative_only",
+    "endpoint_families": {
+      "spectral_order": [
+        "spectral_anisotropy",
+        "spectral_entropy"
+      ],
+      "tensor_coherence": [
+        "tensor_coherence"
+      ],
+      "tensor_orientation_distribution": [
+        "tensor_orientation"
+      ]
+    },
+    "included_endpoints": [
+      "tensor_orientation",
+      "tensor_coherence",
+      "spectral_anisotropy",
+      "spectral_entropy"
+    ],
+    "input_only_score": {
+      "capture_weight": 1.0,
+      "deployment_precondition": "The acquisition profile declares the number of independent captures contributing to the analyzed image.",
+      "formula": "capture_weight * max(0, sqrt(target_averaged_captures / averaged_captures) - 1) + perturbation_weight * perturbation_stability",
+      "perturbation_weight": 1.0,
+      "score_key": "declared_capture_stability_contract",
+      "target_averaged_captures": 16
+    },
+    "invalidity_tolerances": {
+      "normalized_response_curve_distance": 0.25,
+      "normalized_variogram_curve_distance": 0.25,
+      "spectral_anisotropy_absolute": 0.15,
+      "spectral_entropy_absolute": 0.1,
+      "spectral_scale_relative": 0.25,
+      "tensor_coherence_absolute": 0.15,
+      "tensor_orientation_degrees": 10.0,
+      "variogram_range_relative": 0.5,
+      "winning_scale_log2_absolute": 0.5
+    },
+    "minimum_samples_per_scale": 4.0,
+    "primary_endpoint_family": "tensor_coherence",
+    "reference_eligibility": {
+      "maximum_cross_estimator_orientation_disagreement_degrees": 20.0,
+      "maximum_reference_orientation_probe_drift_degrees": 5.0,
+      "maximum_reference_scalar_probe_drift": 0.1,
+      "minimum_normalized_curve_energy": 1e-06,
+      "minimum_orientation_resultant": 0.15,
+      "minimum_spectral_orientation_anisotropy": 0.15
+    },
+    "spectral_analysis": {
+      "maximum_fraction_of_effective_input_nyquist": 0.9,
+      "minimum_fraction_of_effective_input_nyquist": 0.02
+    }
+  },
+  "operating_point": {
+    "candidate_count": 101,
+    "candidates": [
+      {
+        "accepted": 24,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.1,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.02,
+        "risk": 0.0
+      },
+      {
+        "accepted": 25,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.10416666666666667,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.0372872669908481,
+        "risk": 0.0
+      },
+      {
+        "accepted": 26,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.10833333333333334,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.038869008980156355,
+        "risk": 0.0
+      },
+      {
+        "accepted": 27,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.1125,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.039700882426841874,
+        "risk": 0.0
+      },
+      {
+        "accepted": 28,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.11666666666666667,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.041535308328201785,
+        "risk": 0.0
+      },
+      {
+        "accepted": 29,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.12083333333333333,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.060469594429973114,
+        "risk": 0.0
+      },
+      {
+        "accepted": 30,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.125,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.06085524646614683,
+        "risk": 0.0
+      },
+      {
+        "accepted": 31,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.12916666666666668,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.06206565330136339,
+        "risk": 0.0
+      },
+      {
+        "accepted": 32,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.13333333333333333,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.06595308199253239,
+        "risk": 0.0
+      },
+      {
+        "accepted": 33,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.1375,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.06672025674160517,
+        "risk": 0.0
+      },
+      {
+        "accepted": 34,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.14166666666666666,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.06806424771689479,
+        "risk": 0.0
+      },
+      {
+        "accepted": 35,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.14583333333333334,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.06968108174503328,
+        "risk": 0.0
+      },
+      {
+        "accepted": 36,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.15,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.07038852466847009,
+        "risk": 0.0
+      },
+      {
+        "accepted": 37,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.15416666666666667,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.08573928555727374,
+        "risk": 0.0
+      },
+      {
+        "accepted": 38,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.15833333333333333,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.08670210562849574,
+        "risk": 0.0
+      },
+      {
+        "accepted": 39,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.1625,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.09132720333967509,
+        "risk": 0.0
+      },
+      {
+        "accepted": 40,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.16666666666666666,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.09505135724853767,
+        "risk": 0.0
+      },
+      {
+        "accepted": 41,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.17083333333333334,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.15755438694592475,
+        "risk": 0.0
+      },
+      {
+        "accepted": 42,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.175,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.15870422371676887,
+        "risk": 0.0
+      },
+      {
+        "accepted": 43,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.17916666666666667,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.15975899376238992,
+        "risk": 0.0
+      },
+      {
+        "accepted": 44,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.18333333333333332,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.16146204212632037,
+        "risk": 0.0
+      },
+      {
+        "accepted": 45,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.1875,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.1622191029957117,
+        "risk": 0.0
+      },
+      {
+        "accepted": 46,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.19166666666666668,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.16362851167461495,
+        "risk": 0.0
+      },
+      {
+        "accepted": 47,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": false,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.19583333333333333,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": false,
+        "predicted_risk_threshold": 0.16380636657246767,
+        "risk": 0.0
+      },
+      {
+        "accepted": 48,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.2,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": true,
+        "predicted_risk_threshold": 0.16462166585147583,
+        "risk": 0.0
+      },
+      {
+        "accepted": 49,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.20416666666666666,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": true,
+        "predicted_risk_threshold": 0.5171368473336115,
+        "risk": 0.0
+      },
+      {
+        "accepted": 50,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.20833333333333334,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": true,
+        "predicted_risk_threshold": 0.51819161531848,
+        "risk": 0.0
+      },
+      {
+        "accepted": 51,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.2125,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": true,
+        "predicted_risk_threshold": 0.5211357639280425,
+        "risk": 0.0
+      },
+      {
+        "accepted": 52,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.21666666666666667,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": true,
+        "predicted_risk_threshold": 0.5241469373472274,
+        "risk": 0.0
+      },
+      {
+        "accepted": 53,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.22083333333333333,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": true,
+        "predicted_risk_threshold": 0.524729632308589,
+        "risk": 0.0
+      },
+      {
+        "accepted": 54,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.225,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": true,
+        "predicted_risk_threshold": 0.5261980966569129,
+        "risk": 0.0
+      },
+      {
+        "accepted": 55,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.22916666666666666,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": true,
+        "predicted_risk_threshold": 0.5267700259143725,
+        "risk": 0.0
+      },
+      {
+        "accepted": 56,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.23333333333333334,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": true,
+        "predicted_risk_threshold": 0.5278645076357436,
+        "risk": 0.0
+      },
+      {
+        "accepted": 57,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.2375,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": true,
+        "predicted_risk_threshold": 0.5313907600287638,
+        "risk": 0.0
+      },
+      {
+        "accepted": 58,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.24166666666666667,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": true,
+        "predicted_risk_threshold": 0.5330772341905169,
+        "risk": 0.0
+      },
+      {
+        "accepted": 59,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.24583333333333332,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": true,
+        "predicted_risk_threshold": 0.5337560348571759,
+        "risk": 0.0
+      },
+      {
+        "accepted": 60,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.25,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": true,
+        "predicted_risk_threshold": 0.5354443868899909,
+        "risk": 0.0
+      },
+      {
+        "accepted": 61,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.25416666666666665,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": true,
+        "predicted_risk_threshold": 0.5364513691680795,
+        "risk": 0.0
+      },
+      {
+        "accepted": 62,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.25833333333333336,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": true,
+        "predicted_risk_threshold": 0.551109470085128,
+        "risk": 0.0
+      },
+      {
+        "accepted": 63,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.2625,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": true,
+        "predicted_risk_threshold": 0.5516465073684017,
+        "risk": 0.0
+      },
+      {
+        "accepted": 64,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.0,
+        "coverage": 0.26666666666666666,
+        "eligible": 240,
+        "invalid": 0,
+        "passes": true,
+        "predicted_risk_threshold": 0.5525794497372593,
+        "risk": 0.0
+      },
+      {
+        "accepted": 65,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.04477611940298507,
+        "coverage": 0.2708333333333333,
+        "eligible": 240,
+        "invalid": 1,
+        "passes": true,
+        "predicted_risk_threshold": 0.6225281163590964,
+        "risk": 0.015384615384615385
+      },
+      {
+        "accepted": 66,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.058823529411764705,
+        "coverage": 0.275,
+        "eligible": 240,
+        "invalid": 2,
+        "passes": true,
+        "predicted_risk_threshold": 0.6252106788792816,
+        "risk": 0.030303030303030304
+      },
+      {
+        "accepted": 67,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.08571428571428572,
+        "coverage": 0.2791666666666667,
+        "eligible": 240,
+        "invalid": 3,
+        "passes": true,
+        "predicted_risk_threshold": 0.6259329366160945,
+        "risk": 0.04477611940298507
+      },
+      {
+        "accepted": 68,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.1111111111111111,
+        "coverage": 0.2833333333333333,
+        "eligible": 240,
+        "invalid": 4,
+        "passes": true,
+        "predicted_risk_threshold": 0.626748083540992,
+        "risk": 0.058823529411764705
+      },
+      {
+        "accepted": 69,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.1232876712328767,
+        "coverage": 0.2875,
+        "eligible": 240,
+        "invalid": 5,
+        "passes": true,
+        "predicted_risk_threshold": 0.6271960035105383,
+        "risk": 0.07246376811594203
+      },
+      {
+        "accepted": 70,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.15789473684210525,
+        "coverage": 0.2916666666666667,
+        "eligible": 240,
+        "invalid": 6,
+        "passes": true,
+        "predicted_risk_threshold": 0.6288014371433903,
+        "risk": 0.08571428571428572
+      },
+      {
+        "accepted": 71,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": true
+        },
+        "cluster_bootstrap_risk_upper95": 0.16883116883116883,
+        "coverage": 0.29583333333333334,
+        "eligible": 240,
+        "invalid": 7,
+        "passes": true,
+        "predicted_risk_threshold": 0.6303073200826219,
+        "risk": 0.09859154929577464
+      },
+      {
+        "accepted": 72,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.2,
+        "coverage": 0.3,
+        "eligible": 240,
+        "invalid": 8,
+        "passes": false,
+        "predicted_risk_threshold": 0.6324386803799252,
+        "risk": 0.1111111111111111
+      },
+      {
+        "accepted": 73,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.2,
+        "coverage": 0.30416666666666664,
+        "eligible": 240,
+        "invalid": 9,
+        "passes": false,
+        "predicted_risk_threshold": 0.6347421590578466,
+        "risk": 0.1232876712328767
+      },
+      {
+        "accepted": 74,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.2,
+        "coverage": 0.30833333333333335,
+        "eligible": 240,
+        "invalid": 10,
+        "passes": false,
+        "predicted_risk_threshold": 0.6393754864125147,
+        "risk": 0.13513513513513514
+      },
+      {
+        "accepted": 75,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.2,
+        "coverage": 0.3125,
+        "eligible": 240,
+        "invalid": 11,
+        "passes": false,
+        "predicted_risk_threshold": 0.6396418309455679,
+        "risk": 0.14666666666666667
+      },
+      {
+        "accepted": 76,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.2,
+        "coverage": 0.31666666666666665,
+        "eligible": 240,
+        "invalid": 12,
+        "passes": false,
+        "predicted_risk_threshold": 0.6413450046821914,
+        "risk": 0.15789473684210525
+      },
+      {
+        "accepted": 77,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.2,
+        "coverage": 0.32083333333333336,
+        "eligible": 240,
+        "invalid": 13,
+        "passes": false,
+        "predicted_risk_threshold": 0.6429238234557089,
+        "risk": 0.16883116883116883
+      },
+      {
+        "accepted": 78,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.2,
+        "coverage": 0.325,
+        "eligible": 240,
+        "invalid": 14,
+        "passes": false,
+        "predicted_risk_threshold": 0.6436866887007442,
+        "risk": 0.1794871794871795
+      },
+      {
+        "accepted": 79,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.2,
+        "coverage": 0.32916666666666666,
+        "eligible": 240,
+        "invalid": 15,
+        "passes": false,
+        "predicted_risk_threshold": 0.6446168559184885,
+        "risk": 0.189873417721519
+      },
+      {
+        "accepted": 80,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.2,
+        "coverage": 0.3333333333333333,
+        "eligible": 240,
+        "invalid": 15,
+        "passes": false,
+        "predicted_risk_threshold": 0.6510516830002664,
+        "risk": 0.1875
+      },
+      {
+        "accepted": 81,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.21951219512195122,
+        "coverage": 0.3375,
+        "eligible": 240,
+        "invalid": 16,
+        "passes": false,
+        "predicted_risk_threshold": 0.6729278558497538,
+        "risk": 0.19753086419753085
+      },
+      {
+        "accepted": 82,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.2441860465116279,
+        "coverage": 0.3416666666666667,
+        "eligible": 240,
+        "invalid": 17,
+        "passes": false,
+        "predicted_risk_threshold": 0.6739407642177192,
+        "risk": 0.2073170731707317
+      },
+      {
+        "accepted": 83,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.24749658002735742,
+        "coverage": 0.3458333333333333,
+        "eligible": 240,
+        "invalid": 18,
+        "passes": false,
+        "predicted_risk_threshold": 0.6740668763458234,
+        "risk": 0.21686746987951808
+      },
+      {
+        "accepted": 84,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.2727272727272727,
+        "coverage": 0.35,
+        "eligible": 240,
+        "invalid": 19,
+        "passes": false,
+        "predicted_risk_threshold": 0.6748811641791919,
+        "risk": 0.2261904761904762
+      },
+      {
+        "accepted": 85,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": true,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.2808988764044944,
+        "coverage": 0.3541666666666667,
+        "eligible": 240,
+        "invalid": 20,
+        "passes": false,
+        "predicted_risk_threshold": 0.6750470500427201,
+        "risk": 0.23529411764705882
+      },
+      {
+        "accepted": 86,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.30434782608695654,
+        "coverage": 0.35833333333333334,
+        "eligible": 240,
+        "invalid": 21,
+        "passes": false,
+        "predicted_risk_threshold": 0.6750934611162266,
+        "risk": 0.2441860465116279
+      },
+      {
+        "accepted": 87,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.3118279569892473,
+        "coverage": 0.3625,
+        "eligible": 240,
+        "invalid": 22,
+        "passes": false,
+        "predicted_risk_threshold": 0.6790209535627493,
+        "risk": 0.25287356321839083
+      },
+      {
+        "accepted": 88,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.3333333333333333,
+        "coverage": 0.36666666666666664,
+        "eligible": 240,
+        "invalid": 23,
+        "passes": false,
+        "predicted_risk_threshold": 0.6810543743483003,
+        "risk": 0.26136363636363635
+      },
+      {
+        "accepted": 89,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.3333333333333333,
+        "coverage": 0.37083333333333335,
+        "eligible": 240,
+        "invalid": 24,
+        "passes": false,
+        "predicted_risk_threshold": 0.6922070717976101,
+        "risk": 0.2696629213483146
+      },
+      {
+        "accepted": 90,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.3333333333333333,
+        "coverage": 0.375,
+        "eligible": 240,
+        "invalid": 25,
+        "passes": false,
+        "predicted_risk_threshold": 0.6932142983834818,
+        "risk": 0.2777777777777778
+      },
+      {
+        "accepted": 91,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.3333333333333333,
+        "coverage": 0.37916666666666665,
+        "eligible": 240,
+        "invalid": 26,
+        "passes": false,
+        "predicted_risk_threshold": 0.6947970477761969,
+        "risk": 0.2857142857142857
+      },
+      {
+        "accepted": 92,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.3333333333333333,
+        "coverage": 0.38333333333333336,
+        "eligible": 240,
+        "invalid": 27,
+        "passes": false,
+        "predicted_risk_threshold": 0.6961135454073026,
+        "risk": 0.29347826086956524
+      },
+      {
+        "accepted": 93,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.3333333333333333,
+        "coverage": 0.3875,
+        "eligible": 240,
+        "invalid": 28,
+        "passes": false,
+        "predicted_risk_threshold": 0.6963632252795647,
+        "risk": 0.3010752688172043
+      },
+      {
+        "accepted": 94,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.3333333333333333,
+        "coverage": 0.39166666666666666,
+        "eligible": 240,
+        "invalid": 29,
+        "passes": false,
+        "predicted_risk_threshold": 0.6972426336737362,
+        "risk": 0.30851063829787234
+      },
+      {
+        "accepted": 95,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.3333333333333333,
+        "coverage": 0.3958333333333333,
+        "eligible": 240,
+        "invalid": 30,
+        "passes": false,
+        "predicted_risk_threshold": 0.700192388643756,
+        "risk": 0.3157894736842105
+      },
+      {
+        "accepted": 96,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.3333333333333333,
+        "coverage": 0.4,
+        "eligible": 240,
+        "invalid": 31,
+        "passes": false,
+        "predicted_risk_threshold": 0.7036512139160116,
+        "risk": 0.3229166666666667
+      },
+      {
+        "accepted": 97,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.3469387755102041,
+        "coverage": 0.4041666666666667,
+        "eligible": 240,
+        "invalid": 32,
+        "passes": false,
+        "predicted_risk_threshold": 0.9233251831235686,
+        "risk": 0.32989690721649484
+      },
+      {
+        "accepted": 98,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.3627450980392157,
+        "coverage": 0.4083333333333333,
+        "eligible": 240,
+        "invalid": 33,
+        "passes": false,
+        "predicted_risk_threshold": 0.9329586212463015,
+        "risk": 0.336734693877551
+      },
+      {
+        "accepted": 99,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.37254901960784315,
+        "coverage": 0.4125,
+        "eligible": 240,
+        "invalid": 34,
+        "passes": false,
+        "predicted_risk_threshold": 0.9343063254366322,
+        "risk": 0.3434343434343434
+      },
+      {
+        "accepted": 100,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.38461538461538464,
+        "coverage": 0.4166666666666667,
+        "eligible": 240,
+        "invalid": 35,
+        "passes": false,
+        "predicted_risk_threshold": 0.934800773232698,
+        "risk": 0.35
+      },
+      {
+        "accepted": 101,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.38461538461538464,
+        "coverage": 0.42083333333333334,
+        "eligible": 240,
+        "invalid": 36,
+        "passes": false,
+        "predicted_risk_threshold": 0.9372846700991144,
+        "risk": 0.3564356435643564
+      },
+      {
+        "accepted": 102,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.39622641509433965,
+        "coverage": 0.425,
+        "eligible": 240,
+        "invalid": 37,
+        "passes": false,
+        "predicted_risk_threshold": 0.9383281508171684,
+        "risk": 0.3627450980392157
+      },
+      {
+        "accepted": 103,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.4074074074074074,
+        "coverage": 0.42916666666666664,
+        "eligible": 240,
+        "invalid": 38,
+        "passes": false,
+        "predicted_risk_threshold": 0.9385440090728403,
+        "risk": 0.36893203883495146
+      },
+      {
+        "accepted": 104,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.4074074074074074,
+        "coverage": 0.43333333333333335,
+        "eligible": 240,
+        "invalid": 39,
+        "passes": false,
+        "predicted_risk_threshold": 0.9394000396325599,
+        "risk": 0.375
+      },
+      {
+        "accepted": 105,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.41818181818181815,
+        "coverage": 0.4375,
+        "eligible": 240,
+        "invalid": 40,
+        "passes": false,
+        "predicted_risk_threshold": 0.9407025983345298,
+        "risk": 0.38095238095238093
+      },
+      {
+        "accepted": 106,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.42857142857142855,
+        "coverage": 0.44166666666666665,
+        "eligible": 240,
+        "invalid": 41,
+        "passes": false,
+        "predicted_risk_threshold": 0.9422930051628942,
+        "risk": 0.3867924528301887
+      },
+      {
+        "accepted": 107,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.42857142857142855,
+        "coverage": 0.44583333333333336,
+        "eligible": 240,
+        "invalid": 42,
+        "passes": false,
+        "predicted_risk_threshold": 0.9423598386183027,
+        "risk": 0.3925233644859813
+      },
+      {
+        "accepted": 108,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.42857142857142855,
+        "coverage": 0.45,
+        "eligible": 240,
+        "invalid": 43,
+        "passes": false,
+        "predicted_risk_threshold": 0.9433495042346969,
+        "risk": 0.39814814814814814
+      },
+      {
+        "accepted": 109,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.42857142857142855,
+        "coverage": 0.45416666666666666,
+        "eligible": 240,
+        "invalid": 44,
+        "passes": false,
+        "predicted_risk_threshold": 0.9442283908387634,
+        "risk": 0.4036697247706422
+      },
+      {
+        "accepted": 110,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.42857142857142855,
+        "coverage": 0.4583333333333333,
+        "eligible": 240,
+        "invalid": 45,
+        "passes": false,
+        "predicted_risk_threshold": 0.9525363185608676,
+        "risk": 0.4090909090909091
+      },
+      {
+        "accepted": 111,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.42857142857142855,
+        "coverage": 0.4625,
+        "eligible": 240,
+        "invalid": 46,
+        "passes": false,
+        "predicted_risk_threshold": 0.9536132067638288,
+        "risk": 0.4144144144144144
+      },
+      {
+        "accepted": 112,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.42857142857142855,
+        "coverage": 0.4666666666666667,
+        "eligible": 240,
+        "invalid": 47,
+        "passes": false,
+        "predicted_risk_threshold": 0.9540028605036701,
+        "risk": 0.41964285714285715
+      },
+      {
+        "accepted": 113,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.43859649122807015,
+        "coverage": 0.4708333333333333,
+        "eligible": 240,
+        "invalid": 48,
+        "passes": false,
+        "predicted_risk_threshold": 0.964869225821652,
+        "risk": 0.4247787610619469
+      },
+      {
+        "accepted": 114,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.4482758620689655,
+        "coverage": 0.475,
+        "eligible": 240,
+        "invalid": 49,
+        "passes": false,
+        "predicted_risk_threshold": 0.9658962692662569,
+        "risk": 0.4298245614035088
+      },
+      {
+        "accepted": 115,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.4576271186440678,
+        "coverage": 0.4791666666666667,
+        "eligible": 240,
+        "invalid": 50,
+        "passes": false,
+        "predicted_risk_threshold": 0.9705655256702099,
+        "risk": 0.43478260869565216
+      },
+      {
+        "accepted": 116,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.4576271186440678,
+        "coverage": 0.48333333333333334,
+        "eligible": 240,
+        "invalid": 51,
+        "passes": false,
+        "predicted_risk_threshold": 0.9708553139255105,
+        "risk": 0.4396551724137931
+      },
+      {
+        "accepted": 117,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.4666666666666667,
+        "coverage": 0.4875,
+        "eligible": 240,
+        "invalid": 52,
+        "passes": false,
+        "predicted_risk_threshold": 0.9718618303724252,
+        "risk": 0.4444444444444444
+      },
+      {
+        "accepted": 118,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.47540983606557374,
+        "coverage": 0.49166666666666664,
+        "eligible": 240,
+        "invalid": 53,
+        "passes": false,
+        "predicted_risk_threshold": 0.9735254441053353,
+        "risk": 0.4491525423728814
+      },
+      {
+        "accepted": 119,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.4838709677419355,
+        "coverage": 0.49583333333333335,
+        "eligible": 240,
+        "invalid": 54,
+        "passes": false,
+        "predicted_risk_threshold": 0.9736783849906943,
+        "risk": 0.453781512605042
+      },
+      {
+        "accepted": 120,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.4838709677419355,
+        "coverage": 0.5,
+        "eligible": 240,
+        "invalid": 55,
+        "passes": false,
+        "predicted_risk_threshold": 0.9736822576721503,
+        "risk": 0.4583333333333333
+      },
+      {
+        "accepted": 121,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.49206349206349204,
+        "coverage": 0.5041666666666667,
+        "eligible": 240,
+        "invalid": 56,
+        "passes": false,
+        "predicted_risk_threshold": 0.974591801939299,
+        "risk": 0.4628099173553719
+      },
+      {
+        "accepted": 122,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.49206349206349204,
+        "coverage": 0.5083333333333333,
+        "eligible": 240,
+        "invalid": 57,
+        "passes": false,
+        "predicted_risk_threshold": 0.9759130577454724,
+        "risk": 0.4672131147540984
+      },
+      {
+        "accepted": 123,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.5,
+        "coverage": 0.5125,
+        "eligible": 240,
+        "invalid": 58,
+        "passes": false,
+        "predicted_risk_threshold": 0.9795342224256489,
+        "risk": 0.4715447154471545
+      },
+      {
+        "accepted": 240,
+        "accepted_independent_groups": 4,
+        "checks": {
+          "maximum_cluster_bootstrap_risk_upper95": false,
+          "minimum_coverage": true,
+          "target_observed_risk": false
+        },
+        "cluster_bootstrap_risk_upper95": 0.7333333333333333,
+        "coverage": 1.0,
+        "eligible": 240,
+        "invalid": 175,
+        "passes": false,
+        "predicted_risk_threshold": 0.98,
+        "risk": 0.7291666666666666
+      }
+    ],
+    "maximum_cluster_bootstrap_risk_upper95": 0.3,
+    "minimum_coverage": 0.2,
+    "selected": {
+      "accepted": 71,
+      "accepted_independent_groups": 4,
+      "checks": {
+        "maximum_cluster_bootstrap_risk_upper95": true,
+        "minimum_coverage": true,
+        "target_observed_risk": true
+      },
+      "cluster_bootstrap_risk_upper95": 0.16883116883116883,
+      "coverage": 0.29583333333333334,
+      "eligible": 240,
+      "invalid": 7,
+      "passes": true,
+      "predicted_risk_threshold": 0.6303073200826219,
+      "risk": 0.09859154929577464
+    },
+    "selection_rule": "Highest cross-fitted coverage satisfying every predeclared development gate.",
+    "status": "operating_point_selected",
+    "target_observed_risk": 0.1
+  },
+  "primary_endpoint_family": "tensor_coherence",
+  "primary_score": "declared_capture_stability_contract",
+  "protocol_id": "fmd-widefield-bpae-r-validity-profile-v1-3",
+  "schema_version": "nostos-validity-profile/1.0",
+  "score_candidates": [
+    "declared_capture_stability_contract",
+    "full_contract",
+    "conventional_acquisition_qc",
+    "perturbation_stability_only",
+    "full_contract_without_qc",
+    "full_contract_without_perturbation",
+    "full_contract_without_identifiability"
+  ],
+  "status": "operating_point_selected"
+}

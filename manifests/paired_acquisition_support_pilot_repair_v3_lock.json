@@ -1,0 +1,49 @@
+{
+  "schema_version": "nostos-developmental-repair-lock/3.0",
+  "locked_at_utc": "2026-08-28T23:35:03Z",
+  "stage": "small_pilot_semantic_repair_before_version_3_rerun",
+  "basis_manifest": {
+    "path": "manifests/biosr_small_pilot_v1.json",
+    "bytes": 3217,
+    "sha256": "28e0dc0a4b945b5d055a0372a7d613c3bb0bca4ffad4470016be7d8a155c02b8"
+  },
+  "access_state": {
+    "selected_small_pilot": "observed_for_development",
+    "remaining_score_design_fields": "not_used_by_version_3_repair",
+    "threshold_calibration": "sealed",
+    "confirmation_archives": "not_downloaded_not_listed_not_decoded"
+  },
+  "files": [
+    {
+      "path": "configs/paired_acquisition_support_v3.locked.json",
+      "bytes": 4407,
+      "sha256": "518df822a0ca2d5f130ebb934608fe5cff03f2965a1be388ee8fd147b09ac18d"
+    },
+    {
+      "path": "docs/NOSTOS0_SMALL_PILOT_REPAIR_V3.md",
+      "bytes": 2713,
+      "sha256": "f949ffe1a4655e977f5bc0bb7a0125f8f5949baf01427b3e879f7f173dfe48e4"
+    },
+    {
+      "path": "src/nostos/features/spatial_fft.py",
+      "bytes": 7461,
+      "sha256": "2f18db7a1ded0e17ae091a53ddca0b44a37a5dbabd12ee1c61f2518deac23f68"
+    },
+    {
+      "path": "src/nostos/features/response_modules.py",
+      "bytes": 13184,
+      "sha256": "21902711c43675920380abb5762047d63911440cc78f35f14a5fc7d252191a85"
+    },
+    {
+      "path": "src/nostos/validation/paired_acquisition_support.py",
+      "bytes": 47547,
+      "sha256": "e4cb42b7584ca3b980ea5baa480bdeb472b9d6db2480be4426d51263040d490b"
+    },
+    {
+      "path": "scripts/run_biosr_paired_support.py",
+      "bytes": 18960,
+      "sha256": "628bccbbace8bcaa360cf521dbca7b399e1f8ceda178c052169144176bd01198"
+    }
+  ],
+  "prospective_statement": "The version-3 implementation and protocol were frozen before rerunning any selected pilot image under version 3. The repair is developmental because version-2 pilot outcomes informed it; it is not a confirmatory lock."
+}

@@ -1,0 +1,10 @@
+{
+  "protocol_version": "nostos-bone-orientation-contract/2.0",
+  "config_sha256": "abc971daf86984e6a893d943cb387d03c97b1b994ad20fd600d3641933917b4c",
+  "dataset_doi": "10.5281/zenodo.3355937",
+  "status": "fail_no_promotable_threshold",
+  "promoted_threshold_degrees": null,
+  "development": null,
+  "evaluation": null,
+  "claim_boundary": "Selective support for local 2D axial orientation in label-free mouse-bone SHG; annotations are coarse compatibility regions, not angular ground truth."
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "nostos-acquisition-measurement-profile/1.0",
+  "profile_id": "biosr-v9-raw-sim-phase-mean-to-gt-sim-2x",
+  "status": "provisional_from_developmental_small_pilot",
+  "basis": {
+    "artifact_receipt_path": "manifests/biosr_small_pilot_v5_artifact_receipt.json",
+    "artifact_receipt_bytes": 2558,
+    "artifact_receipt_sha256": "306bd10c140cdb1c69a7b65c0052972acfa8b459bfc1550369f29722219d6b64",
+    "pilot_audit_path": "outputs/nostos0-biosr-small-pilot-v5-audit/pilot_audit.json",
+    "pilot_audit_bytes": 32126,
+    "pilot_audit_sha256": "1c548c196fe5ca6487bf1df9758e7b851f37e1a75d278a47da845442c9058993",
+    "reference_fields": 12,
+    "paired_acquisitions": 90
+  },
+  "compatibility_contract": {
+    "input_dimensions": 2,
+    "spatial_unit": "um",
+    "spacing": [0.0626, 0.0626],
+    "spacing_absolute_tolerance": 0.000001,
+    "required_input_construction": "Arithmetic mean of the nine raw SIM phase frames from BioSR figshare 13264793 version 9.",
+    "machine_checkable_scope": "Dimensionality, unit, spacing and analysis grid are checked at runtime. Acquisition identity and phase-mean construction remain user-declared and are recorded as unverifiable requirements."
+  },
+  "analysis_contract": {
+    "intensity_preprocessing": "percentile_1_99_clip_unit_interval",
+    "physical_scales": [0.2504, 0.3756, 0.5008, 0.7512, 1.0016],
+    "variogram_separations": "physical_scales_supported_by_image_extent",
+    "spectral_band_fraction_of_input_nyquist": [0.02, 0.9],
+    "curve_normalization": "l2",
+    "protocol_config_path": "configs/paired_acquisition_support_v5.locked.json",
+    "protocol_config_sha256": "711e5f4aaac8bcbeccb07bc94fb33dd3e51f5eeec2fea317a25ed0c8b66d7573"
+  },
+  "eligible_for_threshold_calibration": [
+    "hessian_blob_curve",
+    "hessian_tube_curve",
+    "spectral_anisotropy",
+    "spectral_entropy",
+    "tensor_coherence",
+    "tensor_orientation",
+    "variogram_horizontal_curve",
+    "variogram_vertical_curve",
+    "variogram_range_horizontal",
+    "variogram_range_vertical"
+  ],
+  "disabled_for_this_acquisition_profile": {
+    "hessian_blob_scale": "The high-resolution reference maximum was at a scale-grid boundary, so the scalar was censored rather than identified; retain the curve.",
+    "hessian_tube_scale": "The high-resolution reference maximum was at a scale-grid boundary, so the scalar was censored rather than identified; retain the curve.",
+    "spectral_scale": "Eighty-five of 86 reference-eligible pilot pairs exceeded the frozen 25% relative-error tolerance; retain the calibrated spectrum but do not emit this scalar for this acquisition profile."
+  },
+  "limited_support_notes": {
+    "tensor_orientation": "Reference consensus eligibility was 0/270 CCP cases and 30/180 ER cases; all 30 eligible ER cases met the 10-degree error tolerance.",
+    "tensor_coherence": "All 51 observed errors occurred in the two lowest ER signal levels; operating-threshold calibration must demonstrate selective rejection without using signal-level labels at runtime."
+  },
+  "unknown_profile_behavior": "Measurements are returned as unvalidated unless a compatible acquisition profile or direct perturbation/ground-truth validation is available.",
+  "claim_boundary": "A development-selected profile awaiting untouched threshold calibration and confirmation; not a universal endorsement of these endpoints."
+}

@@ -1,0 +1,132 @@
+{
+  "schema_version": "nostos-fmd-strict-external-transfer/1.0",
+  "protocol_id": "fmd-strict-external-transfer-v1-6",
+  "created_at_utc": "2026-08-31T18:55:00Z",
+  "rationale": {
+    "trigger": "The prospectively locked v1.5 extension falsified the broader four-cell conditional-support claim: six invalid accepted average-of-8 by 16-pixel tensor-coherence measurements occurred in two of seven untouched WideField_BPAE_R fields.",
+    "repair": "All nineteen non-excluded WideField_BPAE_R fields were then used only for development. A conservative profile retained the three average-of-16 cells with zero accepted failures in every field.",
+    "external_test": "Apply that three-cell profile without refitting to two unopened FMD archives that vary one axis at a time: the same mitochondrial channel on a confocal microscope and the same widefield microscope on an F-actin channel.",
+    "confirmation_status_at_lock": "The archive files were downloaded and checksum-verified, but selected image pixels had not been decoded for measurement analysis when this protocol was frozen."
+  },
+  "scope": {
+    "study_type": "computation_only_public_data_no_refit_external_transfer",
+    "claim": "A conservative three-cell acquisition-by-scale support profile developed on widefield mitochondrial images can be tested without refitting across a different microscope with the same channel and a different structural channel with the same microscope.",
+    "excluded_claims": [
+      "universal transfer to arbitrary microscopes, tissues or channels",
+      "physical-scale measurement because FMD does not provide pixel spacing",
+      "biological interpretation of tensor coherence",
+      "image restoration or denoising performance",
+      "clinical or intraoperative utility"
+    ]
+  },
+  "frozen_profile": {
+    "development_config": {
+      "path": "configs/fmd_full_archive_strict_support_v1_6.development.json",
+      "file_sha256": "72b0e82453e318a530c231ac56677b761133b28afc098d3eb08fe66c6c6ce16b"
+    },
+    "base_profile": {
+      "path": "outputs/nostos0-fmd-widefield-v1-3-compiled/validity_profile.json",
+      "file_sha256": "9c99e6c01359b8b8ab84f1eb6f48cf9101e913ee90269b63573ffd1abc69b737",
+      "content_sha256": "65239b44c66a8bfca80608b1544fd0c892cf8e3209805828a1623d85382eebb8"
+    },
+    "strict_profile": {
+      "path": "outputs/nostos0-fmd-full-archive-strict-support-v1-6-development/strict_support_profile.json",
+      "file_sha256": "ddac86a5e0ae60d559975f63935e3e1bceb3bfdc41d31ec4ed1eecbdb6c48e1f",
+      "content_sha256": "1bf6c553321f1957379b2ab7f896222bf9d28cce3cd0ff107267821c98f81ba1"
+    },
+    "measurement_protocol": {
+      "path": "configs/fmd_widefield_validity_profile_v1_3.locked.json",
+      "file_sha256": "62f1e77f5e380abb3943e6014c0d0603747a403c50d06a6e2a18a17fb544045b"
+    }
+  },
+  "selection": {
+    "seed": 26083161,
+    "source_rule": "Use Confocal_BPAE_R for same-channel/different-instrument transfer and WideField_BPAE_G for same-instrument/different-structure transfer.",
+    "field_rule": "Within each dataset key, sort FOV identifiers 1-20 by SHA-256(seed|dataset_key|fovN) and take the first seven.",
+    "realization_rule": "Within each selected field, sort realization indices 0-49 by SHA-256(seed|dataset_key|fovN|realizationK) and use the four smallest hashes at every acquisition level.",
+    "expected_source_count": 2,
+    "fields_per_source": 7,
+    "realizations_per_field_level": 4,
+    "pairs_per_source": 140
+  },
+  "sources": [
+    {
+      "dataset_key": "Confocal_BPAE_R",
+      "figshare_file_id": 43648071,
+      "source": {
+        "dataset": "Fluorescence Microscopy Denoising (FMD) dataset",
+        "doi": "10.7274/r0-ed2r-4052",
+        "repository_url": "https://curate.nd.edu/articles/dataset/Fluorescence_Microscopy_Denoising_FMD_dataset/24744648",
+        "license": "CC BY-SA 4.0",
+        "archive_name": "Confocal_BPAE_R.tar",
+        "archive_bytes": 627537920,
+        "archive_md5": "3d8b449e7b9284bc1c4c6c66c95526f1",
+        "archive_sha256": "9b36bb4df24ae81947d6829b1e7ae33c31eb03430614f0de7a3382034f3f81d2",
+        "acquisition_modality": "Confocal",
+        "sample": "BPAE_R",
+        "reference_definition": "One avg50.png reference per field of view.",
+        "acquisition_levels": {"raw": 1, "avg2": 2, "avg4": 4, "avg8": 8, "avg16": 16},
+        "independent_unit": "field of view",
+        "nested_unit": "four hash-selected repeated noise realizations per level within a field of view",
+        "image_shape_yx_px": [512, 512]
+      },
+      "confirmation_fields": [7, 19, 17, 2, 3, 6, 16],
+      "realization_indices": {
+        "7": [29, 33, 42, 48],
+        "19": [2, 3, 8, 39],
+        "17": [10, 24, 39, 47],
+        "2": [35, 41, 43, 45],
+        "3": [5, 8, 13, 18],
+        "6": [6, 7, 21, 29],
+        "16": [10, 40, 46, 48]
+      }
+    },
+    {
+      "dataset_key": "WideField_BPAE_G",
+      "figshare_file_id": 43648113,
+      "source": {
+        "dataset": "Fluorescence Microscopy Denoising (FMD) dataset",
+        "doi": "10.7274/r0-ed2r-4052",
+        "repository_url": "https://curate.nd.edu/articles/dataset/Fluorescence_Microscopy_Denoising_FMD_dataset/24744648",
+        "license": "CC BY-SA 4.0",
+        "archive_name": "WideField_BPAE_G.tar",
+        "archive_bytes": 792780800,
+        "archive_md5": "7e2e734f83bf6609bd2fe876f4a54345",
+        "archive_sha256": "019863658ab0ba45c2b323ef787bad2ed40b017c0cdcfae66eb7818eaf9bdeee",
+        "acquisition_modality": "WideField",
+        "sample": "BPAE_G",
+        "reference_definition": "One avg50.png reference per field of view.",
+        "acquisition_levels": {"raw": 1, "avg2": 2, "avg4": 4, "avg8": 8, "avg16": 16},
+        "independent_unit": "field of view",
+        "nested_unit": "four hash-selected repeated noise realizations per level within a field of view",
+        "image_shape_yx_px": [512, 512]
+      },
+      "confirmation_fields": [1, 11, 5, 16, 3, 15, 19],
+      "realization_indices": {
+        "1": [9, 27, 35, 44],
+        "11": [3, 9, 19, 46],
+        "5": [7, 15, 18, 36],
+        "16": [5, 26, 27, 48],
+        "3": [13, 18, 25, 45],
+        "15": [1, 27, 43, 46],
+        "19": [12, 14, 18, 47]
+      }
+    }
+  ],
+  "source_gates": {
+    "required_independent_groups": 7,
+    "require_zero_invalid_accepted_emissions": true,
+    "require_zero_fields_with_any_accepted_failure": true,
+    "require_all_supported_cells_in_every_field": true
+  },
+  "combined_gates": {
+    "required_independent_groups": 14,
+    "require_zero_invalid_accepted_emissions": true,
+    "require_zero_fields_with_any_accepted_failure": true,
+    "maximum_two_sided_exact_field_failure_upper95": 0.25
+  },
+  "uncertainty": {
+    "confidence_level": 0.95,
+    "interpretation": "The exact field-event interval treats the selected FOV as the independent unit. Pixel, endpoint and repeated-realization counts are nested observations and are not promoted to independent samples."
+  }
+}

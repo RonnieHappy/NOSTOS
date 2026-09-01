@@ -1,0 +1,247 @@
+{
+  "archive_md5": "e02b07bc4cfcd19dc911bd9d0c4e65a0",
+  "archive_sha256": "4914cd7d951b4ddc1a01f6c7f121b7e9936fd2a7d1505f3e802984ffee69cad7",
+  "artifacts": [
+    {
+      "bytes": 6688,
+      "path": "configs/fmd_widefield_conditional_support_v1_4.locked.json",
+      "sha256": "c7912e8d64e654c0fff62b9943d03d67afb6a46cfaabd50ad1db94c5d71e148f"
+    },
+    {
+      "bytes": 6701,
+      "path": "configs/fmd_widefield_validity_profile_v1_3.locked.json",
+      "sha256": "62f1e77f5e380abb3943e6014c0d0603747a403c50d06a6e2a18a17fb544045b"
+    },
+    {
+      "bytes": 3417,
+      "path": "docs/NOSTOS0_FMD_WIDEFIELD_CONDITIONAL_SUPPORT_V1_4_PROTOCOL.md",
+      "sha256": "d7ebe5d01eecdac8707aa762d610fc3b4fa5e51dd873ad9b5429237ea98f2e1b"
+    },
+    {
+      "bytes": 70263,
+      "path": "outputs/nostos0-fmd-widefield-v1-3-compiled/validity_profile.json",
+      "sha256": "9c99e6c01359b8b8ab84f1eb6f48cf9101e913ee90269b63573ffd1abc69b737"
+    },
+    {
+      "bytes": 2029061,
+      "path": "outputs/nostos0-fmd-widefield-v1-3-confirmation/confirmation_rows.jsonl",
+      "sha256": "cf22eada35d7e967788c15940fffe21474cf9709dd3a47e00163212695b855cc"
+    },
+    {
+      "bytes": 2032155,
+      "path": "outputs/nostos0-fmd-widefield-v1-3-development/development_rows.jsonl",
+      "sha256": "feaf9e734a3b68dd591251c4b17452e953aea2b95a5f99d6b8fb8959459123f6"
+    },
+    {
+      "bytes": 16820,
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-development/conditional_support_profile.json",
+      "sha256": "a1bc92f5658e0cb2dae35f54acd15dab48c8bd70f09a5012d873ab2043ffd141"
+    },
+    {
+      "bytes": 13955,
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-development/development_audit.json",
+      "sha256": "146abf77a43f7e621cdc42c5453d465f4e1ae0336d2f7a5ee67836ddd4cfbf3b"
+    },
+    {
+      "bytes": 2499,
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-development/development_receipt.json",
+      "sha256": "eb4116e7ff8d68ad387c8640ed4667d20f91a3d5d7f23c144ea07614a84e7c8c"
+    },
+    {
+      "bytes": 1728723,
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-development/development_scored.jsonl",
+      "sha256": "4a8513015e76c9fd5710dc7da64e898e70da9d8f31132485a668752c4dc68908"
+    },
+    {
+      "bytes": 2884,
+      "path": "pyproject.toml",
+      "sha256": "9204767675b912b7f1ece4469799dc1009fa3e2afd966d7956bf6337faa5844c"
+    },
+    {
+      "bytes": 2375,
+      "path": "scripts/audit_fmd_widefield_conditional_v1_4.py",
+      "sha256": "9ce15d9357d68556d8fab2cd2b5b69e19f36342076f218b15138eccc465223fe"
+    },
+    {
+      "bytes": 4864,
+      "path": "scripts/compile_fmd_widefield_conditional_v1_4.py",
+      "sha256": "c19977a3b7f6ea848a1614a9eb33ef196c9a370137006fc387febbf76dc962a7"
+    },
+    {
+      "bytes": 6555,
+      "path": "scripts/freeze_fmd_widefield_conditional_confirmation_v1_4.py",
+      "sha256": "e34557f0109ee75d5b4fb99a34120635f40727133231fac9441e6e4b509cf4aa"
+    },
+    {
+      "bytes": 1146,
+      "path": "scripts/run_fmd_widefield_conditional_confirmation_v1_4.py",
+      "sha256": "e0dec1cd7ec820f05e8e9f0f31ff29275bd8463d0b60eb91b15fe282bdaa0d79"
+    },
+    {
+      "bytes": 2241,
+      "path": "src/nostos/core/qc.py",
+      "sha256": "9e9fc39a35a2c000cf5ad47f07595c2052e327bad9c08b42b62011429e272353"
+    },
+    {
+      "bytes": 13184,
+      "path": "src/nostos/features/response_modules.py",
+      "sha256": "21902711c43675920380abb5762047d63911440cc78f35f14a5fc7d252191a85"
+    },
+    {
+      "bytes": 7461,
+      "path": "src/nostos/features/spatial_fft.py",
+      "sha256": "2f18db7a1ded0e17ae091a53ddca0b44a37a5dbabd12ee1c61f2518deac23f68"
+    },
+    {
+      "bytes": 20954,
+      "path": "src/nostos/validation/conditional_support_profile.py",
+      "sha256": "119ac7c16150bf0b8bceba82ea62070534cc271ddb679bb9755a94b10cee2b98"
+    },
+    {
+      "bytes": 23417,
+      "path": "src/nostos/validation/fmd_validity_profile.py",
+      "sha256": "c07502012e9ad49e2df70449222f8de5a3262613e25d3094faf2323408dda1b0"
+    },
+    {
+      "bytes": 15502,
+      "path": "src/nostos/validation/fmd_widefield_conditional_run.py",
+      "sha256": "e55ab2ca78f57fb984b5bb339260080ba70eb955793df7ec86f75829d74ff9ce"
+    },
+    {
+      "bytes": 22234,
+      "path": "src/nostos/validation/fmd_widefield_profile.py",
+      "sha256": "11652acfe1c8a1664e04c435206ec91a3d674d32b9663055fd6d36dcb91137f3"
+    },
+    {
+      "bytes": 49810,
+      "path": "src/nostos/validation/paired_acquisition_support.py",
+      "sha256": "101ebbe1bceafa8916511560e3c5bdb8a42d0b9eded76d043fddec3465ede3e0"
+    },
+    {
+      "bytes": 44317,
+      "path": "src/nostos/validation/validity_profile_compiler.py",
+      "sha256": "7f54b86a4a0e1337b46d7855d609a7b38ddc3b20b4400b013957b15adc4aa803"
+    },
+    {
+      "bytes": 5897,
+      "path": "tests/test_conditional_support_profile.py",
+      "sha256": "35d6e96c1dad57da3026892a60164073f9983f0a880cf192b633aa1b7271eba0"
+    },
+    {
+      "bytes": 6623,
+      "path": "tests/test_fmd_validity_profile.py",
+      "sha256": "6b4841ca05ac3958eb4331a529080665fd4ea72ae74c3dca11450fb68f69a2c4"
+    },
+    {
+      "bytes": 3391,
+      "path": "tests/test_fmd_widefield_profile.py",
+      "sha256": "d0224a9e8e2334cdd69cde7e502e9e019e7056b04cac3d9ac4564d746a6f9ca7"
+    },
+    {
+      "bytes": 9685,
+      "path": "tests/test_validity_profile_compiler.py",
+      "sha256": "eb81fe8821bfdef9f666109a574cf094dfcb533ac546db87108ab2b79a25c010"
+    }
+  ],
+  "base_profile_content_sha256": "65239b44c66a8bfca80608b1544fd0c892cf8e3209805828a1623d85382eebb8",
+  "base_profile_file_sha256": "9c99e6c01359b8b8ab84f1eb6f48cf9101e913ee90269b63573ffd1abc69b737",
+  "conditional_profile_content_sha256": "46e4b774c530b6f737e9941d367adb166e1540db51d919fa3ee91a96725f9308",
+  "conditional_profile_file_sha256": "a1bc92f5658e0cb2dae35f54acd15dab48c8bd70f09a5012d873ab2043ffd141",
+  "config_content_sha256": "e7788165bd6746649de24757de71d1f5e6aebddf64667770bed69c513a897745",
+  "config_file_sha256": "c7912e8d64e654c0fff62b9943d03d67afb6a46cfaabd50ad1db94c5d71e148f",
+  "confirmation_fields": [
+    20,
+    14,
+    5,
+    1
+  ],
+  "confirmation_output_absent_at_lock": "<PROJECT_ROOT>\\outputs\\nostos0-fmd-widefield-v1-4-conditional-confirmation",
+  "confirmation_realization_indices": {
+    "1": [
+      1,
+      15,
+      19,
+      43
+    ],
+    "14": [
+      3,
+      5,
+      22,
+      44
+    ],
+    "20": [
+      2,
+      8,
+      17,
+      33
+    ],
+    "5": [
+      0,
+      1,
+      28,
+      44
+    ]
+  },
+  "confirmation_status_at_lock": "pixels_not_decoded_for_measurement_analysis",
+  "content_sha256": "966ca29d3feaaaae3a34d4314639d0c4d5e4812e51d4a2871978e5d5095441db",
+  "development_fields": [
+    7,
+    15,
+    13,
+    9,
+    16,
+    17,
+    18,
+    11
+  ],
+  "development_operating_point": {
+    "accepted": 128,
+    "accepted_independent_groups": 8,
+    "checks": {
+      "at_least_one_supported_cell": true,
+      "maximum_cluster_bootstrap_risk_upper95": true,
+      "maximum_observed_risk": true,
+      "minimum_coverage": true
+    },
+    "cluster_bootstrap_risk_upper95": 0.0,
+    "coverage": 0.26666666666666666,
+    "eligible": 480,
+    "invalid": 0,
+    "passes": true,
+    "predicted_risk_threshold": 0.6303073200826219,
+    "risk": 0.0
+  },
+  "locked_at_utc": "2026-08-29T16:15:59.951370Z",
+  "protocol_id": "fmd-widefield-bpae-r-conditional-support-v1-4",
+  "schema_version": "nostos-fmd-widefield-conditional-confirmation-lock/1.0",
+  "supported_cells": [
+    {
+      "key": "[\"avg16\",16.0]",
+      "values": [
+        "avg16",
+        16.0
+      ]
+    },
+    {
+      "key": "[\"avg16\",4.0]",
+      "values": [
+        "avg16",
+        4.0
+      ]
+    },
+    {
+      "key": "[\"avg16\",8.0]",
+      "values": [
+        "avg16",
+        8.0
+      ]
+    },
+    {
+      "key": "[\"avg8\",16.0]",
+      "values": [
+        "avg8",
+        16.0
+      ]
+    }
+  ]
+}

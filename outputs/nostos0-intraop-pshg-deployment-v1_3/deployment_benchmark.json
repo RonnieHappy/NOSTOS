@@ -1,0 +1,246 @@
+{
+  "protocol_version": "nostos-intraop-pshg-deployment/1.3",
+  "status": "pass",
+  "checks": {
+    "completed_rois": true,
+    "production_validation_equivalence": true,
+    "pooled_reference_error": true,
+    "worst_roi_reference_error": true,
+    "analysis_latency": true,
+    "end_to_end_latency": true,
+    "peak_python_memory": true,
+    "deterministic_map_hashes": true,
+    "profile_and_source_hashes": true,
+    "technical_endpoint_promoted_only_in_scope": true,
+    "clinical_decision_withheld": true,
+    "production_validation_coherence_equivalence": true
+  },
+  "selection": {
+    "salt": "NOSTOS-intraop-pshg-deployment-v1.3-2026-08-29",
+    "rule": "Exclude the eight v1/v1.2 deployment fields, rank remaining ROI directory names by SHA-256(salt|roi), and select the first eight before decoding any v1.3 pixels.",
+    "selected_rois": [
+      "breast_39",
+      "breast_34",
+      "breast_19",
+      "breast_12",
+      "breast_1",
+      "breast_16",
+      "breast_37",
+      "breast_4"
+    ],
+    "selection_sha256": [
+      "0c900083e80c96f607a6e88e36d4e76e4109afd49046138f3fdd8a1a1bc16df2",
+      "0ffe2081b6d47a6225c05ff273b8ef08d26c23bf23e101279c6afcd0feb0a057",
+      "156a3ff00159ee161fc89614002876f6b16cf465f716e0cf06c7f60258fa8093",
+      "20de21d5e4575cde48b43c4f940ad891ee97b8de2cc06432ee9655342323b946",
+      "21a8ca651d6a1ffd9fcb6a21f5993b117ec0152d1fed405b33f0a04eab2ca643",
+      "2469b849946a285a158dd8af9f3d5c18d0950fea75c7af9cea07619f44b6ebd0",
+      "2944b1ba7229a37f05172e0800bf1b3bcb5b98c987e588e9f4127ef7c296f149",
+      "31702c0ea94d4fcb55f0a4505ac419d5cb01525a5cd31e2a658312496bd56f64"
+    ]
+  },
+  "verification": {
+    "locked_files_verified": 30,
+    "selected_source_files_verified": 104
+  },
+  "summary": {
+    "rois": 8,
+    "eligible_pixels": 270319,
+    "pooled_median_reference_error_degrees": 7.754896461963654,
+    "pooled_p75_reference_error_degrees": 14.780783653259277,
+    "worst_roi_median_reference_error_degrees": 10.015159130096436,
+    "p95_analysis_seconds": 0.11586382500827312,
+    "p95_end_to_end_seconds": 0.49371253515128044,
+    "maximum_peak_python_memory_mb": 28.003087997436523,
+    "maximum_production_validation_orientation_difference_degrees": 7.6293655979498e-06,
+    "all_map_hashes_deterministic": true,
+    "maximum_production_validation_coherence_difference": 2.9802313061821906e-08
+  },
+  "runtime": {
+    "python": "3.13.13",
+    "implementation": "CPython",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.5.2",
+    "author_operated": true,
+    "acquisition_time_measured": false
+  },
+  "lock": {
+    "path": "manifests/intraop_pshg_deployment_v1_3_lock.json",
+    "sha256": "94dccc500c82c273f15ca5b01e539fb46371787209eaeefa1c89af87c46ad1c7"
+  },
+  "config": {
+    "path": "configs/intraop_pshg_deployment_benchmark_v1_3.locked.json",
+    "sha256": "64a2d57adf3958277e95bd094900a009aec3f0c5096852414ec17ae755cd26f3"
+  },
+  "cases": [
+    {
+      "roi": "breast_39",
+      "status": "valid",
+      "evidence_status": "confirmed",
+      "eligible_pixels": 33002,
+      "median_reference_error_degrees": 6.494724273681641,
+      "p75_reference_error_degrees": 12.336127281188965,
+      "maximum_production_validation_orientation_difference_degrees": 7.6293635231650114e-06,
+      "maximum_production_validation_coherence_difference": 2.9802157519576156e-08,
+      "deterministic_map_hashes": true,
+      "clinical_decision": "withheld",
+      "runtime": {
+        "load_seconds": 0.03067410015501082,
+        "analysis_seconds": 0.1074660001322627,
+        "export_seconds": 0.2841481000650674,
+        "end_to_end_seconds": 0.43151729996316135,
+        "peak_python_memory_mb": 28.002976417541504,
+        "acquisition_time_included": false
+      }
+    },
+    {
+      "roi": "breast_34",
+      "status": "valid",
+      "evidence_status": "confirmed",
+      "eligible_pixels": 40046,
+      "median_reference_error_degrees": 10.015159130096436,
+      "p75_reference_error_degrees": 19.116058349609375,
+      "maximum_production_validation_orientation_difference_degrees": 7.629308271361879e-06,
+      "maximum_production_validation_coherence_difference": 2.9802178724835926e-08,
+      "deterministic_map_hashes": true,
+      "clinical_decision": "withheld",
+      "runtime": {
+        "load_seconds": 0.029489199863746762,
+        "analysis_seconds": 0.10659979982301593,
+        "export_seconds": 0.29255280015058815,
+        "end_to_end_seconds": 0.43883529980666935,
+        "peak_python_memory_mb": 28.003087997436523,
+        "acquisition_time_included": false
+      }
+    },
+    {
+      "roi": "breast_19",
+      "status": "valid",
+      "evidence_status": "confirmed",
+      "eligible_pixels": 38305,
+      "median_reference_error_degrees": 8.961837768554688,
+      "p75_reference_error_degrees": 16.603509426116943,
+      "maximum_production_validation_orientation_difference_degrees": 7.629217492421958e-06,
+      "maximum_production_validation_coherence_difference": 2.980201840863117e-08,
+      "deterministic_map_hashes": true,
+      "clinical_decision": "withheld",
+      "runtime": {
+        "load_seconds": 0.030420100083574653,
+        "analysis_seconds": 0.1163925000000745,
+        "export_seconds": 0.3368973000906408,
+        "end_to_end_seconds": 0.4965692001860589,
+        "peak_python_memory_mb": 28.00301170349121,
+        "acquisition_time_included": false
+      }
+    },
+    {
+      "roi": "breast_12",
+      "status": "valid",
+      "evidence_status": "confirmed",
+      "eligible_pixels": 21203,
+      "median_reference_error_degrees": 7.038173675537109,
+      "p75_reference_error_degrees": 13.176290512084961,
+      "maximum_production_validation_orientation_difference_degrees": 7.629242759321642e-06,
+      "maximum_production_validation_coherence_difference": 2.9802034062775817e-08,
+      "deterministic_map_hashes": true,
+      "clinical_decision": "withheld",
+      "runtime": {
+        "load_seconds": 0.02871179999783635,
+        "analysis_seconds": 0.10950650018639863,
+        "export_seconds": 0.29696940002031624,
+        "end_to_end_seconds": 0.44512699986808,
+        "peak_python_memory_mb": 28.002992630004883,
+        "acquisition_time_included": false
+      }
+    },
+    {
+      "roi": "breast_1",
+      "status": "valid",
+      "evidence_status": "confirmed",
+      "eligible_pixels": 47630,
+      "median_reference_error_degrees": 7.865260601043701,
+      "p75_reference_error_degrees": 14.619030714035034,
+      "maximum_production_validation_orientation_difference_degrees": 7.6293655979498e-06,
+      "maximum_production_validation_coherence_difference": 2.9802033840731212e-08,
+      "deterministic_map_hashes": true,
+      "clinical_decision": "withheld",
+      "runtime": {
+        "load_seconds": 0.028904200065881014,
+        "analysis_seconds": 0.10943269985727966,
+        "export_seconds": 0.3394098998978734,
+        "end_to_end_seconds": 0.488407300086692,
+        "peak_python_memory_mb": 28.00296401977539,
+        "acquisition_time_included": false
+      }
+    },
+    {
+      "roi": "breast_16",
+      "status": "valid",
+      "evidence_status": "confirmed",
+      "eligible_pixels": 36729,
+      "median_reference_error_degrees": 6.874998092651367,
+      "p75_reference_error_degrees": 12.776398181915283,
+      "maximum_production_validation_orientation_difference_degrees": 7.628864977959893e-06,
+      "maximum_production_validation_coherence_difference": 2.9802313061821906e-08,
+      "deterministic_map_hashes": true,
+      "clinical_decision": "withheld",
+      "runtime": {
+        "load_seconds": 0.028005799977108836,
+        "analysis_seconds": 0.11488200002349913,
+        "export_seconds": 0.3339690000284463,
+        "end_to_end_seconds": 0.48733299993909895,
+        "peak_python_memory_mb": 28.00301170349121,
+        "acquisition_time_included": false
+      }
+    },
+    {
+      "roi": "breast_37",
+      "status": "valid",
+      "evidence_status": "confirmed",
+      "eligible_pixels": 25582,
+      "median_reference_error_degrees": 5.2931108474731445,
+      "p75_reference_error_degrees": 10.074599742889404,
+      "maximum_production_validation_orientation_difference_degrees": 7.629101673956029e-06,
+      "maximum_production_validation_coherence_difference": 2.9802210255169825e-08,
+      "deterministic_map_hashes": true,
+      "clinical_decision": "withheld",
+      "runtime": {
+        "load_seconds": 0.027357100043445826,
+        "analysis_seconds": 0.10929910000413656,
+        "export_seconds": 0.28952360013499856,
+        "end_to_end_seconds": 0.4370631999336183,
+        "peak_python_memory_mb": 28.00291633605957,
+        "acquisition_time_included": false
+      }
+    },
+    {
+      "roi": "breast_4",
+      "status": "valid",
+      "evidence_status": "confirmed",
+      "eligible_pixels": 27822,
+      "median_reference_error_degrees": 9.86226212978363,
+      "p75_reference_error_degrees": 18.559364318847656,
+      "maximum_production_validation_orientation_difference_degrees": 7.629311255641369e-06,
+      "maximum_production_validation_coherence_difference": 2.9802122325506275e-08,
+      "deterministic_map_hashes": true,
+      "clinical_decision": "withheld",
+      "runtime": {
+        "load_seconds": 0.028522899840027094,
+        "analysis_seconds": 0.11146769998595119,
+        "export_seconds": 0.3037608000449836,
+        "end_to_end_seconds": 0.4542657998390496,
+        "peak_python_memory_mb": 28.002676010131836,
+        "acquisition_time_included": false
+      }
+    }
+  ],
+  "claim_boundary": "A pass establishes deterministic, bounded-latency production of the already-confirmed PSHG local-orientation endpoint on eight newly selected public unstained fields under a support-aware acquisition contract. It does not add independent biological, instrument, prospective, decision-impact or clinical evidence.",
+  "clinical_readiness": "not_ready",
+  "serialization_contract": {
+    "orientation_dtype": "float32",
+    "coherence_dtype": "float32",
+    "maximum_orientation_difference_degrees": 1.52587890625e-05,
+    "maximum_coherence_difference": 1.1920928955078125e-07,
+    "derivation": "One IEEE-754 float32 spacing at 180 degrees and at unit coherence, respectively."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": "nostos.tlt_pshg_xrd_transfer.prelock.v1",
+  "status": "development_schema_inspection_allowed_confirmation_sealed",
+  "dataset": {
+    "title": "Raw data of journal paper of Effects of Mineralisation on the Hierarchical Organisation of Collagen - a Synchrotron X-ray Scattering and Polarised Second Harmonic Generation Study",
+    "record_id": 10979115,
+    "doi": "10.5281/zenodo.10979115",
+    "license": "CC-BY-4.0",
+    "publication_doi": "10.1098/rsfs.2023.0046",
+    "specimen_type": "normally mineralizing turkey leg tendon",
+    "acquisition_family": "polarization-resolved second harmonic generation microscopy with a synchrotron X-ray scattering reference"
+  },
+  "split": {
+    "unit": "specimen",
+    "salt": "nostos_tlt_pshg_xrd_v1",
+    "algorithm": "sha256(salt + '|' + sample_id), ascending; first two development, remaining two confirmation",
+    "development": [
+      "Sample3",
+      "Sample1"
+    ],
+    "confirmation": [
+      "Sample2",
+      "Sample4"
+    ],
+    "hashes": {
+      "Sample3": "63b1c25f29a5d0c96b20629955f064631d3714c6dc00b4e4913cf30d2d6af7e8",
+      "Sample1": "bb9f430fbb57fd1e8d2454fd6218d586655f38f8a1dcfbb2c6a2525901017d23",
+      "Sample2": "cd19d61f361a616acf147eceabdadb0f7fc21564e5bfb1e01ada6993b9cfe257",
+      "Sample4": "f0c6543fa3bf7ed9615e785469a754d00e76c73cfa449349558efeb0a5ac45fc"
+    }
+  },
+  "zones": {
+    "NM": "non-mineralizing",
+    "EM": "early mineralizing",
+    "LM": "late mineralizing"
+  },
+  "development_policy": {
+    "allowed": [
+      "download and inspect Sample1 and Sample3 MAT schemas",
+      "identify the image arrays, dimensions, physical calibration and deposited reference variables",
+      "develop import, unit tests, QC and candidate endpoint definitions using Sample1 and Sample3 only",
+      "read the publication and repository metadata"
+    ],
+    "prohibited_until_locked_protocol": [
+      "opening or summarizing any Sample2 or Sample4 MAT array",
+      "selecting thresholds or endpoints using Sample2 or Sample4",
+      "reporting confirmation performance before an immutable locked protocol exists"
+    ]
+  },
+  "files": {
+    "Sample1EM.mat": {"bytes": 28937252, "md5": "02552da90bd01981b8ffb5bedb2def69"},
+    "Sample1LM.mat": {"bytes": 48362627, "md5": "2fe6ea7a798a20e09d670cf5ae7b4714"},
+    "Sample1NM.mat": {"bytes": 65838617, "md5": "cadf1105f9af4e5a81a3296f67b8f157"},
+    "Sample2EM.mat": {"bytes": 44083790, "md5": "b854c865070afd726134b5bf5aac3a26"},
+    "Sample2LM.mat": {"bytes": 41240578, "md5": "0ed1273b08bc1292d48da0e7e15e7877"},
+    "Sample2NM.mat": {"bytes": 92716369, "md5": "816b9827db03d3c2a3b58ce25e591058"},
+    "Sample3EM.mat": {"bytes": 29593541, "md5": "a3cb5ebd80b12888e8f0ac5f345d528a"},
+    "Sample3LM.mat": {"bytes": 52705023, "md5": "f7dfaef3e4a268ca01cc40a43598cc7c"},
+    "Sample3NM.mat": {"bytes": 56674919, "md5": "9156323844cab73fa8396987274bbb19"},
+    "Sample4EM.mat": {"bytes": 29520236, "md5": "d110c904ab4a7bf202c96ddfb4b86455"},
+    "Sample4LM.mat": {"bytes": 29990912, "md5": "65014cf378b4eb7a1bf6799366404f1d"},
+    "Sample4NM.mat": {"bytes": 48584863, "md5": "0b671e39417874cf2ca035c1909854bd"},
+    "XRD rawData.mat": {"bytes": 250198, "md5": "6306529f8252ad105381f09b8240d302"}
+  },
+  "claim_boundary": [
+    "This prelock authorizes development only and contains no positive performance claim.",
+    "The four specimens are independent units; pixels, tiles and zones must not be treated as independent specimens.",
+    "The X-ray data are an orthogonal structural reference but are not assumed to be perfectly registered to pSHG pixels.",
+    "A confirmation result on two specimens would be a compact external-acquisition transfer test, not population validation, mechanics validation or clinical validation."
+  ]
+}

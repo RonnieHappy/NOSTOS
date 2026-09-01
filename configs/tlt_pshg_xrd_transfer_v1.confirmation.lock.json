@@ -1,0 +1,26 @@
+{
+  "schema_version": "nostos.tlt_pshg_xrd.confirmation_lock.v1",
+  "created_utc": "2026-08-31T04:20:00Z",
+  "protocol_path": "docs/NOSTOS0_TLT_PSHG_XRD_TRANSFER_V1_PROTOCOL.md",
+  "protocol_sha256": "e550195e7db6a437b985cfdac250f31d55e944bc6acdd54ce5d2a241eda53f03",
+  "config_path": "configs/tlt_pshg_xrd_transfer_v1.locked.json",
+  "config_sha256": "479fd756cd42e9b19a34cce106b1d7be5853d0b06601b9c40b2fcca5b35e87b5",
+  "prelock_path": "configs/tlt_pshg_xrd_transfer_v1.prelock.json",
+  "prelock_sha256": "c6406fda293c60177428c9bb7e0fc3116272a87ea5aa6dfee096175d1d087dfc",
+  "candidate_screen_path": "outputs/nostos0-tlt-pshg-xrd-v1-development/candidate_screen.json",
+  "candidate_screen_sha256": "e6462898025115afc6200c7a7a7db397cca1fd61c77f5edde9330af5b7471eff",
+  "development_profile_path": "outputs/nostos0-tlt-pshg-xrd-v1-locked-development/validity_profile.json",
+  "development_profile_sha256": "4a6d41fa1eb5ff0bc80b2a6644a6d22666c26cc34643ff9119a421c8dcf6a956",
+  "development_result_path": "outputs/nostos0-tlt-pshg-xrd-v1-locked-development/development.json",
+  "development_result_sha256": "0f23a356306ca452dc6e989cae74fe5a0255c9e673d818e5a60a91814a182614",
+  "implementation_path": "src/nostos/validation/tlt_pshg_xrd_transfer.py",
+  "implementation_sha256": "0f1685b86934a52e8d6a5fca1a19dbb776de97afe3552dcface5c7a09529434a",
+  "runner_path": "scripts/run_tlt_pshg_xrd_confirmation_v1.py",
+  "runner_sha256": "823abffc139bf98c9a5cd16f79d892b8edd165a1c32481a58a3970d3a506cb09",
+  "split": {
+    "development": ["Sample3", "Sample1"],
+    "confirmation": ["Sample2", "Sample4"]
+  },
+  "confirmation_arrays_opened": false,
+  "immutability_rule": "Any change to a hashed artifact invalidates this lock and requires a new independently sealed dataset."
+}

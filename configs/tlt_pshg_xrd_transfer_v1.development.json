@@ -1,0 +1,54 @@
+{
+  "protocol_version": "nostos-tlt-pshg-xrd-transfer/1.0-development",
+  "measurement": {
+    "transform": "log1p",
+    "primary_scale_um": 12.0,
+    "comparison_scale_um": 6.0,
+    "reference_offset_degrees": 0.0,
+    "edge_exclusion_pixels": 16,
+    "minimum_input_support_pixels": 10000,
+    "minimum_adjudicable_pixels": 10000,
+    "invalid_median_error_degrees": 20.0,
+    "invalid_p75_error_degrees": 35.0
+  },
+  "conditions": [
+    {"id": "clean"},
+    {"id": "blur_sigma_1", "blur_sigma_pixels": 1.0},
+    {"id": "blur_sigma_2", "blur_sigma_pixels": 2.0},
+    {"id": "blur_sigma_4", "blur_sigma_pixels": 4.0},
+    {"id": "blur_sigma_8", "blur_sigma_pixels": 8.0},
+    {"id": "noise_snr_30", "noise_snr_db": 30.0},
+    {"id": "noise_snr_20", "noise_snr_db": 20.0},
+    {"id": "noise_snr_10", "noise_snr_db": 10.0},
+    {"id": "noise_snr_5", "noise_snr_db": 5.0},
+    {"id": "resample_factor_2", "resample_factor": 2},
+    {"id": "resample_factor_4", "resample_factor": 4},
+    {"id": "resample_factor_8", "resample_factor": 8},
+    {"id": "contrast_factor_0_5", "contrast_factor": 0.5},
+    {"id": "contrast_factor_0_25", "contrast_factor": 0.25},
+    {"id": "compound_moderate", "blur_sigma_pixels": 4.0, "resample_factor": 2, "noise_snr_db": 10.0},
+    {"id": "compound_severe", "blur_sigma_pixels": 8.0, "resample_factor": 4, "noise_snr_db": 5.0}
+  ],
+  "risk_components": {
+    "minimum_contrast_to_residual": 3.0,
+    "maximum_endpoint_fraction": 0.2,
+    "minimum_median_coherence": 0.15,
+    "maximum_interscale_disagreement_degrees": 15.0,
+    "maximum_estimator_disagreement_degrees": 20.0
+  },
+  "policies": {
+    "acquisition_qc": ["acquisition_qc"],
+    "endpoint_qc": ["acquisition_qc", "coherence"],
+    "without_scale_consistency": ["acquisition_qc", "coherence", "estimator_consistency"],
+    "without_estimator_consistency": ["acquisition_qc", "coherence", "scale_consistency"],
+    "full_contract": ["acquisition_qc", "coherence", "scale_consistency", "estimator_consistency"]
+  },
+  "calibration": {
+    "folds": 4,
+    "bins": 6,
+    "seed": 8263001,
+    "prior_alpha": 0.5,
+    "prior_beta": 0.5,
+    "maximum_predicted_risk": 0.15
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": "nostos-fmd-full-archive-strict-support/1.0",
+  "protocol_id": "fmd-full-archive-strict-support-v1-6",
+  "created_at_utc": "2026-08-31T14:05:00Z",
+  "rationale": {
+    "trigger": "The prospectively locked v1.5 extension failed because the previously supported average-of-8 by 16-pixel cell produced six invalid accepted measurements in two of seven untouched fields.",
+    "development_status": "All nineteen non-excluded WideField_BPAE_R fields are now open and are used only to compile a conservative full-archive development profile.",
+    "repair_rule": "Retain a cell only when it has accepted cases from all nineteen fields, zero accepted failures, zero fields with any accepted failure and a two-sided exact field-event upper 95% bound no greater than 0.20.",
+    "claim_boundary": "This profile is post-failure development. It is not confirmation evidence until applied without refitting to a separate archive."
+  },
+  "scope": {
+    "study_type": "computation_only_public_data_post_failure_development",
+    "claim": "A conservative full-archive support profile can be compiled after retaining the failed v1.5 extension and before opening external transfer archives.",
+    "excluded_claims": [
+      "prospective confirmation within WideField_BPAE_R",
+      "cross-instrument or cross-structure transfer",
+      "physical-scale measurement",
+      "biological or clinical interpretation"
+    ]
+  },
+  "source": {
+    "dataset": "Fluorescence Microscopy Denoising (FMD) dataset",
+    "doi": "10.7274/r0-ed2r-4052",
+    "acquisition_modality": "WideField",
+    "sample": "BPAE_R",
+    "independent_unit": "field of view",
+    "excluded_field": 19,
+    "development_fields": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20]
+  },
+  "base_profile": {
+    "path": "outputs/nostos0-fmd-widefield-v1-3-compiled/validity_profile.json",
+    "file_sha256": "9c99e6c01359b8b8ab84f1eb6f48cf9101e913ee90269b63573ffd1abc69b737",
+    "content_sha256": "65239b44c66a8bfca80608b1544fd0c892cf8e3209805828a1623d85382eebb8",
+    "primary_score": "declared_capture_stability_contract",
+    "primary_endpoint_family": "tensor_coherence",
+    "predicted_risk_threshold": 0.6303073200826219
+  },
+  "development_sources": [
+    {
+      "path": "outputs/nostos0-fmd-widefield-v1-3-development/development_rows.jsonl",
+      "sha256": "feaf9e734a3b68dd591251c4b17452e953aea2b95a5f99d6b8fb8959459123f6",
+      "fields": [7, 15, 13, 9]
+    },
+    {
+      "path": "outputs/nostos0-fmd-widefield-v1-3-confirmation/confirmation_rows.jsonl",
+      "sha256": "cf22eada35d7e967788c15940fffe21474cf9709dd3a47e00163212695b855cc",
+      "fields": [16, 17, 18, 11]
+    },
+    {
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-confirmation/confirmation_rows.jsonl",
+      "sha256": "d95288907b6fd2ac14a81f6c54469c392661c24c3aa11382551a72eb2c5c4eee",
+      "fields": [20, 14, 5, 1]
+    },
+    {
+      "path": "outputs/nostos0-fmd-widefield-v1-5-extended-confirmation/extension_rows.jsonl",
+      "sha256": "29edddac437fa256e2a3db134af2c5d31d1d1d1f714b53c0bf72f572a795dddb",
+      "fields": [3, 12, 6, 8, 4, 2, 10]
+    }
+  ],
+  "failure_receipt": {
+    "path": "outputs/nostos0-fmd-widefield-v1-5-extended-confirmation-audit/extended_confirmation_audit.json",
+    "sha256": "b81ee4cade734bd620c51554f27cd5ab2500bc78d318d6241bf8d9325700b4c9",
+    "required_status": "fail"
+  },
+  "cell_compiler": {
+    "cell_dimensions": [
+      {"source": "metadata", "key": "acquisition_level"},
+      {"source": "row", "key": "requested_scale_value"}
+    ],
+    "minimum_accepted_cases_per_cell": 60,
+    "required_accepted_independent_groups_per_cell": 19,
+    "maximum_observed_risk_per_cell": 0.0,
+    "maximum_fields_with_any_accepted_failure_per_cell": 0,
+    "maximum_two_sided_exact_field_failure_upper95_per_cell": 0.2,
+    "confidence_level": 0.95,
+    "bootstrap_replicates": 5000,
+    "bootstrap_seed": 26083162,
+    "development_gates": {
+      "minimum_coverage": 0.2,
+      "maximum_observed_risk": 0.0,
+      "maximum_fields_with_any_accepted_failure": 0
+    }
+  },
+  "confirmation_gates": {
+    "minimum_independent_groups": 7,
+    "minimum_coverage": 0.18,
+    "maximum_observed_risk": 0.1,
+    "maximum_cluster_bootstrap_risk_upper95": 0.3,
+    "minimum_relative_risk_reduction_vs_acquisition_qc": 0.2,
+    "minimum_invalid_acquisition_qc_emissions": 5,
+    "require_positive_aurc_difference": true,
+    "require_aurc_bootstrap_ci_lower_above_zero": true,
+    "minimum_accepted_cases_per_supported_cell": 20,
+    "minimum_accepted_independent_groups_per_supported_cell": 7,
+    "maximum_observed_risk_per_supported_cell": 0.15,
+    "maximum_cluster_bootstrap_risk_upper95_per_supported_cell": 0.4,
+    "bootstrap_replicates": 5000,
+    "bootstrap_seed": 26083163
+  }
+}

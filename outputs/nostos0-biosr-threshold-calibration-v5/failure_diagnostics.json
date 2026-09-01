@@ -1,0 +1,798 @@
+{
+  "schema_version": "nostos-biosr-threshold-failure-diagnostic/1.0",
+  "created_at_utc": "2026-08-29T03:09:48Z",
+  "status": "diagnostic_only_v5_remains_failed",
+  "source_calibration": {
+    "path": "outputs/nostos0-biosr-threshold-calibration-v5/threshold_calibration.json",
+    "bytes": 7042,
+    "sha256": "fa87b78ee4077c39deaf09490fe34ff24322a76c74afeee0b5caf913e9a90531"
+  },
+  "constraints": {
+    "condition": "full_contract",
+    "minimum_structure_endpoint_coverage": 0.7,
+    "target_structure_endpoint_risk": 0.1
+  },
+  "scope": {
+    "reference_fields": 63,
+    "paired_acquisitions": 468,
+    "claim_endpoint_rows": 8424,
+    "reference_eligible_claim_cases": 5678
+  },
+  "combination_diagnostics": [
+    {
+      "status": "assessable",
+      "eligible": 237,
+      "reference_fields": 30,
+      "hard_abstentions": 0,
+      "minimum_coverage": 0.7,
+      "always_accept_nonhard": {
+        "accepted": 237,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "best": {
+        "threshold": 0.4566275011141736,
+        "accepted": 237,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "candidate_thresholds_at_or_above_coverage_floor": 72,
+      "structure": "CCPs",
+      "endpoint": "hessian_blob_curve",
+      "condition": "full_contract",
+      "passes_independent_diagnostic": true,
+      "target_risk": 0.1
+    },
+    {
+      "status": "assessable",
+      "eligible": 237,
+      "reference_fields": 30,
+      "hard_abstentions": 0,
+      "minimum_coverage": 0.7,
+      "always_accept_nonhard": {
+        "accepted": 237,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "best": {
+        "threshold": 0.4566275011141736,
+        "accepted": 237,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "candidate_thresholds_at_or_above_coverage_floor": 72,
+      "structure": "CCPs",
+      "endpoint": "hessian_tube_curve",
+      "condition": "full_contract",
+      "passes_independent_diagnostic": true,
+      "target_risk": 0.1
+    },
+    {
+      "status": "assessable",
+      "eligible": 237,
+      "reference_fields": 30,
+      "hard_abstentions": 0,
+      "minimum_coverage": 0.7,
+      "always_accept_nonhard": {
+        "accepted": 237,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "best": {
+        "threshold": 0.4566275011141736,
+        "accepted": 237,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "candidate_thresholds_at_or_above_coverage_floor": 72,
+      "structure": "CCPs",
+      "endpoint": "spectral_anisotropy",
+      "condition": "full_contract",
+      "passes_independent_diagnostic": true,
+      "target_risk": 0.1
+    },
+    {
+      "status": "assessable",
+      "eligible": 237,
+      "reference_fields": 30,
+      "hard_abstentions": 0,
+      "minimum_coverage": 0.7,
+      "always_accept_nonhard": {
+        "accepted": 237,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "best": {
+        "threshold": 0.4566275011141736,
+        "accepted": 237,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "candidate_thresholds_at_or_above_coverage_floor": 72,
+      "structure": "CCPs",
+      "endpoint": "spectral_entropy",
+      "condition": "full_contract",
+      "passes_independent_diagnostic": true,
+      "target_risk": 0.1
+    },
+    {
+      "status": "assessable",
+      "eligible": 1185,
+      "reference_fields": 30,
+      "hard_abstentions": 0,
+      "minimum_coverage": 0.7,
+      "always_accept_nonhard": {
+        "accepted": 1185,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "best": {
+        "threshold": 0.4566275011141736,
+        "accepted": 1185,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "candidate_thresholds_at_or_above_coverage_floor": 304,
+      "structure": "CCPs",
+      "endpoint": "tensor_coherence",
+      "condition": "full_contract",
+      "passes_independent_diagnostic": true,
+      "target_risk": 0.1
+    },
+    {
+      "status": "not_assessable",
+      "eligible": 0,
+      "reference_fields": 0,
+      "hard_abstentions": 0,
+      "minimum_coverage": 0.7,
+      "best": null,
+      "structure": "CCPs",
+      "endpoint": "tensor_orientation",
+      "condition": "full_contract",
+      "passes_independent_diagnostic": false,
+      "target_risk": 0.1
+    },
+    {
+      "status": "assessable",
+      "eligible": 237,
+      "reference_fields": 30,
+      "hard_abstentions": 0,
+      "minimum_coverage": 0.7,
+      "always_accept_nonhard": {
+        "accepted": 237,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "best": {
+        "threshold": 0.4566275011141736,
+        "accepted": 237,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "candidate_thresholds_at_or_above_coverage_floor": 72,
+      "structure": "CCPs",
+      "endpoint": "variogram_horizontal_curve",
+      "condition": "full_contract",
+      "passes_independent_diagnostic": true,
+      "target_risk": 0.1
+    },
+    {
+      "status": "assessable",
+      "eligible": 237,
+      "reference_fields": 30,
+      "hard_abstentions": 0,
+      "minimum_coverage": 0.7,
+      "always_accept_nonhard": {
+        "accepted": 237,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "best": {
+        "threshold": 0.9999999999999998,
+        "accepted": 237,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "candidate_thresholds_at_or_above_coverage_floor": 62,
+      "structure": "CCPs",
+      "endpoint": "variogram_range_horizontal",
+      "condition": "full_contract",
+      "passes_independent_diagnostic": true,
+      "target_risk": 0.1
+    },
+    {
+      "status": "assessable",
+      "eligible": 237,
+      "reference_fields": 30,
+      "hard_abstentions": 0,
+      "minimum_coverage": 0.7,
+      "always_accept_nonhard": {
+        "accepted": 237,
+        "coverage": 1.0,
+        "invalid": 7,
+        "risk": 0.029535864978902954
+      },
+      "best": {
+        "threshold": 0.9999999999999998,
+        "accepted": 237,
+        "coverage": 1.0,
+        "invalid": 7,
+        "risk": 0.029535864978902954
+      },
+      "candidate_thresholds_at_or_above_coverage_floor": 64,
+      "structure": "CCPs",
+      "endpoint": "variogram_range_vertical",
+      "condition": "full_contract",
+      "passes_independent_diagnostic": true,
+      "target_risk": 0.1
+    },
+    {
+      "status": "assessable",
+      "eligible": 237,
+      "reference_fields": 30,
+      "hard_abstentions": 0,
+      "minimum_coverage": 0.7,
+      "always_accept_nonhard": {
+        "accepted": 237,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "best": {
+        "threshold": 0.4566275011141736,
+        "accepted": 237,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "candidate_thresholds_at_or_above_coverage_floor": 72,
+      "structure": "CCPs",
+      "endpoint": "variogram_vertical_curve",
+      "condition": "full_contract",
+      "passes_independent_diagnostic": true,
+      "target_risk": 0.1
+    },
+    {
+      "status": "assessable",
+      "eligible": 192,
+      "reference_fields": 33,
+      "hard_abstentions": 0,
+      "minimum_coverage": 0.7,
+      "always_accept_nonhard": {
+        "accepted": 192,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "best": {
+        "threshold": 0.40347936181135097,
+        "accepted": 192,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "candidate_thresholds_at_or_above_coverage_floor": 58,
+      "structure": "ER",
+      "endpoint": "hessian_blob_curve",
+      "condition": "full_contract",
+      "passes_independent_diagnostic": true,
+      "target_risk": 0.1
+    },
+    {
+      "status": "assessable",
+      "eligible": 192,
+      "reference_fields": 33,
+      "hard_abstentions": 0,
+      "minimum_coverage": 0.7,
+      "always_accept_nonhard": {
+        "accepted": 192,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "best": {
+        "threshold": 0.40347936181135097,
+        "accepted": 192,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "candidate_thresholds_at_or_above_coverage_floor": 58,
+      "structure": "ER",
+      "endpoint": "hessian_tube_curve",
+      "condition": "full_contract",
+      "passes_independent_diagnostic": true,
+      "target_risk": 0.1
+    },
+    {
+      "status": "assessable",
+      "eligible": 192,
+      "reference_fields": 33,
+      "hard_abstentions": 0,
+      "minimum_coverage": 0.7,
+      "always_accept_nonhard": {
+        "accepted": 192,
+        "coverage": 1.0,
+        "invalid": 2,
+        "risk": 0.010416666666666666
+      },
+      "best": {
+        "threshold": 0.34475644664801014,
+        "accepted": 178,
+        "coverage": 0.9270833333333334,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "candidate_thresholds_at_or_above_coverage_floor": 58,
+      "structure": "ER",
+      "endpoint": "spectral_anisotropy",
+      "condition": "full_contract",
+      "passes_independent_diagnostic": true,
+      "target_risk": 0.1
+    },
+    {
+      "status": "assessable",
+      "eligible": 192,
+      "reference_fields": 33,
+      "hard_abstentions": 0,
+      "minimum_coverage": 0.7,
+      "always_accept_nonhard": {
+        "accepted": 192,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "best": {
+        "threshold": 0.40347936181135097,
+        "accepted": 192,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "candidate_thresholds_at_or_above_coverage_floor": 58,
+      "structure": "ER",
+      "endpoint": "spectral_entropy",
+      "condition": "full_contract",
+      "passes_independent_diagnostic": true,
+      "target_risk": 0.1
+    },
+    {
+      "status": "assessable",
+      "eligible": 960,
+      "reference_fields": 33,
+      "hard_abstentions": 0,
+      "minimum_coverage": 0.7,
+      "always_accept_nonhard": {
+        "accepted": 960,
+        "coverage": 1.0,
+        "invalid": 230,
+        "risk": 0.23958333333333334
+      },
+      "best": {
+        "threshold": 0.2999141693723138,
+        "accepted": 675,
+        "coverage": 0.703125,
+        "invalid": 56,
+        "risk": 0.08296296296296296
+      },
+      "candidate_thresholds_at_or_above_coverage_floor": 197,
+      "structure": "ER",
+      "endpoint": "tensor_coherence",
+      "condition": "full_contract",
+      "passes_independent_diagnostic": true,
+      "target_risk": 0.1
+    },
+    {
+      "status": "assessable",
+      "eligible": 158,
+      "reference_fields": 6,
+      "hard_abstentions": 35,
+      "minimum_coverage": 0.7,
+      "always_accept_nonhard": {
+        "accepted": 123,
+        "coverage": 0.7784810126582279,
+        "invalid": 10,
+        "risk": 0.08130081300813008
+      },
+      "best": {
+        "threshold": 0.9964578203269273,
+        "accepted": 123,
+        "coverage": 0.7784810126582279,
+        "invalid": 10,
+        "risk": 0.08130081300813008
+      },
+      "candidate_thresholds_at_or_above_coverage_floor": 3,
+      "structure": "ER",
+      "endpoint": "tensor_orientation",
+      "condition": "full_contract",
+      "passes_independent_diagnostic": true,
+      "target_risk": 0.1
+    },
+    {
+      "status": "assessable",
+      "eligible": 192,
+      "reference_fields": 33,
+      "hard_abstentions": 0,
+      "minimum_coverage": 0.7,
+      "always_accept_nonhard": {
+        "accepted": 192,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "best": {
+        "threshold": 0.40347936181135097,
+        "accepted": 192,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "candidate_thresholds_at_or_above_coverage_floor": 58,
+      "structure": "ER",
+      "endpoint": "variogram_horizontal_curve",
+      "condition": "full_contract",
+      "passes_independent_diagnostic": true,
+      "target_risk": 0.1
+    },
+    {
+      "status": "assessable",
+      "eligible": 169,
+      "reference_fields": 29,
+      "hard_abstentions": 0,
+      "minimum_coverage": 0.7,
+      "always_accept_nonhard": {
+        "accepted": 169,
+        "coverage": 1.0,
+        "invalid": 15,
+        "risk": 0.08875739644970414
+      },
+      "best": {
+        "threshold": 0.40347936181135097,
+        "accepted": 132,
+        "coverage": 0.7810650887573964,
+        "invalid": 6,
+        "risk": 0.045454545454545456
+      },
+      "candidate_thresholds_at_or_above_coverage_floor": 17,
+      "structure": "ER",
+      "endpoint": "variogram_range_horizontal",
+      "condition": "full_contract",
+      "passes_independent_diagnostic": true,
+      "target_risk": 0.1
+    },
+    {
+      "status": "assessable",
+      "eligible": 158,
+      "reference_fields": 27,
+      "hard_abstentions": 0,
+      "minimum_coverage": 0.7,
+      "always_accept_nonhard": {
+        "accepted": 158,
+        "coverage": 1.0,
+        "invalid": 17,
+        "risk": 0.10759493670886076
+      },
+      "best": {
+        "threshold": 0.9999999999999998,
+        "accepted": 158,
+        "coverage": 1.0,
+        "invalid": 17,
+        "risk": 0.10759493670886076
+      },
+      "candidate_thresholds_at_or_above_coverage_floor": 13,
+      "structure": "ER",
+      "endpoint": "variogram_range_vertical",
+      "condition": "full_contract",
+      "passes_independent_diagnostic": false,
+      "target_risk": 0.1
+    },
+    {
+      "status": "assessable",
+      "eligible": 192,
+      "reference_fields": 33,
+      "hard_abstentions": 0,
+      "minimum_coverage": 0.7,
+      "always_accept_nonhard": {
+        "accepted": 192,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "best": {
+        "threshold": 0.40347936181135097,
+        "accepted": 192,
+        "coverage": 1.0,
+        "invalid": 0,
+        "risk": 0.0
+      },
+      "candidate_thresholds_at_or_above_coverage_floor": 58,
+      "structure": "ER",
+      "endpoint": "variogram_vertical_curve",
+      "condition": "full_contract",
+      "passes_independent_diagnostic": true,
+      "target_risk": 0.1
+    }
+  ],
+  "irreducible_combination_failures": [
+    {
+      "structure": "ER",
+      "endpoint": "variogram_range_vertical",
+      "best": {
+        "threshold": 0.9999999999999998,
+        "accepted": 158,
+        "coverage": 1.0,
+        "invalid": 17,
+        "risk": 0.10759493670886076
+      }
+    }
+  ],
+  "threshold_scale_conflicts": [
+    {
+      "structure": "ER",
+      "endpoint_a": "tensor_coherence",
+      "threshold_a": 0.2999141693723138,
+      "endpoint_b": "variogram_range_vertical",
+      "threshold_b": 0.9999999999999998,
+      "absolute_separation": 0.700085830627686
+    },
+    {
+      "structure": "ER",
+      "endpoint_a": "tensor_coherence",
+      "threshold_a": 0.2999141693723138,
+      "endpoint_b": "tensor_orientation",
+      "threshold_b": 0.9964578203269273,
+      "absolute_separation": 0.6965436509546135
+    },
+    {
+      "structure": "ER",
+      "endpoint_a": "spectral_anisotropy",
+      "threshold_a": 0.34475644664801014,
+      "endpoint_b": "variogram_range_vertical",
+      "threshold_b": 0.9999999999999998,
+      "absolute_separation": 0.6552435533519896
+    },
+    {
+      "structure": "ER",
+      "endpoint_a": "spectral_anisotropy",
+      "threshold_a": 0.34475644664801014,
+      "endpoint_b": "tensor_orientation",
+      "threshold_b": 0.9964578203269273,
+      "absolute_separation": 0.6517013736789172
+    },
+    {
+      "structure": "ER",
+      "endpoint_a": "hessian_blob_curve",
+      "threshold_a": 0.40347936181135097,
+      "endpoint_b": "variogram_range_vertical",
+      "threshold_b": 0.9999999999999998,
+      "absolute_separation": 0.5965206381886488
+    },
+    {
+      "structure": "ER",
+      "endpoint_a": "hessian_tube_curve",
+      "threshold_a": 0.40347936181135097,
+      "endpoint_b": "variogram_range_vertical",
+      "threshold_b": 0.9999999999999998,
+      "absolute_separation": 0.5965206381886488
+    },
+    {
+      "structure": "ER",
+      "endpoint_a": "spectral_entropy",
+      "threshold_a": 0.40347936181135097,
+      "endpoint_b": "variogram_range_vertical",
+      "threshold_b": 0.9999999999999998,
+      "absolute_separation": 0.5965206381886488
+    },
+    {
+      "structure": "ER",
+      "endpoint_a": "variogram_horizontal_curve",
+      "threshold_a": 0.40347936181135097,
+      "endpoint_b": "variogram_range_vertical",
+      "threshold_b": 0.9999999999999998,
+      "absolute_separation": 0.5965206381886488
+    },
+    {
+      "structure": "ER",
+      "endpoint_a": "variogram_range_horizontal",
+      "threshold_a": 0.40347936181135097,
+      "endpoint_b": "variogram_range_vertical",
+      "threshold_b": 0.9999999999999998,
+      "absolute_separation": 0.5965206381886488
+    },
+    {
+      "structure": "ER",
+      "endpoint_a": "variogram_range_vertical",
+      "threshold_a": 0.9999999999999998,
+      "endpoint_b": "variogram_vertical_curve",
+      "threshold_b": 0.40347936181135097,
+      "absolute_separation": 0.5965206381886488
+    },
+    {
+      "structure": "ER",
+      "endpoint_a": "hessian_blob_curve",
+      "threshold_a": 0.40347936181135097,
+      "endpoint_b": "tensor_orientation",
+      "threshold_b": 0.9964578203269273,
+      "absolute_separation": 0.5929784585155764
+    },
+    {
+      "structure": "ER",
+      "endpoint_a": "hessian_tube_curve",
+      "threshold_a": 0.40347936181135097,
+      "endpoint_b": "tensor_orientation",
+      "threshold_b": 0.9964578203269273,
+      "absolute_separation": 0.5929784585155764
+    },
+    {
+      "structure": "ER",
+      "endpoint_a": "spectral_entropy",
+      "threshold_a": 0.40347936181135097,
+      "endpoint_b": "tensor_orientation",
+      "threshold_b": 0.9964578203269273,
+      "absolute_separation": 0.5929784585155764
+    },
+    {
+      "structure": "ER",
+      "endpoint_a": "tensor_orientation",
+      "threshold_a": 0.9964578203269273,
+      "endpoint_b": "variogram_horizontal_curve",
+      "threshold_b": 0.40347936181135097,
+      "absolute_separation": 0.5929784585155764
+    },
+    {
+      "structure": "ER",
+      "endpoint_a": "tensor_orientation",
+      "threshold_a": 0.9964578203269273,
+      "endpoint_b": "variogram_range_horizontal",
+      "threshold_b": 0.40347936181135097,
+      "absolute_separation": 0.5929784585155764
+    },
+    {
+      "structure": "ER",
+      "endpoint_a": "tensor_orientation",
+      "threshold_a": 0.9964578203269273,
+      "endpoint_b": "variogram_vertical_curve",
+      "threshold_b": 0.40347936181135097,
+      "absolute_separation": 0.5929784585155764
+    },
+    {
+      "structure": "CCPs",
+      "endpoint_a": "hessian_blob_curve",
+      "threshold_a": 0.4566275011141736,
+      "endpoint_b": "variogram_range_horizontal",
+      "threshold_b": 0.9999999999999998,
+      "absolute_separation": 0.5433724988858262
+    },
+    {
+      "structure": "CCPs",
+      "endpoint_a": "hessian_blob_curve",
+      "threshold_a": 0.4566275011141736,
+      "endpoint_b": "variogram_range_vertical",
+      "threshold_b": 0.9999999999999998,
+      "absolute_separation": 0.5433724988858262
+    },
+    {
+      "structure": "CCPs",
+      "endpoint_a": "hessian_tube_curve",
+      "threshold_a": 0.4566275011141736,
+      "endpoint_b": "variogram_range_horizontal",
+      "threshold_b": 0.9999999999999998,
+      "absolute_separation": 0.5433724988858262
+    },
+    {
+      "structure": "CCPs",
+      "endpoint_a": "hessian_tube_curve",
+      "threshold_a": 0.4566275011141736,
+      "endpoint_b": "variogram_range_vertical",
+      "threshold_b": 0.9999999999999998,
+      "absolute_separation": 0.5433724988858262
+    },
+    {
+      "structure": "CCPs",
+      "endpoint_a": "spectral_anisotropy",
+      "threshold_a": 0.4566275011141736,
+      "endpoint_b": "variogram_range_horizontal",
+      "threshold_b": 0.9999999999999998,
+      "absolute_separation": 0.5433724988858262
+    },
+    {
+      "structure": "CCPs",
+      "endpoint_a": "spectral_anisotropy",
+      "threshold_a": 0.4566275011141736,
+      "endpoint_b": "variogram_range_vertical",
+      "threshold_b": 0.9999999999999998,
+      "absolute_separation": 0.5433724988858262
+    },
+    {
+      "structure": "CCPs",
+      "endpoint_a": "spectral_entropy",
+      "threshold_a": 0.4566275011141736,
+      "endpoint_b": "variogram_range_horizontal",
+      "threshold_b": 0.9999999999999998,
+      "absolute_separation": 0.5433724988858262
+    },
+    {
+      "structure": "CCPs",
+      "endpoint_a": "spectral_entropy",
+      "threshold_a": 0.4566275011141736,
+      "endpoint_b": "variogram_range_vertical",
+      "threshold_b": 0.9999999999999998,
+      "absolute_separation": 0.5433724988858262
+    },
+    {
+      "structure": "CCPs",
+      "endpoint_a": "tensor_coherence",
+      "threshold_a": 0.4566275011141736,
+      "endpoint_b": "variogram_range_horizontal",
+      "threshold_b": 0.9999999999999998,
+      "absolute_separation": 0.5433724988858262
+    },
+    {
+      "structure": "CCPs",
+      "endpoint_a": "tensor_coherence",
+      "threshold_a": 0.4566275011141736,
+      "endpoint_b": "variogram_range_vertical",
+      "threshold_b": 0.9999999999999998,
+      "absolute_separation": 0.5433724988858262
+    },
+    {
+      "structure": "CCPs",
+      "endpoint_a": "variogram_horizontal_curve",
+      "threshold_a": 0.4566275011141736,
+      "endpoint_b": "variogram_range_horizontal",
+      "threshold_b": 0.9999999999999998,
+      "absolute_separation": 0.5433724988858262
+    },
+    {
+      "structure": "CCPs",
+      "endpoint_a": "variogram_horizontal_curve",
+      "threshold_a": 0.4566275011141736,
+      "endpoint_b": "variogram_range_vertical",
+      "threshold_b": 0.9999999999999998,
+      "absolute_separation": 0.5433724988858262
+    },
+    {
+      "structure": "CCPs",
+      "endpoint_a": "variogram_range_horizontal",
+      "threshold_a": 0.9999999999999998,
+      "endpoint_b": "variogram_vertical_curve",
+      "threshold_b": 0.4566275011141736,
+      "absolute_separation": 0.5433724988858262
+    },
+    {
+      "structure": "CCPs",
+      "endpoint_a": "variogram_range_vertical",
+      "threshold_a": 0.9999999999999998,
+      "endpoint_b": "variogram_vertical_curve",
+      "threshold_b": 0.4566275011141736,
+      "absolute_separation": 0.5433724988858262
+    }
+  ],
+  "score_distribution": {
+    "eligible_nonhard": 5643,
+    "valid_n": 5362,
+    "valid_median": 0.10708852657825434,
+    "valid_q10": 0.10134759765718004,
+    "valid_q90": 0.3165039441054204,
+    "invalid_n": 281,
+    "invalid_median": 0.35529484252197874,
+    "invalid_q10": 0.15902574392139227,
+    "invalid_q90": 0.5524668056692683
+  },
+  "interpretation": "Post-failure diagnosis only. No threshold is selected and confirmation access remains unauthorized.",
+  "confirmation_archives_accessed": false
+}

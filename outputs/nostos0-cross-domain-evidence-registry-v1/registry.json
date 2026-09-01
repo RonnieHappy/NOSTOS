@@ -1,0 +1,287 @@
+{
+  "schema_version": "nostos-cross-domain-evidence-registry/1.0",
+  "status": "pass",
+  "meaning_of_registry_pass": "All source receipts were found and their positive, mixed and negative decisions were reconciled without promotion.",
+  "checks": {
+    "synthetic_confirmation_and_audit_pass": true,
+    "external_reference_passes_present": true,
+    "pshg_row_pass_and_roi_bound_failure_preserved": true,
+    "fmd_small_confirmation_preserved": true,
+    "tendon_and_heaton_failures_preserved": true,
+    "universal_learned_transfer_failure_preserved": true,
+    "radiomics_tie_prevents_superiority_claim": true
+  },
+  "entries": [
+    {
+      "id": "analytic_morphology_spatial_v2_6",
+      "domain": "analytic 2-D morphology and random fields",
+      "endpoint": "Hessian class/scale and gradient anisotropy/axis",
+      "reference": "programmed analytic truth",
+      "independent_units": "36 morphology, 270 spatial and 24 equivariance cases",
+      "frozen_status": "pass",
+      "decision": "supported_analytic_only",
+      "metrics": {
+        "hessian_balanced_accuracy": 1.0,
+        "spatial_coverage": 0.7962962962962963,
+        "spatial_spearman": 0.9435783419756701,
+        "spatial_p95_relative_error": 0.17812778919235028,
+        "rotation_p95_turn_error_degrees": 0.27715837578603836
+      },
+      "boundary": "No biological meaning, segmentation, instrument transfer, mechanics or clinical claim.",
+      "sources": [
+        {
+          "path": "outputs/nostos0-synthetic-physical-truth-v2-6-confirmation/validation.json",
+          "bytes": 430581,
+          "sha256": "f64b85c86f8e415526d2938618cdbda4974bad0094082c44713f52230f2001fc"
+        },
+        {
+          "path": "outputs/nostos0-synthetic-physical-truth-v2-6-audit/audit.json",
+          "bytes": 921,
+          "sha256": "4bec5fb5ccebf233df61e34908493d1a53d6940ace0e0f9761bccf257ec9f501"
+        }
+      ]
+    },
+    {
+      "id": "bonej_thickness",
+      "domain": "public 3-D bone volumes",
+      "endpoint": "local thickness",
+      "reference": "archived IPL maps and BoneJ 1.4.3",
+      "independent_units": "8 volumes",
+      "frozen_status": "pass",
+      "decision": "supported_external_comparator",
+      "metrics": {
+        "ccc": 0.9263180622129717,
+        "median_relative_difference": 0.07138050628268167,
+        "mean_absolute_difference_mm": 0.01567826201319695
+      },
+      "boundary": "Effectively isotropic archived volumes; no anisotropic-acquisition or biological-function claim.",
+      "sources": [
+        {
+          "path": "outputs/nostos0-bonej-thickness-v1/bonej_thickness_comparator.json",
+          "bytes": 5592,
+          "sha256": "561f5592e9d05f66240d1c17caa9f1fbd84d18a5af203cabaec37caf499a04f7"
+        }
+      ]
+    },
+    {
+      "id": "stare_network",
+      "domain": "public retinal vessel reference masks",
+      "endpoint": "network survival and skeleton length under sampling",
+      "reference": "STARE AH/VK observer masks",
+      "independent_units": "20 images",
+      "frozen_status": "pass",
+      "decision": "supported_external_reference_masks",
+      "metrics": {
+        "survival_auc_spearman": 0.9879699248120299,
+        "skeleton_length_spearman": 0.9954887218045112,
+        "median_length_relative_error": 0.017669358282536518,
+        "observer_survival_spearman": 0.8736842105263156
+      },
+      "boundary": "Imported masks only; automatic segmentation and bone-network transfer are not established.",
+      "sources": [
+        {
+          "path": "outputs/nostos0-stare-network-confirmation-v1/stare_network_confirmation.json",
+          "bytes": 16784,
+          "sha256": "da9c59ad2508685325ab2ee805b94c23d90b5ce80a583cd51f5b41a0305fdb96"
+        }
+      ]
+    },
+    {
+      "id": "bbbc035_bulk_motion",
+      "domain": "public fluorescence microscopy with programmed translation",
+      "endpoint": "bulk registration",
+      "reference": "known applied pixel shifts",
+      "independent_units": "public image series with disjoint programmed shifts",
+      "frozen_status": "pass",
+      "decision": "supported_programmed_motion",
+      "metrics": {
+        "median_error_pixels": 0.0,
+        "maximum_error_pixels": 0.0
+      },
+      "boundary": "Registration, not native tissue deformation, strain, mechanics or object correspondence.",
+      "sources": [
+        {
+          "path": "outputs/nostos0-bbbc035-dynamic-confirmation-v1/bbbc035_dynamic_confirmation.json",
+          "bytes": 3019,
+          "sha256": "373a1dfa7bcad32cf272be0b320e21ae5b9b4f9aa4d2c220f7118a5c862a94b4"
+        }
+      ]
+    },
+    {
+      "id": "pshg_orientation",
+      "domain": "unstained PSHG-TISS breast microscopy",
+      "endpoint": "local axial orientation under computational acquisition shifts",
+      "reference": "paired FI orientation field",
+      "independent_units": "24 ROIs; 360 nested conditions",
+      "frozen_status": "pass_row_level_with_failed_independent_unit_bound",
+      "decision": "supported_bounded_row_comparison_not_formal_roi_control",
+      "metrics": {
+        "coverage": 0.6388888888888888,
+        "row_risk": 0.030434782608695653,
+        "matched_acquisition_qc_risk": 0.20434782608695654,
+        "matched_endpoint_qc_risk": 0.10434782608695652,
+        "failing_rois": 7,
+        "roi_risk_upper95": 0.4787279058719694
+      },
+      "boundary": "One acquisition family; nested-row bootstrap is descriptive and not an independent-ROI guarantee.",
+      "sources": [
+        {
+          "path": "outputs/nostos0-pshg-acquisition-shift-v1-confirmation/confirmation.json",
+          "bytes": 820460,
+          "sha256": "7b378331343bb5fffd6ab534781154e9b057f08435977dde78970f31704fe848"
+        },
+        {
+          "path": "outputs/nostos0-pshg-independent-unit-risk-audit-v1/audit.json",
+          "bytes": 3024,
+          "sha256": "dee3a99ae8769bf7a38fd72816efdc059728cfceca84ba8dcf3e016e193a8d3e"
+        }
+      ]
+    },
+    {
+      "id": "fmd_hierarchical_support",
+      "domain": "public widefield fluorescence microscopy",
+      "endpoint": "acquisition-by-scale conditional validity",
+      "reference": "paired higher-support acquisitions",
+      "independent_units": "4 FOVs; 240 nested cases",
+      "frozen_status": "pass",
+      "decision": "supported_small_external_confirmation",
+      "metrics": {
+        "coverage": 0.26666666666666666,
+        "observed_row_risk": 0.0,
+        "aurc_advantage": 0.28067170032216415,
+        "aurc_advantage_ci95": [
+          0.1871387641754223,
+          0.41602048269528413
+        ]
+      },
+      "boundary": "Only four confirmation FOVs from one widefield family; no population-wide zero-risk claim.",
+      "sources": [
+        {
+          "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-confirmation-audit/confirmation_audit.json",
+          "bytes": 8916,
+          "sha256": "ac2c47392c08bf3a7ba03fb8290e6b955ca903e66e3baf39492c2065601fba02"
+        }
+      ]
+    },
+    {
+      "id": "tendon_pshg_xrd",
+      "domain": "unstained tendon pSHG with XRD-associated organization",
+      "endpoint": "orientation validity and organization recovery",
+      "reference": "pSHG orientation and zone-level organization",
+      "independent_units": "2 specimens; 37 fields",
+      "frozen_status": "fail",
+      "decision": "mixed_overall_gate_failed",
+      "metrics": {
+        "coverage": 0.38682432432432434,
+        "row_risk": 0.008733624454148471,
+        "organization_spearman": 0.891180654338549
+      },
+      "boundary": "Organization recovery passed, but overall confirmation failed coverage and clean-preservation gates; only two specimens.",
+      "sources": [
+        {
+          "path": "outputs/nostos0-tlt-pshg-xrd-v1-confirmation/confirmation.json",
+          "bytes": 7662,
+          "sha256": "7e61ae6b29dacc98621fcf934eb6211a28605c3960d8ea9914235d3e980901bf"
+        }
+      ]
+    },
+    {
+      "id": "heaton_shg",
+      "domain": "in-vivo collagen SHG",
+      "endpoint": "multi-endpoint structure and selective validity",
+      "reference": "recognized collagen descriptors across experiments",
+      "independent_units": "8 mice; 45 clean fields",
+      "frozen_status": "fail",
+      "decision": "rejected_overall",
+      "metrics": {
+        "coverage": 0.2,
+        "matched_risk_reduction": 0.0,
+        "successful_endpoints": [
+          "axial_resultant",
+          "foreground_occupancy"
+        ]
+      },
+      "boundary": "Directionally useful descriptors do not rescue the failed frozen deployment gates.",
+      "sources": [
+        {
+          "path": "outputs/nostos0-heaton-in-vivo-shg-v1-confirmation/confirmation.json",
+          "bytes": 4083,
+          "sha256": "63fcef5853f6ee2a78903ba70d103e220bcc7b4c9ce5afa340954f093c3b995b"
+        }
+      ]
+    },
+    {
+      "id": "structure_tensor_comparator",
+      "domain": "PSHG orientation",
+      "endpoint": "cross-software orientation consistency",
+      "reference": "scikit-image 0.25.2 structure tensor",
+      "independent_units": "48 ROIs; 1367747 nested pixels",
+      "frozen_status": "pass",
+      "decision": "supported_noninferiority_not_superiority",
+      "metrics": {
+        "nostos_median_error_degrees": 7.588232599620138,
+        "skimage_median_error_degrees": 7.335599109181118,
+        "cross_software_disagreement_degrees": 3.6393813985992693
+      },
+      "boundary": "Agreement with one upstream implementation; not superiority or tissue truth.",
+      "sources": [
+        {
+          "path": "outputs/nostos0-structure-tensor-comparator-v1/structure_tensor_comparator.json",
+          "bytes": 11917,
+          "sha256": "288cdc44be9bb405bb95e032fcfefcda39037a39cf95c48f35adc88373156d66"
+        }
+      ]
+    },
+    {
+      "id": "feature_family_comparators",
+      "domain": "small synthetic construct benchmark",
+      "endpoint": "four-class structural discrimination",
+      "reference": "frozen programmed classes",
+      "independent_units": "16 held-out synthetic cases",
+      "frozen_status": "mixed",
+      "decision": "universal_superiority_rejected",
+      "metrics": {
+        "kymatio_balanced_accuracy": 0.875,
+        "pyradiomics_balanced_accuracy": 1.0,
+        "pyradiomics_ibsi_first_order_passed": 14,
+        "pyradiomics_ibsi_first_order_total": 14
+      },
+      "boundary": "PyRadiomics tied NOSTOS on the small construct benchmark; universal feature superiority is not supported.",
+      "sources": [
+        {
+          "path": "outputs/nostos0-benchmark-v1/kymatio_benchmark.json",
+          "bytes": 1036,
+          "sha256": "7fb52ac52d5695c2de442e476ffc4b73afff0c32582e33ddcabf428a04d3eae1"
+        },
+        {
+          "path": "outputs/nostos0-benchmark-v1/pyradiomics_benchmark.json",
+          "bytes": 8138,
+          "sha256": "d15c4f03ccc53f6a26f7585320fd934079ec67b12877a32c46ea71415161e078"
+        }
+      ]
+    },
+    {
+      "id": "cross_domain_learned_transfer",
+      "domain": "five held-out validity domains",
+      "endpoint": "zero-shot invalidity-risk transfer",
+      "reference": "domain-specific invalidity labels",
+      "independent_units": "leave-one-domain-out transfer",
+      "frozen_status": "fail",
+      "decision": "universal_learned_risk_rejected",
+      "metrics": {
+        "transfer_beats_nostos_in_three_domains": false,
+        "transfer_beats_acquisition_qc_in_four_domains": true
+      },
+      "boundary": "Supports an interpretable zero-shot fallback hierarchy, not universal learned calibration.",
+      "sources": [
+        {
+          "path": "outputs/nostos0-cross-domain-risk-transfer-v1/transfer.json",
+          "bytes": 2040034,
+          "sha256": "dda8ef54a047973b2e4b6533de3fa406b1dfcd75fcae71d6fbf7941b33e78a53"
+        }
+      ]
+    }
+  ],
+  "global_claim_boundary": "NOSTOS has validated analytic estimators and several bounded public-data measurement demonstrations. It does not yet have a distribution-free independent-unit guarantee, independent laboratory execution, mechanical ground truth, clinical utility or intraoperative validation.",
+  "content_sha256": "b91219da487136f23ac27f4281bf3e2b4607e6845bea0bdf5c6f2335321c4367"
+}

@@ -1,0 +1,263 @@
+{
+  "protocol_version": "nostos-intraop-pshg-deployment/1.4",
+  "status": "pass",
+  "checks": {
+    "completed_rois": true,
+    "production_validation_equivalence": true,
+    "pooled_reference_error": true,
+    "worst_roi_reference_error": true,
+    "analysis_latency": true,
+    "end_to_end_latency": true,
+    "peak_python_memory": true,
+    "deterministic_map_hashes": true,
+    "profile_and_source_hashes": true,
+    "technical_endpoint_promoted_only_in_scope": true,
+    "clinical_decision_withheld": true,
+    "production_validation_coherence_equivalence": true,
+    "artifact_registry_complete": true
+  },
+  "selection": {
+    "salt": "NOSTOS-intraop-pshg-deployment-v1.4-2026-08-29",
+    "rule": "Exclude all 16 fields used by v1/v1.2 and v1.3, rank remaining ROI names by SHA-256(salt|roi), and select the first four before decoding any v1.4 pixels.",
+    "selected_rois": [
+      "breast_36",
+      "breast_6",
+      "breast_30",
+      "breast_22"
+    ],
+    "selection_sha256": [
+      "019e0a0147f830918c345e336c28874e7c75ebc1db7886ab58e26497f6afa482",
+      "0c5fc582a07b0818af8fcc14155dee49845599ec0a477f1613a13e9f17c5ede9",
+      "17cd16c4b52911211254529d43a69eeaed4c769f6976f785db7501a5408ee889",
+      "18fef8f3caf1123d3aa707ea6003dc50c4b828a6a4ff775c17aca0efa9808faf"
+    ]
+  },
+  "verification": {
+    "locked_files_verified": 40,
+    "selected_source_files_verified": 52
+  },
+  "summary": {
+    "rois": 4,
+    "eligible_pixels": 108066,
+    "pooled_median_reference_error_degrees": 7.531534671783447,
+    "pooled_p75_reference_error_degrees": 13.222204685211182,
+    "worst_roi_median_reference_error_degrees": 8.086593627929688,
+    "p95_analysis_seconds": 0.10775264496915042,
+    "p95_end_to_end_seconds": 0.45237377007724716,
+    "maximum_peak_python_memory_mb": 28.003087997436523,
+    "maximum_production_validation_orientation_difference_degrees": 7.629370884387754e-06,
+    "all_map_hashes_deterministic": true,
+    "maximum_production_validation_coherence_difference": 2.9802312728754998e-08
+  },
+  "runtime": {
+    "python": "3.13.13",
+    "implementation": "CPython",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.5.2",
+    "author_operated": true,
+    "acquisition_time_measured": false
+  },
+  "lock": {
+    "path": "manifests/intraop_pshg_deployment_v1_4_lock.json",
+    "sha256": "d8f0d58cf153fad8a204160e156b238de963d13d9a827477c816acd0ddca17b9"
+  },
+  "config": {
+    "path": "configs/intraop_pshg_deployment_benchmark_v1_4.locked.json",
+    "sha256": "0f3cdf7b78bce15f45e97707febf31ed51f3e851ae14f22c2887b6eba484c16e"
+  },
+  "cases": [
+    {
+      "roi": "breast_36",
+      "status": "valid",
+      "evidence_status": "confirmed",
+      "eligible_pixels": 22410,
+      "median_reference_error_degrees": 7.089421272277832,
+      "p75_reference_error_degrees": 12.423615455627441,
+      "maximum_production_validation_orientation_difference_degrees": 7.629363892647234e-06,
+      "maximum_production_validation_coherence_difference": 2.980151247999885e-08,
+      "deterministic_map_hashes": true,
+      "clinical_decision": "withheld",
+      "runtime": {
+        "load_seconds": 0.027333500096574426,
+        "analysis_seconds": 0.09593600011430681,
+        "export_seconds": 0.266162000130862,
+        "end_to_end_seconds": 0.39894090010784566,
+        "peak_python_memory_mb": 28.002793312072754,
+        "acquisition_time_included": false
+      }
+    },
+    {
+      "roi": "breast_6",
+      "status": "valid",
+      "evidence_status": "confirmed",
+      "eligible_pixels": 30765,
+      "median_reference_error_degrees": 7.358297348022461,
+      "p75_reference_error_degrees": 12.864171028137207,
+      "maximum_production_validation_orientation_difference_degrees": 7.629370884387754e-06,
+      "maximum_production_validation_coherence_difference": 2.9802110557142214e-08,
+      "deterministic_map_hashes": true,
+      "clinical_decision": "withheld",
+      "runtime": {
+        "load_seconds": 0.023681000107899308,
+        "analysis_seconds": 0.09573059994727373,
+        "export_seconds": 0.2552794001530856,
+        "end_to_end_seconds": 0.38400380010716617,
+        "peak_python_memory_mb": 28.003087997436523,
+        "acquisition_time_included": false
+      }
+    },
+    {
+      "roi": "breast_30",
+      "status": "valid",
+      "evidence_status": "confirmed",
+      "eligible_pixels": 36638,
+      "median_reference_error_degrees": 8.086593627929688,
+      "p75_reference_error_degrees": 13.97974681854248,
+      "maximum_production_validation_orientation_difference_degrees": 7.6293614768019324e-06,
+      "maximum_production_validation_coherence_difference": 2.9802312728754998e-08,
+      "deterministic_map_hashes": true,
+      "clinical_decision": "withheld",
+      "runtime": {
+        "load_seconds": 0.026235699886456132,
+        "analysis_seconds": 0.10386839997954667,
+        "export_seconds": 0.25093969982117414,
+        "end_to_end_seconds": 0.39017220004461706,
+        "peak_python_memory_mb": 28.00296401977539,
+        "acquisition_time_included": false
+      }
+    },
+    {
+      "roi": "breast_22",
+      "status": "valid",
+      "evidence_status": "confirmed",
+      "eligible_pixels": 18253,
+      "median_reference_error_degrees": 7.227068066596985,
+      "p75_reference_error_degrees": 13.249126434326172,
+      "maximum_production_validation_orientation_difference_degrees": 7.629309408230256e-06,
+      "maximum_production_validation_coherence_difference": 2.980224478310589e-08,
+      "deterministic_map_hashes": true,
+      "clinical_decision": "withheld",
+      "runtime": {
+        "load_seconds": 0.02488070004619658,
+        "analysis_seconds": 0.10843809996731579,
+        "export_seconds": 0.31686249980702996,
+        "end_to_end_seconds": 0.46180310007184744,
+        "peak_python_memory_mb": 28.003087997436523,
+        "acquisition_time_included": false
+      }
+    }
+  ],
+  "claim_boundary": "A pass establishes complete artifact provenance plus deterministic, bounded-latency production of the already-confirmed PSHG local-orientation endpoint on four newly selected public unstained fields. It does not add independent biological, instrument, prospective, decision-impact or clinical evidence.",
+  "clinical_readiness": "not_ready",
+  "serialization_contract": {
+    "orientation_dtype": "float32",
+    "coherence_dtype": "float32",
+    "maximum_orientation_difference_degrees": 1.52587890625e-05,
+    "maximum_coherence_difference": 1.1920928955078125e-07,
+    "derivation": "One IEEE-754 float32 spacing at 180 degrees and at unit coherence, respectively."
+  },
+  "artifact_contract": {
+    "required_files": [
+      "orientation_degrees.npy",
+      "coherence.npy",
+      "eligible.npy",
+      "source.png",
+      "orientation.png",
+      "coherence.png",
+      "support.png"
+    ],
+    "require_unique_keys": true,
+    "require_unique_paths": true,
+    "require_hash_and_size_verification": true
+  },
+  "artifact_audit": [
+    {
+      "roi": "breast_36",
+      "complete": true,
+      "registered_keys": [
+        "orientation_array",
+        "coherence_array",
+        "eligible_array",
+        "source_image",
+        "orientation_image",
+        "coherence_image",
+        "support_image"
+      ],
+      "registered_paths": [
+        "orientation_degrees.npy",
+        "coherence.npy",
+        "eligible.npy",
+        "source.png",
+        "orientation.png",
+        "coherence.png",
+        "support.png"
+      ]
+    },
+    {
+      "roi": "breast_6",
+      "complete": true,
+      "registered_keys": [
+        "orientation_array",
+        "coherence_array",
+        "eligible_array",
+        "source_image",
+        "orientation_image",
+        "coherence_image",
+        "support_image"
+      ],
+      "registered_paths": [
+        "orientation_degrees.npy",
+        "coherence.npy",
+        "eligible.npy",
+        "source.png",
+        "orientation.png",
+        "coherence.png",
+        "support.png"
+      ]
+    },
+    {
+      "roi": "breast_30",
+      "complete": true,
+      "registered_keys": [
+        "orientation_array",
+        "coherence_array",
+        "eligible_array",
+        "source_image",
+        "orientation_image",
+        "coherence_image",
+        "support_image"
+      ],
+      "registered_paths": [
+        "orientation_degrees.npy",
+        "coherence.npy",
+        "eligible.npy",
+        "source.png",
+        "orientation.png",
+        "coherence.png",
+        "support.png"
+      ]
+    },
+    {
+      "roi": "breast_22",
+      "complete": true,
+      "registered_keys": [
+        "orientation_array",
+        "coherence_array",
+        "eligible_array",
+        "source_image",
+        "orientation_image",
+        "coherence_image",
+        "support_image"
+      ],
+      "registered_paths": [
+        "orientation_degrees.npy",
+        "coherence.npy",
+        "eligible.npy",
+        "source.png",
+        "orientation.png",
+        "coherence.png",
+        "support.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "schema_version": "nostos.heaton_shg_coordinate_bridge_development.v2",
+  "status": "post_failure_development_only_external_confirmation_required",
+  "sources": {
+    "exp10_clean_rows": {
+      "path": "outputs/nostos0-heaton-in-vivo-shg-v1-risk-development/development_clean_rows.jsonl",
+      "sha256": "edb8a7ba490b5f37e795adb33ce3566285a12f3c0234adae76c91c16bb91de6b",
+      "fields": 34
+    },
+    "exp15_clean_rows": {
+      "path": "outputs/nostos0-heaton-in-vivo-shg-v1-confirmation/confirmation_clean_rows.jsonl",
+      "sha256": "3ed90918fe79d5975e9a5855b932942812d677b8963edd4c129fbfaa034df530",
+      "fields": 45,
+      "original_role": "opened failed v1 confirmation; development-only for v2"
+    }
+  },
+  "independent_mice": 16,
+  "fields": 79,
+  "selection_rule": "Among identity, robust affine and robust log-affine bridges, select the finite non-collapsed candidate with lowest leave-one-mouse-out median tolerance-normalized error, then p90 error, then the declared model order. Enable an endpoint only when Spearman rho is at least 0.50 separately in Exp10 and Exp15.",
+  "endpoints": {
+    "axial_resultant": {
+      "independent_mice": 16,
+      "cases": 79,
+      "rank_spearman_rho": 0.7623920546372159,
+      "candidate_summaries": {
+        "identity": {
+          "finite": true,
+          "median_normalized_error": 0.5993601772850331,
+          "p90_normalized_error": 1.4100291334346196,
+          "within_tolerance_fraction": 0.6962025316455697,
+          "prediction_to_reference_iqr_ratio": 1.379853841333441
+        },
+        "robust_affine": {
+          "finite": true,
+          "median_normalized_error": 0.49751462797387924,
+          "p90_normalized_error": 1.2411779557467693,
+          "within_tolerance_fraction": 0.8481012658227848,
+          "prediction_to_reference_iqr_ratio": 0.9969333916581553
+        },
+        "robust_log_affine": {
+          "finite": true,
+          "median_normalized_error": 0.5100140921508027,
+          "p90_normalized_error": 1.2462174999139985,
+          "within_tolerance_fraction": 0.8354430379746836,
+          "prediction_to_reference_iqr_ratio": 0.9318815269466345
+        }
+      },
+      "selected_kind": "robust_affine",
+      "selected_model": {
+        "kind": "robust_affine",
+        "slope": 0.6995553953907013,
+        "intercept": 0.029541915407985286,
+        "slope_95": [
+          0.5634078202614587,
+          0.8606120457591901
+        ]
+      },
+      "no_eligible_model_reason": null,
+      "comparator_endpoint": "coefficient_of_alignment",
+      "error_mode": "absolute",
+      "tolerance": 0.15,
+      "denominator_floor": 0.109,
+      "split_spearman_rho": {
+        "Exp10": 0.7418742931733626,
+        "Exp15": 0.7802035469358185
+      },
+      "enabled_for_external_confirmation": true,
+      "disabled_reason": null
+    },
+    "foreground_occupancy": {
+      "independent_mice": 16,
+      "cases": 79,
+      "rank_spearman_rho": 0.6044060370009737,
+      "candidate_summaries": {
+        "identity": {
+          "finite": true,
+          "median_normalized_error": 2.9215540098146624,
+          "p90_normalized_error": 3.0927146583207294,
+          "within_tolerance_fraction": 0.0,
+          "prediction_to_reference_iqr_ratio": 0.023414068890302644
+        },
+        "robust_affine": {
+          "finite": true,
+          "median_normalized_error": 0.40266013548926294,
+          "p90_normalized_error": 1.3459532867554442,
+          "within_tolerance_fraction": 0.8354430379746836,
+          "prediction_to_reference_iqr_ratio": 0.55051615520769
+        },
+        "robust_log_affine": {
+          "finite": true,
+          "median_normalized_error": 0.39971102116813434,
+          "p90_normalized_error": 1.347495600217552,
+          "within_tolerance_fraction": 0.8354430379746836,
+          "prediction_to_reference_iqr_ratio": 0.5534551015321513
+        }
+      },
+      "selected_kind": "robust_log_affine",
+      "selected_model": {
+        "kind": "robust_log_affine",
+        "exponent": 6.638232837153055,
+        "log_intercept": 11.670977209810115,
+        "exponent_95": [
+          4.903834041988094,
+          8.721422625813595
+        ]
+      },
+      "no_eligible_model_reason": null,
+      "comparator_endpoint": "detected_pixel_fraction",
+      "error_mode": "relative",
+      "tolerance": 0.25,
+      "denominator_floor": 0.3806957244873047,
+      "split_spearman_rho": {
+        "Exp10": 0.5388846447669977,
+        "Exp15": 0.7109354413702239
+      },
+      "enabled_for_external_confirmation": true,
+      "disabled_reason": null
+    },
+    "median_segment_straightness": {
+      "independent_mice": 16,
+      "cases": 79,
+      "rank_spearman_rho": 0.722749320032579,
+      "candidate_summaries": {
+        "identity": {
+          "finite": true,
+          "median_normalized_error": 0.1171699774936108,
+          "p90_normalized_error": 0.21245458910624151,
+          "within_tolerance_fraction": 1.0,
+          "prediction_to_reference_iqr_ratio": 0.17792049926919595
+        },
+        "robust_affine": {
+          "finite": true,
+          "median_normalized_error": 0.05595305570857856,
+          "p90_normalized_error": 0.15126189565674286,
+          "within_tolerance_fraction": 1.0,
+          "prediction_to_reference_iqr_ratio": 0.23956937899055672
+        },
+        "robust_log_affine": {
+          "finite": true,
+          "median_normalized_error": 0.05585878428559732,
+          "p90_normalized_error": 0.15016714416935506,
+          "within_tolerance_fraction": 1.0,
+          "prediction_to_reference_iqr_ratio": 0.2386809805144024
+        }
+      },
+      "selected_kind": "robust_log_affine",
+      "selected_model": {
+        "kind": "robust_log_affine",
+        "exponent": 1.0071162618297929,
+        "log_intercept": 0.01144611704776724,
+        "exponent_95": [
+          0.7867735028992222,
+          1.345182345164107
+        ]
+      },
+      "no_eligible_model_reason": null,
+      "comparator_endpoint": "median_straightness",
+      "error_mode": "absolute",
+      "tolerance": 0.1,
+      "denominator_floor": 0.9170055,
+      "split_spearman_rho": {
+        "Exp10": 0.7247306920073896,
+        "Exp15": 0.597186995943062
+      },
+      "enabled_for_external_confirmation": true,
+      "disabled_reason": null
+    },
+    "median_segment_length_um": {
+      "independent_mice": 16,
+      "cases": 79,
+      "rank_spearman_rho": 0.6320565856240321,
+      "candidate_summaries": {
+        "identity": {
+          "finite": true,
+          "median_normalized_error": 2.2333921601457503,
+          "p90_normalized_error": 2.3626331358911616,
+          "within_tolerance_fraction": 0.0,
+          "prediction_to_reference_iqr_ratio": 0.4799901740306471
+        },
+        "robust_affine": {
+          "finite": true,
+          "median_normalized_error": 0.15987905643363498,
+          "p90_normalized_error": 0.3749192166961885,
+          "within_tolerance_fraction": 1.0,
+          "prediction_to_reference_iqr_ratio": 0.6473661887494917
+        },
+        "robust_log_affine": {
+          "finite": true,
+          "median_normalized_error": 0.16211187016164866,
+          "p90_normalized_error": 0.37681827728360084,
+          "within_tolerance_fraction": 1.0,
+          "prediction_to_reference_iqr_ratio": 0.6391597452553457
+        }
+      },
+      "selected_kind": "robust_affine",
+      "selected_model": {
+        "kind": "robust_affine",
+        "slope": 1.346013118367328,
+        "intercept": 16.793586512958246,
+        "slope_95": [
+          0.8784975255193089,
+          1.7554594435789561
+        ]
+      },
+      "no_eligible_model_reason": null,
+      "comparator_endpoint": "median_length_um",
+      "error_mode": "relative",
+      "tolerance": 0.3,
+      "denominator_floor": 26.214563499999993,
+      "split_spearman_rho": {
+        "Exp10": 0.5799648658533257,
+        "Exp15": 0.6067075298075748
+      },
+      "enabled_for_external_confirmation": true,
+      "disabled_reason": null
+    },
+    "median_local_width_um": {
+      "independent_mice": 16,
+      "cases": 79,
+      "rank_spearman_rho": 0.19757909347006422,
+      "candidate_summaries": {
+        "identity": {
+          "finite": true,
+          "median_normalized_error": 1.7028896896178785,
+          "p90_normalized_error": 1.995192187290927,
+          "within_tolerance_fraction": 0.0759493670886076,
+          "prediction_to_reference_iqr_ratio": 0.0
+        },
+        "robust_affine": {
+          "finite": true,
+          "median_normalized_error": 0.3423701151509656,
+          "p90_normalized_error": 1.5934895432027278,
+          "within_tolerance_fraction": 0.8227848101265823,
+          "prediction_to_reference_iqr_ratio": 0.10533431186990659
+        },
+        "robust_log_affine": {
+          "finite": true,
+          "median_normalized_error": 0.3423701151509661,
+          "p90_normalized_error": 1.5950057669647593,
+          "within_tolerance_fraction": 0.8227848101265823,
+          "prediction_to_reference_iqr_ratio": 0.10533339318823642
+        }
+      },
+      "selected_kind": null,
+      "selected_model": null,
+      "no_eligible_model_reason": "all candidate mappings were non-finite or collapsed the reference variation",
+      "comparator_endpoint": "median_width_um",
+      "error_mode": "relative",
+      "tolerance": 0.3,
+      "denominator_floor": 2.2938471899999997,
+      "split_spearman_rho": {
+        "Exp10": 0.279824531113056,
+        "Exp15": 0.08478602205027222
+      },
+      "enabled_for_external_confirmation": false,
+      "disabled_reason": "no finite non-collapsed coordinate bridge"
+    }
+  },
+  "claim_boundary": "Post-failure coordinate development on 79 already-open Heaton fields. No repaired transfer claim; the selected bridge and endpoint enablement require a new untouched acquisition family."
+}

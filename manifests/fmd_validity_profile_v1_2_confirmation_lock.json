@@ -1,0 +1,82 @@
+{
+  "schema_version": "nostos-fmd-validity-profile-confirmation-lock/1.0",
+  "protocol_id": "fmd-real-noise-dimensionless-organization-v1-2",
+  "locked_at_utc": "2026-08-29T15:20:43Z",
+  "confirmation_status_at_lock": "images_not_decoded_for_measurement_analysis",
+  "source": {
+    "dataset": "Fluorescence Microscopy Denoising (FMD) dataset",
+    "doi": "10.7274/r0-ed2r-4052",
+    "archive_sha256": "d7a14d3be17368dbfe24a5cfe8ed0d40d403d7902d70fe914d04303e4aa8f2f6"
+  },
+  "confirmation_groups": [
+    "Confocal_BPAE_R",
+    "Confocal_MICE",
+    "TwoPhoton_BPAE_R",
+    "TwoPhoton_MICE",
+    "WideField_BPAE_R",
+    "WideField_BPAE_G"
+  ],
+  "independent_group_count": 6,
+  "expected_paired_acquisitions": 120,
+  "frozen_operating_point": {
+    "primary_endpoint_family": "tensor_coherence",
+    "primary_score": "declared_capture_stability_contract",
+    "predicted_risk_threshold": 0.3466149237567999,
+    "development_coverage": 0.33611111111111114,
+    "development_observed_risk": 0.09917355371900827,
+    "development_cluster_bootstrap_risk_upper95": 0.1721311475409836
+  },
+  "confirmation_gates": {
+    "minimum_independent_groups": 6,
+    "minimum_coverage": 0.25,
+    "maximum_observed_risk": 0.15,
+    "maximum_cluster_bootstrap_risk_upper95": 0.35,
+    "minimum_relative_risk_reduction_vs_acquisition_qc": 0.2,
+    "minimum_invalid_acquisition_qc_emissions": 5,
+    "require_positive_aurc_difference": true,
+    "require_aurc_bootstrap_ci_lower_above_zero": true,
+    "bootstrap_replicates": 5000,
+    "bootstrap_seed": 26082931
+  },
+  "artifacts": [
+    {
+      "path": "configs/fmd_validity_profile_v1_2.locked.json",
+      "sha256": "0321a4f1b79b834aa7f7190214d8b11a7407715434406d7bdafcc81c5db514e2",
+      "content_sha256": "4b3e4ef72f271396e85fb98114deaf6fdf6ac17a7422eba11cf17c319b901680"
+    },
+    {
+      "path": "outputs/nostos0-fmd-validity-profile-v1-2-development/development_rows_v1_2.jsonl",
+      "sha256": "ed86f37bb920414c92d9c863641e41b05156b3fe46bbcbe315539b9ef1a56012"
+    },
+    {
+      "path": "outputs/nostos0-fmd-validity-profile-v1-2-development/rescore_receipt.json",
+      "sha256": "881d505f5421795439c314ec5ba98a178c19fe6ee35d27f7f5b85881144581e2"
+    },
+    {
+      "path": "outputs/nostos0-fmd-validity-profile-v1-2-compiled/validity_profile.json",
+      "sha256": "b15f61a764a076f15e5d9284da3e6620797438f9e7103b31bc125640e4f3053a",
+      "content_sha256": "eacbb78a8464d547e50d845010b68544324309d8e9054e867b7d86f40987e97e"
+    },
+    {
+      "path": "outputs/nostos0-fmd-validity-profile-v1-2-compiled/development_audit.json",
+      "sha256": "2ac42a93c369aeb86a2132c344eb8e82462da3ed75a8b3bb370011fd536f4ea5"
+    },
+    {
+      "path": "src/nostos/validation/fmd_validity_profile.py",
+      "sha256": "6cd06ab2a1376a2e5d239f5858f8097c275881c650b190aee6b3fdafeb99f21b"
+    },
+    {
+      "path": "src/nostos/validation/validity_profile_compiler.py",
+      "sha256": "64c976afdc6759b988df35ac64eaefd2fbf6275a56c82d0aeb12aa470e3939eb"
+    },
+    {
+      "path": "src/nostos/validation/paired_acquisition_support.py",
+      "sha256": "101ebbe1bceafa8916511560e3c5bdb8a42d0b9eded76d043fddec3465ede3e0"
+    },
+    {
+      "path": "scripts/run_fmd_validity_profile_v1.py",
+      "sha256": "fb4a7395f2400f108f390e29ab37145dc613cc847779ef42b7ea3dcd3c529b1e"
+    }
+  ],
+  "one_shot_rule": "Decode the six confirmation groups once, apply the frozen profile without refitting, retain pass, fail, or non-assessable status, and do not repair against confirmation labels."
+}

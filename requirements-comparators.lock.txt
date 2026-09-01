@@ -1,0 +1,9 @@
+# Python 3.12 isolated environment for the official Kymatio benchmark.
+appdirs==1.4.4
+configparser==7.2.0
+joblib==1.5.3
+kymatio==0.3.0
+numpy==1.26.4
+scikit-learn==1.6.1
+scipy==1.14.1
+threadpoolctl==3.6.0

@@ -1,0 +1,24 @@
+{
+  "protocol_version": "nostos0-ctc-tracking-tool-workflow/1.0",
+  "status": "pass",
+  "mask_directory_sha256": "4e5ea1e0588bbb669574a8c88ab0672c598be97d71032d1d847694cfae6c2046",
+  "runtime_seconds": 22.48227689997293,
+  "summary": {
+    "status": "valid",
+    "output": "<DATA_ROOT>\\tool-workflows\\tracking-v1\\tracking.json",
+    "frames": 92,
+    "edges": 8436,
+    "experimental_divisions": false
+  },
+  "gates": {
+    "all_frames": true,
+    "valid": true,
+    "edge_count": true,
+    "finite": true,
+    "calibration": true,
+    "scope": true,
+    "provenance": true,
+    "runtime": true
+  },
+  "interpretation": "Author-operated application workflow on opened public data; not independent usability or new scientific confirmation."
+}

@@ -1,0 +1,60 @@
+{
+  "protocol_version": "nostos-intraop-pshg-deployment/1.2",
+  "frozen_at_utc": "2026-08-29T00:00:02Z",
+  "study_role": "Prospective engineering amendment after the v1.1 run stopped before reference-error computation.",
+  "profile_path": "configs/intraop_pshg_orientation_profile_v1.locked.json",
+  "lineage": {
+    "v1_1_lock_path": "manifests/intraop_pshg_deployment_v1_1_lock.json",
+    "v1_1_lock_bytes": 23483,
+    "v1_1_lock_sha256": "773b3fd729fb4b1a8ed16d5083e96cf57e6ef4a62261f99abb33677baf65e8cb",
+    "v1_1_failure_path": "outputs/nostos0-intraop-pshg-deployment-v1_1/failure_receipt.json",
+    "v1_1_failure_bytes": 2571,
+    "v1_1_failure_sha256": "35da53d4b1e02d72e0c71aff2190bcc32496ae239f839c58abcebd592dc5374d"
+  },
+  "amendment": {
+    "changed_rule": "A non-finite FI evaluation value is permitted only where the original locked R2/SNR support rules already make the pixel ineligible.",
+    "implementation": "Abort if FI is non-finite at any R2/SNR-supported pixel. Otherwise replace missing FI values only at the immutable evaluator boundary with a finite sentinel that the locked eligibility mask excludes.",
+    "unchanged": [
+      "selected ROIs",
+      "input construction",
+      "orientation estimator",
+      "support thresholds",
+      "reference transform",
+      "latency and memory gates",
+      "accuracy gates",
+      "clinical withholding"
+    ]
+  },
+  "dataset": {
+    "doi": "10.17605/OSF.IO/UDTQP",
+    "subset": "breast tissue unstained / FSHG",
+    "manifest_relative_path": "download_manifest.json"
+  },
+  "selection": {
+    "salt": "NOSTOS-intraop-pshg-deployment-v1-2026-08-29",
+    "rule": "Reuse the eight ROIs locked in v1; v1 and v1.1 stopped before any reference-error computation.",
+    "selected_rois": [
+      "breast_14",
+      "breast_32",
+      "breast_38",
+      "breast_7",
+      "breast_17",
+      "breast_25",
+      "breast_24",
+      "breast_3"
+    ]
+  },
+  "gates": {
+    "required_completed_rois": 8,
+    "maximum_production_validation_map_difference_degrees": 1e-10,
+    "maximum_pooled_median_reference_error_degrees": 15.0,
+    "maximum_worst_roi_median_reference_error_degrees": 15.0,
+    "maximum_p95_analysis_seconds": 2.0,
+    "maximum_p95_end_to_end_seconds": 5.0,
+    "maximum_peak_python_memory_mb": 512.0,
+    "require_deterministic_map_hashes": true,
+    "require_profile_and_source_hash_verification": true,
+    "require_clinical_decision_withheld": true
+  },
+  "claim_boundary": "A pass establishes deterministic and bounded-latency production of the already-confirmed PSHG local-orientation endpoint on eight public unstained fields. The amendment repairs evaluation-only missing-reference handling outside locked acquisition support. It does not add independent biological or clinical evidence."
+}

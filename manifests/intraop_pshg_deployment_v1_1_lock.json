@@ -1,0 +1,638 @@
+{
+  "schema_version": "nostos-intraop-pshg-deployment-lock/1.1",
+  "status": "locked_before_reference_error_evaluation",
+  "protocol_version": "nostos-intraop-pshg-deployment/1.1",
+  "selection": {
+    "salt": "NOSTOS-intraop-pshg-deployment-v1-2026-08-29",
+    "rule": "Reuse the eight ROIs locked in v1; v1 stopped before any reference-error computation.",
+    "selected_rois": [
+      "breast_14",
+      "breast_32",
+      "breast_38",
+      "breast_7",
+      "breast_17",
+      "breast_25",
+      "breast_24",
+      "breast_3"
+    ]
+  },
+  "amendment": {
+    "changed_rule": "Non-finite R2 or SNR pixels are counted and made ineligible. No value is interpolated or used as a measurement.",
+    "implementation": "Replace non-finite support-map values only at the immutable v1 evaluator boundary with finite values below the locked R2 and SNR thresholds.",
+    "unchanged": [
+      "selected ROIs",
+      "input construction",
+      "orientation estimator",
+      "support thresholds",
+      "reference transform",
+      "latency and memory gates",
+      "accuracy gates",
+      "clinical withholding"
+    ]
+  },
+  "lineage": {
+    "v1_lock_path": "manifests/intraop_pshg_deployment_v1_lock.json",
+    "v1_lock_sha256": "ec2ccb599570d19f0e5deb882fafaba07c4bce79c8b788cb1e81b1a98601ece2",
+    "v1_failure_path": "outputs/nostos0-intraop-pshg-deployment-v1/failure_receipt.json",
+    "v1_failure_bytes": 1966,
+    "v1_failure_sha256": "1dfa717be7f27f89c90de09e9adf34e8dd28a28dd62ea4cc67c213c821303c25"
+  },
+  "dataset_manifest": {
+    "relative_path": "download_manifest.json",
+    "bytes": 148436,
+    "sha256": "441553b9f5af96f285b40dc042dd6fe2681e919020f28126819f80f1830d768d",
+    "doi": "10.17605/OSF.IO/UDTQP",
+    "subset": "breast tissue unstained / FSHG"
+  },
+  "locked_files": [
+    {
+      "path": "configs/intraop_pshg_orientation_profile_v1.locked.json",
+      "bytes": 2141,
+      "sha256": "f3b93cd78cc772891e21a4867d0282fc2308e67c38fb8c7516b2a182a1b2bc9d"
+    },
+    {
+      "path": "configs/intraop_pshg_deployment_benchmark_v1.locked.json",
+      "bytes": 1764,
+      "sha256": "03c9ee9a82b78d947c936ef06681ee2218f15cced48c483188fec8a5ec0bdc64"
+    },
+    {
+      "path": "configs/intraop_pshg_deployment_benchmark_v1_1.locked.json",
+      "bytes": 2593,
+      "sha256": "88f25d322c7c5d0ea0e6e9e5d4ce40aa615a9d9465e1a48bd01c1478f0fcdf99"
+    },
+    {
+      "path": "manifests/intraop_pshg_deployment_v1_lock.json",
+      "bytes": 21622,
+      "sha256": "ec2ccb599570d19f0e5deb882fafaba07c4bce79c8b788cb1e81b1a98601ece2"
+    },
+    {
+      "path": "outputs/nostos0-intraop-pshg-deployment-v1/failure_receipt.json",
+      "bytes": 1966,
+      "sha256": "1dfa717be7f27f89c90de09e9adf34e8dd28a28dd62ea4cc67c213c821303c25"
+    },
+    {
+      "path": "outputs/nostos0-pshg-breast-orientation-v1/pshg_external_orientation.json",
+      "bytes": 7476,
+      "sha256": "4093cf2eba0f7013f9ce4d62f031dc06f33f9ae39ed839832be2f1984e062e01"
+    },
+    {
+      "path": "src/nostos/intraop/label_free.py",
+      "bytes": 20653,
+      "sha256": "660d2a76bfa135c15537df336f462e0eb521a6dd5fed229687f48d153e89b380"
+    },
+    {
+      "path": "src/nostos/intraop/label_free_v1_1.py",
+      "bytes": 6180,
+      "sha256": "3112878c85340f82adab038de254ddfbf23b5fcdd817a18f82d3c3e4f85e8304"
+    },
+    {
+      "path": "scripts/run_intraop_pshg_deployment_benchmark.py",
+      "bytes": 10127,
+      "sha256": "8a3627fcc11e6403e01cf7662fcf0658f1589259d4a1a89709d12e709bfb6a5f"
+    },
+    {
+      "path": "scripts/run_intraop_pshg_deployment_benchmark_v1_1.py",
+      "bytes": 2774,
+      "sha256": "85a32737faff7d08e8ab932e6d77fe429a1422087fc38b7892b78538fc81442a"
+    },
+    {
+      "path": "scripts/build_intraop_pshg_deployment_v1_1_lock.py",
+      "bytes": 4347,
+      "sha256": "cc2c80f947ebc08ab1095a06408e095d6b3506baf591e06937e189ef50687125"
+    },
+    {
+      "path": "tests/test_intraop_label_free.py",
+      "bytes": 3951,
+      "sha256": "da0a5727133b48314ef56249438c86fd1555ff81fc8a766822c24e124bd80e4a"
+    },
+    {
+      "path": "tests/test_intraop_label_free_v1_1.py",
+      "bytes": 1704,
+      "sha256": "f77a035d54d84972c9d8a1e6a0e1d026d32641fb5ca879927744664f6677f7d2"
+    }
+  ],
+  "selected_source_files": [
+    {
+      "relative_path": "breast_14/FI.tif",
+      "bytes": 1048755,
+      "sha256": "b064442bb38fa08d781b8dda80a7c251dcc7bb3bd888b3a3bc0595a8e59c8a56"
+    },
+    {
+      "relative_path": "breast_14/R2.tif",
+      "bytes": 1048752,
+      "sha256": "639127303069a9e788afcade547025bfedecfd3e1596c284ca579c23fd19cb30"
+    },
+    {
+      "relative_path": "breast_14/SNR.tif",
+      "bytes": 1048752,
+      "sha256": "c0ea9ed9d21c00695a255636018fde84755eb43cac98466e956b2abe1dafaa55"
+    },
+    {
+      "relative_path": "breast_14/breast_14_FSHG_p0.tif",
+      "bytes": 266974,
+      "sha256": "908bdf6ddcd32148d6471557e569ab0e9e38f3fa754a8af0a905aa90cb7f2921"
+    },
+    {
+      "relative_path": "breast_14/breast_14_FSHG_p20.tif",
+      "bytes": 266974,
+      "sha256": "c919ddb4789058bd19462d536f03beccbfedd8efc0fda5118511c462713ece96"
+    },
+    {
+      "relative_path": "breast_14/breast_14_FSHG_p40.tif",
+      "bytes": 266974,
+      "sha256": "b45928d4523652261a753a71222fb9be1dca8146b0d2c46eec2b87548aca2f25"
+    },
+    {
+      "relative_path": "breast_14/breast_14_FSHG_p60.tif",
+      "bytes": 266974,
+      "sha256": "bbb6bfc89fe2ff98fc4a62e270c5239a7ce9c64001f1b25a84bfd6aba5afbe9e"
+    },
+    {
+      "relative_path": "breast_14/breast_14_FSHG_p80.tif",
+      "bytes": 266974,
+      "sha256": "8b596402dc72d0ed9d66c44d2ca6f1142bd091815f515eae65ddef10cb5a968f"
+    },
+    {
+      "relative_path": "breast_14/breast_14_FSHG_p100.tif",
+      "bytes": 266974,
+      "sha256": "697c20dbf4314174f6da27616c164a788455f78af5a16162013d5c011a24a15e"
+    },
+    {
+      "relative_path": "breast_14/breast_14_FSHG_p120.tif",
+      "bytes": 266974,
+      "sha256": "3e93474d3fe91b9280f2f6388b1b157580b63faea70ef22acb5eeb1d7ef1496e"
+    },
+    {
+      "relative_path": "breast_14/breast_14_FSHG_p140.tif",
+      "bytes": 266974,
+      "sha256": "f0d8443be9c700249b2cbcb268ff3c56b4aee1a52c3261e8aa1e6dda7ea9c4f9"
+    },
+    {
+      "relative_path": "breast_14/breast_14_FSHG_p160.tif",
+      "bytes": 266972,
+      "sha256": "cc0d2fe9550d1b30d62f6da6f65d8c25210bfbcf590179c3c16f0a53daa7cebd"
+    },
+    {
+      "relative_path": "breast_14/breast_14_FSHG_p180.tif",
+      "bytes": 266974,
+      "sha256": "0789dfbe2df862c3a8ea7476f4b6d7a6943718bc152c7bc85f4e7b5b1c03d328"
+    },
+    {
+      "relative_path": "breast_32/FI.tif",
+      "bytes": 1048755,
+      "sha256": "c28b8940fb078cdc714b623d9addb765527124378a4a73a247d9f05d54769405"
+    },
+    {
+      "relative_path": "breast_32/R2.tif",
+      "bytes": 1048752,
+      "sha256": "8c2f51793df8a61d0f1c6cff626ce39742928326ef68928758cc0dbfcd403219"
+    },
+    {
+      "relative_path": "breast_32/SNR.tif",
+      "bytes": 1048752,
+      "sha256": "44f3ae9c224c28c8adeaede331b4d535f13a8b2e2d687e662508b2b907b836a6"
+    },
+    {
+      "relative_path": "breast_32/breast_32_FSHG_p0.tif",
+      "bytes": 266974,
+      "sha256": "2483be3734bf9544465a1175c28769819ffc42c896005c12c2e094c1c2aae813"
+    },
+    {
+      "relative_path": "breast_32/breast_32_FSHG_p20.tif",
+      "bytes": 266974,
+      "sha256": "6fe13137d4d074764229948ba0668bef1d2e4df5c1019eaf575bfbeddb4256eb"
+    },
+    {
+      "relative_path": "breast_32/breast_32_FSHG_p40.tif",
+      "bytes": 266974,
+      "sha256": "c966dbd83d42809f86cdd585dd89d14e17e9333763cbc8ffbcfacbf44a0d032a"
+    },
+    {
+      "relative_path": "breast_32/breast_32_FSHG_p60.tif",
+      "bytes": 266974,
+      "sha256": "e773e229a4d3e8984a5d3382e9253b255abefc7c34cc8b09bb3b46d2967d211a"
+    },
+    {
+      "relative_path": "breast_32/breast_32_FSHG_p80.tif",
+      "bytes": 266972,
+      "sha256": "a082793f72c5b71620dbe207d52f9ee082d983a35f1f9e0d32f7a4f894f12231"
+    },
+    {
+      "relative_path": "breast_32/breast_32_FSHG_p100.tif",
+      "bytes": 266974,
+      "sha256": "75609c7f41b1a2aecdbf2f40e90e89c7a137a9990e7dbc6e2486c5ac7d627228"
+    },
+    {
+      "relative_path": "breast_32/breast_32_FSHG_p120.tif",
+      "bytes": 266974,
+      "sha256": "9de8630970b9874dc5c34ca064f5dcb10ffa0b9c30e88b409fba3b1aa63d2b5f"
+    },
+    {
+      "relative_path": "breast_32/breast_32_FSHG_p140.tif",
+      "bytes": 266974,
+      "sha256": "53a3b93294c46e9717ad515340f601e812a87990e1565c35ee98b1c9492ca9a3"
+    },
+    {
+      "relative_path": "breast_32/breast_32_FSHG_p160.tif",
+      "bytes": 266972,
+      "sha256": "049f29c0d931d339d7f389e5ed1edf2787d0b26ab7ca696e3a70427906b79e14"
+    },
+    {
+      "relative_path": "breast_32/breast_32_FSHG_p180.tif",
+      "bytes": 266974,
+      "sha256": "b98e53c8e500571fe268f003f45b1a792bff9f9f866f46451ceeeae64e350953"
+    },
+    {
+      "relative_path": "breast_38/FI.tif",
+      "bytes": 1048755,
+      "sha256": "173d958b2d6a52667c67daee0da2c70d0adcbe6adf8d74b876127081243830c8"
+    },
+    {
+      "relative_path": "breast_38/R2.tif",
+      "bytes": 1048752,
+      "sha256": "49304445c7c588eda91bf9caa6ad6330525a57d451726b734a407270f93349e9"
+    },
+    {
+      "relative_path": "breast_38/SNR.tif",
+      "bytes": 1048752,
+      "sha256": "d081c56aa41a1e9ca319a165495122be928d71efd34c5dd6a6dc832f76e7f08e"
+    },
+    {
+      "relative_path": "breast_38/breast_38_FSHG_p0.tif",
+      "bytes": 266972,
+      "sha256": "625700deada153b9d4dbf5aa35c332ab956c28425e0afd8391f7c1864a9cdd17"
+    },
+    {
+      "relative_path": "breast_38/breast_38_FSHG_p20.tif",
+      "bytes": 266972,
+      "sha256": "a49e8dcc55172554b234bfab51d398cbe0729732e5e4ad53850873d589597fb0"
+    },
+    {
+      "relative_path": "breast_38/breast_38_FSHG_p40.tif",
+      "bytes": 266972,
+      "sha256": "eba96abdab34914b6c2812126645ff72eede761729d83394045e9eda949298bc"
+    },
+    {
+      "relative_path": "breast_38/breast_38_FSHG_p60.tif",
+      "bytes": 266972,
+      "sha256": "9212e65ba1452d0bbb5a338f777e98a48c6464622f208133e1c0990832404c9e"
+    },
+    {
+      "relative_path": "breast_38/breast_38_FSHG_p80.tif",
+      "bytes": 266972,
+      "sha256": "467d62757174dc778adcaafc2f3f2cc7b14328d69438a022fdc50ae02a07e11d"
+    },
+    {
+      "relative_path": "breast_38/breast_38_FSHG_p100.tif",
+      "bytes": 266972,
+      "sha256": "881c3f65e84ca9bf1f10c543348732baa8b013431b450d316ea58cddfd76de2e"
+    },
+    {
+      "relative_path": "breast_38/breast_38_FSHG_p120.tif",
+      "bytes": 266972,
+      "sha256": "5239952ac4906e1d913f13415bd4d8322f4644aaa500556a3a47ebfd33a7f0c4"
+    },
+    {
+      "relative_path": "breast_38/breast_38_FSHG_p140.tif",
+      "bytes": 266970,
+      "sha256": "e155e75b013e5bbb793594c58265a188011c1c25a33f6ed6b1eccdfbe6977690"
+    },
+    {
+      "relative_path": "breast_38/breast_38_FSHG_p160.tif",
+      "bytes": 266972,
+      "sha256": "fd5f022e619ba417a4581e79f7edbfa49be1faa309b5331183e82c9069139e1f"
+    },
+    {
+      "relative_path": "breast_38/breast_38_FSHG_p180.tif",
+      "bytes": 266972,
+      "sha256": "35a1cc640f222a71eca3405d1aded47c1e0fad324911ddde6949705092fde778"
+    },
+    {
+      "relative_path": "breast_7/FI.tif",
+      "bytes": 1048755,
+      "sha256": "ce1c1ad3eae6924b76cb497407b837215f0b39406206a4a6a5112575c693de09"
+    },
+    {
+      "relative_path": "breast_7/R2.tif",
+      "bytes": 1048752,
+      "sha256": "3916cc8502d2655518698b2bd19045455fbce3108f81fcc6603c365b99d21671"
+    },
+    {
+      "relative_path": "breast_7/SNR.tif",
+      "bytes": 1048752,
+      "sha256": "19eced78cb91f9ab68d678004934fc7e667d23c896af326102561f282c93084b"
+    },
+    {
+      "relative_path": "breast_7/breast_7_FSHG_p0.tif",
+      "bytes": 266974,
+      "sha256": "79c5c7f21e7411b16a4caa9ea8dab4791f98de80d987fec19b3b2f5bda4080f1"
+    },
+    {
+      "relative_path": "breast_7/breast_7_FSHG_p20.tif",
+      "bytes": 266974,
+      "sha256": "1744980e527fc8b929fb03887a48dc14ea03eae6f5ba84fd0eb5b585db30bd32"
+    },
+    {
+      "relative_path": "breast_7/breast_7_FSHG_p40.tif",
+      "bytes": 266974,
+      "sha256": "3b0aea058498a8c82fd2dd67c83059f791695aecc68bcdb6f9010a1b198a795c"
+    },
+    {
+      "relative_path": "breast_7/breast_7_FSHG_p60.tif",
+      "bytes": 266974,
+      "sha256": "287154486e60c7e1eb990cf333d28c6585e37cb444e67605593fc3016d005a90"
+    },
+    {
+      "relative_path": "breast_7/breast_7_FSHG_p80.tif",
+      "bytes": 266974,
+      "sha256": "39748a6935eab31a6207627ee1497b239412651f41fe3567d270f2691eda7eb6"
+    },
+    {
+      "relative_path": "breast_7/breast_7_FSHG_p100.tif",
+      "bytes": 266972,
+      "sha256": "7afd7ce96e6f3143c7b136f66c8d8c7bfedad94d3691a41fd3a8a9c930f894a6"
+    },
+    {
+      "relative_path": "breast_7/breast_7_FSHG_p120.tif",
+      "bytes": 266974,
+      "sha256": "980b71727b7145bb2672c912aff85f6dd80cdd01761fdb192f235ad983f08cd3"
+    },
+    {
+      "relative_path": "breast_7/breast_7_FSHG_p140.tif",
+      "bytes": 266974,
+      "sha256": "c0eb251b334e796ccb4c4cd89cb75695b1a62c30eb52e1cae85dd1687389dec9"
+    },
+    {
+      "relative_path": "breast_7/breast_7_FSHG_p160.tif",
+      "bytes": 266974,
+      "sha256": "74b1368f3ae69935783022b93ec92137872a2747639fc1c9bcfc498224530906"
+    },
+    {
+      "relative_path": "breast_7/breast_7_FSHG_p180.tif",
+      "bytes": 266974,
+      "sha256": "16ed6c46c22680a420de9cbd243c9eb1e2e6a5bca4dddb7083cdca9682c09304"
+    },
+    {
+      "relative_path": "breast_17/FI.tif",
+      "bytes": 1048755,
+      "sha256": "68abde80b7a8c2bb327dda07fe36af90816f417827eff85f445909640dff3a4d"
+    },
+    {
+      "relative_path": "breast_17/R2.tif",
+      "bytes": 1048752,
+      "sha256": "827fe866c5096458149b7aba2cdb3454ee9626420802da52d1bc1b21f3d7544e"
+    },
+    {
+      "relative_path": "breast_17/SNR.tif",
+      "bytes": 1048752,
+      "sha256": "4f11ea614ca904c3e10374718896e3498d581ebae1496c58a5a81b4bc974032e"
+    },
+    {
+      "relative_path": "breast_17/breast_17_FSHG_p0.tif",
+      "bytes": 266974,
+      "sha256": "656fdfbf48c0878504b7dce3ab3362d8f6d97d9c7275981a207379d73235494c"
+    },
+    {
+      "relative_path": "breast_17/breast_17_FSHG_p20.tif",
+      "bytes": 266974,
+      "sha256": "ba11625177b96a6f6b197e48cd26f2eff7d5d44973d00e6815549f28a03e3a20"
+    },
+    {
+      "relative_path": "breast_17/breast_17_FSHG_p40.tif",
+      "bytes": 266972,
+      "sha256": "0c64a24fb70b195500a7a987ada91be860760d9c7bfc501111ffb9cdd47d8882"
+    },
+    {
+      "relative_path": "breast_17/breast_17_FSHG_p60.tif",
+      "bytes": 266974,
+      "sha256": "de8b7599a3cd9be893352c3b4582ae2e6521b715ccfb157d0c54fa57a4f4d7cd"
+    },
+    {
+      "relative_path": "breast_17/breast_17_FSHG_p80.tif",
+      "bytes": 266974,
+      "sha256": "7e283d980524bf1ae639fabb4be7890a9505bb37c002a60eda2d74d8b93b6ea5"
+    },
+    {
+      "relative_path": "breast_17/breast_17_FSHG_p100.tif",
+      "bytes": 266974,
+      "sha256": "02fae5461d5f775838a5ec1983b361db48c434604353cba9d5360827b1360b31"
+    },
+    {
+      "relative_path": "breast_17/breast_17_FSHG_p120.tif",
+      "bytes": 266974,
+      "sha256": "a4322d58fcaee542e777f313eed8900d651c71be5897d1f8c9909ce26920e345"
+    },
+    {
+      "relative_path": "breast_17/breast_17_FSHG_p140.tif",
+      "bytes": 266974,
+      "sha256": "ba1a970fe1d4849b1f341e39ef22139734287aa71a6f7f8f71a10f842e1e5636"
+    },
+    {
+      "relative_path": "breast_17/breast_17_FSHG_p160.tif",
+      "bytes": 266974,
+      "sha256": "37fa2f58afeb131056b87be59b1ae7ad2a31040b8fa21491f80cd2f8a5b6841b"
+    },
+    {
+      "relative_path": "breast_17/breast_17_FSHG_p180.tif",
+      "bytes": 266974,
+      "sha256": "f3a45456140d24343555ebf35664586c6f30f01acdfa0c15e61b7e2c3abb4d39"
+    },
+    {
+      "relative_path": "breast_25/FI.tif",
+      "bytes": 1048755,
+      "sha256": "d8bae325f8471203b291a62a0211528f8798f5cee3623801fb3b0aa5a2b7a535"
+    },
+    {
+      "relative_path": "breast_25/R2.tif",
+      "bytes": 1048752,
+      "sha256": "f4c5c80892d4ba1274deb487c83a2e4b25ed04f06c45965f7578f286201b2958"
+    },
+    {
+      "relative_path": "breast_25/SNR.tif",
+      "bytes": 1048752,
+      "sha256": "0620cecdbc7b357fc239ec81d71411f26f76bf40e1a8225eff7abaf740603473"
+    },
+    {
+      "relative_path": "breast_25/breast_25_FSHG_p0.tif",
+      "bytes": 266974,
+      "sha256": "c38b3b01c7de8e74279b58d32ca7fd51320ca5ee4414b7437937b0953c4ee3dd"
+    },
+    {
+      "relative_path": "breast_25/breast_25_FSHG_p20.tif",
+      "bytes": 266974,
+      "sha256": "88a485a4a65c6ee9b52ae4cf9a4dac53e12a0329690549bfb6357a603216a579"
+    },
+    {
+      "relative_path": "breast_25/breast_25_FSHG_p40.tif",
+      "bytes": 266974,
+      "sha256": "b9ccd880f6735105c27dec0b63e6dab801887b640e5ea616eeef831f8c5ee502"
+    },
+    {
+      "relative_path": "breast_25/breast_25_FSHG_p60.tif",
+      "bytes": 266974,
+      "sha256": "7b78ed8e4929910caaed9efd71f62a01def75e3032070376509980b01e17c38d"
+    },
+    {
+      "relative_path": "breast_25/breast_25_FSHG_p80.tif",
+      "bytes": 266974,
+      "sha256": "cace958bbcb473d04669cc3503fdaa8a5d9b9e017e06988281a00322ebd6ebc8"
+    },
+    {
+      "relative_path": "breast_25/breast_25_FSHG_p100.tif",
+      "bytes": 266974,
+      "sha256": "0fda44e70a4cefcf2e03e6dda314637140567d94dd1b0b33c10e0a21d78b876a"
+    },
+    {
+      "relative_path": "breast_25/breast_25_FSHG_p120.tif",
+      "bytes": 266974,
+      "sha256": "509eb3f7ac0c647ca21f196dc16d7e7cf9dc2f359745dc4a94ea8382c50d7068"
+    },
+    {
+      "relative_path": "breast_25/breast_25_FSHG_p140.tif",
+      "bytes": 266974,
+      "sha256": "08db6467ed9e4cb07914a54ddbe3c9c5f9f8aba7017f20f8b8b6582bdb90c0cb"
+    },
+    {
+      "relative_path": "breast_25/breast_25_FSHG_p160.tif",
+      "bytes": 266974,
+      "sha256": "011c2174db18d087092746b281f35df621055652d4c160b6f38182669a1a9921"
+    },
+    {
+      "relative_path": "breast_25/breast_25_FSHG_p180.tif",
+      "bytes": 266972,
+      "sha256": "797f883c35e453882b89824373334ece320257052422a109e0af3e050e14d573"
+    },
+    {
+      "relative_path": "breast_24/FI.tif",
+      "bytes": 1048755,
+      "sha256": "15755fd583bbdc273643e015d5232587057aca3ff5d484f5300e31ec0154d01b"
+    },
+    {
+      "relative_path": "breast_24/R2.tif",
+      "bytes": 1048752,
+      "sha256": "6357c056dbef6f3304f1bbb96673954ff963eefdcac87c73fe8501d4c173c097"
+    },
+    {
+      "relative_path": "breast_24/SNR.tif",
+      "bytes": 1048752,
+      "sha256": "7474d83df768e7d2649800d5291577764e7616ec09cfb089487a43355e62c324"
+    },
+    {
+      "relative_path": "breast_24/breast_24_FSHG_p0.tif",
+      "bytes": 266974,
+      "sha256": "c297c9d757dbfcd45da5cdc311ae5aff8272c182495190babd02190dbe2080ec"
+    },
+    {
+      "relative_path": "breast_24/breast_24_FSHG_p20.tif",
+      "bytes": 266974,
+      "sha256": "8e69f3270b3f8026c3dc4b5eeca64588e73a5956e4930f25892f0035babb002c"
+    },
+    {
+      "relative_path": "breast_24/breast_24_FSHG_p40.tif",
+      "bytes": 266974,
+      "sha256": "eafc7e3a1b1b020cf10f57d386531065bc10c267ec7b7cce91113cb9c4d736a2"
+    },
+    {
+      "relative_path": "breast_24/breast_24_FSHG_p60.tif",
+      "bytes": 266974,
+      "sha256": "5e1d24eb54c5d7ae53fca0109b91424098e6ca8d4d5cc197b9da8504b39c3148"
+    },
+    {
+      "relative_path": "breast_24/breast_24_FSHG_p80.tif",
+      "bytes": 266974,
+      "sha256": "89d956a1747776d7b6a76bfb45e796e5cd394329132fa4325dcb9a1b1a9c39d7"
+    },
+    {
+      "relative_path": "breast_24/breast_24_FSHG_p100.tif",
+      "bytes": 266974,
+      "sha256": "c8b3036d703f0ce7793f0cdb1c22310334332a4b4293d64760eee43a6adb596b"
+    },
+    {
+      "relative_path": "breast_24/breast_24_FSHG_p120.tif",
+      "bytes": 266974,
+      "sha256": "32877ea2740c6b46f9d7720a03da844b505de9078c266613b0608949fdbd82d1"
+    },
+    {
+      "relative_path": "breast_24/breast_24_FSHG_p140.tif",
+      "bytes": 266974,
+      "sha256": "eb3961d10fc002fbbce5b17a427fdd810ba1fb287c0d42884603dc1b59b7fc21"
+    },
+    {
+      "relative_path": "breast_24/breast_24_FSHG_p160.tif",
+      "bytes": 266974,
+      "sha256": "582dcb6fa79a37b462e6866f4d4e58d484397f856fe6815c857c7a04647c61df"
+    },
+    {
+      "relative_path": "breast_24/breast_24_FSHG_p180.tif",
+      "bytes": 266974,
+      "sha256": "70a2a5e7af0f8c8a0af44946206bb0669d5ffd568be4e66cb50ecd58f0c0ea5b"
+    },
+    {
+      "relative_path": "breast_3/FI.tif",
+      "bytes": 1048755,
+      "sha256": "3bb57e39bbf158b9757bec75c6b9641a917da6426313da5a3de449ad7cd08b0c"
+    },
+    {
+      "relative_path": "breast_3/R2.tif",
+      "bytes": 1048752,
+      "sha256": "5808e6a44b530091899a6cfdca93559b514ac7b108786099d32235431f9c3e79"
+    },
+    {
+      "relative_path": "breast_3/SNR.tif",
+      "bytes": 1048752,
+      "sha256": "5d6ea3e4bc21f404d1aad9fb76a346ab021092f48c16694942fd0f4107618e71"
+    },
+    {
+      "relative_path": "breast_3/breast_3_FSHG_p0.tif",
+      "bytes": 266972,
+      "sha256": "4f29d592064b016e466cecdc610bb934957a03de480366d0fb677d7cadea92d3"
+    },
+    {
+      "relative_path": "breast_3/breast_3_FSHG_p20.tif",
+      "bytes": 266972,
+      "sha256": "9ff81c52a145af171668425b77d98e2f3f07b2b2ba1ffed29b5a92a951a5af9c"
+    },
+    {
+      "relative_path": "breast_3/breast_3_FSHG_p40.tif",
+      "bytes": 266972,
+      "sha256": "2c85e907707ab522069f1175a1c7118a61c6ded4599861ab9225bd36a5206585"
+    },
+    {
+      "relative_path": "breast_3/breast_3_FSHG_p60.tif",
+      "bytes": 266972,
+      "sha256": "7f12aae005dff37170d9c1cf23cbf130438b8acd9ec688220ae6e0162220ecb9"
+    },
+    {
+      "relative_path": "breast_3/breast_3_FSHG_p80.tif",
+      "bytes": 266972,
+      "sha256": "4d9ca27860cbf5b296564e205250b2965dd0a701c0612e785fbc45982438f24d"
+    },
+    {
+      "relative_path": "breast_3/breast_3_FSHG_p100.tif",
+      "bytes": 266972,
+      "sha256": "cc1a307a73f46628e3420a2f0ef93d8ad02a8d8fac85e4cb4b11eb4434c36f57"
+    },
+    {
+      "relative_path": "breast_3/breast_3_FSHG_p120.tif",
+      "bytes": 266972,
+      "sha256": "a8c2bfc55fefd5a33aed6a9bccc7dce86334a7fdc1bf6c0edd69781ffc715144"
+    },
+    {
+      "relative_path": "breast_3/breast_3_FSHG_p140.tif",
+      "bytes": 266970,
+      "sha256": "2bff9836dc80eaaf532fd2ce08ae0463967caabac91e1127d8803671fec63bb3"
+    },
+    {
+      "relative_path": "breast_3/breast_3_FSHG_p160.tif",
+      "bytes": 266972,
+      "sha256": "66dfd54b980fb960699af1fef826bdd769bab6bb5f00cf6e7dab0744789bea96"
+    },
+    {
+      "relative_path": "breast_3/breast_3_FSHG_p180.tif",
+      "bytes": 266972,
+      "sha256": "320c042209a16e1ca4079e8b47a44edac17fb29fe36a1e0133ea7af7f3f70464"
+    }
+  ],
+  "access_state": "The v1 run decoded the first selected ROI but stopped before reference-error computation. V1.1 is frozen before any reference error or success gate is computed.",
+  "claim_boundary": "A pass establishes deterministic and bounded-latency production of the already-confirmed PSHG local-orientation endpoint on eight public unstained fields. The amendment repairs support-domain handling only. It does not add independent biological or clinical evidence."
+}

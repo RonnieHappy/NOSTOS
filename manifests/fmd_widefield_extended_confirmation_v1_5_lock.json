@@ -1,0 +1,200 @@
+{
+  "archive_md5": "e02b07bc4cfcd19dc911bd9d0c4e65a0",
+  "archive_sha256": "4914cd7d951b4ddc1a01f6c7f121b7e9936fd2a7d1505f3e802984ffee69cad7",
+  "artifacts": [
+    {
+      "bytes": 6688,
+      "path": "configs/fmd_widefield_conditional_support_v1_4.locked.json",
+      "sha256": "c7912e8d64e654c0fff62b9943d03d67afb6a46cfaabd50ad1db94c5d71e148f"
+    },
+    {
+      "bytes": 6391,
+      "path": "configs/fmd_widefield_extended_confirmation_v1_5.locked.json",
+      "sha256": "b0c10087981a230c340eb24f7fc6da197021fc246c2671e8adaaf264458b4161"
+    },
+    {
+      "bytes": 3740,
+      "path": "docs/NOSTOS0_FMD_WIDEFIELD_EXTENDED_CONFIRMATION_V1_5_PROTOCOL.md",
+      "sha256": "c9c5733f974d2dbad86f395c10b3c524bd95e409924f18363bd04bdb8d7624d1"
+    },
+    {
+      "bytes": 7897,
+      "path": "manifests/fmd_widefield_conditional_support_v1_4_confirmation_lock.json",
+      "sha256": "b82e2ad2d468e156cd08e306d7b1eaeabb70912c0ec8d1db981bfd3e70e72e1d"
+    },
+    {
+      "bytes": 70263,
+      "path": "outputs/nostos0-fmd-widefield-v1-3-compiled/validity_profile.json",
+      "sha256": "9c99e6c01359b8b8ab84f1eb6f48cf9101e913ee90269b63573ffd1abc69b737"
+    },
+    {
+      "bytes": 8916,
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-confirmation-audit/confirmation_audit.json",
+      "sha256": "ac2c47392c08bf3a7ba03fb8290e6b955ca903e66e3baf39492c2065601fba02"
+    },
+    {
+      "bytes": 2090836,
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-confirmation/confirmation_rows.jsonl",
+      "sha256": "d95288907b6fd2ac14a81f6c54469c392661c24c3aa11382551a72eb2c5c4eee"
+    },
+    {
+      "bytes": 16820,
+      "path": "outputs/nostos0-fmd-widefield-v1-4-conditional-development/conditional_support_profile.json",
+      "sha256": "a1bc92f5658e0cb2dae35f54acd15dab48c8bd70f09a5012d873ab2043ffd141"
+    },
+    {
+      "bytes": 2884,
+      "path": "pyproject.toml",
+      "sha256": "9204767675b912b7f1ece4469799dc1009fa3e2afd966d7956bf6337faa5844c"
+    },
+    {
+      "bytes": 769,
+      "path": "scripts/audit_fmd_widefield_extended_confirmation_v1_5.py",
+      "sha256": "ad016554d82b9c6e60f855765c8c2a96b8970e1c9f61e96e6362377cc2938173"
+    },
+    {
+      "bytes": 5089,
+      "path": "scripts/freeze_fmd_widefield_extended_confirmation_v1_5.py",
+      "sha256": "b8e9526302ace926eb8a21bac2de7891722828337bca5cac894b71a0527b55b5"
+    },
+    {
+      "bytes": 908,
+      "path": "scripts/run_fmd_widefield_extended_confirmation_v1_5.py",
+      "sha256": "bfce476cf8023ca5a062652cd4ae57ea99b21d4b170cac3314377fb00a8b8f84"
+    },
+    {
+      "bytes": 28404,
+      "path": "src/nostos/validation/fmd_widefield_extended_confirmation.py",
+      "sha256": "1bac4ddc0cbef78a0e3c4197797c68dbd1fe0ae8e1c07c77d420e81079a74932"
+    },
+    {
+      "bytes": 1762,
+      "path": "tests/test_fmd_widefield_extended_confirmation.py",
+      "sha256": "29778af0f37d9656c70aa80f03d724c37e91a6098a0f0005321b38e07e71f764"
+    }
+  ],
+  "audit_output_absent_at_lock": "<PROJECT_ROOT>\\outputs\\nostos0-fmd-widefield-v1-5-extended-confirmation-audit",
+  "base_profile_content_sha256": "65239b44c66a8bfca80608b1544fd0c892cf8e3209805828a1623d85382eebb8",
+  "base_profile_file_sha256": "9c99e6c01359b8b8ab84f1eb6f48cf9101e913ee90269b63573ffd1abc69b737",
+  "conditional_profile_content_sha256": "46e4b774c530b6f737e9941d367adb166e1540db51d919fa3ee91a96725f9308",
+  "conditional_profile_file_sha256": "a1bc92f5658e0cb2dae35f54acd15dab48c8bd70f09a5012d873ab2043ffd141",
+  "config_content_sha256": "328302fc07176504cb83f12dc00e81908b2a36de67c7aca6a881ca9b819da46d",
+  "config_file_sha256": "b0c10087981a230c340eb24f7fc6da197021fc246c2671e8adaaf264458b4161",
+  "confirmation_status_at_lock": "pixels_not_decoded_for_measurement_analysis",
+  "content_sha256": "8bd66c509265cabf604503bcb486a43f7e1fa81127fce89274dfc06ea1bf430d",
+  "cumulative_gates": {
+    "maximum_two_sided_exact_field_failure_upper95": 0.3,
+    "require_inherited_v1_4_audit_pass": true,
+    "require_zero_fields_with_any_accepted_failure": true,
+    "require_zero_invalid_accepted_emissions": true,
+    "required_independent_groups": 11
+  },
+  "extension_fields": [
+    3,
+    12,
+    6,
+    8,
+    4,
+    2,
+    10
+  ],
+  "extension_gates": {
+    "require_all_supported_cells_in_every_field": true,
+    "require_inherited_v1_4_audit_pass": true,
+    "require_zero_fields_with_any_accepted_failure": true,
+    "require_zero_invalid_accepted_emissions": true,
+    "required_independent_groups": 7
+  },
+  "extension_output_absent_at_lock": "<PROJECT_ROOT>\\outputs\\nostos0-fmd-widefield-v1-5-extended-confirmation",
+  "extension_realization_indices": {
+    "10": [
+      7,
+      32,
+      36,
+      37
+    ],
+    "12": [
+      11,
+      12,
+      27,
+      41
+    ],
+    "2": [
+      9,
+      24,
+      31,
+      40
+    ],
+    "3": [
+      8,
+      23,
+      29,
+      34
+    ],
+    "4": [
+      4,
+      19,
+      35,
+      49
+    ],
+    "6": [
+      11,
+      23,
+      27,
+      44
+    ],
+    "8": [
+      2,
+      15,
+      29,
+      48
+    ]
+  },
+  "locked_at_utc": "2026-08-31T13:39:54.459485Z",
+  "previously_opened_fields": [
+    7,
+    15,
+    13,
+    9,
+    16,
+    17,
+    18,
+    11,
+    20,
+    14,
+    5,
+    1
+  ],
+  "protocol_id": "fmd-widefield-bpae-r-extended-confirmation-v1-5",
+  "schema_version": "nostos-fmd-widefield-extended-confirmation-lock/1.0",
+  "supported_cells": [
+    {
+      "key": "[\"avg16\",16.0]",
+      "values": [
+        "avg16",
+        16.0
+      ]
+    },
+    {
+      "key": "[\"avg16\",4.0]",
+      "values": [
+        "avg16",
+        4.0
+      ]
+    },
+    {
+      "key": "[\"avg16\",8.0]",
+      "values": [
+        "avg16",
+        8.0
+      ]
+    },
+    {
+      "key": "[\"avg8\",16.0]",
+      "values": [
+        "avg8",
+        16.0
+      ]
+    }
+  ]
+}

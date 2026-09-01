@@ -1,0 +1,214 @@
+{
+  "schema_version": "nostos-biosr-threshold-calibration/1.0",
+  "created_at_utc": "2026-08-29T03:00:22Z",
+  "analysis_role": "one_time_untouched_threshold_calibration",
+  "lineage": {
+    "config": {
+      "path": "configs/paired_acquisition_support_v5.locked.json",
+      "bytes": 4791,
+      "sha256": "711e5f4aaac8bcbeccb07bc94fb33dd3e51f5eeec2fea317a25ed0c8b66d7573"
+    },
+    "profile": {
+      "path": "configs/biosr_widefield_measurement_profile_v1.locked.json",
+      "bytes": 3385,
+      "sha256": "321ee833987351fd64c9a358e2b8682bf368d35ea22a14665c05b65d5c2f6942"
+    },
+    "score_formula_lock": {
+      "path": "manifests/paired_acquisition_support_score_formula_lock_v2.json",
+      "bytes": 6523,
+      "sha256": "ddee8aeda81b8d42763903676c4ec8b316a9f1a992cc257cd7718fe00eb27c7c"
+    },
+    "pilot_selection": {
+      "path": "manifests/biosr_small_pilot_v5_selection_lock.json",
+      "bytes": 1187,
+      "sha256": "3ed60fa54b4e6a0b133b7da500872aadc9bfe363e8fb87aac98898e75a8aca51"
+    },
+    "CCPs": {
+      "archive_receipt": {
+        "path": "outputs/nostos0-biosr-ccp-threshold-calibration-v5/archive_receipt.json",
+        "bytes": 12897,
+        "sha256": "22da7f632c918fbbdb9fd36426f3b604e5930c6c5affba1c824705bb06b7d9c1"
+      },
+      "endpoint_cases": {
+        "path": "outputs/nostos0-biosr-ccp-threshold-calibration-v5/endpoint_cases.jsonl",
+        "bytes": 14240529,
+        "sha256": "88848985fc1a43011c49f76e935fc0638b4517c8cd526fdc22ff7b32ca9faffc"
+      },
+      "pair_index": {
+        "path": "outputs/nostos0-biosr-ccp-threshold-calibration-v5/pair_index.json",
+        "bytes": 256685,
+        "sha256": "0dd046652f029e03487fb9571c83e2ad4ec7c5e3ebb81f3e4f9378f7e42588ff"
+      },
+      "implementation_sha256": "8810b3baa7a773bae940f2c39ffe32436d7b600238ceefe9d53d117dcdd86a08",
+      "structure": "CCPs"
+    },
+    "ER": {
+      "archive_receipt": {
+        "path": "outputs/nostos0-biosr-er-threshold-calibration-v5/archive_receipt.json",
+        "bytes": 13455,
+        "sha256": "308926ba4e746cfac7f5638a026fd78a6d86b11127b1f5163bc86be5662e84d6"
+      },
+      "endpoint_cases": {
+        "path": "outputs/nostos0-biosr-er-threshold-calibration-v5/endpoint_cases.jsonl",
+        "bytes": 10467839,
+        "sha256": "e522b9b707b88440d6df1766f9992671d56e5f87af5d2893430b29ceef166203"
+      },
+      "pair_index": {
+        "path": "outputs/nostos0-biosr-er-threshold-calibration-v5/pair_index.json",
+        "bytes": 191125,
+        "sha256": "1a1a2ce913ab19ee7dded2c390157a25b3af66cbb1a4d0ea868d5413f54b0fb5"
+      },
+      "implementation_sha256": "8810b3baa7a773bae940f2c39ffe32436d7b600238ceefe9d53d117dcdd86a08",
+      "structure": "ER"
+    }
+  },
+  "field_selection": {
+    "rule": "sha256('BioSR-v9|' + structure + '|' + reference_group_id) first_uint64 modulo 4",
+    "required_partition": "threshold_calibration",
+    "cells": {
+      "CCPs": [
+        "Cell_002",
+        "Cell_003",
+        "Cell_004",
+        "Cell_005",
+        "Cell_006",
+        "Cell_007",
+        "Cell_009",
+        "Cell_010",
+        "Cell_011",
+        "Cell_013",
+        "Cell_016",
+        "Cell_021",
+        "Cell_023",
+        "Cell_025",
+        "Cell_026",
+        "Cell_028",
+        "Cell_029",
+        "Cell_030",
+        "Cell_031",
+        "Cell_035",
+        "Cell_040",
+        "Cell_041",
+        "Cell_044",
+        "Cell_046",
+        "Cell_047",
+        "Cell_048",
+        "Cell_049",
+        "Cell_051",
+        "Cell_053",
+        "Cell_054"
+      ],
+      "ER": [
+        "Cell_001",
+        "Cell_005",
+        "Cell_006",
+        "Cell_007",
+        "Cell_010",
+        "Cell_013",
+        "Cell_014",
+        "Cell_015",
+        "Cell_018",
+        "Cell_019",
+        "Cell_022",
+        "Cell_023",
+        "Cell_025",
+        "Cell_029",
+        "Cell_030",
+        "Cell_033",
+        "Cell_035",
+        "Cell_036",
+        "Cell_039",
+        "Cell_041",
+        "Cell_043",
+        "Cell_046",
+        "Cell_049",
+        "Cell_051",
+        "Cell_054",
+        "Cell_056",
+        "Cell_057",
+        "Cell_058",
+        "Cell_059",
+        "Cell_060",
+        "Cell_062",
+        "Cell_064",
+        "Cell_067"
+      ]
+    },
+    "overlap_with_score_design_pilot": {
+      "CCPs": [],
+      "ER": []
+    }
+  },
+  "result": {
+    "status": "fail",
+    "claim_endpoints": [
+      "hessian_blob_curve",
+      "hessian_tube_curve",
+      "spectral_anisotropy",
+      "spectral_entropy",
+      "tensor_coherence",
+      "tensor_orientation",
+      "variogram_horizontal_curve",
+      "variogram_range_horizontal",
+      "variogram_range_vertical",
+      "variogram_vertical_curve"
+    ],
+    "reference_fields": 63,
+    "paired_acquisitions": 468,
+    "endpoint_cases": 8424,
+    "reference_eligible_cases": 5678,
+    "operating_point": {
+      "status": "no_operating_point",
+      "threshold": null,
+      "condition": "full_contract",
+      "eligible": 5678,
+      "accepted": 0,
+      "coverage": 0.0,
+      "invalid": 0,
+      "risk": null,
+      "cluster_bootstrap_risk_upper95": null,
+      "combinations": [],
+      "candidate_thresholds": 1258,
+      "bootstrap_candidates_evaluated": 0,
+      "constraints": {
+        "target_overall_and_combination_risk": 0.1,
+        "maximum_overall_cluster_bootstrap_risk_upper95": 0.15,
+        "minimum_overall_coverage": 0.8,
+        "minimum_structure_endpoint_coverage": 0.7
+      }
+    },
+    "conventional_qc_operating_point": {
+      "status": "no_operating_point",
+      "threshold": null,
+      "condition": "conventional_acquisition_qc",
+      "eligible": 5678,
+      "accepted": 0,
+      "coverage": 0.0,
+      "invalid": 0,
+      "risk": null,
+      "cluster_bootstrap_risk_upper95": null,
+      "combinations": [],
+      "candidate_thresholds": 388,
+      "bootstrap_candidates_evaluated": 0,
+      "constraints": {
+        "target_overall_and_combination_risk": 0.1,
+        "maximum_overall_cluster_bootstrap_risk_upper95": 0.15,
+        "minimum_overall_coverage": 0.8,
+        "minimum_structure_endpoint_coverage": 0.7
+      }
+    },
+    "aurc": {
+      "full_contract": 0.013173323531485601,
+      "always_emit": 0.054948925678055656,
+      "conventional_acquisition_qc": 0.014075815266995676,
+      "reduction_fraction_vs_always_emit": 0.7602624006032845
+    },
+    "gates": {
+      "operating_point_selected": false,
+      "minimum_aurc_reduction_fraction": true,
+      "required_aurc_reduction_fraction": 0.2
+    }
+  },
+  "confirmation_archives_accessed": false,
+  "claim_boundary": "Paired-acquisition support for predeclared structural measurements relative to registered high-resolution references; not image restoration, biological phenotype inference, diagnosis, clinical validity, diffraction-limit estimation, or proof that the reference acquisition is itself ground truth biology."
+}

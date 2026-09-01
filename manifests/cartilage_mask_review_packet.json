@@ -1,0 +1,13 @@
+{
+  "protocol_version": "nostos-cartilage-mask-review-pointer/1.1",
+  "status": "pending_human_reference_masks",
+  "storage_root": "<DATA_ROOT>\\validation\\cartilage-mask-review-v2",
+  "case_count": 40,
+  "participant_count": 8,
+  "render_count": 80,
+  "packet_receipt_sha256": "1ddf831653116dcb200632c6e10ec062a3758a25f8984fbcaf008c9e66e287d9",
+  "review_manifest_sha256": "abd5776087ffee91ed9dcc13100c4eae3de65fb61c87017e810c23066448e889",
+  "case_crosswalk_sha256": "8a5d7ff59afecf129464dcd1bf0182c99cd4f7f77287c24490236e4158bbda49",
+  "evaluation_command": "nostos-review-evaluate <review-packet> --output <review-results>",
+  "claim_boundary": "Packet preparation and machine-enforced evaluator are complete; segmentation accuracy remains unvalidated until independent reviewed masks and signed audits exist."
+}

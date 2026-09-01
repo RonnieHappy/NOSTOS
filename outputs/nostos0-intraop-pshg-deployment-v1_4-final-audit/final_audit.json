@@ -1,0 +1,81 @@
+{
+  "schema_version": "nostos-intraop-pshg-deployment-final-audit/1.0",
+  "target_protocol": "nostos-intraop-pshg-deployment/1.4",
+  "status": "verified_pass",
+  "checks": {
+    "lock_integrity": true,
+    "source_integrity": true,
+    "result_integrity": true,
+    "all_runner_gates_pass": true,
+    "independent_tensor_equivalence": true,
+    "independent_reference_metric_reproduction": true,
+    "case_receipt_integrity": true,
+    "artifact_file_integrity": true,
+    "artifact_registry_complete": true,
+    "clinical_output_withheld": true
+  },
+  "independent_summary": {
+    "eligible_pixels": 108066,
+    "pooled_median_reference_error_degrees": 7.531534671783447,
+    "pooled_p75_reference_error_degrees": 13.222204685211182,
+    "worst_roi_median_reference_error_degrees": 8.086593627929688
+  },
+  "case_audit": [
+    {
+      "roi": "breast_36",
+      "eligible_pixels": 22410,
+      "median_reference_error_degrees": 7.089421272277832,
+      "maximum_independent_orientation_difference_degrees": 7.629363892647234e-06,
+      "maximum_independent_coherence_difference": 2.980151247999885e-08,
+      "case_receipt_matches_summary": true,
+      "artifact_file_integrity": true,
+      "artifact_registry_complete": true,
+      "unregistered_files": [],
+      "missing_files": [],
+      "clinical_output_withheld": true
+    },
+    {
+      "roi": "breast_6",
+      "eligible_pixels": 30765,
+      "median_reference_error_degrees": 7.358297348022461,
+      "maximum_independent_orientation_difference_degrees": 7.629370884387754e-06,
+      "maximum_independent_coherence_difference": 2.9802110557142214e-08,
+      "case_receipt_matches_summary": true,
+      "artifact_file_integrity": true,
+      "artifact_registry_complete": true,
+      "unregistered_files": [],
+      "missing_files": [],
+      "clinical_output_withheld": true
+    },
+    {
+      "roi": "breast_30",
+      "eligible_pixels": 36638,
+      "median_reference_error_degrees": 8.086593627929688,
+      "maximum_independent_orientation_difference_degrees": 7.6293614768019324e-06,
+      "maximum_independent_coherence_difference": 2.9802312728754998e-08,
+      "case_receipt_matches_summary": true,
+      "artifact_file_integrity": true,
+      "artifact_registry_complete": true,
+      "unregistered_files": [],
+      "missing_files": [],
+      "clinical_output_withheld": true
+    },
+    {
+      "roi": "breast_22",
+      "eligible_pixels": 18253,
+      "median_reference_error_degrees": 7.227068066596985,
+      "maximum_independent_orientation_difference_degrees": 7.629309408230256e-06,
+      "maximum_independent_coherence_difference": 2.980224478310589e-08,
+      "case_receipt_matches_summary": true,
+      "artifact_file_integrity": true,
+      "artifact_registry_complete": true,
+      "unregistered_files": [],
+      "missing_files": [],
+      "clinical_output_withheld": true
+    }
+  ],
+  "bad_locked_files": [],
+  "bad_source_files": [],
+  "interpretation": "A measurement result is not release-verified unless both numerical reproduction and complete artifact provenance pass.",
+  "clinical_readiness": "not_ready"
+}

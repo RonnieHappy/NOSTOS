@@ -1,0 +1,334 @@
+{
+  "schema_version": "nostos-paired-acquisition-tensor-v7-confirmation-lock/1.0",
+  "locked_at_utc": "2026-08-29T06:09:39Z",
+  "status": "locked_after_download_and_central_directory_layout_repair_before_any_v7_f_actin_pixel_array_decode_or_endpoint_outcome",
+  "protocol_version": "nostos-paired-acquisition-tensor/7.0",
+  "implementation_sha256": "85998b94087212aa57c4a8cc0b7b9a743a391cf9bf695335a1ca1a642d21ef0e",
+  "config": {
+    "path": "configs/paired_acquisition_tensor_v7.locked.json",
+    "bytes": 7701,
+    "sha256": "51bc51cd69f2945c04b56a65fbf6a5a677c0c7661087ec945043eec9ab5f54eb"
+  },
+  "development_gate": {
+    "status": "safety_supported_but_incremental_benefit_not_established",
+    "measurement_safety_freeze_eligible": true,
+    "incremental_benefit_freeze_eligible": false,
+    "full_contract": {
+      "eligible": 5010,
+      "accepted": 5008,
+      "coverage": 0.9996007984031936,
+      "invalid": 44,
+      "risk": 0.00878594249201278,
+      "cluster_bootstrap_risk_upper95": 0.015381769710040736
+    },
+    "coherence_aurc": {
+      "endpoint_family": "tensor_coherence",
+      "eligible_rows": 2505,
+      "reference_fields": 71,
+      "invalid_rows": 4,
+      "invalid_reference_fields": 4,
+      "observed": {
+        "full_contract_aurc": 3.190999906073685e-06,
+        "conventional_acquisition_qc_aurc": 3.059254009078788e-05,
+        "comparator_minus_full": 2.7401540184714197e-05,
+        "relative_reduction": 0.8956935286640494
+      },
+      "bootstrap": {
+        "draws": 10000,
+        "seed": 26082929,
+        "resampling_unit": "reference_group_id stratified by structure",
+        "difference_direction": "positive comparator-minus-full values favor the complete contract",
+        "finite_draws": 10000,
+        "median": 2.6317327597249477e-05,
+        "ci95": [
+          2.8995804334028842e-06,
+          7.35439905435041e-05
+        ],
+        "probability_full_better": 0.9876,
+        "probability_full_noninferior": 1.0,
+        "structure_specific": {
+          "CCPs": {
+            "finite_draws": 10000,
+            "median": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "probability_full_better": 0.0,
+            "probability_full_noninferior": 1.0
+          },
+          "ER": {
+            "finite_draws": 10000,
+            "median": 9.983739706708128e-05,
+            "ci95": [
+              2.2610545539135454e-06,
+              0.0003137644999822707
+            ],
+            "probability_full_better": 0.9838,
+            "probability_full_noninferior": 0.9962
+          },
+          "Microtubules": {
+            "finite_draws": 10000,
+            "median": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "probability_full_better": 0.0,
+            "probability_full_noninferior": 1.0
+          }
+        }
+      }
+    },
+    "selection_optimism_disclosed": "The coherence cutoff was selected from these same development outcomes. A field-cluster bootstrap conditional on that selected cutoff does not account for selection optimism and is descriptive only."
+  },
+  "confirmation": {
+    "structures": [
+      "F-actin_linear",
+      "F-actin_nonlinear"
+    ],
+    "fields_per_structure": 8,
+    "field_selection_rule": "For each structure, sort all central-directory Cell_### identifiers by sha256('NOSTOS-v7-initial-confirmation|' + structure + '|' + reference_group_id), where reference_group_id is structure + '|' + Cell_###, and select the first eight. The lock records the selected cells before any image-member byte is opened for v7.",
+    "selected_cells": {
+      "F-actin_linear": [
+        "Cell_016",
+        "Cell_019",
+        "Cell_038",
+        "Cell_014",
+        "Cell_003",
+        "Cell_048",
+        "Cell_046",
+        "Cell_034"
+      ],
+      "F-actin_nonlinear": [
+        "Cell_004",
+        "Cell_023",
+        "Cell_001",
+        "Cell_037",
+        "Cell_035",
+        "Cell_046",
+        "Cell_005",
+        "Cell_021"
+      ]
+    },
+    "all_signal_levels_in_selected_fields": true,
+    "threshold_refitting_permitted": false,
+    "endpoint_addition_or_removal_permitted": false,
+    "primary_safety_and_incremental_utility_decided_separately": true
+  },
+  "archives": {
+    "F-actin_linear": {
+      "path": "<DATA_ROOT>\\data\\public\\measurement-support-benchmark\\biosr\\archives\\F-actin.zip",
+      "bytes": 2233338886,
+      "md5": "80fafab68f26fb71de12be0141face74",
+      "sha256": "d7b83be427b7e579d6450943844d5553f2e9fe61309ed9d91976598e7095c3d7",
+      "figshare_file_id": 25944599,
+      "central_directory_cell_count": 51,
+      "central_directory_expected_levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "primary_reference_basename": "SIM_gt.mrc",
+      "excluded_reference_basenames": []
+    },
+    "F-actin_nonlinear": {
+      "path": "<DATA_ROOT>\\data\\public\\measurement-support-benchmark\\biosr\\archives\\F-actin_Nonlinear.zip",
+      "bytes": 4480187050,
+      "md5": "b2884114e5fb034b9261855b3c8dbf77",
+      "sha256": "a5c97793c3b72e1f6b7e22d41670be0ef97d6c0bcdab9b6e5c392cc95dd4dcd8",
+      "figshare_file_id": 25714772,
+      "central_directory_cell_count": 51,
+      "central_directory_expected_levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "primary_reference_basename": "SIM_gt_a.mrc",
+      "excluded_reference_basenames": [
+        "SIM_gt_b.mrc"
+      ]
+    }
+  },
+  "access_state": {
+    "before_v7_lock": "Archives downloaded and integrity verified; ZIP central-directory names and sizes inspected; one prior linear indexing attempt may have read MRC headers before failing on the v6 nine-level expectation; no F-actin pixel array or endpoint outcome decoded.",
+    "during_v7_lock": "Only whole-archive hashes and ZIP central-directory metadata were read. No image member was opened by the lock builder.",
+    "authorized_after_lock": "Read MRC headers for layout validation, then decode only the sixteen locked fields and all their frozen signal levels; calculate no unregistered endpoint."
+  },
+  "nonlinear_reference_resolution": {
+    "primary": "SIM_gt_a.mrc",
+    "excluded": "SIM_gt_b.mrc",
+    "owner_answer": "https://github.com/qc17-THU/DL-SR/issues/8#issuecomment-1037742991",
+    "rule": "The excluded gamma-overview image cannot enter registration, measurement, sensitivity selection or any gate."
+  },
+  "files": [
+    {
+      "path": "configs/paired_acquisition_tensor_v7.locked.json",
+      "bytes": 7701,
+      "sha256": "51bc51cd69f2945c04b56a65fbf6a5a677c0c7661087ec945043eec9ab5f54eb"
+    },
+    {
+      "path": "docs/NOSTOS0_BIOSR_V6_INITIAL_CONFIRMATION_FAILURE.md",
+      "bytes": 3852,
+      "sha256": "cc44378806ae782cf76d2e46429e58688715e33ad0ad83c54325343620e26125"
+    },
+    {
+      "path": "docs/NOSTOS0_BIOSR_V7_CONFIRMATION_PROTOCOL.md",
+      "bytes": 4568,
+      "sha256": "2a6f3f6d9c9c982c72c70ba205c1edb60c641eb5e007bfe665a4d806acb5d634"
+    },
+    {
+      "path": "manifests/paired_acquisition_support_v6_confirmation_failure_receipt.json",
+      "bytes": 6915,
+      "sha256": "c5c27f17d6123685c66f2c2536190a0a6eb69c97d429e0f7429f8c4b81f22fdb"
+    },
+    {
+      "path": "outputs/nostos0-biosr-v7-family-specific-evidence-audit/family_specific_evidence_audit.json",
+      "bytes": 69020,
+      "sha256": "8f91eefaa9aba2c4f714416e2e92c7f41e38d87b2cc630cb85ce5e015015dabd"
+    },
+    {
+      "path": "outputs/nostos0-biosr-v7-family-specific-evidence-audit/family_specific_tensor_cases.jsonl",
+      "bytes": 19454537,
+      "sha256": "59d12bcc8001f1eba58ff399d0b621fbe2724431956409ebae9e68707fc4a18c"
+    },
+    {
+      "path": "outputs/nostos0-biosr-v7-physical-tensor-cross-domain-development/candidate_screen.json",
+      "bytes": 23331,
+      "sha256": "0246888c3fea1053947d787d43e996365586fc64d69246a0c71c88b320decbaa"
+    },
+    {
+      "path": "outputs/nostos0-biosr-v7-resolution-margin-calibration/resolution_margin_calibration.json",
+      "bytes": 23301,
+      "sha256": "496f2ec5377540c9f5fc94f3578cf4604b8f327e7ab9a4e80bb26121aa4d4900"
+    },
+    {
+      "path": "outputs/nostos0-biosr-v7-tensor-distribution-development/tensor_distribution_development.json",
+      "bytes": 195825,
+      "sha256": "7adeadec7cd299e87e00360e849d64027da56794bb430c70e838805abb588dfd"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 2884,
+      "sha256": "9204767675b912b7f1ece4469799dc1009fa3e2afd966d7956bf6337faa5844c"
+    },
+    {
+      "path": "scripts/audit_biosr_tensor_v7_confirmation.py",
+      "bytes": 5808,
+      "sha256": "ba9fc53b4bbf965af3d1ab59288984959085120b1740c123f428632f2d8d77ca"
+    },
+    {
+      "path": "scripts/audit_biosr_v7_family_specific_evidence.py",
+      "bytes": 8556,
+      "sha256": "167209fee88606a3a876cdbba8c0d30008007ff0807c1cc494b2ae352ca691cd"
+    },
+    {
+      "path": "scripts/build_biosr_tensor_v7_confirmation_lock.py",
+      "bytes": 11290,
+      "sha256": "21548e562235f3c3a41f1c5f65551e9f6c58bda503348baae22b76dc326ef51e"
+    },
+    {
+      "path": "scripts/run_biosr_tensor_v7_confirmation.py",
+      "bytes": 20269,
+      "sha256": "cb0a258af2c19125aa89f41d55d264e5ae2fe7f58565e6936a45f3c3e1242dc5"
+    },
+    {
+      "path": "src/nostos/core/qc.py",
+      "bytes": 2241,
+      "sha256": "9e9fc39a35a2c000cf5ad47f07595c2052e327bad9c08b42b62011429e272353"
+    },
+    {
+      "path": "src/nostos/features/physical_tensor.py",
+      "bytes": 10227,
+      "sha256": "4208a544d1e94da47711bd200c14b5f4e2a1c7ed13d86aab7e7894c9a037620c"
+    },
+    {
+      "path": "src/nostos/features/spatial_fft.py",
+      "bytes": 7461,
+      "sha256": "2f18db7a1ded0e17ae091a53ddca0b44a37a5dbabd12ee1c61f2518deac23f68"
+    },
+    {
+      "path": "src/nostos/validation/biosr_tensor_confirmation_v7.py",
+      "bytes": 14672,
+      "sha256": "80122d0e5bf574f4402ce705ef3ca922f3fbc897e9bfcd4646b2733728515ff5"
+    },
+    {
+      "path": "src/nostos/validation/metrics.py",
+      "bytes": 1785,
+      "sha256": "74e16c4479a6e5cb1c35246d70a2f3b1ab491627e8a815a3c4c429d1d759962e"
+    },
+    {
+      "path": "src/nostos/validation/paired_acquisition_support.py",
+      "bytes": 49810,
+      "sha256": "101ebbe1bceafa8916511560e3c5bdb8a42d0b9eded76d043fddec3465ede3e0"
+    },
+    {
+      "path": "src/nostos/validation/tensor_contract_audit_v7.py",
+      "bytes": 6835,
+      "sha256": "89676a5880e70628d0c053ba8a21e9db8eded7f412beb34515e12890faf16fdb"
+    },
+    {
+      "path": "src/nostos/validation/tensor_evidence_v7.py",
+      "bytes": 12384,
+      "sha256": "3907cc6ef6e3617f710ced54930c1fe9ffc4ec88cdd62d6404d0ca4c9a5aedd2"
+    },
+    {
+      "path": "src/nostos/validation/tensor_support_v7.py",
+      "bytes": 21461,
+      "sha256": "4604200c69e2804bcdd4d0dc0eb69e430a1ac163ed9e4133d247fffc489558e5"
+    },
+    {
+      "path": "tests/test_biosr_tensor_confirmation_v7.py",
+      "bytes": 2789,
+      "sha256": "1143b8dab8710760c103afde7d8e1e2662b3ee847492c6832fbf99e963b3406d"
+    },
+    {
+      "path": "tests/test_physical_tensor.py",
+      "bytes": 3514,
+      "sha256": "c62d729fe918b3d0001b1abd645e17332d9450e3ca5428b69e92636db1535bad"
+    },
+    {
+      "path": "tests/test_tensor_contract_audit_v7.py",
+      "bytes": 1946,
+      "sha256": "f9aa8dae55e7c0e96ab5fda324beeba21d38fa56984d74a690cc419db59b25ed"
+    },
+    {
+      "path": "tests/test_tensor_evidence_v7.py",
+      "bytes": 3541,
+      "sha256": "4f828d611b2fdee222cc510a5fa68bdd4cb1ca9365a76ec18264f30f3e63a976"
+    },
+    {
+      "path": "tests/test_tensor_support_v7.py",
+      "bytes": 4592,
+      "sha256": "7933bed3d231bf7bcc2afcc030ba0e470b36958ce1a0541b214a7649352df9ca"
+    },
+    {
+      "path": "uv.lock",
+      "bytes": 266139,
+      "sha256": "48b9cd1ba22e808fa8ec60105551c1ad6c9549abdf4df44c9ed2c5a897b1efb1"
+    }
+  ],
+  "verification": {
+    "pytest_command": "uv run --frozen pytest -q",
+    "pytest_result": "267 passed, 4 skipped, 12 dependency deprecation warnings",
+    "pytest_exit_code": 0,
+    "compile_command": "uv run --frozen python -m compileall -q src scripts",
+    "compile_exit_code": 0
+  },
+  "claim_boundary": "Paired-acquisition safety and, only if independently confirmed, incremental coherence support relative to registered high-SNR BioSR reconstructions. Not image restoration, biological phenotype inference, diagnosis, clinical validity, diffraction-limit estimation, or proof that the reference reconstruction is ground-truth biology."
+}

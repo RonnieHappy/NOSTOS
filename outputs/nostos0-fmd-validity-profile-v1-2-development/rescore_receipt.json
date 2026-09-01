@@ -1,0 +1,15 @@
+{
+  "config_content_sha256": "4b3e4ef72f271396e85fb98114deaf6fdf6ac17a7422eba11cf17c319b901680",
+  "config_file_sha256": "0321a4f1b79b834aa7f7190214d8b11a7407715434406d7bdafcc81c5db514e2",
+  "content_sha256": "17ff0e8d0d20ab085b7f675f307923c4ea27c2d649b4d9fff75cf02f9be0ab6a",
+  "input_rows_name": "development_rows.jsonl",
+  "input_rows_sha256": "c3a62635aaa28235b2be5392754276174e71e9098c61bc0d38c091d16a32ec57",
+  "output_rows_name": "development_rows_v1_2.jsonl",
+  "output_rows_sha256": "ed86f37bb920414c92d9c863641e41b05156b3fe46bbcbe315539b9ef1a56012",
+  "protocol_id": "fmd-real-noise-dimensionless-organization-v1-2",
+  "reference_label_access": "The scoring function reads only metadata.averaged_captures and support_components.perturbation_stability.",
+  "rows": 960,
+  "schema_version": "nostos-fmd-input-only-rescore/1.0",
+  "score_key": "declared_capture_stability_contract",
+  "status": "complete"
+}

@@ -1,0 +1,75 @@
+{
+  "protocol_version": "nostos-dynamic-synthetic/1.0",
+  "protocol_sha256": "cf627f677bbaf1fc7b5e59367de81477d7c483e2d4f3c2f36e59ad06a64ce7ca",
+  "status": "pass",
+  "scope": "synthetic_bulk_translation_only",
+  "cases": [
+    {
+      "case": 0,
+      "truth_physical": [
+        6.0,
+        -15.0
+      ],
+      "estimate_physical": [
+        6.0,
+        -15.0
+      ],
+      "error": 0.0,
+      "status": "valid"
+    },
+    {
+      "case": 1,
+      "truth_physical": [
+        -14.0,
+        12.0
+      ],
+      "estimate_physical": [
+        -14.0,
+        12.0
+      ],
+      "error": 0.0,
+      "status": "valid"
+    },
+    {
+      "case": 2,
+      "truth_physical": [
+        20.0,
+        24.0
+      ],
+      "estimate_physical": [
+        20.0,
+        24.0
+      ],
+      "error": 0.0,
+      "status": "valid"
+    },
+    {
+      "case": 3,
+      "truth_physical": [
+        -8.0,
+        -27.0
+      ],
+      "estimate_physical": [
+        -8.0,
+        -27.0
+      ],
+      "error": 0.0,
+      "status": "valid"
+    }
+  ],
+  "summary": {
+    "case_count": 4,
+    "maximum_error": 0.0,
+    "median_error": 0.0
+  },
+  "gates": {
+    "all_translation_errors_at_most_one_physical_pixel": true,
+    "blank_series_abstains": true,
+    "calibration_retained": true
+  },
+  "limitations": [
+    "integer phase correlation",
+    "bulk translation is not dense flow or object tracking",
+    "public biological validation pending"
+  ]
+}
