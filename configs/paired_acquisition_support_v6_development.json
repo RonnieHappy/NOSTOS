@@ -1,0 +1,84 @@
+{
+  "schema_version": "nostos-paired-acquisition-support-v6-development/1.0",
+  "status": "transparent_post-v5-failure_development_not_confirmation",
+  "protocol_basis": "nostos-paired-acquisition-support/5.0 unchanged endpoints plus a new family-risk calibration layer",
+  "development_sources": [
+    "outputs/nostos0-biosr-ccp-small-pilot-v5/archive_receipt.json",
+    "outputs/nostos0-biosr-er-small-pilot-v5/archive_receipt.json",
+    "outputs/nostos0-biosr-ccp-threshold-calibration-v5/archive_receipt.json",
+    "outputs/nostos0-biosr-er-threshold-calibration-v5/archive_receipt.json"
+  ],
+  "endpoint_families": {
+    "hessian_response_shape": [
+      "hessian_blob_curve",
+      "hessian_tube_curve"
+    ],
+    "spectral_order": [
+      "spectral_anisotropy",
+      "spectral_entropy"
+    ],
+    "tensor_coherence": [
+      "tensor_coherence"
+    ],
+    "tensor_orientation": [
+      "tensor_orientation"
+    ]
+  },
+  "excluded_v5_endpoints": {
+    "hessian_blob_scale": "Search-grid boundary censoring in the v5 pilot.",
+    "hessian_tube_scale": "Search-grid boundary censoring in the v5 pilot.",
+    "spectral_scale": "Failed v5 paired-acquisition tolerance.",
+    "variogram_horizontal_curve": "Image-axis-dependent definition; replaced by intrinsic directional response development.",
+    "variogram_vertical_curve": "Image-axis-dependent definition; replaced by intrinsic directional response development.",
+    "variogram_range_horizontal": "Image-axis-dependent scalar removed after prospective v5 failure.",
+    "variogram_range_vertical": "Image-axis-dependent scalar failed the prospective v5 gate and is removed, not retuned."
+  },
+  "candidate_calibration": {
+    "method": "quantile-binned Jeffreys posterior means followed by monotone isotonic regression",
+    "raw_score": "full_contract",
+    "candidate_bin_counts": [4, 6, 8, 10, 12, 16],
+    "prior_alpha": 0.5,
+    "prior_beta": 0.5,
+    "cross_fitting_folds": 5,
+    "cross_fitting_seed": 26082901,
+    "group": "reference_group_id",
+    "stratification": "structure for fold balance only; structure is never a predictor",
+    "selection_rule": "Minimum out-of-field Brier score; ties by logarithmic loss, then fewer bins. Gate status is reported but cannot select the candidate."
+  },
+  "family_threshold_selection": {
+    "primary_condition": "full_contract",
+    "selector": "For each computational endpoint family, choose the most permissive raw-score cutoff satisfying pooled and per-structure risk and coverage constraints plus a structure-stratified reference-field cluster bootstrap bound. No structure-specific threshold is permitted.",
+    "target_observed_risk": 0.1,
+    "maximum_cluster_bootstrap_risk_upper95": 0.15,
+    "minimum_overall_coverage": 0.8,
+    "minimum_family_coverage": 0.7,
+    "minimum_structure_family_coverage": 0.7,
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 26082902,
+    "comparator_semantics": {
+      "always_emit": "Ignore every NOSTOS hard abstention and emit every computable estimate.",
+      "conventional_acquisition_qc": "Apply acquisition-QC score and acquisition-QC hard failures only; do not inherit physical-sampling or identifiability abstentions.",
+      "component_ablation": "When a validity component is removed, remove both its continuous score and its governed hard preconditions."
+    }
+  },
+  "development_gate": {
+    "maximum_calibrated_risk": 0.1,
+    "maximum_observed_overall_and_structure_family_risk": 0.1,
+    "minimum_overall_coverage": 0.8,
+    "minimum_structure_family_coverage": 0.7
+  },
+  "intrinsic_variogram": {
+    "status": "separate synthetic development; not yet a paired-acquisition claim endpoint",
+    "primary_object": "physical separation by axial direction semivariance surface",
+    "rotation_invariant_summaries": [
+      "angular_mean_curve",
+      "angular_anisotropy_curve",
+      "major_correlation_curve",
+      "minor_correlation_curve"
+    ],
+    "equivariant_summary": "consensus major-correlation axis when identifiable",
+    "range_rule": "Emit an e-fold range only when an interior crossing and finite-field plateau are both supported; otherwise abstain."
+  },
+  "access_boundary": "All listed CCP and ER fields are development data. No Microtubules or F-actin archive may be listed, extracted, decoded, summarized or visualized during this candidate benchmark.",
+  "claim_boundary": "Development of risk calibration for paired-acquisition agreement only; not confirmation, biological truth, acquisition-family transfer, diagnosis, clinical validity or intraoperative utility."
+}

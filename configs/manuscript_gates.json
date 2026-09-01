@@ -1,0 +1,16 @@
+{
+  "minimum_audited_participants": 80,
+  "maximum_participant_leakage_violations": 0,
+  "minimum_cartilage_dice": 0.90,
+  "minimum_cartilage_iou": 0.82,
+  "maximum_median_boundary_hd95_um": 100.0,
+  "minimum_segmentation_success_rate": 0.85,
+  "maximum_catastrophic_masks": 0,
+  "minimum_valid_feature_rate": 0.85,
+  "maximum_rotation_scalar_relative_drift": 0.05,
+  "maximum_rotation_orientation_error_degrees": 5.0,
+  "require_primary_bootstrap_ci_upper_below_zero": true,
+  "minimum_directionally_stable_stains": 2,
+  "minimum_non_fft_comparators": 1,
+  "require_single_command_reproduction": true
+}

@@ -1,0 +1,185 @@
+{
+  "protocol_version": "nostos-paired-acquisition-tensor/8.0-controlled-degradation-pilot",
+  "status": "candidate_for_outcome_free_lock_before_selected_field_pixel_decode",
+  "study_role": "small engineering stress pilot before any larger superiority confirmation",
+  "question": "Can the unchanged v7 tensor validity contract reduce silently invalid coherence measurements relative to conventional acquisition QC when previously unseen BioSR inputs undergo prospectively fixed, coordinate-preserving degradations?",
+  "source_lineage": {
+    "v7_linear_config_path": "configs/paired_acquisition_tensor_v7.locked.json",
+    "v7_linear_config_sha256": "51bc51cd69f2945c04b56a65fbf6a5a677c0c7661087ec945043eec9ab5f54eb",
+    "v7_linear_lock_path": "manifests/paired_acquisition_tensor_v7_confirmation_lock.json",
+    "v7_linear_lock_sha256": "9ff48c5b35e1e472a43706385c0d529f13703dccf467627821aea769c575225e",
+    "v7_1_nonlinear_config_path": "configs/paired_acquisition_tensor_v7_1_nonlinear.locked.json",
+    "v7_1_nonlinear_config_sha256": "21dfa01f02cca9ccd90da66f767ec7b6783f2b1e17d8e6d4acdc2bcd777334fb",
+    "v7_1_nonlinear_lock_path": "manifests/paired_acquisition_tensor_v7_1_nonlinear_lock.json",
+    "v7_1_nonlinear_lock_sha256": "d0b29d6a1d137e1442eeb7c66245f9e1e29234636558d5eeef2297929121dc99",
+    "mixed_lock_transfer_audit_path": "outputs/nostos0-biosr-tensor-v7-mixed-lock-combined-audit/combined_confirmation_audit.json",
+    "mixed_lock_transfer_audit_sha256": "a15f854797fd797d02f6aade6bf3d730d3a87de46a5a1211fc27d1c295d397ea"
+  },
+  "measurement_rule": "Use the source configuration appropriate to each acquisition family. Estimators, physical scales, reference rules, invalidity tolerances, support components, score boundary and comparators are unchanged.",
+  "selection": {
+    "fields_per_structure": 3,
+    "selection_salt": "NOSTOS-v8-controlled-degradation-pilot-2026-08-29",
+    "selection_rule": "Exclude every v7 confirmation cell, then rank remaining central-directory cell identifiers by the unchanged v7 SHA-256 selector. Pixel values and endpoint outcomes are forbidden inputs.",
+    "selected_cells": {
+      "F-actin_linear": [
+        "Cell_047",
+        "Cell_008",
+        "Cell_025"
+      ],
+      "F-actin_nonlinear": [
+        "Cell_015",
+        "Cell_033",
+        "Cell_051"
+      ]
+    },
+    "signal_levels": {
+      "F-actin_linear": [
+        1,
+        12
+      ],
+      "F-actin_nonlinear": [
+        1,
+        9
+      ]
+    },
+    "base_reference_fields": 6,
+    "base_paired_acquisitions": 12
+  },
+  "degradations": [
+    {
+      "id": "clean",
+      "family": "negative_control",
+      "operation": "identity",
+      "severity_rank": 0
+    },
+    {
+      "id": "gamma_0_5",
+      "family": "negative_control",
+      "operation": "gamma",
+      "gamma": 0.5,
+      "severity_rank": 0
+    },
+    {
+      "id": "gamma_2_0",
+      "family": "negative_control",
+      "operation": "gamma",
+      "gamma": 2.0,
+      "severity_rank": 0
+    },
+    {
+      "id": "blur_1px",
+      "family": "isotropic_blur",
+      "operation": "gaussian_blur",
+      "sigma_input_pixels": 1.0,
+      "severity_rank": 1
+    },
+    {
+      "id": "blur_2px",
+      "family": "isotropic_blur",
+      "operation": "gaussian_blur",
+      "sigma_input_pixels": 2.0,
+      "severity_rank": 2
+    },
+    {
+      "id": "blur_4px",
+      "family": "isotropic_blur",
+      "operation": "gaussian_blur",
+      "sigma_input_pixels": 4.0,
+      "severity_rank": 3
+    },
+    {
+      "id": "blur_8px",
+      "family": "isotropic_blur",
+      "operation": "gaussian_blur",
+      "sigma_input_pixels": 8.0,
+      "severity_rank": 4
+    },
+    {
+      "id": "anisotropic_y_0_5_x_3",
+      "family": "anisotropic_blur",
+      "operation": "anisotropic_gaussian_blur",
+      "sigma_yx_input_pixels": [
+        0.5,
+        3.0
+      ],
+      "severity_rank": 1
+    },
+    {
+      "id": "anisotropic_y_3_x_0_5",
+      "family": "anisotropic_blur",
+      "operation": "anisotropic_gaussian_blur",
+      "sigma_yx_input_pixels": [
+        3.0,
+        0.5
+      ],
+      "severity_rank": 1
+    },
+    {
+      "id": "resample_2x",
+      "family": "resampling",
+      "operation": "downsample_restore",
+      "factor": 2,
+      "severity_rank": 1
+    },
+    {
+      "id": "resample_4x",
+      "family": "resampling",
+      "operation": "downsample_restore",
+      "factor": 4,
+      "severity_rank": 2
+    },
+    {
+      "id": "noise_0_03",
+      "family": "additive_noise",
+      "operation": "gaussian_noise",
+      "sigma_fraction_robust_range": 0.03,
+      "severity_rank": 1
+    },
+    {
+      "id": "noise_0_08",
+      "family": "additive_noise",
+      "operation": "gaussian_noise",
+      "sigma_fraction_robust_range": 0.08,
+      "severity_rank": 2
+    },
+    {
+      "id": "noise_0_15",
+      "family": "additive_noise",
+      "operation": "gaussian_noise",
+      "sigma_fraction_robust_range": 0.15,
+      "severity_rank": 3
+    }
+  ],
+  "randomness": {
+    "base_seed": 26082980,
+    "rule": "For stochastic conditions, derive a NumPy seed from SHA-256(base_seed|base_pair_id|condition_id), using the first eight digest bytes modulo 2^32."
+  },
+  "registration": {
+    "rule": "Audit registration once on each undegraded source pair and reuse that eligibility record for every coordinate-preserving degradation of that pair.",
+    "rationale": "Every frozen transformation preserves array extent and specimen coordinates; rerunning registration would make reference eligibility a degradation detector and confound the validity-policy comparison."
+  },
+  "pilot_success_gates": {
+    "primary_endpoint_family": "tensor_coherence",
+    "minimum_negative_control_coverage": 0.8,
+    "maximum_negative_control_risk": 0.1,
+    "minimum_overall_full_contract_coverage": 0.3,
+    "maximum_overall_full_contract_risk": 0.1,
+    "maximum_cluster_bootstrap_risk_upper95": 0.25,
+    "minimum_comparator_invalid_emissions": 10,
+    "minimum_invalid_reference_fields": 4,
+    "minimum_relative_risk_reduction_vs_qc": 0.25,
+    "minimum_invalid_fraction_among_qc_only_rejections": 0.25,
+    "minimum_bootstrap_probability_full_better": 0.9,
+    "require_positive_comparator_minus_full_aurc": true,
+    "require_nonhigher_full_risk_in_each_assessable_structure": true,
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 26082981
+  },
+  "interpretation_rules": {
+    "pass": "Advance unchanged contract to a larger untouched confirmation; this pilot alone is not publication-level confirmation.",
+    "fail": "Diagnose the named degradation and support component, repair only on development evidence, then rerun on different untouched cells under a new lock.",
+    "not_assessable": "Do not add clean samples. Expand only the predeclared severity envelope under an explicit development amendment until comparator-invalid emissions exist."
+  },
+  "access_boundary": "Before this candidate and its lock are completed, no pixel array or endpoint outcome from the six selected v8 cells may be decoded or computed. Central-directory names and MRC headers are permitted.",
+  "claim_boundary": "Engineering stress pilot of an unchanged tensor validity contract. Not independent publication confirmation, biological ground truth, image-restoration accuracy, diagnosis, clinical validity, or proof of a universal NOSTOS contract."
+}

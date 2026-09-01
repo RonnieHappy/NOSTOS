@@ -1,0 +1,136 @@
+{
+  "schema_version": "nostos-fmd-validity-profile/1.0",
+  "protocol_id": "fmd-real-noise-dimensionless-organization-v1",
+  "locked_at_utc": "2026-08-29T14:40:30Z",
+  "scope": {
+    "study_type": "computation_only_public_data_methods_validation",
+    "claim": "Input-only validity evidence can reduce silent-invalid dimensionless structural measurements across real fluorescence noise levels and held-out acquisition configurations.",
+    "excluded_claims": [
+      "biological interpretation of any endpoint",
+      "physical-scale measurement because pixel spacing is not supplied",
+      "image restoration or denoising performance",
+      "clinical or intraoperative utility"
+    ]
+  },
+  "source": {
+    "dataset": "Fluorescence Microscopy Denoising (FMD) dataset",
+    "doi": "10.7274/r0-ed2r-4052",
+    "article_url": "https://openaccess.thecvf.com/content_CVPR_2019/html/Zhang_A_Poisson-Gaussian_Denoising_Dataset_With_Real_Fluorescence_Microscopy_Images_CVPR_2019_paper.html",
+    "repository_url": "https://curate.nd.edu/articles/dataset/Fluorescence_Microscopy_Denoising_FMD_dataset/24744648",
+    "license": "CC BY-SA 4.0",
+    "figshare_file_id": 43648128,
+    "archive_name": "test_mix.tar",
+    "archive_bytes": 42956800,
+    "archive_sha256": "d7a14d3be17368dbfe24a5cfe8ed0d40d403d7902d70fe914d04303e4aa8f2f6",
+    "reference_definition": "Per published protocol, gt is the average of all 50 captures from the same field of view.",
+    "acquisition_levels": {
+      "raw": 1,
+      "avg2": 2,
+      "avg4": 4,
+      "avg8": 8,
+      "avg16": 16
+    },
+    "independent_unit": "imaging configuration / held-out field of view",
+    "nested_unit": "four non-overlapping 256 x 256 quadrants from the same field of view"
+  },
+  "selection": {
+    "seed": 26082901,
+    "rule": "Within each modality, sort acquisition configurations by SHA-256(seed|configuration). Alternate development and confirmation; start WideField in confirmation so the total is six groups per split.",
+    "development_groups": [
+      "Confocal_FISH",
+      "Confocal_BPAE_G",
+      "Confocal_BPAE_B",
+      "TwoPhoton_BPAE_B",
+      "TwoPhoton_BPAE_G",
+      "WideField_BPAE_B"
+    ],
+    "confirmation_groups": [
+      "Confocal_BPAE_R",
+      "Confocal_MICE",
+      "TwoPhoton_BPAE_R",
+      "TwoPhoton_MICE",
+      "WideField_BPAE_R",
+      "WideField_BPAE_G"
+    ],
+    "expected_quadrants_per_group": 4,
+    "expected_input_levels_per_quadrant": 5,
+    "expected_pairs_per_group": 20,
+    "expected_groups_per_split": 6,
+    "expected_pairs_per_split": 120
+  },
+  "measurement": {
+    "calibration_status": "pixel_relative_only",
+    "analysis_scales_px": [4.0, 8.0, 16.0],
+    "minimum_samples_per_scale": 4.0,
+    "included_endpoints": [
+      "tensor_orientation",
+      "tensor_coherence",
+      "spectral_anisotropy",
+      "spectral_entropy"
+    ],
+    "endpoint_families": {
+      "tensor_orientation_distribution": ["tensor_orientation"],
+      "tensor_coherence": ["tensor_coherence"],
+      "spectral_order": ["spectral_anisotropy", "spectral_entropy"]
+    },
+    "primary_endpoint_family": "tensor_coherence",
+    "reference_eligibility": {
+      "minimum_orientation_resultant": 0.15,
+      "minimum_spectral_orientation_anisotropy": 0.15,
+      "maximum_cross_estimator_orientation_disagreement_degrees": 20.0,
+      "maximum_reference_orientation_probe_drift_degrees": 5.0,
+      "maximum_reference_scalar_probe_drift": 0.1,
+      "minimum_normalized_curve_energy": 1e-6
+    },
+    "invalidity_tolerances": {
+      "tensor_orientation_degrees": 10.0,
+      "tensor_coherence_absolute": 0.15,
+      "spectral_anisotropy_absolute": 0.15,
+      "spectral_entropy_absolute": 0.1,
+      "spectral_scale_relative": 0.25,
+      "normalized_response_curve_distance": 0.25,
+      "winning_scale_log2_absolute": 0.5,
+      "normalized_variogram_curve_distance": 0.25,
+      "variogram_range_relative": 0.5
+    },
+    "spectral_analysis": {
+      "minimum_fraction_of_effective_input_nyquist": 0.02,
+      "maximum_fraction_of_effective_input_nyquist": 0.9
+    }
+  },
+  "compiler": {
+    "primary_score": "full_contract",
+    "score_candidates": [
+      "full_contract",
+      "conventional_acquisition_qc",
+      "perturbation_stability_only",
+      "full_contract_without_qc",
+      "full_contract_without_perturbation",
+      "full_contract_without_identifiability"
+    ],
+    "folds": 3,
+    "fold_seed": 26082911,
+    "calibration_bins": 5,
+    "prior_alpha": 0.5,
+    "prior_beta": 0.5,
+    "operating_point": {
+      "target_observed_risk": 0.1,
+      "maximum_cluster_bootstrap_risk_upper95": 0.25,
+      "minimum_coverage": 0.25,
+      "bootstrap_replicates": 2000,
+      "bootstrap_seed": 26082921
+    }
+  },
+  "confirmation_gates": {
+    "minimum_independent_groups": 6,
+    "minimum_coverage": 0.25,
+    "maximum_observed_risk": 0.15,
+    "maximum_cluster_bootstrap_risk_upper95": 0.35,
+    "minimum_relative_risk_reduction_vs_acquisition_qc": 0.2,
+    "minimum_invalid_acquisition_qc_emissions": 5,
+    "require_positive_aurc_difference": true,
+    "require_aurc_bootstrap_ci_lower_above_zero": true,
+    "bootstrap_replicates": 5000,
+    "bootstrap_seed": 26082931
+  }
+}

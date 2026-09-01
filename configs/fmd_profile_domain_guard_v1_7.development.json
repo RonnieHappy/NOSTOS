@@ -1,0 +1,53 @@
+{
+  "schema_version": "nostos-profile-domain-guard/1.0",
+  "protocol_id": "fmd-profile-domain-guard-v1-7-development",
+  "created_at_utc": "2026-08-31T20:20:00Z",
+  "status": "post_failure_engineering_development",
+  "rationale": {
+    "trigger": "The no-refit v1.6 transfer showed that acquisition-by-scale support alone cannot certify a new structural channel. WideField_BPAE_G retained 36 invalid outputs among 84 accepted measurements, while Confocal_BPAE_R correctly produced zero coverage.",
+    "repair": "Make the profile claim boundary executable. A profile is applicable only when every required declared domain field exactly matches the certified context; missing or mismatched fields force abstention before the measurement-support lattice is evaluated.",
+    "claim_boundary": "This is a post-failure engineering repair. It demonstrates deterministic scope enforcement, not prospective confirmation of an expanded measurement domain."
+  },
+  "certified_context": {
+    "acquisition_modality": "WideField",
+    "sample": "BPAE_R",
+    "calibration_status": "pixel_relative_only"
+  },
+  "required_context_fields": [
+    "acquisition_modality",
+    "sample",
+    "calibration_status"
+  ],
+  "policy": {
+    "missing_context": "abstain",
+    "mismatched_context": "abstain",
+    "matched_context": "delegate_to_frozen_measurement_support_profile",
+    "reason_prefix": "profile_claim_boundary"
+  },
+  "frozen_inputs": {
+    "in_scope_development_scored": {
+      "path": "outputs/nostos0-fmd-full-archive-strict-support-v1-6-development/development_scored.jsonl",
+      "sha256": "e305de7dbaa5a458f9fe4465ed0362324a04f051172d278b2b74f19a813588e4"
+    },
+    "external_transfer_scored": {
+      "path": "outputs/nostos0-fmd-strict-external-transfer-v1-6-audit-v1-6-1/external_transfer_scored.jsonl",
+      "sha256": "84217658e4ff5f5829691ab062d173c1490a45a17150976ad0b852aa3fe096f1"
+    },
+    "external_transfer_audit": {
+      "path": "outputs/nostos0-fmd-strict-external-transfer-v1-6-audit-v1-6-1/external_transfer_audit.json",
+      "sha256": "22cee916adc25a3d50e798f3daf6e6cee8938f75e1ff41f01114a22159ad175b"
+    },
+    "strict_profile": {
+      "path": "outputs/nostos0-fmd-full-archive-strict-support-v1-6-development/strict_support_profile.json",
+      "sha256": "ddac86a5e0ae60d559975f63935e3e1bceb3bfdc41d31ec4ed1eecbdb6c48e1f",
+      "content_sha256": "1bf6c553321f1957379b2ab7f896222bf9d28cce3cd0ff107267821c98f81ba1"
+    }
+  },
+  "development_checks": {
+    "require_all_in_scope_rows_applicable": true,
+    "require_in_scope_decision_identity": true,
+    "require_all_external_rows_out_of_scope": true,
+    "require_zero_guarded_external_emissions": true,
+    "require_zero_guarded_external_invalid_emissions": true
+  }
+}

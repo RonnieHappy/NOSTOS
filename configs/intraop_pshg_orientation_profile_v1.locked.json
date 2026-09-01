@@ -1,0 +1,47 @@
+{
+  "schema_version": "nostos-intraop-acquisition-profile/1.0",
+  "profile_id": "pshg-tiss-unstained-fshg-local-orientation-v1",
+  "status": "externally_confirmed_technical_endpoint",
+  "intended_use": "Research integration of a local collagen-orientation map from unstained forward-SHG imagery.",
+  "modality": "polarization-resolved_forward_second_harmonic_generation",
+  "specimen_state": "unstained",
+  "input_contract": {
+    "dimensions": 2,
+    "frame_count": 10,
+    "frame_construction": "Arithmetic mean of the ten polarization-resolved FSHG frames acquired from 0 through 180 degrees in 20-degree steps.",
+    "required_support_maps": [
+      "R2",
+      "SNR"
+    ],
+    "edge_exclusion_pixels": 8,
+    "minimum_r2": 0.9,
+    "minimum_snr_db": 3.0,
+    "minimum_eligible_pixels": 1000
+  },
+  "measurement_contract": {
+    "endpoint": "local_axial_structure_orientation",
+    "estimator": "gradient_structure_tensor",
+    "integration_sigma_pixels": 2.0,
+    "output_period_degrees": 180.0,
+    "reference_transform": "(FI + 90 degrees) mod 180",
+    "reference_transform_role": "evaluation_only",
+    "evidence_status": "confirmed",
+    "clinical_interpretation_authorized": false
+  },
+  "evidence": {
+    "dataset_doi": "10.17605/OSF.IO/UDTQP",
+    "dataset_subset": "breast tissue unstained / FSHG",
+    "receipt_path": "outputs/nostos0-pshg-breast-orientation-v1/pshg_external_orientation.json",
+    "receipt_bytes": 7476,
+    "receipt_sha256": "4093cf2eba0f7013f9ce4d62f031dc06f33f9ae39ed839832be2f1984e062e01",
+    "receipt_status": "pass",
+    "confirmed_rois": 48,
+    "confirmed_eligible_pixels": 1367747,
+    "median_axial_error_degrees": 7.588232599620138,
+    "roi_bootstrap_95": [
+      7.257028739474732,
+      7.914894355321694
+    ]
+  },
+  "claim_boundary": "Confirms reference concordance for one local 2-D direction field on unstained breast tissue acquired with the deposited PSHG platform and the exact ten-frame construction. It does not establish an instrument-independent transform, molecular orientation, tissue diagnosis, cartilage transfer, mechanics, margins, treatment guidance or clinical utility."
+}

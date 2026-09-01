@@ -1,0 +1,177 @@
+{
+  "protocol_version": "nostos-paired-acquisition-tensor/7.1-nonlinear-metadata-amendment",
+  "status": "candidate_for_metadata_only_freeze_after_uniform_header_audit_before_any_nonlinear_pixel_decode",
+  "dataset_record": "BioSR figshare 13264793 version 9",
+  "dataset_doi": "10.6084/m9.figshare.13264793.v9",
+  "raw_sim_sampling_um": 0.0604,
+  "reference_sampling_rule": "raw_sim_sampling_um / declared_upscaling_factor",
+  "calibration_authority": "Per-member MRC headers, which are uniform across all 459 nonlinear inputs and 51 primary references, internally 3x consistent and field-of-view consistent. The conflicting record-level imaging_conditions.xlsx value of 0.0626 um remains disclosed.",
+  "mrc_header_spacing_absolute_tolerance_um": 0.000001,
+  "field_of_view_relative_tolerance": 0.000001,
+  "structures": {
+    "F-actin_nonlinear": {
+      "role": "untouched_v7_1_resolution_stress_confirmation_after_metadata_only_amendment",
+      "archive_name": "F-actin_Nonlinear.zip",
+      "archive_file_id": 25714772,
+      "archive_bytes": 4480187050,
+      "archive_md5": "b2884114e5fb034b9261855b3c8dbf77",
+      "upscaling_factor": 3,
+      "expected_level_count": 9,
+      "expected_input_frames": 25,
+      "primary_reference_basename": "SIM_gt_a.mrc",
+      "excluded_reference_basenames": [
+        "SIM_gt_b.mrc"
+      ],
+      "reference_semantics": "BioSR repository owner states SIM_gt_a.mrc was used to train the network; SIM_gt_b.mrc is a gamma-0.6 overview image. Only a is claim eligible."
+    }
+  },
+  "physical_tensor": {
+    "physical_scales_um": [
+      0.2504,
+      0.3756,
+      0.5008,
+      0.7512,
+      1.0016
+    ],
+    "derivative_scale_fraction": 0.5,
+    "integration_scale_factor": 1.0,
+    "orientation_histogram_bins": 36,
+    "orientation_coordinate_system": "axial 0-180 degrees in image coordinates",
+    "orientation_comparison": "circular Wasserstein-1 transport in degrees",
+    "scalar_axis_claim_eligible": false,
+    "amendment_rule": "Physical scales, estimators and response geometry are unchanged from v7; only the nonlinear grid calibration used to express those scales in pixels changes."
+  },
+  "spectral_analysis": {
+    "band_coordinate_system": "physical cycles per millimetre",
+    "band_reference": "effective input Nyquist frequency",
+    "minimum_fraction_of_effective_input_nyquist": 0.02,
+    "maximum_fraction_of_effective_input_nyquist": 0.9,
+    "pair_rule": "Apply identical physical frequency limits to input and reference. Spectral orientation is diagnostic only in v7.1."
+  },
+  "endpoints": {
+    "tensor_orientation_distribution": {
+      "invalidity_tolerance_degrees": 10.0,
+      "strong_resolution_margin_role": "diagnostic_only_no_acceptance_effect",
+      "interpretation": "A complete axial orientation distribution remains defined for crossing, multimodal and near-isotropic structure; no scalar dominant-axis claim is made."
+    },
+    "tensor_coherence": {
+      "invalidity_tolerance_absolute": 0.15,
+      "strong_resolution_margin_role": "maximum-score_contract_component"
+    }
+  },
+  "support_contract": {
+    "fixed_policy_threshold": 1.0,
+    "aggregation": "maximum",
+    "common_components": [
+      "acquisition_qc",
+      "physical_sampling",
+      "mild_perturbation_stability"
+    ],
+    "minimum_samples_per_scale": 4.0,
+    "mild_input_probes": {
+      "rotation_degrees": [-3.0, 3.0],
+      "gaussian_blur_sigma_effective_input_pixels": 0.5,
+      "translation_effective_input_pixels_yx": [1.0, -1.0],
+      "contrast_gamma": [0.9, 1.1]
+    },
+    "coherence_only_resolution_margin": {
+      "operation": "Gaussian blur on robustly normalized input before physical tensor measurement",
+      "sigma_effective_input_pixels": 2.0,
+      "drift_normalization": "absolute coherence drift / 0.15",
+      "threshold_fraction_of_endpoint_tolerance": 0.8479366097649129,
+      "absolute_coherence_drift_boundary": 0.12719049146473693,
+      "selection_origin": "Frozen unchanged from v7 development."
+    },
+    "family_specific_rule": "The strong resolution-margin component governs tensor coherence only. It is calculated and retained as a diagnostic for the orientation distribution but cannot alter orientation-distribution acceptance."
+  },
+  "reference_eligibility": {
+    "maximum_reference_orientation_distribution_probe_drift_degrees": 5.0,
+    "maximum_reference_coherence_probe_drift": 0.1,
+    "registration_peak_ratio_minimum": 1.2,
+    "registration_error_maximum": 0.35,
+    "registration_shift_maximum_effective_input_pixels": 8.0
+  },
+  "confirmation": {
+    "structures": [
+      "F-actin_nonlinear"
+    ],
+    "fields_per_structure": 8,
+    "selection_salt": "NOSTOS-v7-initial-confirmation",
+    "field_selection_rule": "Carry forward without change the eight nonlinear cells sealed in paired_acquisition_tensor_v7_confirmation_lock.json. No reselection is permitted.",
+    "selected_cells": [
+      "Cell_004",
+      "Cell_023",
+      "Cell_001",
+      "Cell_037",
+      "Cell_035",
+      "Cell_046",
+      "Cell_005",
+      "Cell_021"
+    ],
+    "all_signal_levels_in_selected_fields": true,
+    "threshold_refitting_permitted": false,
+    "endpoint_addition_or_removal_permitted": false,
+    "primary_safety_rules": {
+      "target_observed_risk": 0.1,
+      "maximum_cluster_bootstrap_risk_upper95": 0.15,
+      "minimum_overall_coverage": 0.8,
+      "minimum_structure_family_coverage": 0.7,
+      "bootstrap_replicates": 10000,
+      "bootstrap_seed": 26082931
+    },
+    "separate_incremental_coherence_utility_rules": {
+      "maximum_full_minus_qc_risk": 0.0,
+      "maximum_full_coverage_loss_vs_qc": 0.1,
+      "minimum_invalid_enrichment_among_qc_only_rejections": 2.0,
+      "minimum_bootstrap_probability_full_better": 0.95,
+      "requires_positive_paired_cluster_bootstrap_ci95_lower_bound": true,
+      "not_assessable_rule": "If conventional acquisition QC emits no invalid coherence case, incremental utility is not assessable and no superiority claim may be made. Measurement safety is decided separately."
+    }
+  },
+  "comparators": {
+    "conventional_acquisition_qc": "The identical estimator governed only by acquisition-QC hard failures and its continuous acquisition-QC score.",
+    "always_emit": "The identical estimator emitting every registration- and reference-eligible measurement.",
+    "comparison_scope": "Incremental contract utility is tested only for tensor coherence."
+  },
+  "lineage": {
+    "v7_config_sha256": "51bc51cd69f2945c04b56a65fbf6a5a677c0c7661087ec945043eec9ab5f54eb",
+    "v7_lock_sha256": "9ff48c5b35e1e472a43706385c0d529f13703dccf467627821aea769c575225e",
+    "v7_nonlinear_header_failure_receipt_sha256": "7ae58e6bcd9cbe0f7cac4145d7b3806ea6686da7f416b61d0dc2e4c82bb38e9d",
+    "v7_linear_confirmation_receipt_sha256": "5ee8410af43d356fdd22629e5731d45ef5191e74ae19104923218bf84e45d65c",
+    "amended_fields": [
+      "protocol_version",
+      "status",
+      "raw_sim_sampling_um",
+      "calibration_authority",
+      "nonlinear role",
+      "confirmation scope and explicit carried-forward cells",
+      "lineage and access boundary"
+    ],
+    "scientific_parameters_changed": [
+      "nonlinear physical grid calibration: 0.0626 um to 0.0604 um"
+    ],
+    "scientific_parameters_unchanged": [
+      "selected fields",
+      "signal levels",
+      "reference file",
+      "physical response scales",
+      "tensor estimator",
+      "endpoints",
+      "invalidity tolerances",
+      "support components",
+      "support thresholds",
+      "comparators",
+      "safety gates",
+      "incremental-utility gates"
+    ]
+  },
+  "source_provenance": {
+    "figshare_record": "https://figshare.com/articles/dataset/BioSR/13264793",
+    "nature_methods_article": "https://doi.org/10.1038/s41592-020-01048-5",
+    "official_code_repository": "https://github.com/qc17-THU/DL-SR",
+    "nonlinear_reference_owner_answer": "https://github.com/qc17-THU/DL-SR/issues/8#issuecomment-1037742991",
+    "imaging_conditions_file_id": 43867986
+  },
+  "access_boundary": "Before this v7.1 candidate was written, all nonlinear MRC headers were audited and no nonlinear payload beyond the 1024-byte header, pixel array or endpoint outcome had been decoded. The linear confirmation was already completed under the unchanged v7 lock and is not rerun or reinterpreted by this amendment.",
+  "claim_boundary": "Metadata-amended nonlinear paired-acquisition confirmation plus the separately locked v7 linear confirmation. Not image restoration, biological phenotype inference, diagnosis, clinical validity, diffraction-limit estimation, or proof that the reference reconstruction is ground-truth biology."
+}

@@ -1,0 +1,22 @@
+.venv/
+.venv-comparators/
+.venv-radiomics/
+.venv-radiomics39/
+.venv-radiomics37/
+__pycache__/
+*.egg-info/
+*.py[cod]
+.pytest_cache/
+
+# Large or generated research artifacts
+/data/
+manifests/*.json
+outputs/
+models/
+figures/generated/
+
+# Local editor and operating-system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
